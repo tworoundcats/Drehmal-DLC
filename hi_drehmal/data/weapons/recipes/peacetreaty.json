@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "#D#",
+        "#I#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:paper"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "D": {
+            "item": "minecraft:diamond_sword"
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:bee_spawn_egg",
+        "count": 1
+    }
+}

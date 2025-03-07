@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"minecraft:lodahr\",LodestonePos:{X:27195,Y:125,Z:55}}"
+  }
+]

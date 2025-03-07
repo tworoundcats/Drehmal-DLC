@@ -1,0 +1,86 @@
+[
+  {
+      "function":"set_nbt",
+      "tag":"{CustomModelData:1,AttributeModifiers:[]}"
+  },
+
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+          "condition":"inverted",
+          "term": {
+              "condition":"entity_properties",
+              "entity":"this",
+              "predicate": {
+                  "equipment": {
+                      "mainhand": {
+                          "nbt":"{VitalityEnch:1b}"
+                      }
+                  }
+              }
+          }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.max_health",
+            "attribute":"generic.max_health",
+            "operation":"addition",
+            "amount":4,
+            "slot":"mainhand"
+        }
+    ]
+  },
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt":"{VitalityEnch:1b}"
+                }
+            }
+        }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.max_health",
+            "attribute":"generic.max_health",
+            "operation":"addition",
+            "amount":8,
+            "slot":"mainhand"
+        }
+    ]
+  },
+  
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt":"{SpeedEnch:1b}"
+                }
+            }
+        }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.movement_speed",
+            "attribute":"generic.movement_speed",
+            "operation":"addition",
+            "amount":0.01,
+            "slot":"mainhand"
+        }
+    ]
+  }
+]

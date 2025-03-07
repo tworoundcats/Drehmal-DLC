@@ -1,0 +1,79 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:prismarine_bricks"
+    },
+    "title": {
+      "text": "Abyssal Rise",
+      "color": "dark_aqua",
+      "italic": false
+    },
+    "description": {
+      "text": "Dahr tests your logic. - Discovered Abyssal Rise",
+      "color": "gray",
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "advancements:discoveries/lodahr",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "position": {
+                    "x": {
+                        "min": -216,
+                        "max": -180
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 34
+                    },
+                    "z": {
+                        "min": 1159,
+                        "max": 1195
+                    }
+                  },
+                  "dimension": "minecraft:lodahr"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "position": {
+                    "x": {
+                        "min": -204,
+                        "max": -104
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 18
+                    },
+                    "z": {
+                        "min": 1132,
+                        "max": 1156
+                    }
+                  },
+                  "dimension": "minecraft:lodahr"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/enter_trial/dahr"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "mcdw:shield_tower_guard"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dlc:shield/blocking"
+    }
+  }
+  

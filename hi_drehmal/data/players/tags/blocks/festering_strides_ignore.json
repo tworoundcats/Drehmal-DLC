@@ -1,0 +1,16 @@
+{
+    "values":[
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:vine",
+        "minecraft:light",
+        "minecraft:ladder",
+        "minecraft:weeping_vines",
+        "minecraft:weeping_vines_plant",
+        "minecraft:twisting_vines",
+        "minecraft:twisting_vines_plant",
+        "minecraft:water",
+        "minecraft:lava"
+    ]
+}

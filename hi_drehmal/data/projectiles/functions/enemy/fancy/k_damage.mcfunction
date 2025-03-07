@@ -1,0 +1,1 @@
+damage @s 18 minecraft:khivewrath

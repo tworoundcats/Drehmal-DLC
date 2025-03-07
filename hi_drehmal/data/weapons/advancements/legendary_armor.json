@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Legendary Armor",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Offense is only as good as one's defense. These armors contain incredible power, use them well.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:diamond_chestplate"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    },
+    "parent": "weapons:equipment"
+}

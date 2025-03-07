@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "text": "Magestep",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Recipe for Magestep, armor of Khive’s trusted servant, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:salmon_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Magestep:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:magestep"
+        ],
+        "function":"weapons:magestep"
+    },
+    "parent": "weapons:festering_strides"
+}

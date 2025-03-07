@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Legendary Weapons",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Some weapons are greater than your standard blade. One of a kind, only found in guarded or secret locations.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    },
+    "parent": "weapons:equipment"
+}

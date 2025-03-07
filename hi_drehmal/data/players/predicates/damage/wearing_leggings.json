@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "legs": {
+          "items": [
+            "minecraft:netherite_leggings",
+            "minecraft:diamond_leggings",
+            "minecraft:iron_leggings",
+            "minecraft:chainmail_leggings",
+            "minecraft:golden_leggings",
+            "minecraft:leather_leggings"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "legs": {
+            "nbt": "{Unbreakable:1b}"
+          }
+        }
+      }
+    }
+  }
+]

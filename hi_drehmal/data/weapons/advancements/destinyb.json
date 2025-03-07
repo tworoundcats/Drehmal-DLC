@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Boots",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Boots",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_boots"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinyb"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyB:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinyl"
+}

@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"That's a long, arduous path, but we hope you can join us. After all, there is nothing to lose.","italic":true}]
+schedule function core:scene/credits/14 168t

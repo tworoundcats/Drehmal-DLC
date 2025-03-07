@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "DO YOU KNOW ME?",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

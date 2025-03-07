@@ -1,0 +1,2 @@
+execute unless entity @s[tag=nbt_check] run function entities:tool/frame_scan
+execute if score #1S timer matches 0 if entity @s[tag=nbt] unless data entity @s Item.tag run function entities:tool/frame_wiped

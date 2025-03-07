@@ -1,0 +1,1 @@
+execute if predicate entities:hurt run function entities:ai/warden/hurt

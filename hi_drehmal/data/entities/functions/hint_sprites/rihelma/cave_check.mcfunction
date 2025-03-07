@@ -1,0 +1,2 @@
+execute if predicate entities:hint_sprite/rihelma/in_cave run scoreboard players add #hSpr_rhelmaCave num 1
+execute unless predicate entities:hint_sprite/rihelma/in_cave unless entity @p[distance=..16] run function entities:clear_self_dataless

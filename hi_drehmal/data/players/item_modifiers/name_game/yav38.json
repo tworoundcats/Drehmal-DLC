@@ -1,0 +1,184 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{HideFlags:127}"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "-- ---- -",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "watch mob psycho 100",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "it is 12/15/2021",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "drehmal has been",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "delayed far too much",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "it makes me sad :(",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "--  ----- ----- ---",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "----- ---- --",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "--- -- ----- -",
+        "color": "white",
+        "italic": false,
+        "obfuscated": true
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "MYTHOCLAST",
+      "color": "white",
+      "bold": false,
+      "italic": false,
+      "obfuscated": true
+    }
+  }
+]

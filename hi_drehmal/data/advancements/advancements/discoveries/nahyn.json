@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:polished_deepslate"
+      },
+      "title": {
+        "text": "Hypogean Labyrinth",
+        "color": "dark_gray",
+        "italic": false
+      },
+      "description": {
+        "text": "Nahyn evaluates your composure. - Discovered the Hypogean Labyrinth",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/khive",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 507,
+                        "max": 553
+                    },
+                    "y": {
+                        "min": 120,
+                        "max": 150
+                    },
+                    "z": {
+                        "min": -75,
+                        "max": -14
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:misc/enter_trial/nahyn"
+    }
+  }
+  

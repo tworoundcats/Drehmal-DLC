@@ -1,0 +1,45 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"reference",
+            "name":"entities:biomes/khive"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/lahr"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/lai"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/loe"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/maen"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/moen"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/nahyn"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/noha"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/palaesida"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/rihelma"
+        }
+    ]
+}

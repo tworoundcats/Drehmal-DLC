@@ -1,0 +1,180 @@
+{
+    "display": {
+        "title": {
+            "text": "Completed Codex",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "Knowledge unbound! - Complete the Repository beneath Av’Sal",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:bookshelf"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "position": {
+                    "x": {
+                      "min": -195,
+                      "max": -155
+                    },
+                    "y": {
+                      "min": -1,
+                      "max": 32
+                    },
+                    "z": {
+                      "min": 1614,
+                      "max": 1677
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.stasis_total"
+                  },
+                  "score": "int"
+                },
+                "range": 5
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.avsal_total"
+                  },
+                  "score": "int"
+                },
+                "range": 11
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.mevir_total"
+                  },
+                  "score": "int"
+                },
+                "range": 7
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.exodus_total"
+                  },
+                  "score": "int"
+                },
+                "range": 11
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.core_total"
+                  },
+                  "score": "int"
+                },
+                "range": 6
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.aphelion_total"
+                  },
+                  "score": "int"
+                },
+                "range": 16
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.inscription_total"
+                  },
+                  "score": "int"
+                },
+                "range": 6
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.ring_total"
+                  },
+                  "score": "int"
+                },
+                "range": 7
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.depot_total"
+                  },
+                  "score": "int"
+                },
+                "range": 5
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.gm_total"
+                  },
+                  "score": "int"
+                },
+                "range": 7
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#terms.halls_total"
+                  },
+                  "score": "int"
+                },
+                "range": 15
+              }
+            ]
+          }
+        }
+      },
+        "parent": "advancements:primordial/a0_repository"
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+              "item": {
+                "items": [
+                    "minecraft:potion"
+                ],
+                "nbt":"{Eldermead:1b,Filled:0}"
+              }
+            }
+          }
+    },
+    "rewards": {
+        "function": "players:items/eldermead/use_empty"
+    }
+}

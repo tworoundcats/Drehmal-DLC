@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_crystal",
+    "minecraft:area_effect_cloud",
+    "minecraft:experience_orb",
+    "minecraft:fishing_bobber",
+    "minecraft:marker",
+    "minecraft:evoker_fangs",
+    "minecraft:falling_block",
+    "minecraft:glow_item_frame",
+    "minecraft:item_frame",
+    "minecraft:leash_knot",
+    "minecraft:lightning_bolt",
+    "minecraft:painting"
+  ]
+}

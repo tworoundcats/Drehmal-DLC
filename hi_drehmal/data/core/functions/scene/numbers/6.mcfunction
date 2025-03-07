@@ -1,0 +1,13 @@
+execute in minecraft:lodahr run setblock -485 74 -222 air replace
+execute in minecraft:lodahr run setblock -485 74 -222 chest[facing=west]{Items:[{Slot:13b,id:potion,Count:1b,tag:{CustomModelData:1000001,Eldermead:1b,Filled:2,CustomPotionEffects:[{Id:23,Amplifier:7},{Id:22,Amplifier:1,Duration:2419},{Id:10,Duration:219,Amplifier:1}],CustomPotionColor:16777215,HideFlags:32,display:{Name:'{"text":"Eldermead","italic":"false","color":"light_purple","underlined":"true"}',Lore:['{"text":"With unprecedented anxiousness,"}','{"text":"the Life-Bringer offers a draught"}','{"text":"of restorative honey-wine ordinarily"}','{"text":"reserved for healing Aspects and"}','{"text":"their chosen La’Tehrmari."}','{"text":""}','{"text":"Bountiful Vitality","color":"light_purple","italic":"false"}','{"text":"This item can be drunk multiple times,","color":"dark_gray"}','{"text":"and restores both health and hunger.","color":"dark_gray"}','{"text":""}','{"text":"Legendary","color":"light_purple","italic":"false"}']}}},      {id: "minecraft:written_book", Count: 1b, Slot:22, tag: {pages: ['{"text":"6:1 - From the soil shall sprout new life, and Meadows will walk once more.\\n\\n6:2 - Souls will cease being stolen, existence eternal granted to all. In eternality, the skies shall be one.\\n\\n6:3 - We will dance together, circling"}', '{"text":"cycles as wondrous music serenades our souls.\\n\\n6:4 - Brother will forgive brother and sister shall embrace sister. Parents shall rejoice with their children, as all born for the rest of time will know only peace and bliss."}', '{"text":"6:5 - The malevolent will never walk the soil again.\\n\\n6:6 - And resonance shall swallow silence."}'], author: "", filtered_title: "Facet VI", title: "Facet VI"}}]} replace
+
+execute in minecraft:lodahr run fill -484 74 -221 -486 74 -223 minecraft:light replace air
+execute in lodahr run forceload add -53 -1600 -85 -1582
+schedule function core:scene/numbers/fire 4s
+execute in minecraft:lodahr run summon lightning_bolt -485 74 -222
+execute in minecraft:lodahr run playsound minecraft:dcustom.ui.toast.challenge_complete ambient @a -485 74 -222 2
+tellraw @a {"text":"Vayniklah congratulates your keen intuition","italic":true,"color":"dark_gray"}
+
+scoreboard players set #trial_com_nums bool 1
+function core:scene/syzygy/trial_completed
+execute in minecraft:overworld positioned 26512 161 -96 run setblock ~2 ~ ~3 minecraft:purple_concrete

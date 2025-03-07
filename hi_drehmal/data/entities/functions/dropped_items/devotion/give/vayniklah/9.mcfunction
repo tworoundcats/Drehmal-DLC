@@ -1,0 +1,8 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add vayniklah.9
+tag @s add vayniklah.maxxed
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+execute unless score #tempest? bool matches 1 run give @s bosses_of_mass_destruction:soul_star{i:1b,primalenergy:1b,display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32}
+execute if score #tempest? bool matches 1 run give @s simplyswords:empowered_remnant{display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32} 1
+
+give @s command_block{CustomModelData:1008003,display:{Name:'{"text":"Resplendence +3","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"The complexity of designing viable vessels"}','{"text":"for souls led Vayniklah to create the first"}','{"text":"of the second generation of Aspects to"}','{"text":"assist her. May you likewise serve her"}','{"text":"with steadfast bureaucratic zeal. "}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+80% Max Health","color":"blue","italic":false}','{"text":"-40% Movement Speed ","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0.8,Operation:1,UUID:[I;917806621,863063409,-1134269244,1042051704],Slot:"offhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.4,Operation:1,UUID:[I;216298688,1039549812,-1468779421,-1332762641],Slot:"offhand"}]} 1

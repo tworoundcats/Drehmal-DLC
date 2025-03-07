@@ -1,0 +1,1 @@
+summon dolphin ~ ~ ~ {Tags:["blooddolphin"],Team:"hide_name",CustomName:'{"text":"Damphi"}',Health:20f,Attributes:[{Name:generic.max_health,Base:20},{Name:"generic.attack_damage",Base:8.0}]}

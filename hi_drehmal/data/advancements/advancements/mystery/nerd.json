@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bedrock"
+      },
+      "title": {
+        "text": "Space Is For Nerds",
+        "color": "gold",
+        "bold": false
+      },
+      "description": {
+        "text": "The ultimate challenge. - Completed the Mythbreaker Run without any player ever entering the Aphelion.",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "overworld": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "players:misc/mystery_root"
+    },
+    "parent": "advancements:mystery/root"
+  }
+  

@@ -1,0 +1,22 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "x": {
+        "min": 3168,
+        "max": 3184
+      },
+      "y": {
+        "min": 66,
+        "max": 68
+      },
+      "z": {
+        "min": -993,
+        "max": -978
+      }
+    },
+    "block": {
+      "tag": "core:yav_door"
+    }
+  }
+}

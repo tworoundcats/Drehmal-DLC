@@ -1,0 +1,85 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": -137,
+                        "max": -98 
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 31
+                    },
+                    "z": {
+                        "min": 1613,
+                        "max": 1669
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": -219,
+                        "max": -136 
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 34
+                    },
+                    "z": {
+                        "min": 1589,
+                        "max": 1671
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": -278,
+                        "max": -218 
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 45
+                    },
+                    "z": {
+                        "min": 1602,
+                        "max": 1670
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": -219,
+                        "max": -204 
+                    },
+                    "y": {
+                        "min": 32,
+                        "max": 89
+                    },
+                    "z": {
+                        "min": 1632,
+                        "max": 1649
+                    }
+                }
+            }
+        }
+    ]
+}

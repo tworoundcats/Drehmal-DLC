@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:item",
+        "minecraft:marker",
+        "minecraft:armor_stand",
+        "minecraft:area_effect_cloud"
+    ]
+  }

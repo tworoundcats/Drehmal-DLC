@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "iJP",
+        " C "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "J": {
+            "item": "minecraft:jukebox"
+        },
+        "P": {
+            "item": "minecraft:prismarine_crystals"
+        },
+        "C": {
+            "item": "minecraft:comparator"
+        }
+    },
+    "result": {
+        "item": "minecraft:ravager_spawn_egg",
+        "count": 1
+    }
+}

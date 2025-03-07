@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sea_lantern"
+    },
+    "title": {
+      "text": "What Puzzles Do You Bear?",
+      "color": "aqua",
+      "italic": false
+    },
+    "description": {
+      "text": "Remember to bring a coat! - Found the Inscription Complex",
+      "color": "gray",
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "advancements:discoveries/ring_facility",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": -1032,
+                  "max": -977
+                },
+                "y": {
+                  "min": 89,
+                  "max": 152
+                },
+                "z": {
+                  "min": 1034,
+                  "max": 1091
+                }
+              },
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

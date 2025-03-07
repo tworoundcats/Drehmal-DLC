@@ -1,0 +1,20 @@
+{
+    "condition":"minecraft:location_check",
+    "predicate": {
+        "dimension":"minecraft:lodahr",
+        "position":{
+            "x": {
+                "min": -252,
+                "max": -144
+            },
+            "y": {
+                "min": 3,
+                "max": 40
+            },
+            "z": {
+                "min": 1123,
+                "max": 1231
+            }
+        }
+    }
+}

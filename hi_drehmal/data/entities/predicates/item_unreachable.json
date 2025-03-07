@@ -1,0 +1,13 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition":"reference",
+            "name":"players:locations/exodus_forge_killbox"
+        },
+        {
+            "condition":"reference",
+            "name":"players:locations/aphelion_softlock"
+        }
+    ]
+}

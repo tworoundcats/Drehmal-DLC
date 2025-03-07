@@ -1,0 +1,122 @@
+[
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"inverted",
+                "term": {
+                    "condition":"entity_properties",
+                    "entity":"this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt":"{VitalityEnch:1b}"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+6 Max Health","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+10 Max Health","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "lore": [
+            {"text":"50% Knockback Resistance","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"inverted",
+                "term": {
+                    "condition":"entity_properties",
+                    "entity":"this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt":"{SpeedEnch:1b}"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"-0.01 Movement Speed","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "lore": [
+            {"text":"18 Ability Damage","color":"blue","italic":false},
+            {"text":"15 Attack Damage","color":"blue","italic":false},
+            {"text":"1 Attack Speed","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"-25% Cooldown Time","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function": "set_lore",
+        "lore": [
+            {"text":"Unbreakable","color":"blue","italic":false},
+            {"text":" "}
+        ],
+        "replace":"false"
+    }
+]

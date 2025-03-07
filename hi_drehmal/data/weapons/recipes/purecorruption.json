@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#R#",
+        "DQD",
+        "PUP"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "Q": {
+            "item": "minecraft:diamond_helmet"
+        },
+        "P": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "U": {
+            "item": "minecraft:quartz"
+        }
+    },
+    "result": {
+        "item": "minecraft:ghast_spawn_egg",
+        "count": 1
+    }
+}

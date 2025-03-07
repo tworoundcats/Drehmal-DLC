@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:the_end] ["",{"text":"[","color":"black"},{"text":"Tethlaen","color":"gray"},{"text":"] ","color":"black"},"...krrrht.... Please..."]
+schedule function dialogue:teth/kill/5 6s

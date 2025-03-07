@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "use_tag": {
+            "trigger":"minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:name_tag"
+                    ]
+                },
+                "entity": {
+                    "type":"parrot",
+                    "nbt":"{Tags:[\"pseudodragon\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function":"entities:passive/pseudodragon/refund_nametag"
+    }
+}

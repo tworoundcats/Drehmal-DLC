@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Writers:","underlined":true,"color":"gold"},{"text":"\n\nDomeMaster\nRift\nKeeko100\ngreenTetrahedron "}]
+schedule function core:scene/credits/8 168t

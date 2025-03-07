@@ -1,0 +1,3 @@
+execute in minecraft:lodahr run summon minecraft:area_effect_cloud 1125 83 1015 {Duration:144,Tags:["rihelma_beam"],Rotation:[-3.3f,-15f],Passengers:[{id:area_effect_cloud,Duration:144,Rotation:[86.7f,0.0f],Tags:["rihelma_particles"]}]}
+execute in minecraft:lodahr run summon minecraft:area_effect_cloud 1125 80.4 1015 {Duration:144,Tags:["rihelma_beam"],Rotation:[-3.3f,15f],Passengers:[{id:area_effect_cloud,Duration:144,Rotation:[86.7f,0.0f],Tags:["rihelma_particles_inv"]}]}
+schedule function core:scene/rihelma_puzzle/doorbeams/setlight5 144t append

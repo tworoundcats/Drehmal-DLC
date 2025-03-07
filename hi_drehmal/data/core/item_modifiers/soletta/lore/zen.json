@@ -1,0 +1,111 @@
+[
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"inverted",
+                "term": {
+                    "condition":"entity_properties",
+                    "entity":"this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt":"{VitalityEnch:1b}"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+4 Max Health","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+8 Max Health","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+    {
+        "function":"set_lore",
+        "lore": [
+            {"text":"15-30 Ranged Damage","color":"blue","italic":false},
+            {"text":"10 Attack Damage","color":"blue","italic":false},
+            {"text":"1.8 Attack Speed","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{SpeedEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+0.01 Movement Speed","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"+25% Charge From Damage","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function": "set_lore",
+        "lore": [
+            {"text":"Unbreakable","color":"blue","italic":false},
+            {"text":" "},
+            {"text":"This item cannot be enchanted.","color":"dark_gray"},
+            {"text":" "}
+        ],
+        "replace":"false"
+    }
+]

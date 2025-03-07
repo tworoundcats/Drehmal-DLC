@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:compass"
+      },
+      "title": {
+        "text": "Discoveries",
+        "color": "aqua",
+        "italic": false
+      },
+      "description": {
+        "text": "Drehmal is host to many secrets. Can you discover them all?",
+        "color": "green",
+        "italic": false
+      },
+      "background": "minecraft:textures/block/cartography_table_side3.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

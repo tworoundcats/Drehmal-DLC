@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Apex of Divinity",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "An immense source of power, untouched and untainted. - Entered the Numencore",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:glowstone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/aphelion"
+}

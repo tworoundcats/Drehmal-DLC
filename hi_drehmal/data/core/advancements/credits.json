@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 0,
+                  "max": 1535
+                },
+                "y": {
+                  "min": 50,
+                  "max": 200
+                },
+                "z": {
+                  "min": 460,
+                  "max": 461
+                }
+              },
+              "dimension": "minecraft:true_end"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/credits/checkcredits"
+  }
+}

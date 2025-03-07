@@ -1,0 +1,16 @@
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^1 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^2 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^3 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^4 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^6 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^7 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^8 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^0.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^1.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^2.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^3.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^4.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^5.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^6.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit
+execute positioned ~ ~1.7 ~ positioned ^ ^ ^7.5 if entity @e[type=!#core:oblivion_immune,dx=0,dy=0,dz=0] run function projectiles:fancy/syzygy_mobhit

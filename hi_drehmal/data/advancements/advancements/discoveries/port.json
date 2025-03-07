@@ -1,0 +1,80 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:tube_coral_block"
+      },
+      "title": {
+        "text": "Avast!",
+        "color": "blue",
+        "italic": false
+      },
+      "description": {
+        "text": "Keep yer wits about ye at this roguish wharf full to burstin’ with the spirit o’ nautical competition. - Discovered Port Solitude, sacred place of Dahr",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/devotion",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min": 1835,
+                            "max": 1903
+                        },
+                        "y": {
+                            "min": 45,
+                            "max": 100
+                        },
+                        "z": {
+                            "min": 4248,
+                            "max": 4296
+                      }
+                    },
+                    "dimension": "minecraft:overworld"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min": 1846,
+                            "max": 1894
+                        },
+                        "y": {
+                            "min": 45,
+                            "max": 100
+                        },
+                        "z": {
+                            "min": 4239,
+                            "max": 4266
+                      }
+                    },
+                    "dimension": "minecraft:overworld"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 55
+    }
+  }
+  

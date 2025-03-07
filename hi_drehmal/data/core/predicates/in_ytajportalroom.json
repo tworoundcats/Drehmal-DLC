@@ -1,0 +1,53 @@
+
+
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:lodahr",
+                "position":{
+                    "x": {
+                        "min": -84,
+                        "max": -42
+                    },
+                    "y": {
+                        "min": 3,
+                        "max":  27
+                    },
+                    "z": {
+                        "min": -1624,
+                        "max": -1580
+                    }
+                }
+            }
+        },
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:lodahr",
+                "position":{
+                    "x": {
+                        "min": 1871,
+                        "max": 2021
+                    },
+                    "y": {
+                        "min": 14,
+                        "max": 72
+                    },
+                    "z": {
+                        "min": 1828,
+                        "max": 2087
+                    }
+                }
+            }
+        }
+    ]
+}
+
+
+
+
+
+

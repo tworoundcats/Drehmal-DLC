@@ -1,0 +1,80 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:crimson_planks"
+      },
+      "title": {
+        "text": "Distant Lights",
+        "color": "light_purple",
+        "italic": false
+      },
+      "description": {
+        "text": "A thriving city of trade, leisure, and worship is the beating heart of the most isolated civilization in the realm. - Discovered Naharja",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/raveloth",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min": 191,
+                            "max": 378
+                        },
+                        "y": {
+                            "min": 80,
+                            "max": 255
+                        },
+                        "z": {
+                            "min": -904,
+                            "max": -797
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min": 153,
+                            "max": 198
+                        },
+                        "y": {
+                            "min": 80,
+                            "max": 255
+                        },
+                        "z": {
+                            "min": -874,
+                            "max": -832
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 55
+    }
+  }
+  

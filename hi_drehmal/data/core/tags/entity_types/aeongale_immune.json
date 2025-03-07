@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:armor_stand",
+      "minecraft:end_crystal",
+      "minecraft:area_effect_cloud",
+      "minecraft:experience_orb",
+      "minecraft:marker",
+      "minecraft:falling_block",
+      "minecraft:item",
+      "minecraft:item_frame",
+      "minecraft:leash_knot",
+      "minecraft:lightning_bolt",
+      "minecraft:painting",
+      "minecraft:command_block_minecart",
+      "minecraft:chest_minecart",
+      "minecraft:spawner_minecart",
+      "minecraft:tnt_minecart",
+      "minecraft:hopper_minecart",
+      "minecraft:minecart"
+    ]
+  }

@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add dahr.6
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1010002,display:{Name:'{"text":"Writ of Authority +2","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Thou hast been bless\'d by the favor"}','{"text":"of the King! Thine enemies, perforce,"}','{"text":"bend knee at the sight! Ne\'er have they"}','{"text":"reckoned with the deep ocean\'s might!"}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+24% Attack Speed","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0.24,Operation:1,UUID:[I;-677136690,-1321775923,-1647365674,984341348],Slot:"offhand"}]} 1

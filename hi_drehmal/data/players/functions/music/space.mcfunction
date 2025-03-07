@@ -1,0 +1,1 @@
+execute unless score #mb_run_music? bool matches 1 run function players:music/sp_norun

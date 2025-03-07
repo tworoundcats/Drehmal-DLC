@@ -1,0 +1,16 @@
+execute if score #levi levi_damage matches 1 run damage @s 1 minecraft:falling_anvil
+execute if score #levi levi_damage matches 2 run damage @s 2 minecraft:falling_anvil
+execute if score #levi levi_damage matches 3 run damage @s 3 minecraft:falling_anvil
+execute if score #levi levi_damage matches 4 run damage @s 4 minecraft:falling_anvil
+execute if score #levi levi_damage matches 5 run damage @s 5 minecraft:falling_anvil
+execute if score #levi levi_damage matches 6 run damage @s 6 minecraft:falling_anvil
+execute if score #levi levi_damage matches 7 run damage @s 7 minecraft:falling_anvil
+execute if score #levi levi_damage matches 8 run damage @s 8 minecraft:falling_anvil
+execute if score #levi levi_damage matches 9 run damage @s 9 minecraft:falling_anvil
+execute if score #levi levi_damage matches 10 run damage @s 10 minecraft:falling_anvil
+execute if score #levi levi_damage matches 11 run damage @s 11 minecraft:falling_anvil
+execute if score #levi levi_damage matches 12 run damage @s 12 minecraft:falling_anvil
+execute if score #levi levi_damage matches 13 run damage @s 13 minecraft:falling_anvil
+execute if score #levi levi_damage matches 14 run damage @s 14 minecraft:falling_anvil
+execute if score #levi levi_damage matches 15 run damage @s 15 minecraft:falling_anvil
+execute if score #levi levi_damage matches 16 run damage @s 16 minecraft:falling_anvil

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:evoker_spawn_egg"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Thundercrux, memento of the Divine Schism, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Thundercrux"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{tcrux:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:thundercrux"
+        ],
+        "function":"weapons:thundercrux"
+    },
+    "parent": "weapons:platemail"
+}

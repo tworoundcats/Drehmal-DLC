@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "ECHOING IN THE ABYSS.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

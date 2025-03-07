@@ -1,0 +1,2 @@
+tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＭＡＮＵＡＬ ＲＥＢＯＯＴ ＲＥＱＵＩＲＥＤ ＡＴ ＡＬＬ ＬＩＮＫＥＤ ＴＯＷＥＲＳ ＴＯ ＲＥＳＴＯＲＥ ＡＶＳＹＳ ＤＡＴＡＢＡＳＥ ＭＥＭＯＲＹ ＡＮＤ ＷＡＲＰ ＴＲＡＶＥＬ","color":"yellow"},{"text":"／／"}]
+schedule function terminus:gifts/1/5 6s

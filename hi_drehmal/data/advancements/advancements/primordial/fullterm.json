@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": {
+            "color": "aqua",
+            "text": "Fully Online! "
+        },
+        "description": {
+            "color": "gray",
+            "italic": false,
+            "text": "Warp tower functionality augmented. - 100% Network Linkage Achieved "
+        },
+        "icon": {
+            "item": "minecraft:sea_lantern"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "experience": 40
+    },
+    "criteria": {
+        "arena": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements":[
+        [
+            "arena"
+        ]
+    ],
+    "parent": "advancements:primordial/75p"
+}
+
+   

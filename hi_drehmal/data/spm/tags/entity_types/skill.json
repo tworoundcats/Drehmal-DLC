@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:skeleton",
+        "minecraft:wither_skeleton",
+        "minecraft:zombie",
+        "minecraft:piglin",
+        "minecraft:piglin_brute",
+        "minecraft:enderman",
+        "minecraft:spider",
+        "husk",
+        "stray",
+        "drowned",
+        "area_effect_cloud",
+        "armor_stand",
+        "phantom",
+        "cave_spider"
+    ]
+}

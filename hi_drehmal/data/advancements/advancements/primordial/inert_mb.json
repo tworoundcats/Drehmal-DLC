@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Anticlimax",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "After reuniting the pieces of Avsohm’s greatest weapon, you are struck by its lack of effectiveness. Is this really it? - Discovered Inert Mythbreaker",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:warped_fungus_on_a_stick",
+            "nbt":"{CustomModelData:5}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/right_fragment"
+}

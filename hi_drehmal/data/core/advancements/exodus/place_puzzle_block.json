@@ -1,0 +1,49 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:cyan_concrete"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": -2593,
+                  "max": -2583
+                },
+                "y": {
+                  "min": 35,
+                  "max": 44
+                },
+                "z": {
+                  "min": 2290,
+                  "max": 2292
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/exodus/placed_puzzle_block"
+  }
+}

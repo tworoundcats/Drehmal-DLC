@@ -1,0 +1,5 @@
+setblock 26930 32 -139 minecraft:repeating_command_block[conditional=false,facing=south]{Command:'title @a[x=26930,y=32,z=-139,distance=..10] actionbar {"text":"The emptiness in your soul feels strongest here...","color":"dark_red"}',CustomName:'{"text":"@"}',LastExecution:446962845L,LastOutput:'{"extra":[{"translate":"commands.title.show.actionbar.single","with":[{"color":"dark_red","insertion":"ElectroDragon","clickEvent":{"action":"suggest_command","value":"/tell ElectroDragon "},"hoverEvent":{"action":"show_entity","contents":{"type":"minecraft:player","id":"57f1069f-5b36-43e1-8a90-6c4ca6e9c4f3","name":{"text":"ElectroDragon"}}},"extra":[{"text":""},{"text":"ElectroDragon"},{"text":""}],"text":""}]}],"text":"[20:52:38] "}',SuccessCount:1,TrackOutput:1b,UpdateLastExecution:1b,auto:1b,conditionMet:1b,powered:0b}
+
+fill 26927 29 -140 26933 35 -140 minecraft:bedrock
+
+fill 26505 64 -285 26513 64 -285 minecraft:light_gray_concrete

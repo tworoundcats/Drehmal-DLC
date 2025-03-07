@@ -1,0 +1,1 @@
+summon spider ~ ~ ~ {Tags:["day_aggro","spawnspinner"],CustomName:'{"text":"Spawnspinner"}',ArmorItems:[{id:"golden_boots",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:soul_speed,lvl:3}]}},{},{},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Team:"death_effect"}

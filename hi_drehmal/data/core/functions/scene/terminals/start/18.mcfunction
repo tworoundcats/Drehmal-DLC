@@ -1,0 +1,2 @@
+tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／ＥＲＲ： ＰＯＤ ＤＯＯＲＳ ＪＡＭＭＥＤ！ "},{"text":"ＢＲＥＡＫ ＧＬＡＳＳ ＦＯＲ ＭＡＮＵＡＬ ＥＶＡＣ","color":"yellow"},{"text":"／／"}]
+scoreboard players set #stomb_goodmorning? bool 1

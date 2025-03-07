@@ -1,0 +1,65 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:space",
+                "position":{
+                    "x": {
+                        "min": -194,
+                        "max": -188
+                    },
+                    "y": {
+                        "min": 128,
+                        "max": 132
+                    },
+                    "z": {
+                        "min": 186,
+                        "max": 193
+                    }
+                }
+            }
+        },
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:space",
+                "position":{
+                    "x": {
+                        "min": -195,
+                        "max": -194
+                    },
+                    "y": {
+                        "min": 128,
+                        "max": 132
+                    },
+                    "z": {
+                        "min": 187,
+                        "max": 192
+                    }
+                }
+            }
+        },
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:space",
+                "position":{
+                    "x": {
+                        "min": -194,
+                        "max": -189
+                    },
+                    "y": {
+                        "min": 132,
+                        "max": 134
+                    },
+                    "z": {
+                        "min": 187,
+                        "max": 192
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "nbt": "{Inventory:[{tag:{dia:{}}}]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:name_game/searchindv"
+    }
+  }
+  

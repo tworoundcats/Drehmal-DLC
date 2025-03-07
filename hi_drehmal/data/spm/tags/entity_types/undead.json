@@ -1,0 +1,17 @@
+{
+    "values": [
+        "zombie",
+        "zombie_villager",
+        "zombie_horse",
+        "zombified_piglin",
+        "skeleton",
+        "stray",
+        "wither_skeleton",
+        "wither",
+        "drowned",
+        "husk",
+        "skeleton_horse",
+        "phantom",
+        "warden"
+    ]
+}

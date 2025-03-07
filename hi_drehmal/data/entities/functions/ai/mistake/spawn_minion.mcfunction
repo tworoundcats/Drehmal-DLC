@@ -1,0 +1,3 @@
+playsound minecraft:dcustom.entity.zombie_villager.cure hostile @a ~ ~ ~ 1 2
+summon zombie ~ ~1 ~ {Motion:[0.0d,0.3d,0.0d],Silent:1b,DeathLootTable:"entities:mob/living_arcana",Health:10f,IsBaby:1b,CustomName:'{"text":"Living Arcana"}',ArmorItems:[{},{},{},{id:"minecraft:command_block",Count:1b}],ArmorDropChances:[-327.670F,-327.670F,-327.670F,-327.670F],Attributes:[{Name:generic.max_health,Base:10},{Name:generic.knockback_resistance,Base:-0.5},{Name:generic.movement_speed,Base:0.45},{Name:generic.attack_damage,Base:6},{Name:generic.attack_knockback,Base:2}],Tags:["living_arcane"],Team:"gsquid_aggro"}
+kill @s

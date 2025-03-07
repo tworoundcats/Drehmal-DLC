@@ -1,0 +1,13 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition":"reference",
+            "name":"players:holding/glass_bottle_mainhand"
+        },
+        {
+            "condition":"reference",
+            "name":"players:holding/glass_bottle_offhand"
+        }
+    ]
+}

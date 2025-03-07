@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 2577,
+                  "max": 2583
+                },
+                "y": {
+                  "min": 225,
+                  "max": 230
+                },
+                "z": {
+                  "min": 1208,
+                  "max": 1214
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/sal_mevir/enter_tower"
+  }
+}

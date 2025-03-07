@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:shroomlight",
+    "minecraft:end_stone",
+    "minecraft:blackstone"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "rewards": {
+        "recipes": [
+            "weapons:voidteardagger"
+        ],
+        "function":"weapons:voidtear"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Voidtear:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "minecraft:silverfish_spawn_egg"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Voidtear Dagger"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the Voidtear Dagger, cloaking knife of Blue Exodus, unlocked."
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:legendary_weapons"
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Some Hope For the Future?",
+            "color": "gold"
+        },
+        "description": {
+            "text": "The Prismatic Council has entrusted you with the weapon of its fallen champion so that the realm might be saved from its direst fates. - Discovered Yriel’s Sanctuary",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:raw_gold_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "overworld": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:discoveries/ytaj"
+}

@@ -1,0 +1,1 @@
+function spm:mob/ninja/summon

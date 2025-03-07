@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] Virtuo succumbed to the rapid decay at the edge of the world, never realizing their flawless realm of perfection. She never had the opportunity to forgive her brother."]
+schedule function core:scene/credits/18 200t

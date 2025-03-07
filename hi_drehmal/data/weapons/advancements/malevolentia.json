@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Malevolentia:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:malevolentia"
+        ],
+        "function":"weapons:malevolentia"
+    },
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Malevolentia"
+        },
+        "description": {
+            "text": "Recipe for Malevolentia, Maelihs’ cast aside weapon, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:pig_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:zenith"
+}

@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["mcdw:bow_haunted_bow"]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/phantom"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:bow_haunted_bow"
+        },
+        "title": {
+            "color": "red",
+            "text": "Phantom's Spectre"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Phantom's Spectre"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:forgotten"
+}

@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:shield"
+            ],
+            "nbt": "{virtuo_aegis:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:items/virtuo_aegis/lift"
+    }
+  }
+  

@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "tick": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "rewards": {
+      "function": "n_lev:player_init"
+    }
+  }
+  

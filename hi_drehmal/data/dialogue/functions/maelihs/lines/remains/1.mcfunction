@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 13
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"You are an impossibility, little remnant."},{"text":"\n- [ How did you know I’m Avsohmic? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 26"}}]

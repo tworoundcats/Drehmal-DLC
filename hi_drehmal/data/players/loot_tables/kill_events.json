@@ -1,0 +1,122 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{event:25}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "killer",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "killUuid",
+                  "op": "replace"
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "direct_entity": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:stone_sword"
+                      ],
+                      "nbt": "{Scars:1b}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{event:20}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "killer",
+              "ops": [
+                {
+                  "source": "UUID",
+                  "target": "puuid",
+                  "op": "replace"
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "direct_entity": {
+                  "equipment": {
+                    "chest": {
+                      "nbt": "{Parenchyma:1b}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{event:17}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "direct_entity": {
+                  "equipment": {
+                    "mainhand": {
+                      "nbt": "{Orchid:1b}"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

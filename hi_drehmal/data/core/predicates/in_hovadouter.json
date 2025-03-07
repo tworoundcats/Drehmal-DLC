@@ -1,0 +1,65 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"minecraft:location_check",     
+            "predicate": {
+                "dimension":"minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27276,
+                        "max": 27283
+                    },
+                    "y": {
+                        "min": 81,
+                        "max": 100
+                    },
+                    "z": {
+                        "min": 60,
+                        "max": 110
+                    }
+                }
+            }
+        },
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:overworld",      
+                "position":{
+                    "x": {
+                        "min": 27276,
+                        "max": 27314
+                    },
+                    "y": {
+                        "min": 81,
+                        "max": 100
+                    },
+                    "z": {
+                        "min": 60,
+                        "max": 66
+                    }
+                }
+            }
+        },
+        {
+            "condition":"minecraft:location_check",
+            "predicate": {
+                "dimension":"minecraft:overworld",  
+                "position":{
+                    "x": {
+                        "min": 27308,
+                        "max": 27314
+                    },
+                    "y": {
+                        "min": 81,
+                        "max": 100
+                    },
+                    "z": {
+                        "min": 60,
+                        "max": 102
+                    }
+                }
+            }
+        }
+    ]
+}

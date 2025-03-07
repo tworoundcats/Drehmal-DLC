@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "SDS",
+        "ESE"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glistering_melon_slice"
+        },
+        "S": {
+            "item": "minecraft:shroomlight"
+        },
+        "D": {
+            "item": "minecraft:diamond_boots"
+        },
+        "E": {
+            "item": "minecraft:enchanted_book"
+        }
+    },
+    "result": {
+        "item": "minecraft:salmon_spawn_egg",
+        "count": 1
+    }
+}

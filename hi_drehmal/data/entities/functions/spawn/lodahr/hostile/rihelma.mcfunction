@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {CustomName:'{"text":"rihelma mob"}',Tags:["lodahr_mob"]}

@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#RB",
+        "MNY",
+        "LIG"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:purple_stained_glass"
+        },
+        "R": {
+            "item": "minecraft:red_stained_glass"
+        },
+        "B": {
+            "item": "minecraft:blue_stained_glass"
+        },
+        "M": {
+            "item": "minecraft:magenta_stained_glass"
+        },
+        "N": {
+            "item": "minecraft:diamond_shovel"
+        },
+        "Y": {
+            "item": "minecraft:yellow_stained_glass"
+        },
+        "L": {
+            "item": "minecraft:light_blue_stained_glass"
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+        },
+        "G": {
+            "item": "minecraft:green_stained_glass"
+        }
+    },
+    "result": {
+        "item": "minecraft:cat_spawn_egg",
+        "count": 1
+    }
+}

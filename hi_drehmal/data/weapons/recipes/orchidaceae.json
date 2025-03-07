@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gEg",
+        "iDi",
+        "LPL"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "D": {
+            "item": "minecraft:diamond_sword"
+        },
+        "L": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "P": {
+            "item": "minecraft:poppy"
+        }
+    },
+    "result": {
+        "item": "minecraft:trader_llama_spawn_egg",
+        "count": 1
+    }
+}

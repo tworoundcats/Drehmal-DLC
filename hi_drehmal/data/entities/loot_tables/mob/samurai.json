@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Chained Samurai Head\",\"color\":\"yellow\",\"italic\":false}'},SkullOwner:{Id:[I;82189613,1972454720,-1525172411,1239973143],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTlkZTQ5NjhjNTIxYjA5MjU5MGYxZTdjOThjMDgwMTVkOWE0NWZlMmY1MDE4ZDMzNGVkMjVhZDQ4MmZjYTY0YiJ9fX0=\"}]}}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{event:24}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "players:kill_events"
+          }
+        ]
+      }
+    ]
+  }
+  

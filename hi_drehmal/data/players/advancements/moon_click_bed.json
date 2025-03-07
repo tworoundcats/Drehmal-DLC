@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biome": "minecraft:snowy_taiga",
+              "dimension": "minecraft:lodahr",
+              "block": {
+                "tag": "minecraft:beds"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/moon_click_bed"
+  }
+}

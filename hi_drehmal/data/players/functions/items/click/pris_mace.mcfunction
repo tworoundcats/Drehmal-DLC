@@ -1,0 +1,4 @@
+execute if score #nogo temp matches 1 run tellraw @s {"text":"The Spell Fails...","italic":true,"color":"red"}
+execute unless score #nogo temp matches 1 if entity @s[tag=prismatic_used] if score @s pris_cool matches 100.. run title @s actionbar {"text":"You can only return once per day!","color":"red"}
+execute unless score #nogo temp matches 1 if entity @s[tag=prismatic_used] unless score @s pris_cool matches 100.. run function players:items/pris_mace/cancel
+execute unless score #nogo temp matches 1 if score @s pris_cool matches 20.. unless entity @s[tag=prismatic_used] run function players:items/pris_mace/spawn

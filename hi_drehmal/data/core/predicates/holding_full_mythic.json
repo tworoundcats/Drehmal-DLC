@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "nbt":"{CooldownEnch:1b,VitalityEnch:1b,SpeedEnch:1b}"
+        }
+      }
+    }
+  }
+  

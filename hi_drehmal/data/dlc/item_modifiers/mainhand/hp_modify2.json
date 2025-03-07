@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{hp:1b}"
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "name": "",
+        "amount": 0.08,
+        "operation": "multiply_total",
+        "slot": "mainhand"
+      }
+    ]
+  }
+]

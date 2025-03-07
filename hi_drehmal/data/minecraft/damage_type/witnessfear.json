@@ -1,0 +1,6 @@
+{
+    "death_message_type": "default",
+    "message_id": "witnessfear",
+    "exhaustion": 0.1,
+    "scaling": "never"
+}

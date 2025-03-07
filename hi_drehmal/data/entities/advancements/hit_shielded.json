@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "hitdn":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"g_shielded\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/shield_guardian/hit_shielded"
+    }
+}

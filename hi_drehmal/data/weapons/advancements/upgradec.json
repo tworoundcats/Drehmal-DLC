@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Upgrade Components"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Mythic Resources Used to Upgrade the Strongest of Equipment"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_ingot"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    },
+    "parent": "weapons:equipment"
+}

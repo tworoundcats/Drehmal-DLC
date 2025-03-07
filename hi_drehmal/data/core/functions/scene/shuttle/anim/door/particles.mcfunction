@@ -1,0 +1,1 @@
+execute in minecraft:space run particle minecraft:portal -182.5 132 189.5 0.2 0.2 0.2 10 300

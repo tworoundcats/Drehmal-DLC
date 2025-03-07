@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:grass_block"
+      },
+      "title": {
+        "text": "The Painted City",
+        "color": "light_purple",
+        "italic": false
+      },
+      "description": {
+        "text": "The proud peoples of Akhlo’Rohma call this diverse hilltop city the center of all creation. - Discovered Dusps",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/athrah",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "max": 2200,
+                        "min": 2042
+                    },
+                    "y": {
+                        "max": 255,
+                        "min": 110
+                    },
+                    "z": {
+                        "max": -760,
+                        "min": -861
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 50
+    }
+  }
+  

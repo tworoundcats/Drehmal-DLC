@@ -1,0 +1,1 @@
+summon zombie ~ ~ ~ {Silent:1b,ArmorItems:[{},{},{},{id:stone_button,Count:1b,tag:{CustomModelData:693410001}}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Team:"hide_name",CustomName:'{"text":"Hive Drone"}',Health:30f,Attributes:[{Name:generic.max_health,Base:30},{Name:generic.attack_damage,Base:6}],Tags:["zombee"]}

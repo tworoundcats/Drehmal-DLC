@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "LED",
+        " i "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "L": {
+            "item": "minecraft:lead"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:zombie_villager_spawn_egg",
+        "count": 1
+    }
+}

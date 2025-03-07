@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "x": 6227,
+      "y": 158,
+      "z": -1766
+    },
+    "light": {
+      "light": 9
+    }
+  }
+}

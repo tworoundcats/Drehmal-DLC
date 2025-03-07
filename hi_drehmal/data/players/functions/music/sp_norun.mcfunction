@@ -1,0 +1,1 @@
+execute if entity @a[x=47,y=96,z=141,dx=5,dy=5,dz=2,predicate=players:is_not_dev] run function players:music/space_walk

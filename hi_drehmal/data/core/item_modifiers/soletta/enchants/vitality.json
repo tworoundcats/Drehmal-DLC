@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+          {
+              "name":"vitality",
+              "attribute":"generic.max_health",
+              "operation":"addition",
+              "amount":4.0,
+              "slot":"mainhand"
+          }
+      ]
+    },
+    {
+      "function":"set_nbt",
+      "tag":"{VitalityEnch:1b}"
+    }
+  ]
+  

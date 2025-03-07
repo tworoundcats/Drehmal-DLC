@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "I CAN SEE YOU.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

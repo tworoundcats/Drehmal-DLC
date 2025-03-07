@@ -1,0 +1,137 @@
+{
+  "criteria": {
+    "0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_axe\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_boots\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_chestplate\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_helmet\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_hoe\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_leggings\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_pickaxe\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_shovel\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    },
+    "8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bundle"
+            ],
+            "nbt": "{Items:[{id:\"minecraft:netherite_sword\",tag:{no_upgrade:1b}}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  ],
+  "rewards": {
+    "function": "players:misc/no_upgrade/reward_bundle"
+  }
+}

@@ -1,0 +1,3 @@
+tellraw @s ["",{"text":"----| ","color":"dark_gray"},{"text":"Moderators ","color":"#aa06b3"},{"text":"| ----","color":"dark_gray"},"\n","\n","Dodgerflamy",{"text":", ","color":"dark_gray"},"HJD",{"text":", ","color":"dark_gray"},"bruhaps",{"text":", ","color":"dark_gray"},"Estelle",{"text":", ","color":"dark_gray"},"Nicholas",{"text":", ","color":"dark_gray"},"White_Fang",{"text":", ","color":"dark_gray"},"Gielow",{"text":", ","color":"dark_gray"},"Casper Slakes",{"text":", ","color":"dark_gray"},"fobk (formerly wiggin)",{"text":", ","color":"dark_gray"},"WaterFlow"]
+
+#,{"text":", ","color":"dark_gray"},"HJD"

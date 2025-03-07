@@ -1,0 +1,1 @@
+execute if entity @s[tag=weak_lightning] run function core:scene/mb_run/w_lighting_strike

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Mythicals"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Few weapons achieve this status. Uncovering an immensely powerful Mythical weapon requires skill of the highest caliber."
+        },
+        "icon": {
+            "item": "minecraft:netherite_sword"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    },
+    "parent": "weapons:equipment"
+}

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#BS",
+        "DND",
+        "SB#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "B": {
+            "item": "minecraft:bone_block"
+        },
+        "S": {
+            "item": "minecraft:spider_eye"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "N": {
+            "item": "minecraft:netherite_sword"
+        }
+    },
+    "result": {
+        "item": "minecraft:llama_spawn_egg",
+        "count": 1
+    }
+}

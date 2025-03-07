@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] But Drehmal? They were not filled with sorrow. They had no regrets. They did not fight back against the natural cycle of existence."]
+schedule function core:scene/credits/21 200t

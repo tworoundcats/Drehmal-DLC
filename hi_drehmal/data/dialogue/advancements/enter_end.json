@@ -1,0 +1,31 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#teth.dia.begin"
+                  },
+                  "score": "bool"
+                },
+                "range": 1
+              }
+            }
+          ],
+          "to": "minecraft:the_end"
+        }
+      }
+    },
+    "rewards": {
+      "function": "dialogue:teth/enter/0"
+    }
+  }
+  

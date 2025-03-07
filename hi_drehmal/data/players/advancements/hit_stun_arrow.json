@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "type": {
+                "direct_entity": {
+                    "type":"arrow",
+                    "nbt": "{Tags:[\"stasis_bolt\"]}"
+                }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:items/check_stun_arrow"
+    }
+  }
+  

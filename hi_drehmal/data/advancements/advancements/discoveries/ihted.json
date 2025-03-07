@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shroomlight"
+      },
+      "title": {
+        "text": "Class In Session",
+        "color": "yellow",
+        "italic": false
+      },
+      "description": {
+        "text": "hough it was the source of their greatest sorrow, Khive could not destroy a repository of so much runic knowledge. Transplanted onto Lo’Dahr, the lower floors are home to the Mystics and their pupils. - Discovered Ihted Academy",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/storm_heart",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": -1031,
+                        "max": -912
+                    },
+                    "y": {
+                        "min": 107,
+                        "max": 255
+                    },
+                    "z": {
+                        "min": -1051,
+                        "max": -903
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

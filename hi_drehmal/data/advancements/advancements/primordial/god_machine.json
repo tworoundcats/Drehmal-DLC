@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Rites of Ascension",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "In pursuit of divinity, one must first be willing to sacrifice everything. - Found the God Machine",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/azimuth"
+}

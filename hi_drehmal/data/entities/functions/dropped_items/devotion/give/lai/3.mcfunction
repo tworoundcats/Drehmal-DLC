@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add lai.3
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1001001,display:{Name:'{"text":"Ardorbrand +1","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Warmth exists in many things, spreading"}','{"text":"with increased intensity. Your fervor"}','{"text":"for Lai, the Brightwyrm glows brighter."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+2 Attack Damage","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;-502834183,-944553399,-1280574779,510770491],Slot:"offhand"}]} 1

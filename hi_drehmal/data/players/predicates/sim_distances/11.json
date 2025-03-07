@@ -1,0 +1,21 @@
+[
+    {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "distance": {
+                "horizontal": {
+                    "max":143,
+                    "min":0
+                }
+            }
+        }
+    },
+    {
+        "condition":"entity_scores",
+        "entity":"this",
+        "scores": {
+            "renderDistance": 11
+        }
+    }
+]

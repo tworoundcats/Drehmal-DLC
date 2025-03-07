@@ -1,0 +1,1 @@
+execute if predicate spm:location/warped_forest if predicate spm_cf:mob/s1enderman/replace_rate run function spm:mob/s1enderman/replace

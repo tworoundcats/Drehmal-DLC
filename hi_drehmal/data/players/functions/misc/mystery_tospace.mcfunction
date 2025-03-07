@@ -1,0 +1,1 @@
+scoreboard players set #space_beento bool 1

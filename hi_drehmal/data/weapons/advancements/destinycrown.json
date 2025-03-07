@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Crown",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Crown",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals_decorations:celestium_crown"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinycrown"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyCrown:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:mythical"
+}

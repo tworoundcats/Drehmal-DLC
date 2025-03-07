@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "YOU.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

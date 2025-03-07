@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:space"
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/mystery_tospace"
+  }
+}

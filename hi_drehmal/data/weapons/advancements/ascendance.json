@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Ascendance:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:ascendance"
+        ],
+        "function":"weapons:ascendance"
+    },
+    "display": {
+        "title": {
+            "text": "Ascendance",
+            "color": "gold"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the Sword of the Ascendance, channeler of divinity, unlocked."
+        },
+        "icon": {
+            "item": "minecraft:llama_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:frenzy"
+}

@@ -1,0 +1,35 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min":2576,
+                        "max":2584
+                    },
+                    "y": {
+                        "min":228,
+                        "max":232
+                    },
+                    "z": {
+                        "min":1207,
+                        "max":1215
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/sal_mevir/start_anim"
+    }
+  }
+  

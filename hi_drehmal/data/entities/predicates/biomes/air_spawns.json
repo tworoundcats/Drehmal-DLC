@@ -1,0 +1,17 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"reference",
+            "name":"entities:biomes/rihelma"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/vayniklah"
+        },
+        {
+            "condition":"reference",
+            "name":"entities:biomes/palaesida"
+        }
+    ]
+}

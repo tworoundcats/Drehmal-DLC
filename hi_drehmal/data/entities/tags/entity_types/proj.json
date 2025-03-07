@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:arrows",
+        "minecraft:boat",
+        "minecraft:ender_pearl",
+        "minecraft:small_fireball",
+        "minecraft:fireball",
+        "minecraft:dragon_fireball",
+        "minecraft:experience_orb",
+        "minecraft:evoker_fangs",
+        "minecraft:trident",
+        "minecraft:minecart",
+        "minecraft:lightning_bolt",
+        "minecraft:snowball",
+        "minecraft:potion",
+        "minecraft:egg",
+        "minecraft:firework_rocket",
+        "minecraft:llama_spit"
+    ]
+  }

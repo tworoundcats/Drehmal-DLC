@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "DND",
+        "RQR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:obsidian"
+        },
+        "E": {
+            "item": "minecraft:end_crystal"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "N": {
+            "item": "minecraft:netherite_sword"
+        },
+        "R": {
+            "item": "minecraft:ender_pearl"
+        },
+        "Q": {
+            "item": "minecraft:end_stone"
+        }
+    },
+    "result": {
+        "item": "minecraft:magma_cube_spawn_egg",
+        "count": 1
+    }
+}

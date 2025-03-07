@@ -1,0 +1,56 @@
+{
+    "pools": [
+            {
+                "rolls": 1.0,
+                "entries": [
+                    {
+                        "type": "minecraft:item",
+                        "name": "minecraft:command_block",
+                        "functions": [
+                            {
+                                "function":"set_nbt",
+                                "tag":"{event:23}"
+                            },
+                            {
+                                "function": "minecraft:copy_nbt",
+                                "source": {
+                                    "type": "context",
+                                    "target": "this"
+                                },
+                                "ops": [
+                                    {
+                                        "source":"HandItems[0].tag.avHorseID",
+                                        "target":"avHorseID",
+                                        "op":"replace"
+                                    }
+                                ]
+                            },
+                            {
+                                "function": "minecraft:copy_nbt",
+                                "source": {
+                                    "type": "context",
+                                    "target": "this"
+                                },
+                                "ops": [
+                                    {
+                                        "source":"HandItems[0].tag.horseOwnerID",
+                                        "target":"horseOwnerID",
+                                        "op":"replace"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "rolls": 1,
+                "entries": [
+                    {
+                        "type": "minecraft:loot_table",
+                        "name": "minecraft:entities/horse"
+                    }
+                ]
+            }
+        ]
+    }

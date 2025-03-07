@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "gPg",
+        "DCD",
+        "QnQ"
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gold_ingot"
+        },
+        "P": {
+            "item": "minecraft:purpur_pillar"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "C": {
+            "item": "minecraft:crossbow"
+        },
+        "Q": {
+            "item": "minecraft:quartz"
+        },
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:cod_spawn_egg",
+        "count": 1
+    }
+}

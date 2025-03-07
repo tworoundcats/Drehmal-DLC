@@ -1,0 +1,8 @@
+#activates each time a wave mob is summoned
+scoreboard players remove com_mob_count foundry 1
+
+#replace this summon command, make sure the mob has {Tags:["foundry_wave"]}
+summon wither_skeleton ~ ~ ~ {Team:"foundry",Silent:1b,DeathLootTable:"players:kill_events",Health:90f,Tags:["foundry_wave","valhalla_wave","yav_com"],CustomName:'{"text":"Commander Unit"}',HandItems:[{id:"minecraft:netherite_sword",Count:1b},{}],HandDropChances:[-999.000F,0.085F],ArmorItems:[{},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:8850307},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0,Operation:0,UUID:[I;839929700,-1696906728,-1728864682,-282909560]}]}},{id:"minecraft:netherite_chestplate",Count:1b,tag:{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0,Operation:0,UUID:[I;47663749,-1666300281,-1523637821,68678364]}]}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1588096129,470896178,-1736494308,-995102482],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFmMzc0MTZlNTI1M2UzZjU0MGVlZTc4MTM3ZDBiNGI5ZThjOWY2YmFmNWRiNjQ2Y2Y5MDY5Y2ZkNGIyOGM0NSJ9fX0="}]}}}}],ArmorDropChances:[0.085F,-999.000F,-999.000F,-999.000F],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:90},{Name:generic.follow_range,Base:120},{Name:generic.attack_damage,Base:10}]}
+particle minecraft:angry_villager ~ ~ ~ 0.4 0.4 0.4 0 10 normal
+
+playsound minecraft:dcustom.entity.blaze.hurt hostile @a ~ ~ ~ 1 0.7

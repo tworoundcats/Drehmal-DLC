@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"","italic":false},{"text":"Finally, thank you for playing.","italic":true,"color":"white"}]
+schedule function core:scene/credits/12 168t

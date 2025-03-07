@@ -1,0 +1,1 @@
+function spm:mob/soul_knight/summon

@@ -1,0 +1,103 @@
+[
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#em_fight_active?"
+          },
+          "score": "bool"
+        },
+        "range": 1
+      }
+    },
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "position": {
+              "x": {
+                "min": 9997,
+                "max": 10014
+              },
+              "y": {
+                "min": 51,
+                "max": 79
+              },
+              "z": {
+                "min": 10191,
+                "max": 10248
+              }
+            },
+            "dimension": "minecraft:true_end"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "position": {
+              "x": {
+                "min": 9966,
+                "max": 10008
+              },
+              "y": {
+                "min": 59,
+                "max": 98
+              },
+              "z": {
+                "min": 10007,
+                "max": 10062
+              }
+            },
+            "dimension": "minecraft:true_end"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "position": {
+              "x": {
+                "min": 9987,
+                "max": 10013
+              },
+              "y": {
+                "min": 54,
+                "max": 96
+              },
+              "z": {
+                "min": 9970,
+                "max": 10023
+              }
+            },
+            "dimension": "minecraft:true_end"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "position": {
+              "x": {
+                "min": 9986,
+                "max": 10010
+              },
+              "y": {
+                "min": 54,
+                "max": 110
+              },
+              "z": {
+                "min": 10036,
+                "max": 10057
+              }
+            },
+            "dimension": "minecraft:true_end"
+          }
+        }
+      ]
+    }
+  ]
+  

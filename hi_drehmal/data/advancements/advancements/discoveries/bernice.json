@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:prismarine"
+      },
+      "title": {
+        "text": "Challenger’s Grotto",
+        "color": "light_purple",
+        "italic": false
+      },
+      "description": {
+        "text": "None who have entered have survived to tell the tale of what lurks in the sea cave wherein Dahr’s treasure lies. - Discovered Challenger’s Grotto.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/noha",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": -471,
+                        "max": -381
+                    },
+                    "y": {
+                        "min": 12,
+                        "max": 61
+                    },
+                    "z": {
+                        "min": 504,
+                        "max": 613
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

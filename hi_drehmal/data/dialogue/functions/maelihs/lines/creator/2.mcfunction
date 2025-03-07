@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 5
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"...I have no reason to tell you this. We’ve never met. And yet, here we are."},{"text":"\n- [ I want to ask you something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 12"}}]

@@ -1,0 +1,1 @@
+tellraw @s {"text":"The presence of divinity feels stronger here.","italic":true,"color":"dark_gray"}

@@ -1,0 +1,1 @@
+give @s mythicmetals:starrite{display:{Name:'[{"text":"Starrite","italic":false,"color":"aqua"}]',Lore:['[{"text":"A bit of star and space matter","italic":false}]','[{"text":"in its raw form, maybe it can be","italic":false}]','[{"text":"refined into something useable","italic":false}]']}} 1

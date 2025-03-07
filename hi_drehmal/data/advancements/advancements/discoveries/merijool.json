@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cracked_stone_bricks"
+      },
+      "title": {
+        "text": "Village of Autumn",
+        "color": "red",
+        "italic": false
+      },
+      "description": {
+        "text": "Merijool used to be a jungle, but with the Frostfang Catastrophe it slowly changed into an autumnal forest. - Discovered Okeke",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/highfall",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "max": -1540,
+                        "min": -1580
+                    },
+                    "y": {
+                        "max": 255,
+                        "min": 0
+                    },
+                    "z": {
+                        "max": -430,
+                        "min": -495
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

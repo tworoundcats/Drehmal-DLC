@@ -1,0 +1,34 @@
+{
+  "surface_builder": "minecraft:nope",
+  "depth": 0,
+  "scale": 0,
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "category": "savanna",
+  "effects": {
+    "sky_color": 986895,
+    "fog_color": 3026478,
+    "water_color": 4871789,
+    "water_fog_color": 1579045,
+    "grass_color": 0,
+    "foliage_color": 0,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "particle": {
+      "options": {
+        "type": "squid_ink"
+      },
+      "probability": 0.005
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

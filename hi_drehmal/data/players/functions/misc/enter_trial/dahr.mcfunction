@@ -1,0 +1,1 @@
+tellraw @s {"text":"A surge of unrelenting confidence brings a fierce and widening grin to your face.","italic":true,"color":"dark_gray"}

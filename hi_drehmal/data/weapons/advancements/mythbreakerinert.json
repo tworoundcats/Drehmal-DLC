@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Inert Mythbreaker"
+        },
+        "description": {
+            "text": "Recipe for Mythbreaker, Avsohm's greatest creation, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:blaze_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{inertMythbreaker:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:inert_mythbreaker"
+        ],
+        "function":"weapons:inert_mythbreaker"
+    },
+    "parent": "weapons:mythical"
+}

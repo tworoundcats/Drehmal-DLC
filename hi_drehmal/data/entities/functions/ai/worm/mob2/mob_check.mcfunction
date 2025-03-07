@@ -1,0 +1,1 @@
+execute unless entity @e[tag=bern_mob2] if entity @e[type=armor_stand,tag=worm_head,scores={ai_state=1..5}] run schedule function entities:ai/worm/phases/mob2_1 1.25

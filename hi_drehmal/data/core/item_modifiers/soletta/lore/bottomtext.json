@@ -1,0 +1,89 @@
+[
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{SpeedEnch:1b}"}}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [ ] [ ] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+
+
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{SpeedEnch:1b}"}}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"Δ"},{"text":"] [ ] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{SpeedEnch:1b}"}}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"Ɑ"},{"text":"] [ ] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{CooldownEnch:1b}"}}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{SpeedEnch:1b}"}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"β"},{"text":"] [ ] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+
+
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{SpeedEnch:1b}"}}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"Ɑ"},{"text":"] [","italic":"false","color":"gray"},{"text":"Δ"},{"text":"] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}},
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate": {"equipment": {"mainhand": {"nbt":"{CooldownEnch:1b}"}}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{SpeedEnch:1b}"}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"β"},{"text":"] [","italic":"false","color":"gray"},{"text":"Δ"},{"text":"] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"inverted","term": {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{SpeedEnch:1b}"}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"Ɑ"},{"text":"] [","italic":"false","color":"gray"},{"text":"β"},{"text":"] [ ]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    },
+
+
+    {
+        "function": "set_lore",
+        "conditions":[
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{VitalityEnch:1b}"}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{CooldownEnch:1b}"}}}},
+            {"condition":"entity_properties","entity":"this","predicate":{"equipment":{"mainhand":{"nbt":"{SpeedEnch:1b}"}}}}
+        ],
+        "lore": [[{"text":"Mythical","italic":"false","color":"gold"},{"text":" [","italic":"false","color":"gray"},{"text":"Ɑ"},{"text":"] [","italic":"false","color":"gray"},{"text":"β"},{"text":"] [","italic":"false","color":"gray"},{"text":"Δ"},{"text":"]","italic":"false","color":"gray"}]],
+        "replace":"false"
+    }
+  ]
+  

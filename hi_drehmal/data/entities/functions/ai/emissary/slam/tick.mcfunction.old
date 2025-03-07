@@ -1,0 +1,14 @@
+execute store result score #spike temp store result score #spike2 temp run scoreboard players add @s ai_timer 1
+scoreboard players remove #spike temp 1
+scoreboard players operation #spike temp %= #3 const
+scoreboard players remove #spike2 temp 1
+scoreboard players operation #spike2 temp /= #3 const
+scoreboard players set #yep temp 0
+execute positioned ^ ^ ^1 unless block ~ ~-1 ~ #core:empty if block ~0.25 ~ ~0.25 #core:empty if block ~-0.25 ~ ~0.25 #core:empty if block ~0.25 ~ ~-0.25 #core:empty if block ~-0.25 ~ ~-0.25 #core:empty run scoreboard players set #yep temp 1
+execute if score #yep temp matches 0 run kill @s
+execute if score #yep temp matches 1 run teleport @s ^ ^ ^1
+
+execute if score #spike temp matches 0 if score #spike2 temp matches 1 if score @s ai_state matches 3.. positioned ^ ^-8 ^-4.8 facing ^ ^-3 ^5 run function entities:ai/emissary/slam/spike_spawn
+execute if score #spike temp matches 0 if score #spike2 temp matches 2 if score @s ai_state matches 2.. positioned ^ ^-8 ^-4.8 facing ^ ^-3 ^5 run function entities:ai/emissary/slam/spike_spawn
+execute if score #spike temp matches 0 if score #spike2 temp matches 3..4 if score @s ai_state matches 1.. positioned ^ ^-8 ^-4.8 facing ^ ^-3 ^5 run function entities:ai/emissary/slam/spike_spawn
+execute if score #spike temp matches 0 if score #spike2 temp matches 5.. positioned ^ ^-8 ^-4.8 facing ^ ^-3 ^5 run function entities:ai/emissary/slam/spike_spawn

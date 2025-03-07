@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:dark_oak_sapling"
+      },
+      "title": {
+        "text": "People of The Heartwood",
+        "color": "dark_green",
+        "italic": false
+      },
+      "description": {
+        "text": "Once proud guardians of the forest, they now hide away after half of it was destroyed. - Discovered Gozak",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/civilization",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "max": 2310,
+                        "min": 2224
+                    },
+                    "y": {
+                        "max": 255,
+                        "min": 0
+                    },
+                    "z": {
+                        "max": 2522,
+                        "min": 2413
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

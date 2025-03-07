@@ -1,0 +1,14 @@
+execute if score @s ai_state matches 1 run particle dragon_breath ~ 101.1 ~ 1 0 0 1.2 0 force
+execute if score @s ai_state matches 1 run particle dragon_breath ~ 101.1 ~ -1 0 0 1.2 0 force
+execute if score @s ai_state matches 1 run particle dragon_breath ~ 101.1 ~ 0 0 1 1.2 0 force
+execute if score @s ai_state matches 1 run particle dragon_breath ~ 101.1 ~ 0 0 -1 1.2 0 force
+execute if score @s ai_state matches 2 run particle dragon_breath ~ 101.1 ~ 1 0 1 0.8484 0 force
+execute if score @s ai_state matches 2 run particle dragon_breath ~ 101.1 ~ -1 0 1 0.8484 0 force
+execute if score @s ai_state matches 2 run particle dragon_breath ~ 101.1 ~ 1 0 -1 0.8484 0 force
+execute if score @s ai_state matches 2 run particle dragon_breath ~ 101.1 ~ -1 0 -1 0.8484 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ 0.5 0 0.86602540378 1.2 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ 0.5 0 -0.86602540378 1.2 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ -0.5 0 0.86602540378 1.2 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ -0.5 0 -0.86602540378 1.2 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ 1 0 0 1.2 0 force
+execute if score @s ai_state matches 3 run particle dragon_breath ~ 101.1 ~ -1 0 0 1.2 0 force

@@ -1,0 +1,10 @@
+{
+    "criteria":{
+        "enterlodahr":{
+            "trigger":"minecraft:changed_dimension",
+            "conditions":{
+                "to":"minecraft:lodahr"
+            }
+        }
+    }
+}

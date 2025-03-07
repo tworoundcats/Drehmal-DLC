@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "ODO",
+        "#R#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:golden_apple"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "O": {
+            "item": "minecraft:oak_sapling"
+        },
+        "D": {
+            "item": "minecraft:diamond_chestplate"
+        },
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        }
+    },
+    "result": {
+        "item": "minecraft:creeper_spawn_egg",
+        "count": 1
+    }
+}

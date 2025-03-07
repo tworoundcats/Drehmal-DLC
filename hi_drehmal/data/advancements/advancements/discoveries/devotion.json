@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:lectern"
+      },
+      "title": {
+        "text": "Devotion",
+        "color": "green",
+        "italic": false
+      },
+      "description": {
+        "text": "Drehmal has many sacred places to commune with powerful beings, willing to offer you their aid in return for service and sacrifices",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "advancements:discoveries/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

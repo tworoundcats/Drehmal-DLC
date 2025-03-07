@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "entities:cele/vrare"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "entities:cele/rare"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "entities:cele/uncommon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "entities:cele/common"
+        }
+      ]
+    }
+  ]
+}

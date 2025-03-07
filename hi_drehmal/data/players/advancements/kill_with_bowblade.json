@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "kill": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+            "killing_blow": {
+                "direct_entity": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{UltvaBowblade:1b}"
+                        }
+                    }
+                }
+            }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:items/ultva_bowblade/kill_entity"
+    }
+  }
+  

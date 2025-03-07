@@ -1,0 +1,12 @@
+[
+    {
+        "condition":"location_check",
+        "predicate": {
+            "block": {
+                "blocks": [
+                    "minecraft:water"
+                ]
+            }
+        }
+    }
+]

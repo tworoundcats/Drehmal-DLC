@@ -1,0 +1,1 @@
+tellraw @s {"text":"A regretful nostalgia hangs on the warm breeze, and the sound of your heart beating is suddenly deafening.","italic":true,"color":"dark_gray"}

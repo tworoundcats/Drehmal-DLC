@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:boat,tag=syzygy_box,distance=..0.001] run function players:items/syzygy/naughty_stats
+execute as @a at @s if score @s uuid0 = #uuid0 temp if score @s uuid1 = #uuid1 temp if score @s uuid2 = #uuid2 temp if score @s uuid3 = #uuid3 temp run function players:items/syzygy/refresh_boat

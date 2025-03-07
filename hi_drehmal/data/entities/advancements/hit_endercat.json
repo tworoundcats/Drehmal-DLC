@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "hitdn":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"endercat\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:passive/endercat/check_hit"
+    }
+}

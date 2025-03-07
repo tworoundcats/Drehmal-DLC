@@ -1,0 +1,2 @@
+tag @s add spm.mob.water_ghost.trident.used
+#execute positioned ~-5 ~-5 ~-5 unless entity @e[tag=spm.mob.water_ghost,dx=10,dy=100,dz=10] at @s if predicate spm_cf:mob/water_ghost/lightning_rate run summon lightning_bolt ~ ~ ~

@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:cracked_polished_blackstone_bricks"
+      },
+      "title": {
+        "text": "Greyspire Castle",
+        "color": "dark_gray",
+        "italic": false
+      },
+      "description": {
+        "text": "While it is undisputed that this soaring fortification was once the headquarters of the Anti-Palaesidan faction during the Divine Schism, speculative whispers are more plentiful than facts about its current cloaked master. - Discovered Greyspire Castle.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/ihted",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": -881,  
+                        "max": -786
+                    },
+                    "y": {
+                        "min": 175,
+                        "max": 252
+                    },
+                    "z": {
+                        "min": 452,
+                        "max": 588
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

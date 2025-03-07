@@ -1,0 +1,85 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "type":"#entities:hostile",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"flying_bitch\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"loe_golem\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"killer_rabbit\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"burrowerSpawn\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"phoenix_ashes\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"blooddolphin\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        },
+        {
+            "condition":"entity_properties",
+            "entity":"this",
+            "predicate": {
+                "nbt":"{Tags:[\"dire_bear\"]}",
+                "location": {
+                    "dimension": "minecraft:lodahr"
+                }
+            }
+        }
+    ]
+}

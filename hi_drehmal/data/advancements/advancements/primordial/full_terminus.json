@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Heightened Clearance",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "ａｖＳＹＳ has granted you heightened Terminus permissions. The door in the Outer Towers wing of the Terminus should now be accessible. - Permissions Reacquired",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:light_gray_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/75p"
+}

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Helmet",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Helmet",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_helmet"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinyh"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyH:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinycrown"
+}

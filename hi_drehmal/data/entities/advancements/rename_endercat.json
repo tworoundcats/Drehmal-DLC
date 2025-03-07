@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "use_tag": {
+            "trigger":"minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:name_tag"
+                    ]
+                },
+                "entity": {
+                    "type":"ocelot",
+                    "nbt":"{Tags:[\"endercat\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function":"entities:passive/endercat/refund_nametag"
+    }
+}

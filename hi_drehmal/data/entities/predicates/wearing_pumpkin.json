@@ -1,0 +1,16 @@
+[
+    {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "equipment": {
+                "head": {
+                    "items":[
+                        "minecraft:carved_pumpkin",
+                        "minecraft:jack_o_lantern"
+                    ]
+                }
+            }
+        }
+    }
+]

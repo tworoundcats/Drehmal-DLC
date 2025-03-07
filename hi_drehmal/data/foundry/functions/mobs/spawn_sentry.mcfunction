@@ -1,0 +1,8 @@
+#activates each time a wave mob is summoned
+scoreboard players add sentry_mob_count foundry 1
+
+#replace this summon command, make sure the mob has {Tags:["foundry_wave"]}
+summon skeleton ~ ~ ~ {Silent:1b,Team:"foundry",DeathLootTable:"players:kill_events",PersistenceRequired:1b,Tags:["foundry_wave"],Team:"foundry",CustomName:'{"text":"Sentry Unit"}',HandItems:[{id:'minecraft:bow',Count:1b,tag:{display:{Name:'{"text":"AvGun"}'},Enchantments:[{id:'minecraft:power',lvl:6s},{id:'minecraft:punch',lvl:1s}],AttributeModifiers:[{AttributeName:'generic.max_health',Name:'generic.max_health',Amount:1,Operation:0,UUID:[1722011585,1682130088,-1410313119,-2063480891]}]}},{id:"minecraft:arrow",Count:7b}],HandDropChances:[-999.000F,1.000F],ArmorItems:[{id:'minecraft:iron_boots',Count:1b},{id:'minecraft:iron_leggings',Count:1b},{id:'minecraft:iron_chestplate',Count:1b},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1600956670,1044270905,-1222486736,787363462],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ4ZWIzMzE5YTMyNWQ5M2Y1OTQzNTRmMWM0N2VkZDgwYjhjODJlN2NjMjdlNTZhOWI5NGVhZjgyZDcyNTFiNSJ9fX0="}]}}}}],ArmorDropChances:[-999.000F,-999.000F,-999.000F,-999.000F],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:18},{Name:generic.attack_damage,Base:18}]}
+particle minecraft:angry_villager ~ ~ ~ 0.4 0.4 0.4 0 10 normal
+
+playsound minecraft:dcustom.entity.blaze.hurt hostile @a ~ ~ ~ 1 0.7

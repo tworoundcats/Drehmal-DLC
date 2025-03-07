@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shroomlight"
+    },
+    "title": {
+      "text": "A Bridge Between Worlds",
+      "color": "aqua",
+      "italic": false
+    },
+    "description": {
+      "text": "Every ship needs a harbor - Discovered the Resupply Depot",
+      "color": "gray",
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "advancements:discoveries/inscription_facility",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 1158,
+                  "max": 1285
+                },
+                "y": {
+                  "min": 118,
+                  "max": 233
+                },
+                "z": {
+                  "min": 280,
+                  "max": 365
+                }
+              },
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 55
+  }
+}

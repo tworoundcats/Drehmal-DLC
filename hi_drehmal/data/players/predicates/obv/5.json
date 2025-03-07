@@ -1,0 +1,31 @@
+[
+    {
+        "condition": "minecraft:value_check",
+        "value": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "#rx"
+            },
+            "score": "temp"
+        },
+        "range": {
+            "min": -90,
+            "max": 0
+        }
+    },
+    {
+        "condition": "minecraft:value_check",
+        "value": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "#ry"
+            },
+            "score": "temp"
+        },
+        "range": {
+            "min": 0
+        }
+    }
+]

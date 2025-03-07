@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Celesticord:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/celesticord"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mythicmetals_decorations:stormyx_chain"
+        },
+        "title": {
+            "color": "gold",
+            "text": "Celesticord"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained an Upgrade Component"
+        },
+        "hidden": true,
+        "show_toast": true
+        
+    },
+    "parent": "weapons:luminarite"
+}

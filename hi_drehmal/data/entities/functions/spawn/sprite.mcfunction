@@ -1,0 +1,2 @@
+# if this function changes all of the sprite summon commands in the hint_sprites section also need to be changed.
+summon bat ~ ~ ~ {ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],Tags:["sprite"],Silent:1b,Health:0.5f,Attributes:[{Name:"generic.max_health",Base:0.5d}],Passengers:[{id:experience_orb,Age:-32768s,Value:3s,Tags:["sprite_orb"]},{id:item,Tags:["sprite_light","no_magnet","scanned"],Age:-32767s,PickupDelay:32767s,Item:{id:soul_torch,Count:1b,tag:{CustomModelData:693410001}}}]}

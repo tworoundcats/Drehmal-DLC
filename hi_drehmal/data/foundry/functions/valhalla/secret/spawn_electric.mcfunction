@@ -1,0 +1,9 @@
+#ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],
+
+scoreboard players remove electric_mob_count foundry 1
+
+summon skeleton ~ ~ ~ {Team:"foundry",Silent:1b,DeathLootTable:"players:kill_events",Health:40f,Tags:["foundry_wave","valhalla_wave","fdry_deathray"],CustomName:'{"text":"Electric Unit"}',ArmorItems:[{},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:8851215},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0,Operation:0,UUID:[I;-1066890986,1634356836,-1318243464,-1635758908]}]}},{id:"minecraft:iron_chestplate",Count:1b,tag:{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0,Operation:0,UUID:[I;-2068945173,-1102165926,-1190009289,556484221]}]}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-662616329,-1973991523,-1808312113,1763872922],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQyNWVjZDA2ODQ3ZTQ5OGE4OWU0MmE2M2RlOGEwNzI3MzNjYjQ1ODZjYjMwMThkODM5NTExZDYwNjBmZjk0YyJ9fX0="}]}}}}],ArmorDropChances:[0.085F,-999.000F,-999.000F,-999.000F],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:120},{Name:generic.movement_speed,Base:0.2},{Name:generic.attack_damage,Base:12}]}
+particle minecraft:angry_villager ~ ~ ~ 0.4 0.4 0.4 0 10 normal
+particle minecraft:electric_spark ~ ~ ~ 0 0 0 1.7 10 normal
+
+playsound minecraft:dcustom.entity.blaze.hurt hostile @a ~ ~ ~ 1 0.7

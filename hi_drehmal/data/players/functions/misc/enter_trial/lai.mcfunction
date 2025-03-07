@@ -1,0 +1,1 @@
+tellraw @s {"text":"The heat in the air seems to lessen as your mind begins to course with hyperactive, bursting energy.","italic":true,"color":"dark_gray"}

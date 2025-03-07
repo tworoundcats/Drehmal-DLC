@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "hitdn":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"rhalon\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/rhalon/check_hit"
+    }
+}

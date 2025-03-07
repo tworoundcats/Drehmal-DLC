@@ -1,0 +1,9 @@
+schedule clear dialogue:myth/dia11/3leaveretina/0
+schedule clear dialogue:myth/dia11/3leaveretina/1
+schedule clear dialogue:myth/dia11/3leaveretina/2
+schedule clear dialogue:myth/dia11/3leaveretina/3
+schedule clear dialogue:myth/dia11/3leaveretina/4
+schedule clear dialogue:myth/dia11/3leaveretina/4b
+schedule clear dialogue:myth/dia11/3leaveretina/5
+schedule clear dialogue:myth/dia11/3leaveretina/6
+schedule clear dialogue:myth/dia11/3leaveretina/7

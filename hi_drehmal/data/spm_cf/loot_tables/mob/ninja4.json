@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "gunpowder",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "mythicmetals:silver_ingot",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Silver Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"The preffered currency for certain\",\"italic\":false}]','[{\"text\":\"goods\",\"italic\":false}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "mythicmetals:midas_gold_ingot",
+          "weight": 30,
+          "quality": 1,
+          "functions": [
+              {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{display:{Name:'[{\"text\":\"Midas Gold Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"A rare and valuable trading\",\"italic\":false}]','[{\"text\":\"currency\",\"italic\":false}]']}}"
+              }
+          ]
+      },
+      {
+        "type": "item",
+        "name": "mythicmetals:tin_ingot",
+        "weight": 5,
+        "quality": 1,
+        "functions": [
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Eldorite:1b,display:{Name:'[{\"text\":\"Eldorite\",\"italic\":false,\"color\":\"light_purple\"}]',Lore:['[{\"text\":\"The most saught after Material in all\",\"italic\":false}]','[{\"text\":\"of Drehmal, used for top-end jewelry\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Legendary\",\"italic\":false,\"color\":\"light_purple\"}]']}}"
+            }
+        ]
+    },
+        {
+          "type": "item",
+          "name": "flint",
+          "weight": 400
+        }
+      ]
+    }
+  ]
+}

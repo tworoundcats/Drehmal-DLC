@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "players:is_not_dev"
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 9772,
+                  "max": 9867
+                },
+                "y": {
+                  "min": 0,
+                  "max": 65
+                },
+                "z": {
+                  "min": 9900,
+                  "max": 10022
+                }
+              },
+              "dimension": "minecraft:true_end"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/emissary/killplanes/2"
+  }
+}

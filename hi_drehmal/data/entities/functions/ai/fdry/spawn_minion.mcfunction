@@ -1,0 +1,4 @@
+playsound minecraft:dcustom.entity.zombie_villager.cure hostile @a ~ ~ ~ 1 2
+playsound minecraft:custom.exec.spawn_minion hostile @a ~ ~ ~ 1
+summon zombie ~ ~1 ~ {Silent:1b,DeathLootTable:"entities:mob/energy_sprite",Health:10f,IsBaby:1b,Motion:[0.0,0.3,0.0],Tags:["energy_sprite"],CustomName:'{"text":"Energy Sprite"}',ArmorItems:[{},{},{},{id:"minecraft:sea_lantern",Count:1b}],ArmorDropChances:[-327.670F,-327.670F,-327.670F,-327.670F],ActiveEffects:[{Id:14b,Amplifier:10b,Duration:200000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:10},{Name:generic.knockback_resistance,Base:-0.5},{Name:generic.movement_speed,Base:0.45},{Name:generic.attack_damage,Base:6},{Name:generic.attack_knockback,Base:2}],Team:"foundry"}
+kill @s

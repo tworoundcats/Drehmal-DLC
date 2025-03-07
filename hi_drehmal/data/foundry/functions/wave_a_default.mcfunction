@@ -1,0 +1,12 @@
+scoreboard players set base_mob_count foundry 1
+scoreboard players set unstable_mob_count foundry 1
+scoreboard players set heavy_mob_count foundry 1
+scoreboard players set contaminated_mob_count foundry 1
+scoreboard players set agility_mob_count foundry 1
+scoreboard players set sentry_mob_count foundry 1
+scoreboard players set primal_mob_count foundry 1
+scoreboard players set chemistry_mob_count foundry 1
+scoreboard players set superheavy_mob_count foundry 1
+scoreboard players set rage_mob_count foundry 1
+scoreboard players set technomancer_mob_count foundry 1
+scoreboard players set executive_mob_count foundry 1

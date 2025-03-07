@@ -1,0 +1,40 @@
+execute if score #alch_ani int matches 109.. if score #part_timer temp matches 9 run particle end_rod -2429.75 33.95 2949.75
+execute if score #alch_ani int matches 110.. if score #part_timer temp matches 10 run particle end_rod -2430.0 33.95 2949.75
+execute if score #alch_ani int matches 111.. if score #part_timer temp matches 11 run particle end_rod -2430.25 33.95 2949.75
+execute if score #alch_ani int matches 112.. if score #part_timer temp matches 12 run particle end_rod -2430.5 33.95 2949.75
+execute if score #alch_ani int matches 113.. if score #part_timer temp matches 13 run particle end_rod -2430.75 33.95 2949.75
+execute if score #alch_ani int matches 114.. if score #part_timer temp matches 14 run particle end_rod -2431.0 33.95 2949.75
+execute if score #alch_ani int matches 115.. if score #part_timer temp matches 15 run particle end_rod -2431.25 33.95 2949.75
+execute if score #alch_ani int matches 116.. if score #part_timer temp matches 16 run particle end_rod -2431.5 33.95 2949.75
+execute if score #alch_ani int matches 117.. if score #part_timer temp matches 17 run particle end_rod -2431.75 33.95 2949.75
+execute if score #alch_ani int matches 118.. if score #part_timer temp matches 18 run particle end_rod -2432.0 33.95 2949.75
+execute if score #alch_ani int matches 119.. if score #part_timer temp matches 19 run particle end_rod -2432.25 33.95 2949.75
+execute if score #alch_ani int matches 120.. if score #part_timer temp matches 0 run particle end_rod -2432.25 33.95 2950.0
+execute if score #alch_ani int matches 121.. if score #part_timer temp matches 1 run particle end_rod -2432.25 33.95 2950.25
+execute if score #alch_ani int matches 122.. if score #part_timer temp matches 2 run particle end_rod -2432.25 33.95 2950.5
+execute if score #alch_ani int matches 123.. if score #part_timer temp matches 3 run particle end_rod -2432.25 33.95 2950.75
+execute if score #alch_ani int matches 124.. if score #part_timer temp matches 4 run particle end_rod -2432.25 33.95 2951.0
+execute if score #alch_ani int matches 125.. if score #part_timer temp matches 5 run particle end_rod -2432.25 33.95 2951.25
+execute if score #alch_ani int matches 126.. if score #part_timer temp matches 6 run particle end_rod -2432.25 33.95 2951.5
+execute if score #alch_ani int matches 127.. if score #part_timer temp matches 7 run particle end_rod -2432.25 33.95 2951.75
+
+execute if score #alch_ani int matches 110.. if score #part_timer temp matches 10 run particle end_rod -2429.75 33.95 2950.0
+execute if score #alch_ani int matches 111.. if score #part_timer temp matches 11 run particle end_rod -2429.75 33.95 2950.25
+execute if score #alch_ani int matches 112.. if score #part_timer temp matches 12 run particle end_rod -2429.75 33.95 2950.5
+execute if score #alch_ani int matches 113.. if score #part_timer temp matches 13 run particle end_rod -2429.75 33.95 2950.75
+execute if score #alch_ani int matches 114.. if score #part_timer temp matches 14 run particle end_rod -2429.75 33.95 2951.0
+execute if score #alch_ani int matches 115.. if score #part_timer temp matches 15 run particle end_rod -2429.75 33.95 2951.25
+execute if score #alch_ani int matches 116.. if score #part_timer temp matches 16 run particle end_rod -2429.75 33.95 2951.5
+execute if score #alch_ani int matches 117.. if score #part_timer temp matches 17 run particle end_rod -2429.75 33.95 2951.75
+execute if score #alch_ani int matches 118.. if score #part_timer temp matches 18 run particle end_rod -2429.75 33.95 2952.0
+execute if score #alch_ani int matches 119.. if score #part_timer temp matches 19 run particle end_rod -2429.75 33.95 2952.25
+execute if score #alch_ani int matches 120.. if score #part_timer temp matches 0 run particle end_rod -2430.0 33.95 2952.25
+execute if score #alch_ani int matches 121.. if score #part_timer temp matches 1 run particle end_rod -2430.25 33.95 2952.25
+execute if score #alch_ani int matches 122.. if score #part_timer temp matches 2 run particle end_rod -2430.5 33.95 2952.25
+execute if score #alch_ani int matches 123.. if score #part_timer temp matches 3 run particle end_rod -2430.75 33.95 2952.25
+execute if score #alch_ani int matches 124.. if score #part_timer temp matches 4 run particle end_rod -2431.0 33.95 2952.25
+execute if score #alch_ani int matches 125.. if score #part_timer temp matches 5 run particle end_rod -2431.25 33.95 2952.25
+execute if score #alch_ani int matches 126.. if score #part_timer temp matches 6 run particle end_rod -2431.5 33.95 2952.25
+execute if score #alch_ani int matches 127.. if score #part_timer temp matches 7 run particle end_rod -2431.75 33.95 2952.25
+
+execute if score #alch_ani int matches 232 run setblock -2432 34 2950 air

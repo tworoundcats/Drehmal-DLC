@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Aurora:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/aurora"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:gauntlet_soul_fists"
+        },
+        "title": {
+            "color": "red",
+            "text": "Aurora"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Aurora Gauntlet"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:harpoon"
+}

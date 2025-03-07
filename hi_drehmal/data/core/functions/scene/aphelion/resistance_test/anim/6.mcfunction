@@ -1,0 +1,2 @@
+execute in minecraft:space run particle minecraft:portal 6.5 133.5 101.5 0 0 0 1 100
+execute in minecraft:space positioned 6 133 101 run playsound minecraft:dcustom.block.chorus_flower.death ambient @a[distance=..50] ~ ~ ~ 10 0.5

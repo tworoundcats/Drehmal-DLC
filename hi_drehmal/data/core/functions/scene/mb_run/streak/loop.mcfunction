@@ -1,0 +1,12 @@
+scoreboard players remove #loop temp 1
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~ ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~1 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~-1 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~2 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~-2 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~3 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~-3 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~4 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 positioned ~ ~-4 ~ if block ~ ~ ~ #core:empty unless block ~ ~-1 ~ #core:empty run function core:scene/mb_run/streak/loop
+execute if score #loop temp matches 0.. unless score #term temp matches 1 positioned ^ ^ ^2 run function core:scene/mb_run/streak/loop
+execute unless score #loop temp matches 0.. unless score #term temp matches 1 run function core:scene/mb_run/streak/term

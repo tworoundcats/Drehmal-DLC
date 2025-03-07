@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"["},{"text":"\uff41\uff56\uff33\uff39\uff33","obfuscated":true,"color":"aqua"},{"text":"] \uff0f\uff0f"},{"text":"99","obfuscated":true},{"text":"."},{"text":"\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19\uff19","obfuscated":true},{"text":"\uff05\uff0f\uff0f"}]
+playsound minecraft:dcustom.block.end_portal_frame.fill ambient @a 27304.54 123.00 55.45 6 0

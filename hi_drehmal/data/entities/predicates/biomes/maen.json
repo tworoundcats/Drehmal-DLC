@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "location": {
+      "biome": "minecraft:cherry_grove",
+      "dimension": "minecraft:lodahr"
+    }
+  }
+}

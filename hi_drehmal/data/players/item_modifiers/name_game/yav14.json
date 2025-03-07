@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "WITH AN AUDIENCE OF THOUSANDS.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

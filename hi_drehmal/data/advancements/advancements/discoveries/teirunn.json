@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light_blue_terracotta"
+      },
+      "title": {
+        "text": "Monastery of Virtuo",
+        "color": "blue",
+        "italic": false
+      },
+      "description": {
+        "text": "A devout order of Drehmari founded this austere monastery long ago to follow the teachings of Virtuo. What secrets lie within its lofty towers and crystal caverns? - Discovered Teiruun",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/insight_altar",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 5539,
+                        "max": 5641
+                    },
+                    "y": {
+                        "min": 176,
+                        "max": 255
+                    },
+                    "z": {
+                        "min": 2955,
+                        "max": 3029
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 40
+    }
+  }
+  

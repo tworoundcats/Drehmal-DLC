@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_damage",
+      "damage": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#damage2"
+        },
+        "score": "temp",
+        "scale": 0.01
+      }
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{Unbreakable:0b}"
+    }
+  ]
+  

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "BDB",
+        "#N#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:prismarine"
+        },
+        "B": {
+            "item": "minecraft:blaze_powder"
+        },
+        "D": {
+            "item": "minecraft:diamond_sword"
+        },
+        "N": {
+            "item": "minecraft:nautilus_shell"
+        }
+    },
+    "result": {
+        "item": "minecraft:bat_spawn_egg",
+        "count": 1
+    }
+}

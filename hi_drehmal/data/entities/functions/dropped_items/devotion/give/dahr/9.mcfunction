@@ -1,0 +1,8 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add dahr.9
+tag @s add dahr.maxxed
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s coast_armor_trim_smithing_template 1
+execute if score #tempest? bool matches 1 run give @s simplyswords:empowered_remnant{display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32} 1
+execute unless score #tempest? bool matches 1 run give @s bosses_of_mass_destruction:soul_star{b:1b,primalenergy:1b,display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32}
+give @s command_block{CustomModelData:1010003,display:{Name:'{"text":"Writ of Authority +3","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Long before the Felling of the Primal Tree,"}','{"text":"Dahr\'s mortal subjects lived on Lo\'Dahr within"}','{"text":"a vast warm sea. Though the Abyssal Elder\'s"}','{"text":"siblings changed the moon greatly, he retained"}','{"text":"the powers of kingship."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+32% Attack Speed","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0.32,Operation:1,UUID:[I;1083668125,-1137622754,-1444157536,1331386149],Slot:"offhand"}]} 1

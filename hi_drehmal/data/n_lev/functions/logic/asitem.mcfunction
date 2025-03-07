@@ -1,0 +1,1 @@
+data modify entity @s Item set from storage n_lev:storage tempItem

@@ -1,0 +1,1 @@
+execute unless entity @s[tag=checked_owner] run function entities:misc/check_fang_owner

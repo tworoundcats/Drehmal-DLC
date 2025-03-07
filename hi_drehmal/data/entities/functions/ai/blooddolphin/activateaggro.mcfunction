@@ -1,0 +1,3 @@
+summon minecraft:arrow ~ ~0.94 ~ {damage:0.0,Motion:[0.0d,-10.0d,0.0d],SoundEvent:"minecraft:entity.dolphin.ambient_water",Tags:["dolphin_aggro","ground_clear"]}
+execute as @e[tag=dolphin_aggro,sort=nearest,limit=1] at @s run data modify entity @s Owner set from entity @p[predicate=entities:aggro/player_m_as] UUID
+particle minecraft:dust_color_transition 1.0 0.0 0.0 1.0 0.5 0.0 0.0 ~ ~ ~ 0.6 0.2 0.6 0 20

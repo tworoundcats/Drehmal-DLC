@@ -1,0 +1,35 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min":1109,
+                        "max":1111
+                    },
+                    "y": {
+                        "min":127,
+                        "max":130
+                    },
+                    "z": {
+                        "min":976,
+                        "max":979
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/rihelma_puzzle/detection/star"
+    }
+  }
+  

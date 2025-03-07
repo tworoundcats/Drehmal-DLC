@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add maelhis.3
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1003001,display:{Name:'{"text":"Sprout of Anguish +1","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"You have lit a flame that symbolizes"}','{"text":"your devotion to the God of Chaos."}','{"text":"The fire has already ignited and"}','{"text":"shall spread further."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+4 Max Health","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:6,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:4,Operation:0,UUID:[I;1671915199,-753645082,-2066709690,-592257967],Slot:"offhand"}]} 1

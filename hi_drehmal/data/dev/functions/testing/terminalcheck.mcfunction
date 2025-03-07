@@ -1,0 +1,11 @@
+tellraw @s {"score":{"name":"#terms.stasis_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.avsal_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.mevir_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.exodus_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.core_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.aphelion_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.inscription_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.ring_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.depot_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.gm_total","objective":"int"}}
+tellraw @s {"score":{"name":"#terms.halls_total","objective":"int"}}

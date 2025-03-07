@@ -1,0 +1,179 @@
+[
+  {
+      "condition": "minecraft:inverted",
+      "term": {
+          "condition": "minecraft:any_of",
+          "terms": [
+              {
+                  "condition": "minecraft:reference",
+                  "name": "players:locations/overture"
+              }
+          ]
+      }
+  },
+  {
+      "condition": "minecraft:any_of",
+      "terms": [
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": 3163,
+                          "max": 3233
+                      },
+                      "y": {
+                          "min": 85,
+                          "max": 105
+                      },
+                      "z": {
+                          "min": 3230,
+                          "max": 3270
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": -2872,
+                          "max": -2844
+                      },
+                      "y": {
+                          "min": 75,
+                          "max": 95
+                      },
+                      "z": {
+                          "min": 5271,
+                          "max": 5316
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": -2895,
+                          "max": -2812
+                      },
+                      "y": {
+                          "min": 0,
+                          "max": 140
+                      },
+                      "z": {
+                          "min": 5288,
+                          "max": 5401
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": -2823,
+                          "max": -2774
+                      },
+                      "y": {
+                          "min": 28,
+                          "max": 80
+                      },
+                      "z": {
+                          "min": 5290,
+                          "max": 5396
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": -2907,
+                          "max": -2883
+                      },
+                      "y": {
+                          "min": 65,
+                          "max": 90
+                      },
+                      "z": {
+                          "min": 5306,
+                          "max": 5354
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": 26862,
+                          "max": 26949
+                      },
+                      "y": {
+                          "min": 121,
+                          "max": 200
+                      },
+                      "z": {
+                          "min": -44,
+                          "max": 46
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "position": {
+                      "x": {
+                          "min": 4176,
+                          "max": 4334
+                      },
+                      "y": {
+                          "min": 10,
+                          "max": 55
+                      },
+                      "z": {
+                          "min": 4086,
+                          "max": 4168
+                      }
+                  },
+                  "dimension": "minecraft:overworld"
+              }
+          },
+          {
+              "condition": "minecraft:reference",
+              "name": "players:locations/resonant_halls_entrance_stairs"
+          },
+          {
+              "condition": "minecraft:reference",
+              "name": "players:locations/god_machine"
+          },
+          {
+              "condition": "minecraft:reference",
+              "name": "players:locations/spawn_tomb"
+          },
+          {
+              "condition": "minecraft:reference",
+              "name": "players:locations/highfall_cave"
+          },
+          {
+              "condition": "minecraft:reference",
+              "name": "players:locations/hotv_nomusic"
+          }
+      ]
+  }
+]

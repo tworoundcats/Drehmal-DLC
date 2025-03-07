@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:trident"
+            ],
+            "nbt": "{mod_proxigea:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:items/proxigea/overwrite/main"
+  }
+}

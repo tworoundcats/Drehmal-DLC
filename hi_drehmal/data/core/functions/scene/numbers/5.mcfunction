@@ -1,0 +1,4 @@
+item replace entity @e[type=armor_stand,tag=num_syzygy_4] armor.head with minecraft:player_head{display:{Name:"{\"text\":\"Golden 4\"}"},SkullOwner:{Id:[I;281284759,1465010981,-1932275481,1010953782],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFiOWM0ZDZmNzIwOGIxNDI0Zjg1OTViZmMxYjg1Y2NhYWVlMmM1YjliNDFlMGY1NjRkNGUwYWNhOTU5In19fQ=="}]}}} 1
+execute in minecraft:lodahr run particle block gold_block -478 73.2 -215 0.2 0.2 0.2 0 10
+execute in minecraft:lodahr run playsound minecraft:dcustom.entity.experience_orb.pickup ambient @a -478 73.2 -215 2 2
+schedule function core:scene/numbers/6 30t

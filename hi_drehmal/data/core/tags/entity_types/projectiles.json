@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:arrows",
+      "minecraft:snowball",
+      "minecraft:potion",
+      "minecraft:egg",
+      "minecraft:fireball",
+      "minecraft:dragon_fireball",
+      "minecraft:small_fireball",
+      "minecraft:llama_spit",
+      "minecraft:firework_rocket"
+    ]
+  }

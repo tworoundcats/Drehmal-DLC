@@ -1,0 +1,6 @@
+kill @s
+setblock 4488 64 6540 minecraft:chest[facing=north,type=single,waterlogged=false]{Items:[{Count:1b,Slot:13b,id:"minecraft:nether_brick",tag:{Enchantments:[{id:"minecraft:protection",lvl:1s}],HideFlags:1,display:{Lore:['{"text":"Sahd\'s legends speak of a","color":"dark_purple"}','{"text":"frenzied weapon that was split","color":"dark_purple"}','{"text":"into five fragments, hidden","color":"dark_purple"}','{"text":"across the island of Sahd. It is","color":"dark_purple"}','{"text":"said that a powerful, runic","color":"dark_purple"}','{"text":"forge exists somewhere on the","color":"dark_purple"}','{"text":"island, perched within the","color":"dark_purple"}','{"text":"caldera of a volcano. Toss all","color":"dark_purple"}','{"text":"five fragments into the red","color":"dark_purple"}','{"text":"bricked forge to recreate the","color":"dark_purple"}','{"text":"mythical blade.","color":"dark_purple"}'],Name:'{"text":"Fragment of Wrath","color":"gold","italic":false,"underlined":true}'},fzy_frag:4}}]}
+playsound minecraft:dcustom.entity.evoker.prepare_summon master @a[distance=..20] 4488 64 6540 100 1.8
+particle minecraft:totem_of_undying 4488 64.5 6540 0.1 0.1 0.1 0.15 100
+scoreboard players set #wrathfrag? bool 1
+execute positioned 4488 64.5 6540 run function entities:dropped_items/fzy/wrathring

@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:tinted_glass"
+      },
+      "title": {
+        "text": "Heart of the Tempest",
+        "color": "dark_gray",
+        "italic": false
+      },
+      "description": {
+        "text": "After being interred, the bones of Palaesida grew restless. Bursting out of their casket, they formed a mindlessly destructive cloud which rendered a scenic land uninhabitable - Breached the Heart of the Tempest",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/aeongale",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 442,
+                        "max": 467
+                    },
+                    "y": {
+                        "min": 139,
+                        "max": 163
+                    },
+                    "z": {
+                        "min": 443,
+                        "max": 469
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 394
+    }
+  }
+  

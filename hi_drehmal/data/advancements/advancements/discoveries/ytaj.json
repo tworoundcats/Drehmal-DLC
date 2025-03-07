@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Pantheon",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "You feel small. - Trespassed upon Ytaj, sacred place of all divinity",
+            "color": "gray",
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:quartz_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "experience": 394
+    },
+    "criteria": {
+        "none": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:discoveries/lodahr"
+}

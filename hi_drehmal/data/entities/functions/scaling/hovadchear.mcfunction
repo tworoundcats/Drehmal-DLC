@@ -1,0 +1,5 @@
+execute if score playercount playercount matches 1 run data merge entity @s {Attributes:[{Base:200.0d, Name: "generic.max_health"},{Base:15.0d, Name: "generic.attack_damage"}],Health:200.0f}
+execute if score playercount playercount matches 2..3 run data merge entity @s {Attributes:[{Base:350.0d, Name: "generic.max_health"},{Base:16.0d, Name: "generic.attack_damage"}],Health:350.0f}
+execute if score playercount playercount matches 4..5 run data merge entity @s {Attributes:[{Base:500.0d, Name: "generic.max_health"},{Base:17.0d, Name: "generic.attack_damage"}],Health:500.0f}
+execute if score playercount playercount matches 6..7 run data merge entity @s {Attributes:[{Base:650.0d, Name: "generic.max_health"},{Base:18.0d, Name: "generic.attack_damage"}],Health:650.0f}
+execute if score playercount playercount matches 8.. run data merge entity @s {Attributes:[{Base:800.0d, Name: "generic.max_health"},{Base:20.0d, Name: "generic.attack_damage"}],Health:800.0f}

@@ -1,0 +1,2 @@
+execute at @s positioned ~ ~2.15 ~ positioned ^-0.12 ^0.25 ^0.48 run particle minecraft:dust 1 1 0 0.7
+execute at @s positioned ~ ~2.15 ~ positioned ^0.12 ^0.25 ^0.48 run particle minecraft:dust 1 1 0 0.7

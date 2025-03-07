@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "location": {
+      "position": {
+        "x": {
+          "min": 511,
+          "max": 514
+        },
+        "y": {
+          "min": 9,
+          "max": 15
+        },
+        "z": {
+          "min": 1298,
+          "max": 1299
+        }
+      },
+      "dimension": "minecraft:lodahr"
+    }
+  }
+}

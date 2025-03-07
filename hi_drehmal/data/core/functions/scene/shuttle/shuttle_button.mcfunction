@@ -1,0 +1,5 @@
+execute if score #shuttleState num matches 0 if entity @a[predicate=core:in_hangar,predicate=!core:in_shuttle] run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＣＬＥＡＲ ＨＡＮＧＡＲ ＯＦ ＰＥＲＳＯＮＮＥＬ ＢＥＦＯＲＥ ＬＡＵＮＣＨ／／"}]
+execute if score #shuttleState num matches 0 unless entity @a[predicate=core:in_hangar,predicate=!core:in_shuttle] if entity @a[predicate=core:in_shuttle,predicate=!core:riding_minecart] run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＡＬＬ ＰＡＳＳＥＮＧＥＲＳ ＭＵＳＴ ＢＥ ＳＥＡＴＥＤ ＢＥＦＯＲＥ ＬＡＵＮＣＨ／／"}]
+execute if score #shuttleState num matches 0 unless entity @a[predicate=core:in_hangar,predicate=!core:in_shuttle] unless entity @a[predicate=core:in_shuttle,predicate=!core:riding_minecart] run function core:scene/shuttle/start
+
+advancement revoke @s only core:shuttle/shuttle_button

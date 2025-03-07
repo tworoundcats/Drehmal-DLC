@@ -1,0 +1,9 @@
+schedule clear dialogue:myth/dia12/2stasisfacility/0
+schedule clear dialogue:myth/dia12/2stasisfacility/1
+schedule clear dialogue:myth/dia12/2stasisfacility/2
+schedule clear dialogue:myth/dia12/2stasisfacility/3
+schedule clear dialogue:myth/dia12/2stasisfacility/4
+schedule clear dialogue:myth/dia12/2stasisfacility/5
+schedule clear dialogue:myth/dia12/2stasisfacility/6
+schedule clear dialogue:myth/dia12/2stasisfacility/7
+schedule clear dialogue:myth/dia12/2stasisfacility/8

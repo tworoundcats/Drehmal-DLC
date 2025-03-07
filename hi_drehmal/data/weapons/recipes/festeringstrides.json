@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#F#",
+        "RDR",
+        "BFB"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bone_meal"
+        },
+        "F": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "D": {
+            "item": "minecraft:diamond_boots"
+        },
+        "B": {
+            "item": "minecraft:bone_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:tropical_fish_spawn_egg",
+        "count": 1
+    }
+}

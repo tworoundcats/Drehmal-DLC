@@ -1,0 +1,1 @@
+execute in minecraft:space run playsound minecraft:dcustom.entity.iron_golem.death ambient @a -204 130 189 2 1.2

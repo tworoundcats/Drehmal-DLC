@@ -1,0 +1,64 @@
+{
+  "scale": 0.4,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "sky_color": 14190533,
+    "fog_color": 13989026,
+    "water_color": 10410751,
+    "water_fog_color": 16761586,
+    "foliage_color": 16744191,
+    "grass_color": 9502356,
+    "particle": {
+      "options": {
+        "type": "minecraft:heart"
+      },
+      "probability": 0.00005
+    }
+  },
+  "surface_builder": "minecraft:grass",
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [
+		],
+    "creature": [
+      {
+        "type": "minecraft:rabbit",
+        "weight": 100,
+        "minCount": 12,
+        "maxCount": 24
+      }
+    ],
+    "ambient": [
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": true,
+  "temperature": 0.95,
+  "downfall": 0.8,
+  "category": "jungle",
+  "depth": 0.2
+}

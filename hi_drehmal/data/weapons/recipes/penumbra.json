@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "CDC",
+        "OHO"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_wool"
+        },
+        "B": {
+            "item": "minecraft:tinted_glass"
+        },
+        "C": {
+            "item": "minecraft:coal"
+        },
+        "D": {
+            "item": "minecraft:diamond_leggings"
+        },
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "H": {
+            "item": "minecraft:crying_obsidian"
+        }
+    },
+    "result": {
+        "item": "minecraft:enderman_spawn_egg",
+        "count": 1
+    }
+}

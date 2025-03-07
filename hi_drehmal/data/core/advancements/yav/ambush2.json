@@ -1,0 +1,39 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:reference",
+              "name": "players:is_not_dev"
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": 26870,
+                    "max": 26880
+                  },
+                  "y": {
+                    "min": 0,
+                    "max": 20
+                  },
+                  "z": {
+                    "min": -77,
+                    "max": -55
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/yav/ambush2"
+    }
+  }
+  

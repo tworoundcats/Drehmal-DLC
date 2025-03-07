@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Heartaxe:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:heartaxe"
+        ],
+        "function":"weapons:heartaxe"
+    },
+    "display": {
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the Heartaxe, weapon of fables, unlocked."
+        },
+        "hidden": true,
+        "icon": {
+            "item": "minecraft:wolf_spawn_egg"
+        },
+        "show_toast": true,
+        "frame": "task",
+        "announce_to_chat": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "The Heartaxe"
+        }
+    },
+    "parent": "weapons:legendary_weapons"
+}

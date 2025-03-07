@@ -1,0 +1,1 @@
+tellraw @s {"text":"Nauseating panic drives your eyes wide and quickens your breathing, yet you feel a self-conscious need to show steely control.","italic":true,"color":"dark_gray"}

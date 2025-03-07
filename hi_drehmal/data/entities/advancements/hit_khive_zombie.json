@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "hitdn":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"khive_zombie\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/khive_zombie/check_hit"
+    }
+}

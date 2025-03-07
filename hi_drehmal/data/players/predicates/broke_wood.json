@@ -1,0 +1,300 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkOakLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkBirchLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkSpruceLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkAcaciaLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkDarkOakLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkJungleLg": {
+                    "min":1
+                }
+            }
+        },
+
+
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkOakSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkBirchSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkSpruceSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkAcaciaSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkDarkOakSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkJungleSl": {
+                    "min":1
+                }
+            }
+        },
+
+
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkOakSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkBirchSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkSpruceSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkAcaciaSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkDarkOakSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkJungleSw": {
+                    "min":1
+                }
+            }
+        },
+
+
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkOakWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkBirchWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkSpruceWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkAcaciaWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkDarkOakWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkJungleWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCrimLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCrimSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCrimSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCrimWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkWarpedLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkWarpedSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkWarpedSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkWarpedWd": {
+                    "min":1
+                }
+            }
+        }
+
+    ]
+}

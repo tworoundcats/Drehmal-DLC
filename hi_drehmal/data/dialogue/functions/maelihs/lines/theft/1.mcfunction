@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 33
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Tell me, were the screams of the palace’s residents as you slaughtered them as glorious as I’ve imagined?"},{"text":"\n- [ Uh... ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 53"}},{"text":"\n- [ Their screams were music to my ears! ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 54"}}]

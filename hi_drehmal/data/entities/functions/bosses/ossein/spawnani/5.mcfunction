@@ -1,0 +1,1 @@
+bossbar set health name {"text":"Skull Disciple Ossein","obfuscated":false,"color":"white"}

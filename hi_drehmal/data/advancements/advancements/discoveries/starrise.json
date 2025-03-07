@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Atop Paradise",
+            "color": "dark_green"
+        },
+        "description": {
+            "text": "Rihelma’s most sacred lands lie atop the largest and highest single mountain in the realm. - Summited Aldregakar, the Star-Rise",
+            "color": "gray",
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:brown_concrete"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "experience": 40
+    },
+    "criteria": {
+        "none": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:discoveries/lodahr"
+}

@@ -1,0 +1,13 @@
+{
+    "criteria":{
+        "enterspace":{
+            "trigger":"minecraft:changed_dimension",
+            "conditions":{
+                "to":"minecraft:space"
+            }
+        }
+    },
+    "rewards": {
+      "function": "players:misc/entered_space"
+    }
+}

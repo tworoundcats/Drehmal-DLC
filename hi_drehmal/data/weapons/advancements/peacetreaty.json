@@ -1,0 +1,38 @@
+{
+    "rewards": {
+        "recipes": [
+            "weapons:peacetreaty"
+        ],
+        "function":"weapons:peacetreaty"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{PeaceTreaty:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "title": {
+            "color": "dark_purple",
+            "text": "Peace Treaty"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for Peace Treaty, the symbol of undying alliances, unlocked."
+        },
+        "icon": {
+            "item": "minecraft:bee_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:legendary_weapons"
+}

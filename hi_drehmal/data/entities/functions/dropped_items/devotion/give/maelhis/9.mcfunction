@@ -1,0 +1,8 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add maelhis.9
+tag @s add maelhis.maxxed
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s minecraft:netherite_upgrade_smithing_template
+execute unless score #tempest? bool matches 1 run give @s bosses_of_mass_destruction:soul_star{a:1b,primalenergy:1b,display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32}
+execute if score #tempest? bool matches 1 run give @s simplyswords:empowered_remnant{display:{Name:'["",{"text":"???","italic":false,"color":"gold"}]'},HideFlags:32} 1
+give @s command_block{CustomModelData:1003003,display:{Name:'{"text":"Sprout of Anguish +3","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"\\"Ah, Ael Irien... do you know what"}','{"text":"suffering you have inflicted upon"}','{"text":"this realm? Your greatest sin, felt"}','{"text":"by all souls, millenia later. You hide"}','{"text":"behind a curtain, concealing your"}','{"text":"true wickedness. You are cowardice"}','{"text":"incarnate.\\""}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+10 Max Health","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:6,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:10,Operation:0,UUID:[I;331558246,1136741372,-1724593376,-1379418751],Slot:"offhand"}]} 1

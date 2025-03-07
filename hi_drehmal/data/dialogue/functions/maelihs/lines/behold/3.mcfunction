@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 16
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Not since the schism. Especially not since the death of their dear Greatbeast."},{"text":"\n- [ The schism? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 29"}},{"text":"\n- [ Let’s talk about something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 30"}}]

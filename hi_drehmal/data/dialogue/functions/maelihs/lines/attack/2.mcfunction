@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 18
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Your people wanted nothing more than for me to be dead."},{"text":"\n- [ How did you know I’m Avsohmic? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 32"}},{"text":"\n- [ I want to ask you something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 33"}}]

@@ -1,0 +1,39 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{avHorseArmor:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:warphorse_armor",
+            "weapons:warphorse_receiver"
+        ],
+        "function":"weapons:warphorse"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "minecraft:goat_spawn_egg"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "X35 Equine Augmentation Assembly"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for the Warp Horse Armor and Receiver, Red Dawn’s prototype technology, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true
+    },
+    "parent": "weapons:legendary_gear"
+}

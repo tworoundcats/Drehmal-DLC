@@ -1,0 +1,15 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:space"
+            }
+        },
+        {
+            "condition":"reference",
+            "name":"players:locations/in_terminus"
+        }
+    ]
+}

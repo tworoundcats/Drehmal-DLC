@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Duskfall:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/duskfall"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:gauntlet_soul_fists"
+        },
+        "title": {
+            "color": "red",
+            "text": "Duskfall"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Duskfall Gauntlet"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:aurora"
+}

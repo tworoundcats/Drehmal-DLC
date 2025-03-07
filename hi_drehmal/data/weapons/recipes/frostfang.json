@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#Q#",
+        "SDS",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blue_ice"
+        },
+        "Q": {
+            "item": "minecraft:quartz"
+        },
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "D": {
+            "item": "minecraft:diamond_sword"
+        },
+        "P": {
+            "item": "minecraft:prismarine_crystals"
+        }
+    },
+    "result": {
+        "item": "minecraft:squid_spawn_egg",
+        "count": 1
+    }
+}

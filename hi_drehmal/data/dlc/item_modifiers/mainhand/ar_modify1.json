@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{ar:1b}"
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.armor",
+        "name": "",
+        "amount": 2,
+        "operation": "addition",
+        "slot": "mainhand"
+        
+      }
+    ]
+  }
+]

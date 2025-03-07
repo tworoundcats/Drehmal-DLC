@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:small_fireball",
+        "minecraft:fireball",
+        "minecraft:dragon_fireball",
+        "minecraft:ender_pearl",
+        "minecraft:potion"
+    ]
+  }

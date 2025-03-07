@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cut_red_sandstone"
+    },
+    "title": {
+      "text": "Put a Ring on it",
+      "color": "aqua",
+      "italic": false
+    },
+    "description": {
+      "text": "Weird place, weird magic. - Entered the Warp Ring Installation",
+      "color": "gray",
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "advancements:discoveries/core_entry",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": -950,
+                  "max": -881
+                },
+                "y": {
+                  "min": 20,
+                  "max": 120
+                },
+                "z": {
+                  "min": -272,
+                  "max": -193
+                }
+              },
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 55
+  }
+}

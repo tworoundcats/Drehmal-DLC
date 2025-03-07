@@ -1,0 +1,30 @@
+{
+  "parent": "advancements:primordial/enter_nothing",
+  "display": {
+    "icon": {
+      "item": "minecraft:dragon_head"
+    },
+    "title": {
+      "text": "Free the Ever-Fear",
+      "color": "aqua"
+    },
+    "description": {
+      "text": "You freed him from a fate worse than death. - Slew Tethlaen, Lost to Nothing",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_dragon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "killed_dragon"
+    ]
+  ]
+}

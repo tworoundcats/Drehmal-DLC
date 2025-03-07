@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:flint"
+      },
+      "title": {
+        "text": "Rites of Cruelty",
+        "color": "dark_red",
+        "italic": false
+      },
+      "description": {
+        "text": "Within a city of chaos lies a place of anguished stillness. Once a week, however, throngs pour into its spacious amphitheater to witness the involuntary sacrament of Ascension. - Discovered the Sepulchral Altar, sacred place of Maelihs",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/kiln",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": -2816,
+                        "max": -2795
+                    },
+                    "y": {
+                        "min": 36,
+                        "max": 50
+                    },
+                    "z": {
+                        "min": 5308,
+                        "max": 5340
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

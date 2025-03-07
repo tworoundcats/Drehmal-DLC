@@ -1,0 +1,12 @@
+[
+    {
+        "condition":"entity_scores",
+        "entity":"this",
+        "scores": {
+            "stunArrowTime": {
+                "min":1,
+                "max":50
+            }
+        }
+    }
+]

@@ -1,0 +1,2 @@
+summon armor_stand ~ ~1.5 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["khive_rune2"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:orange_dye",Count:1b,tag:{CustomModelData:1}}]}
+summon armor_stand ~ ~1.5 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["khive_rune2","top"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:orange_dye",Count:1b,tag:{CustomModelData:1}}]}

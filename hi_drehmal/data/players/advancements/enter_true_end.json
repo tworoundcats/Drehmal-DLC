@@ -1,0 +1,13 @@
+{
+    "criteria":{
+        "enterlodahr":{
+            "trigger":"minecraft:changed_dimension",
+            "conditions":{
+                "to":"minecraft:true_end"
+            }
+        }
+    },
+    "rewards": {
+      "function": "players:misc/entered_true_end"
+    }
+}

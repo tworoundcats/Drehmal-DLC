@@ -1,0 +1,6 @@
+execute positioned ~ ~ ~ as @p[tag=qst3] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Kill Some Random Guy","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst3] run give @s mcdw:dagger_swift_striker{display:{Name:'["",{"text":"Cinder\'s Dagger","italic":false,"color":"aqua"}]',Lore:['["",{"text":"When in main hand:","italic":false,"color":"gray"}]','["",{"text":"+7 Attack Damage","italic":false,"color":"blue"}]','["",{"text":"+2 Attack Speed","italic":false,"color":"blue"}]','[""]','["",{"text":"Quest Item","italic":false,"color":"dark_green"}]']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-124324,25000,44243,-50000]},{AttributeName:"generic.attack_speed",Amount:-1,Slot:mainhand,Name:"generic.attack_speed",UUID:[I;-124324,25300,44243,-50600]}],HideFlags:2}
+execute positioned ~ ~ ~ as @p[tag=qst3] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst3] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+function quests:cinderquest/summonsly
+execute positioned 1092.55 66.56 1965.51 run forceload add ~ ~

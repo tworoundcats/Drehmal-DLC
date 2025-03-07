@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] Maelihs never left Lo'Dahr. He never returned to right his wrongs, destroy his palace, or visit his sister. After all the Aspects had died, Mael stayed in Ytaj and watched as the divine moon crumbled around him."]
+schedule function core:scene/credits/19 200t

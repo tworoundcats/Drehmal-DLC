@@ -1,0 +1,19 @@
+schedule clear dlc:modify/verify_m
+schedule clear dlc:modify/verify_m_loop
+
+schedule clear dlc:modify/verify_obv
+schedule clear dlc:modify/verify_obv_loop
+schedule clear dlc:modify/verify_asc
+schedule clear dlc:modify/verify_asc_loop
+schedule clear dlc:modify/verify_cal
+schedule clear dlc:modify/verify_cal_loop
+schedule clear dlc:modify/verify_fre
+schedule clear dlc:modify/verify_fre_loop
+schedule clear dlc:modify/verify_lev
+schedule clear dlc:modify/verify_lev_loop
+schedule clear dlc:modify/verify_mal
+schedule clear dlc:modify/verify_mal_loop
+schedule clear dlc:modify/verify_syz
+schedule clear dlc:modify/verify_syz_loop
+schedule clear dlc:modify/verify_zen
+schedule clear dlc:modify/verify_zen_loop

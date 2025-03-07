@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "I HAVE CHOSEN MANY.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

@@ -1,0 +1,120 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1152,
+                            "max":1154
+                        },
+                        "y": {
+                            "min":95,
+                            "max":105
+                        },
+                        "z": {
+                            "min":983,
+                            "max":985
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1153,
+                            "max":1155
+                        },
+                        "y": {
+                            "min":95,
+                            "max":105
+                        },
+                        "z": {
+                            "min":984,
+                            "max":986
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1154,
+                            "max":1156
+                        },
+                        "y": {
+                            "min":95,
+                            "max":105
+                        },
+                        "z": {
+                            "min":985,
+                            "max":987
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1155,
+                            "max":1157
+                        },
+                        "y": {
+                            "min":95,
+                            "max":105
+                        },
+                        "z": {
+                            "min":986,
+                            "max":988
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1156,
+                            "max":1158
+                        },
+                        "y": {
+                            "min":95,
+                            "max":105
+                        },
+                        "z": {
+                            "min":987,
+                            "max":989
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/rihelma_puzzle/detection/circle"
+    }
+  }
+  

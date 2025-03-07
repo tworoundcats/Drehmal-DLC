@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "item": "mcda:phantom_skin"
+      },
+      "title": {
+        "text": "Abyssal Carapace",
+        "color": "dark_red"
+      },
+      "description": {
+        "text": "Obtained An Upgrade Component",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "weapons:wyrm",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "nbt": "{Abyssal:1b}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "weapons:advancement/abyssal"
+    }
+  }
+  

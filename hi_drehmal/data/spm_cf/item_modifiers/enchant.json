@@ -1,0 +1,5 @@
+{
+    "function": "enchant_with_levels",
+    "levels": 15,
+    "treasure": true
+}

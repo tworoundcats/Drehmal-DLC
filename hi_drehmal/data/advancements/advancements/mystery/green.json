@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:command_block",
+        "nbt": "{CustomModelData:33333333}"
+      },
+      "title": {
+        "text": "         ",
+        "color": "dark_green",
+        "bold": false
+      },
+      "description": {
+        "text": "You can now play as Luigi",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "overworld": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "players:misc/green"
+    },
+    "parent": "advancements:mystery/root"
+  }
+  

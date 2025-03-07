@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:red_bed"
+      },
+      "title": {
+        "text": "Civilization",
+        "color": "red",
+        "italic": false
+      },
+      "description": {
+        "text": "The age of grand empires and kingdoms within Drehmal has long passed. Now only few towns and cities remain.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "advancements:discoveries/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

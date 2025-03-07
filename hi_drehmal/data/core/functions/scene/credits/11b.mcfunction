@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Thank you to community members who submitted contest builds:","underlined":true,"color":"gold"},{"text":"\n\nXorhuul: Black Sabbath\nCastle Tharxax (Loraga Keep): Pogo\nLorahn’Kahl Ruins: Burnt General (Mat)\nFirteid Buildings: Zgu, MoutonDemocrate, DaWolf\nFirteid Airships: Goblin \nHighfall Revamp: Maelhrizz"}]
+schedule function core:scene/credits/11c 168t

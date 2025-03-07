@@ -1,0 +1,2 @@
+# change speed attribute in ai/webspinner/main
+summon minecraft:spider ~ ~ ~ {Tags:["webspinner","day_aggro"],CustomName:'{"text":"Webspinner"}',ArmorItems:[{id:"golden_boots",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:soul_speed,lvl:3}]}},{},{},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Health:40.0f,Attributes:[{Name:"generic.max_health",Base:40.0d},{Name:"generic.follow_range",Base:20.0d}],Team:"hide_name"}

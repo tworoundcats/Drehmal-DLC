@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#E#",
+        "#B#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:arrow"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "B": {
+            "item": "minecraft:blue_ice"
+        }
+    },
+    "result": {
+        "item": "minecraft:fox_spawn_egg",
+        "count": 7
+    }
+}

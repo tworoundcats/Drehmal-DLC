@@ -1,0 +1,3 @@
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 unless entity @e[type=villager,name="Vahid"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Vahid"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+
+schedule function dlc:clearfl2.1_2 2s

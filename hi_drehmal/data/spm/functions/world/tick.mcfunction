@@ -1,0 +1,1 @@
+execute as @e[type=item] at @s if data entity @s Item.tag.spm.type at @s run function spm:item/tick

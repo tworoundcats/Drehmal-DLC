@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": ""
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:barrier"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "advancements:null/primordial/b9"
+    },
+    "parent": "advancements:primordial/a8_25p"
+}

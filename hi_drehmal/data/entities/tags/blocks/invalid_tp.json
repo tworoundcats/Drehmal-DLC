@@ -1,0 +1,7 @@
+{
+	"values": [
+		{ "id": "#entities:nocol", "required": false },
+		{ "id": "water", "required": false },
+		{ "id": "lava", "required": false }
+	]
+}

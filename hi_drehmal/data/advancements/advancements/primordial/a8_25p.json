@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Scientific Progress",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "ａｖＳＹＳ has requested your presence at an “Ancillary Research Facility”. - Restored Network Linkage to 25%",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:compass"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/terminus"
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Backwards Thinking",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "Rule of observation! - Learned how to use Khive's Warp Rings",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:smooth_red_sandstone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/aphelion"
+}

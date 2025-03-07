@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Orchid:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:orchidaceae"
+        ],
+        "function":"weapons:orchidaceae"
+    },
+    "display": {
+        "title": {
+            "text": "Orchidaceae",
+            "color": "dark_purple"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the Orchidaceae, a treasure hunter’s favorite, unlocked."
+        },
+        "icon": {
+            "item": "minecraft:trader_llama_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:peacetreaty"
+}

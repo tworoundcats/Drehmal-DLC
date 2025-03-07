@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Harpoon:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/harpoon"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:crossbow_harpoon_crossbow"
+        },
+        "title": {
+            "color": "red",
+            "text": "Leviathan's Grasp"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Forgotten Harpoon Bow"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:forgotten"
+}

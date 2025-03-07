@@ -1,0 +1,5 @@
+scoreboard players set @s dialogueTreeID 3
+function dialogue:maelihs/lines/makenoise
+execute as @e[tag=aj.mael.root,limit=1] if score @s ai_state matches 0 run function dialogue:maelihs/anim/dia4
+tag @s add met_mael
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"That I am. If you must disturb my rest, then speak."},{"text":"\n- [ Why are you here? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 4"}},{"text":"\n- [ Why aren’t you attacking me? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 5"}},{"text":"\n- [ What do you do here all day? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 6"}},{"text":"\n- [ What do you think of the Aspects? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 7"}},{"text":"\n- [ What happened to Virtuo? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 8"}}]

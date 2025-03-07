@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{sp:1b}"
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": 0.03,
+        "operation": "multiply_total",
+        "slot": "feet"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "show_toast": true,
+        "hidden": true,
+        "announce_to_chat": true,
+        "description": {
+            "color": "gray",
+            "text": "Recipe for Hovadchear’s Greathammer, famed weapon of Master Hovadchear of Insohm, unlocked."
+        },
+        "frame": "task",
+        "title": {
+            "text": "Hovadchear's Greathammer",
+            "color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:pufferfish_spawn_egg"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Hovadhammer:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:greathammer"
+        ],
+        "function":"weapons:greathammer"
+    },
+    "parent": "weapons:flammer"
+}

@@ -1,0 +1,54 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:oak_sapling"
+      },
+      "title": {
+        "text": "Serpent’s Chosen",
+        "color": "dark_green",
+        "italic": false
+      },
+      "description": {
+        "text": "A winding path of reflection in the place where recorded history began. - Discovered Drehua Temple, sacred place of Drehmal",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/devotion",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": -177,
+                        "max": -70
+                    },
+                    "y": {
+                        "min": 149,
+                        "max": 200
+                    },
+                    "z": {
+                        "min": 2786,
+                        "max": 2899
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 40
+    }
+  }
+  

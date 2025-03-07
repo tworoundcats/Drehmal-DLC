@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Information Galore",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "A wellspring of knowledge, all for yourself! Seems like there's room for it to grow as well. - Uncovered the Repository",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:purpur_pillar"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/terminus"
+}

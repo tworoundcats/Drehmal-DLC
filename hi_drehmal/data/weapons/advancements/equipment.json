@@ -1,0 +1,32 @@
+{
+    "display": {
+        "title": {
+            "bold": false,
+            "color": "light_purple",
+            "text": "Fabled Equipment",
+            "italic": false
+        },
+        "description": {
+            "color": "green",
+            "italic": false,
+            "text": "Drehmal holds many ancient, powerful armaments with storied pasts. Use them to conquer your foes.",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/blackstone_top.png"
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    }
+}

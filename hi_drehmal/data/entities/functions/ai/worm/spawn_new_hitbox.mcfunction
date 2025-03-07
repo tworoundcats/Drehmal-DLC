@@ -1,0 +1,4 @@
+tellraw @a ["","[",{"text":"debug","color":"#F0B0EC"},"] The worms hitbox despawned"]
+summon slime ~ ~ ~ {UUID:[I;9807619,831606594,-1496043534,-1132491582],NoGravity:1b,Invulnerable:1b,CustomNameVisible:1b,DeathLootTable:"entities:null",Team:"hide_name",PersistenceRequired:1b,NoAI:1b,AbsorptionAmount:1000f,Size:7,Tags:["boss","tail"],CustomName:'{"text":"Invis"}',ActiveEffects:[{Id:13,Amplifier:10b,Duration:1000000,ShowParticles:0b}]}
+#execute if score #loop temp matches 74 run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:0b,Tags:["worm","special","segement","boss"],Passengers:[{id:"minecraft:horse",HasVisualFire:0b,NoGravity:1b,Silent:1b,Invulnerable:0b,PersistenceRequired:1b,NoAI:1b,Health:30f,Tags:["unloaded"],Attributes:[{Name:generic.max_health,Base:30}],ArmorItem:{}}],ArmorItems:[{},{},{},{id:"minecraft:bedrock",Count:1b}]}
+scoreboard players operation 0095a703-3191-4f42-a6d4-2ff2bc7f8cc2 worm_id = @s worm_id

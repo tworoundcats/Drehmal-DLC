@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 20
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Mystic Elder Khive asserts the cause is beyond our realm."},{"text":"\n- [ What lies beyond this realm? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 36"}},{"text":"\n- [ I want to ask you something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 37"}}]

@@ -1,0 +1,111 @@
+{
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {}
+            }
+          ],
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x":-2643.5, 
+                    "y":23.5,
+                    "z":2268.5
+                },
+                "dimension": "minecraft:overworld"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lever",
+              "properties": {
+                "powered": "true"
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {}
+            }
+          ],
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x":-2645.5, 
+                    "y":23.5,
+                    "z":2268.5
+                },
+                "dimension": "minecraft:overworld"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lever",
+              "properties": {
+                "powered": "true"
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {}
+            }
+          ],
+          "location": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x":-2644.5, 
+                    "y":23.5,
+                    "z":2268.5
+                },
+                "dimension": "minecraft:overworld"
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:lever",
+              "properties": {
+                "powered": "true"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "rewards": {
+      "function": "players:misc/electrowater"
+    }
+  }
+  

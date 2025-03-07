@@ -1,0 +1,24 @@
+
+particle dust 1 1 0 1.2 ^9.371 ^-9.367 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^9.737 ^-8.986 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^10.087 ^-8.591 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^10.421 ^-8.183 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^10.739 ^-7.761 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^11.040 ^-7.327 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^11.323 ^-6.882 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^11.588 ^-6.425 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^11.834 ^-5.959 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.062 ^-5.483 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.271 ^-4.998 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.461 ^-4.505 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.630 ^-4.005 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.780 ^-3.499 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^12.909 ^-2.987 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.018 ^-2.471 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.106 ^-1.950 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.173 ^-1.427 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.219 ^-0.901 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.245 ^-0.374 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.249 ^0.154 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.232 ^0.682 ^0.000 0 0 0 0 1 force
+particle dust 1 1 0 1.2 ^13.195 ^1.208 ^0.000 0 0 0 0 1 force

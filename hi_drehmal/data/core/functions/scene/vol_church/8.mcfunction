@@ -1,0 +1,3 @@
+execute as @e[tag=vol_churchdude] run data merge entity @s {Pose:{RightArm:[10.0f,350.0f,0.0f],LeftLeg:[345.0f,320.0f,0.0f],Head:[4.0f,0.0f,0.0f],LeftArm:[10.0f,10.0f,0.0f],RightLeg:[345.0f,40.0f,0.0f],Body:[0.0f,4.0f,0.0f]},Rotation:[90.0f,0.0f],Pos:[396.85d,82.2d,980.50d]}
+execute in minecraft:lodahr run playsound minecraft:dcustom.entity.skeleton.step hostile @a 396 82 980 10
+schedule function core:scene/vol_church/9 0.5s

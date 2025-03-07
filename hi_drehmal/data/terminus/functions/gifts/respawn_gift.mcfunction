@@ -1,0 +1,2 @@
+schedule function terminus:gifts/respawn_gift 60s
+execute unless entity @e[type=item,tag=terminus.compass] unless score #compass.nospawn bool matches 1 if score count_all towers matches 1.. run function terminus:gifts/compasses/respawn

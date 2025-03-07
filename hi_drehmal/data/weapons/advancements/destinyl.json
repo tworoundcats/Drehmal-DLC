@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Leggings",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Leggings",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_leggings"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinyl"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyL:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinyc"
+}

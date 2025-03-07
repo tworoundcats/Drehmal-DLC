@@ -1,0 +1,3 @@
+summon iron_golem ~ ~ ~ {DeathLootTable:"players:kill_events",Health:200f,Tags:["vt_immune","fdry_boss","special","foundry_wave","valhalla_wave","break_boats","stasis_immune"],CustomName:'{"text":"Executive Unit"}',Attributes:[{Name:generic.max_health,Base:200},{Name:generic.follow_range,Base:100},{Name:generic.knockback_resistance,Base:10},{Name:generic.movement_speed,Base:0.2},{Name:generic.attack_damage,Base:20},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:6},{Name:generic.attack_knockback,Base:5}],Team:"foundry"}
+execute as @e[type=iron_golem,tag=special] at @s run function entities:spawn/fdry_stats
+scoreboard players set #exec_bossbar temp 0

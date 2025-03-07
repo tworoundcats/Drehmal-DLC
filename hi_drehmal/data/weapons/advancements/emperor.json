@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "text": "Emperor Anyr's Scepter",
+            "color": "dark_purple"
+        },
+        "frame": "task",
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the Emperor Anyr's Scepter, the tool of the last emperor of Avsohm, unlocked."
+        },
+        "announce_to_chat": true,
+        "icon": {
+            "item": "minecraft:vex_spawn_egg"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:scepter"
+        ],
+        "function":"weapons:scepter"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Anyrs_Sceptre:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:orchidaceae"
+}

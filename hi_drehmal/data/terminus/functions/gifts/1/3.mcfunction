@@ -1,0 +1,2 @@
+tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＷＡＲＮ： ＣＲＩＴＩＣＡＬ ＴＲＡＶＥＬ ＮＥＴＷＯＲＫ ＥＲＲＯＲ","color":"white"},{"text":"／／"}]
+schedule function terminus:gifts/1/4 4s

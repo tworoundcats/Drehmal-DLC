@@ -1,0 +1,2 @@
+execute unless entity @e[type=area_effect_cloud,tag=ul_cloud,distance=..3] run summon area_effect_cloud ~ ~ ~ {Tags:["ul_cloud"],Radius:0.5f,RadiusPerTick:0.01f,Duration:200,Effects:[{Id:20,Amplifier:0b,Duration:200,ShowParticles:1b}]}
+effect clear @s wither

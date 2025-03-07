@@ -1,0 +1,26 @@
+execute in minecraft:true_end run summon minecraft:marker 943.5 51.5 299.5 {Tags:["dunes_portal"],Rotation:[90f,0f]}
+execute in minecraft:true_end run fill 943 38 312 943 64 286 minecraft:light[level=12] replace air
+execute in minecraft:true_end run fill 943 38 305 943 38 311 air replace light
+execute in minecraft:true_end run fill 943 39 307 943 39 313 air replace light
+execute in minecraft:true_end run fill 943 40 313 943 40 308 air replace light
+execute in minecraft:true_end run fill 943 41 312 943 41 309 air replace light
+execute in minecraft:true_end run fill 943 42 310 943 42 312 air replace light
+execute in minecraft:true_end run fill 943 43 312 943 43 311 air replace light
+execute in minecraft:true_end run fill 943 44 312 943 45 312 air replace light
+execute in minecraft:true_end run fill 943 38 293 943 38 289 air replace light
+execute in minecraft:true_end run fill 943 39 291 943 39 286 air replace light
+execute in minecraft:true_end run fill 943 40 290 943 40 286 air replace light
+execute in minecraft:true_end run fill 943 41 289 943 41 286 air replace light
+execute in minecraft:true_end run fill 943 42 288 943 42 286 air replace light
+execute in minecraft:true_end run fill 943 43 287 943 43 286 air replace light
+execute in minecraft:true_end run fill 943 44 286 943 45 286 air replace light
+execute in minecraft:true_end run fill 943 64 305 943 64 312 air replace light
+execute in minecraft:true_end run fill 943 63 312 943 63 307 air replace light
+execute in minecraft:true_end run fill 943 62 311 943 62 308 air replace light
+execute in minecraft:true_end run fill 943 61 310 943 61 309 air replace light
+execute in minecraft:true_end run fill 943 60 310 943 60 310 air replace light
+execute in minecraft:true_end run fill 943 64 293 943 64 286 air replace light
+execute in minecraft:true_end run fill 943 63 286 943 63 291 air replace light
+execute in minecraft:true_end run fill 943 62 290 943 62 287 air replace light
+execute in minecraft:true_end run fill 943 61 288 943 61 289 air replace light
+execute in minecraft:true_end run fill 943 60 288 943 60 288 air replace light
