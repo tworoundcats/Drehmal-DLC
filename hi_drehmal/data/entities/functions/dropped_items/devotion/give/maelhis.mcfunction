@@ -1,5 +1,5 @@
 
-execute if score #liked? temp matches 1 run scoreboard players operation #dev_add temp *= #-5 const
+execute if score #liked? temp matches 1 run scoreboard players operation #dev_add temp *= #-100 const
 execute if score #liked? temp matches 2 run scoreboard players operation #dev_add temp *= #-1 const
 execute if score #liked? temp matches 3 run scoreboard players operation #dev_add temp *= #10 const
 execute if score #liked? temp matches 4 run scoreboard players operation #dev_add temp *= #34 const

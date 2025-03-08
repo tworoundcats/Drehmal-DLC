@@ -34,7 +34,7 @@ execute if score #solGas num matches 60 in minecraft:lodahr positioned -68.5 36.
 execute if score #solGas num matches 80 in minecraft:lodahr positioned -68.5 36.0 -1717.5 as @a[distance=..25] at @s run playsound minecraft:custom.whisper1 ambient @s ~ ~ ~ 10 1.2
 execute if score #solGas num matches 100 in minecraft:lodahr positioned -68.5 36.0 -1717.5 as @a[distance=..25] at @s run playsound minecraft:custom.whisper1 ambient @s ~ ~ ~ 10 1.5
 execute if score #solGas num matches 110 in minecraft:lodahr positioned -68.5 36.0 -1717.5 as @a[distance=..25] at @s run playsound minecraft:custom.whisper1 ambient @s ~ ~ ~ 10 2
-execute if score #solGas num matches 0 in minecraft:lodahr positioned -68.5 36.0 -1717.5 as @a[distance=..25] at @s run playsound minecraft:dcustom.entity.enderman.stare master @a ~ ~ ~ 10 0
+execute if score #solGas num matches 0 in minecraft:lodahr positioned -68.5 36.0 -1717.5 as @a[distance=..25] at @s run playsound minecraft:dcustom.entity.enderman.stare block @a ~ ~ ~ 10 0
 
 execute if score #solGas num matches 119.. run fill -68 30 -1717 -70 37 -1719 minecraft:white_stained_glass replace minecraft:red_stained_glass
 

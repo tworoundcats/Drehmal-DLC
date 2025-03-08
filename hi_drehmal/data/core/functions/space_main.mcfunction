@@ -14,13 +14,17 @@ effect clear @a[x=49,y=105,z=122,distance=..4] minecraft:slow_falling
 effect clear @a[x=49,y=105,z=122,distance=..4] minecraft:jump_boost
 
 # killplanes
-tp @a[x=50,y=56,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev] 13 92 116
-effect give @a[x=50,y=61,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev] minecraft:blindness 2 0 true
-effect give @a[x=50,y=61,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev] minecraft:wither 3 1 true
+tp @a[x=50,y=56,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] 13 92 116
+effect give @a[x=50,y=61,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] minecraft:blindness 2 0 true
+effect give @a[x=50,y=61,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] minecraft:wither 3 1 true
 
-tp @a[x=22,y=83,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev] 49 97 138
-effect give @a[x=22,y=85,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev] minecraft:blindness 2 0 true
-effect give @a[x=22,y=85,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev] minecraft:wither 3 1 true
+tp @a[x=22,y=83,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] 49 97 138
+effect give @a[x=22,y=85,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] minecraft:blindness 2 0 true
+effect give @a[x=22,y=85,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=..100}] minecraft:wither 3 1 true
 
 effect give @a[x=13,y=92,z=116,distance=..7] minecraft:slow_falling infinite 0 true
 effect give @a[x=13,y=92,z=116,distance=..7] minecraft:jump_boost infinite 3 true
+
+execute as @a[x=22,y=83,z=0,dx=150,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=100..}] run function core:space_freefall
+
+execute as @a[x=50,y=56,z=0,dx=-170,dy=-10,dz=250,predicate=players:is_not_dev,scores={health=100..}] run function core:space_freefall

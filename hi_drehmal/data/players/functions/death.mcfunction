@@ -1,6 +1,14 @@
 tag @s remove em.nohit_reward
-scoreboard players add #some1_died bool 1
+tag @s remove anyr_active
+tag @s remove anyr_cd
+tag @s remove zen
+scoreboard players reset @s anyr_timer
+scoreboard players reset @s anyr_particles
+scoreboard players reset @s hp_old
+scoreboard players reset @s max_hp
+attribute @s minecraft:generic.max_health base set 20
 
+scoreboard players add #some1_died bool 1
 execute if entity @s[tag=supersoldier] run effect clear @s speed
 execute if entity @s[tag=supersoldier] run effect clear @s jump_boost
 execute if entity @s[tag=supersoldier] run tag @s remove supersoldier
@@ -53,38 +61,5 @@ scoreboard players reset @s mb_cool
 scoreboard players reset @s sy_cool
 scoreboard players reset @s obv_cool
 scoreboard players reset @s mal_cool
-scoreboard players reset @s shield_cool
 
-execute if score count_all towers matches 2 as @a run fmvariable set terminus false 1
-execute if score count_all towers matches 2 as @a run fmvariable set pre25 false 0
-
-execute if score count_all towers matches 1.. as @a run fmvariable set avsal false 1
-
-execute if score count_all towers matches 8 as @a run fmvariable set pre25 false 1
-execute if score count_all towers matches 9 as @a run fmvariable set pre50 false 0
-
-execute if score count_all towers matches 16 as @a run fmvariable set pre50 false 1
-execute if score count_all towers matches 17 as @a run fmvariable set pre75 false 0
-
-execute if score count_all towers matches 24 if score lo_dahr towers matches 1 as @a run fmvariable set pre75 false 1
-execute if score lo_dahr towers matches 1 as @a run fmvariable set aphelion false 1
-
-
-execute if score count_all towers matches 25 as @a run fmvariable set core false 1
-execute if score #coretrigs int matches 1.. as @a run fmvariable set core_inside false 1
-execute if score count_all towers matches 27 if score lo_dahr towers matches 1 as @a run fmvariable set pre100 false 0
-
-
-execute if score #5mbleft bool matches 1 as @a run fmvariable set salmevir false 1
-
-execute if score #7mbright bool matches 1 as @a run fmvariable set exodus false 1
-
-execute as @a[advancements={advancements:primordial/enter_yav=true}] run execute as @a run fmvariable set yav false 1
-execute as @a[advancements={advancements:primordial/azimuth=true}] run execute as @a run fmvariable set azimuth false 1
-execute as @a[advancements={advancements:primordial/god_machine=true}] run execute as @a run fmvariable set god_machine false 1
-execute as @a[advancements={advancements:primordial/heart=true}] run execute as @a run fmvariable set end false 1
-execute as @a[advancements={advancements:primordial/closure=true}] run execute as @a run fmvariable set primal_end false 1
-execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariable set arcane false 1
-execute as @a[advancements={weapons:tempest=true}] run execute as @a run fmvariable set tempest false 1
-execute as @a[advancements={weapons:eldorite=true}] run execute as @a run fmvariable set eldorite false 1
-execute as @a[advancements={weapons:destinyblade=true}] run execute as @a run fmvariable set dblade false 1
+tag @s remove freefall

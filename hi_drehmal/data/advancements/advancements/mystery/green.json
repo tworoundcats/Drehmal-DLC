@@ -27,6 +27,6 @@
     "rewards": {
       "function": "players:misc/green"
     },
-    "parent": "advancements:mystery/root"
+    "parent": "advancements:mystery/"
   }
   

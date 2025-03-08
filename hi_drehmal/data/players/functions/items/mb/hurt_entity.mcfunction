@@ -1,1 +1,1 @@
-damage @s[tag=!emissary] 25 minecraft:primalenergy by @p
+damage @s[tag=!emissary] 12.5 minecraft:primalenergy by @p

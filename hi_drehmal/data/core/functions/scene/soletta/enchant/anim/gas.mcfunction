@@ -30,7 +30,7 @@ execute if score #solStone num matches 3 run function core:scene/soletta/enchant
 
 scoreboard players operation #tmp temp = #solGas num
 scoreboard players operation #tmp temp %= #4 const
-execute if score #tmp temp matches 0 in minecraft:lodahr run playsound minecraft:dcustom.block.fire.extinguish master @a -68.5 31.5 -1717.5 1 0
+execute if score #tmp temp matches 0 in minecraft:lodahr run playsound minecraft:dcustom.block.fire.extinguish block @a -68.5 31.5 -1717.5 1 0
 
 scoreboard players add #solGas num 1
 execute unless score #solGas num matches 120.. run schedule function core:scene/soletta/enchant/anim/gas 1t

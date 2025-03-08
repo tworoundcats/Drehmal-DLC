@@ -7,5 +7,6 @@ execute as @s[nbt={SelectedItem:{tag:{Tag:"Osteo"}}},scores={osteouse=3}] at @s 
  
 scoreboard players set @e[type=armor_stand,name="osteostand"] osteospin 0
 
+
 execute as @s[nbt={SelectedItem:{tag:{Tag:"Osteo"}}},scores={osteouse=3..,osteospin=15..}] run scoreboard players set @s osteouse 0
 

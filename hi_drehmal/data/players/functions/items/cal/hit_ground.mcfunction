@@ -1,4 +1,5 @@
 effect clear @s minecraft:levitation
+effect clear @s minecraft:jump_boost
 scoreboard players operation @s cal_cool = @s maxCalCooldown
 scoreboard players set #done? temp 1
 execute unless score #low_particles? bool matches 1 run particle minecraft:flame ~ ~ ~ 0 0 0 1 150
@@ -17,7 +18,7 @@ playsound minecraft:dcustom.entity.lightning_bolt.thunder player @a ~ ~ ~ 10 2
 tag @s add cal_temp
 execute if score #mythic_pvp? const matches 1 as @a[tag=!cal_temp,distance=..6] at @s run function players:items/cal/damage_player
 execute as @e[type=!#core:oblivion_immune,type=!player,distance=..6] at @s run function players:items/cal/damage
-execute align y run teleport @s ~ ~ ~
+execute align y run teleport @s ~ ~0.5 ~
 tag @s remove cal_temp
 
 execute as 8cd0b58c-114c-4a96-b051-92aa0c0fffe0 run function players:items/tcrux/part/as
@@ -36,3 +37,4 @@ execute align y positioned ~ ~0.2 ~ run function particle:effects/rings/ossein_r
 execute align y positioned ~ ~0.2 ~ run function particle:effects/rings/electric_ring_large
 execute align y positioned ~ ~0.2 ~ run function players:items/cal/hit_ground_shockwave
 scoreboard players set @s cal_charge 0
+

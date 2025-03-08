@@ -454,8 +454,8 @@ execute if entity @s[tag=ancient_ass] run summon area_effect_cloud 4144.8 128.15
 execute if entity @s[tag=ancient_ass] run summon area_effect_cloud 4144.8 127.75 289.50 {CustomNameVisible:1b,Duration:2147483647,Tags:["ancient_ass_text"],CustomName:'{"text":"I just need to speak and","italic":false}'}
 execute if entity @s[tag=ancient_ass] run summon area_effect_cloud 4144.8 127.35 289.50 {CustomNameVisible:1b,Duration:2147483647,Tags:["ancient_ass_text"],CustomName:'{"text":"the words appear before me!","italic":false}'}
 
-execute at @s unless entity @s[tag=ancient_ass_text] run playsound minecraft:dcustom.block.note_block.bit master @a ~ ~ ~ 1 2
-execute at @s if entity @s[tag=ancient_ass_text] run playsound minecraft:dcustom.block.note_block.bit master @a ~ ~ ~ 1 1.5
+execute at @s unless entity @s[tag=ancient_ass_text] run playsound minecraft:dcustom.block.note_block.bit block @a ~ ~ ~ 1 2
+execute at @s if entity @s[tag=ancient_ass_text] run playsound minecraft:dcustom.block.note_block.bit block @a ~ ~ ~ 1 1.5
 
 
 

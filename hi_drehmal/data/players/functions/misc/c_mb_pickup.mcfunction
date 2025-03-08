@@ -14,6 +14,8 @@ execute in overworld run forceload add 1737 -4393 1754 -4197
 tag @s add mb_holder
 
 scoreboard players set #mb_picked bool 1
+scoreboard players set #khive_scroll bool 1
+
 execute in minecraft:overworld positioned 26512 161 -96 run setblock ~2 ~ ~15 minecraft:black_concrete
 
 scoreboard players set #khive_talk bool 1

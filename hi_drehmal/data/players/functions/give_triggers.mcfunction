@@ -1,4 +1,5 @@
 scoreboard players enable @s Settings
+scoreboard players enable @s dlc
 bossbar set health players @s
 gamemode adventure @s
 

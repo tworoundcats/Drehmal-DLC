@@ -38,6 +38,7 @@ execute positioned -3057 27 2214 if block ~ ~2 ~7 light_blue_stained_glass if en
 
 execute positioned -3057 27 2214 unless score #exodusbigdoor z matches 1 if entity @p[distance=..7] run function core:scene/exodus/bigdoor/anim
 
+execute positioned -3057 27 2214 if score #exodusbigdoor bool matches 1 unless score #exodusbigdoor z matches 1 run function core:scene/exodus/bigdoor/anim
 
 
 

@@ -76,7 +76,7 @@ execute if score #part_timer temp matches 19 run particle scrape -2427.75 33.95 
 
 execute if score #alch_ani int matches 203 run fill -2430 34 2941 -2427 36 2938 light replace air
 execute if score #alch_ani int matches 203 run fill -2428 32 2939 -2429 32 2940 lava
-execute if score #alch_ani int matches 203 run playsound minecraft:dcustom.block.fire.ambient master @a -2428.0 35 2939.0
+execute if score #alch_ani int matches 203 run playsound minecraft:dcustom.block.fire.ambient block @a -2428.0 35 2939.0
 
 execute if score #alch_ani int matches 213 run fill -2428 34 2940 -2428 34 2939 minecraft:light_blue_stained_glass
 execute if score #alch_ani int matches 213 run setblock -2428 35 2939 minecraft:light_blue_stained_glass
@@ -96,8 +96,8 @@ execute if score #alch_ani int matches 263 run setblock -2428 35 2940 minecraft:
 execute if score #alch_ani int matches 273 run setblock -2428 35 2940 minecraft:light_blue_wool
 execute if score #alch_ani int matches 273 run setblock -2429 34 2940 minecraft:light_blue_concrete
 
-execute if score #alch_ani int matches 283 run playsound minecraft:dcustom.block.honey_block.break master @a -2428.0 35 2939.0
-execute if score #alch_ani int matches 283 run playsound minecraft:dcustom.entity.generic.explode master @a -2428.0 35 2939.0
+execute if score #alch_ani int matches 283 run playsound minecraft:dcustom.block.honey_block.break block @a -2428.0 35 2939.0
+execute if score #alch_ani int matches 283 run playsound minecraft:dcustom.entity.generic.explode block @a -2428.0 35 2939.0
 execute if score #alch_ani int matches 283 run fill -2429 34 2939 -2428 35 2940 air
 execute if score #alch_ani int matches 283 run fill -2430 35 2941 -2427 37 2938 air destroy
 execute if score #alch_ani int matches 283 run setblock -2430 34 2940 minecraft:black_stained_glass_pane

@@ -7,7 +7,7 @@
                     "items": [
                         "minecraft:potion"
                     ],
-                    "nbt":"{Eldermead:1b,Filled:2}"
+                    "nbt":"{Eldermead:1b,Filled:5}"
                 }
             }
         }

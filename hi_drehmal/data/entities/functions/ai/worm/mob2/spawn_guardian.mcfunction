@@ -5,3 +5,4 @@ execute positioned ~ ~1 ~ run function entities:ai/worm/mob1/ring
 execute positioned ~ ~1 ~ run function entities:ai/worm/mob1/ring
 execute positioned ~ ~1 ~ run function entities:ai/worm/mob1/ring
 playsound minecraft:dcustom.entity.squid.squirt hostile @a ~ ~ ~ 5 1
+

@@ -93,9 +93,9 @@ execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.
 execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.generic.explode hostile @a[distance=..50] ~ ~ ~ 20
 execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.wither.death ambient @a[distance=..50] ~ ~ ~ 15 2
 execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.firework_rocket.twinkle_far ambient @a[distance=..50] ~ ~ ~ 15
-execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death master @a[distance=..50] ~ ~ ~ 20 0.5
-execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death master @a[distance=..50] ~ ~ ~ 20 0.75
-execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death master @a[distance=..50] ~ ~ ~ 20 1
+execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death hostile @a[distance=..50] ~ ~ ~ 20 0.5
+execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death hostile @a[distance=..50] ~ ~ ~ 20 0.75
+execute if score @s ai_timer matches 390 run playsound minecraft:dcustom.entity.zombified_piglin.death hostile @a[distance=..50] ~ ~ ~ 20 1
 execute if score @s ai_timer matches 390 run particle explosion ~ ~ ~ 0.3 0.3 0.3 15 20
 execute if score @s ai_timer matches 390 as @a[distance=..40] at @s run function players:music/ossein
 execute if score @s ai_timer matches 390 run scoreboard players set #ossein_music? bool 1

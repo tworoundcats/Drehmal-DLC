@@ -33,11 +33,11 @@ execute if score #level temp matches ..1 as @e[type=#tamable,distance=..1.75] if
 execute if score #level temp matches 2 as @a[distance=..2.75] run effect give @s resistance 1 0 true
 execute if score #level temp matches 2 as @e[type=#tamable,distance=..2.75] if data entity @s Owner run effect give @s resistance 1 0 true
 execute if score #level temp matches 3 as @a[distance=..3.75] run effect give @s resistance 1 1 true
-execute if score #level temp matches 3 as @e[type=#tamable,distance=..3.75] if data entity @s Owner run effect give @s resistance 1 1 true
+execute if score #level temp matches 3 as @e[type=#tamable,distance=..3.75] if data entity @s Owner run effect give @s resistance 1 0 true
 execute if score #level temp matches 4 as @a[distance=..4.75] run effect give @s resistance 1 1 true
-execute if score #level temp matches 4 as @e[type=#tamable,distance=..4.75] if data entity @s Owner run effect give @s resistance 1 1 true
+execute if score #level temp matches 4 as @e[type=#tamable,distance=..4.75] if data entity @s Owner run effect give @s resistance 1 0 true
 execute if score #level temp matches 5.. as @a[distance=..5.75] run effect give @s resistance 1 2 true
-execute if score #level temp matches 5.. as @e[type=#tamable,distance=..5.75] if data entity @s Owner run effect give @s resistance 1 2 true
+execute if score #level temp matches 5.. as @e[type=#tamable,distance=..5.75] if data entity @s Owner run effect give @s resistance 1 1 true
 
 #execute if score #level temp matches ..1 at @s run particle dust 0.7 0 0 1 ^ ^0.1 ^2 0 0 0 0.02 5
 #execute if score #level temp matches ..1 at @s run particle dust 0.8 0.4 0 1 ^ ^0.1 ^-2 0 0 0 0.02 5

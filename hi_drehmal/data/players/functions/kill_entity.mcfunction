@@ -1,5 +1,9 @@
 advancement revoke @s only players:kill_entity
 
+execute if predicate players:holding/avstate run function players:items/avsaber/killcharge
+
+execute if predicate players:holding/anyrs if score @s anyr_timer matches 1.. run function players:items/anyr/revive
+
 execute if predicate players:holding/frenzy if score @s fzy_cool matches ..0 run function players:items/frenzy/rampage_start
 execute if predicate players:holding/frenzy if entity @s[tag=rampage] run function players:items/frenzy/rampage_kill
 

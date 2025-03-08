@@ -39,8 +39,8 @@ execute if score @s ai_timer matches 40..80 if score #stagger2 temp matches 0 po
 execute if score @s ai_timer matches 81..199 positioned ^ ^ ^1 positioned ~ ~-0.3 ~ run function entities:ai/worm/lasers/shoot
 execute if score @s ai_timer matches 200.. positioned ^ ^ ^1 positioned ~ ~-0.3 ~ run function entities:ai/worm/lasers/shoot
 execute if score @s ai_timer matches 200.. positioned ^ ^ ^1 positioned ~ ~-0.3 ~ run function entities:ai/worm/lasers/shoot
-execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.ender_dragon.death master @a ~ ~ ~ 10 0.5
-execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.wither.spawn master @a ~ ~ ~ 10 0.5
+execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.ender_dragon.death hostile @a ~ ~ ~ 10 0.5
+execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.wither.spawn hostile @a ~ ~ ~ 10 0.5
 execute if score @s ai_timer matches 40.. if score #stagger3 temp matches 0 run playsound minecraft:dcustom.block.bubble_column.upwards_inside hostile @a ~ ~ ~ 5 2
 execute if score @s ai_timer matches 40.. if score #stagger3 temp matches 0 run playsound minecraft:dcustom.block.respawn_anchor.deplete hostile @a ~ ~ ~ 5 2
 execute if score @s ai_timer matches 20 run playsound minecraft:dcustom.block.respawn_anchor.deplete hostile @a ~ ~ ~ 10 0.5

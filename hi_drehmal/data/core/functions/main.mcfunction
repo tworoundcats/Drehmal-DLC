@@ -57,7 +57,7 @@ execute if score #10M timer matches 0 unless score #gotInertMyth bool matches 1.
 execute if score #mbi_picked? bool matches 1 if predicate entities:teth_shoot run particle wax_on -118.5 10.50 1640.5 0.2 0.5 0.2 0 3
 execute if score #tmb_picked? bool matches 1 if predicate entities:teth_shoot run particle wax_on 778.5 3.5 460.5 0.2 0.5 0.2 0 3
 
-execute if predicate core:nah/start in minecraft:lodahr run function core:scene/nah/daytick
+execute if score #visit_lodahr? bool matches 1 if predicate core:nah/start in minecraft:lodahr run function core:scene/nah/daytick
 
 execute unless score #znth_lights_on bool matches 1 if entity @a[x=-3227,y=71,z=1557,dx=2,dy=10,dz=4,predicate=players:is_not_dev] run function foundry:zenith/start
 
@@ -139,7 +139,7 @@ execute if score #7S timer matches 0 if score #electrowater x matches 0 if score
 execute if score #electrowater x matches 0 run scoreboard players set #electrowater z 1
 
 execute if score #electrowater x matches 1 run function core:scene/exodus/waterparticles
-execute if score #electrowater y matches 1 run function core:scene/exodus/wateron2 
+execute if score #electrowater y matches 1 run function core:scene/exodus/wateron2
 
  
 execute if score #electrowater y matches 1 positioned -2735 17 2069 if entity @a[distance=..10] run function core:scene/exodus/doors/door3/open
@@ -159,7 +159,7 @@ execute if entity @a[predicate=core:in_hovadmain] run function core:scene/hovad/
 
 execute if score #10T timer matches 3 run function core:scene/lighthouse/check
 
-
+execute if score #1S timer matches 0 store result score #daycount timer run time query day
 execute store result score #worldtime timer run time query daytime
 scoreboard players operation #worldtime timer %= #worldtime const
 execute store result score #worldtime x run scoreboard players get #worldtime timer
@@ -199,6 +199,9 @@ execute unless score #termstart bool matches 1 run particle minecraft:dust 1 0 0
 
 
 execute if score #10terminus100 bool matches 1 unless score #clearancedialogue bool matches 1 run function core:scene/avsal/perms/0
+
+
+function core:scene/lodahr_portals/main
 
 execute as @a as @s[scores={dlc=1}] run function dlc:triggerdlc
 

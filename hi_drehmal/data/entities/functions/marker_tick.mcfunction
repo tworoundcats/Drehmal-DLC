@@ -77,6 +77,9 @@ execute if entity @s[tag=samurai_spinring] run function entities:ai/samurai/spin
 execute if entity @s[tag=samurai_dash_loc] run function entities:ai/samurai/charge/dash_loc
 execute if entity @s[tag=sentry_telegraph] run function entities:ai/sentry/telegraph_main
 execute if entity @s[tag=osteo_slash] run function players:items/osteo2/slash_tick
+execute if entity @s[tag=zenith_visual] run function players:items/avsaber/particle_tick
+execute if entity @s[tag=oblivion_visual] run function players:items/obv/particle_tick
+
 
 execute if score #5T timer matches 4 if entity @s[tag=deathmarker] run function entities:misc/deathmarker/kill_on_despawn
 

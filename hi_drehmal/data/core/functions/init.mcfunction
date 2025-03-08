@@ -268,7 +268,7 @@ scoreboard objectives add hate.timer dummy
 
 scoreboard objectives add vt_timer dummy
 
-scoreboard objectives add flammer_break minecraft.used:minecraft.wooden_pickaxe
+scoreboard objectives add flammer_break minecraft.used:minecraft.stone_pickaxe
 scoreboard objectives add flammer_mode dummy
 
 scoreboard objectives add holdingObv dummy
@@ -289,6 +289,8 @@ scoreboard objectives add brkDarkOakLg minecraft.mined:minecraft.dark_oak_log
 scoreboard objectives add brkJungleLg minecraft.mined:minecraft.jungle_log
 scoreboard objectives add brkCrimLg minecraft.mined:minecraft.crimson_stem
 scoreboard objectives add brkWarpedLg minecraft.mined:minecraft.warped_stem
+scoreboard objectives add brkCherryLg minecraft.mined:minecraft.cherry_log
+scoreboard objectives add brkMangroveLg minecraft.mined:minecraft.mangrove_log
 
 scoreboard objectives add brkOakSl minecraft.mined:minecraft.stripped_oak_log
 scoreboard objectives add brkBirchSl minecraft.mined:minecraft.stripped_birch_log
@@ -298,6 +300,9 @@ scoreboard objectives add brkDarkOakSl minecraft.mined:minecraft.stripped_dark_o
 scoreboard objectives add brkJungleSl minecraft.mined:minecraft.stripped_jungle_log
 scoreboard objectives add brkCrimSl minecraft.mined:minecraft.stripped_crimson_stem
 scoreboard objectives add brkWarpedSl minecraft.mined:minecraft.stripped_warped_stem
+scoreboard objectives add brkCherrySl minecraft.mined:minecraft.stripped_cherry_log
+scoreboard objectives add brkMangroveSl minecraft.mined:minecraft.stripped_mangrove_log
+
 
 scoreboard objectives add brkOakSw minecraft.mined:minecraft.stripped_oak_wood
 scoreboard objectives add brkBirchSw minecraft.mined:minecraft.stripped_birch_wood
@@ -307,6 +312,8 @@ scoreboard objectives add brkDarkOakSw minecraft.mined:minecraft.stripped_dark_o
 scoreboard objectives add brkJungleSw minecraft.mined:minecraft.stripped_jungle_wood
 scoreboard objectives add brkCrimSw minecraft.mined:minecraft.stripped_crimson_hyphae
 scoreboard objectives add brkWarpedSw minecraft.mined:minecraft.stripped_warped_hyphae
+scoreboard objectives add brkCherrySw minecraft.mined:minecraft.stripped_cherry_wood
+scoreboard objectives add brkMangroveSw minecraft.mined:minecraft.stripped_mangrove_wood
 
 scoreboard objectives add brkOakWd minecraft.mined:minecraft.oak_wood
 scoreboard objectives add brkBirchWd minecraft.mined:minecraft.birch_wood
@@ -316,6 +323,8 @@ scoreboard objectives add brkDarkOakWd minecraft.mined:minecraft.dark_oak_wood
 scoreboard objectives add brkJungleWd minecraft.mined:minecraft.jungle_wood
 scoreboard objectives add brkCrimWd minecraft.mined:minecraft.crimson_hyphae
 scoreboard objectives add brkWarpedWd minecraft.mined:minecraft.warped_hyphae
+scoreboard objectives add brkCherryWd minecraft.mined:minecraft.cherry_wood
+scoreboard objectives add brkMangroveWd minecraft.mined:minecraft.mangrove_wood
 
 scoreboard objectives add holdingAsc dummy
 scoreboard objectives add wasHoldingAsc dummy
@@ -896,7 +905,7 @@ execute if score #tmp temp matches 0 run bossbar set health visible false
 bossbar add loser "Loser"
 bossbar set minecraft:loser color pink
 
-scoreboard objectives add tcruxhit minecraft.custom:minecraft.damage_dealt 
+scoreboard objectives add tcruxhit minecraft.custom:minecraft.damage_dealt
 
 kill 8cd0b58c-114c-4a96-b051-92aa0c0fffe0
 summon marker 1000000 0 1000000 {UUID: [I;-1932479092,290212502,-1336831318,202375136],Tags:["unloaded"]}
@@ -910,6 +919,9 @@ bossbar set hovad color purple
 
 data modify storage drehmal:core inert_mythbreaker set value {display:{Name:'{"text":"Inert Mythbreaker","color":"gold","italic":false,"underlined":true}',Lore:['{"text":"While perfect in form, it is clear"}','{"text":"that the weapon lacks something."}','{"text":"A blade with such infinite potential"}','{"text":"should not go to waste."}','{"text":" "}','{"text":"When in main hand:","color":"gray","italic":false}','{"text":"-4 Max Health","color":"blue","italic":false}','{"text":"-0.015 Movement Speed","color":"blue","italic":false}','{"text":"18 Attack Damage","color":"blue","italic":false}','{"text":"0.5 Attack Speed","color":"blue","italic":false}','{"text":" "}','{"text":"Mythical","color":"gold","italic":false}']},HideFlags:2,CustomModelData:5,inertMythbreaker:1b,Mythic:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-4,Operation:0,UUID:[I;-1304414262,-112508035,-2096964732,-1917796446],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.015,Operation:0,UUID:[I;-1677363711,-594982570,-2022347546,-963373517],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:17,Operation:0,UUID:[I;700122283,1240223458,-1782611278,-1827475741],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.5,Operation:0,UUID:[I;673885855,-1271313444,-1933484148,-22947873],Slot:"mainhand"}]}
 
+data modify storage drehmal:core voidtear_base set value {Count:1b,id:"minecraft:iron_sword",tag:{AttributeModifiers:[{Amount:4,AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Slot:"mainhand",UUID:[I;-124910,169318,20156,-338636]},{Amount:-1.7d,AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Slot:"mainhand",UUID:[I;-124910,169618,20156,-339236]},{Amount:0.015d,AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Slot:"mainhand",UUID:[I;-124910,169918,20156,-339836]}],CustomModelData:6,Damage:0,HideFlags:2,Voidtear:1b,display:{Lore:['["",{"text":"Blue Exodus was so adept at hiding","italic":false}]','["",{"text":"secrets, no one knew they employed","italic":false}]','["",{"text":"an order of assassins until Insohmic","italic":false}]','["",{"text":"archaeologists discovered one of these","italic":false}]','["",{"text":"ingenious runic daggers nearly a millennium","italic":false}]','["",{"text":"after every member had died.","italic":false}]','{"text":" "}','["",{"text":"Null Cloak","italic":false,"color":"light_purple"}]','["",{"text":"The wielder is granted invisibility,","color":"dark_gray"}]','["",{"text":"lower mob aggression and pressing","color":"dark_gray"}]','["",{"text":"the drop item key throws this weapon","color":"dark_gray"}]','["",{"text":"forward and does damage, if picked","color":"dark_gray"}]','["",{"text":"up within 5 seconds, gain a boost of","color":"dark_gray"}]','["",{"text":"speed and invisibility is kept.","color":"dark_gray"}]','{"text":" "}','["",{"text":"When in main hand:","italic":false,"color":"gray"}]','["",{"text":"+0.015 Movement Speed","italic":false,"color":"blue"}]','["",{"text":"5 Attack Damage","italic":false,"color":"blue"}]','["",{"text":"2.3 Attack Speed","italic":false,"color":"blue"}]','{"text":" "}','["",{"text":"Legendary","italic":false,"color":"light_purple"}]'],Name:'["",{"text":"Voidtear Dagger","italic":false,"color":"light_purple","underlined":true}]'}}}
+
+
 
 execute unless score #auto_scale? const matches 0.. run scoreboard players set #auto_scale? const 1
 
@@ -917,6 +929,31 @@ execute in overworld run forceload add 26520 -138
 scoreboard players reset #commandBlocksEnabled bool
 
 schedule function core:c_commands/on_load 1s
+
+
+
+scoreboard objectives add HoldingVT dummy
+scoreboard objectives add holdingVT dummy
+scoreboard objectives add wasHoldingVT dummy
+scoreboard objectives add drop_voidtear minecraft.dropped:minecraft.iron_sword
+scoreboard objectives add upwards dummy
+
+
+scoreboard objectives add hunger food
+scoreboard objectives add asc_cool1 dummy
+scoreboard objectives add av_timer dummy
+scoreboard objectives add freefall dummy
+scoreboard objectives add usedNail minecraft.used:iron_sword
+
+team add gay 
+team modify gay prefix {"text":"\uE005","font":"minecraft:drehmal"}
+
+scoreboard objectives add usedIronP minecraft.used:minecraft.iron_pickaxe
+scoreboard objectives add usedDiamondP minecraft.used:minecraft.diamond_pickaxe
+scoreboard objectives add usedNetheriteP minecraft.used:minecraft.netherite_pickaxe
+scoreboard players set #scarecrow bool 1
+scoreboard objectives add whispersong_cd dummy
+scoreboard objectives add InvulFrame dummy
 
 #Custom Weapon Additions
 scoreboard objectives add ob_cd dummy
@@ -1006,12 +1043,12 @@ scoreboard objectives add prevMaxHealth dummy
 scoreboard objectives add maxHealth dummy
 scoreboard objectives add currentHealth health
 scoreboard objectives add prevHealth dummy
+
 scoreboard objectives add healthCalc dummy
 scoreboard objectives add healthDifference dummy
 scoreboard objectives add health health
 scoreboard objectives add avHorseID_b dummy
 scoreboard objectives add anyr_timer dummy 
-difficulty hard 
-
 scoreboard objectives add destinyc dummy
 scoreboard objectives add mastermode dummy
+difficulty hard 

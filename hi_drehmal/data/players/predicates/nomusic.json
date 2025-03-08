@@ -171,6 +171,10 @@
               "name": "players:locations/highfall_cave"
           },
           {
+            "condition": "minecraft:reference",
+            "name": "players:locations/spawn_room"
+          },
+          {
               "condition": "minecraft:reference",
               "name": "players:locations/hotv_nomusic"
           }

@@ -5,6 +5,7 @@ execute store result storage drehmal:players tempUuid[0] int 1 run scoreboard pl
 execute store result storage drehmal:players tempUuid[1] int 1 run scoreboard players operation #uuid1 temp = @s uuid1
 execute store result storage drehmal:players tempUuid[2] int 1 run scoreboard players operation #uuid2 temp = @s uuid2
 execute store result storage drehmal:players tempUuid[3] int 1 run scoreboard players operation #uuid3 temp = @s uuid3
+
 scoreboard players operation @s mal_cool = @s maxMalCooldown
 scoreboard players operation #charge temp = @s mal_charge
 

@@ -1,6 +1,7 @@
 #data modify storage drehmal:players tempUuid set from entity @s UUID
 execute as @e[type=item] if predicate players:is_oblivion if entity @s[tag=!scanned] run function players:items/obv/give_back
 item replace entity @s weapon.mainhand from block 1000000 0 1000000 container.0
+setblock 1000000 0 1000000 air
 scoreboard players reset #success temp
 scoreboard players set #loop temp 40
 tag @s add temp_immune

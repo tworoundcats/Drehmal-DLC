@@ -1,6 +1,6 @@
 execute at @s run teleport ^ ^ ^1.25
-playsound minecraft:dcustom.item.trident.hit_ground master @a ~ ~ ~ 3
-playsound minecraft:dcustom.entity.evoker_fangs.attack master @a ~ ~ ~ 3
+playsound minecraft:dcustom.item.trident.hit_ground hostile @a ~ ~ ~ 3
+playsound minecraft:dcustom.entity.evoker_fangs.attack hostile @a ~ ~ ~ 3
 scoreboard players set @s speed 1
 scoreboard players set #done? temp 1
 tag @s remove accelerate_high

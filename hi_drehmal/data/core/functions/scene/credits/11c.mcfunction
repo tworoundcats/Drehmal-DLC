@@ -1,4 +1,4 @@
-tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Thank you to all playtesters who helped us in closed alpha:","underlined":true,"color":"gold"},{"text":"\n\nWhite_Fang    Asian of Chaos   Exon         Llue                   Erasmus\nbtdmaster     Fobk (wiggin)      MyEx         hyalophage          hockeygoalie78\nKegster___   bloww               Thisisme     Slyyam                Lotti\nConnor H      Selemas            wessedup   Fang’s Pack Mule   ____________myst"}]
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Thank you to all playtesters who helped us in closed alpha:","underlined":true,"color":"gold"},{"text":"\n\nWhite_Fang    Asian of Chaos   Exon         Llue                   Erasmus\nbtdmaster     Decker      MyEx         hyalophage          hockeygoalie78\nKegster___   bloww               Thisisme     Slyyam                Lotti\nConnor H      Selemas            wessedup   Fang’s Pack Mule   ____________myst"}]
 schedule function core:scene/credits/11d 168t
 
 # replace * with amount of spaces

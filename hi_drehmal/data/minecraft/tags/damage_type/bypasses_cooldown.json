@@ -1,7 +1,9 @@
 {
     "values": [
         "minecraft:progress",
+        "minecraft:strangled",
         "minecraft:rubber_nocd",
+        "minecraft:zenith",
         "minecraft:godmachine"
         
     ]

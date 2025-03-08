@@ -14,7 +14,7 @@ execute if score #resonantthing timer matches 300 run tellraw @a[tag=in_terminus
 
 
 execute if score #resonantthing timer matches 1..298 run kill @e[type=item,tag=terminus.compass]
-execute if score #resonantthing timer matches 300 run playsound minecraft:dcustom.block.beacon.ambient master @a 26475 139 -54 100 2
+execute if score #resonantthing timer matches 300 run playsound minecraft:dcustom.block.beacon.ambient block @a 26475 139 -54 100 2
 execute if score #resonantthing timer matches 300 run particle minecraft:happy_villager 26475.5 141.00 -53.5 4 3 4 0.1 100 force
 execute if score #resonantthing timer matches 300 run particle minecraft:end_rod 26475.5 141.00 -53.5 4 3 4 0.04 100 force
 execute if score #resonantthing timer matches 300 positioned 26475.5 139.5 -53.5 run function entities:dropped_items/beam_ring_y

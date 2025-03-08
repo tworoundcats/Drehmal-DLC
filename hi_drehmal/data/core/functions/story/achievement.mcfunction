@@ -9,7 +9,8 @@ execute if score #8falsemb bool matches 1 run advancement grant @s only advancem
 execute if score count_all towers matches 24.. run advancement grant @s only advancements:primordial/75p
 execute if score #10terminus100 bool matches 1 run advancement grant @s only advancements:primordial/full_terminus
 #execute if score #11aphelion bool matches 1 run advancement grant @s only advancements:primordial/aphelion
-execute if score #12warpring bool matches 1 run advancement grant @s only advancements:primordial/ring_facility
+execute if score #12warpring bool matches 1 run advancement grant @s[advancements={advancements:discoveries/ring_facility=true,advancements:primordial/1sdf=false}] only advancements:primordial/ring_facility
+execute if score #12warpring bool matches 1 run advancement grant @s[advancements={advancements:discoveries/1sdf=true,advancements:primordial/ring_facility=false}] only advancements:primordial/1sdf
 #execute if score #13inscription bool matches 1 run advancement grant @s only advancements:primordial/inscription_facility
 #execute if score #14resupply bool matches 1 run advancement grant @s only advancements:primordial/resupply_depot
 execute if score #15finalcore bool matches 1 run advancement grant @s only advancements:primordial/final_core
@@ -28,7 +29,7 @@ execute if score count_all towers matches 32 run advancement grant @s only advan
 
 execute unless score #1awakening bool matches 1 positioned 775 106 687 if entity @s[dx=5,dy=5,dz=5] run advancement grant @s only advancements:primordial/stasis
 execute unless score #2terminus bool matches 1 if entity @s[tag=in_terminus] run advancement grant @s only advancements:primordial/terminus
-execute unless score #3repository bool matches 1 positioned -195 -1 1614 if entity @s[dx=40,dy=33,dz=63] run advancement grant @s only advancements:primordial/a0_repository
+execute unless score #3repository bool matches 1 in minecraft:overworld positioned -195 -1 1614 if entity @s[dx=40,dy=33,dz=63] run advancement grant @s only advancements:primordial/a0_repository
 #execute unless score #5mbleft bool matches 1 positioned 2580 183 1211 as @s[distance=..10] run scoreboard players set #5mbleft bool 1
 #execute unless score #7mbright bool matches 1 positioned -2734 18 2067 as @s[distance=..5] run scoreboard players set #7mbright bool 1
 #execute unless score #8falsemb bool matches 1      <v--- these 4 were moved to their respective trigger folders
@@ -60,4 +61,3 @@ execute if score #inscriptionadvancement bool matches 1 run advancement grant @s
 
 
 execute if score #supplydepotadvancement bool matches 1 run advancement grant @s only advancements:primordial/resupply_depot
-

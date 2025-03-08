@@ -1,4 +1,4 @@
-damage @s 18 minecraft:shot
+scoreboard players set @s damage_s 32
 scoreboard players set @s speed 4
 
 scoreboard players set @s time_limit 150

@@ -13,13 +13,13 @@ execute if score #10M timer matches 0 unless score #dahr_pearl_count int matches
 # precocious kinah particles
 execute if score #10T timer matches 1 run particle minecraft:wax_on -26.0 31 -1569 0.3 0.3 0.3 0 1
 
-execute if entity @a[predicate=core:in_aeongale] if score #aeongale x matches 0.. run function core:scene/aeongale/aeongale
+execute if entity @a[predicate=core:in_aeongale] unless score #aeongalecheck x matches 1 run function core:scene/aeongale/aeongale
 
 execute if score #mb_place_part bool matches 1 if predicate entities:teth_shoot2 run particle minecraft:wax_on 27304.5 124.50 55.5 0.2 1 0.2 0 3
 execute unless score #coreo1 bool matches 1 if score #2T timer matches 0 if block 27311 123 -2 lever[powered=true] run function core:scene/mb/lever1
 execute unless score #coreo2 bool matches 1 if score #2T timer matches 0 if block 27317 123 110 lever[powered=true] run function core:scene/mb/lever2
 
-execute unless score #loe_p1 bool matches 1 in minecraft:lodahr if score #1S timer matches 0 if block -1007 128 1045 minecraft:diamond_block run function core:loe_p1 
+execute unless score #loe_p1 bool matches 1 in minecraft:lodahr if score #1S timer matches 0 if block -1007 128 1045 minecraft:diamond_block run function core:loe_p1
 
 execute if score #inscription x matches 1 as @e[type=marker,tag=Inscribe] run function core:scene/inscription/inscription
 
@@ -37,7 +37,7 @@ execute if score #syzSpritesIsle bool matches 1 unless entity @a[x=1961,y=40,z=2
 
 
 
-execute if entity @a[predicate=core:in_orbitpuzzle] if score #orbitpuzzle z matches 0 run function core:scene/orbitpuzzle/orbit
+execute if entity @a[predicate=core:in_orbitpuzzle] unless score #orbitpuzzle z matches 1 run function core:scene/orbitpuzzle/orbit
 
 execute if entity @a[predicate=core:in_rihelma_puzzle] run function core:scene/rihelma_puzzle/main
 

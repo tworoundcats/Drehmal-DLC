@@ -18,7 +18,7 @@ execute if score #silentthing timer matches 740 run scoreboard players set #term
 execute if score #silentthing timer matches 1..778 run kill @e[type=item,tag=terminus.compass]
 execute if score #silentthing timer matches 740 run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"gold"},{"text":"] ／／ａｖＳＹＳ： ＯＮＬＩＮＥ／／"}]
 execute if score #silentthing timer matches 780 run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"gold"},{"text":"] ／／ＣＬＡＩＭ ＴＨＥ ＮＥＸＴ ＰＩＥＣＥ ＯＦ ＹＯＵＲ ＰＵＺＺＬＥ／／"}]
-execute if score #silentthing timer matches 780 run playsound minecraft:dcustom.block.beacon.ambient master @a 26475 139 -54 100 2
+execute if score #silentthing timer matches 780 run playsound minecraft:dcustom.block.beacon.ambient block @a 26475 139 -54 100 2
 execute if score #silentthing timer matches 780 run particle minecraft:happy_villager 26475.5 141.00 -53.5 4 3 4 0.1 100 force
 execute if score #silentthing timer matches 780 run particle minecraft:end_rod 26475.5 141.00 -53.5 4 3 4 0.04 100 force
 execute if score #silentthing timer matches 780 positioned 26475.5 139.5 -53.5 run function entities:dropped_items/beam_ring_y
@@ -35,7 +35,6 @@ execute if score #silentthing timer matches 780.. in minecraft:overworld positio
 
 execute if score #silentthing timer matches 780 positioned 26475.5 139.5 -53.5 run particle minecraft:happy_villager ~ ~ ~ 0.3 0.3 0.3 0.1 10
 execute if score #silentthing timer matches 780 positioned 26475.5 139.5 -53.5 run playsound minecraft:dcustom.entity.experience_orb.pickup player @a ~ ~ ~ 1 2
-
 
 
 

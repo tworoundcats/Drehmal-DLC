@@ -5,6 +5,8 @@ execute as @a[predicate=core:in_hangar,predicate=core:in_shuttle] at @s run func
 execute in minecraft:space positioned -191 130 189 run function core:scene/shuttle/summon
 execute in minecraft:space run setblock -191 131 189 air
 
+
+
 execute in minecraft:space run fill -184 129 186 -196 129 188 minecraft:barrier
 execute in minecraft:space run fill -196 129 190 -184 129 192 minecraft:barrier
 

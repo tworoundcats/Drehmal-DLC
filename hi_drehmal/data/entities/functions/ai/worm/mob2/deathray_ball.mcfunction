@@ -14,8 +14,8 @@ execute unless score #low_particles? bool matches 1 if score #stagger temp match
 execute unless score #low_particles? bool matches 1 if score #stagger temp matches 0 rotated 0 -120 run function entities:ai/worm/mob2/deathray_part
 execute unless score #low_particles? bool matches 1 if score #stagger temp matches 0 rotated 0 -150 run function entities:ai/worm/mob2/deathray_part
 
-execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.ender_dragon.death master @a ~ ~ ~ 10 0.5
-execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.wither.spawn master @a ~ ~ ~ 10 0.5
+execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.ender_dragon.death hostile @a ~ ~ ~ 10 0.5
+execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.wither.spawn hostile @a ~ ~ ~ 10 0.5
 execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.block.respawn_anchor.deplete hostile @a ~ ~ ~ 10 0.5
 execute if score @s ai_timer matches 40 run playsound minecraft:dcustom.entity.guardian.attack hostile @a ~ ~ ~ 10 0
 execute if score @s ai_timer matches 40 anchored eyes positioned ^ ^ ^1 facing ^ ^-1 ^ run function entities:ai/worm/lasers/ring2

@@ -65,3 +65,4 @@ execute if entity @s[tag=ultvaMusic] run data modify storage drehmal:players tem
 execute if entity @s[tag=hotvMusic] run data modify storage drehmal:players tempSongList append value 54
 execute if entity @s[tag=emissaryMusic] run data modify storage drehmal:players tempSongList append value 55
 execute if entity @s[tag=creditsMusic] run data modify storage drehmal:players tempSongList append value 56
+

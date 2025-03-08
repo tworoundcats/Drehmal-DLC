@@ -51,12 +51,12 @@ execute if score @s avwarptimer matches 100 positioned ~ ~ ~ run function player
 
 
 execute if score @s avwarptimer matches 100 positioned ~ ~ ~ run particle end_rod ~ ~ ~ 0 0 0 0.25 25
-execute if score @s avwarptimer matches 98 run playsound minecraft:dcustom.block.bell.resonate master @a ~ ~ ~ 10 0.5
+execute if score @s avwarptimer matches 98 run playsound minecraft:dcustom.block.bell.resonate block @a ~ ~ ~ 10 0.5
 execute if score @s avwarptimer matches 5 run playsound minecraft:dcustom.block.beacon.activate ambient @a ~ ~ ~ 5 0
 execute if score @s avwarptimer matches 50 run playsound minecraft:dcustom.block.beacon.deactivate ambient @a ~ ~ ~ 5 0
-execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport master @a ~ ~ ~ 10 0
-execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport master @a ~ ~ ~ 10 0.5
-execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport master @a ~ ~ ~ 10 1
+execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport block @a ~ ~ ~ 10 0
+execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport block @a ~ ~ ~ 10 0.5
+execute if score @s avwarptimer matches 99 run playsound minecraft:dcustom.entity.enderman.teleport block @a ~ ~ ~ 10 1
 execute if score @s avwarptimer matches 99 run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＩＮＩＴＩＡＴＩＮＧ ＰＨＡＳＥ ＷＡＲＰ．．．／／"}]
 execute if score @s avwarptimer matches 90..100 positioned ~ ~1.5 ~ run particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0 25 force
 execute if score @s avwarptimer matches 100 positioned 26475 138 -105 run particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0 25 force

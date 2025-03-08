@@ -18,5 +18,3 @@ execute unless score #avsys_p1 bool matches 1.. run function core:avsys_p1
 execute unless score #stomb_p bool matches 1.. run function core:stomb_p
 
 execute unless score #creditsplayed? bool matches 1 if entity @a[predicate=core:credits_box,predicate=players:is_not_dev] run function core:scene/credits/0
-
-

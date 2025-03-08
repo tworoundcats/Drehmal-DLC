@@ -2,11 +2,12 @@
     "values": [
         "minecraft:bifurcated",
         "minecraft:scalded",
-        "minecraft:rubber",
         "minecraft:labaccident",
         "minecraft:maso/exsanguinated",
         "minecraft:maso/ran_dry",
-        "minecraft:maso/no_more"
+        "minecraft:atmosphere",
+        "minecraft:maso/no_more",
+        "minecraft:rubber"
 
     ]
 }

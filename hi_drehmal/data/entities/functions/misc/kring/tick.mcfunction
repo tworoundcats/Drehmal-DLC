@@ -11,6 +11,8 @@ execute if score @s rx matches 2475..2924 positioned ~-1 ~ ~-1 as @a[scores={khi
 execute if score @s rx matches 2925..3374 positioned ~-1 ~ ~-1 as @a[scores={khive_pcool=..0,rx=-9000..0,x2=25..,z2=25..},dx=1,dy=1,dz=1] run function entities:misc/kring/tp
 execute if score @s rx matches 3375.. positioned ~-1 ~ ~-1 as @a[scores={khive_pcool=..0,rx=-4500..4500,z2=25..},dx=1,dy=1,dz=1] run function entities:misc/kring/tp
 
+execute as @s if predicate players:has_blindness positioned ~-1 ~ ~-1 as @a[scores={khive_pcool=..0},dx=1,dy=1,dz=1] run function entities:misc/kring/tp
+
 #execute if score #rotx temp matches ..224 run summon marker ~ ~ ~ {Tags:["kring","temp"],Rotation:[0f,0f]}
 #execute if score #rotx temp matches 225..674 run summon marker ~ ~ ~ {Tags:["kring","temp"],Rotation:[45f,0f]}
 #execute if score #rotx temp matches 675..1124 run summon marker ~ ~ ~ {Tags:["kring","temp"],Rotation:[90f,0f]}

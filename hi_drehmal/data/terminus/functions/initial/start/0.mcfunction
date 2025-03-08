@@ -1,5 +1,5 @@
 
-playsound minecraft:dcustom.block.bell.resonate master @a 26475.45 140.00 -53.70 99999999999999999 1 1
+playsound minecraft:dcustom.block.bell.resonate block @a 26475.45 140.00 -53.70 99999999999999999 1 1
 scoreboard players set #compass.nospawn bool 1
 schedule function terminus:initial/start/2 4s
 

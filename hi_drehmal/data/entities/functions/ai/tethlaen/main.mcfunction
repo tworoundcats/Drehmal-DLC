@@ -31,13 +31,12 @@ execute if score #5T timer matches 0 unless entity @e[type=marker,tag=dragon_tra
 scoreboard players operation @s ai_state2 = @s ai_state
 
 
-
 scoreboard players operation @s hp_old = @s hp
 execute store result score #hp temp store result score @s hp run data get storage drehmal:entities tempEntity.Health 100
 execute store result score #mhp temp run attribute @s minecraft:generic.max_health get
 scoreboard players operation #hp temp /= #mhp temp
 
-execute if score @s hp_old > @s hp run function entities:ai/tethlaen/hurt
+execute unless score #hp temp matches ..0 if score @s hp_old > @s hp run function entities:ai/tethlaen/hurt
 execute if score #hp temp matches ..20 if predicate entities:teth_volley positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 execute if score #hp temp matches ..10 if predicate entities:teth_volley positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 

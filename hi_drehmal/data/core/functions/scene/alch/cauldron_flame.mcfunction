@@ -40,7 +40,7 @@ execute if score #part_timer temp matches 19 run particle flame -2426.75 33.95 2
 execute if score #part_timer temp matches 0 run particle flame -2426.75 33.95 2947.25
 execute if score #part_timer temp matches 1 run particle flame -2426.75 33.95 2947.0
 
-execute if score #alch_ani int matches 42 run playsound minecraft:dcustom.block.brewing_stand.brew master @a -2428.0 35.0 2947.0 1 0.8
+execute if score #alch_ani int matches 42 run playsound minecraft:dcustom.block.brewing_stand.brew block @a -2428.0 35.0 2947.0 1 0.8
 execute if score #alch_ani int matches 42 run fill -2429 33 2947 -2428 33 2946 minecraft:magma_block
 execute if score #alch_ani int matches 72.. positioned -2428 35 2946 run particle minecraft:campfire_cosy_smoke ~ ~ ~ 0 0.2 0 1 0
 execute if score #alch_ani int matches 72.. positioned -2429 35 2946 run particle minecraft:campfire_cosy_smoke ~ ~ ~ 0 0.2 0 1 0

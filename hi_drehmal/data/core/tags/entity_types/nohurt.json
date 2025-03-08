@@ -59,6 +59,7 @@
     "minecraft:chicken",
     "minecraft:rabbit",
     "minecraft:fox",
-    "minecraft:sheep"
+    "minecraft:sheep",
+    "minecraft:item_display"
   ]
 }

@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:golden_apple"
+            ],
+            "nbt": "{CustomModelData:1}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:consume/eat_gay_apple"
+    }
+  }
+  

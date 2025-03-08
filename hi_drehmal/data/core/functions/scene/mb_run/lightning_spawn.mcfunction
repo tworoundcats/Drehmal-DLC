@@ -1,4 +1,4 @@
-summon marker ~ ~ ~ {Tags:["special","khive_lightning"]}
+summon marker ~ ~ ~ {Tags:["special","khive_lightning","khive_attack"]}
 function core:rng
 scoreboard players operation #rand temp %= #5 const
 execute store result score #nextbend temp run scoreboard players add #rand temp 5

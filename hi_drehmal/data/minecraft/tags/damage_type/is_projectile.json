@@ -10,8 +10,11 @@
         "minecraft:bernice/laser/evaporated",
         "minecraft:shot",
         "minecraft:zenith",
-        "minecraft:primalenergy"
-
-        
+        "minecraft:primalenergy",
+        "minecraft:skullmissle",
+        "minecraft:seabomb",
+        "minecraft:fireball",
+        "minecraft:trident",
+        "minecraft:arrow"
     ]
 }

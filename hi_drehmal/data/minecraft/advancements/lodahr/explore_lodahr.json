@@ -1,0 +1,221 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_boots",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Otherworldly Expedition"
+    },
+    "description": {
+      "text": "Explore every Aspect Domain"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:lodahr/root",
+  "criteria": {
+    "minecraft:dahr": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:eroded_badlands"
+          }
+        }
+      }
+    },
+    "minecraft:khive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:stony_peaks"
+          }
+        }
+      }
+    },
+    "minecraft:lahr": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:deep_frozen_ocean"
+          }
+        }
+      }
+    },
+    "minecraft:lai": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:snowy_beach"
+          }
+        }
+      }
+    },
+    "minecraft:loe": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:grove"
+          }
+        }
+      }
+    },
+    "minecraft:maen": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:old_growth_pine_taiga"
+          }
+        }
+      }
+    },
+    "minecraft:moen": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:deep_lukewarm_ocean"
+          }
+        }
+      }
+    },
+    "minecraft:nahyn": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:windswept_forest"
+          }
+        }
+      }
+    },
+    "minecraft:noha": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:old_growth_birch_forest"
+          }
+        }
+      }
+    },
+    "minecraft:palaesida": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:mangrove_swamp"
+          }
+        }
+      }
+    },
+    "minecraft:rihelma": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:deep_cold_ocean"
+          }
+        }
+      }
+    },
+    "minecraft:taihgel": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:stony_shore"
+          }
+        }
+      }
+    },
+    "minecraft:vayniklah": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:sparse_jungle"
+          }
+        }
+      }
+    },
+    "minecraft:voynahla": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:windswept_hills"
+          }
+        }
+      }
+    },
+    "minecraft:ytaj": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:old_growth_spruce_taiga"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:dahr"
+    ],
+    [
+      "minecraft:khive"
+    ],
+    [
+      "minecraft:lahr"
+    ],
+    [
+      "minecraft:lai"
+    ],
+    [
+      "minecraft:loe"
+    ],
+    [
+      "minecraft:maen"
+    ],
+    [
+      "minecraft:moen"
+    ],
+    [
+      "minecraft:nahyn"
+    ],
+    [
+      "minecraft:noha"
+    ],
+    [
+      "minecraft:palaesida"
+    ],
+    [
+      "minecraft:rihelma"
+    ],
+    [
+      "minecraft:taihgel"
+    ],
+    [
+      "minecraft:vayniklah"
+    ],
+    [
+      "minecraft:voynahla"
+    ],
+    [
+      "minecraft:ytaj"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

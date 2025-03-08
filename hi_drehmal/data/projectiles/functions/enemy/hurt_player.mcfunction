@@ -26,8 +26,9 @@ execute if score @s damage_s matches 26 if score #diff temp matches 3 run damage
 
 execute if score @s damage_s matches 11 run damage @s 11 minecraft:bernice/laser/evaporated
 
-execute if score @s damage_s matches 30 run damage @s 18 minecraft:shot
+execute if score @s damage_s matches 30 run damage @s 18 minecraft:bifurcated
 
+execute if score @s damage_s matches 32 run damage @s 28 minecraft:shot
 
 execute if score @s damage_s matches 12 run damage @s 16 minecraft:bernice/laser/boiled
 

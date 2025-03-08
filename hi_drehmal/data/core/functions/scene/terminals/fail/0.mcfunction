@@ -1,5 +1,5 @@
 tellraw @a[x=26520,y=178,z=-137,distance=..20] [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＥＲＲ！ ＩＮＣＯＲＲＥＣＴ ＭＡＰ ＶＥＲＳＩＯＮ／／"}]
-playsound minecraft:dcustom.block.note_block.bit master @a 26520 178 -137 1 0
+playsound minecraft:dcustom.block.note_block.bit block @a 26520 178 -137 1 0
 scoreboard players set #spawn_term_a? bool 1
 setblock 26520 178 -137 air
 setblock 26520 178 -136 air

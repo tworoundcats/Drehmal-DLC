@@ -1,0 +1,1 @@
+execute as @p[tag=jump3] run tag @s remove jump3

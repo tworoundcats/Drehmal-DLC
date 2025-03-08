@@ -9,7 +9,7 @@ effect give @e[type=!player,type=!#core:undead,tag=!ossein,distance=..10] instan
 effect give @e[type=#core:undead,type=!player,tag=!ossein,distance=..10] instant_health 1 5
 execute as @a[distance=..10] run function players:damage/ossein_messages
 effect give @s slowness 2 0 true
-playsound minecraft:dcustom.entity.zombified_piglin.death master @s ~ ~ ~ 10 0.5
+playsound minecraft:dcustom.entity.zombified_piglin.death hostile @s ~ ~ ~ 10 0.5
 
 summon lightning_bolt ~5 ~1 ~5
 summon lightning_bolt ~-5 ~1 ~-5

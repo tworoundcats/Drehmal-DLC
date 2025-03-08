@@ -7,7 +7,7 @@ playsound minecraft:dcustom.entity.enderman.teleport ambient @a -192.5 131.5 189
 
 clone -248 113 184 -239 123 194 -196 126 184
 kill @e[tag=shuttle_seat]
-execute positioned -191 130 189 run function core:scene/shuttle/summon_seats
+execute positioned -190.99 130 188.99 run function core:scene/shuttle/summon_seats
 
 setblock -63 122 122 air
 fill -68 117 117 -59 127 127 air

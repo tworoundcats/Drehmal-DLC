@@ -1,0 +1,1 @@
+give @s apple{CustomModelData:2,display:{Name:'{"extra":[{"italic":false,"color":"white","text":"Charred Apple"}],"text":""}'}}

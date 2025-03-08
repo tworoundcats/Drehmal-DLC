@@ -27,17 +27,4 @@ data modify entity @s Motion set from storage drehmal:players tempPos
 
 scoreboard players set @s hurtby_timer -10000
 
-damage @s 35
-
-execute store result score #hp temp run data get entity @s Health 1000
-execute store result score #hpadd temp run data get entity @s AbsorptionAmount 1000
-scoreboard players remove #hpadd temp 12000
-execute if entity @s[type=#minecraft:skeletons] run scoreboard players remove #hpadd temp 12000
-execute if score #hpadd temp matches ..0 run scoreboard players operation #hp temp += #hpadd temp
-execute if score #hpadd temp matches ..0 run scoreboard players set #hpadd temp 0
-
-execute if score #hpadd temp matches 1.. store result entity @s AbsorptionAmount float 0.001 run scoreboard players get #hpadd temp
-execute if score #hpadd temp matches ..0 if score #hp temp matches 1.. store result entity @s Health float 0.001 run scoreboard players get #hp temp
-execute if entity @s[type=#minecraft:skeletons] if score #hpadd temp matches ..0 unless score #hp temp matches 1.. at @s run loot spawn ~ ~ ~ loot players:osteo
-execute if score #hpadd temp matches ..0 unless score #hp temp matches 1.. unless entity @s[type=minecraft:ender_dragon] run kill @s
-execute if score #hpadd temp matches ..0 unless score #hp temp matches 1.. if entity @s[type=minecraft:ender_dragon] run data modify entity @s Health set value 0.0f
+damage @s[type=#minecraft:skeletons] 35

@@ -2,3 +2,5 @@ execute at @s as @a[distance=..50] at @s run playsound minecraft:pickup.calamity
 
 scoreboard players set #gotCal bool 1
 advancement grant @a only weapons:calamity
+
+recipe give @s weapons:calamity

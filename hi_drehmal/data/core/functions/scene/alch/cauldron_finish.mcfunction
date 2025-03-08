@@ -1,5 +1,5 @@
 fill -2428 34 2946 -2429 34 2947 minecraft:cauldron replace minecraft:water_cauldron
-playsound minecraft:dcustom.entity.generic.explode master @a
+playsound minecraft:dcustom.entity.generic.explode block @a
 particle lava ~ ~ ~ 0.5 0 0.5 0 100
 particle large_smoke ~ ~ ~ 0.5 0 0.5 0 100
 particle explosion ~ ~ ~ 0.05 0.05 0.05 0.1 5

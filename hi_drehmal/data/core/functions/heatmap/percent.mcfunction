@@ -20,6 +20,7 @@ execute if entity @s[advancements={advancements:mystery/mstone3=true}] run score
 execute if entity @s[advancements={advancements:mystery/mstoneall=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:mystery/nerd=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:mystery/netherite_nodahr=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={advancements:mystery/hotty=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:mystery/nodeaths=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={minecraft:drehmal/all_effects=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={minecraft:drehmal/arbalistic=true}] run scoreboard players add #adv temp 1
@@ -130,7 +131,7 @@ execute if entity @s[advancements={advancements:primordial/khive_angy=true}] run
 execute if entity @s[advancements={advancements:primordial/kill_dragon=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:primordial/resupply_depot=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:primordial/right_fragment=true}] run scoreboard players add #adv temp 1
-execute if entity @s[advancements={advancements:primordial/ring_facility=true}] run scoreboard players add #adv temp 1
+execute if score #ring_facility bool matches 1 run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:primordial/salmevirtower=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:primordial/stasis=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:primordial/terminus=true}] run scoreboard players add #adv temp 1
@@ -327,7 +328,7 @@ execute if entity @s[advancements={advancements:discoveries/raveloth=true}] run 
 execute if entity @s[advancements={advancements:discoveries/rehntite=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/resupply_depot=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/rihelma=true}] run scoreboard players add #dadv temp 1
-execute if entity @s[advancements={advancements:discoveries/ring_facility=true}] run scoreboard players add #dadv temp 1
+execute if score #ring_facility bool matches 1 run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/sahd=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/salanyr=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/salmevir=true}] run scoreboard players add #dadv temp 1
@@ -446,6 +447,7 @@ execute if entity @s[advancements={advancements:mystery/mstone3=true}] run score
 execute if entity @s[advancements={advancements:mystery/mstoneall=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={advancements:mystery/nerd=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={advancements:mystery/netherite_nodahr=true}] run scoreboard players add #madv temp 1
+execute if entity @s[advancements={advancements:mystery/hotty=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={advancements:mystery/nodeaths=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={minecraft:drehmal/all_effects=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={minecraft:drehmal/arbalistic=true}] run scoreboard players add #madv temp 1

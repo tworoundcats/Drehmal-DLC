@@ -9,7 +9,7 @@ forceload remove 26334 188 26268 121
 tag @a remove ossein_spawnpoint
 bossbar set health visible false
 bossbar set health value 0
-playsound minecraft:dcustom.entity.zombified_piglin.death master @a ~ ~ ~ 2 0.1
-playsound minecraft:dcustom.entity.lightning_bolt.thunder master @a ~ ~ ~ 10 2
+playsound minecraft:dcustom.entity.zombified_piglin.death hostile @a ~ ~ ~ 2 0.1
+playsound minecraft:dcustom.entity.lightning_bolt.thunder hostile @a ~ ~ ~ 10 2
 kill @e[type=skeleton_horse,tag=ossein_horse]
 schedule function core:scene/ossein/0 24t

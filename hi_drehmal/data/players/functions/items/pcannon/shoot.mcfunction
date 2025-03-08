@@ -1,5 +1,5 @@
-playsound minecraft:dcustom.entity.leash_knot.place master @a ~ ~ ~ 1 2
-playsound minecraft:dcustom.entity.guardian.hurt master @s ~ ~ ~ 1.4 2
+playsound minecraft:dcustom.entity.leash_knot.place player @a ~ ~ ~ 1 2
+playsound minecraft:dcustom.entity.guardian.hurt player @s ~ ~ ~ 1.4 2
 execute store result storage drehmal:players tempUuid[0] int 1 run scoreboard players get @s uuid0
 execute store result storage drehmal:players tempUuid[1] int 1 run scoreboard players get @s uuid1
 execute store result storage drehmal:players tempUuid[2] int 1 run scoreboard players get @s uuid2

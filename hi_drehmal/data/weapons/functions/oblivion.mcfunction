@@ -2,3 +2,5 @@ execute at @s as @a[distance=..50] at @s run playsound minecraft:pickup.obv reco
 
 scoreboard players set #gotObv bool 1
 advancement grant @a only weapons:oblivion
+
+recipe give @s weapons:oblivion

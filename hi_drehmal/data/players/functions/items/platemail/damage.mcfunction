@@ -1,6 +1,5 @@
-damage @s 16
+damage @s 16 generic
 
-effect give @s slowness 10 3 true
 
 data modify storage drehmal:players tempMotion set from entity @s Pos
 execute store result score #x temp run data get storage drehmal:players tempMotion[0] 100
@@ -17,5 +16,7 @@ teleport @s ~ ~ ~ ~ ~
 execute store result storage drehmal:players tempMotion[0] double 0.01 run scoreboard players operation #x temp -= #x1 temp
 execute store result storage drehmal:players tempMotion[2] double 0.01 run scoreboard players operation #x temp -= #x1 temp
 
-data modify storage drehmal:players tempMotion[1] set value 0.3
+data modify storage drehmal:players tempMotion[1] set value 1.5
 data modify entity @s Motion set from storage drehmal:players tempMotion
+
+effect give @s slowness 10 3 true

@@ -17,23 +17,9 @@
     "hidden": false
   },
   "criteria": {
-    "shot_trident": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "type": {
-            "is_projectile": true,
-            "direct_entity": {
-              "type": "minecraft:trident"
-            }
-          }
-        }
-      }
+    "": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "shot_trident"
-    ]
-  ]
+  }
 }

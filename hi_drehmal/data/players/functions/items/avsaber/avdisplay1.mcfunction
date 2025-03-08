@@ -8,4 +8,3 @@ execute if score @s AvTimer matches 51..60 run title @s actionbar [{"text":"Char
 execute if score @s AvTimer matches 61..70 run title @s actionbar [{"text":"Charges","color":"dark_purple","bold":true},{"text":" |","color":"white","bold":false},{"color":"yellow","bold":true,"score":{"name":"@s","objective":"AvShots"}},{"text":"|","color":"white","bold":false},{"text":"   Reloading","color":"light_purple","bold":false},{"text":"..","color":"gray","bold":false}]
 execute if score @s AvTimer matches 71..80 run title @s actionbar [{"text":"Charges","color":"dark_purple","bold":true},{"text":" |","color":"white","bold":false},{"color":"yellow","bold":true,"score":{"name":"@s","objective":"AvShots"}},{"text":"|","color":"white","bold":false},{"text":"   Reloading","color":"light_purple","bold":false},{"text":"...","color":"gray","bold":false}]
 execute if score @s AvTimer matches 21..40 run title @s actionbar [{"text":"Charges Depleted","color":"red","bold":true}]
-

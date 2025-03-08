@@ -7,8 +7,8 @@ execute if score #spawn temp matches 1 run summon guardian ~ ~ ~ {DeathLootTable
 
 
 
-playsound minecraft:dcustom.entity.squid.squirt master @a ~ ~ ~ 10 2
-playsound minecraft:dcustom.block.honey_block.fall master @a ~ ~ ~ 10 0.5
+playsound minecraft:dcustom.entity.squid.squirt hostile @a ~ ~ ~ 10 2
+playsound minecraft:dcustom.block.honey_block.fall hostile @a ~ ~ ~ 10 0.5
 particle minecraft:glow_squid_ink ~ ~ ~ 0.5 0.5 0.5 0 15 force
 
 schedule function entities:proj_schedule 1t

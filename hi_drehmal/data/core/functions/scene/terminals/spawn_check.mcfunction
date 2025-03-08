@@ -3,7 +3,7 @@ advancement revoke @s only players:terms/spawn
 execute as @e[type=villager,tag=spawn_term] at @s run teleport ~ -1000 ~
 execute as @e[type=villager,tag=spawn_term] at @s run kill @s
 tellraw @a[x=26520,y=178,z=-137,distance=..20] [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＡＴＴＥＭＰＴＩＮＧ ＮＥＴＷＯＲＫ ＲＥＣＯＮＮＥＣＴＩＯＮ．．．／／"}]
-playsound minecraft:dcustom.ui.button.click master @a 26520 178 -137 1
+playsound minecraft:dcustom.ui.button.click block @a 26520 178 -137 1
 
 scoreboard players reset #118 temp
 execute store success score #118 temp if block 1000000 -63 1000000 minecraft:cherry_leaves

@@ -10,6 +10,6 @@ execute positioned -2610 21 2214 as @s[distance=..10,tag=!exodusspawn,gamemode=!
 execute positioned -3069 41 2214 as @s[distance=..20,tag=exodusspawn,gamemode=!creative,gamemode=!spectator] run function players:spawn/clear_temp_spawn
 execute positioned -3069 41 2214 as @s[distance=..20,tag=exodusspawn,gamemode=!creative,gamemode=!spectator] run tag @s remove exodusspawn
  
-execute as @a[x=-2741, y=7 ,z=2116,dx=13,dy=4,dz=13] at @s if block ~ ~-0.25 ~ minecraft:yellow_stained_glass if score #5T timer matches 0 run damage @s 2 minecraft:godmachine
+execute as @a[x=-2741, y=7 ,z=2116,dx=13,dy=4,dz=13] at @s if block ~ ~-0.25 ~ minecraft:yellow_stained_glass if score #5T timer matches 0 run damage @s 2 minecraft:moon/melt
 #big door exit entrance
 

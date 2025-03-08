@@ -46,6 +46,7 @@ scoreboard players reset #cmtrig3 bool
 scoreboard players reset #coreo1 bool
 scoreboard players reset #coreo2 bool
 scoreboard players reset #mb_picked bool
+scoreboard players reset #khive_scroll bool
 scoreboard players reset #core_broke bool
 scoreboard players reset #alch_on? bool
 scoreboard players reset #ark_complete? bool
@@ -109,6 +110,7 @@ scoreboard players reset #mystery.sol_obv bool
 scoreboard players reset #mystery.sol_fzy bool
 scoreboard players reset #mystery.sol_szy bool
 scoreboard players reset #mystery.sol_zen bool
+scoreboard players reset #mystery.atmosphere bool
 
 scoreboard players reset #send_feedback_on bool
 

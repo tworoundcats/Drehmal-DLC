@@ -10,7 +10,7 @@ execute unless score #returnportal z matches 1 if score #tmbportal timer matches
 function players:music/reset
 execute unless score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 26937 31.5 -166 run particle squid_ink ~ ~ ~ 0.2 0.2 0.2 0 500
 execute unless score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 26937 30.1 -166 run function entities:dropped_items/beam_ring_y
-execute unless score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 26937 31.5 -166 run playsound minecraft:dcustom.block.bell.resonate master @a ~ ~ ~ 1 1 1
+execute unless score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 26937 31.5 -166 run playsound minecraft:dcustom.block.bell.resonate block @a ~ ~ ~ 1 1 1
 execute unless score #returnportal z matches 1 if score #tmbportal timer matches 1.. run effect give @s nausea 6 2 true
 execute unless score #returnportal z matches 1 if score #tmbportal timer matches 1.. run particle squid_ink 27295 76.5 -112 0.1 0.1 0.1 0 100
 execute unless score #returnportal z matches 1 if score #tmbportal timer matches 1.. at @s run particle squid_ink ~ ~1.5 ~ 0.1 0.1 0.1 0 100
@@ -30,7 +30,7 @@ execute if score #returnportal z matches 1 if score #tmbportal timer matches 99 
 function players:music/reset
 execute if score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 10000 59 10002 run particle squid_ink ~ ~ ~ 0.2 0.2 0.2 0 500
 execute if score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 10000 59 10002 run function entities:dropped_items/beam_ring_y
-execute if score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 10000 59 10002 run playsound minecraft:dcustom.block.bell.resonate master @a ~ ~ ~ 1 1 1
+execute if score #returnportal z matches 1 if score #tmbportal timer matches 99 positioned 10000 59 10002 run playsound minecraft:dcustom.block.bell.resonate block @a ~ ~ ~ 1 1 1
 execute if score #returnportal z matches 1 if score #tmbportal timer matches 1.. run effect give @s nausea 6 2 true
 execute if score #returnportal z matches 1 if score #tmbportal timer matches 1.. run particle squid_ink 10000 59 10002 0.1 0.1 0.1 0 100
 execute if score #returnportal z matches 1 if score #tmbportal timer matches 1.. at @s run particle squid_ink ~ ~1.5 ~ 0.1 0.1 0.1 0 100

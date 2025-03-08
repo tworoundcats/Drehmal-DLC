@@ -22,7 +22,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "minecraft:wooden_pickaxe"
+            "minecraft:stone_pickaxe"
           ],
           "nbt": "{Flammer:1b}"
         }

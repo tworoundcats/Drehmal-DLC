@@ -1,5 +1,5 @@
 scoreboard players reset #top? temp
-execute positioned ~-1.5 ~0.4 ~-1.5 store result score #top? temp if entity @e[tag=emissary,dx=3,dy=0,dz=3] 
+execute positioned ~-1.5 ~0.4 ~-1.5 store result score #top? temp if entity @e[tag=emissary,dx=3,dy=0,dz=3]
 
 teleport @s ~ ~ ~ ~ ~
 execute if score #top? temp matches 1 run function players:items/mb/abeam

@@ -1,8 +1,10 @@
 {
     "values": [
+        "minecraft:rubber",
         "minecraft:khivewrath",
         "minecraft:ysold/blown",
         "minecraft:ysold/hole",
+        "minecraft:atmosphere",
         "minecraft:overreacted"
     ]
 }

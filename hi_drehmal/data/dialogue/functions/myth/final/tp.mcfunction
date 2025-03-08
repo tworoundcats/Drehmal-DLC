@@ -58,7 +58,7 @@ execute if score @s finaltp matches 199 positioned ~ ~ ~ run particle end_rod ~ 
 execute if score @s finaltp matches 199 positioned ~ ~ ~ run particle cloud ~ ~2 ~ 0 0 0 0.5 50 force
 
 
-execute if score @s finaltp matches 199 positioned ~ ~ ~ run playsound minecraft:dcustom.block.bell.resonate master @a ~ ~ ~ 1 1 1
+execute if score @s finaltp matches 199 positioned ~ ~ ~ run playsound minecraft:dcustom.block.bell.resonate block @a ~ ~ ~ 1 1 1
 
 execute if score @s finaltp matches 199 positioned ~ ~ ~ run advancement grant @s only advancements:primordial/closure
 

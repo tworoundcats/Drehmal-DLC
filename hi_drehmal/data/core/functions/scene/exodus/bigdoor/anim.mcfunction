@@ -1,6 +1,7 @@
 
 
 #start
+scoreboard players set #exodusbigdoor bool 1
 execute if score #exodusbigdoor y matches 70 run clone -3053 9 2296 -3045 38 2268 -3073 28 2200
 
 execute if score #exodusbigdoor y matches 20 run playsound dcustom.block.beacon.activate block @a -3067 41 2214 15 0

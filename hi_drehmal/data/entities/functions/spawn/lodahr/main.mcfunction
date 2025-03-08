@@ -6,5 +6,6 @@
 #execute if entity @s[type=squid] run team join gsquid_aggro @s
 execute if entity @s[type=villager,predicate=players:in_nah] run tag @s add nah_native
 
+execute if entity @s[name="Timeworn Thrall",type=zombie] run tag @s add timeworn_thrall
 execute if entity @s[predicate=entities:hostile_lodahr] run tag @s add lodahr_hostile
 execute if entity @s[tag=!lodahr_passive,predicate=entities:passive_lodahr] run tag @s add lodahr_passive

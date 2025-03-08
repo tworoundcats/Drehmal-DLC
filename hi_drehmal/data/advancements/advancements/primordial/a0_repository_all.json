@@ -146,7 +146,7 @@
                   },
                   "score": "int"
                 },
-                "range": 5
+                "range": 6
               },
               {
                 "condition": "minecraft:value_check",

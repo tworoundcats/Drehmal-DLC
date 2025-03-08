@@ -8,6 +8,7 @@ execute in lodahr positioned 1050 43 1219 run playsound dcustom.block.respawn_an
 
 
 execute in minecraft:lodahr run forceload add 1306 1187 1306 1208
+execute in minecraft:lodahr run forceload add 1050 1222
 
 execute in lodahr positioned 1050 43 1222 run particle happy_villager ~ ~ ~ 1 1 1 0 25 force
 execute in lodahr positioned 1050 43 1216 run particle happy_villager ~ ~ ~ 1 1 1 0 25 force

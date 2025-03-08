@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 1661,
+                  "max": 1665
+                },
+                "y": {
+                  "min": 20,
+                  "max": 65
+                },
+                "z": {
+                  "min": -4140,
+                  "max": -4136
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:locations/oblivion_area"
+  }
+}
+  

@@ -249,7 +249,7 @@ execute if score #alch_ani int matches 363.. if score #part_timer temp matches 3
 
 execute if score #alch_ani int matches 405..445 run particle lava -2420 35.5 2940 0 0 0 0.9 1
 execute if score #alch_ani int matches 445 run setblock -2420 35 2940 air destroy
-execute if score #alch_ani int matches 445 run playsound minecraft:dcustom.block.glass.break master @a -2420 35 2940 0.5
+execute if score #alch_ani int matches 445 run playsound minecraft:dcustom.block.glass.break block @a -2420 35 2940 0.5
 execute if score #alch_ani int matches 445 run particle flame -2420 35.5 2940 0 0 0 0.2 15
 
 execute if score #alch_ani int matches 359.. if score #part_timer temp matches 19 run particle minecraft:end_rod -2421.5 33.95 2940.25

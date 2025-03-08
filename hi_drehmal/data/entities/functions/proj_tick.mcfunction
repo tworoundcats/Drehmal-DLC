@@ -24,3 +24,4 @@ execute if entity @s[type=minecart] if score #5T timer matches 0 if predicate en
 execute if entity @s[type=lightning_bolt] positioned ~ ~1 ~ as @e[tag=lightning_immune,tag=invulnerable,distance=..8] run function entities:ai/lightning_evoker/apply_invul
 execute if entity @s[type=evoker_fangs] run function entities:misc/check_fang_owner
 execute if entity @s[tag=nah_fwork] unless entity @p[distance=..192] run kill @s
+execute if entity @s[type=item_display] run function entities:arrow_tick

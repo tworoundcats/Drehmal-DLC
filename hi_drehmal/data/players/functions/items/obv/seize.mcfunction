@@ -8,4 +8,3 @@ execute at @s run function players:items/obv/v/h/init
 effect give @s slow_falling 1 1 true
 scoreboard players set #success temp 1
 scoreboard players reset #loop temp
-

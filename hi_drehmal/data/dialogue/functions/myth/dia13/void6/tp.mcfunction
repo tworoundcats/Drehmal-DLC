@@ -12,7 +12,7 @@ execute in true_end if score #emmportal timer matches 99 run spawnpoint @s 778 2
 
 execute in true_end if score #emmportal timer matches 99 positioned 778 2 460 run particle squid_ink ~ ~ ~ 0.2 0.2 0.2 0 500
 execute in true_end if score #emmportal timer matches 99 positioned 778 2 460 run function entities:dropped_items/beam_ring_y
-execute in true_end if score #emmportal timer matches 99 positioned 778 2 460 run playsound minecraft:dcustom.block.bell.resonate master @a ~ ~ ~ 1 1 1
+execute in true_end if score #emmportal timer matches 99 positioned 778 2 460 run playsound minecraft:dcustom.block.bell.resonate block @a ~ ~ ~ 1 1 1
 
 execute in true_end if score #emmportal timer matches 1.. at @s run particle squid_ink ~ ~1.5 ~ 0.1 0.1 0.1 0 100
 execute in true_end if score #emmportal timer matches 1..99 run effect give @s nausea 6 2 true

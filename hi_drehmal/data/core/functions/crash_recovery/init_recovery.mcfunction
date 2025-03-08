@@ -1,14 +1,13 @@
 # DO NOT RUN ON ITS OWN! This code uses only relative coordinates so we can move the backup location as necessary.
 # #scoreboardStable bool will be unset while this is running so you can use that to disable any dialogue that would normally play as a result of triggering story events/etc.
 
-tellraw @a [{"text":""},{"text":"[!] Scoreboard corruption has been detected [!]\n\n","color":"red"},{"text":"What does this mean?:\nAt some point, the scoreboard.dat file for your world was accidently wiped. This most commonly happens due to a server crash.\n\n"},{"text":"What should I do?:\nWe've done our best to recover all the main story progress you've made, so you should be able to continue as normal, but some events that are unrelated to the main story may have been reset or broken. Ask for help in the "},{"text":"Discord","color":"yellow","underlined":"true","clickEvent":{"action":"open_url","value":"https://www.drehmal.net/discord"}},{"text":" if something breaks."}]
+tellraw @a [{"text":""},{"text":"[!] Scoreboard corruption has been detected [!]\n\n","color":"red"},{"text":"What does this mean?:\nAt some point, the scoreboard.dat file for your world was accidently wiped. This most commonly happens due to a server crash.\n\n"},{"text":"What should I do?:\nWe've done our best to recover all the main story progress you've made, so you should be able to continue as normal, but some events that are unrelated to the main story may have been reset or broken. Ask for help in the "},{"text":"Discord","color":"yellow","underlined":"true","clickEvent":{"action":"open_url","value":"https://discord.gg/drehmal"}},{"text":" if something breaks."}]
 
 # if a dev needs to troubleshoot, this will tell us if the world experience scoreboard corruption at some point.
 fill ~ ~-1 ~ ~15 ~-1 ~15 minecraft:red_concrete
 
 # this gets reset after 5 seconds, to give time for various story advancements to get granted without clogging the chat.
 gamerule announceAdvancements false
-
 execute if score count_all towers matches 1.. run scoreboard players set #termstart bool 1
 
 
@@ -210,3 +209,39 @@ execute if block ~2 ~ ~15 minecraft:black_concrete run scoreboard players set #m
 execute if block ~3 ~ ~15 minecraft:black_concrete run scoreboard players set #mb_run_active? bool 1
 
 schedule function core:crash_recovery/finish_recovery 5s
+
+execute as @a[tag=1] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 1 1
+execute as @a[tag=2] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 2 1
+execute as @a[tag=3] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 3 1
+execute as @a[tag=4] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 4 1
+execute as @a[tag=5] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 5 1
+execute as @a[tag=6] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 6 1
+execute as @a[tag=7] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 7 1
+execute as @a[tag=8] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 8 1
+execute as @a[tag=9] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 9 1
+execute as @a[tag=10] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 10 1
+execute as @a[tag=11] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 11 1
+execute as @a[tag=12] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 12 1
+execute as @a[tag=13] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 13 1
+execute as @a[tag=14] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 14 1
+execute as @a[tag=15] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 15 1
+execute as @a[tag=16] as @s run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 16 1
+
+execute if block 26518 167 -88 white_concrete run scoreboard players set #numberp num 1
+execute if block 26518 167 -88 light_gray_concrete run scoreboard players set #numberp num 2
+execute if block 26518 167 -88 gray_concrete run scoreboard players set #numberp num 3
+execute if block 26518 167 -88 black_concrete run scoreboard players set #numberp num 4
+execute if block 26518 167 -88 brown_concrete run scoreboard players set #numberp num 5
+execute if block 26518 167 -88 red_concrete run scoreboard players set #numberp num 6
+execute if block 26518 167 -88 orange_concrete run scoreboard players set #numberp num 7
+execute if block 26518 167 -88 yellow_concrete run scoreboard players set #numberp num 8
+execute if block 26518 167 -88 lime_concrete run scoreboard players set #numberp num 9
+execute if block 26518 167 -88 green_concrete run scoreboard players set #numberp num 10
+execute if block 26518 167 -88 cyan_concrete run scoreboard players set #numberp num 11
+execute if block 26518 167 -88 light_blue_concrete run scoreboard players set #numberp num 12
+execute if block 26518 167 -88 blue_concrete run scoreboard players set #numberp num 13
+execute if block 26518 167 -88 purple_concrete run scoreboard players set #numberp num 14
+execute if block 26518 167 -88 magenta_concrete run scoreboard players set #numberp num 15
+execute if block 26518 167 -88 pink_concrete run scoreboard players set #numberp num 16
+
+execute if block 26516 167 -88 green_concrete run scoreboard players set #ring_facility bool 1

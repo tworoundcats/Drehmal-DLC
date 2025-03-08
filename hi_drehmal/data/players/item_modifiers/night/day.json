@@ -62,7 +62,7 @@
           }
         ],
         {
-          "text": "Gain increased movement speed, attack",
+          "text": "Gain increased movement speed, armor, attack",
           "color": "dark_gray",
           "italic": true
         },
@@ -85,7 +85,7 @@
           "italic": false
         },
         {
-          "text": "+6 Armor",
+          "text": "+4 Armor",
           "color": "blue",
           "italic": false
         },

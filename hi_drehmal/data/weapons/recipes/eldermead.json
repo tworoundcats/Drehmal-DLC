@@ -16,10 +16,10 @@
             "item": "minecraft:warped_fungus"
         },
         "V": {
-            "item": "minecraft:vine"
+            "item": "minecraft:honey_bottle"
         },
         "P": {
-            "item": "minecraft:honey_bottle"
+            "item": "minecraft:jigsaw"
         },
         "A": {
             "item": "minecraft:amethyst_shard"
@@ -27,6 +27,7 @@
     },
     "result": {
         "item": "minecraft:zombie_spawn_egg",
-        "count": 1
-    }
-}
+      "count": 1
+    },
+    "show_notification": true
+  }

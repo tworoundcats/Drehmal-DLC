@@ -19,6 +19,7 @@ execute in minecraft:overworld run fill 2582 230 1219 2572 230 1203 air replace 
 
 execute in minecraft:overworld run clone 2618 107 1222 2618 107 1222 2587 229 1211 replace force
 execute in minecraft:overworld run particle minecraft:witch 2587 229 1211 0.4 0.4 0.4 0 100
+execute in minecraft:overworld run playsound minecraft:dcustom.entity.generic.explode block @a 2587 229 1211 1 2
 
 execute in minecraft:overworld positioned 2602 104 1213 run playsound minecraft:dcustom.block.end_portal.spawn ambient @a ~ ~ ~ 0.2 2
 

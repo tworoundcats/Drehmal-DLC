@@ -1,7 +1,9 @@
 {
     "values": [
         "minecraft:skullmissle",
-        "minecraft:seabomb"
+        "minecraft:fireball",
+        "minecraft:seabomb",
+        "minecraft:explosion"
         
     ]
 }

@@ -2,9 +2,7 @@ scoreboard players reset #gotAvpod bool
 scoreboard players reset #gotAsc bool
 scoreboard players reset #gotCal bool
 scoreboard players reset #gotClaw bool
-scoreboard players reset #gotDrgShld bool
 scoreboard players reset #gotEMead bool
-scoreboard players reset #gotFcnShld bool
 scoreboard players reset #gotFlam bool
 scoreboard players reset #gotFstStd bool
 scoreboard players reset #gotFzy bool
@@ -23,7 +21,6 @@ scoreboard players reset #gotOrch bool
 scoreboard players reset #gotOst bool
 scoreboard players reset #gotPTrty bool
 scoreboard players reset #gotRehn bool
-scoreboard players reset #gotSpiShld bool
 scoreboard players reset #gotScptr bool
 scoreboard players reset #gotSBolt bool
 scoreboard players reset #gotSzy bool

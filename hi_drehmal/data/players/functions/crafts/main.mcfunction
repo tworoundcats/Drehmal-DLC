@@ -85,5 +85,8 @@ execute if score @s crafted matches 1.. run function players:crafts/syzygy
 execute store result score @s crafted run clear @s dolphin_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/zenith
 
+execute store result score @s crafted run clear @s turtle_spawn_egg
+execute if score @s crafted matches 1.. run function players:crafts/eldermead_bottle
+
 tag @s remove crafting
 advancement revoke @s only players:get_craft_replace

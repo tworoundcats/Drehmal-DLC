@@ -1,5 +1,5 @@
 # make sure player exists
-execute unless score @s horseOwnerID matches -2147483648.. run function players:avhorse/index/_player
+execute unless score @s horseOwnerID matches -2147483648.. run function players:avhorse/index/restore_player
 
 
 scoreboard players reset @s horseFavID

@@ -294,6 +294,78 @@
                     "min":1
                 }
             }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCherryLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCherrySl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCherrySw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkCherryWd": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkMangroveLg": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkMangroveSl": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkMangroveSw": {
+                    "min":1
+                }
+            }
+        },
+        {
+            "condition":"entity_scores",
+            "entity":"this",
+            "scores": {
+                "brkMangroveWd": {
+                    "min":1
+                }
+            }
         }
 
     ]

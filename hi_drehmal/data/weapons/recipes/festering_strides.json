@@ -24,6 +24,7 @@
     },
     "result": {
         "item": "minecraft:tropical_fish_spawn_egg",
-        "count": 1
-    }
-}
+      "count": 1
+    },
+    "show_notification": true
+  }

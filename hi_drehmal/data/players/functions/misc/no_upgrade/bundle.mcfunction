@@ -40,6 +40,8 @@ execute if data storage drehmal:players countList[] run function players:misc/no
 tellraw @s {"text":"The alloy fails to hold its form...","italic":true,"color":"dark_red"}
 
 summon item ~ ~ ~ {PickupDelay:0,Tags:["temp"],Item:{id:"minecraft:netherite_ingot",Count:1b}}
+summon item ~ ~ ~ {PickupDelay:0,Tags:["temp"],Item:{id:"minecraft:netherite_upgrade_smithing_template",Count:1b}}
+
 
 execute as @e[type=item,tag=temp] store result entity @s Item.Count byte 1 run scoreboard players get #count temp
 tag @e[type=item,tag=temp] remove temp

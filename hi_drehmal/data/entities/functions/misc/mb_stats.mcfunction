@@ -1,4 +1,5 @@
-damage @s 8 minecraft:khivewrath
+scoreboard players set @s damage_s 31
+scoreboard players set @s speed 4
 
 scoreboard players set @s time_limit 300
 

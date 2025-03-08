@@ -8,7 +8,7 @@ execute if score #pearlID temp matches 5 in minecraft:lodahr run setblock -183 5
 execute if score #pearlID temp matches 6 in minecraft:lodahr run setblock -205 5 1143 chest[facing=south] replace
 
 scoreboard players add #dahr_pearl_count int 1
-playsound minecraft:dcustom.block.amethyst_cluster.fall master @a[predicate=players:lodahr,x=-198,y=1,z=1177,distance=..50] -197.5 17.5 1177.5 10
+playsound minecraft:dcustom.block.amethyst_cluster.fall player @a[predicate=players:lodahr,x=-198,y=1,z=1177,distance=..50] -197.5 17.5 1177.5 10
 
 execute if score #dahr_pearl_count int matches 1 run tellraw @a[predicate=players:lodahr,x=-198,y=1,z=1177,distance=..50] "The first of six has been returned."
 execute if score #dahr_pearl_count int matches 2 run tellraw @a[predicate=players:lodahr,x=-198,y=1,z=1177,distance=..50] "The second of six has been returned."

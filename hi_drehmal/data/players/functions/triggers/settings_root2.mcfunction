@@ -10,7 +10,7 @@ execute if score @s Settings matches 5 run function players:triggers/settings/se
 execute if score @s Settings matches 6 run function players:triggers/settings/set_hp_4_5
 execute if score @s Settings matches 7 run function players:triggers/settings/set_hp_6_7
 execute if score @s Settings matches 8 run function players:triggers/settings/set_hp_8
-
+execute if score @s Settings matches 9 run function players:triggers/settings/set_hp_auto
 
 # assist mode
 execute if score @s Settings matches 10 run function players:triggers/settings/set_assist_on

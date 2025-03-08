@@ -1,4 +1,4 @@
-item replace entity @s weapon.mainhand with air
+item modify entity @s weapon.mainhand core:soletta/remove_one_item
 scoreboard players add @s dquest 1 
 
 

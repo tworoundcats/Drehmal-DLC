@@ -9,3 +9,5 @@ execute at @s align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["aph_meteor_debris_
 execute at @s run setblock ~ ~ ~ ancient_debris
 
 kill @s
+
+function projectiles:meteors/place_crater_player

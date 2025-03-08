@@ -27,4 +27,3 @@ execute if score @s cal_charge matches 17 run title @s actionbar ["",{"text":"["
 execute if score @s cal_charge matches 18 run title @s actionbar ["",{"text":"[","color":"gold"},{"text":"|||||||||||||||||||||||||||||||||||","color":"dark_gray"},{"text":"||||","color":"gray"},{"text":"]","color":"gold"}]
 execute if score @s cal_charge matches 19 run title @s actionbar ["",{"text":"[","color":"gold"},{"text":"|||||||||||||||||||||||||||||||||||||","color":"dark_gray"},{"text":"||","color":"gray"},{"text":"]","color":"gold"}]
 execute if score @s cal_charge matches 20 run title @s actionbar ["",{"text":"[","color":"gold"},{"text":"|||||||||||||||||||||||||||||||||||||||","color":"green"},{"text":"]","color":"gold"}]
-

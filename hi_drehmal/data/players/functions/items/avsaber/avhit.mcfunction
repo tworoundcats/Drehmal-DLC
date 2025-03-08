@@ -1,5 +1,5 @@
 tag @s remove AvHit
-damage @s 5 minecraft:zenith by @p
+damage @s 1 minecraft:zenith by @p
 execute at @s run playsound minecraft:dcustom.entity.zombie_villager.cure ambient @a ~ ~ ~ 1 1.2
 
 scoreboard players operation @s AvPos0 -= #avkbX const
@@ -56,9 +56,9 @@ scoreboard players operation #avkbX temp /= #100 const
 scoreboard players operation #avkbY temp /= #100 const
 scoreboard players operation #avkbZ temp /= #100 const
 
-execute store result storage drehmal:entities tempPos[0] double 0.15 run scoreboard players operation #avkbX temp /= $AvPos0 AvPos0
-execute store result storage drehmal:entities tempPos[1] double 0.15 run scoreboard players operation #avkbY temp /= $AvPos0 AvPos0
-execute store result storage drehmal:entities tempPos[2] double 0.15 run scoreboard players operation #avkbZ temp /= $AvPos0 AvPos0
+execute store result storage drehmal:entities tempPos[0] double 0.3 run scoreboard players operation #avkbX temp /= $AvPos0 AvPos0
+execute store result storage drehmal:entities tempPos[1] double 0.3 run scoreboard players operation #avkbY temp /= $AvPos0 AvPos0
+execute store result storage drehmal:entities tempPos[2] double 0.3 run scoreboard players operation #avkbZ temp /= $AvPos0 AvPos0
 data modify entity @s Motion set from storage drehmal:entities tempPos
 scoreboard players set @s AvPos0 0
 scoreboard players set @s AvPos1 0

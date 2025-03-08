@@ -22,6 +22,7 @@ scoreboard players reset #at_gmachine bool
 scoreboard players reset #yav_hp int
 scoreboard players reset #gm_hp int
 scoreboard players reset #mb_picked bool
+scoreboard players reset #khive_scroll bool
 execute in minecraft:overworld positioned 26512 161 -96 run setblock ~2 ~ ~15 minecraft:light_gray_concrete
 execute in overworld run forceload remove 1737 -4393 1754 -4197
 

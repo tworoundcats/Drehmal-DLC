@@ -1,4 +1,3 @@
-stopsound @s music
 execute if score #1S timer matches 0 if score @s playingMusic matches ..0 run function players:music/lodahr
 
 execute if entity @s[tag=lodahr_sleep] run title @s actionbar {"text":"Time cannot be passed on the divine moon..."}
@@ -48,6 +47,28 @@ execute unless score @s khive_pcool matches 1.. if entity @s[x=-912.5,y=44,z=-20
 execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,scores={rx=4500..13500,x2=..-25}] run function players:misc/ring_portal/facility_to
 execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,scores={rx=-13500..-4500,x2=25..}] run function players:misc/ring_portal/facility_to
 
+execute unless score @s khive_pcool matches 1.. if entity @s[x=27391.0,y=125.0,z=53.0,dx=3,dy=5,dz=5,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+execute unless score @s khive_pcool matches 1.. if score #worldtime x matches 70..190 if entity @s[x=425,y=4,z=-834,dx=2,dy=5,dz=5,predicate=players:has_blindness] if block 440 3 -825 diamond_block run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-924.5,y=32,z=-202,dx=0,dy=4,dz=4,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-916.5,y=10,z=-127,dx=1,dy=6,dz=6,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-912.5,y=44,z=-202,dx=0,dy=4,dz=4,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,predicate=players:has_blindness] run title @s title {"text":"\uE004","font":"minecraft:drehmal"}
+
+execute unless score @s khive_pcool matches 1.. if entity @s[x=27391.0,y=125.0,z=53.0,dx=3,dy=5,dz=5,predicate=players:has_blindness] run function players:misc/core_portal2
+execute unless score @s khive_pcool matches 1.. if score #worldtime x matches 70..190 if entity @s[x=425,y=4,z=-834,dx=2,dy=5,dz=5,predicate=players:has_blindness] if block 440 3 -825 diamond_block run function players:misc/core_portal1
+
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-924.5,y=32,z=-202,dx=0,dy=4,dz=4,predicate=players:has_blindness] run function players:misc/ring_portal/underground_to2
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-916.5,y=10,z=-127,dx=1,dy=6,dz=6,predicate=players:has_blindness] run function players:misc/ring_portal/underground_from2
+
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-912.5,y=44,z=-202,dx=0,dy=4,dz=4,predicate=players:has_blindness] run function players:misc/ring_portal/facility_from2
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,predicate=players:has_blindness] run function players:misc/ring_portal/facility_to2
+execute unless score @s khive_pcool matches 1.. if entity @s[x=-878.5,y=75,z=-243,dx=0,dy=6,dz=6,predicate=players:has_blindness] run function players:misc/ring_portal/facility_to2
+
+
+
 execute if entity @s[tag=khive.fucking.angry,x=-179.5,y=57.00,z=-1611.50,distance=..5] run function players:misc/khive_fucking_angry
 
 scoreboard players reset #intower temp
@@ -66,3 +87,5 @@ execute if predicate players:holding/ward_staff positioned ~ ~0.5 ~ run function
 
 #execute if entity @s[x=-69,z=-1718,distance=..25] positioned ~ 164 ~ if entity @s[dx=0,dy=52,dz=0] run effect give @s minecraft:slow_falling 10 2 true
 #execute if entity @s[x=-69,z=-1718,distance=..25] positioned ~ 164 ~ if entity @s[dx=0,dy=52,dz=0] run effect give @s minecraft:jump_boost 1 8 true
+
+execute if entity @s[tag=freefall] as @s at @s run function core:space_freefall

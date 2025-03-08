@@ -43,3 +43,5 @@ schedule function core:scene/shuttle/anim/forcefield/open_4 1560t replace
 schedule function core:scene/shuttle/anim/forcefield/close_1 1584t replace
 schedule function core:scene/shuttle/anim/forcefield/close_2 1596t replace
 schedule function core:scene/shuttle/anim/forcefield/close_3 1603t replace
+
+execute as @e[tag=shuttle_seat,predicate=!entities:passenger_player] at @s run tp @s ~0.499 ~ ~0.499

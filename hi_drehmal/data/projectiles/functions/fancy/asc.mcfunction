@@ -1,63 +1,10 @@
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.3 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.15 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.3 ^1.3 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^.3 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^.15 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.3 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.15 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.3 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.5 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.65 ^1.15 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.8 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.3 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.15 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.3 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.5 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.65 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.8 ^1 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.8 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.8 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.3 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.15 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.3 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.5 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.65 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.8 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.5 ^0.8 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.8 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.5 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.65 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.8 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.15 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0.3 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^-0 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.15 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.3 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.65 ^0.65 0 0 0 0 1 normal @a
-execute positioned ^ ^ ^-1.5 run particle minecraft:dust 0.063 0.565 0.667 1 ^0 ^0.8 ^0.65 0 0 0 0 1 normal @a
-
+particle enchanted_hit ^-0.9 ^ ^
+particle enchanted_hit ^-0.6 ^ ^0.15
+particle enchanted_hit ^-0.3 ^ ^0.3
+particle enchanted_hit ^ ^ ^0.3
+particle enchanted_hit ^0.3 ^ ^0.3
+particle enchanted_hit ^0.6 ^ ^0.15
+particle enchanted_hit ^0.9 ^ ^
 
 
 execute store result storage drehmal:players tempUuid[0] int 1 run scoreboard players operation #temp uuid0 = @s uuid0_1
@@ -85,4 +32,6 @@ execute at @s unless score #bounced? temp matches 1 positioned ^-0.9 ^ ^ unless 
 #execute if score @s time_limit matches ..0 run kill @s
 #execute if score @s asc_bounces matches 4.. run kill @s
 
-execute at @s run teleport @s ^ ^ ^0.4
+execute at @s run teleport @s ^ ^ ^0.2
+execute as @e[tag=invul] run scoreboard players add @s InvulFrame 1
+execute as @e[tag=invul,scores={InvulFrame=30..}] run function projectiles:hurt_entity_cd

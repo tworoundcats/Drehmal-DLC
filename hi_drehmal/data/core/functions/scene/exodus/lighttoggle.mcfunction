@@ -1,13 +1,13 @@
-playsound minecraft:dcustom.block.beacon.activate master @a -2645 21 2269 1 0.4
+playsound minecraft:dcustom.block.beacon.activate block @a -2645 21 2269 1 0.4
 
-playsound minecraft:dcustom.entity.leash_knot.break master @a -2663 26 2275 10 1.5
+playsound minecraft:dcustom.entity.leash_knot.break block @a -2663 26 2275 10 1.5
 
 
 clone -2624 2 2288 -2624 2 2287 -2656 25 2283
 
 clone -2624 2 2288 -2624 2 2287 -2656 25 2266
 
-playsound minecraft:dcustom.entity.leash_knot.break master @a -2663 26 2275 10 1.5
+playsound minecraft:dcustom.entity.leash_knot.break block @a -2663 26 2275 10 1.5
 
 
 clone -2624 2 2288 -2624 2 2287 -2663 25 2283
@@ -15,12 +15,12 @@ clone -2624 2 2288 -2624 2 2287 -2663 25 2283
 clone -2624 2 2288 -2624 2 2287 -2663 25 2266
 
 
-playsound minecraft:dcustom.entity.leash_knot.break master @a -2663 26 2275 10 1.5
+playsound minecraft:dcustom.entity.leash_knot.break block @a -2663 26 2275 10 1.5
 clone -2624 2 2288 -2624 2 2287 -2670 25 2266
 clone -2624 2 2288 -2624 2 2287 -2670 25 2283
 
 
-playsound minecraft:dcustom.entity.leash_knot.break master @a -2663 26 2275 10 0.5
+playsound minecraft:dcustom.entity.leash_knot.break block @a -2663 26 2275 10 0.5
 
 
 clone -2628 2 2287 -2630 2 2285 -2664 29 2274

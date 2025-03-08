@@ -4,8 +4,3 @@ execute positioned 26475.5 139.5 -53.5 run particle minecraft:happy_villager ~ ~
 execute positioned 26475.5 139.5 -53.5 run playsound minecraft:dcustom.entity.experience_orb.pickup player @a ~ ~ ~ 1 2
 
 
-
-
-
-
-

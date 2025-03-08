@@ -17,26 +17,9 @@
     "hidden": false
   },
   "criteria": {
-    "struck_villager": {
-      "trigger": "minecraft:channeled_lightning",
-      "conditions": {
-        "victims": [
-          [
-            {
-              "condition": "minecraft:entity_properties",
-              "predicate": {
-                "type": "minecraft:villager"
-              },
-              "entity": "this"
-            }
-          ]
-        ]
-      }
+    "": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "struck_villager"
-    ]
-  ]
+  }
 }

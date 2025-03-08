@@ -21,6 +21,7 @@
     },
     "result": {
         "item": "minecraft:sheep_spawn_egg",
-        "count": 1
-    }
-}
+      "count": 1
+    },
+    "show_notification": true
+  }

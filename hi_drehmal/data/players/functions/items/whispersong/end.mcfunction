@@ -1,5 +1,5 @@
 
 
 
-scoreboard players reset @s vtear_cool2
+scoreboard players reset @s whispersong_cd
 tag @s remove holdingWS

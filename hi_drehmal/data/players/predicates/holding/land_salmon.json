@@ -1,0 +1,32 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:air"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": [
+            "minecraft:salmon_bucket"
+          ],
+          "nbt": "{display:{Name:'{\"italic\":false,\"color\":\"gold\",\"text\":\"Immortal Land Salmon\"}'}}"
+        }
+      }
+    }
+  }
+]

@@ -47,6 +47,10 @@
           ]
         }
       }
+    },
+    "rewards": {
+      "function": "players:highfall"
     }
   }
+  
   
