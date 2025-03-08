@@ -1,6 +1,6 @@
 execute if data storage drehmal:entities {tempEmissary:{OnGround:1b}} run scoreboard players add @s ai_ani 1
 execute if score @s ai_ani matches 5 run data merge entity @s {NoAI:1b}
-execute if score @s ai_ani matches 5 run function emis:animations/lift/play
+execute if score @s ai_ani matches 5 run function emis:animations/calldown/play
 
 execute if score @s ai_ani matches 12 run playsound minecraft:dcustom.item.armor.equip_netherite hostile @a ~ ~ ~ 10 0
 execute if score @s ai_ani matches 12 run playsound minecraft:dcustom.entity.elder_guardian.ambient hostile @a ~ ~ ~ 10 1.5

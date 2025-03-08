@@ -33,6 +33,7 @@ scoreboard objectives add aj.emis.char.loo dummy
 scoreboard objectives add aj.emis.b_tp.loo dummy
 scoreboard objectives add aj.emis.f_tp.loo dummy
 scoreboard objectives add aj.emis.dies.loo dummy
+scoreboard objectives add aj.emis.calldown.loop dummy
 function emis:reset_animation_flags
 scoreboard players set #uninstall aj.i 0
 scoreboard players set .aj.emis.framerate aj.i 1

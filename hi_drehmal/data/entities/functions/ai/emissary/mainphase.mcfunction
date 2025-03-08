@@ -11,3 +11,4 @@ execute if score @s ai_state2 matches 7 run function entities:ai/emissary/slasha
 execute if score @s ai_state2 matches 8 run function entities:ai/emissary/meteor/main
 execute if score @s ai_state2 matches 9 run function entities:ai/emissary/calldown/main
 execute if score @s ai_state2 matches 10 run function entities:ai/emissary/blackhole/main
+execute if score @s ai_state2 matches 11 run function entities:ai/emissary/summon/main
