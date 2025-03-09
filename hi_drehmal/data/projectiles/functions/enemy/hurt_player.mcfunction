@@ -35,6 +35,7 @@ execute if score @s damage_s matches 12 run damage @s 16 minecraft:bernice/laser
 
 
 
+
 execute if score @s damage_s matches 17 run damage @s 16 minecraft:piercedsun
 execute if score @s damage_s matches 8 run execute unless score #anger temp matches 30.. run damage @s 18 minecraft:deconceptualized
 execute if score @s damage_s matches 8 run execute if score #anger temp matches 30..60 run damage @s 24 minecraft:deconceptualized
@@ -42,5 +43,8 @@ execute if score @s damage_s matches 8 run execute if score #anger temp matches 
 
 execute if score @s damage_s matches 14 run damage @s 36 minecraft:blended
 execute if score @s damage_s matches 28 run damage @s 36 minecraft:fried
+
+execute if score @s damage_s matches 35 run damage @s 9 minecraft:deconceptualized
+
 
 scoreboard players reset @s damage_s

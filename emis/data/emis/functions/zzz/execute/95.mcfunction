@@ -30,4 +30,7 @@ execute if entity @s[tag=aj.emis.anim.b_tp] at @s run function emis:animations/b
 execute if entity @s[tag=aj.emis.anim.f_tp] at @s run function emis:animations/f_tp/next_frame
 execute if entity @s[tag=aj.emis.anim.dies] at @s run function emis:animations/dies/next_frame
 execute if entity @s[tag=aj.emis.anim.calldown] at @s run function emis:animations/calldown/next_frame
+execute if entity @s[tag=aj.emis.anim.freeze] at @s run function emis:animations/freeze/next_frame
+execute if entity @s[tag=aj.emis.anim.grab] at @s run function emis:animations/grab/next_frame
+execute if entity @s[tag=aj.emis.anim.spin] at @s run function emis:animations/spin/next_frame
 scoreboard players operation @s aj.emis.anim = .aj.animation aj.emis.anim

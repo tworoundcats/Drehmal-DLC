@@ -30,6 +30,9 @@ tag @s remove aj.emis.anim.b_tp
 tag @s remove aj.emis.anim.f_tp
 tag @s remove aj.emis.anim.dies
 tag @s remove aj.emis.anim.calldown
+tag @s remove aj.emis.anim.freeze
+tag @s remove aj.emis.anim.grab
+tag @s remove aj.emis.anim.spin
 scoreboard players set @s aj.fram 0
 scoreboard players operation .this aj.id = @s aj.id
 execute as @e[type=minecraft:area_effect_cloud,tag=aj.emis.bone,distance=..31.841] if score @s aj.id = .this aj.id run function emis:zzz/execute/5

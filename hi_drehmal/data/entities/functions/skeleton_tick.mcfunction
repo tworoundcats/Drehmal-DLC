@@ -10,3 +10,4 @@ execute if entity @s[tag=Hovadchear] run function entities:ai/hovad/main
 execute if entity @s[tag=Ultva] run function entities:ai/ultva/main
 execute if entity @s[tag=yav_remnant] run function entities:ai/yav/rem/main
 execute if entity @s[tag=fdry_deathray] run function entities:ai/fdry/others/electric/main
+execute if entity @s[tag=em_summon] at @s run particle minecraft:witch ~ ~1.5 ~ 0.1 0.2 0.1 0 1

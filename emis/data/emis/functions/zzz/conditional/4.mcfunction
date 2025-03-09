@@ -33,5 +33,8 @@ execute if entity @s[tag=aj.emis.anim.b_tp] run function emis:zzz/execute/85
 execute if entity @s[tag=aj.emis.anim.f_tp] run function emis:zzz/execute/88
 execute if entity @s[tag=aj.emis.anim.dies] run function emis:zzz/execute/91
 execute if entity @s[tag=aj.emis.anim.calldown] run function emis:zzz/execute/67
+execute if entity @s[tag=aj.emis.anim.freeze] run function emis:zzz/execute/70
+execute if entity @s[tag=aj.emis.anim.grab] run function emis:zzz/execute/73
+execute if entity @s[tag=aj.emis.anim.spin] run function emis:zzz/execute/76
 execute if score # aj.i matches 0 run function emis:zzz/execute/94
 scoreboard players set #execute aj.i 1

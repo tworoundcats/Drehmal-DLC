@@ -17,3 +17,4 @@ execute if entity @s[tag=aeongale_slow] at @s positioned ~ ~1.7 ~ unless entity 
 
 execute unless entity @s[tag=nomove] unless score #done? temp matches 1 run teleport @s ^ ^ ^0.25
 execute unless score #done? temp matches 1 unless score #loop temp matches ..0 at @s run function projectiles:enemy/loop
+

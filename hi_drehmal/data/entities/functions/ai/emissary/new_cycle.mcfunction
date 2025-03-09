@@ -121,11 +121,12 @@ execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if 
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=..5] if score #rand temp matches 3 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:2,fast:1},{type:1,data:7,fast:1},{type:2,data:25}]}
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=..5] if score #rand temp matches 4 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:2,fast:1},{type:1,data:6},{type:2,data:5},{type:1,data:7,fast:1},{type:2,data:25}]}
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=..5] if score #rand temp matches 5..6 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:5},{type:1,data:5},{type:2,data:15}]}
-execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] run scoreboard players operation #rand temp %= #4 const
+execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] run scoreboard players operation #rand temp %= #45 const
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] if score #rand temp matches 0 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:4,fast:1},{type:2,data:10}]}
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] if score #rand temp matches 1 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:3,fast:1},{type:1,data:1},{type:2,data:25}]}
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] if score #rand temp matches 2 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:9,spike_var:1},{type:2,data:5},{type:1,data:9,spike_var:2},{type:2,data:25}]}
 execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] if score #rand temp matches 3 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:11},{type:2,data:35}]}
+execute if score #hp% temp matches 70.. unless score #decided temp matches 1 if entity @p[distance=5..] if score #rand temp matches 4..46 store success score #decided temp run data merge storage drehmal:entities {emAttacks:[{type:1,data:12},{type:2,data:45}]}
 
 #PHASE 2 (70-35)
 
