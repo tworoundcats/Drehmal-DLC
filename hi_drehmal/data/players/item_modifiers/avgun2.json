@@ -1,0 +1,260 @@
+[
+  {
+    "function": "set_nbt",
+    "tag": "{weapon_attributes:'{\"parent\":\"minecraft:zenith_gun\"}',CustomModelData:1,AttributeModifiers:[]}"},
+
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+          "condition":"inverted",
+          "term": {
+              "condition":"entity_properties",
+              "entity":"this",
+              "predicate": {
+                  "equipment": {
+                      "mainhand": {
+                          "nbt":"{VitalityEnch:1b}"
+                      }
+                  }
+              }
+          }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.max_health",
+            "attribute":"generic.max_health",
+            "operation":"addition",
+            "amount":4,
+            "slot":"mainhand"
+        }
+    ]
+  },
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt":"{VitalityEnch:1b}"
+                }
+            }
+        }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.max_health",
+            "attribute":"generic.max_health",
+            "operation":"addition",
+            "amount":8,
+            "slot":"mainhand"
+        }
+    ]
+  },
+  {
+    "function": "set_attributes",
+    "modifiers": [
+        {
+            "name":"generic.attack_speed",
+            "attribute":"generic.attack_speed",
+            "operation":"addition",
+            "amount":-2.2,
+            "slot":"mainhand"
+        },
+        {
+          "name":"generic.attack_damage",
+          "attribute":"generic.attack_damage",
+          "operation":"addition",
+          "amount":4,
+          "slot":"mainhand"
+        }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Avsohm fabricated this blade of"
+      },
+      {
+        "text": "incredible strength using the power"
+      },
+      {
+        "text": "of Primal Energy, a mysterious"
+      },
+      {
+        "text": "substance from beyond this world."
+      },
+      {
+        "text": "It is said that all matter and energy"
+      },
+      {
+        "text": "is derived from it. Distilling such"
+      },
+      {
+        "text": "a material into its rawest form for"
+      },
+      {
+        "text": "use in combat is exactly the reason"
+      },
+      {
+        "text": "why Avsohm was dealt such a"
+      },
+      {
+        "text": "harrowing fate."
+      },
+      {
+        "text": " "
+      },
+        {
+          "text": "Apex Radiance ",
+          "color": "gold",
+          "italic": false
+        },
+      {
+        "text": "Use your drop item key to consume",
+        "color": "dark_gray",
+        "italic": true
+      },
+      {
+        "text": "a charge and fire a long range",
+        "color": "dark_gray",
+        "italic": true
+      },
+      {
+        "text": "energy beam that stuns and damages",
+        "color": "dark_gray",
+        "italic": true
+      },
+      {
+        "text": "all hit enemies. Additionally, gain +3",
+        "color": "dark_gray",
+        "italic": true
+      },
+      {
+        "text": "Max Charges.",
+        "color": "dark_gray",
+        "italic": true
+      },
+      {
+        "text": " "
+      },
+      {
+        "text": "When in main hand:",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "+4 Max Health",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": "15-30 Ranged Damage",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": "5 Attack Damage",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": "1.8 Attack Speed",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": "Unbreakable",
+        "color": "blue",
+        "italic": false
+      },
+      {
+        "text": " "
+      },
+      {
+        "text": "This item cannot be enchanted.",
+        "color": "dark_gray",
+        "italic": false
+      },
+      {
+        "text": " "
+      },
+      [
+        {
+          "text": "Mythical ",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "[",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "] [",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "] [",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " ",
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": "]",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": true
+},
+
+  {
+    "function": "set_attributes",
+    "conditions":[
+      {
+        "condition":"entity_properties",
+        "entity":"this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt":"{SpeedEnch:1b}"
+                }
+            }
+        }
+      }
+    ],
+    "modifiers": [
+        {
+            "name":"generic.movement_speed",
+            "attribute":"generic.movement_speed",
+            "operation":"addition",
+            "amount":0.01,
+            "slot":"mainhand"
+        }
+    ]
+  }
+]

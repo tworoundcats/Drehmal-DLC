@@ -10,7 +10,6 @@ execute if entity @s[nbt={Item:{tag:{spm:{name:water_ghost}}}}] run function spm
 execute if entity @s[nbt={Item:{tag:{spm:{name:miner}}}}] run function spm:mob/miner/death
 execute if entity @s[nbt={Item:{tag:{spm:{name:ninja}}}}] run function spm:mob/ninja/death
 execute if entity @s[nbt={Item:{tag:{spm:{name:robbery}}}}] run function spm:mob/robbery/death
-execute if entity @s[nbt={Item:{tag:{spm:{name:s1enderman}}}}] run function spm:mob/s1enderman/death
 # execute if entity @s[nbt={Item:{tag:{spm:{name:saman}}}}] run function spm:mob/saman/death
 execute if entity @s[nbt={Item:{tag:{spm:{name:slime_spider}}}}] run function spm:mob/slime_spider/death
 execute if entity @s[nbt={Item:{tag:{spm:{name:soul_knight}}}}] run function spm:mob/soul_knight/death

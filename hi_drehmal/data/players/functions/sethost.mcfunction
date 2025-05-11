@@ -38,6 +38,9 @@ execute if score #numberp num matches 14 run setblock 26518 167 -88 purple_concr
 execute if score #numberp num matches 15 run setblock 26518 167 -88 magenta_concrete
 execute if score #numberp num matches 16 run setblock 26518 167 -88 pink_concrete
 
+recipe give @s *
+
+recipe take @s weapons:norepair/avsohm_kohl
 recipe take @s weapons:aeongale
 recipe take @s weapons:ascendance
 recipe take @s weapons:avpod
@@ -48,7 +51,6 @@ recipe take @s weapons:eldermead_bottle
 recipe take @s weapons:eldermead
 recipe take @s weapons:eyebiter
 recipe take @s weapons:festering_strides
-recipe take @s weapons:festeringstrides
 recipe take @s weapons:flammer
 recipe take @s weapons:frenzy
 recipe take @s weapons:frostfang
@@ -80,6 +82,4 @@ recipe take @s weapons:warphorse_armor
 recipe take @s weapons:warphorse_receiver
 recipe take @s weapons:whispersong
 recipe take @s weapons:zenith
-recipe give @s minecraft:torch
-
 execute as @s run function weapons:grant

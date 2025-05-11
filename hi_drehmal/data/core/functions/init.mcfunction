@@ -945,7 +945,7 @@ scoreboard objectives add av_timer dummy
 scoreboard objectives add freefall dummy
 scoreboard objectives add usedNail minecraft.used:iron_sword
 
-team add gay 
+team add gay
 team modify gay prefix {"text":"\uE005","font":"minecraft:drehmal"}
 
 scoreboard objectives add usedIronP minecraft.used:minecraft.iron_pickaxe
@@ -959,8 +959,8 @@ scoreboard objectives add InvulFrame dummy
 scoreboard objectives add ob_cd dummy
 scoreboard objectives add ob_rotated dummy
 scoreboard objectives add ob_throw dummy
-scoreboard objectives add ob_finish dummy 
-scoreboard objectives add ob_passive dummy 
+scoreboard objectives add ob_finish dummy
+scoreboard objectives add ob_passive dummy
 scoreboard objectives add ob_play dummy
 scoreboard objectives add ob_spike dummy
 
@@ -968,9 +968,9 @@ scoreboard objectives add mal_cd dummy
 scoreboard objectives add asc_cd dummy
 scoreboard objectives add cal_cd dummy
 scoreboard objectives add fre_cd dummy
-scoreboard objectives add zed dummy 
+scoreboard objectives add zed dummy
 scoreboard objectives add syz_cd dummy
-scoreboard objectives add shoot minecraft.used:crossbow 
+scoreboard objectives add shoot minecraft.used:crossbow
 
 scoreboard objectives add soul_burn dummy
 scoreboard objectives add use_soul minecraft.used:simplyswords.runic_scythe
@@ -1019,7 +1019,7 @@ gamerule disableElytraMovementCheck true
 function spm:mob/game_load
 function spm:world/load
 function n_lev:load
-
+function triggerpatch:load
 scoreboard objectives add mquest dummy
 scoreboard objectives add spawnrnpc dummy
 scoreboard objectives add spawnstarrite1 dummy
@@ -1048,7 +1048,10 @@ scoreboard objectives add healthCalc dummy
 scoreboard objectives add healthDifference dummy
 scoreboard objectives add health health
 scoreboard objectives add avHorseID_b dummy
-scoreboard objectives add anyr_timer dummy 
+scoreboard objectives add anyr_timer dummy
 scoreboard objectives add destinyc dummy
 scoreboard objectives add mastermode dummy
 difficulty hard 
+scoreboard objectives add shielded_cd dummy
+
+scoreboard objectives add levi_cool dummy

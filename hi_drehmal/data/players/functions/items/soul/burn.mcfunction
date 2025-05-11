@@ -1,4 +1,109 @@
-execute as @e[tag=soul_burn] run execute if predicate dev:entity_properties/flags/is_on_fire as @s at @s run function particle:effects/soul
-execute as @e[tag=soul_burn] run execute if predicate dev:entity_properties/flags/is_on_fire as @s at @s run playsound minecraft:entity.wither_skeleton.hurt player @a ~ ~ ~ 1 2
-execute as @e[tag=soul_burn] run execute if predicate dev:entity_properties/flags/is_on_fire as @s at @s run damage @s 4 minecraft:generic
-scoreboard players reset @a soul_burn
+scoreboard players remove @s soul_burn 1
+execute if predicate dev:entity_properties/flags/is_on_fire at @s run function particle:effects/soul
+execute if predicate dev:entity_properties/flags/is_on_fire at @s run playsound minecraft:entity.wither_skeleton.hurt player @a ~ ~ ~ 1 2
+execute if predicate dev:entity_properties/flags/is_on_fire at @s run damage @s 1 minecraft:rubber_nocd
+execute unless data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run execute store result score @s maxHealth run data get entity @s Health
+scoreboard players operation @s maxHealth /= #10 const
+execute if score @s maxHealth matches 1 run damage @s 1 minecraft:rubber_nocd
+execute if score @s maxHealth matches 2 run damage @s 2 minecraft:rubber_nocd
+execute if score @s maxHealth matches 3 run damage @s 3 minecraft:rubber_nocd
+execute if score @s maxHealth matches 4 run damage @s 4 minecraft:rubber_nocd
+execute if score @s maxHealth matches 5 run damage @s 5 minecraft:rubber_nocd
+execute if score @s maxHealth matches 6 run damage @s 6 minecraft:rubber_nocd
+execute if score @s maxHealth matches 7 run damage @s 7 minecraft:rubber_nocd
+execute if score @s maxHealth matches 8 run damage @s 8 minecraft:rubber_nocd
+execute if score @s maxHealth matches 9 run damage @s 9 minecraft:rubber_nocd
+execute if score @s maxHealth matches 10 run damage @s 10 minecraft:rubber_nocd
+execute if score @s maxHealth matches 11 run damage @s 11 minecraft:rubber_nocd
+execute if score @s maxHealth matches 12 run damage @s 12 minecraft:rubber_nocd
+execute if score @s maxHealth matches 13 run damage @s 13 minecraft:rubber_nocd
+execute if score @s maxHealth matches 14 run damage @s 14 minecraft:rubber_nocd
+execute if score @s maxHealth matches 15 run damage @s 15 minecraft:rubber_nocd
+execute if score @s maxHealth matches 16 run damage @s 16 minecraft:rubber_nocd
+execute if score @s maxHealth matches 17 run damage @s 17 minecraft:rubber_nocd
+execute if score @s maxHealth matches 18 run damage @s 18 minecraft:rubber_nocd
+execute if score @s maxHealth matches 19 run damage @s 19 minecraft:rubber_nocd
+execute if score @s maxHealth matches 20 run damage @s 20 minecraft:rubber_nocd
+execute if score @s maxHealth matches 21 run damage @s 21 minecraft:rubber_nocd
+execute if score @s maxHealth matches 22 run damage @s 22 minecraft:rubber_nocd
+execute if score @s maxHealth matches 23 run damage @s 23 minecraft:rubber_nocd
+execute if score @s maxHealth matches 24 run damage @s 24 minecraft:rubber_nocd
+execute if score @s maxHealth matches 25 run damage @s 25 minecraft:rubber_nocd
+execute if score @s maxHealth matches 26 run damage @s 26 minecraft:rubber_nocd
+execute if score @s maxHealth matches 27 run damage @s 27 minecraft:rubber_nocd
+execute if score @s maxHealth matches 28 run damage @s 28 minecraft:rubber_nocd
+execute if score @s maxHealth matches 29 run damage @s 29 minecraft:rubber_nocd
+execute if score @s maxHealth matches 30 run damage @s 30 minecraft:rubber_nocd
+execute if score @s maxHealth matches 31 run damage @s 31 minecraft:rubber_nocd
+execute if score @s maxHealth matches 32 run damage @s 32 minecraft:rubber_nocd
+execute if score @s maxHealth matches 33 run damage @s 33 minecraft:rubber_nocd
+execute if score @s maxHealth matches 34 run damage @s 34 minecraft:rubber_nocd
+execute if score @s maxHealth matches 35 run damage @s 35 minecraft:rubber_nocd
+execute if score @s maxHealth matches 36 run damage @s 36 minecraft:rubber_nocd
+execute if score @s maxHealth matches 37 run damage @s 37 minecraft:rubber_nocd
+execute if score @s maxHealth matches 38 run damage @s 38 minecraft:rubber_nocd
+execute if score @s maxHealth matches 39 run damage @s 39 minecraft:rubber_nocd
+execute if score @s maxHealth matches 40 run damage @s 40 minecraft:rubber_nocd
+execute if score @s maxHealth matches 41 run damage @s 41 minecraft:rubber_nocd
+execute if score @s maxHealth matches 42 run damage @s 42 minecraft:rubber_nocd
+execute if score @s maxHealth matches 43 run damage @s 43 minecraft:rubber_nocd
+execute if score @s maxHealth matches 44 run damage @s 44 minecraft:rubber_nocd
+execute if score @s maxHealth matches 45 run damage @s 45 minecraft:rubber_nocd
+execute if score @s maxHealth matches 46 run damage @s 46 minecraft:rubber_nocd
+execute if score @s maxHealth matches 47 run damage @s 47 minecraft:rubber_nocd
+execute if score @s maxHealth matches 48 run damage @s 48 minecraft:rubber_nocd
+execute if score @s maxHealth matches 49 run damage @s 49 minecraft:rubber_nocd
+execute if score @s maxHealth matches 50 run damage @s 50 minecraft:rubber_nocd
+execute if score @s maxHealth matches 51 run damage @s 51 minecraft:rubber_nocd
+execute if score @s maxHealth matches 52 run damage @s 52 minecraft:rubber_nocd
+execute if score @s maxHealth matches 53 run damage @s 53 minecraft:rubber_nocd
+execute if score @s maxHealth matches 54 run damage @s 54 minecraft:rubber_nocd
+execute if score @s maxHealth matches 55 run damage @s 55 minecraft:rubber_nocd
+execute if score @s maxHealth matches 56 run damage @s 56 minecraft:rubber_nocd
+execute if score @s maxHealth matches 57 run damage @s 57 minecraft:rubber_nocd
+execute if score @s maxHealth matches 58 run damage @s 58 minecraft:rubber_nocd
+execute if score @s maxHealth matches 59 run damage @s 59 minecraft:rubber_nocd
+execute if score @s maxHealth matches 60 run damage @s 60 minecraft:rubber_nocd
+execute if score @s maxHealth matches 61 run damage @s 61 minecraft:rubber_nocd
+execute if score @s maxHealth matches 62 run damage @s 62 minecraft:rubber_nocd
+execute if score @s maxHealth matches 63 run damage @s 63 minecraft:rubber_nocd
+execute if score @s maxHealth matches 64 run damage @s 64 minecraft:rubber_nocd
+execute if score @s maxHealth matches 65 run damage @s 65 minecraft:rubber_nocd
+execute if score @s maxHealth matches 66 run damage @s 66 minecraft:rubber_nocd
+execute if score @s maxHealth matches 67 run damage @s 67 minecraft:rubber_nocd
+execute if score @s maxHealth matches 68 run damage @s 68 minecraft:rubber_nocd
+execute if score @s maxHealth matches 69 run damage @s 69 minecraft:rubber_nocd
+execute if score @s maxHealth matches 70 run damage @s 70 minecraft:rubber_nocd
+execute if score @s maxHealth matches 71 run damage @s 71 minecraft:rubber_nocd
+execute if score @s maxHealth matches 72 run damage @s 72 minecraft:rubber_nocd
+execute if score @s maxHealth matches 73 run damage @s 73 minecraft:rubber_nocd
+execute if score @s maxHealth matches 74 run damage @s 74 minecraft:rubber_nocd
+execute if score @s maxHealth matches 75 run damage @s 75 minecraft:rubber_nocd
+execute if score @s maxHealth matches 76 run damage @s 76 minecraft:rubber_nocd
+execute if score @s maxHealth matches 77 run damage @s 77 minecraft:rubber_nocd
+execute if score @s maxHealth matches 78 run damage @s 78 minecraft:rubber_nocd
+execute if score @s maxHealth matches 79 run damage @s 79 minecraft:rubber_nocd
+execute if score @s maxHealth matches 80 run damage @s 80 minecraft:rubber_nocd
+execute if score @s maxHealth matches 81 run damage @s 81 minecraft:rubber_nocd
+execute if score @s maxHealth matches 82 run damage @s 82 minecraft:rubber_nocd
+execute if score @s maxHealth matches 83 run damage @s 83 minecraft:rubber_nocd
+execute if score @s maxHealth matches 84 run damage @s 84 minecraft:rubber_nocd
+execute if score @s maxHealth matches 85 run damage @s 85 minecraft:rubber_nocd
+execute if score @s maxHealth matches 86 run damage @s 86 minecraft:rubber_nocd
+execute if score @s maxHealth matches 87 run damage @s 87 minecraft:rubber_nocd
+execute if score @s maxHealth matches 88 run damage @s 88 minecraft:rubber_nocd
+execute if score @s maxHealth matches 89 run damage @s 89 minecraft:rubber_nocd
+execute if score @s maxHealth matches 90 run damage @s 90 minecraft:rubber_nocd
+execute if score @s maxHealth matches 91 run damage @s 91 minecraft:rubber_nocd
+execute if score @s maxHealth matches 92 run damage @s 92 minecraft:rubber_nocd
+execute if score @s maxHealth matches 93 run damage @s 93 minecraft:rubber_nocd
+execute if score @s maxHealth matches 94 run damage @s 94 minecraft:rubber_nocd
+execute if score @s maxHealth matches 95 run damage @s 95 minecraft:rubber_nocd
+execute if score @s maxHealth matches 96 run damage @s 96 minecraft:rubber_nocd
+execute if score @s maxHealth matches 97 run damage @s 97 minecraft:rubber_nocd
+execute if score @s maxHealth matches 98 run damage @s 98 minecraft:rubber_nocd
+execute if score @s maxHealth matches 99 run damage @s 99 minecraft:rubber_nocd
+execute if score @s maxHealth matches 100 run damage @s 100 minecraft:rubber_nocd
+execute if score @s soul_burn matches ..1 run tag @s remove soul_burn
+scoreboard players reset @p[tag=temp_burn] soul_burn
+execute if score @s soul_burn matches ..1 run tag @p[tag=temp_burn] remove temp_burn

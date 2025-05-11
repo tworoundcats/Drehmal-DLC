@@ -1,17 +1,19 @@
 {
   "attributes": {
     "attack_range": 4,
-    "two_handed": true,
+    "pose": "bettercombat:pose_two_handed_heavy",
+    "two_handed": false,
     "category": "whip",
     "attacks": [
       {
         "hitbox": "FORWARD_BOX",
         "damage_multiplier": 1,
-        "angle": 0,
+        "angle": 180,
         "upswing": 0.5,
         "animation": "bettercombat:two_handed_slam",
         "swing_sound": {
-          "id": "bettercombat:hammer_slam"
+          "id": "bettercombat:hammer_slam",
+          "pitch": 1.5
         }
       }
     ]

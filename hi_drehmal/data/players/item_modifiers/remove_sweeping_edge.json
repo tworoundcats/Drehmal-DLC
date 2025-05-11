@@ -1,0 +1,7 @@
+{
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:sweeping": -255
+    },
+    "add": true
+  }

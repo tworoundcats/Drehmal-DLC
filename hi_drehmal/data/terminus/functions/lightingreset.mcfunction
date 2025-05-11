@@ -56,3 +56,6 @@ stopsound @a * minecraft:custom.terminus
 
 schedule function terminus:lightingreset2 2s
 stopsound @a[tag=in_terminus]
+
+setblock 26475 145 -54 minecraft:green_stained_glass
+setblock 26475 137 -54 minecraft:green_stained_glass_pane

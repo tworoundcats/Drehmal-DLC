@@ -1,5 +1,5 @@
-execute at @s as @s run function particle:effects/apotheosis
-execute at @s as @s run tp @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] @s
-execute at @s as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run effect give @s mcdar:stunned 3 2 true
-execute at @s as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run damage @s 21 minecraft:generic
-execute at @s as @s run scoreboard players reset @s levi_kills
+execute at @s run summon armor_stand ~ ~ ~ {Tags:["apotheosis"],Invisible:1b}
+execute at @s run particle bosses_of_mass_destruction:soul_flame ~ ~1.5 ~ 0 0 0 0.3 100 normal
+execute at @s run playsound simplyswords:dark_sword_enchant player @a ~ ~ ~ 2 2
+execute at @s run scoreboard players reset @s levi_kills
+scoreboard players set @s levi_cool 600

@@ -51,10 +51,7 @@ execute as @e[type=armor_stand,distance=..5,tag=interact,tag=!valid] unless pred
 
 
 
-execute as @e[type=marker,tag=sphere_energy] at @s run function particle:sphere/animate
-execute as @e[type=marker,tag=sphere_energy] at @s run execute as @a[distance=..6] run effect clear @s regeneration
-execute as @e[type=marker,tag=sphere_energy] at @s run execute as @a[distance=..6] run effect clear @s resistance
-execute as @e[type=marker,tag=sphere_energy] at @s run execute as @a[distance=..6] run effect clear @s saturation
+execute unless score #terminusoff bool matches 1 as @e[type=marker,tag=sphere_energy] at @s run function particle:sphere/animate
 execute as @e[type=armor_stand,distance=..5,tag=interact] unless predicate players:holding/asc unless predicate players:holding/avstate unless predicate players:holding/calamity unless predicate players:holding/frenzy unless predicate players:holding/leviathan unless predicate players:holding/oblivion unless predicate players:holding/syzygy unless predicate players:holding/male unless predicate players:holding/mainhand unless predicate players:holding/boots unless predicate players:holding/leggings unless predicate players:holding/chestplate unless predicate players:holding/helmet unless predicate players:wearing_glider run function dlc:modify/stopothers
 execute as @e[type=armor_stand,distance=..5,tag=display] unless predicate players:holding/asc unless predicate players:holding/avstate unless predicate players:holding/calamity unless predicate players:holding/frenzy unless predicate players:holding/leviathan unless predicate players:holding/oblivion unless predicate players:holding/syzygy unless predicate players:holding/male unless predicate players:holding/mainhand unless predicate players:holding/boots unless predicate players:holding/leggings unless predicate players:holding/chestplate unless predicate players:holding/helmet run function dlc:modify/stopmainhand
 

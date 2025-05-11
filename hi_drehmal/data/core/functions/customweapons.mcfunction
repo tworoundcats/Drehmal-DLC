@@ -1,6 +1,5 @@
-execute as @a if predicate players:holding/soul_scythe as @s[scores={use_soul=1..}] run function players:items/soul/main
-execute as @a if predicate players:holding/soul_scythe as @s run scoreboard players add @s soul_burn 1
-execute as @a if predicate players:holding/soul_scythe as @s[scores={soul_burn=20..}] run execute as @e[tag=soul_burn] run function players:items/soul/burn
+execute as @a if predicate players:holding/soul_scythe as @s[scores={use_soul=1..}] run function players:items/soul/use
+execute as @a if predicate players:holding/soul_scythe as @s[tag=temp_burn] run function players:items/soul/main
 
 
 
@@ -20,22 +19,27 @@ execute as @a unless predicate players:holding/backstabber_offhand as @s[scores=
 
 
 
+execute as @a if predicate players:holding/leviathan as @s[tag=!strengthened,scores={levi_reach=1..}] run function players:items/levi/weaken
 execute as @a if predicate players:holding/leviathan as @s[scores={use_levi=1..}] run function players:items/levi/main
 execute as @a if predicate players:holding/leviathan as @s run scoreboard players add @s levi_reach 1
-execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] run execute as @s run scale set pehkui:entity_reach 1 @s
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] run execute as @s run scale set pehkui:entity_reach 1 @s
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] run execute as @s run attribute @s generic.attack_speed base set 4
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] run execute as @s run attribute @s generic.attack_damage base set 1
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] run execute as @s run attribute @s generic.attack_speed base set 4
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] run execute as @s run attribute @s generic.attack_damage base set 1
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=..140}] run execute as @s run scoreboard players reset @s levi_reach
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] run execute as @s run scoreboard players reset @s levi_reach
-execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste run execute as @s at @s positioned ~ ~1 ~ run function particle:effects/mist
-execute as @a if predicate players:holding/leviathan_u as @s[scores={levi_kills=5..}] run execute as @s at @s run title @s actionbar {"text":"Apotheosis is ready for use","color":"green"}
-execute as @a if predicate players:holding/leviathan_u as @s[scores={levi_kills=5..}] if predicate dev:entity_properties/flags/is_sneaking run function players:items/levi/apotheosis
-execute as @e if predicate players:is_levi run team join leviathan 
-execute as @e[type=item] if predicate players:is_levi run data merge entity @s {Glowing:1b,Age:-32768,Invulnerable:1b,Health:2048}
-
+#execute as @a if predicate players:holding/leviathan as @s[tag=shielded] run function players:items/levi/shielded
+execute as @a if predicate players:holding/leviathan run function players:items/levi/holding
+execute as @a if predicate players:holding/leviathan as @s if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:entity_reach 0.67 @s
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:defense 0.5 @s
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run tag @s remove strengthened
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..}] as @s run scale set pehkui:entity_reach 1 @s
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..}] as @s run scale set pehkui:defense 1 @s
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_speed base set 4
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_damage base set 1
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_speed base set 4
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_damage base set 1
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=..140}] as @s run scoreboard players reset @s levi_reach
+execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scoreboard players reset @s levi_reach
+execute as @a unless predicate players:holding/leviathan as @s[tag=strengthened] run tag @s remove strengthened
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste as @s at @s positioned ~ ~1 ~ run function particle:effects/mist
+execute as @a if predicate players:holding/leviathan_u as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate dev:entity_properties/flags/is_sneaking run function players:items/levi/apotheosis
+execute as @a unless predicate players:holding/leviathan_u if score @s levi_cool matches 1.. run function players:items/levi/cooldown
 
 
 execute as @a if predicate players:holding/thunderclap as @s run scoreboard players add @s thun 1
@@ -48,9 +52,9 @@ execute as @a unless predicate players:holding/thunderclap as @s[scores={thun=16
 
 
 execute as @a if predicate players:holding/shadowblade as @s[scores={use_shad=1..}] if predicate dev:random_chance/8_of_20 run function players:items/shadowblade/main
-execute as @a as @s run execute at @e[tag=bleed,limit=1] run scoreboard players add @s bleed 1
-execute as @a as @s run execute at @e[tag=bleed,limit=1] run function players:items/shadowblade/bleed
-execute as @a as @s run execute unless entity @e[tag=bleed] run scoreboard players reset @s bleed
+execute as @a as @s at @e[tag=bleed,limit=1] run scoreboard players add @s bleed 1
+execute as @a as @s at @e[tag=bleed,limit=1] run function players:items/shadowblade/bleed
+execute as @a as @s unless entity @e[tag=bleed] run scoreboard players reset @s bleed
 
 
 
@@ -146,24 +150,28 @@ execute as @a if predicate players:hold_waystone at @s if predicate players:loda
 execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run clear @s fwaystones:waystone
 
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run schedule function weapons:give/pocket 5s
-execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run title @s title {"text":"no","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run clear @s fwaystones:pocket_wormhole
 
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run schedule function weapons:give/waystone 5s
-execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run title @s title {"text":"no","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run clear @s fwaystones:waystone
 
 
 
-execute as @e[tag=obscythe] run execute at @s run function players:items/obv/entity
+execute as @e[tag=obscythe] at @s run function players:items/obv/entity
 
-execute as @e[tag=zenith_beam] run execute at @s run function players:items/avsaber/entity
+execute as @e[tag=zenith_beam] at @s run function players:items/avsaber/entity
+
+execute as @e[tag=apotheosis] at @s run function players:items/levi/entity
+
 
 execute as @a as @s if predicate players:holding/avstate if predicate players:holding/zenith2 run scoreboard players add @s zenith_cd 1
 
 
 execute as @a at @s if predicate players:in_em_arena run scoreboard players set @s obv_cool 2147483647
-execute as @a as @s[scores={obv_cool=2000000000..}] run execute at @s unless predicate players:in_em_arena run scoreboard players reset @s obv_cool
+execute as @a at @s if predicate core:in_hovadmain run scoreboard players set @s obv_cool 2147483647
+execute as @a as @s[scores={obv_cool=2000000000..}] run execute at @s unless predicate players:in_em_arena unless predicate core:in_hovadmain run scoreboard players reset @s obv_cool
 
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run scoreboard players add #station timer 1
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run execute as @e[tag=visual,distance=..5] if score #station timer matches 6.. run function particle:term/animate

@@ -163,7 +163,7 @@ execute if entity @s[tag=obv_active] run function players:items/obv/active
 execute if score @s holdingObv matches 0 if score @s wasHoldingObv matches 1 unless score @s drop_netherite matches 1 if entity @s[tag=obv_active] run function players:items/obv/end_hold_no_item
 execute if score @s holdingObv matches 0 if score @s wasHoldingObv matches 1 if score @s drop_netherite matches 1 if score @s obv_cool matches ..0 run function players:items/obv/shoot_ray
 execute if score @s holdingObv matches 0 if score @s wasHoldingObv matches 1 if score @s drop_netherite matches 1 if score @s obv_cool matches 1.. if entity @s[tag=obv_active] run function players:items/obv/end_hold
-execute if score @s holdingObv matches 0 if score @s wasHoldingObv matches 1 if score @s drop_netherite matches 1 if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] run function players:items/obv/misfire
+execute if score @s[tag=!ob_scythe] holdingObv matches 0 if score @s wasHoldingObv matches 1 if score @s drop_netherite matches 1 if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] run function players:items/obv/misfire
 
 execute if score @s holdingObv matches 0 if score @s wasHoldingObv matches 1 unless score @s drop_netherite matches 1 unless entity @s[tag=obv_active] run title @s actionbar " "
 execute if score @s holdingObv matches 1 run function players:items/obv/actionbar

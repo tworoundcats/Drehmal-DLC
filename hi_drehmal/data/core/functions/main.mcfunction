@@ -210,9 +210,6 @@ function core:scene/lodahr_portals/main
 function core:scene/lodahr_portals/main
 
 function core:customweapons
-
 function core:villagers
-
 function spm:world/tick
-
 function n_lev:tick

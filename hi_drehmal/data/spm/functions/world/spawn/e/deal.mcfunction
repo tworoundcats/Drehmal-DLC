@@ -6,4 +6,3 @@ execute if predicate spm:location/fortress if entity @s[type=blaze] unless data 
 execute if predicate spm:location/end if entity @s[type=enderman] unless data entity @s CustomName if predicate spm_cf:mob/chorus_ghost/spawn_rate run function spm:mob/chorus_ghost/summon
 execute if predicate spm:location/basalt_deltas if entity @s[type=magma_cube] unless data entity @s CustomName if predicate spm_cf:mob/fire_spirit/spawn_rate run function spm:mob/fire_spirit/summon
 execute if predicate spm:location/nether_wastes if entity @s[type=zombified_piglin] unless data entity @s CustomName if predicate spm_cf:mob/wither_ghost/spawn_rate_in_nether_wastes run function spm:mob/wither_ghost/summon_with_sword
-function spm:world/spawn/e/deal

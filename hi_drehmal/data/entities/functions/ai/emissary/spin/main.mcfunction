@@ -18,3 +18,4 @@ execute if score @s ai_ani matches 32 run function entities:ai/emissary/spin/spa
 execute if score @s ai_ani matches 33 run function entities:ai/emissary/spin/spawn
 execute if score @s ai_ani matches 34 run function entities:ai/emissary/spin/spawn
 execute if score @s ai_ani matches 40 run function entities:ai/emissary/spin/endphase
+scoreboard players add @e[type=item_display,tag=ob_shard] timer 1

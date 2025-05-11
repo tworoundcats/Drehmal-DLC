@@ -12,5 +12,7 @@ fill 26547 137 -116 26403 137 -94 minecraft:sea_lantern replace minecraft:redsto
 fill 26486 137 -148 26485 138 -158 minecraft:sea_lantern replace minecraft:redstone_lamp
 
 setblock 26553 137 -105 minecraft:sea_lantern
-
+setblock 26475 145 -54 minecraft:sea_lantern
+setblock 26475 137 -54 minecraft:sea_lantern
 stopsound @a * minecraft:custom.terminus
+scoreboard players set #terminusoff bool 0

@@ -1,6 +1,7 @@
 execute as @s[scores={zenith_cd=70,AvShots=1..}] run playsound minecraft:block.bell.use player @a ~ ~ ~ 1 2
-execute unless predicate players:holding/avstate run function players:items/avsaber/avdisplay1
+execute unless predicate players:holding/avstate unless predicate players:holding/zenith2 run function players:items/avsaber/avdisplay1
 execute if predicate players:holding/avstate run function players:items/avsaber/avdisplay2
+execute if predicate players:holding/zenith2 run function players:items/avsaber/avdisplay2
 execute unless score @s AvShots matches 1.. run scoreboard players set @s AvShots 0
 execute if entity @s[scores={AvDamage=1..}] run function players:items/avsaber/avdamage
 execute if entity @s[scores={UsedAvSaber=1}] if predicate players:sneak run function players:items/avsaber/avctivate

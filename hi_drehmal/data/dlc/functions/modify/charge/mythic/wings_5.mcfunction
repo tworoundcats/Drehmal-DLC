@@ -20,8 +20,6 @@ execute as @e[tag=valid] run item modify entity @s armor.chest dlc:upgrade2
 execute as @e[tag=visual] at @s positioned ~ ~1 ~ run function particle:effects/rings/electric_ring_large
 execute as @e[tag=visual] at @s positioned ~ ~1 ~ run function particle:effects/rings/electric_ring_small
 execute as @e[tag=visual] at @s positioned ~ ~1 ~ run function particle:effects/rings/thunder_ring
-execute as @e[tag=visual] at @s if entity @a[distance=..6] run execute as @a[distance=..6] run effect give @s nausea 6 10 true
-execute as @e[tag=visual] at @s if entity @a[distance=..6] run execute as @a[distance=..6] run effect give @s poison 5 20 true
 
 kill @e[tag=sphere_energy]
 scoreboard players set #station_wings int 0
@@ -32,6 +30,7 @@ execute as @e[tag=valid_wings] run tag @s remove valid_wings
 setblock 26477 138 -65 quartz_stairs[facing=east] replace
 
 setblock 26473 138 -65 quartz_stairs[facing=west] replace
+setblock 26475 137 -54 sea_lantern
 
 setblock 26475 145 -54 sea_lantern
 setblock 26472 142 -65 minecraft:quartz_block
