@@ -134,7 +134,7 @@ execute if predicate players:daytime run function players:misc/1aday_refresh
 
 scoreboard players operation @s wasHoldingAvs = @s holdingAvs
 scoreboard players reset @s holdingAvs
-execute store success score @s holdingAvs if predicate players:holding/avstate if predicate players:holding/zenith2
+execute store success score @s holdingAvs if predicate players:holding/avstate2 if predicate players:holding/zenith2
 execute if score @s wasHoldingAvs matches 1 if score @s drop_zenith matches 1 run function players:items/avsaber/misfire
 
 

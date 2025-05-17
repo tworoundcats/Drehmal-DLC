@@ -8,7 +8,7 @@ advancement revoke @s only players:mb_core
 tag @s add khive.fucking.angry
 scoreboard players set #mbtaken timer 0
 scoreboard players reset @s d.khive
-
+tag @a add tempdeaths
 execute in minecraft:lodahr run forceload add 27304 55
 execute in overworld run forceload add 1737 -4393 1754 -4197
 tag @s add mb_holder

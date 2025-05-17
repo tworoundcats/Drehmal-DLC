@@ -4,8 +4,8 @@ execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from 
 execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] HandItems[0]
 execute as @e[type=item,tag=temp] run tag @s remove temp
 execute as @e[type=armor_stand,tag=display] run data modify entity @s HandItems[0] set value {id:"minecraft:air",Count:1b}
-execute as @e[tag=visual] at @s run playsound minecraft:block.iron_door.close player @a ~ ~ ~ 5 1
-execute as @e[tag=visual] at @s run playsound minecraft:block.lava.pop master @a ~ ~ ~ 5 2
+execute as @e[tag=visual] at @s run playsound minecraft:dcustom.block.iron_door.close player @a ~ ~ ~ 5 1
+execute as @e[tag=visual] at @s run playsound minecraft:dcustom.block.lava.pop master @a ~ ~ ~ 5 2
 execute as @e[tag=visual] at @s run particle minecraft:wax_off ~ ~1 ~ 0.3 0.6 0.3 0 100 normal @a
 execute as @p[tag=selector] run function players:avpod/clearchat
 execute as @p[tag=selector] run tag @s remove selector

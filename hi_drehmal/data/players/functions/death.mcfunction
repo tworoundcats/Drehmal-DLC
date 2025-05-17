@@ -53,7 +53,6 @@ execute if entity @s[predicate=players:is_not_dev,tag=!has_temp_spawn] run funct
 
 execute if entity @s[tag=syzygy_crawl] run function players:items/syzygy/endcrawl
 execute as @a[tag=obv_active] if score @s OBVuuid0 = #temp uuid0 if score @s OBVuuid1 = #temp uuid1 if score @s OBVuuid2 = #temp uuid2 if score @s OBVuuid3 = #temp uuid3 run function players:items/obv/end_hold
-
 scoreboard players reset @s cal_cool
 scoreboard players reset @s asc_cool
 scoreboard players reset @s fzy_cool
@@ -61,5 +60,7 @@ scoreboard players reset @s mb_cool
 scoreboard players reset @s sy_cool
 scoreboard players reset @s obv_cool
 scoreboard players reset @s mal_cool
-
+execute as @s[tag=tempdeaths] run scoreboard players add @s tempdeaths 1
+execute as @s[tag=tempdeaths] run tag @s remove tempdeaths
+scale reset @s
 tag @s remove freefall

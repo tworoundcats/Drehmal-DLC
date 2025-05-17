@@ -11,11 +11,11 @@ execute if score #blocking num matches 61 run schedule clear dlc:shield/blocking
 execute if score #blocking num matches 81 run schedule clear dlc:shield/blocking3
 execute if score #blocking num matches 101 run schedule clear dlc:shield/blocking4
 
-execute if score #blocking num matches 21 run execute at @a[tag=shielded] run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 5 0.8
-execute if score #blocking num matches 41 run execute at @a[tag=shielded] run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 5 1
-execute if score #blocking num matches 61 run execute at @a[tag=shielded] run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 5 1.2
-execute if score #blocking num matches 81 run execute at @a[tag=shielded] run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 5 1.4
-execute if score #blocking num matches 101 run execute at @a[tag=shielded] run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 5 1.6
+execute if score #blocking num matches 21 run execute at @a[tag=shielded] run playsound minecraft:dcustom.block.enchantment_table.use player @s ~ ~ ~ 5 0.8
+execute if score #blocking num matches 41 run execute at @a[tag=shielded] run playsound minecraft:dcustom.block.enchantment_table.use player @s ~ ~ ~ 5 1
+execute if score #blocking num matches 61 run execute at @a[tag=shielded] run playsound minecraft:dcustom.block.enchantment_table.use player @s ~ ~ ~ 5 1.2
+execute if score #blocking num matches 81 run execute at @a[tag=shielded] run playsound minecraft:dcustom.block.enchantment_table.use player @s ~ ~ ~ 5 1.4
+execute if score #blocking num matches 101 run execute at @a[tag=shielded] run playsound minecraft:dcustom.block.enchantment_table.use player @s ~ ~ ~ 5 1.6
 
 execute if score #blocking num matches 21 run execute at @a[tag=shielded] run particle minecraft:electric_spark ~ ~1 ~ 0.5 0.5 0.5 0.2 15 normal
 execute if score #blocking num matches 41 run execute at @a[tag=shielded] run particle minecraft:electric_spark ~ ~1 ~ 0.5 0.5 0.5 0.3 25 normal

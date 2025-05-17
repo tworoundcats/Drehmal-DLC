@@ -6,7 +6,7 @@ execute if score #hovadbossintro timer matches 2 run forceload add 27314 60 2727
 
 execute if score #hovadbossintro timer matches 2 as @a[predicate=core:in_hovad] run spawnpoint @s 27295 75 -19
 
-
+execute if score #hovadbossintro timer matches 2 as @a[predicate=core:in_hovad] run tag @s add tempdeaths
 execute if score #hovadbossintro timer matches 2 run clone 27332 22 118 27302 4 88 27280 82 70 replace force
 
 

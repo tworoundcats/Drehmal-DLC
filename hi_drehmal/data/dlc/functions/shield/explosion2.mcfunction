@@ -29,3 +29,4 @@ summon enchancement:amethyst_shard ~ ~1 ~ {Motion:[-0.35,0.0,-0.35],damage:5}
 
 execute as @p[tag=shielded] run scoreboard players set @s shield_cool 600
 function dlc:shield/explosion_d
+schedule function dlc:shield/remove_tags 2s

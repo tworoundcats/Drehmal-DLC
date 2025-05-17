@@ -48,12 +48,12 @@ function weapons:grant
 function core:story/grant
 function core:mystery/grant
 execute if entity @s[tag=syzygy_crawl] run function players:items/syzygy/endcrawl
-execute if score #DLC int matches 1 run tag @a add DLC
-execute unless entity @s[tag=DLC] run tellraw @s {"text":"You must run \"/trigger dlc\" to enable the dlc.","bold":true,"color":"dark_red"}
-
-execute unless entity @s[tag=DLC] run tellraw @s {"text":"It is recommended to play on 8+ player difficulty scaling","bold":false,"color":"dark_red"}
-
-execute unless entity @s[tag=DLC] run tellraw @s {"text":"All players must be opped to do quests","bold":false,"color":"dark_red"}
+#execute if score #DLC int matches 1 run tag @a add DLC
+#execute unless entity @s[tag=DLC] run tellraw @s {"text":"You must run \"/trigger dlc\" to enable the dlc.","bold":true,"color":"dark_red"}
+#
+#execute unless entity @s[tag=DLC] run tellraw @s {"text":"It is recommended to play on 8+ player difficulty scaling","bold":false,"color":"dark_red"}
+#
+#execute unless entity @s[tag=DLC] run tellraw @s {"text":"All players must opped for select features to work","bold":false,"color":"dark_red"}
 
 
 
@@ -90,6 +90,6 @@ execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariab
 execute as @a[advancements={weapons:tempest=true}] run execute as @a run fmvariable set tempest false 1
 execute as @a[advancements={weapons:eldorite=true}] run execute as @a run fmvariable set eldorite false 1
 execute as @a[advancements={weapons:destinyblade=true}] run execute as @a run fmvariable set dblade false 1
-
 scoreboard players enable @a dlc
 execute as @a[tag=obv_active] if score @s OBVuuid0 = #temp uuid0 if score @s OBVuuid1 = #temp uuid1 if score @s OBVuuid2 = #temp uuid2 if score @s OBVuuid3 = #temp uuid3 run function players:items/obv/end_hold
+scale reset @s

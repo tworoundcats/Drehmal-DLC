@@ -57,3 +57,4 @@ execute at @p[tag=shielded] run execute as @e[type=#core:hostile,distance=..5] r
 
 execute as @p[tag=shielded] run scoreboard players set @s shield_cool 600
 function dlc:shield/explosion_d
+schedule function dlc:shield/remove_tags 2s

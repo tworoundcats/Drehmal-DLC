@@ -75,5 +75,6 @@ execute positioned -1208.49 146.00 3665.49 unless entity @e[type=glow_item_frame
 execute positioned -1287.47 122.00 3809.51 unless entity @e[type=glow_item_frame,distance=..2] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[star],Fixed:1b,Invisible:1b,Item:{id:"mythicmetals:starrite",Count:1,tag:{display:{Name:'[{"text":"Starrite","italic":false,"color":"aqua"}]',Lore:['[{"text":"A bit of star and space matter","italic":false}]','[{"text":"in its raw form, maybe it can be","italic":false}]','[{"text":"refined into something useable","italic":false}]']}}}}
 
 execute positioned -23.56 106.00 5252.51 unless entity @e[type=glow_item_frame,distance=..2] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[star],Fixed:1b,Invisible:1b,Item:{id:"mythicmetals:starrite",Count:1,tag:{display:{Name:'[{"text":"Starrite","italic":false,"color":"aqua"}]',Lore:['[{"text":"A bit of star and space matter","italic":false}]','[{"text":"in its raw form, maybe it can be","italic":false}]','[{"text":"refined into something useable","italic":false}]']}}}}
+scoreboard players set #DLC bool 1
 
 schedule function dlc:starrite1_3 3s

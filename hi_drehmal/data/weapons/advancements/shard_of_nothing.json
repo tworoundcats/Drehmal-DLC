@@ -5,24 +5,24 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Eclipse:1b}"
+                        "nbt":"{Shard_of_Nothing:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/eclipse"
+        "function": "weapons:advancement/shard_of_nothing"
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mythicmetals:steel_ingot"
+            "item": "bosses_of_mass_destruction:obsidian_heart"
         },
         "title": {
             "color": "gold",
-            "text": "Eclipsium"
+            "text": "Shard of Nothing"
         },
         "description": {
             "color": "gray",
@@ -31,5 +31,5 @@
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:pandemonium"
+    "parent": "weapons:harbinger"
 }

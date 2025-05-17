@@ -61,6 +61,10 @@
             "condition":"reference",
             "name":"players:space"
         },
+                {
+            "condition":"reference",
+            "name":"players:locations/oblivion"
+        },
         {
             "condition":"reference",
             "name":"players:locations/heatmap_place"

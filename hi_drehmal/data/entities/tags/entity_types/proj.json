@@ -16,6 +16,7 @@
         "minecraft:potion",
         "minecraft:egg",
         "minecraft:firework_rocket",
-        "minecraft:llama_spit"
+        "minecraft:llama_spit",
+        "mythicmetals:star_platinum_arrow"
     ]
   }

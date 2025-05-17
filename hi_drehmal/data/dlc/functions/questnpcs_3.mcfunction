@@ -31,8 +31,7 @@ execute positioned -1261.2 46.50 -4062.47 run forceload remove ~ ~
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload remove ~ ~
 
 
-scoreboard players set #DLC int 1
-tag @a add DLC
+
 scoreboard players set dlc#c spawnqnpc 1
 execute as @a[tag=DLC_temp] run function dlc:settings
 execute as @a[tag=DLC_temp] run tag @s remove DLC_temp

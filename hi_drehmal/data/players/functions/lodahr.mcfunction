@@ -89,3 +89,5 @@ execute if predicate players:holding/ward_staff positioned ~ ~0.5 ~ run function
 #execute if entity @s[x=-69,z=-1718,distance=..25] positioned ~ 164 ~ if entity @s[dx=0,dy=52,dz=0] run effect give @s minecraft:jump_boost 1 8 true
 
 execute if entity @s[tag=freefall] as @s at @s run function core:space_freefall
+
+execute unless score #bernicedead bool matches 1 if predicate players:locations/bernice_home run tag @s add tempdeaths

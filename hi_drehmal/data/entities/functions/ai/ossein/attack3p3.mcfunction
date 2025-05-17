@@ -1,0 +1,1 @@
+kill @e[type=arrow,tag=ossein_arrow2]

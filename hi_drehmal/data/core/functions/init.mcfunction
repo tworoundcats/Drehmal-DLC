@@ -981,7 +981,7 @@ scoreboard objectives add bskills totalKillCount
 scoreboard objectives add bstimer dummy
 
 team add leviathan
-team modify leviathan color dark_red 
+team modify leviathan color black
 scoreboard objectives add use_levi minecraft.used:mcdw.whip_whip
 scoreboard objectives add levi_reach dummy
 scoreboard objectives add levi_kills totalKillCount
@@ -1032,10 +1032,11 @@ scoreboard players enable @a dlc
 
 scoreboard objectives add dquest dummy
 
-scoreboard objectives add death deathCount
-scoreboard objectives setdisplay list death
+scoreboard objectives add Deaths deathCount {"text":"Deaths","color":"dark_red"}
+scoreboard objectives add tempdeaths dummy
 
-scoreboard objectives add blocking minecraft.used:mcdw.shield_tower_guard
+
+scoreboard objectives add blocking dummy
 
 scoreboard objectives add shield_cool dummy
 

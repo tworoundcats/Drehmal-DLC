@@ -47,3 +47,5 @@ kill @e[type=armor_stand,tag=em_spike2]
 kill @e[type=armor_stand,tag=emissary_orb]
 kill @e[type=armor_stand,tag=em_spike1]
 kill @e[type=armor_stand,tag=escythe]
+
+execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths

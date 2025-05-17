@@ -7,7 +7,7 @@ execute if score #bpalace int matches 7 run particle flame -4046 96 5987 0.5 0.5
 execute if score #bpalace int matches 8 run particle flame -4045 96 5985 0.5 0.5 0.5 0.2 50 force
 execute if score #bpalace int matches 9 run particle flame -4043 96 5984 0.5 0.5 0.5 0.2 50 force
 execute if score #bpalace int matches 10 run particle flame -4041 96 5985 0.5 0.5 0.5 0.2 50 force
-execute if score #bpalace int matches 4..10 run playsound minecraft:entity.generic.explode player @a -4042.41 97.00 5987.77 1 1
+execute if score #bpalace int matches 4..10 run playsound minecraft:dcustom.entity.generic.explode player @a -4042.41 97.00 5987.77 1 1
 
 
 

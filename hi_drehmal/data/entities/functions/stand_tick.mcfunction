@@ -29,4 +29,6 @@ execute if entity @s[tag=soletta_weapon] if entity @p[distance=..64] run functio
 execute if entity @s[name="osteostand"] unless entity @p[predicate=players:holding/osteo] run function players:items/osteo/osteokill
 execute if entity @s[name="osteowhip"] unless entity @p[predicate=players:holding/osteo] run function players:items/osteo/osteokill
 
+
+
 #execute if entity @s[tag=em_summon] run function entities:ai/emissary/summon/tick
