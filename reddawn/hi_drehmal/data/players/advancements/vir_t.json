@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "players:is_not_dev"
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 5560,
+                  "max": 5570
+                },
+                "y": {
+                  "min": 239,
+                  "max": 255
+                },
+                "z": {
+                  "min": -2971,
+                  "max": 2979
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/vir_check"
+  }
+}

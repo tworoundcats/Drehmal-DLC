@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "BUT I KNOW YOU WILL SUCCEED.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

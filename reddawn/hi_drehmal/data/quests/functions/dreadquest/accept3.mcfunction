@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["","<Dreadlock> ",{"text":"If you can bring it to me and help me with my experiment, I'll reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:dreadquest/accept4 3s

@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick{display:{Name:'{"text":"Party Cannon","color":"aqua","italic":false,"underlined":true}',Lore:['{"text":"Celebration Mk3"}','{"text":"Happy Bday Dome!"}','{"text":" "}','{"text":"Artifact","color":"aqua","italic":false}']},HideFlags:127,Unbreakable:1b,party_cannon:1b,Enchantments:[{}]} 1

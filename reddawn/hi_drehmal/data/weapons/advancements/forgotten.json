@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "color": "red",
+            "text": "Forgotten Weapons"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Weapons whose origins are unknown and history forgotten."
+        },
+        "icon": {
+            "item": "mcdw:sword_frost_slayer"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "init": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld"
+            }
+        }
+    },
+    "parent": "weapons:equipment"
+}

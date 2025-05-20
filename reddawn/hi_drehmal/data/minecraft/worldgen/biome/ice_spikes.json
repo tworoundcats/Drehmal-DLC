@@ -1,0 +1,35 @@
+{
+  "surface_builder": "minecraft:swamp",
+  "depth": -0.2,
+  "scale": 0.1,
+  "temperature": 0.8,
+  "downfall": 0.9,
+  "has_precipitation": true,
+  "category": "swamp",
+  "player_spawn_friendly": false,
+  "effects": {
+    "sky_color": 7907327,
+    "fog_color": 12638463,
+    "water_color": 6388580,
+    "water_fog_color": 2302743,
+    "grass_color": 5208369,
+    "foliage_color": 6975545,
+    "grass_color_modifier": "swamp",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": []
+}

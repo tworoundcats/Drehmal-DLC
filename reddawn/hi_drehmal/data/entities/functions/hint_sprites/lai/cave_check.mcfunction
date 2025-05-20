@@ -1,0 +1,2 @@
+execute if predicate entities:hint_sprite/in_lai_cave run scoreboard players add #hSpr_laiCave num 1
+execute unless predicate entities:hint_sprite/in_lai_cave unless entity @p[distance=..16] run function entities:clear_self_dataless

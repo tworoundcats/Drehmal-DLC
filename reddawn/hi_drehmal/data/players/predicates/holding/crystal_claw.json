@@ -1,0 +1,13 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition":"reference",
+            "name":"players:holding/crystal_claw_mainhand"
+        },
+        {
+            "condition":"reference",
+            "name":"players:holding/crystal_claw_offhand"
+        }
+    ]
+}

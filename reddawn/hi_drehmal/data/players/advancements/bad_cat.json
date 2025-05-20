@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:popped_chorus_fruit"
+            ],
+            "nbt": "{display:{Lore:['{\"color\":\"dark_purple\",\"text\":\"A small, magical orb valued by\"}','{\"color\":\"dark_purple\",\"text\":\"traders and arcanists. They have\"}','{\"color\":\"dark_purple\",\"text\":\"several applications in both\"}','{\"color\":\"dark_purple\",\"text\":\"magical creations and technology.\"}'],Name:'{\"italic\":false,\"text\":\"Runic Catalyst\"}'}}"
+          }
+        ]
+      }
+    },
+    "requirement2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:popped_chorus_fruit"
+            ],
+            "nbt": "{display:{Lore:['{\"text\":\"A small, magical orb valued by\",\"color\":\"dark_purple\"}','{\"text\":\"traders and arcanists. They have\",\"color\":\"dark_purple\"}','{\"text\":\"several applications in both\",\"color\":\"dark_purple\"}','{\"text\":\"magical creations and technology.\",\"color\":\"dark_purple\"}'],Name:'{\"text\":\"Runic Catalyst\",\"italic\":false}'}}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement",
+      "requirement2"
+    ]
+  ],
+  "rewards": {
+    "function": "players:misc/bad_cat"
+  }
+}

@@ -1,0 +1,1 @@
+summon drowned ~ ~ ~ {Tags:[spm.mob,spm.mob.water_ghost]}

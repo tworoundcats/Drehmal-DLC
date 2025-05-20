@@ -1,0 +1,3 @@
+execute unless data entity @s cardinal_components.trinkets:trinkets.legs.belt.Items[{id:"minecraft:white_dye"}] unless data entity @s cardinal_components.trinkets:trinkets.legs.belt.Items[{id:"artifacts:crystal_heart"}] run trinkets set legs belt 0 white_dye{Cloud_disabled:1b,display:{Name:'["",{"text":"Cloud in a Bottle","italic":false}]',Lore:['["",{"text":"This Item is Temporarily Disabled","italic":false}]']}}
+execute if data entity @s cardinal_components.trinkets:trinkets.legs.belt.Items[{id:"artifacts:crystal_heart"}] run function players:replacecloud
+clear @s minecraft:white_dye{Cloud_disabled:1b}

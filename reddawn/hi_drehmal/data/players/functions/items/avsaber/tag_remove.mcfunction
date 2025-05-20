@@ -1,0 +1,1 @@
+execute as @a[tag=zen] run tag @s remove zen

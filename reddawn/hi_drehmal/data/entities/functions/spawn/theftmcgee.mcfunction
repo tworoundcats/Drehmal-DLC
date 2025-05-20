@@ -1,0 +1,1 @@
+summon zombie ~ ~ ~ {Tags:["theftmcgee"],ArmorItems:[{},{},{},{id:"command_block",Count:1b}],HandItems:[{id:"fishing_rod",Count:1b},{}],IsBaby:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Team:"hide_name",HandDropChances:[0.0f,0.0f],Attributes:[{Name:"generic.attack_damage",Base:0.1}],CanPickUpLoot:1b}

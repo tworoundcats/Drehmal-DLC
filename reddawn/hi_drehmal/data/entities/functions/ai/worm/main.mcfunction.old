@@ -1,0 +1,64 @@
+scoreboard players reset #error temp
+scoreboard players reset #loop temp
+
+scoreboard players remove @s aj.framee 1
+
+execute unless score @s ai_state matches 5 run function entities:ai/worm/find_array
+scoreboard players operation #worm_id temp = @s worm_id
+execute unless score @s ai_state matches 5 unless score #error temp matches 1 as @e[type=#core:worm_segs,tag=segement] if score @s worm_id = #worm_id temp run tag @s add temp_worm
+execute unless score @s ai_state matches 5 unless score #error temp matches 1 run scoreboard players set #segement temp 1
+
+execute if score @s ai_state matches 1..2 run scoreboard players add @s minion_timer 1
+execute if score @s ai_state matches 1..2 if score @s minion_timer matches 100.. run function entities:ai/worm/spawn_guardians
+
+execute unless score #error temp matches 1 if score @s ai_state matches ..3 run function entities:ai/worm/move_tick
+execute unless score #error temp matches 1 if score @s ai_state matches 4 run function entities:ai/worm/deathray_travel
+execute unless score #error temp matches 1 if score @s ai_state matches 15 run function entities:ai/worm/deathray_travel2
+execute unless score #error temp matches 1 if score @s ai_state matches 5 run function entities:ai/worm/deathray_main
+scoreboard players remove @s seek_timer 1
+
+data remove storage drehmal:entities tempWorm 
+data modify storage drehmal:entities tempWorm set from storage drehmal:entities worms[0].segements
+execute unless score #error temp matches 1 unless score @s ai_state matches 5 as @e[type=#core:worm_segs,tag=temp_worm] if score @s seg_id = #segement temp run function entities:ai/worm/move/root
+
+execute if score #error temp matches 1 run kill @s
+
+scoreboard players add @s ai_timer 1
+
+execute if score @s ai_state matches -1 if score @s ai_timer matches 450.. run function entities:ai/worm/phases/seeking
+execute if score @s ai_state matches 1 if score @s ai_timer matches 400.. run function entities:ai/worm/phases/circling
+execute if score @s ai_state matches 2 if score @s ai_timer matches 300.. run function entities:ai/worm/phases/charging
+
+execute unless score @s ai_state matches 6 if score @s charging matches 1 at @s positioned ~ ~1.7 ~ positioned ^ ^ ^2 positioned ~-1 ~-1.5 ~-1 as @a[dx=2,dy=3,dz=2] run function entities:ai/worm/pdam2
+execute unless score @s ai_state matches 6 unless score @s charging matches 1 at @s positioned ~ ~1.7 ~ positioned ^ ^ ^2 positioned ~-1 ~-1.5 ~-1 as @a[dx=2,dy=3,dz=2] run function entities:ai/worm/pdam1
+
+execute if score @s ai_state matches 3 if score @s ai_timer matches 20 run scoreboard players set @s charging 1
+execute if score @s ai_state matches 3 if score @s ai_timer matches 20 run playsound minecraft:dcustom.entity.evoker_fangs.attack hostile @a ~ ~ ~ 10 0
+execute if score @s ai_state matches 3 if score @s ai_timer matches 20 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/stop
+execute if score @s ai_state matches 3 if score @s ai_timer matches 20 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/play
+execute if score @s ai_state matches 3 if score @s ai_timer matches 50 run scoreboard players set @s charging 0
+execute if score @s ai_state matches 3 if score @s ai_timer matches 70 run scoreboard players set @s charging 1
+execute if score @s ai_state matches 3 if score @s ai_timer matches 70 run playsound minecraft:dcustom.entity.evoker_fangs.attack hostile @a ~ ~ ~ 10 0
+execute if score @s ai_state matches 3 if score @s ai_timer matches 70 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/stop
+execute if score @s ai_state matches 3 if score @s ai_timer matches 70 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/play
+execute if score @s ai_state matches 3 if score @s ai_timer matches 100 run scoreboard players set @s charging 0
+execute if score @s ai_state matches 3 if score @s ai_timer matches 120 run scoreboard players set @s charging 1
+execute if score @s ai_state matches 3 if score @s ai_timer matches 120 run playsound minecraft:dcustom.entity.evoker_fangs.attack hostile @a ~ ~ ~ 10 0
+execute if score @s ai_state matches 3 if score @s ai_timer matches 120 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/stop
+execute if score @s ai_state matches 3 if score @s ai_timer matches 120 as @e[type=marker,tag=aj.bern.root] run function bern:animations/roar/play
+execute if score @s ai_state matches 3 if score @s ai_timer matches 150 run function entities:ai/worm/phases/seeking
+
+
+execute if score @s ai_state matches 4 if score @s ai_timer matches 0 run function entities:ai/worm/phases/activate_deathray
+
+execute if score @s ai_state matches 6 run function entities:ai/worm/exit_chamber
+execute if score @s ai_state matches 7 run function entities:ai/worm/exit_chamber2
+execute if score @s ai_state matches 8 run function entities:ai/worm/exit_chamber3
+
+execute if score @s ai_state matches 16 run function entities:ai/worm/chamber_despawn1
+execute if score @s ai_state matches 17 run function entities:ai/worm/chamber_despawn2
+
+execute if score @s aj.framee matches ..0 if predicate entities:teth_volley run function entities:ai/worm/idle1
+execute if score @s aj.framee matches ..0 if predicate entities:teth_volley run function entities:ai/worm/idle2
+
+execute unless score #worm_hp? bool matches 1 store result bossbar minecraft:health value run scoreboard players add #worm_spawnani timer 1

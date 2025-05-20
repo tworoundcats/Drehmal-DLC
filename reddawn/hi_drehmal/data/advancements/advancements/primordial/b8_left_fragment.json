@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:6}"
+      },
+      "title": {
+        "text": "Left Blade Fragment",
+        "color": "aqua"
+      },
+      "description": {
+        "text": "The cutting edge of this half-spearhead slices through tough canvas on contact. You probably shouldn’t hang onto it for too long. - Discovered one half of the Mythbreaker’s blade",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:primordial/a0_repository",
+    "criteria": {
+      "requirement": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+              "items": [
+                  {
+                      "nbt":"{leftFragment:1b}"
+                  }
+              ]
+          }
+      }
+    },
+    "rewards": {
+      "function":"advancements:primordial/left_fragment"
+  }
+  }

@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+          {
+              "name":"vitality",
+              "attribute":"generic.movement_speed",
+              "operation":"addition",
+              "amount":0.01,
+              "slot":"mainhand"
+          }
+      ]
+    },
+    {
+      "function":"set_nbt",
+      "tag":"{SpeedEnch:1b}"
+    }
+  ]
+  

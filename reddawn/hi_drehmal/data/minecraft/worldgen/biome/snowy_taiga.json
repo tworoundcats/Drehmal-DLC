@@ -1,0 +1,52 @@
+{
+  "scale": 0.2,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "sky_color": 16709520,
+    "fog_color": 16774317,
+    "water_color": 7566195,
+    "water_fog_color": 1315860,
+    "foliage_color": 10387789,
+    "grass_color": 9470285
+  },
+  "surface_builder": "minecraft:grass",
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [
+		],
+    "creature": [
+    ],
+    "ambient": [
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": false,
+  "temperature": 0.25,
+  "downfall": 0.8,
+  "category": "taiga",
+  "depth": 0.2
+}

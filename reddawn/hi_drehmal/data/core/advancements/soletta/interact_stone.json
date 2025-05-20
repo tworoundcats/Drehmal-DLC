@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "1": {
+            "trigger":"minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "nbt":"{Tags:[\"sol_stone_interact\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function":"core:scene/soletta/display/interact_stone"
+    }
+}

@@ -1,0 +1,2 @@
+execute if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] For what dost thou seek to complete his work?"]
+execute if score #khive_talk bool matches 1 run schedule function core:scene/mb_run/dia/1/5 6s

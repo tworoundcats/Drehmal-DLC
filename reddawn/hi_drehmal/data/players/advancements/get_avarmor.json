@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+                {
+                    "nbt":"{avHorseArmor:1b}"
+                }
+            ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:avhorse/linking/inventory_armor"
+    }
+  }
+  

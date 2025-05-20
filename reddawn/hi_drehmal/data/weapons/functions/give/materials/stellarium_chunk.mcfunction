@@ -1,0 +1,1 @@
+give @s mythicmetals:star_platinum_nugget{display:{Name:'[{"text":"Chunk of Stellarium","italic":false,"color":"aqua"}]',Lore:['[{"text":"A powerful, incredibly dense material.","italic":false}]','[{"text":"Can be used to forge the toughest","italic":false}]','[{"text":"of equipment","italic":false}]']}} 1

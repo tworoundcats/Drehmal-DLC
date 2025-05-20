@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Parenchyma:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:parenchyma"
+        ],
+        "function":"weapons:parenchyma"
+    },
+    "display": {
+        "title": {
+            "text": "Parenchyma",
+            "color": "dark_purple"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for Parenchyma, plate of unnatural growth, unlocked. "
+        },
+        "icon": {
+            "item": "minecraft:creeper_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:thundercrux"
+}

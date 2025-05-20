@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Backstabber:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/backstabber"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:dagger_backstabber"
+        },
+        "title": {
+            "color": "red",
+            "text": "Backstabber"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Backstabber"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:duskfall"
+}

@@ -1,0 +1,2 @@
+tag @s add nofizzle
+execute at @a if score @s uuid0 = @p uuid0 if score @s uuid1 = @p uuid1 if score @s uuid2 = @p uuid2 if score @s uuid3 = @p uuid3 if score @p time_warp_timer matches 0.. run function entities:misc/fizzle_pearl

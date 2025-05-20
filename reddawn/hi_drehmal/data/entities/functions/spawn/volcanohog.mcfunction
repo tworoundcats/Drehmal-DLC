@@ -1,0 +1,1 @@
+summon minecraft:hoglin ~ ~ ~ {IsImmuneToZombification:1,CustomName:'{"text":"Volcano Hoglin"}',Team:"hide_name",Tags:["vHog"],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],ArmorItems:[{id:golden_boots,Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:feather_falling,lvl:255}]}},{},{},{}],ActiveEffects:[{Id:12,Duration:2147483647,ShowParticles:0b}]}

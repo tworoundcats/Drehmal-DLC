@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:purple_glazed_terracotta"
+      },
+      "title": {
+        "text": "Closure",
+        "color": "aqua"
+      },
+      "description": {
+        "text": "There is nothing left. - Paid your dues at the Final Grave",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:primordial/heart",
+    "criteria": {
+      "command": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "players:misc/mystery_closure"
+    }
+  }
+  

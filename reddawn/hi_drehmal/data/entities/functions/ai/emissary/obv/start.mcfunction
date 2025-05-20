@@ -1,0 +1,2 @@
+execute as @a[predicate=players:in_em_arena,tag=emissary.infight,predicate=players:is_not_dev,distance=21..,sort=furthest] at @s run function entities:ai/emissary/obv/grab
+execute as @e[type=zombie,tag=emissary] at @s run function entities:ai/emissary/obv/startphase

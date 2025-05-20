@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": {
+            "color": "dark_gray",
+            "text": "Supersoldier Certification"
+        },
+        "description": {
+            "color": "gray",
+            "italic": false,
+            "text": "Now you’ll be known as ‘Captain Drehmal’. - Cleared all 6 waves of the Arena"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "experience": 40
+    },
+    "criteria": {
+        "arena": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements":[
+        [
+            "arena"
+        ]
+    ],
+    "parent": "advancements:discoveries/arena"
+}
+
+   

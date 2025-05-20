@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Syzygy:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:syzygy"
+        ],
+        "function":"weapons:syzygy"
+    },
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Syzygy"
+        },
+        "description": {
+            "text": "Recipe for Syzygy, fabled weapon of the Moonsworn, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:cod_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:oblivion"
+}

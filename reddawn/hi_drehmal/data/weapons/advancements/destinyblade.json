@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Edge",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Blade",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinyblade"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyBlade:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinyb"
+}

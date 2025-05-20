@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:dolphin",
+              "nbt": "{Tags:[\"blooddolphin\"]}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:misc/hurt_by_blooddolphin"
+    }
+  }
+  

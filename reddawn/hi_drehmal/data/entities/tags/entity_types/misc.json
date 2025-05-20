@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#entities:proj",
+        "#entities:hostile",
+        "#entities:dummy"
+    ]
+  }

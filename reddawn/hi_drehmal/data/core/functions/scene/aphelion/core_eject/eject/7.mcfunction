@@ -1,0 +1,1 @@
+execute in minecraft:space positioned 50 118 122 run playsound minecraft:dcustom.block.beacon.ambient ambient @a[distance=..50] ~ ~ ~ 5 0.7

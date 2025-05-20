@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Shard_of_Nothing:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/shard_of_nothing"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "bosses_of_mass_destruction:obsidian_heart"
+        },
+        "title": {
+            "color": "gold",
+            "text": "Shard of Nothing"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained An Upgrade Component"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:harbinger"
+}

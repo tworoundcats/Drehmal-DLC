@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "YOU ARE THE LAST OF THEM.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

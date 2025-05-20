@@ -1,0 +1,1 @@
+give @s slime_spawn_egg{display:{Name:'{"text": "Crimson Aboriginal Spawn Egg","italic": false}'},EntityTag:{id:"armor_stand",Tags:[spm.mob.respawn,spm.mob.crimson_aboriginal]}} 1

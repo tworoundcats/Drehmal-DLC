@@ -1,0 +1,2 @@
+execute if predicate spm:location/fortress if predicate spm_cf:mob/wither_ghost/replace_rate_in_fortress run function spm:mob/wither_ghost/replace_with_bow
+execute if predicate spm:location/soul_sand_valley if predicate spm_cf:mob/wither_ghost/replace_rate_in_soul_sand_valley run function spm:mob/wither_ghost/replace_with_bow

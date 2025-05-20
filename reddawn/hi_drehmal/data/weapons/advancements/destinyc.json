@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Destiny's Chestplate",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Obtained the Mythical Destiny Chestplate",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mythicmetals:celestium_chestplate"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/destinyc"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{DestinyC:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinyh"
+}

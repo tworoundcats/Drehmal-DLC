@@ -1,0 +1,2 @@
+# copy changes here to ai/burrower/ambush and ai/burrower/ambush_with_hp
+summon minecraft:cave_spider ~ ~ ~ {Tags:["burrower","day_aggro"],CustomName:'{"text":"Burrower"}',Team:"hide_name",ArmorItems:[{id:"leather_boots",Count:1b},{},{},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Health:28f,Attributes:[{Name:generic.max_health,Base:28}]}

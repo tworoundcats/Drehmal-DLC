@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Dark:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/chrono"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "dark-enchanting:dark_enchanter"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Chronoweave"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained a powerful infusion table"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:stasis_bolt"
+}

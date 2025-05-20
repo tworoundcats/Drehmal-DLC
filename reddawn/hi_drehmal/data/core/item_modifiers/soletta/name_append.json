@@ -1,0 +1,145 @@
+[
+    {
+        "function": "set_name",
+        "name": {"selector":"@s","italic":"false","color":"gold","underlined":"true"},
+        "entity":"this"
+    },
+
+
+
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" α"}],
+        "entity":"this"
+    },
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{SpeedEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" β"}],
+        "entity":"this"
+    },
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" Δ"}],
+        "entity":"this"
+    },
+
+
+
+
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b,SpeedEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" Φ"}],
+        "entity":"this"
+    },
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b,CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" θ"}],
+        "entity":"this"
+    },
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{SpeedEnch:1b,CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" Σ"}],
+        "entity":"this"
+    },
+
+
+
+
+    {
+        "function": "set_name",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{SpeedEnch:1b,CooldownEnch:1b,VitalityEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "name": [{"selector":"@s","italic":"false","color":"gold","underlined":"true"},{"text":" Ω"}],
+        "entity":"this"
+    }
+  ]
+  

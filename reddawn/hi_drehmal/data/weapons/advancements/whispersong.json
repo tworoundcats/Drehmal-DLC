@@ -1,0 +1,38 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:phantom_spawn_egg"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Whispersong, the Insohmic elite guards’ weapon of choice, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Whispersong"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{whispersong:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:whispersong"
+        ],
+        "function":"weapons:whispersong"
+    },
+    "parent": "weapons:ultva"
+}

@@ -1,0 +1,16 @@
+{
+	"values": [
+		{
+			"id": "#entities:half_height",
+			"required": false
+		},
+		{
+			"id": "#entities:full_height",
+			"required": false
+		},
+		{
+			"id": "#entities:low_height",
+			"required": false
+		}
+	]
+}

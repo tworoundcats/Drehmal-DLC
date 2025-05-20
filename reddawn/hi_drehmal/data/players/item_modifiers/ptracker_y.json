@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LodestoneDimension:\"minecraft:overworld\",LodestonePos:{X:26907,Y:1,Z:5}}"
+  }
+]

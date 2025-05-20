@@ -1,0 +1,38 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:chicken_spawn_egg"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for the Flammer, the explosive mining tool, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Flammer"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Flammer:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:flammer"
+        ],
+        "function":"weapons:flammer"
+    },
+    "parent": "weapons:crystalclaw"
+}

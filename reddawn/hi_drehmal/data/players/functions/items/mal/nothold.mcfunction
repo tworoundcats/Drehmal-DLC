@@ -1,0 +1,3 @@
+execute if score @s drop_netherite matches 1.. if score @s mal_cool matches 1.. run function players:items/mal/misfire
+execute if score @s drop_netherite matches 1.. unless score @s mal_cool matches 1.. run function players:items/mal/activate
+execute unless score @s drop_netherite matches 1 unless score @s mal_cool matches 1.. if score @s mal_charge matches 1.. run function players:items/mal/switchoff

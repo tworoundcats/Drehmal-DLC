@@ -1,0 +1,4 @@
+execute store success score #found_check temp if data entity @s Items[{tag:{chargedMythbreaker:1b}}].tag run data modify entity @s Items[{tag:{chargedMythbreaker:1b}}].tag set from storage drehmal:core inert_mythbreaker
+execute if score #found_check temp matches 1 run scoreboard players set #found temp 1
+execute store success score #found_check temp if data entity @s Items[{id:"minecraft:bundle",tag:{Items:[{tag:{chargedMythbreaker:1b}}]}}] run data modify entity @s Items[{id:"minecraft:bundle"}].tag.Items[{tag:{chargedMythbreaker:1b}}].tag set from storage drehmal:core inert_mythbreaker
+execute if score #found_check temp matches 1 run scoreboard players set #found temp 1

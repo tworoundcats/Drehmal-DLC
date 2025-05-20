@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "MY WILL.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

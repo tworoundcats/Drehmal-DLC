@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "killdeatheffectentity":{
+            "trigger":"minecraft:player_killed_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"rhalon\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/rhalon/death"
+    }
+}

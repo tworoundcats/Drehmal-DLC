@@ -1,0 +1,150 @@
+[
+    #TODO
+    {
+        "function": "set_lore",
+        "lore": [
+            
+        ],
+        "replace":"true" 
+    },
+
+
+    #TODO
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"inverted",
+                "term": {
+                    "condition":"entity_properties",
+                    "entity":"this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt":"{VitalityEnch:1b}"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"* Max Health","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{VitalityEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"* Max Health","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+
+    #TODO
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"inverted",
+                "term": {
+                    "condition":"entity_properties",
+                    "entity":"this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "nbt":"{SpeedEnch:1b}"
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"* Movement Speed","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+    #TODO
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{SpeedEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"* Movement Speed","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    #TODO
+    {
+        "function":"set_lore",
+        "lore": [
+            {"text":"8 Attack Damage","color":"blue","italic":false},
+            {"text":"2.4 Attack Speed","color":"blue","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    {
+        "function":"set_lore",
+        "conditions":[
+            {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt":"{CooldownEnch:1b}"
+                        }
+                    }
+                }
+            }
+        ],
+        "lore": [
+            {"text":"-25% Cooldown Time","color":"aqua","italic":false}
+        ],
+        "replace":"false"
+    },
+
+
+    #TODO
+    {
+        "function": "set_lore",
+        "lore": [
+            {"text":"Unbreakable","color":"blue","italic":false},
+            {"text":" "},{"text":"This item can be enchanted.","color":"gray","italic":true},
+            {"text":" "},
+            {"text":"Mythical","color":"gold","italic":false}
+        ],
+        "replace":"false"
+    }
+]

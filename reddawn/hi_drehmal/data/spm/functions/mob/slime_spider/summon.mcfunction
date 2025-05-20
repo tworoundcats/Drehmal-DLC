@@ -1,0 +1,1 @@
+summon spider ~ ~ ~ {Tags:[spm.mob,spm.mob.slime_spider]}

@@ -1,0 +1,2 @@
+summon creeper ~ ~ ~ {NoGravity:1b,NoAI:1b,Health:1000f,Tags:["loser","temp"],CustomName:'{"text":"loser"}',Attributes:[{Name:generic.max_health,Base:1000}]}
+execute as @e[type=creeper,tag=temp] run function entities:spawn/loser2

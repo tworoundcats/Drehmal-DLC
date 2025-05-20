@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add taihgel.0
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1011000,display:{Name:'{"text":"Orogeny +0","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"A cooled ring of magma, dormant as the"}','{"text":"Aspect of Land itself."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+2 Armor","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,CustomModelData:1011000,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;-199295257,-2006759064,-1285243479,1265744029],Slot:"offhand"}]} 1

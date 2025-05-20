@@ -1,0 +1,17 @@
+summon minecraft:item_frame 2585.97 229.50 1213.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 229, TileX: 2585, Invisible: 1b, TileZ: 1213, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 230.50 1213.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 230, TileX: 2585, Invisible: 1b, TileZ: 1213, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 231.50 1213.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 231, TileX: 2585, Invisible: 1b, TileZ: 1213, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 229.50 1214.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:ender_pearl", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 229, TileX: 2585, Invisible: 1b, TileZ: 1214, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 230.50 1214.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:purple_stained_glass_pane", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 230, TileX: 2585, Invisible: 1b, TileZ: 1214, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 231.50 1214.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:purple_stained_glass_pane", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 231, TileX: 2585, Invisible: 1b, TileZ: 1214, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 229.50 1215.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 229, TileX: 2585, Invisible: 1b, TileZ: 1215, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 230.50 1215.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 230, TileX: 2585, Invisible: 1b, TileZ: 1215, Fixed: 1b ,Tags:["sal.kholframe"]}
+
+summon minecraft:item_frame 2585.97 231.50 1215.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 1b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:quartz", Count: 1b}, ItemDropChance: 1.0f, Fire: -1s, TileY: 231, TileX: 2585, Invisible: 1b, TileZ: 1215, Fixed: 1b ,Tags:["sal.kholframe"]}

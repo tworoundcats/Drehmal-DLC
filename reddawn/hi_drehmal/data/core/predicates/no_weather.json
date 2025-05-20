@@ -1,0 +1,23 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+            "location": {
+                "dimension": "minecraft:space"
+            }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                "dimension": "minecraft:true_end"
+                }
+            }
+        }
+    ]
+}

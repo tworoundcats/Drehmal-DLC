@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ancient_debris"
+    },
+    "title": "Stellar Refuse",
+    "description": "Obtain Celestial Debris",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:lodahr/find_meteor",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

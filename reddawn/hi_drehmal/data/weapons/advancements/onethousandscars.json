@@ -1,0 +1,38 @@
+{
+    "rewards": {
+        "recipes": [
+            "weapons:onethousandscars"
+        ],
+        "function":"weapons:1kscars"
+    },
+    "display": {
+        "description": {
+            "text": "Recipe for One Thousand Scars, the ancient blade of the First Avihm, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:parrot_spawn_egg"
+        },
+        "hidden": true,
+        "announce_to_chat": true,
+        "frame": "task",
+        "title": {
+            "color": "dark_purple",
+            "text": "One Thousand Scars"
+        },
+        "show_toast": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Scars:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:masayoshi"
+}

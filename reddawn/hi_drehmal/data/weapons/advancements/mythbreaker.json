@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "The Mythbreaker"
+        },
+        "description": {
+            "text": "Recipe for Mythbreaker, a gift to commemorate Nothing, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:magma_cube_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{true_Mythbreaker:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:true_mythbreaker"
+        ],
+        "function":"weapons:mythbreaker"
+    },
+    "parent": "weapons:mythbreakerinert"
+}

@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] Truthfully, Drehmal never wanted to be a creator deity. They were born out of necessity, forged in the wake of destruction."]
+schedule function core:scene/credits/23 200t

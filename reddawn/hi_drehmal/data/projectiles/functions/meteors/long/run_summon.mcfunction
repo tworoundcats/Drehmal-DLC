@@ -1,0 +1,2 @@
+summon minecraft:fireball ~ ~0.5 ~ {Tags:["visfix","aph_meteor_long"],Rotation:[270.0f,26.5f],power:[-0.2d,-0.1d,0.0d],ExplosionPower:0b,Item:{id:magma_block,Count:1b,tag:{CustomModelData:693410001}},Passengers:[{id:falling_block,Tags:["visfix","aph_meteor_block","long"],Rotation:[90.0f,26.56f],BlockState:{Name:"minecraft:ancient_debris"},Time:-2147483648,NoGravity:1b,DropItem:0b,HurtEntities:0b}]}
+kill @s

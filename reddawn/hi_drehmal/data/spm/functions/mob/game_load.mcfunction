@@ -1,0 +1,10 @@
+scoreboard objectives add spm.energy dummy
+scoreboard objectives add spm.bomb dummy
+scoreboard objectives add spm.x dummy
+scoreboard objectives add spm.px dummy
+scoreboard objectives add spm.y dummy
+scoreboard objectives add spm.py dummy
+scoreboard objectives add spm.z dummy
+scoreboard objectives add spm.pz dummy
+scoreboard objectives add spm.hurt dummy
+scoreboard objectives add spm.fire dummy

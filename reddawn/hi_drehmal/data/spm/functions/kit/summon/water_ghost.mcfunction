@@ -1,0 +1,1 @@
+function spm:mob/water_ghost/summon

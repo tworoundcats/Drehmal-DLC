@@ -1,0 +1,4 @@
+execute positioned ~ ~ ~ as @p[tag=qst9] run tellraw @s ["","<Chris> ",{"text":"That's just lovely, thanks. As promised, here's your reward + some extra","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst9] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst9] run schedule function quests:chrisquest/finish 3s
+execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst9] run schedule function quests:chrisquest/finish_r 3s

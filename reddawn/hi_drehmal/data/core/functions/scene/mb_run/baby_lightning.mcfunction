@@ -1,0 +1,2 @@
+summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Tags:["khive_rune","weak_lightning"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",Count:1b,tag:{CustomModelData:1}}]}
+playsound minecraft:dcustom.block.amethyst_block.break hostile @a ~ ~ ~ 1 0.8

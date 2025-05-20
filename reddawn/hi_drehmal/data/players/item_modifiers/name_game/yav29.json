@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "YOU HAVE COME SO FAR.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

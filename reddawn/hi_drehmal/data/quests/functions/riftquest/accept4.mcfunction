@@ -1,0 +1,4 @@
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Go Through the Rift","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned ~ ~ ~ as @p[tag=qst12] run give @s mythicmetals:kyber_boots{RiftBoots:1b,display:{Name:'["",{"text":"Rift\'s Boots","italic":false,"color":"aqua"}]',Lore:['["",{"text":"Quest Item","italic":false,"color":"dark_green"}]']},AttributeModifiers:[{AttributeName:"generic.armor",Amount:0,Name:"generic.armor",UUID:[I;-124324,379893,211626,-759786]}],HideFlags:2}

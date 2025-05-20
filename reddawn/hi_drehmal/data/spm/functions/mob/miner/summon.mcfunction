@@ -1,0 +1,1 @@
+summon zombie ~ ~ ~ {Tags:[spm.mob.miner,spm.mob]}

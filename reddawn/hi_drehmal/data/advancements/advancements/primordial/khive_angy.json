@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "No Fear",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "You have been the last dream of my soul. - Incurred the wrath of Khive",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:yellow_concrete"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/final_core"
+}

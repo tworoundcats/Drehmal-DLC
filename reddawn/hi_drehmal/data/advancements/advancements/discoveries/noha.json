@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:flowering_azalea_leaves"
+      },
+      "title": {
+        "text": "Final Harvest",
+        "color": "green",
+        "italic": false
+      },
+      "description": {
+        "text": "When Noha took her own life, she also stole the confidence and optimism of the other Aspects. Newly paranoid and filled with a sudden listlessness, the warring factions quickly began to broker a peace. Her bones continue to provide for many. - Discovered Noha of Meadows.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/greyspire",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {     
+                        "min": 900,
+                        "max": 1049
+                    },
+                    "y": {
+                        "min": 39,
+                        "max": 100
+                    },
+                    "z": {
+                        "min": -264,
+                        "max": -102
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

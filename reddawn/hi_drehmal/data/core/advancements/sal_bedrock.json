@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 2559,
+                  "max": 2602
+                },
+                "y": {
+                  "min": 181,
+                  "max": 218
+                },
+                "z": {
+                  "min": 1190,
+                  "max": 1232
+                }
+              },
+              "dimension": "minecraft:true_end"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/sal_mevir/remove_bedrock1"
+  }
+}

@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"["},{"text":"\uff41\uff56\uff33\uff39\uff33","color":"aqua"},{"text":"] \uff0f\uff0f\uff22\uff25\uff27\uff29\uff2e\uff2e\uff29\uff2e\uff27 \uff2d\uff39\uff34\uff28\uff22\uff32\uff25\uff21\uff2b\uff25\uff32 \uff23\uff28\uff21\uff32\uff27\uff29\uff2e\uff27 \uff33\uff25\uff31\uff35"},{"text":"\uff25\uff2e\uff23\uff25","obfuscated":true},{"text":"\uff0e\uff0e\uff0e\uff0f\uff0f"}]
+playsound minecraft:dcustom.block.respawn_anchor.charge ambient @a 27304.54 123.00 55.45 6 1.7

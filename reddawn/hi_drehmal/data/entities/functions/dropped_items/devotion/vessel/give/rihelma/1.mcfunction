@@ -1,0 +1,3 @@
+execute if entity @s[tag=relic_v_give] run give @s command_block{CustomModelData:1004001,display:{Name:'{"text":"Mirror of Lethargy","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Soar through the skies, pierce the"}','{"text":"heavens. Look beyond and seek the"}','{"text":"risen stars."}','{"text":" "}','{"text":"Arrow of Lethargy","color":"dark_red","italic":false}','{"text":"Applies slowness to all fired arrows when","color":"dark_gray"}','{"text":"in offhand.","color":"dark_gray"}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},lethargy:1b} 1
+execute unless entity @s[tag=relic_v_give] run function entities:dropped_items/devotion/vessel/give/already_redeemed
+tag @s remove relic_v_give

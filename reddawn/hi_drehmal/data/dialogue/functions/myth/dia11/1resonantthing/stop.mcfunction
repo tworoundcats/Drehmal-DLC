@@ -1,0 +1,10 @@
+schedule clear dialogue:myth/dia11/1resonantthing/0
+schedule clear dialogue:myth/dia11/1resonantthing/1
+schedule clear dialogue:myth/dia11/1resonantthing/2
+schedule clear dialogue:myth/dia11/1resonantthing/3
+schedule clear dialogue:myth/dia11/1resonantthing/4
+schedule clear dialogue:myth/dia11/1resonantthing/5
+schedule clear dialogue:myth/dia11/1resonantthing/6
+schedule clear dialogue:myth/dia11/1resonantthing/7
+schedule clear dialogue:myth/dia11/1resonantthing/8
+schedule clear dialogue:myth/dia11/1resonantthing/9

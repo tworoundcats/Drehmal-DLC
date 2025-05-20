@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:iron_golem"
+            }
+          }
+        ],
+        "damage": {
+          "source_entity": {
+            "type": "skeleton"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:shield/explosion_d"
+  }
+}

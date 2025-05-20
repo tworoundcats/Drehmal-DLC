@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add virtuo.0
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1012000,display:{Name:'{"text":"Purifying Light +0","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"You have lit a flame that symbolizes your"}','{"text":"devotion to the Goddess of Purity. It is"}','{"text":"small, but flickers in a perfectly steady"}','{"text":"rhythm. "}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+0.007 Movement Speed","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:.007,Operation:0,UUID:[I;-1535365076,-1337440033,-1079372912,-2032427029],Slot:"offhand"}]} 1

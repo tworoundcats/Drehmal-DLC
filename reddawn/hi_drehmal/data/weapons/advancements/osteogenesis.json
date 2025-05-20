@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Osteo:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:osteogenesis"
+        ],
+        "function":"weapons:osteogenesis"
+    },
+    "display": {
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Osteogenesis, the bane of Skullbeasts, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:endermite_spawn_egg"
+        },
+        "announce_to_chat": true,
+        "title": {
+            "text": "Osteogenesis",
+            "color": "dark_purple"
+        }
+    },
+    "parent": "weapons:onethousandscars"
+}

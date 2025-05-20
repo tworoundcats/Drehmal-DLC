@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:deepslate"
+    },
+    "title": {
+      "text": "A Gentle Slaughter"
+    },
+    "description": {
+      "text": "Harvest slate from a Tremorlith"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:lodahr/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "tag": "core:pick",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:silk_touch"
+                }
+              ]
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:magma_cube",
+          "nbt": "{DeathLootTable:\"entities:mob/stone_cube\"}"
+        }
+      }
+    }
+  }
+}

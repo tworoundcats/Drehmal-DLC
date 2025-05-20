@@ -1,0 +1,18 @@
+{
+    "criteria":{
+        "hitbysouldmg":{
+            "trigger":"minecraft:entity_hurt_player",
+            "conditions":{
+                "damage":{
+                    "blocked":false,
+                    "source_entity":{
+                        "team":"deal_soul_dmg"
+                    }
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"players:damage/soul/takesouldmg"
+    }
+}

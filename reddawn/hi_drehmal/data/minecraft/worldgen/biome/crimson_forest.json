@@ -1,0 +1,63 @@
+{
+  "scale": 0.2,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.nether_wastes.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.crimson_forest",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:large_smoke"
+      },
+      "probability": 0.001
+    },
+    "sky_color": 5512220,
+    "fog_color": 3343107,
+    "water_color": 4415123,
+    "water_fog_color": 329011,
+    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
+    "foliage_color": 5130300,
+    "grass_color": 5525051
+  },
+  "surface_builder": "minecraft:crimson_forest",
+  "carvers": {
+    "air": [
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [],
+  "spawners": {
+    "monster": [],
+    "creature": [
+      {
+        "type": "minecraft:strider",
+        "minCount": 1,
+        "maxCount": 2,
+        "weight": 1
+      }
+    ],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": false,
+  "temperature": 2,
+  "downfall": 0,
+  "category": "nether",
+  "depth": 0.1
+}

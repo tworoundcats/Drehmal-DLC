@@ -1,0 +1,1 @@
+execute unless predicate entities:riding_bat run kill @s

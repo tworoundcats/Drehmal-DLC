@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 19
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"As well as what their fate means for what lies beyond this realm."},{"text":"\n- [ What happened to Avsohm? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 34"}},{"text":"\n- [ What lies beyond this realm? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 35"}}]

@@ -1,0 +1,10 @@
+schedule clear dialogue:myth/dia12/1rhythmicthing/0
+schedule clear dialogue:myth/dia12/1rhythmicthing/1
+schedule clear dialogue:myth/dia12/1rhythmicthing/2
+schedule clear dialogue:myth/dia12/1rhythmicthing/3
+schedule clear dialogue:myth/dia12/1rhythmicthing/4
+schedule clear dialogue:myth/dia12/1rhythmicthing/5
+schedule clear dialogue:myth/dia12/1rhythmicthing/6
+schedule clear dialogue:myth/dia12/1rhythmicthing/7
+schedule clear dialogue:myth/dia12/1rhythmicthing/8
+schedule clear dialogue:myth/dia12/1rhythmicthing/9

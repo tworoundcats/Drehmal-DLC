@@ -1,0 +1,4 @@
+execute unless score @s ai_timer matches -2147483648.. run scoreboard players set @s ai_timer 1000
+execute if score #nah_active? bool matches 1 unless score @s ai_timer matches 1.. unless score @s ai_ani matches 1.. unless score @s ai_state matches 1.. if predicate entities:give_rng if entity @a[predicate=players:is_not_dev,distance=..5] if predicate entities:on_ground unless data entity @s SleepingX unless data entity @s {NoAI:1b} if data entity @s {Age:0} rotated ~ 0 run function entities:ai/nah/gift_player
+execute unless score @s ai_state matches 1.. run scoreboard players remove @s ai_timer 1
+execute if score @s ai_state matches 1 run function entities:ai/nah/hold

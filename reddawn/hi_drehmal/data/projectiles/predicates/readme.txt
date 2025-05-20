@@ -1,0 +1,2 @@
+entity_render_distance checks if executor's location is ~(simulation distance - 1) chunks away from the executor's entity.
+It's not quite this formula for very small distances since at that range you can still see the entity even outside of simulation distance. (thanks minecraft.)

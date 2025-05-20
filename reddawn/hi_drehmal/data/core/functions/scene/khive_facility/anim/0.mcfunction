@@ -1,0 +1,2 @@
+execute in minecraft:lodahr if block -921 55 -201 minecraft:redstone_lamp run setblock -921 55 -201 minecraft:redstone_lamp[lit=true]
+execute in minecraft:lodahr if block -919 55 -203 minecraft:redstone_lamp run setblock -921 55 -201 minecraft:redstone_lamp[lit=true]

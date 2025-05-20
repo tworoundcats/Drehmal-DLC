@@ -1,0 +1,30 @@
+[
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+            "block": {
+                "tag":"entities:nocol"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 2,
+        "predicate": {
+            "block": {
+                "tag":"entities:nocol"
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 3,
+        "predicate": {
+            "block": {
+                "tag":"entities:nocol"
+            }
+        }
+    }
+]
+  

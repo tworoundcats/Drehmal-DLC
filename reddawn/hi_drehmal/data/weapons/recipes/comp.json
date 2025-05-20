@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#AD",
+        "PMP",
+        "DA#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "D": {
+            "item": "minecraft:deepslate"
+        },
+        "P": {
+            "item": "minecraft:amethyst_block"
+        },
+        "M": {
+            "item": "minecraft:diamond_boots"
+        }
+    },
+  "result": {
+    "item": "minecraft:tadpole_spawn_egg",
+    "count": 1
+  }
+}

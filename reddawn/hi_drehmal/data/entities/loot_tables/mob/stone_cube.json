@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:deepslate",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "killer_player",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "enchantments": [
+                          {
+                            "enchantment": "minecraft:silk_touch"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cobbled_deepslate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "players:kill_events"
+        }
+      ]
+    }
+  ]
+}

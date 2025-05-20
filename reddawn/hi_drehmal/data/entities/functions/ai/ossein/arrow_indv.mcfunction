@@ -1,0 +1,2 @@
+summon arrow ~ ~ ~ {damage:10.5d,Tags:["special","ground_clear","ossein_arrow","owner_tagged"],Motion:[0.1d,0.1d,0.1d],CustomName:'{"text":"ossein_arrow"}',CustomNameVisible:0b}
+execute as @e[type=arrow,tag=special] run function entities:ai/ossein/arrow_indv_stats

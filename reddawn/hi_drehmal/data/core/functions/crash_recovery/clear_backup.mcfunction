@@ -1,0 +1,1 @@
+execute in minecraft:overworld run fill 26512 161 -96 26527 160 -81 minecraft:light_gray_concrete

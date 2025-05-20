@@ -1,0 +1,2 @@
+execute unless score #towerdrop bool matches 2 run tellraw @s [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＣＡＮＮＯＴ ＬＩＮＫ ＴＯ ＮＥＴＷＯＲＫ ＷＨＩＬＥ ＴＯＷＥＲ ＩＳ ＩＮ ＳＴＡＴＩＯＮ／／"}]
+execute if score #towerdrop bool matches 2 run function terminus:teleport_from_tower/aphelion_terminus

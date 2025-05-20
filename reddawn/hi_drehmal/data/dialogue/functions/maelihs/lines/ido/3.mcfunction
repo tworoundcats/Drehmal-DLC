@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 28
+tellraw @s [{"text":"["},{"text":"???","color":"dark_red"},{"text":"] "},{"text":"If you truly worship the Burnt Lord, cast your Sprout of Anguish into the ocean and renounce his name."},{"text":"\n- [ Never! My Radiance shall conquer the realm! Hail the Burnt Lord! ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 48"}},{"text":"\n- [ Okay. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 49"}}]

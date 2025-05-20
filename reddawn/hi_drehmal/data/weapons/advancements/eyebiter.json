@@ -1,0 +1,39 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shield",
+        "nbt": "{CustomModelData:1}"
+      },
+      "title": {
+        "text": "Eyebiter",
+        "color": "dark_purple"
+      },
+      "description": {
+        "text": "Recipe for Eyebiter, reflecting aegis of Maelmari pride, unlocked. ",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "weapons:legendary_gear",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "nbt": "{virtuo_aegis:1b}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "weapons:eyebiter",
+      "recipes": [
+        "weapons:eyebiter"
+      ]
+    }
+  }

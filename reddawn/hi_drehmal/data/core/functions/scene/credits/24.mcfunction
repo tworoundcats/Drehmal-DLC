@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] They saw you at the dusk of the realm, the last of their children determined to keep going, and thought:"]
+schedule function core:scene/credits/25 200t

@@ -1,0 +1,11 @@
+tellraw @s " "
+tellraw @s {"text":"There doesn't seem to be anything here...","italic":true,"color":"gray"}
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "
+tellraw @s " "

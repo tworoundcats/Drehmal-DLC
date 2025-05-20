@@ -1,0 +1,58 @@
+{
+  "scale": 1.2125001,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "sky_color": 16440130,
+    "fog_color": 16774236,
+    "water_color": 262399,
+    "water_fog_color": 112,
+    "foliage_color": 46079,
+    "grass_color": 16772608,
+    "particle": {
+      "options": {
+        "type": "minecraft:enchant"
+      },
+      "probability": 0.0005
+    }
+  },
+  "surface_builder": "minecraft:grass",
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [
+		],
+    "creature": [
+    ],
+    "ambient": [
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": false,
+  "temperature": 1,
+  "downfall": 0,
+  "category": "savanna",
+  "depth": 1.05
+}

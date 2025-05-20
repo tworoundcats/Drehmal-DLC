@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Leviathan's Coil",
+            "color": "dark_red"
+        },
+        "description": {
+            "text": "Unlocked the Unspoken Leviathan's Coil",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mcdw:whip_whip"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/lev"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Leviathan:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:syzygy"
+}

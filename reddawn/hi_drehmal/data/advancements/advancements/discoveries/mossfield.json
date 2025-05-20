@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:spruce_sapling"
+      },
+      "title": {
+        "text": "Children of Virtuo",
+        "color": "blue",
+        "italic": false
+      },
+      "description": {
+        "text": "Everything in the East is under the protection of Virtuo and her angelic Virmari. - Discovered New Mossfield",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/mohta",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 4077,
+                        "max": 4187
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 255
+                    },
+                    "z": {
+                        "min": 1637,
+                        "max": 1786
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

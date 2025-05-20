@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] In their final moments, Drehmal sat here amongst the entropic dunes, gazing at the stars as their realm drifted through space to its last destination."]
+schedule function core:scene/credits/16 200t

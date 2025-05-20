@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Ascendance2:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:ascendance"
+        ],
+        "function":"weapons:advancement/asc"
+    },
+    "display": {
+        "title": {
+            "text": "Ascendance ✪",
+            "color": "gold"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Upgraded Ascendance, channeler of divinity"
+        },
+        "icon": {
+            "item": "minecraft:llama_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:frenzy2"
+}

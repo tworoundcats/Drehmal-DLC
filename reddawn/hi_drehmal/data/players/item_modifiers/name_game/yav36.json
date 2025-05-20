@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{HideFlags:127}"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": " "
+      }
+    ],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "                          "
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "drehmal:entities"
+      },
+      "ops": [
+        {
+          "source": "tempVector",
+          "target": "trident_motion",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

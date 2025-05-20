@@ -1,0 +1,3 @@
+execute if entity @s[tag=relic_v_give] run give @s command_block{CustomModelData:1004000,display:{Name:'{"text":"Mirror of Frailty","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Spread your wings, novel Star-Kin."}','{"text":"The skies are truly boundless."}','{"text":" "}','{"text":"Arrow of Frailty","color":"dark_red","italic":false}','{"text":"Applies weakness to all fired arrows when","color":"dark_gray"}','{"text":"in offhand.","color":"dark_gray"}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},frailty:1b} 1
+execute unless entity @s[tag=relic_v_give] run function entities:dropped_items/devotion/vessel/give/already_redeemed
+tag @s remove relic_v_give

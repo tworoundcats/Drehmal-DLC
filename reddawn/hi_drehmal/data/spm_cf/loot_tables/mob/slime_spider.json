@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mythicmetals:silver_ingot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Silver Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"The preffered currency for certain\",\"italic\":false}]','[{\"text\":\"goods\",\"italic\":false}]']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "weight": 19
+        }
+      ]
+    }
+  ]
+}

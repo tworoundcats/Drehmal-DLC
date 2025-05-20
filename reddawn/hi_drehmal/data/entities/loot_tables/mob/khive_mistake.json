@@ -1,0 +1,250 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 4,
+        "max": 5
+      },
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "functions": [
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glowstone_dust",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness",
+                "minecraft:mending",
+                "minecraft:unbreaking",
+                "minecraft:aqua_affinity",
+                "minecraft:blast_protection",
+                "minecraft:depth_strider",
+                "minecraft:feather_falling",
+                "minecraft:fire_protection",
+                "minecraft:fire_aspect",
+                "minecraft:frost_walker",
+                "minecraft:projectile_protection",
+                "minecraft:protection",
+                "minecraft:soul_speed",
+                "minecraft:thorns",
+                "minecraft:respiration",
+                "minecraft:bane_of_arthropods",
+                "minecraft:efficiency",
+                "minecraft:looting",
+                "minecraft:impaling",
+                "minecraft:knockback",
+                "minecraft:smite",
+                "minecraft:sweeping",
+                "minecraft:channeling",
+                "minecraft:flame",
+                "minecraft:impaling",
+                "minecraft:infinity",
+                "minecraft:loyalty",
+                "minecraft:riptide",
+                "minecraft:multishot",
+                "minecraft:piercing",
+                "minecraft:power",
+                "minecraft:punch",
+                "minecraft:quick_charge",
+                "minecraft:fortune",
+                "minecraft:luck_of_the_sea",
+                "minecraft:lure"
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness",
+                "minecraft:mending",
+                "minecraft:unbreaking",
+                "minecraft:fire_aspect",
+                "minecraft:bane_of_arthropods",
+                "minecraft:efficiency",
+                "minecraft:looting",
+                "minecraft:impaling",
+                "minecraft:knockback",
+                "minecraft:smite",
+                "minecraft:sweeping",
+                "minecraft:channeling",
+                "minecraft:flame",
+                "minecraft:impaling",
+                "minecraft:infinity",
+                "minecraft:loyalty",
+                "minecraft:riptide",
+                "minecraft:multishot",
+                "minecraft:piercing",
+                "minecraft:power",
+                "minecraft:punch",
+                "minecraft:quick_charge",
+                "minecraft:fortune",
+                "minecraft:luck_of_the_sea",
+                "minecraft:lure"
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:aqua_affinity",
+                "minecraft:blast_protection",
+                "minecraft:depth_strider",
+                "minecraft:feather_falling",
+                "minecraft:fire_protection",
+                "minecraft:frost_walker",
+                "minecraft:projectile_protection",
+                "minecraft:protection",
+                "minecraft:soul_speed",
+                "minecraft:thorns",
+                "minecraft:respiration"
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Power Rune",
+                "color": "yellow",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "players:kill_events"
+        }
+      ]
+    }
+  ]
+}

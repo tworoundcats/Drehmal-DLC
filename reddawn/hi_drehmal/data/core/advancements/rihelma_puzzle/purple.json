@@ -1,0 +1,35 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min":1086,
+                        "max":1089
+                    },
+                    "y": {
+                        "min":126,
+                        "max":130
+                    },
+                    "z": {
+                        "min":1034,
+                        "max":1037
+                  }
+                },
+                "dimension": "minecraft:lodahr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/rihelma_puzzle/detection/purple"
+    }
+  }
+  

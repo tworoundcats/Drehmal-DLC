@@ -1,0 +1,1 @@
+execute unless entity @e[team=death_effect,dx=0,dy=0,dz=0] run kill @s

@@ -1,0 +1,1 @@
+summon rabbit ~ ~ ~ {DeathLootTable:"entities:mob/killer_rabbit",Health:40f,RabbitType:99,Tags:["killer_rabbit","lodahr_mob"],Team:"hide_name",CustomName:'{"text":"Exsanguinator"}',Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:0},{Name:generic.attack_damage,Base:50}]}

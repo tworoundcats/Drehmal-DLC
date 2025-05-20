@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:dark_prismarine"
+      },
+      "title": {
+        "text": "City of Tides",
+        "color": "dark_aqua",
+        "italic": false
+      },
+      "description": {
+        "text": "Once ruled by a tyrannical Tide Queen, the most populous city in East Drehmal thrives despite its violent past and an uncertain future. - Discovered Firteid",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/ebonrun",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 3706,
+                        "max": 4030
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 255
+                    },
+                    "z": {
+                        "min": 3368,
+                        "max": 3605
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 55
+    }
+  }
+  

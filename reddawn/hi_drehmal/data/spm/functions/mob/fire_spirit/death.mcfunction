@@ -1,0 +1,1 @@
+loot spawn ~ ~ ~ loot spm_cf:mob/fire_spirit

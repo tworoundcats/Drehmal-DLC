@@ -1,0 +1,166 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -42,
+              "max": 56
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1627,
+              "max": 1718
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -203,
+              "max": -10
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1460,
+              "max": 1709
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -297,
+              "max": -153
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1406,
+              "max": 1541
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -392,
+              "max": -261
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1386,
+              "max": 1562
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -314,
+              "max": -117
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1692,
+              "max": 1925
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -380,
+              "max": -296
+            },
+            "y": {
+              "min": 90,
+              "max": 150
+            },
+            "z": {
+              "min": 1766,
+              "max": 1862
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -493,
+              "max": 34
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1692,
+              "max": 1814
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -530,
+              "max": -10
+            },
+            "y": {
+              "min": 0,
+              "max": 200
+            },
+            "z": {
+              "min": 1420,
+              "max": 1705
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      }
+    ]
+  }
+  

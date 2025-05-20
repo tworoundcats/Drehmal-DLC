@@ -1,0 +1,1 @@
+summon minecraft:pillager ~ ~ ~ {Tags:["LaserBow"],HandItems:[{id:crossbow,Count:1b},{}],ArmorItems:[{},{},{},{id:stone_button,Count:1b}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}

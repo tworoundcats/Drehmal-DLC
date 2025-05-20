@@ -1,0 +1,22 @@
+{
+    "criteria":{
+        "hit":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"mushroom_guy\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "tag": "players:swordoraxe"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/mushroom_guy/check_hit"
+    }
+}

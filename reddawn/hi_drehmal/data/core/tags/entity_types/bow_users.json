@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton",
+    "minecraft:player",
+    "minecraft:piglin"
+  ]
+}

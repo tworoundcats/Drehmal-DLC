@@ -1,0 +1,13 @@
+[
+    {
+        "function": "copy_nbt",
+        "source": "this",
+        "ops": [
+            {
+            "source":"HandItems[0].tag.FlavorText",
+            "target":"display.Lore",
+            "op":"replace"
+            }
+        ]
+    }
+]

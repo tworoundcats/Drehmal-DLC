@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"moon_g\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/hurt_by_moon"
+  }
+}

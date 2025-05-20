@@ -1,0 +1,50 @@
+ 
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "position": {
+              "x": {
+                "min": -1430,
+                "max": -1429
+              },
+              "y": {
+                "min": 86,
+                "max": 87
+              },
+              "z": {
+                "min": -1637,
+                "max": -1636
+              }
+            },
+            "dimension": "minecraft:overworld"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "position": {
+            "x": {
+              "min": -13,
+              "max": -12
+            },
+            "y": {
+              "min": 38,
+              "max": 39
+            },
+            "z": {
+              "min": -1655,
+              "max": -1654
+            }
+          },
+          "dimension": "minecraft:lodahr"
+        }
+      }
+    ]
+  }
+  

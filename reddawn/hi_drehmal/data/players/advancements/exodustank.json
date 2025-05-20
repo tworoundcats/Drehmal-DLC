@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                "nbt": "{ExodusTank:1b}"
+              }
+          ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:scene/exodus/tank/getkey"
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "THERE IS NOTHING TO LOSE.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

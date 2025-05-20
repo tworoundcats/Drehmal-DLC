@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded with a divine gift.","color":"gold","italic":true}
+tag @s add drehmal.0
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1002000,display:{Name:'{"text":"Effloresce +0","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Your devotion to Drehmal, the great"}','{"text":"serpentine deity, shall be represented"}','{"text":"by a newborn sapling. Let it be doused"}','{"text":"in your faith, let it flourish in your soul."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+6% Max Health","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:0.06,Operation:1,UUID:[I;1373040777,956711824,-1285355769,331027867],Slot:"offhand"}]} 1

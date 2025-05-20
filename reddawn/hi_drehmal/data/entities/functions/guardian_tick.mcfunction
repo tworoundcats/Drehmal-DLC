@@ -1,0 +1,2 @@
+execute if score #5T timer matches 0 if entity @s[tag=shield_guardian] unless predicate entities:in_stasis run function entities:ai/shield_guardian/main
+execute if entity @s[tag=g_shielded] run function entities:ai/shield_guardian/shielded_main

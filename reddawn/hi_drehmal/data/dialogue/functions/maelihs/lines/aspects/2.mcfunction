@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 22
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"I should have taken advantage of their advice much more frequently."},{"text":"\n- [ Why haven’t I seen any Aspects in Ytaj? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 39"}}]

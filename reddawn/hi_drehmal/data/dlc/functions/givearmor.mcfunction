@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"Give Transparent Armor: ","color":"dark_gray"},{"text":"✓","color":"white","clickEvent":{"action":"run_command","value":"/function dlc:givearmor1"},"hoverEvent":{"action":"show_text","contents":["Click to run"]}}]

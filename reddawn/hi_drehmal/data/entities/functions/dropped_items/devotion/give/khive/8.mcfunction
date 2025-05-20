@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add khive.8
+playsound minecraft:dcustom.entity.player.levelup ambient @s ~ ~ ~ 1 0.6
+give @s command_block{display:{Name:'{"text":"Runic Amplifier","color":"aqua","italic":false}',Lore:['{"text":"A small device powered by Runic"}','{"text":"Catalysts. In the hands of a "}','{"text":"skilled artisan, it can be used"}','{"text":"to supercharge inscribed runes,"}','{"text":"effectively tripling the potentia"}','{"text":"of the material they are carved "}','{"text":"upon."}']},CustomModelData:1000018,runic_amplifier:1b} 2

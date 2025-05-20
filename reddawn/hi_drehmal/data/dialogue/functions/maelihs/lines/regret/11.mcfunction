@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 25
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Until I find some other meaning through meditation, I am better off remaining here, where the world can be safe from my madness."},{"text":"\n- [ Let’s talk about something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 42"}}]

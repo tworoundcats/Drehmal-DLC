@@ -1,0 +1,12 @@
+execute rotated 0 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 30 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 60 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 90 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 120 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 150 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 180 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 210 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 240 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 270 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 300 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force
+execute rotated 330 ~ positioned ^ ^ ^0.66 run particle dust_color_transition 0.067 0.173 0.600 1 0.039 0.969 1.000 ~ ~ ~ 0 0 0 0.8 0 force

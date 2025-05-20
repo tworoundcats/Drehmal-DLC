@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "killdeatheffectentity":{
+            "trigger":"minecraft:player_killed_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"poison_creeper\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/poison_creeper/kill_unused"
+    }
+}

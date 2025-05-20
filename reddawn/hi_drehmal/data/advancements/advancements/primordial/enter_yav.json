@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "At the Mountain of Madness",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "Here you will find only Nothing. - Entered Mt. Yavhlix",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:bedrock"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/khive_angy"
+}

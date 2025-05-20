@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+                {
+                    "tag":"players:craft_replace"
+                }
+            ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:crafts/got_replaceable"
+    }
+  }
+  

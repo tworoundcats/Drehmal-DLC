@@ -1,0 +1,88 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"oak\"}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:spruce_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"spruce\"}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:birch_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"birch\"}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:acacia_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"acacia\"}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:jungle_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"jungle\"}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dark_oak_boat",
+                    "conditions": [
+                        {
+                            "condition":"entity_properties",
+                            "entity":"this",
+                            "predicate": {
+                                "nbt":"{Type:\"dark_oak\"}"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+  

@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 26
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"How entertaining."},{"text":"\n- [ How did you know I’m Avsohmic? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 43"}},{"text":"\n- [ Let’s change the subject. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 44"}}]

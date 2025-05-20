@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":"["},{"text":"\uff41\uff56\uff33\uff39\uff33","color":"aqua"},{"text":"] \uff0f\uff0f"},{"text":"\uff14\uff10","obfuscated":true},{"text":".\uff17\uff12\uff05\uff0f\uff0f"}]
+playsound minecraft:dcustom.block.respawn_anchor.charge ambient @a 27304.54 123.00 55.45 6 1.7

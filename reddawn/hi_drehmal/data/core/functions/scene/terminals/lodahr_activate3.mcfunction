@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:lodahr] ["","[",{"text":"ａｖＳＹＳ","color":"aqua"},"] ／／",{"text":"ＦＵＬＬ ａｖＳＹＳ ＤＡＴＡＢＡＳＥ ＭＥＭＯＲＹ ＲＥＳＴＯＲＥＤ","color":"yellow"},"／／"]
+schedule function core:scene/terminals/lodahr_activate4 6s

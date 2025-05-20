@@ -1,0 +1,2 @@
+execute if score @s mb_cool matches ..0 unless score @s mb_charge matches 1.. run scoreboard players add @s mb_charge 1
+execute if score @s mb_cool matches ..0 run scoreboard players set @s mb_charge_cool 7

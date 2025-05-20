@@ -1,0 +1,2 @@
+summon item ~ ~ ~ {Tags:["particle","special","anim"],NoGravity:1b,Age:5960,Motion:[0.0d,0.0d,0.0d],PickupDelay:100,CustomName:'{"translate":"space.-128","with":[{"text":"\\u110a","font":"particle:particles/fzy","obfuscated":false}]}',Item:{id:"minecraft:command_block",Count:1b},CustomNameVisible:1b}
+execute as @e[type=item,tag=particle,tag=special] run function particle:new/fzy_data

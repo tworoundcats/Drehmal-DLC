@@ -1,0 +1,4 @@
+tellraw @s {"text":"Your faith shall be rewarded.","color":"gold","italic":true}
+tag @s add lai.0
+playsound minecraft:dcustom.ui.toast.challenge_complete ambient @s ~ ~ ~ 1 1.25
+give @s command_block{CustomModelData:1001000,display:{Name:'{"text":"Ardorbrand +0","color":"dark_red","italic":false,"underlined":true}',Lore:['{"text":"Warmth exists in many things, spreading"}','{"text":"with increased intensity. May it sweep"}','{"text":"through your heart as your piety deepens."}','{"text":" "}','{"text":"When in offhand:","color":"gray","italic":false}','{"text":"+1 Attack Damage","color":"blue","italic":false}','{"text":" "}','{"text":"Relic","color":"dark_red","italic":false}']},HideFlags:2,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:1,Operation:0,UUID:[I;1837753172,1897744902,-2048021548,1636712893],Slot:"offhand"}]} 1

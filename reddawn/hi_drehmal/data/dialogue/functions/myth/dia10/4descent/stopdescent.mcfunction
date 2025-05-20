@@ -1,0 +1,11 @@
+schedule clear dialogue:myth/dia10/4descent/0
+schedule clear dialogue:myth/dia10/4descent/1
+schedule clear dialogue:myth/dia10/4descent/2
+schedule clear dialogue:myth/dia10/4descent/3
+schedule clear dialogue:myth/dia10/4descent/4
+schedule clear dialogue:myth/dia10/4descent/5
+schedule clear dialogue:myth/dia10/4descent/6
+schedule clear dialogue:myth/dia10/4descent/7
+schedule clear dialogue:myth/dia10/4descent/8
+schedule clear dialogue:myth/dia10/4descent/9
+schedule clear dialogue:myth/dia10/4descent/10

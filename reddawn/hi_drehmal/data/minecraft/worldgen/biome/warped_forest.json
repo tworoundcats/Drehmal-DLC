@@ -1,0 +1,38 @@
+{
+  "surface_builder": "minecraft:nope",
+  "depth": 0,
+  "scale": 0,
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "category": "desert",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 1,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 0,
+    "foliage_color": 0,
+    "mood_sound": {
+      "sound": "minecraft:null",
+      "tick_delay": 0,
+      "block_search_extent": 0,
+      "offset": 0
+    },
+    "additions_sound": {
+      "sound": "minecraft:null",
+      "tick_chance": 0
+    },
+    "music": {
+      "sound": "minecraft:null",
+      "min_delay": 0,
+      "max_delay": 0,
+      "replace_current_music": false
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "1": {
+            "trigger":"minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "team":"ward_staff"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function":"players:items/ward_staff/interact"
+    }
+}

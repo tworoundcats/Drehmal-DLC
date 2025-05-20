@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "text": "Calamity",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Recipe for Calamity, claws of a vanquished Skullbeast, unlocked.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:cow_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Calamity:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:calamity"
+        ],
+        "function":"weapons:calamity"
+    },
+    "parent": "weapons:ascendance"
+}

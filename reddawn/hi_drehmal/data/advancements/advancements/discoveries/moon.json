@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light_gray_concrete_powder"
+      },
+      "title": {
+        "text": "I'm on the moooon... it's made of cheeeeese...",
+        "color": "yellow",
+        "italic": false
+      },
+      "description": {
+        "text": "Why do I feel so much lighter? - Discovered a sunken Astral Body",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/citadel",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "min": 3000,
+                        "max": 3385
+                    },
+                    "y": {
+                        "min": 0,
+                        "max": 255
+                    },
+                    "z": {
+                        "min": -1126,
+                        "max": -890
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 160
+    }
+  }
+  

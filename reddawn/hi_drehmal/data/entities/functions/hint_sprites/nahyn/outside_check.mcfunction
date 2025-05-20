@@ -1,0 +1,2 @@
+execute if entity @s[x=492,y=169,z=-118,distance=..48] run scoreboard players add #hSpr_nahOutside num 1
+execute unless entity @s[x=492,y=169,z=-118,distance=..48] unless entity @a[distance=..16] run function entities:clear_self_dataless

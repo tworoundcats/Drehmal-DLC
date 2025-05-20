@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shield"
+      },
+      "title": {
+        "text": "Legendary Gear",
+        "color": "dark_purple",
+        "italic": false
+      },
+      "description": {
+        "text": "Odd gear with powerful properties. Perhaps they will prove useful in your journey?",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "weapons:equipment",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {Tags:[spm.mob.robbery,spm.mob]}

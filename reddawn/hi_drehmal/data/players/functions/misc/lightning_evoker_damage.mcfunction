@@ -1,0 +1,1 @@
+damage @s 5 minecraft:divinepunish

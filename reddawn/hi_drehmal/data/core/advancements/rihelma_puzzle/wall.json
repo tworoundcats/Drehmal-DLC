@@ -1,0 +1,60 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1079,
+                            "max":1081
+                        },
+                        "y": {
+                            "min":87,
+                            "max":97
+                        },
+                        "z": {
+                            "min":1026,
+                            "max":1028
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":1078,
+                            "max":1080
+                        },
+                        "y": {
+                            "min":87,
+                            "max":97
+                        },
+                        "z": {
+                            "min":1027,
+                            "max":1029
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/rihelma_puzzle/detection/wall"
+    }
+  }
+  

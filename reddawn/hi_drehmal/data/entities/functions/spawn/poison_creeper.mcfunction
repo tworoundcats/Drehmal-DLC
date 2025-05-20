@@ -1,0 +1,1 @@
+summon minecraft:creeper ~ ~ ~ {ExplosionRadius:0b,Tags:["poison_creeper"],Passengers:[{id:marker,Tags:["p_creeper_marker"]}],DeathLootTable:"entities:mob/poison_creeper",Team:"hide_name",CustomName:'{"text":"Nox Creeper"}',Attributes:[{Name:"generic.movement_speed",Base:0.29}]}

@@ -1,0 +1,38 @@
+{
+    "rewards": {
+        "recipes": [
+            "weapons:blaze"
+        ],
+        "function":"weapons:blaze"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{blaze:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "title": {
+            "color": "dark_purple",
+            "text": "Blaze-Blessed Breeches"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Recipe for the flaming breeches, blessing of Lai, unlocked."
+        },
+        "icon": {
+            "item": "minecraft:camel_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "weapons:penumbra"
+}

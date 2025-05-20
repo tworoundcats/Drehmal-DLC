@@ -1,0 +1,58 @@
+{
+  "scale": 0.5,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "sky_color": 0,
+    "fog_color": 4210752,
+    "water_color": 3342336,
+    "water_fog_color": 14548992,
+    "foliage_color": 4342338,
+    "grass_color": 2829099,
+    "particle": {
+      "options": {
+        "type": "minecraft:soul"
+      },
+      "probability": 0.0002
+    }
+  },
+  "surface_builder": "minecraft:grass",
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [
+		],
+    "creature": [
+    ],
+    "ambient": [
+    ],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": false,
+  "temperature": 0.2,
+  "downfall": 0.3,
+  "category": "extreme_hills",
+  "depth": 1
+}

@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 6
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"Spending time in my palace and living the life I once had… it has become very, very difficult."},{"text":"\n- [ What kind of discoveries? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 13"}},{"text":"\n- [ I want to ask you something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 14"}}]

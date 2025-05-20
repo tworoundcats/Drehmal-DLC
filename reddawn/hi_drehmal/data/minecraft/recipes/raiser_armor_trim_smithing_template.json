@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#A#",
+    "#K#",
+    "###"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:raiser_armor_trim_smithing_template"
+    },
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "K": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "minecraft:raiser_armor_trim_smithing_template",
+    "count": 2
+  }
+}

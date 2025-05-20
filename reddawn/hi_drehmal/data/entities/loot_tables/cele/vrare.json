@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "entities:cele/discs"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:amethyst_shard"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:purpur_pillar"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:magma_block"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nautilus_shell"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_pearl"
+          }
+        ]
+      }
+    ]
+  }
+  

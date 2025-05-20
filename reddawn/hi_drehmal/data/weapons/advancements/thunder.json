@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Thunderclap:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/thunder"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:hammer_stormlander"
+        },
+        "title": {
+            "color": "red",
+            "text": "Thunderclap"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Thunderclap"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:spear"
+}

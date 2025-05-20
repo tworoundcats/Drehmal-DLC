@@ -1,0 +1,1 @@
+execute in minecraft:space run clone -241 92 177 -239 105 203 -183 125 176

@@ -1,0 +1,8 @@
+function core:rng
+scoreboard players operation #rand temp %= #5 const
+
+execute if score #rand temp matches 0 run summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0.1,0.1,0.1],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}
+execute if score #rand temp matches 1 run summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0.1,0.1,0.1],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}
+execute if score #rand temp matches 2 run summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0.1,0.1,0.1],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}
+execute if score #rand temp matches 3 run summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0.1,0.1,0.1],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}
+execute if score #rand temp matches 4 run summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0.1,0.1,0.1],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}

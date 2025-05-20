@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "YOU ARE NOT LIKE HIM.",
+      "color": "white",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

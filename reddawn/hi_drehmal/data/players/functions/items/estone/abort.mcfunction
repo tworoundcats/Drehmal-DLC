@@ -1,0 +1,1 @@
+kill @e[type=marker,tag=estone_eater]

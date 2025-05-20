@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:black_stained_glass_pane",
+      "minecraft:iron_bars",
+      "minecraft:iron_trapdoor",
+      "minecraft:light_blue_stained_glass",
+      "minecraft:polished_blackstone_button",
+      "minecraft:polished_blackstone_stairs",
+      "minecraft:polished_blackstone",
+      "minecraft:quartz_block",
+      "minecraft:quartz_slab",
+      "minecraft:quartz_stairs",
+      "minecraft:sea_lantern",
+      "minecraft:smooth_stone_slab",
+      "minecraft:smooth_quartz_slab",
+      "minecraft:smooth_quartz_stairs",
+      "minecraft:smooth_quartz",
+      "minecraft:white_concrete",
+      "minecraft:yellow_stained_glass_pane"
+    ]
+  }

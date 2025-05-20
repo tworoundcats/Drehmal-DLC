@@ -1,0 +1,2 @@
+playsound minecraft:dcustom.block.respawn_anchor.charge ambient @a[predicate=players:locations/in_yavhlix] ~ ~ ~ 10 0.7
+tellraw @a[predicate=players:locations/in_yavhlix] ["","[",{"text":"yavNet","color":"#CB96DE"},"] 2/3 ᴏᴠᴇʀʀɪᴅᴇ ᴍᴇᴄʜᴀɴɪꜱᴍꜱ ᴀᴄᴛɪᴠᴀᴛᴇᴅ."]

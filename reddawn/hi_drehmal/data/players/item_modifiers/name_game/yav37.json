@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "THANK YOU.",
+      "color": "dark_red",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

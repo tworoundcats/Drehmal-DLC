@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#core:nohurt",
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton"
+  ]
+}

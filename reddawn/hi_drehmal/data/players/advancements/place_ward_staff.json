@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:polar_bear_spawn_egg"
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "location": []
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:items/ward_staff/used_egg"
+  }
+}

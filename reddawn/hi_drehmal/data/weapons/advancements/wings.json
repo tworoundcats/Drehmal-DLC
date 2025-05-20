@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Aetheric Ascension",
+            "color": "dark_red"
+        },
+        "description": {
+            "text": "Unlocked the Unspoken Aetheric Ascension",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "icarus:magenta_mechanical_leather_wings"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/wings"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Wings:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:leviathan"
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:drehmal/brew_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple"
+    },
+    "title": {
+      "translate": "Necromantic Reversal"
+    },
+    "description": {
+      "translate": "Reverse the necromancy of a Drehmari"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cured_zombie": {
+      "trigger": "minecraft:cured_zombie_villager",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "cured_zombie"
+    ]
+  ]
+}

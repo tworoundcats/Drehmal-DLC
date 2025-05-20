@@ -1,0 +1,46 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.2,
+  "scale": 0.4,
+  "temperature": 0.7,
+  "downfall": 0.8,
+  "has_precipitation": false,
+  "category": "forest",
+  "player_spawn_friendly": false,
+  "effects": {
+    "sky_color": 9244945,
+    "fog_color": 14043904,
+    "water_color": 1036287,
+    "water_fog_color": 14691584,
+    "grass_color": 12763842,
+    "foliage_color": 13898001,
+    "grass_color_modifier": "dark_forest",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:flame"
+      },
+      "probability": 0.0002
+    }
+  },
+  "carvers": {
+    "air": []
+  },
+  "features": [],
+  "starts": [],
+  "spawners": {
+    "monster": [
+    ],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {}
+}

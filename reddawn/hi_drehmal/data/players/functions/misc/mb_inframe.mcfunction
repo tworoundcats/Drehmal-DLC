@@ -1,0 +1,2 @@
+scoreboard players set #found temp 1
+execute as @e[type=item_frame,tag=!scanned,nbt={Item:{tag:{chargedMythbreaker:1b}}}] run data modify entity @s Item.tag set from storage drehmal:core inert_mythbreaker

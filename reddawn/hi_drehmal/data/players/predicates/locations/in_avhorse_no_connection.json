@@ -1,0 +1,44 @@
+{
+    "condition":"any_of",
+    "terms":[
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:true_end"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:the_end"
+            }
+        },
+        {
+            "__comment__":"ultva/hovad arena",
+
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27270,
+                        "max": 27320 
+                    },
+                    "y": {
+                        "min": 62,
+                        "max": 109
+                    },
+                    "z": {
+                        "min": -136,
+                        "max": 118
+                    }
+                }
+            }
+        },
+        {
+            "condition":"reference",
+            "name":"players:locations/in_yavhlix"
+        }
+
+    ]
+}

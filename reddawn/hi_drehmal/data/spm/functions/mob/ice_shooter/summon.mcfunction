@@ -1,0 +1,1 @@
+summon stray ~ ~ ~ {Tags:[spm.mob.ice_shooter,spm.mob]}

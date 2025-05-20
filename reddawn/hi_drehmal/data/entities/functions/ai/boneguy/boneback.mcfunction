@@ -1,0 +1,3 @@
+execute as @e[type=zombie,tag=BoneGuy] if score @s uuid0 = @e[type=armor_stand,tag=Bonerang,limit=1,sort=nearest] uuid0_1 if score @s uuid1 = @e[type=armor_stand,tag=Bonerang,limit=1,sort=nearest] uuid1_1 if score @s uuid2 = @e[type=armor_stand,tag=Bonerang,limit=1,sort=nearest] uuid2_1 if score @s uuid3 = @e[type=armor_stand,tag=Bonerang,limit=1,sort=nearest] uuid3_1 run tag @s add BoneMatch
+execute facing entity @e[type=zombie,tag=BoneGuy,tag=BoneMatch,limit=1,sort=arbitrary] feet run tp @s ^ ^ ^0.5
+tag @e[type=zombie,tag=BoneGuy,tag=BoneMatch] remove BoneMatch

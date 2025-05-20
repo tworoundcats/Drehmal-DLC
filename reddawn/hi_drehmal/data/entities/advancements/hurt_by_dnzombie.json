@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:zombie",
+              "nbt": "{Tags:[\"dn_zombie\",\"night_mode\"]}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "entities:ai/daynightzombie/hurtby"
+    }
+  }

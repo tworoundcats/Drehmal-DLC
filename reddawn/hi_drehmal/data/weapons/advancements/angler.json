@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Celestial:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/angler"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "gofish:celestial_rod"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Angler's Lamentation"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Legendary Fishing Rod of the Cosmos"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:eyebiter"
+}

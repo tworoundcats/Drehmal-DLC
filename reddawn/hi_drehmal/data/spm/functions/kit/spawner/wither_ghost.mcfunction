@@ -1,0 +1,1 @@
+give @s spawner{display:{Name:'{"text": "Wither Ghost Spawner","italic": false}'},BlockEntityTag:{SpawnData:{entity:{id:"armor_stand",Tags:[spm.mob.respawn,spm.mob.wither_ghost,spm.mob.wither_ghost.random]}}}} 1

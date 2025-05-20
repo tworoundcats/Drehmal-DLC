@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst3] run tellraw @s ["","<Cinder> ",{"text":"I definitely have 0 affiliation with this person and have never met them in my life","color":"dark_green"},{"text":"","color":"dark_red"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst3] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:cinderquest/accept3 3s

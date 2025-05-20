@@ -1,0 +1,16 @@
+execute as @s[tag=1] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 1 1
+execute as @s[tag=2] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 2 1
+execute as @s[tag=3] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 3 1
+execute as @s[tag=4] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 4 1
+execute as @s[tag=5] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 5 1
+execute as @s[tag=6] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 6 1
+execute as @s[tag=7] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 7 1
+execute as @s[tag=8] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 8 1
+execute as @s[tag=9] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 9 1
+execute as @s[tag=10] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 10 1
+execute as @s[tag=11] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 11 1
+execute as @s[tag=12] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 12 1
+execute as @s[tag=13] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 13 1
+execute as @s[tag=14] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 14 1
+execute as @s[tag=15] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 15 1
+execute as @s[tag=16] unless score @s horseOwnerID matches -2147483648.. run execute store result score @s horseOwnerID run data get storage minecraft:warphorse 16 1

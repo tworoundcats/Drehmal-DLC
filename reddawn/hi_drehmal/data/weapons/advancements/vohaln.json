@@ -1,0 +1,38 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:panda_spawn_egg"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Tul’Vohaln, bestower of sight, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Tul'Vohaln"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{tul_v:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:tulvohaln"
+        ],
+        "function":"weapons:vohaln"
+    },
+    "parent": "weapons:pure_corruption"
+}

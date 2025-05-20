@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_sword"
+      },
+      "title": {
+        "text": "The Old Guard",
+        "color": "white",
+        "italic": false
+      },
+      "description": {
+        "text": "Multiple ancient civilizations have held this ancient castle-town as a perpetual reminder to the world that Maelihs will never rule all of Drehmal. - Discovered Fort Nimahj",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/civilization",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "max": -1696,
+                        "min": -1739
+                    },
+                    "y": {
+                        "max": 190,
+                        "min": 148
+                    },
+                    "z": {
+                        "max": 1905,
+                        "min": 1858
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 55
+    }
+  }
+  

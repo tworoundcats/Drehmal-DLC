@@ -1,0 +1,12 @@
+execute if score #deity temp matches 1 if entity @s[tag=dahr.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 2 if entity @s[tag=taihgel.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 3 if entity @s[tag=rihelma.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 4 if entity @s[tag=loe.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 5 if entity @s[tag=lai.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 6 if entity @s[tag=khive.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 7 if entity @s[tag=vayniklah.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 8 if entity @s[tag=voynahla.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 9 if entity @s[tag=drehmal.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 10 if entity @s[tag=virtuo.0] run scoreboard players set #valid temp 1
+execute if score #deity temp matches 11 if entity @s[tag=maelhis.0] run scoreboard players set #valid temp 1
+execute if entity @s[tag=relic_v_give] run scoreboard players set #valid temp 2

@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "feet": {
+          "items": [
+            "minecraft:netherite_boots",
+            "minecraft:diamond_boots",
+            "minecraft:iron_boots",
+            "minecraft:chainmail_boots",
+            "minecraft:golden_boots",
+            "minecraft:leather_boots"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "feet": {
+            "nbt": "{Unbreakable:1b}"
+          }
+        }
+      }
+    }
+  }
+]
+  

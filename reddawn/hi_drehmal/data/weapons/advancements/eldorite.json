@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Eldorite:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/eldorite"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mythicmetals:tin_ingot"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Eldorite"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Most Valuable Resource In All the Land"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:bundle"
+}

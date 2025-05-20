@@ -1,0 +1,1 @@
+execute as @a[tag=rejoinedOnHorse] at @s run function players:avhorse/player_rejoin_clear

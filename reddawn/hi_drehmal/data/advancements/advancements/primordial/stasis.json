@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Rude Awakening",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "Did you dream of anything nice? - Emerged From Temporal Stasis",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:cyan_bed"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/root"
+}

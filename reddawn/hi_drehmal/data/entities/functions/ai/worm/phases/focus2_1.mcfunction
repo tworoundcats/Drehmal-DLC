@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=worm_head,scores={ai_state=1..5}] at @s run function entities:ai/worm/phases/focus2

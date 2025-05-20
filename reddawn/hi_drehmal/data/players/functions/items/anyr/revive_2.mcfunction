@@ -1,0 +1,43 @@
+execute as @a[tag=temp_h,scores={hp_old=1}] run attribute @s minecraft:generic.max_health base set 1
+execute as @a[tag=temp_h,scores={hp_old=2}] run attribute @s minecraft:generic.max_health base set 2
+execute as @a[tag=temp_h,scores={hp_old=3}] run attribute @s minecraft:generic.max_health base set 3
+execute as @a[tag=temp_h,scores={hp_old=4}] run attribute @s minecraft:generic.max_health base set 4
+execute as @a[tag=temp_h,scores={hp_old=5}] run attribute @s minecraft:generic.max_health base set 5
+execute as @a[tag=temp_h,scores={hp_old=6}] run attribute @s minecraft:generic.max_health base set 6
+execute as @a[tag=temp_h,scores={hp_old=7}] run attribute @s minecraft:generic.max_health base set 7
+execute as @a[tag=temp_h,scores={hp_old=8}] run attribute @s minecraft:generic.max_health base set 8
+execute as @a[tag=temp_h,scores={hp_old=9}] run attribute @s minecraft:generic.max_health base set 9
+execute as @a[tag=temp_h,scores={hp_old=10}] run attribute @s minecraft:generic.max_health base set 10
+execute as @a[tag=temp_h,scores={hp_old=11}] run attribute @s minecraft:generic.max_health base set 11
+execute as @a[tag=temp_h,scores={hp_old=12}] run attribute @s minecraft:generic.max_health base set 0
+execute as @a[tag=temp_h,scores={hp_old=13}] run attribute @s minecraft:generic.max_health base set -1
+execute as @a[tag=temp_h,scores={hp_old=14}] run attribute @s minecraft:generic.max_health base set -2
+execute as @a[tag=temp_h,scores={hp_old=15}] run attribute @s minecraft:generic.max_health base set -3
+execute as @a[tag=temp_h,scores={hp_old=16}] run attribute @s minecraft:generic.max_health base set -4
+execute as @a[tag=temp_h,scores={hp_old=17}] run attribute @s minecraft:generic.max_health base set -5
+execute as @a[tag=temp_h,scores={hp_old=18}] run attribute @s minecraft:generic.max_health base set -6
+execute as @a[tag=temp_h,scores={hp_old=19}] run attribute @s minecraft:generic.max_health base set -7
+execute as @a[tag=temp_h,scores={hp_old=20}] run attribute @s minecraft:generic.max_health base set -8
+execute as @a[tag=temp_h,scores={hp_old=21}] run attribute @s minecraft:generic.max_health base set -9
+execute as @a[tag=temp_h,scores={hp_old=22}] run attribute @s minecraft:generic.max_health base set -10
+execute as @a[tag=temp_h,scores={hp_old=23}] run attribute @s minecraft:generic.max_health base set -11
+execute as @a[tag=temp_h,scores={hp_old=24}] run attribute @s minecraft:generic.max_health base set -12
+execute as @a[tag=temp_h,scores={hp_old=25}] run attribute @s minecraft:generic.max_health base set -13
+execute as @a[tag=temp_h,scores={hp_old=26}] run attribute @s minecraft:generic.max_health base set -14
+execute as @a[tag=temp_h,scores={hp_old=27}] run attribute @s minecraft:generic.max_health base set -15
+execute as @a[tag=temp_h,scores={hp_old=28}] run attribute @s minecraft:generic.max_health base set -16
+execute as @a[tag=temp_h,scores={hp_old=29}] run attribute @s minecraft:generic.max_health base set -17
+execute as @a[tag=temp_h,scores={hp_old=30}] run attribute @s minecraft:generic.max_health base set -18
+execute as @a[tag=temp_h,scores={hp_old=31}] run attribute @s minecraft:generic.max_health base set -19
+execute as @a[tag=temp_h,scores={hp_old=32}] run attribute @s minecraft:generic.max_health base set -20
+execute as @a[tag=temp_h,scores={hp_old=33}] run attribute @s minecraft:generic.max_health base set -21
+execute as @a[tag=temp_h,scores={hp_old=34}] run attribute @s minecraft:generic.max_health base set -22
+execute as @a[tag=temp_h,scores={hp_old=35}] run attribute @s minecraft:generic.max_health base set -23
+execute as @a[tag=temp_h,scores={hp_old=36}] run attribute @s minecraft:generic.max_health base set -24
+execute as @a[tag=temp_h,scores={hp_old=37}] run attribute @s minecraft:generic.max_health base set -25
+execute as @a[tag=temp_h,scores={hp_old=38}] run attribute @s minecraft:generic.max_health base set -26
+execute as @a[tag=temp_h,scores={hp_old=39}] run attribute @s minecraft:generic.max_health base set -27
+execute as @a[tag=temp_h,scores={hp_old=40..}] run attribute @s minecraft:generic.max_health base set -28
+effect give @a[tag=temp_h] instant_health 1 10 true
+
+schedule function players:items/anyr/revive_3 4t

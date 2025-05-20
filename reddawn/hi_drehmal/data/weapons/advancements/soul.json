@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{SoulSickle:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/soul"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "simplyswords:runic_scythe"
+        },
+        "title": {
+            "color": "red",
+            "text": "Ethereal Harvester"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Ethereal Harvester"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:forgotten"
+}

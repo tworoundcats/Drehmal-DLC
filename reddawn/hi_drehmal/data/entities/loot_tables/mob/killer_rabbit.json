@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Holy Hand Grenade\",\"color\":\"aqua\",\"italic\":false,\"underlined\":true}',Lore:['{\"text\":\"And the Lord spake, saying, First \"}','{\"text\":\"shalt thou take out the Holy Pin. Then \"}','{\"text\":\"shalt thou count to three, no \"}','{\"text\":\"more, no less. Three shall be \"}','{\"text\":\"the number thou shalt count, and \"}','{\"text\":\"the number of the counting shall \"}','{\"text\":\"be three. Four shalt thou not count,\"}','{\"text\":\"neither count thou two, excepting\"}','{\"text\":\"that thou then proceed to three.\"}','{\"text\":\"Five is right out! Once the number three,\"}','{\"text\":\"being the third number, be reached, then\"}','{\"text\":\"lobbest thou thy Holy Hand Grenade \"}','{\"text\":\"of Antioch towards thy foe, who, being \"}','{\"text\":\"naughty in my sight, shall snuff it.\"}','{\"text\":\" \"}','{\"text\":\"Artifact\",\"color\":\"aqua\",\"italic\":false}']},Potion:\"minecraft:strong_harming\",CustomPotionColor:16775204}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0,
+          "looting_multiplier": 0.33
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "players:kill_events"
+        }
+      ]
+    }
+  ]
+}

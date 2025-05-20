@@ -1,0 +1,1 @@
+summon stray ~ ~ ~ {Tags:[spm.mob,spm.mob.chorus_ghost]}

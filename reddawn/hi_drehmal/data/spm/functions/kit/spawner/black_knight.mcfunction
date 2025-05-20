@@ -1,0 +1,1 @@
+give @s spawner{display:{Name:'{"text": "Black Knight Spawner","italic": false}'},BlockEntityTag:{SpawnData:{entity:{id:"armor_stand",Tags:[spm.mob.respawn,spm.mob.black_knight]}}}} 1

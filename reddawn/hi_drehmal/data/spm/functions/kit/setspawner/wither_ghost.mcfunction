@@ -1,0 +1,1 @@
+setblock ~ ~ ~ spawner{SpawnData:{entity:{id:"armor_stand",Tags:[spm.mob.respawn,spm.mob.wither_ghost.random,spm.mob.wither_ghost]}}}

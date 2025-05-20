@@ -1,0 +1,52 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:emerald"
+      },
+      "title": {
+        "text": "Jewel of Casai",
+        "color": "gold",
+        "italic": false
+      },
+      "description": {
+        "text": "Once an important trade port, thanks to their now-dysfunctional Teleportation Pier. - Discovered Athrah",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/drabyel",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                    "x": {
+                        "max": -2637,
+                        "min": -2767
+                    },
+                    "y": {
+                        "max": 255,
+                        "min": 0
+                    },
+                    "z": {
+                        "max": -1700,
+                        "min": -1847
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

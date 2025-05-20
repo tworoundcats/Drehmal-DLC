@@ -1,0 +1,28 @@
+[
+    {
+        "condition":"location_check",
+        "offsetY":-1,
+        "predicate": {
+            "block": {
+                "tag":"entities:generic_spawnable"
+            }
+        }
+    },
+    {
+        "condition":"location_check",
+        "predicate": {
+            "block": {
+                "tag":"entities:generic_spawn_inside"
+            }
+        }
+    },
+    {
+        "condition":"location_check",
+        "offsetY":1,
+        "predicate": {
+            "block": {
+                "tag":"entities:generic_spawn_inside"
+            }
+        }
+    }
+]

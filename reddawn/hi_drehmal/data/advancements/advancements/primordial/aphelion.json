@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "In Thy Glory Afar",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "To witness the fullest breadth of the skies above... to behold the golden sails shining against the black veil.... a glorious sight indeed. - Boarded the Aphelion",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:light_blue_stained_glass"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/full_terminus"
+}

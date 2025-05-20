@@ -1,0 +1,9 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Item:{tag:{Malevolentia:1b}}}"
+    }
+  }
+]

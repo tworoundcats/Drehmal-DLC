@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:magma_block"
+    },
+    "title": {
+      "text": "Coming in Hot!",
+      "color": "gold",
+      "bold": false
+    },
+    "description": {
+      "text": "Through Fire and through Ash - Survive a fiery descent into the atmosphere and crash down unscathed onto Lo’Dahr.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "players:misc/mystery_atmosphere"
+  },
+  "parent": "advancements:mystery/root"
+}

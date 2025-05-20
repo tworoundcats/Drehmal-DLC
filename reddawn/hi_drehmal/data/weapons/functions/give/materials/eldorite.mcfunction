@@ -1,0 +1,1 @@
+give @s mythicmetals:tin_ingot{Eldorite:1b,display:{Name:'[{"text":"Eldorite","italic":false,"color":"light_purple"}]',Lore:['[{"text":"The most saught after Material in all","italic":false}]','[{"text":"of Drehmal, used for top-end jewelry","italic":false}]','[{"text":"","italic":false}]','[{"text":"Legendary","italic":false,"color":"light_purple"}]']}} 1

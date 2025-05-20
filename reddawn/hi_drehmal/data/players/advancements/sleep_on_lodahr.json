@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:slept_in_bed",
+        "conditions": {
+          "player": {
+            "location": {
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        }
+      }
+    },
+    "rewards":{
+        "function":"players:misc/slept_on_lodahr"
+    }
+  }

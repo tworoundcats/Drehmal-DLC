@@ -1,0 +1,1 @@
+summon wither_skeleton ~ ~ ~ {Tags:[spm.mob,spm.mob.soul_knight]}

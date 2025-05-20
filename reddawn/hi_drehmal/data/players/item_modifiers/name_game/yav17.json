@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "text": "LISTEN TO ME.",
+      "color": "dark_red",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

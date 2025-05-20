@@ -1,0 +1,1 @@
+execute unless score @s avrad_cool matches 0..100000 run function players:items/avrad/trigger

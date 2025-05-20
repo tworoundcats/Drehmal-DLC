@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["","[",{"text":"The Mythoclast","color":"gold"},"] They looked upon the devastated world they had created long ago... and they were at peace. They were satisfied. They were happy with the world they crafted, even with all of its flaws."]
+schedule function core:scene/credits/22 200t

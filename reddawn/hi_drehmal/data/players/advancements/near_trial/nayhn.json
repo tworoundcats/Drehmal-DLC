@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 474,
+                  "max": 512
+                },
+                "y": {
+                  "min": 147,
+                  "max": 205
+                },
+                "z": {
+                  "min": -130,
+                  "max": -105
+                }
+              },
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/enter_trial/any_trial"
+  }
+}

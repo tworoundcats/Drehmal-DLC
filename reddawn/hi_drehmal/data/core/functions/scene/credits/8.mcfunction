@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Texture Artists:","underlined":true,"color":"gold"},{"text":"\n\nHiscottiBiscotti\nKeeko100\nAshenKave\n1000hrcelebration\nNaflaim"}]
+schedule function core:scene/credits/9 168t

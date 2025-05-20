@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Arcane:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/bundle"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "additionaladditions:mysterious_bundle"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Arcane Cache"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained an Arcane Cache"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:legendary_gear"
+}

@@ -1,0 +1,9 @@
+execute if entity @s[y_rotation=157.5..-157.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[0d,2d,1d],Tags:["fish"]}
+execute if entity @s[y_rotation=-157.5..-112.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[-1d,2d,1d],Tags:["fish"]}
+execute if entity @s[y_rotation=-112.5..-67.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[-1d,2d,0d],Tags:["fish"]}
+execute if entity @s[y_rotation=-67.5..-22.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[-1d,2d,-1d],Tags:["fish"]}
+execute if entity @s[y_rotation=-22.5..22.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[0d,2d,-1d],Tags:["fish"]}
+execute if entity @s[y_rotation=22.5..67.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[1d,2d,-1d],Tags:["fish"]}
+execute if entity @s[y_rotation=67.5..112.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[1d,2d,0d],Tags:["fish"]}
+execute if entity @s[y_rotation=112.5..157.5] run execute at @s positioned ~ ~ ~ run summon armor_stand ^ ^1 ^4 {Invisible:1b,Invulnerable:1b,Silent:1b,Rotation:[0f,0f],Motion:[1d,2d,1d],Tags:["fish"]}
+execute as @s run scoreboard players reset @s fish

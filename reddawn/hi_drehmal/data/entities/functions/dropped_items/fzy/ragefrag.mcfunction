@@ -1,0 +1,7 @@
+scoreboard players set #dropped? temp 1
+summon item 5367 63 6039 {Item:{id:"minecraft:gold_nugget",Count:1b,tag:{display:{Name:'{"text":"Fragment of Rage","color":"gold","italic":false,"underlined":true}',Lore:['{"text":"Sahd\'s legends speak of a","color":"dark_purple"}','{"text":"frenzied weapon that was split","color":"dark_purple"}','{"text":"into five fragments, hidden","color":"dark_purple"}','{"text":"across the island of Sahd. It is","color":"dark_purple"}','{"text":"said that a powerful, runic","color":"dark_purple"}','{"text":"forge exists somewhere on the","color":"dark_purple"}','{"text":"island, perched within the","color":"dark_purple"}','{"text":"caldera of a volcano. Toss all","color":"dark_purple"}','{"text":"five fragments into the red","color":"dark_purple"}','{"text":"bricked forge to recreate the","color":"dark_purple"}','{"text":"mythical blade.","color":"dark_purple"}']},HideFlags:1,fzy_frag:2,Enchantments:[{id:"minecraft:protection",lvl:1s}]}}}
+#particle minecraft:enchanted_hit 5367 63 6039 0.1 0.1 0.1 0.2 30
+execute positioned 5367.5 63.5 6039.5 run function entities:dropped_items/fzy/ench_ring
+playsound minecraft:dcustom.block.note_block.chime ambient @a[distance=..100] 5367 63 6039 10 0
+playsound minecraft:dcustom.block.bell.resonate ambient @a[distance=..100] 5367 63 6039 10 0
+playsound minecraft:dcustom.block.bell.use ambient @a[distance=..100] 5367 63 6039 10 0

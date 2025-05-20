@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+                "source_entity":{
+                    "type":"#players:trigger_peace_treaty"
+                }
+            },
+            "player": {
+                "equipment": {
+                    "mainhand": {
+                        "items": [
+                            "minecraft:iron_sword"
+                        ],
+                        "nbt":"{PeaceTreaty:1b}"
+                    }
+                }
+            }
+        }
+      }
+    },
+    "rewards": {
+      "function": "players:items/peace_treaty/take_dmg"
+    }
+  }

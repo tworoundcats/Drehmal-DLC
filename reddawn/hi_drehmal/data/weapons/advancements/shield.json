@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Amaranthine Aegis",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Unlocked the Mythical Amaranthine Aegis",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "mcdw:shield_tower_guard"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/shield"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Amaranthine:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:tempest"
+}

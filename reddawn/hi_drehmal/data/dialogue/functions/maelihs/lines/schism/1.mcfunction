@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 17
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"If you plan to spend more time here on the Divine Moon, you will surely come to learn of it."},{"text":"\n- [ Let’s talk about something else. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 31"}}]

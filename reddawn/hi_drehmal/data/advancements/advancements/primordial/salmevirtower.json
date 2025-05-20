@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Timelord",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "Wibbly-wobbly timey-wimey... stuff. - Exploited the Temporal Engine",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/a8_25p"
+}

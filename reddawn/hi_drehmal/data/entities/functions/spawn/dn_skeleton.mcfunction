@@ -1,0 +1,2 @@
+summon skeleton ~ ~ ~ {CustomName:'{"text":"Bright Reveler"}',Team:"hide_name",Tags:["dn_skeleton","new"],DeathLootTable:"entities:mob/dn_skeleton",HandItems:[{id:bow,Count:1b},{}],HandDropChances:[0.0f,0.0f],ArmorItems:[{},{},{},{id:stone_button,Count:1b,tag:{CustomModelData:693410001}}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
+execute as @e[tag=new] run function entities:ai/dnskeleton/init

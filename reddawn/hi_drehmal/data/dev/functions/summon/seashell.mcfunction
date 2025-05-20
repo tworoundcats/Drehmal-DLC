@@ -1,0 +1,1 @@
+place template minecraft:seashell

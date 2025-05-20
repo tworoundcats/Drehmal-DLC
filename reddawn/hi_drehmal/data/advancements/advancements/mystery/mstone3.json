@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:ender_pearl"
+      },
+      "title": {
+        "text": "Total Binding",
+        "color": "gold",
+        "bold": false
+      },
+      "description": {
+        "text": "Perfected. - Bind three Fervor Stones to a single Mythical item.",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "overworld": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "parent": "advancements:mystery/mstone1"
+  }
+  

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "show_toast": true,
+        "icon": {
+            "item": "minecraft:bat_spawn_egg"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "text": "Recipe for Masayoshi, the deceased Tide Queen’s ancient blade, unlocked.",
+            "color": "gray"
+        },
+        "hidden": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Masayoshi"
+        },
+        "frame": "task"
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:masayoshi"
+        ],
+        "function":"weapons:masayoshi"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Masayoshi:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:legendary_weapons"
+}

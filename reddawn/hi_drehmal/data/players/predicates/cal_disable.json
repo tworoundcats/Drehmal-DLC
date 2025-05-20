@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "entities:on_ground"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "players:touching_water"
+    }
+  ]
+}

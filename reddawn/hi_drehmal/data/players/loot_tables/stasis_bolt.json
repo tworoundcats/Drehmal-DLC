@@ -1,0 +1,33 @@
+{
+"pools": [
+        {
+        "rolls": 1.0,
+        "entries": [
+            {
+            "type": "minecraft:item",
+            "functions": [
+                {
+                    "function":"set_nbt",
+                    "tag":"{stasisBoltUUID:69,HideFlags:32,StasisBolt:1b,Legendary:1b,CustomModelData:8940001,CustomPotionColor:16777215,display:{Name:'{\"text\":\"Stasis Bolt\",\"italic\":\"false\",\"color\":\"light_purple\",\"underlined\":\"true\"}',Lore:['{\"text\":\"With unprecedented generosity, the\"}','{\"text\":\"Mystic Elder offers a short arrow\"}','{\"text\":\"inlaid with runes which have not\"}','{\"text\":\"been carved by mortal hands since\"}','{\"text\":\"the First Avihm. \"}','{\"text\":\"\"}','{\"text\":\"Eig’aanju Aenir\",\"italic\":\"false\",\"color\":\"light_purple\"}','{\"text\":\"When fired, this arrow freezes the\",\"color\":\"dark_gray\"}','{\"text\":\"target in time for a short duration.\",\"color\":\"dark_gray\"}','{\"text\":\"Only deals 1 damage.\",\"color\":\"dark_gray\"}','{\"text\":\"\"}','{\"text\":\"Legendary\",\"italic\":\"false\",\"color\":\"light_purple\"}']}}"
+                  },
+                {
+                "function": "minecraft:copy_nbt",
+                    "source": {
+                        "type": "storage",
+                        "source": "drehmal:players"
+                    },
+                    "ops": [
+                        {
+                            "source":"stasisBoltUUID",
+                            "target":"stasisBoltUUID",
+                            "op":"replace"
+                        }
+                    ]
+                }
+            ],
+            "name": "minecraft:tipped_arrow"
+            }
+        ]
+        }
+    ]
+}

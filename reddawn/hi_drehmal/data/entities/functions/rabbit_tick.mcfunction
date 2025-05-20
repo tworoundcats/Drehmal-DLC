@@ -1,0 +1,1 @@
+execute if entity @s[tag=killer_rabbit] run function entities:ai/killerrabbit/main

@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:set_damage",
+      "damage": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#blocked_damage"
+        },
+        "score": "temp",
+        "scale": -0.00297619047
+      },
+      "add": true
+    }
+  ]
+  

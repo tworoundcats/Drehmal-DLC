@@ -1,0 +1,42 @@
+{
+  "surface_builder": "minecraft:mycelium",
+  "depth": 0.2,
+  "scale": 0.3,
+  "temperature": 0.9,
+  "downfall": 1,
+  "has_precipitation": true,
+  "category": "mushroom",
+  "player_spawn_friendly": false,
+  "effects": {
+    "sky_color": 7842047,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "starts": [],
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
+}

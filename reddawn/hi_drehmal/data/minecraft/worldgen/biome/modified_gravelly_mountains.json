@@ -1,0 +1,26 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.125,
+  "scale": 0.05,
+  "temperature": 1,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "category": "desert",
+  "player_spawn_friendly": true,
+  "creature_spawn_probability": 1,
+  "effects": {
+    "sky_color": 9991798,
+    "fog_color": 3616559,
+    "water_color": 6311486,
+    "water_fog_color": 4928027,
+    "grass_color": 7493405,
+    "foliage_color": 5062184,
+    "grass_color_modifier": "none"
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:slime",
+        "minecraft:blaze",
+        "minecraft:ghast",
+        "minecraft:shulker",
+        "minecraft:evoker",
+        "minecraft:hoglin",
+        "minecraft:zoglin",
+        "minecraft:creeper",
+        "minecraft:magma_cube",
+        "minecraft:phantom",
+        "minecraft:silverfish"
+    ]
+  }

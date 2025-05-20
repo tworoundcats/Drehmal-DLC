@@ -1,0 +1,1 @@
+summon piglin ~ ~ ~ {Tags:[spm.mob,spm.mob.crimson_aboriginal]}

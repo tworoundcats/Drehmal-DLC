@@ -1,0 +1,36 @@
+{
+    "scale": 0.05,
+    "effects": {
+      "mood_sound": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000,
+        "block_search_extent": 8,
+        "offset": 2.0
+      },
+      "sky_color": 8364543,
+      "fog_color": 12638463,
+      "water_color": 4159204,
+      "water_fog_color": 329011
+    },
+    "surface_builder": "minecraft:grass",
+    "carvers": {},
+    "features": [],
+    "starts": [],
+    "creature_spawn_probability": 0.07,
+    "spawners": {
+      "monster": [],
+      "creature": [],
+      "ambient": [],
+      "underground_water_creature": [],
+      "water_creature": [],
+      "water_ambient": [],
+      "misc": []
+    },
+    "spawn_costs": {},
+    "player_spawn_friendly": false,
+    "has_precipitation": true,
+    "temperature": 0.0,
+    "downfall": 0.5,
+    "category": "icy",
+    "depth": 0.125
+  }

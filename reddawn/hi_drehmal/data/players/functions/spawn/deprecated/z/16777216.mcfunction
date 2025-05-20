@@ -1,0 +1,2 @@
+execute if score #16777216z bool matches 1 positioned ~ ~ ~16777216 run function players:spawn/z/8388608
+execute if score #16777216z bool matches 0 positioned ~ ~ ~ run function players:spawn/z/8388608

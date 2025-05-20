@@ -1,0 +1,2 @@
+# to modify attributes, also modify the attributes of the baby phoenix spawn and in baby_tick when a baby phoenix grows up in the phoenix ai folder.
+summon minecraft:phantom ~ ~ ~ {ActiveEffects:[{Id:12,Duration:2147483647,ShowParticles:0b}],DeathLootTable:"",Team:"death_effect",Tags:["phoenix"],HasVisualFire:1b,Size:3,Passengers:[{id:marker,Tags:["deathmarker","phoenix"]}],CustomName:'{"text":"Phoenix"}'}

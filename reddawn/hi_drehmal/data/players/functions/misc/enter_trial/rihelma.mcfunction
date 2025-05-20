@@ -1,0 +1,1 @@
+tellraw @s {"text":"Your eyes seem to sharpen and widen in equal measure as inscrutable darkness resolves into perfect panoramic clarity.","italic":true,"color":"dark_gray"}

@@ -1,0 +1,1 @@
+summon blaze ~ ~ ~ {DeathLootTable:"entities:mob/lai_blaze",Team:"hide_name",Health:60f,Tags:["ghast_fireballs","lodahr_mob"],CustomName:'{"text":"Sacred Flame"}',ArmorDropChances:[0.085F,0.085F,-327.670F,0.085F],Attributes:[{Name:generic.max_health,Base:60},{Name:generic.attack_damage,Base:10}]}

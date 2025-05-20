@@ -1,0 +1,2 @@
+summon snowball ~ ~ ~ {Tags:["particle","special","anim"],NoGravity:1b,Silent:1b,Motion:[0.0d,0.0d,0.0d],Item:{id:"minecraft:structure_block",Count:1b,tag:{CustomModelData:1}}}
+execute as @e[type=snowball,tag=particle,tag=special] run function particle:new/ff_data

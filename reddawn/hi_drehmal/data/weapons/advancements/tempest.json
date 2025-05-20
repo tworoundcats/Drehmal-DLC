@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Elemental Tempest",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Unlocked the Mythical Elemental Tempest",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "simplyswords:tempest"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:advancement/tempest"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Tempest:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:destinyblade"
+}

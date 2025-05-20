@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Place Between Places",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "You feel like your atoms weren't properly rearranged. Oh well. - Entered the Terminus",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:chiseled_quartz_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "advancements:primordial/stasis"
+}

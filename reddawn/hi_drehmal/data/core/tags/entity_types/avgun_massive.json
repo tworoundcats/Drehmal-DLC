@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ravager",
+    "minecraft:sniffer",
+    "minecraft:elder_guardian",
+    "minecraft:camel"
+  ]
+}

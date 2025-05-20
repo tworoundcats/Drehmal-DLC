@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{UltvaBowblade:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:bowblade"
+        ],
+        "function":"weapons:bowblade"
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "minecraft:rabbit_spawn_egg"
+        },
+        "title": {
+            "color": "dark_purple",
+            "text": "Ultva's Bowblade"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Ultva’s Bowblade, Master Ultva of Insohm’s weapon of choice, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true
+    },
+    "parent": "weapons:legendary_weapons"
+}

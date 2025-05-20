@@ -1,0 +1,2 @@
+execute if entity @s[tag=polar_aggro] if score #5T timer matches 0 run function entities:ai/dire_bear/updateaggro
+execute if entity @s[tag=dire_bear] if score #1S timer matches 0 run function entities:ai/dire_bear/main

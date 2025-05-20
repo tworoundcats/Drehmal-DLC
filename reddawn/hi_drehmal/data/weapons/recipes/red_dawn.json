@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "DND",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone_block"
+        },
+        "D": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "S": {
+            "item": "minecraft:redstone_lamp"
+        }
+    },
+    "result": {
+        "item": "minecraft:warden_spawn_egg",
+        "count": 1
+    }
+}

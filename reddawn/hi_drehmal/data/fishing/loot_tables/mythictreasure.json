@@ -1,0 +1,84 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:command_block",
+                    "weight": 70,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1000000,RunicCatalyst:1b,display:{Lore:['{\"text\":\"A small, magical orb valued by\"}','{\"text\":\"traders and arcanists. They have\"}','{\"text\":\"several applications in both\"}','{\"text\":\"magical creations and technology.\"}'],Name:'{\"text\":\"Runic Catalyst\",\"color\":\"aqua\",\"italic\":false}'}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mythicmetals:silver_ingot",
+                    "weight": 330,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Silver Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"The preffered currency for certain\",\"italic\":false}]','[{\"text\":\"goods\",\"italic\":false}]']}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mythicmetals:midas_gold_ingot",
+                    "weight": 150,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'[{\"text\":\"Midas Gold Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"A rare and valuable trading\",\"italic\":false}]','[{\"text\":\"currency\",\"italic\":false}]']}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mythicmetals:tin_ingot",
+                    "weight": 10,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Eldorite:1b,display:{Name:'[{\"text\":\"Eldorite\",\"italic\":false,\"color\":\"light_purple\"}]',Lore:['[{\"text\":\"The most saught after Material in all\",\"italic\":false}]','[{\"text\":\"of Drehmal, used for top-end jewelry\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Legendary\",\"italic\":false,\"color\":\"light_purple\"}]']}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mythicmetals:mythril_ingot",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Serpent:1b,display:{Name:'[{\"text\":\"Infernal Serpentsteel\",\"italic\":false,\"color\":\"dark_red\"}]',Lore:['[{\"text\":\"A rare and mysterious material forged\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"from the depths of the volcano,\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"infused with the essence of ancient\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"serpentine beasts. Its shimmering\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"surface reflects the fiery glow of\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"molten lava, hinting at the intense\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"heat required to craft it.\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"Mythic\",\"italic\":false,\"color\":\"dark_red\",\"obfuscated\":true}]']}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "mythicmetals:raw_quadrillum",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Wyrm:1b,display:{Name:'[{\"text\":\"Wyrmfire Scales\",\"italic\":false,\"color\":\"dark_red\"}]',Lore:['[{\"text\":\"A set of scales found submerged deep\",\"italic\":false}]','[{\"text\":\"inside the heart of a volcano,\",\"italic\":false}]','[{\"text\":\"tempered in obsidian. Gleaming with\",\"italic\":false}]','[{\"text\":\"a molten sheen, these scales possess\",\"italic\":false}]','[{\"text\":\"an otherworldly resilience and seem\",\"italic\":false}]','[{\"text\":\"to lift you aloft with just the\",\"italic\":false}]','[{\"text\":\"slightest updraft.\",\"italic\":false},{\"text\":\"\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Mythic\",\"italic\":false,\"color\":\"dark_red\",\"obfuscated\":true}]']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

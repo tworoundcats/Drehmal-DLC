@@ -1,0 +1,2 @@
+execute unless entity @e[type=armor_stand,tag=HovadShield] run summon armor_stand ~ ~ ~ {Tags:["HovadShield"],Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b}
+tp @e[type=armor_stand,tag=HovadShield] ~ ~ ~

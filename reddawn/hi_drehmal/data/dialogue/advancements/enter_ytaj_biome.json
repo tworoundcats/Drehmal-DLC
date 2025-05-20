@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biome": "minecraft:old_growth_spruce_taiga",
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "dialogue:maelihs/anim/initial_summon"
+  }
+}

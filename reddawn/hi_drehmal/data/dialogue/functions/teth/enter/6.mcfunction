@@ -1,0 +1,2 @@
+execute if entity @e[type=ender_dragon] run tellraw @a[predicate=players:the_end] ["",{"text":"[","color":"black"},{"text":"Tethlaen","color":"gray"},{"text":"] ","color":"black"},"My claws... dulled..."]
+schedule function dialogue:teth/enter/7 8s

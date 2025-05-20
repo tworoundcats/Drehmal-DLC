@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:phantom_membrane"
+      },
+      "title": {
+        "text": "Place of Conversion",
+        "color": "light_purple",
+        "italic": false
+      },
+      "description": {
+        "text": "For untold centuries, a small order of Virmari worshiped their Goddess in a far-flung fortress. After she left, they were visited by a new subject for their adoration. - Discovered Starrise Bastion, sacred place of Rihelma",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "advancements:discoveries/port",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -976,
+                    "max": -911
+                  },
+                  "y": {
+                    "min": 173,
+                    "max": 255
+                  },
+                  "z": {
+                    "min": -4160,
+                    "max": -4123
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 55
+    }
+  }
+  

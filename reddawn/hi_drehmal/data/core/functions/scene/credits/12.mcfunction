@@ -1,0 +1,2 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Our journey has only begun. Let us hope that one day, we see Drehmal realized as its own separate entity, unrelated to the blocky game it calls home.","italic":true}]
+schedule function core:scene/credits/13 168t

@@ -1,0 +1,60 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":2562,
+                            "max":2574
+                        },
+                        "y": {
+                            "min":179,
+                            "max":185
+                        },
+                        "z": {
+                            "min":1207,
+                            "max":1216
+                      }
+                    },
+                    "dimension": "minecraft:lodahr"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "position": {
+                        "x": {
+                            "min":2568,
+                            "max":2592
+                        },
+                        "y": {
+                            "min":179,
+                            "max":217
+                        },
+                        "z": {
+                            "min":1199,
+                            "max":1223
+                      }
+                    },
+                    "dimension": "minecraft:overworld"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:scene/sal_mevir/replace_tower"
+    }
+  }
+  

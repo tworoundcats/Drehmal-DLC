@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:polished_basalt"
+    },
+    "title": {
+      "text": "Ancient Enterprise",
+      "color": "aqua",
+      "italic": false
+    },
+    "description": {
+      "text": "What's in here? - Found the Core Base",
+      "color": "gray",
+      "italic": false
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "advancements:discoveries/lodahr",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": {
+                  "min": 502,
+                  "max": 542
+                },
+                "y": {
+                  "min": 26,
+                  "max": 44
+                },
+                "z": {
+                  "min": -851,
+                  "max": -811
+                }
+              },
+              "dimension": "minecraft:lodahr"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

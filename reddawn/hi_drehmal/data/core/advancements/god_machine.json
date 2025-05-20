@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": 3148,
+              "max": 3185
+            },
+            "y": {
+              "min": 60,
+              "max": 90
+            },
+            "z": {
+              "min": -1024,
+              "max": -972
+            }
+          },
+          "dimension": "minecraft:overworld"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dialogue:myth/dia10/godcheck"
+  }
+}

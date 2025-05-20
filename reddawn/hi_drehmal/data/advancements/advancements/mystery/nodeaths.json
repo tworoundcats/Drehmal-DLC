@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:yellow_concrete_powder"
+      },
+      "title": {
+        "text": "Primal Soul",
+        "color": "gold",
+        "bold": false
+      },
+      "description": {
+        "text": "A true display of skill. - Completed the main story without any player dying.",
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "overworld": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "players:misc/mystery_psoul"
+    },
+    "parent": "advancements:mystery/root"
+  }
+  

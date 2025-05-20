@@ -1,0 +1,71 @@
+{
+  "scale": 0.2,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "sky_color": 8881631,
+    "foliage_color": 3699967,
+    "grass_color": 5499464,
+    "fog_color": 7713255,
+    "water_color": 57855,
+    "water_fog_color": 4046591,
+    "particle": {
+      "options": {
+        "type": "minecraft:splash"
+      },
+      "probability": 0.0005
+    }
+  },
+  "surface_builder": "minecraft:grass",
+  "carvers": {
+    "air": []
+  },
+  "features": [],
+  "starts": [],
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [
+      {
+        "type": "minecraft:squid",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:dolphin",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "water_ambient": [
+      {
+        "type": "minecraft:pufferfish",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 25,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "misc": []
+  },
+  "spawn_costs": {
+  },
+  "player_spawn_friendly": false,
+  "has_precipitation": true,
+  "temperature": 2,
+  "downfall": 0,
+  "category": "beach",
+  "depth": 0.1
+}

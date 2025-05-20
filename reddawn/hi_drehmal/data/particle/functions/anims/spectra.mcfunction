@@ -1,0 +1,7 @@
+execute if score @s part.frame matches 1 run data merge entity @s {CustomName:'{"translate":"space.-340","with":[{"text":"\\u110a","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 2 run data merge entity @s {CustomName:'{"translate":"space.-282","with":[{"text":"\\u110b","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 3 run data merge entity @s {CustomName:'{"translate":"space.-264","with":[{"text":"\\u110c","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 4 run data merge entity @s {CustomName:'{"translate":"space.-238","with":[{"text":"\\u110d","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 5 run data merge entity @s {CustomName:'{"translate":"space.-244","with":[{"text":"\\u110e","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 6 run data merge entity @s {CustomName:'{"translate":"space.-248","with":[{"text":"\\u110f","font":"particle:particles/spectra","obfuscated":false}]}'}
+execute if score @s part.frame matches 7 run data merge entity @s {CustomName:'{"translate":"space.-252","with":[{"text":"\\u120a","font":"particle:particles/spectra","obfuscated":false}]}'}

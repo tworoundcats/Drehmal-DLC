@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Shadowblade:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/shadowblade"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:sword_sinister"
+        },
+        "title": {
+            "color": "red",
+            "text": "Shadowblade Edge"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Shadowblade Edge"
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:soul"
+}

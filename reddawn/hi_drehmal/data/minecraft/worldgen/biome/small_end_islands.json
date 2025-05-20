@@ -1,0 +1,50 @@
+{
+  "scale": 0.3,
+  "effects": {
+    "sky_color": 6837878,
+    "fog_color": 4011334,
+    "water_color": 5530499,
+    "water_fog_color": 0,
+    "foliage_color": 8485742,
+    "grass_color": 7564894,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.005
+    },
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop"
+  },
+  "surface_builder": "minecraft:desert",
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "has_precipitation": false,
+  "temperature": 2,
+  "downfall": 0,
+  "category": "desert",
+  "depth": 0.45
+}

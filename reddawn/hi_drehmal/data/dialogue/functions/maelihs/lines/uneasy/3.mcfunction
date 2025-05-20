@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 15
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"I would advise you to watch your back, lest you become tied up."},{"text":"\n- [ Let’s change the subject. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 28"}}]

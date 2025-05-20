@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:chiseled_stone_bricks"
+      },
+      "title": {
+        "text": "??????????",
+        "color": "gold",
+        "bold": false,
+        "obfuscated": true
+      },
+      "description": {
+        "text": "Achievements for those who display a great understanding of Drehmal and mastery over the realm.",
+        "color": "gray"
+      },
+      "background": "minecraft:textures/block/sculk_sensor_bottom.png",
+      "frame": "challenge",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "overworld": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    }
+  }
+  

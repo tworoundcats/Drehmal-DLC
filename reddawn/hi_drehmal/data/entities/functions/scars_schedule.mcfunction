@@ -1,0 +1,1 @@
+execute as @e[type=!#oblivion_immune,tag=1kscars] at @s run function players:items/1kscars/check

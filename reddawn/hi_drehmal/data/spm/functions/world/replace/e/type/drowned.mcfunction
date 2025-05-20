@@ -1,0 +1,1 @@
+execute if predicate spm_cf:mob/water_ghost/replace_rate run function spm:mob/water_ghost/replace

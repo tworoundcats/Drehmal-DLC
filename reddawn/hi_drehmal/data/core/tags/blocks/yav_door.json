@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bedrock",
+    "minecraft:smooth_basalt",
+    "minecraft:blackstone",
+    "minecraft:blackstone_slab",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:polished_blackstone",
+    "minecraft:obsidian",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:cobbled_deepslate_wall",
+    "minecraft:polished_deepslate"
+  ]
+}

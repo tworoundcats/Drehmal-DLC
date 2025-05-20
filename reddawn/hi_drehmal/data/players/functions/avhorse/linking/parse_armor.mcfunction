@@ -1,0 +1,3 @@
+# runs the instant avHorseArmor leaves or enters a player's inventory.
+#execute if score @s hasAvHorseArmor > @s hadAvHorseArmor if entity @e[type=horse,distance=..15,tag=avHorse,predicate=!entities:wearing_avhorse_armor] run function players:avhorse/linking/took_armor
+execute if score @s hasAvHorseArmor < @s hadAvHorseArmor if entity @e[type=horse,distance=..15,tag=!avHorse,predicate=entities:wearing_avhorse_armor] run function players:avhorse/linking/used_armor

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "icon": {
+            "item": "minecraft:guardian_spawn_egg"
+        },
+        "hidden": true,
+        "description": {
+            "text": "Recipe for Proxigea, trophy of Dahr’s favor, unlocked.",
+            "color": "gray"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_purple",
+            "text": "Proxigea"
+        }
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{proxigea:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "weapons:proxigea"
+        ],
+        "function":"weapons:proxigea"
+    },
+    "parent": "weapons:emperor"
+}
