@@ -15,7 +15,7 @@ execute if score @s avpod.songid matches 14 run function players:music/polaris
 execute if score @s avpod.songid matches 15 run function players:music/drabyel
 execute if score @s avpod.songid matches 16 run function players:music/gozak
 execute if score @s avpod.songid matches 17 run function players:music/nimahj
-execute if score @s avpod.songid matches 18 run function players:music/thraxax
+execute if score @s avpod.songid matches 18 run function players:music/tharxax
 execute if score @s avpod.songid matches 19 run function players:music/ebonrun
 execute if score @s avpod.songid matches 20 run function players:music/athrah
 execute if score @s avpod.songid matches 21 run function players:music/okeke
@@ -54,3 +54,4 @@ execute if score @s avpod.songid matches 53 run function players:music/ultvafull
 execute if score @s avpod.songid matches 54 run function players:music/hotv
 execute if score @s avpod.songid matches 55 run function players:music/emissary
 execute if score @s avpod.songid matches 56 run function players:music/credits
+execute if score @s avpod.songid matches 57 run function players:music/shatterhorn

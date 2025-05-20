@@ -19,6 +19,7 @@ tag @s add ebonrunMusic
 tag @s add athrahMusic
 tag @s add okekeMusic
 tag @s add nimahjMusic
+tag @s add shatterhornMusic
 tag @s add duspsMusic
 tag @s add mohtaMusic
 tag @s add mossfieldMusic
@@ -55,4 +56,4 @@ tag @s add hotvMusic
 tag @s add emissaryMusic
 tag @s add creditsMusic
 
-scoreboard players set @s avpod.songsfound 56
+scoreboard players set @s avpod.songsfound 57

@@ -19,3 +19,4 @@ execute unless score #ob_finish bool matches 1 if block 1643 17 -4209 bosses_of_
 
 execute if score #ob_finish bool matches 1 run scoreboard players add #ob_finish num 1
 execute if score #ob_finish num matches 60 run execute at @e[tag=pedestal] run playsound simplyswords:ambience_wind_loop player @a ~ ~ ~ 1 0
+

@@ -26,6 +26,7 @@ scoreboard objectives add okekeMusic dummy
 scoreboard objectives add ebonrunMusic dummy
 scoreboard objectives add athrahMusic dummy
 scoreboard objectives add nimahjMusic dummy
+scoreboard objectives add shatterhornMusic dummy
 scoreboard objectives add tharxaxMusic dummy
 scoreboard objectives add mohtaMusic dummy
 scoreboard objectives add gozakMusic dummy

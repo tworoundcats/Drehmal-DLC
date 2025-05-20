@@ -31,7 +31,7 @@ execute if score @s avpod.songid matches 14 run function players:avpod/tracks/po
 execute if score @s avpod.songid matches 15 run function players:avpod/tracks/drabyel
 execute if score @s avpod.songid matches 16 run function players:avpod/tracks/gozak
 execute if score @s avpod.songid matches 17 run function players:avpod/tracks/nimahj
-execute if score @s avpod.songid matches 18 run function players:avpod/tracks/thraxax
+execute if score @s avpod.songid matches 18 run function players:avpod/tracks/tharxax
 execute if score @s avpod.songid matches 19 run function players:avpod/tracks/ebonrun
 execute if score @s avpod.songid matches 20 run function players:avpod/tracks/athrah
 execute if score @s avpod.songid matches 21 run function players:avpod/tracks/okeke
@@ -70,3 +70,4 @@ execute if score @s avpod.songid matches 53 run function players:avpod/tracks/ul
 execute if score @s avpod.songid matches 54 run function players:avpod/tracks/hotv
 execute if score @s avpod.songid matches 55 run function players:avpod/tracks/emissary
 execute if score @s avpod.songid matches 56 run function players:avpod/tracks/credits
+execute if score @s avpod.songid matches 57 run function players:avpod/tracks/shatterhorn
