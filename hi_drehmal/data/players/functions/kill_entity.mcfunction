@@ -1,5 +1,7 @@
 advancement revoke @s only players:kill_entity
 
+execute if predicate players:holding/flesh run function players:items/flesh/give_effect
+
 execute if predicate players:holding/avstate run function players:items/avsaber/killcharge
 execute if predicate players:holding/avstate2 run function players:items/avsaber/killcharge
 

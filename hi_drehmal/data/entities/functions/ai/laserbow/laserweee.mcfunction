@@ -1,9 +1,9 @@
 # Could probably be used to destroy large mobs almost instantly which is really funny
 
-execute positioned ^ ^ ^2 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 8 minecraft:sonic_boom
-execute positioned ^ ^ ^1.5 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 8 minecraft:sonic_boom
-execute positioned ^ ^ ^1 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 8 minecraft:sonic_boom
-execute positioned ^ ^ ^0.5 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 8 minecraft:sonic_boom
+execute positioned ^ ^ ^2 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 11 minecraft:bifurcated
+execute positioned ^ ^ ^1.5 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 11 minecraft:bifurcated
+execute positioned ^ ^ ^1 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 11 minecraft:bifurcated
+execute positioned ^ ^ ^0.5 as @e[dx=0,type=!#core:undead,tag=!LaserBow] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run damage @s 11 minecraft:bifurcated
 
 scoreboard players add @s LaserTimer 1
 execute if score @s LaserTimer matches 40.. run kill @s

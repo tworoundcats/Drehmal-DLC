@@ -17,4 +17,6 @@ execute if predicate players:holding/mb as @s run function players:items/click/m
 
 execute if predicate players:holding/party_cannon run scoreboard players set @s pcannon_charge_c 7
 
+execute if predicate players:holding/avrad run scoreboard players set @s avrad_charge_c 7
+
 scoreboard players reset @s click

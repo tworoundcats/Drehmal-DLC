@@ -23,6 +23,79 @@ execute if score #5T timer matches 0 if entity @s[predicate=players:is_not_dev] 
 execute if score #1S timer matches 8 run function players:check_passive_items
 
 #--------#
+#BLAZE PANTS#
+#--------#
+execute if predicate players:wearing_blaze run function players:items/blaze/buff
+
+#--------#
+#FOCUS#
+#--------#
+execute if predicate players:wearing_pearl run function players:items/focus/buff
+execute unless predicate players:wearing_pearl run function players:items/focus/buff_remove
+
+#--------#
+#STAR HELMET#
+#--------#
+execute if predicate players:wearing_starry run function players:items/star_helm/buff
+execute if score @s soundfix matches 1.. run scoreboard players remove @s soundfix 1
+execute unless predicate players:wearing_starry run attribute @s minecraft:generic.movement_speed modifier remove ce887b47-db5e-41be-ab92-4b6eb53c48c2
+
+#--------#
+#COMPOSITION#
+#--------#
+execute if predicate players:wearing_comp run function players:items/comp/buff
+execute unless predicate players:wearing_comp run function players:items/comp/buff_remove
+
+#--------#
+#FLESH#
+#--------#
+execute if score @s flesh_timer matches 1.. run effect give @s minecraft:hunger 1 49 true
+
+execute if score @s flesh_level matches 1 run attribute @s minecraft:generic.max_health modifier add dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2 flesh 5 add
+execute if score @s flesh_level matches 2 run attribute @s minecraft:generic.max_health modifier add 8ba9cd06-534b-4524-84b2-789c15f0acac flesh 5 add
+execute if score @s flesh_level matches 3 run attribute @s minecraft:generic.max_health modifier add 9273ff45-5bdb-4e37-8315-257ee86a92fe flesh 5 add
+execute if score @s flesh_level matches 4 run attribute @s minecraft:generic.max_health modifier add 94309d62-d204-4db8-8c1b-3ee325fe7212 flesh 5 add
+
+execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2
+execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 8ba9cd06-534b-4524-84b2-789c15f0acac
+execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 9273ff45-5bdb-4e37-8315-257ee86a92fe
+execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 94309d62-d204-4db8-8c1b-3ee325fe7212
+
+execute if score @s flesh_level matches 1 run particle dust 0.68 0.0 0.0 1 ~ ~0.25 ~ 0.2 -0.25 0.2 9 5
+execute if score @s flesh_level matches 2 run particle dust 0.58 0.0 0.0 1 ~ ~0.25 ~ 0.225 -0.25 0.225 9 7
+execute if score @s flesh_level matches 3 run particle dust 0.48 0.0 0.0 1 ~ ~0.25 ~ 0.25 -0.25 0.25 9 10
+execute if score @s flesh_level matches 4 run particle dust 0.38 0.0 0.0 1 ~ ~0.25 ~ 0.275 -0.25 0.275 9 15
+
+execute as @s unless predicate players:holding/flesh run scoreboard players set @s flesh_level 0
+execute as @s unless predicate players:holding/flesh run scoreboard players set @s flesh_timer 0
+execute unless score @s flesh_timer matches ..0 run scoreboard players remove @s flesh_timer 1
+execute if score @s flesh_timer matches ..0 run scoreboard players set @s flesh_level 0
+
+#--------#
+#AVRAD#
+#--------#
+execute as @a[predicate=players:holding/avrad] if score @s avrad_cool matches 0.. run function players:items/avrad/actionbar
+execute if score @s avrad_charge_c matches 1.. run scoreboard players remove @s avrad_charge_c 1
+
+scoreboard players operation @s washoldingavrad = @s holdingavrad
+scoreboard players reset @s holdingavrad
+execute store result score @s holdingavrad if predicate players:holding/avrad
+
+execute if score @s wasHoldingavrad matches 1 if score @s holdingavrad matches 0 if score @s avrad_charge matches 1.. run function players:items/avrad/reset
+execute if score @s avrad_charge matches 1.. if score @s avrad_charge_c matches ..0 run function players:items/avrad/reset
+
+execute if score @s holdingavrad matches 1 if score @s avrad_charge_c matches 1.. run function players:items/avrad/main
+
+execute unless score @s avrad_cool matches ..-1 run scoreboard players remove @s avrad_cool 1
+
+execute as @s[predicate=players:locations/compass_fall] run effect give @s minecraft:slow_falling 1 0 true
+execute as @s[predicate=players:locations/compass_levitat] run effect give @s minecraft:levitation 1 2 true
+
+execute if predicate players:locations/compass_lower if entity @s[tag=refine_start,tag=interact_person] run function terminus:upg/refining
+execute if entity @e[type=item,predicate=players:is_esc,x=26475,y=128,z=-54] if score #1S timer matches 1 as @s[tag=!refine_start,tag=interact_person] if predicate players:locations/compass_lower run function terminus:upg/menu
+execute if score @s aegis_cool matches 1 run function players:items/aegis/remove_cooldown
+
+#--------#
 #TRIGGERS#
 #--------#
 

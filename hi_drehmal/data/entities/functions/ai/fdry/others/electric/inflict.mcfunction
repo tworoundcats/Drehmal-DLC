@@ -1,1 +1,1 @@
-damage @s 25 minecraft:primalenergy
+damage @s 18 minecraft:primalenergy

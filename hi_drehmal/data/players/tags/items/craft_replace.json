@@ -1,12 +1,15 @@
 {
     "values": [
         "minecraft:axolotl_spawn_egg",
+        "minecraft:camel_spawn_egg",
         "minecraft:bat_spawn_egg",
         "minecraft:bee_spawn_egg",
         "minecraft:blaze_spawn_egg",
+        "minecraft:tadpole_spawn_egg",
         "minecraft:cat_spawn_egg",
         "minecraft:cave_spider_spawn_egg",
         "minecraft:chicken_spawn_egg",
+        "minecraft:frog_spawn_egg",
         "minecraft:cod_spawn_egg",
         "minecraft:cow_spawn_egg",
         "minecraft:creeper_spawn_egg",
@@ -14,6 +17,7 @@
         "minecraft:donkey_spawn_egg",
         "minecraft:drowned_spawn_egg",
         "minecraft:elder_guardian_spawn_egg",
+        "minecraft:warden_spawn_egg",
         "minecraft:enderman_spawn_egg",
         "minecraft:endermite_spawn_egg",
         "minecraft:evoker_spawn_egg",

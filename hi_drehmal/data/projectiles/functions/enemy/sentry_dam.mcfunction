@@ -1,0 +1,1 @@
+damage @s 6 minecraft:fdry_blown

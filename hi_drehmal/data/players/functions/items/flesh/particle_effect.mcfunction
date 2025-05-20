@@ -1,0 +1,2 @@
+execute unless predicate players:has_resistance run particle crimson_spore ~ ~1 ~ 0.25 -0.25 0.2 0.05 100
+execute unless predicate players:has_resistance run particle dust 0.68 0.0 0.0 1 ~ ~1 ~ 0.25 -0.25 0.2 0.05 5

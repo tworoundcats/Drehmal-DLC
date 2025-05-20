@@ -7,3 +7,11 @@ execute unless score @s ai_ani matches 1.. run scoreboard players add @s ai_time
 execute unless score @s ai_ani matches 1.. unless entity @p[predicate=players:gamemode_sa,distance=..30] run scoreboard players add @s ai_timer 3
 execute if score @s ai_ani matches 1.. run function entities:ai/fdry/attack_ani
 execute if score @s ai_timer matches 120.. run function entities:ai/fdry/attack
+
+execute if predicate entities:hurt run function core:rng
+execute if predicate entities:hurt run scoreboard players operation #rand temp %= #10 const
+
+execute if score #rand temp matches 0..3 positioned as @s if predicate entities:hurt run playsound minecraft:custom.metal player @a ~ ~ ~ 1 1.8
+execute if score #rand temp matches 3.. positioned as @s if predicate entities:hurt run playsound minecraft:custom.metal player @a ~ ~ ~ 1 2
+
+execute positioned as @s if predicate entities:hurt run particle minecraft:electric_spark ~ ~1.5 ~ 0.5 0.8 0.5 0 50

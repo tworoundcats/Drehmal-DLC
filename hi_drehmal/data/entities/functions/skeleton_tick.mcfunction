@@ -10,4 +10,16 @@ execute if entity @s[tag=Hovadchear] run function entities:ai/hovad/main
 execute if entity @s[tag=Ultva] run function entities:ai/ultva/main
 execute if entity @s[tag=yav_remnant] run function entities:ai/yav/rem/main
 execute if entity @s[tag=fdry_deathray] run function entities:ai/fdry/others/electric/main
+execute if entity @s[tag=red_dawn_boss] run function entities:ai/samurai/main
+execute if entity @s[tag=avbot] run function entities:ai/avbot/main
+execute if entity @s[tag=theocratic] if entity @a[distance=..10] run function entities:ai/theocratic/main
+execute if entity @s[tag=theocratic2] if entity @a[distance=..10] run function entities:ai/theocratic2/main
+execute if entity @s[tag=theocratic3] if entity @a[distance=..10] run function entities:ai/theocratic3/main
+execute if entity @s[tag=frosty] if entity @s[tag=noai] run function entities:ai/frosty/main
+execute if entity @s[tag=frosty] if entity @s[tag=!noai] if entity @a[distance=..10] run data modify entity @s NoAI set value 0b
+execute if entity @s[tag=frosty] if entity @s[tag=!noai] if entity @a[distance=..10] run tag @s add noai
+execute if entity @s[tag=fdry_com] run function entities:ai/fdry_com/main
+execute if entity @s[tag=fdry_shotgun] run function entities:ai/fdry_shotgun/main
+execute if entity @s[tag=verp] run function entities:ai/verp/main
+execute if entity @s[tag=aph_shotgun] run function entities:ai/aph_shotgun/main
 execute if entity @s[tag=em_summon] at @s run particle minecraft:witch ~ ~1.5 ~ 0.1 0.2 0.1 0 1

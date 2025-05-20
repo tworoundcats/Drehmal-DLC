@@ -38,4 +38,19 @@ execute if entity @s[tag=spawn_shield_guardian] at @s run function entities:spaw
 execute if entity @s[tag=spawn_noxious_skeleton] at @s run function entities:spawn/noxious_skeleton
 execute if entity @s[tag=spawn_kring] at @s run function entities:spawn/kring
 execute if entity @s[tag=spawn_loser] at @s run function entities:spawn/loser_att
+
+execute if entity @s[tag=spawn_burnt_guard] at @s run function entities:spawn/burnt_guard
+execute if entity @s[tag=spawn_burnt_archer] at @s run function entities:spawn/burnt_archer
+execute if entity @s[tag=spawn_pyro] at @s run function entities:spawn/pyromaniac
+execute if entity @s[tag=spawn_second_general] at @s run function entities:spawn/second_general
+execute if entity @s[tag=spawn_verp] at @s run function entities:spawn/verp
+execute if entity @s[tag=spawn_aph_shotgun] at @s run function entities:spawn/aph_shotgun
+execute if entity @s[tag=spawn_frosty_boss] at @s run function entities:spawn/frost_arti
+execute if entity @s[tag=spawn_frosty_bow] at @s run function entities:spawn/frost_bow
+execute if entity @s[tag=spawn_insohm] at @s run function entities:spawn/insohmbie
+execute if entity @s[tag=spawn_construct] at @s run function entities:spawn/ancient_construct
+execute if entity @s[tag=spawn_sanctum1] at @s run function entities:spawn/sanctum1
+execute if entity @s[tag=spawn_sanctum2] at @s run function entities:spawn/sanctum2
+execute if entity @s[tag=spawn_sanctum3] at @s run function entities:spawn/sanctum3
+
 kill @s

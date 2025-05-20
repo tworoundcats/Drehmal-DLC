@@ -11,7 +11,7 @@ execute if entity @s[tag=rihelma] if entity @s[tag=arrow.inground] run function 
 
 
 
-#execute unless entity @s[tag=laserCheck] run function entities:ai/laserbow/lasify
+execute unless entity @s[tag=laserCheck] run function entities:ai/laserbow/lasify
 
 execute unless score #trial_com_khive bool matches 1 unless entity @s[tag=khive1] if predicate entities:k1 run tag @s add khive1
 execute unless score #trial_com_khive bool matches 1 if entity @s[tag=khive1] unless entity @s[tag=khive2] if predicate entities:k2 run tag @s add khive2

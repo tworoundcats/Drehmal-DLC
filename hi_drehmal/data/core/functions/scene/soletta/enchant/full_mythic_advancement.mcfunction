@@ -7,6 +7,7 @@ execute if score #solWeapon num matches 5 run scoreboard players set #mystery.so
 execute if score #solWeapon num matches 6 run scoreboard players set #mystery.sol_obv bool 1
 execute if score #solWeapon num matches 7 run scoreboard players set #mystery.sol_fzy bool 1
 execute if score #solWeapon num matches 8 run scoreboard players set #mystery.sol_szy bool 1
+execute if score #solWeapon num matches 10 run scoreboard players set #mystery.sol_avgun bool 1
 execute if score #solWeapon num matches 9 run scoreboard players set #mystery.sol_zen bool 1
 
-execute unless score #mystery.mstoneall bool matches 1 if score #mystery.sol_mb bool matches 1 if score #mystery.sol_cal bool matches 1 if score #mystery.sol_asc bool matches 1 if score #mystery.sol_mal bool matches 1 if score #mystery.sol_obv bool matches 1 if score #mystery.sol_fzy bool matches 1 if score #mystery.sol_szy bool matches 1 if score #mystery.sol_zen bool matches 1 run function players:misc/mystery_mstoneall
+execute unless score #mystery.mstoneall bool matches 1 if score #mystery.sol_mb bool matches 1 if score #mystery.sol_cal bool matches 1 if score #mystery.sol_asc bool matches 1 if score #mystery.sol_mal bool matches 1 if score #mystery.sol_obv bool matches 1 if score #mystery.sol_fzy bool matches 1 if score #mystery.sol_szy bool matches 1 if score #mystery.sol_zen bool matches 1 if score #mystery.sol_avgun bool matches 1 if score #mystery.sol_aegis bool matches 1 run function players:misc/mystery_mstoneall

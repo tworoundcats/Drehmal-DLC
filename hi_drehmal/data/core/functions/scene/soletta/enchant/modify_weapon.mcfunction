@@ -9,6 +9,7 @@ execute if data storage drehmal:core tempItem.tag.Oblivion run scoreboard player
 execute if data storage drehmal:core tempItem.tag.Frenzy run scoreboard players set #solWeapon num 7
 execute if data storage drehmal:core tempItem.tag.Syzygy run scoreboard players set #solWeapon num 8
 execute if data storage drehmal:core tempItem.tag.AvSaber run scoreboard players set #solWeapon num 9
+execute if data storage drehmal:core tempItem.tag.avrad run scoreboard players set #solWeapon num 10
 
 execute store success score #solVitality bool if data storage drehmal:core tempItem.tag.VitalityEnch
 execute store success score #solSpeed bool if data storage drehmal:core tempItem.tag.SpeedEnch
@@ -30,6 +31,7 @@ execute if score #solWeapon num matches 6 run item modify entity @s weapon.mainh
 execute if score #solWeapon num matches 7 run item modify entity @s weapon.mainhand core:soletta/lore/fzy
 execute if score #solWeapon num matches 8 run item modify entity @s weapon.mainhand core:soletta/lore/szy
 execute if score #solWeapon num matches 9 run item modify entity @s weapon.mainhand core:soletta/lore/zen
+execute if score #solWeapon num matches 10 run item modify entity @s weapon.mainhand core:soletta/lore/avgun
 
 item modify entity @s weapon.mainhand core:soletta/lore/bottomtext
 

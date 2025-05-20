@@ -1,2 +1,1 @@
-damage @s 27 minecraft:diced
-
+damage @s 22 minecraft:atomized

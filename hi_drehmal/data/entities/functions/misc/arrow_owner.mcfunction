@@ -11,6 +11,8 @@ scoreboard players reset #teth_velo? temp
 scoreboard players reset #syzygy_arrow temp
 scoreboard players reset #khive_flunkie? temp
 scoreboard players reset #avgun? temp
+scoreboard players reset #fdry_gun temp
+scoreboard players reset #mal_arrow temp
 scoreboard players reset #pavgun? temp
 scoreboard players reset #skeleton? temp
 scoreboard players reset #mb_shot temp
@@ -28,6 +30,8 @@ execute if score #com.assault? temp matches 1 run kill @s
 execute unless score #com.assault? temp matches 1 if score #avgun? temp matches 1 run function entities:misc/avgun_shoot
 execute if score #mb_shot temp matches 1 run function entities:misc/mb_shoot
 
+execute if score #mal_arrow temp matches 1 run function entities:misc/fire_bow_shoot
+execute if score #fdry_gun temp matches 1 run function entities:ai/fdry_gunman/shoot
 execute if score #teth_velo? temp matches 1 run function entities:misc/arrow_teth
 execute if score #ossein_arrow temp matches 1 run function entities:misc/arrow_ossein
 execute if score #ground_clear temp matches 1 run tag @s add ground_clear

@@ -2,9 +2,24 @@
 #hello primordial
 #--------------------------------
 
+scoreboard objectives add piercing_laz dummy
+scoreboard objectives add sam_spawned dummy
+scoreboard objectives add sanitization dummy
+scoreboard objectives add engine_timer dummy
+
+scoreboard objectives add holdingavrad dummy
+scoreboard objectives add washoldingavrad dummy
+scoreboard objectives add avrad_charge dummy
+scoreboard objectives add avrad_charge_c dummy
+scoreboard objectives add avrad_cool dummy
+
+scoreboard objectives add soundfix dummy
 scoreboard objectives add exteriorAmbience dummy
 scoreboard objectives add yavhlixAmbience dummy
 scoreboard objectives add terminusMusic dummy
+scoreboard objectives add focus_timer dummy
+scoreboard objectives add flesh_level dummy
+scoreboard objectives add flesh_timer dummy
 
 scoreboard objectives add drabyelMusic dummy
 scoreboard objectives add okekeMusic dummy

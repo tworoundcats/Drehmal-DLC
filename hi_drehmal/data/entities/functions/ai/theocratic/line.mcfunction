@@ -1,0 +1,15 @@
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^0.2 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^0.2 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^0.4 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^0.6 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^0.8 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^1.0 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^1.2 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^1.4 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^1.6 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^1.8 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^2 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^2.2 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^2.4 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^2.6 0 0 0 0 0 force
+execute unless entity @s[tag=sam_angy] run particle enchanted_hit ^ ^ ^2.8 0 0 0 0 0 force

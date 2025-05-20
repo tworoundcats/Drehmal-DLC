@@ -82,4 +82,9 @@ recipe take @s weapons:warphorse_armor
 recipe take @s weapons:warphorse_receiver
 recipe take @s weapons:whispersong
 recipe take @s weapons:zenith
+recipe take @s weapons:flesh
+recipe take @s weapons:comp
+recipe take @s weapons:pearl
+recipe take @s weapons:starry
+recipe take @s weapons:blaze
 execute as @s run function weapons:grant

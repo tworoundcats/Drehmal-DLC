@@ -7,6 +7,14 @@
         },
         {
             "condition":"reference",
+            "name":"players:locations/red_dawn"
+        },
+        {
+            "condition":"reference",
+            "name":"players:locations/red_dawn_devzone"
+        },
+        {
+            "condition":"reference",
             "name":"players:locations/exodus_vault"
         },
         {

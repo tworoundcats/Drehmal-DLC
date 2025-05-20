@@ -13,5 +13,8 @@ execute if entity @s[tag=zombee] run function entities:ai/zombee/main
 execute if entity @s[tag=yav_remnant] run function entities:ai/yav/rem/main
 execute if entity @s[tag=tether] run function entities:ai/sentry/tether_main
 execute if entity @s[tag=chained_samurai] run function entities:ai/samurai/main
+execute if entity @s[tag=avbot] run function entities:ai/avbot/main
+execute if entity @s[tag=avbot_boom] run function entities:ai/avbot_boom/main
+execute if entity @s[tag=avbot_zoomy] run function entities:ai/avbot_zoom/main
 
 execute if entity @s[tag=timeworn_thrall] run function entities:ai/timeworn/main

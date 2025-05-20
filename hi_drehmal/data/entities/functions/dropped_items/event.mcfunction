@@ -22,6 +22,11 @@ execute if score #event temp matches 21 run function entities:ai/warden/kill
 execute if score #event temp matches 22 run function entities:dropped_items/vir_kill
 execute if score #event temp matches 23 run function entities:ai/avhorse/on_death
 execute if score #event temp matches 24 run function entities:ai/samurai/on_death
+execute if score #event temp matches 26 run function entities:dropped_items/crystal
+execute if score #event temp matches 27 run function entities:dropped_items/frosty
+execute if score #event temp matches 28 run function entities:dropped_items/avbot/base
+execute if score #event temp matches 29 run function entities:dropped_items/avbot/boom
+execute if score #event temp matches 30 run function entities:dropped_items/avbot_poison/summon_cloud
 
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr
 

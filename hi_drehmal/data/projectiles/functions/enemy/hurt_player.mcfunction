@@ -46,5 +46,11 @@ execute if score @s damage_s matches 28 run damage @s 36 minecraft:fried
 
 execute if score @s damage_s matches 35 run damage @s 24 minecraft:deconceptualized
 
+execute if score @s damage_s matches 42 run damage @s 8 minecraft:ysold/blown
+
+execute if score @s damage_s matches 43 run damage @s 8 minecraft:in_fire
+execute if score @s damage_s matches 43 run execute at @s positioned ^ ^ ^ as @s run summon small_fireball ~ ~1.8 ~ {power:[0.0,-10000.0,0.0]}
+
+execute if score @s damage_s matches 44 run damage @s 12 minecraft:fdry_blown
 
 scoreboard players reset @s damage_s

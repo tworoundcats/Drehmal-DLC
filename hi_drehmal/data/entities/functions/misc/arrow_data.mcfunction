@@ -22,3 +22,5 @@ execute if entity @s[type=player] run scoreboard players set #pavgun? temp 1
 execute if entity @s[type=#minecraft:skeletons] run scoreboard players set #skeleton? temp 1
 execute if entity @s[tag=mb_run_skele] run scoreboard players set #mb_shot temp 1
 execute if score @s t.fear matches 1.. run scoreboard players set #teth_velo? temp 1
+execute if predicate players:holding/fdry_gun run scoreboard players set #fdry_gun temp 1
+execute if predicate players:holding/fire_bow run scoreboard players set #mal_arrow temp 1
