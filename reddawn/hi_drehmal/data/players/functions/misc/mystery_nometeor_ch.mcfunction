@@ -1,1 +1,0 @@
-execute unless score #lodahr_beento bool matches 1 run advancement grant @s only advancements:mystery/netherite_nodahr

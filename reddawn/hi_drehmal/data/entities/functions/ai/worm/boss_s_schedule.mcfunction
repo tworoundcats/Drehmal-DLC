@@ -1,1 +1,0 @@
-scoreboard players set #passive_can_spawn? bool 1

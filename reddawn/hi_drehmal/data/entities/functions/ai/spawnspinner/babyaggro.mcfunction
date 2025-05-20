@@ -1,1 +1,0 @@
-tag @e[tag=spawnspinner_baby] add day_aggro

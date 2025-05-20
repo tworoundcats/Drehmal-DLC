@@ -1,1 +1,0 @@
-execute if entity @s[tag=ghast_fireballs] run scoreboard players set #ghast_overwrite? temp 1

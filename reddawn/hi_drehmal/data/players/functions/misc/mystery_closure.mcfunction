@@ -1,1 +1,0 @@
-execute unless score #some1_died bool matches 1.. run advancement grant @a only advancements:mystery/nodeaths

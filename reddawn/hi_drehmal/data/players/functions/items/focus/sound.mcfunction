@@ -1,2 +1,0 @@
-execute as @s unless entity @s[tag=focus] at @s run playsound minecraft:block.anvil.land record @s ~ ~ ~ 1 1.5
-execute as @s unless entity @s[tag=focus] at @s run function particle:effects/icos/smoke_ico

@@ -1,1 +1,0 @@
-schedule function dlc:shield/explosion_d 2t

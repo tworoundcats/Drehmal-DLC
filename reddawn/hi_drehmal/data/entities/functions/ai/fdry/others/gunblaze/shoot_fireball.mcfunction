@@ -1,1 +1,0 @@
-scoreboard players set @s ai_timer 50

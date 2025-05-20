@@ -1,2 +1,0 @@
-tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Associate Builders:","underlined":true,"color":"gold"},{"text":"\n\nTaillin101\nH A D E S"}]
-schedule function core:scene/credits/11a 168t

@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＰＲＥＳＥＮＣＥ ＲＥＱＵＥＳＴＥＤ ＡＢＯＡＲＤ ＴＨＥ ＡＰＨＥＬＩＯＮ","color":"white"},{"text":"／／"}]
-schedule function core:scene/avsal/perms/9 5s

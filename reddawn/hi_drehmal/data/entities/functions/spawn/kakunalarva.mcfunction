@@ -1,1 +1,0 @@
-summon minecraft:silverfish ~ ~ ~ {Tags:["kakuna","larva"],Team:"hide_name",CustomName:'{"text":"Larvolve"}'}

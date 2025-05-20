@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＡＶ＇ＳＡＬ ＡＤＭＩＮＩＳＴＲＡＴＩＶＥ ＷＩＮＧ","color":"yellow"},{"text":" ＮＥＴＷＯＲＫ ＴＥＲＭＩＮＡＬ ＯＮＬＩＮＥ","color":"white"},{"text":"／／"}]
-schedule function terminus:gifts/21/3 6s

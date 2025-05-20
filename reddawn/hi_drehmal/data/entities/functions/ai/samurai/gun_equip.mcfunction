@@ -1,5 +1,0 @@
-execute unless entity @s[tag=sam_angy] run item replace entity @s weapon.mainhand with bow{AttributeModifiers:[{Amount:1.0d,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-43852763,1861435685,-1714780084,1341114750]}],CustomModelData:10,Damage:0} 1
-execute unless entity @s[tag=sam_angy] run item replace entity @s weapon.offhand with bow{AttributeModifiers:[{Amount:1.0d,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-43852763,1861435685,-1714780084,1341114750]}],CustomModelData:10,Damage:0} 1
-
-execute if entity @s[tag=sam_angy] run item replace entity @s weapon.mainhand with bow{AttributeModifiers:[{Amount:1.0d,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-43852763,1861435685,-1714780084,1341114750]}],CustomModelData:11,Damage:0} 1
-execute if entity @s[tag=sam_angy] run item replace entity @s weapon.offhand with bow{AttributeModifiers:[{Amount:1.0d,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-43852763,1861435685,-1714780084,1341114750]}],CustomModelData:11,Damage:0} 1

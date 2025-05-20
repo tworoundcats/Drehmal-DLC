@@ -1,1 +1,0 @@
-summon skeleton ~ ~ ~ {CustomName:'{"text":"voynaihla mob"}',Tags:["lodahr_mob"]}

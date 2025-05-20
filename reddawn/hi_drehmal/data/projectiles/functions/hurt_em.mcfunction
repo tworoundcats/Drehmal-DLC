@@ -1,1 +1,0 @@
-damage @s 9 minecraft:bifurcated

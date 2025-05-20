@@ -1,2 +1,0 @@
-tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Composers:","underlined":true,"color":"gold"},{"text":"\n\nChris Nesja"},{"text":"\nPenngo"}]
-schedule function core:scene/credits/4 168t

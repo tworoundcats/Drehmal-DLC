@@ -1,1 +1,0 @@
-scoreboard players set @s n_lev.d.vator 0

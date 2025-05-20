@@ -1,1 +1,0 @@
-execute unless score #rihelmalight1 bool matches 1.. in minecraft:lodahr run function core:scene/rihelma_puzzle/beams/cornerbeam

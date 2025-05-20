@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＭＡＮＵＡＬ ＤＡＴＡＢＡＳＥ ＲＥＢＯＯＴ ＲＥＱＵＩＲＥＤ ＡＴ ＣＯＲＥ ＬＵＮＡＲ ＦＡＣＩＬＩＴＹ， ＬＯＣＡＴＯＲ ＤＩＳＰＥＮＳＥＤ","color":"yellow"},{"text":"／／"}]
-schedule function terminus:gifts/lodahr/2 1s

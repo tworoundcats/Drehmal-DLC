@@ -1,1 +1,0 @@
-bossbar set health name {"text":"Drehn Mal’Sohm, the First Emperor","color":"white"}

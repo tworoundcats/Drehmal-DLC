@@ -1,1 +1,0 @@
-execute in minecraft:lodahr run tellraw @a[predicate=players:lodahr,x=-424,y=45,z=560,distance=..75] {"text":"An enormous apex predator draws near...","italic":true,"color":"gray"}

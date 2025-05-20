@@ -1,1 +1,0 @@
-give @s golden_apple{CustomModelData:1,display:{Name:'["",{"text":"Gay Apple","italic":false,"color":"#FF5EFA"}]'}}

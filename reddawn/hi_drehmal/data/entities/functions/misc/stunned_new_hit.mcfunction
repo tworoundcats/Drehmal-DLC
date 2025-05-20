@@ -1,1 +1,0 @@
-execute unless entity @s[scores={stunArrowTime=1..}] at @s run scoreboard players set @s stunArrowTime 55

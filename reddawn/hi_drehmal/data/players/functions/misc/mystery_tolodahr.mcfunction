@@ -1,1 +1,0 @@
-scoreboard players set #lodahr_beento bool 1

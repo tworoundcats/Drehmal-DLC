@@ -1,2 +1,0 @@
-summon firework_rocket ~ ~ ~ {LifeTime:80,ShotAtAngle:1b,Motion:[0,0,0],Tags:["special","unloaded"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1b,Colors:[I;16711680,16753152,16252672,1769216,65509,16711918],FadeColors:[I;16777215]}]}}}}
-execute as @s unless score @s avrad_cool matches 1.. run tag @s remove redgun

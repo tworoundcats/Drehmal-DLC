@@ -1,1 +1,0 @@
-#this will be used in the future to implement myth getting annoyed at player for skipping dialogue too much

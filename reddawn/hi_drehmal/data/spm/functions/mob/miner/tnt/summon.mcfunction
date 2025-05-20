@@ -1,1 +1,0 @@
-summon zombie ~ ~ ~ {IsBaby:1b,Tags:[spm.mob.tnt,spm.mob]}

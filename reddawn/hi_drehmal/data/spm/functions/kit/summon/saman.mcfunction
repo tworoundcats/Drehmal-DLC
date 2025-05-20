@@ -1,1 +1,0 @@
-function spm:mob/saman/summon

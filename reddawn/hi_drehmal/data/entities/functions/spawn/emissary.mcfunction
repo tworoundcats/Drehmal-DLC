@@ -1,1 +1,0 @@
-execute positioned 10000 101 10000 run function emis:summon/default

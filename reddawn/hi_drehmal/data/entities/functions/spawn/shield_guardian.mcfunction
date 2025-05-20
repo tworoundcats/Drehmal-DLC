@@ -1,1 +1,0 @@
-summon guardian ~ ~ ~ {Tags:["shield_guardian"],Team:"hide_name",CustomName:'{"text":"Shield Guardian"}'}

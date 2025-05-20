@@ -1,1 +1,0 @@
-summon skeleton ~ ~ ~ {Tags:[spm.mob,spm.mob.ninja]}

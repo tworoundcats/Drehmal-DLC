@@ -1,1 +1,0 @@
-execute as @e[type=armor_stand,tag=worm_head] run function entities:ai/worm/bossbar_color_as

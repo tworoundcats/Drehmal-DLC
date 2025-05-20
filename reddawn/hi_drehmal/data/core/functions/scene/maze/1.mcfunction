@@ -1,1 +1,0 @@
-execute as @a[predicate=players:syzygy_maze,sort=random,limit=1] run function players:misc/maze/start

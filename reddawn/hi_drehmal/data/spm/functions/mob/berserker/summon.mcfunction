@@ -1,1 +1,0 @@
-summon piglin_brute ~ ~ ~ {Tags:[spm.mob.berserker,spm.mob]}

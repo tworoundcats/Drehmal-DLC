@@ -1,5 +1,0 @@
-# update players:items/eldermead/use_full, players:items/eldermead/use_half, players:items/eldermead/give_item, players:items/eldermead/replace_item, and core:scene/numbers/6
-give @s minecraft:jigsaw{CustomModelData:1,CustomPotionColor:16777215,CustomPotionEffects:[{Amplifier:7,Id:23},{Amplifier:1,Duration:2419,Id:22},{Amplifier:1,Duration:219,Id:10}],Eldermead:1b,Filled:2,HideFlags:32,display:{Lore:['["",{"text":"This item is empty and must be refilled.","color":"dark_gray"}]','["",{"text":" ","color":"gray","italic":false}]','["",{"text":"Legendary","italic":false,"color":"light_purple"}]'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"light_purple","text":"Eldermead Bottle"}],"text":""}'}}
-scoreboard players remove @s crafted 1
-stopsound @a[distance=..32] player minecraft:entity.item.pickup
-execute if score @s crafted matches 1.. run function players:crafts/eldermead

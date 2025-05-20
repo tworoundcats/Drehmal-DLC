@@ -1,1 +1,0 @@
-summon skeleton ~ ~ ~ {CustomName:'{"text":"taihgel mob"}',Tags:["lodahr_mob"]}

@@ -1,1 +1,0 @@
-execute in minecraft:space run particle minecraft:flash 6.5 133.5 102.1 0 0 0 0 1

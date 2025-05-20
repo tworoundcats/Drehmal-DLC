@@ -1,1 +1,0 @@
-give @s minecraft:salmon{Enchantments:[{id:"minecraft:knockback",lvl:3}],display:{Lore:['{"text":"Exactly what it says on the fin."}','{"text":" "}','{"text":"Artifact","color":"aqua","italic":false}'],Name:'{"text":"The Immortal Slap Fish","color":"aqua","italic":false,"underlined":true}'}}

@@ -1,1 +1,0 @@
-schedule function core:scene/terminals/fail/0 2s

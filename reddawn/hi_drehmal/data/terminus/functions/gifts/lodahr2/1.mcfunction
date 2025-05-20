@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＬＵＮＡＲ ＦＡＣＩＬＩＴＩＥＳ ＳＵＣＣＥＳＳＦＵＬＬＹ ＬＩＮＫＥＤ ＴＯ ＮＥＴＷＯＲＫ！","color":"white"},{"text":"／／"}]
-schedule function terminus:gifts/lodahr2/2 6s

@@ -1,1 +1,0 @@
-bossbar set health name {"text":"The Emissary of the Void","obfuscated":false,"color":"white"}

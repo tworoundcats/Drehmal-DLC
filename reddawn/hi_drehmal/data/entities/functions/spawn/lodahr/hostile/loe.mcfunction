@@ -1,1 +1,0 @@
-summon skeleton ~ ~ ~ {CustomName:'{"text":"loe mob"}',Tags:["lodahr_mob"]}

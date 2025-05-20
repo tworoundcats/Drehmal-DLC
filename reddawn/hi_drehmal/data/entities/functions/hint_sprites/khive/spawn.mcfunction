@@ -1,1 +1,0 @@
-execute unless score #hSpr_khive num matches 4.. if entity @p[x=-761,y=106,z=-790,distance=..128] unless entity @a[x=-761,y=106,z=-790,distance=..16] run summon marker -761 106 -790 {Tags:["khive_hSpr_spawn"]}

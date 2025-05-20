@@ -1,1 +1,0 @@
-tellraw @a[predicate=players:lodahr] ["","[",{"text":"ａｖＳＹＳ","color":"aqua"},"] ／／",{"text":"ＮＯ ＦＵＲＴＨＥＲ ＮＥＴＷＯＲＫ ＬＩＮＫＡＧＥ ＲＥＱＵＩＲＥＤ","color":"yellow"},"／／"]

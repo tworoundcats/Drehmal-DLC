@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＬＯＣＡＴＯＲ ＤＩＳＰＥＮＳＥＤ， ＰＬＥＡＳＥ ＰＥＲＦＯＲＭ ＭＡＮＵＡＬ ＲＥＢＯＯＴ ＯＮ－ＳＩＴＥ","color":"yellow"},{"text":"／／"}]
-schedule function terminus:gifts/1/8 0.5s

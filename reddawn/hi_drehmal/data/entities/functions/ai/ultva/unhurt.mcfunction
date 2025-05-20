@@ -1,1 +1,0 @@
-bossbar set minecraft:ultva color purple

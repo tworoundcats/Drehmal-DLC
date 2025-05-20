@@ -1,1 +1,0 @@
-bossbar set health name {"text":"The Vehrniis","obfuscated":false,"color":"white"}

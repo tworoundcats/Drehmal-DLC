@@ -1,1 +1,0 @@
-bossbar set minecraft:health color purple

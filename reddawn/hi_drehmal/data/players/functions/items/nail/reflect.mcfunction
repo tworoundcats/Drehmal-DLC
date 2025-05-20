@@ -1,1 +1,0 @@
-execute at @s as @e[type=#entities:proj,distance=..5,tag=!reflected] run function players:items/nail/reflect2

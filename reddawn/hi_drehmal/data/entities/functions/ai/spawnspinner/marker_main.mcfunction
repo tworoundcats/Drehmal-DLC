@@ -1,1 +1,0 @@
-execute at @e[tag=spawnspinner] if score @e[tag=spawnspinner,distance=0,limit=1] spawnspinnerID = @s spawnspinnerID run tp ~ ~ ~

@@ -1,1 +1,0 @@
-place template minecraft:scarecrow

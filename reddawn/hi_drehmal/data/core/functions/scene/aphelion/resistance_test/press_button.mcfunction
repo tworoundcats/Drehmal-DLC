@@ -1,1 +1,0 @@
-execute unless score #resist_beam bool matches ..-1 run function core:scene/aphelion/resistance_test/check_state

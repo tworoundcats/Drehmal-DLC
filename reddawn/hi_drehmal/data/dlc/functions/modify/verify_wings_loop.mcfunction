@@ -1,1 +1,0 @@
-schedule function dlc:modify/verify_wings 0.2s

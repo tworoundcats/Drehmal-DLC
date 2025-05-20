@@ -1,1 +1,0 @@
-execute positioned -1654 66 2240 run forceload remove ~ ~

@@ -1,2 +1,0 @@
-execute unless score @p[scores={linkingHorse=1}] horseOwnerID = @s horseOwnerID at @s run function players:avhorse/linking/unlink_failed
-execute if score @p[scores={linkingHorse=1}] horseOwnerID = @s horseOwnerID at @s run function players:avhorse/linking/unlink_horse

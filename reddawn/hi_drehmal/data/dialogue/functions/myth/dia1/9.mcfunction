@@ -1,1 +1,0 @@
-tellraw @a {"text":"The voice vanishes.","italic":true,"color":"dark_gray"}

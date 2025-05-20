@@ -1,1 +1,0 @@
-damage @s 24 minecraft:truefear

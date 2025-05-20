@@ -1,1 +1,0 @@
-execute if entity @s[nbt={Item:{tag:{spm:{type:death}}}}] run function #spm:death

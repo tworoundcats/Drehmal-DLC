@@ -1,1 +1,0 @@
-give @s porkchop{CustomModelData:1,display:{Name:'{"extra":[{"italic":false,"color":"dark_green","text":"Rotten Meat"}],"text":""}'}}

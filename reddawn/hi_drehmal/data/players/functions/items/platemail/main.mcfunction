@@ -1,1 +1,0 @@
-execute unless entity @s[tag=platemailused] if score @s hp_percent matches ..20 at @s rotated as @s run function players:items/platemail/boom

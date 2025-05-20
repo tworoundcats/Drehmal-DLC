@@ -1,1 +1,0 @@
-execute as @e[tag=silenced] run function players:items/obv/remove_silence_2

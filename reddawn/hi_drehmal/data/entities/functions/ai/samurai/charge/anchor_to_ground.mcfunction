@@ -1,2 +1,0 @@
-scoreboard players reset #used temp
-execute positioned ~ ~ ~ unless score #used temp matches 1 store success score #used temp positioned ~ 161 ~ rotated 0 0 run function entities:ai/samurai/charge/corcle_start

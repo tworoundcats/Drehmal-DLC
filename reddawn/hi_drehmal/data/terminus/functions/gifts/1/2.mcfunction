@@ -1,2 +1,0 @@
-tellraw @a [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] "},{"text":"／／"},{"text":"ＰＥＲＦＯＲＭＩＮＧ ＴＲＡＶＥＬ ＮＥＴＷＯＲＫ ＤＩＡＧＮＯＳＴＩＣＳ","color":"white"},{"text":"／／"}]
-schedule function terminus:gifts/1/3 5s

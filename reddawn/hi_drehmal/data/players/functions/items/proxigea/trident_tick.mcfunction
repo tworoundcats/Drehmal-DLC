@@ -1,1 +1,0 @@
-execute unless entity @s[tag=proxigea_nopart] run function players:items/proxigea/trident_tick2

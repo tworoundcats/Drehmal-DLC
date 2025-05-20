@@ -1,1 +1,0 @@
-execute if predicate spm:location/bastion if predicate spm_cf:mob/berserker/replace_rate run function spm:mob/berserker/replace

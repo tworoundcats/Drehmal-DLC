@@ -1,1 +1,0 @@
-loot spawn ~ ~ ~ loot spm_cf:mob/bastion_guard

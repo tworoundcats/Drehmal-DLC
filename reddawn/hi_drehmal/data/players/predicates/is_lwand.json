@@ -1,9 +1,0 @@
-  [
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Item:{tag:{lichen_wand:1b}}}"
-      }
-    }
-  ]

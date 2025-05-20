@@ -1,1 +1,0 @@
-bossbar set exec color red

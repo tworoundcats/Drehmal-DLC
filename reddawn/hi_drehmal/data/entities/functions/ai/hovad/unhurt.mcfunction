@@ -1,1 +1,0 @@
-bossbar set minecraft:hovad color red

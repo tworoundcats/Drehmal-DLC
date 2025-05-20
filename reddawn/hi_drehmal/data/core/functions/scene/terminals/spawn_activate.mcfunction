@@ -1,1 +1,0 @@
-schedule function core:scene/terminals/spawn1 2s

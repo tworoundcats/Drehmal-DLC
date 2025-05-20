@@ -1,1 +1,0 @@
-summon skeleton ~ ~ ~ {CustomName:'{"text":"khive mob"}',Tags:["lodahr_mob"]}

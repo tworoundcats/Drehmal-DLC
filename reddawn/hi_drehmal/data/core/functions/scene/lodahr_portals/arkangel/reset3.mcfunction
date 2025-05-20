@@ -1,1 +1,0 @@
-execute in lodahr positioned 1117 78 -56 run kill @e[type=armor_stand,distance=..10,tag=unloaded]

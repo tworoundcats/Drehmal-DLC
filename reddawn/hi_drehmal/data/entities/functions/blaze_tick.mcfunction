@@ -1,1 +1,0 @@
-execute if entity @s[tag=ghast_fireballs] run function entities:ai/ghast_blaze

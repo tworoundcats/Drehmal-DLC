@@ -1,1 +1,0 @@
-effect give @s strength infinite 255 true

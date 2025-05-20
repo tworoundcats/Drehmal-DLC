@@ -1,1 +1,0 @@
-execute unless entity @s[tag=owner_tagged] run function entities:misc/sfire_owner

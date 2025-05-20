@@ -1,1 +1,0 @@
-damage @s[tag=!emissary] 12.5 minecraft:primalenergy by @p

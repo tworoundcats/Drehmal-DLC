@@ -1,2 +1,0 @@
-execute if score #33554432x bool matches 1 positioned ~33554432 ~ ~ run function players:spawn/x/16777216
-execute if score #33554432x bool matches 0 positioned ~ ~ ~ run function players:spawn/x/16777216

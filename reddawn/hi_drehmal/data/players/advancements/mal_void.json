@@ -1,7 +1,0 @@
-{
-    "criteria": {
-        "command": {
-            "trigger": "minecraft:impossible"
-        }
-    }
-}

@@ -1,1 +1,0 @@
-scoreboard players set #scarecrow bool 1
