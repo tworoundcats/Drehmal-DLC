@@ -3,6 +3,7 @@ execute if entity @s[x=-1563,y=75,z=-471,distance=..60] run function players:mus
 execute if entity @s[x=-2976,y=145,z=-192,distance=..55] run function players:music/ebonrun
 execute if entity @s[x=-2717,y=66,z=-1770,distance=..100] run function players:music/athrah
 execute if entity @s[x=-1725,y=155,z=1882,distance=..60] run function players:music/nimahj
+execute if entity @s[predicate=players:locations/shatterhorn_gulch] run function players:music/shatterhorn
 execute if entity @s[x=-2170,y=76,z=3659,distance=..80] run function players:music/tharxax
 execute if entity @s[x=-21,y=72,z=5273,distance=..60] run function players:music/mohta
 execute if entity @s[x=2276,y=60,z=2463,distance=..60] run function players:music/gozak

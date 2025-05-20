@@ -120,6 +120,7 @@ execute if score @s avpod.menu_press matches 153 run function players:avpod/trac
 execute if score @s avpod.menu_press matches 154 run function players:avpod/tracks/hotv
 execute if score @s avpod.menu_press matches 155 run function players:avpod/tracks/emissary
 execute if score @s avpod.menu_press matches 156 run function players:avpod/tracks/credits
+execute if score @s avpod.menu_press matches 157 run function players:avpod/tracks/shatterhorn
 
 execute if score @s avpod.menu_press matches 201 run function players:avpod/playlists/add/1
 execute if score @s avpod.menu_press matches 202 run function players:avpod/playlists/add/2

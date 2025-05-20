@@ -22,7 +22,7 @@ execute unless entity @s[tag=openedAvpod] run function players:avpod/firstmessag
 execute if entity @s[tag=openedAvpod] run function players:avpod/tracks/disp
 tag @s add openedAvpod
 tellraw @s " "
-tellraw @s "All music credit to Chris Nesja and Penngo"
+tellraw @s "All music credit to Chris Nesja, Penngo and waterflow"
 tellraw @s " "
 
 tellraw @s ["","-.-.-.-.-.-.-.-",{"text":" Av","color":"yellow"},{"text":"Pod ","bold":true,"color":"light_purple"},"-.-.-.-.-.-.-.-"]

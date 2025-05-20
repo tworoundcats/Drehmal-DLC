@@ -65,6 +65,8 @@ execute if score #songid temp matches 31 run tellraw @s [""," -",{"text":"[True 
 
 execute if score #songid temp matches 32 run tellraw @s [""," -",{"text":"[Earn Your Glory]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 132"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"The Foundry","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
+execute if score #songid temp matches 57 run tellraw @s [""," -",{"text":"[Fate of the Fettered]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 157"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Shatterhorn Gulch","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+
 execute if score #songid temp matches 33 run tellraw @s [""," -",{"text":"[Nascence]","color":"green","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 133"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Lodahr Ambience","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
 execute if score #songid temp matches 34 run tellraw @s [""," -",{"text":"[Gloom]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 134"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Lodahr Ambience","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
@@ -112,6 +114,8 @@ execute if score #songid temp matches 54 run tellraw @s [""," -",{"text":"[Befor
 execute if score #songid temp matches 55 run tellraw @s [""," -",{"text":"[At The Edge of Oblivion]","color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 155"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"The Emissary of the Void","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
 execute if score #songid temp matches 56 run tellraw @s [""," -",{"text":"[Death of a World]","color":"white","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 156"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"The End","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+
+
 
 execute if score #songid temp matches 1.. run data remove storage drehmal:players tempSongList[0]
 execute if score #listloop temp matches 1.. run function players:avpod/listloop1

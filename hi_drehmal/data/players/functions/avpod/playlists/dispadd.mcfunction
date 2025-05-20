@@ -62,6 +62,8 @@ execute if score #id temp matches 31 run tellraw @s [""," -",{"text":"[True Cata
 
 execute if score #id temp matches 32 run tellraw @s [""," -",{"text":"[Earn Your Glory]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 232"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"The Foundry","color":"aqua"},"\n",{"text":"Click to add to your Playlist!","color":"yellow"}]}},"-"]
 
+execute if score #id temp matches 57 run tellraw @s [""," -",{"text":"[Fate of the Fettered]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 157"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Shatterhorn Gulch","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+
 execute if score #id temp matches 33 run tellraw @s [""," -",{"text":"[Nascence]","color":"green","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 233"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Lodahr Ambience","color":"aqua"},"\n",{"text":"Click to add to your Playlist!","color":"yellow"}]}},"-"]
 
 execute if score #id temp matches 34 run tellraw @s [""," -",{"text":"[Gloom]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 234"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Lodahr Ambience","color":"aqua"},"\n",{"text":"Click to add to your Playlist!","color":"yellow"}]}},"-"]
