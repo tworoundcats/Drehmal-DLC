@@ -14,4 +14,4 @@ execute if predicate entities:hurt run scoreboard players operation #rand temp %
 execute if score #rand temp matches 0..3 positioned as @s if predicate entities:hurt run playsound minecraft:custom.metal player @a ~ ~ ~ 1 1.8
 execute if score #rand temp matches 3.. positioned as @s if predicate entities:hurt run playsound minecraft:custom.metal player @a ~ ~ ~ 1 2
 
-execute positioned as @s if predicate entities:hurt run particle minecraft:electric_spark ~ ~1.5 ~ 0.5 0.8 0.5 0 50
+execute unless score #low_particles? bool matches 1 at @s if predicate entities:hurt run particle minecraft:electric_spark ~ ~1 ~ 0.4 0.6 0.4 0 40

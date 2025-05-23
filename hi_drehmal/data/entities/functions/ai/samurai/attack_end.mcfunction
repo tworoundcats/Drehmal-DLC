@@ -13,4 +13,4 @@ function entities:ai/samurai/sword_equip
 execute if score @s ai_timer matches 10 run effect give @s minecraft:resistance 3
 attribute @s minecraft:generic.knockback_resistance modifier remove 52352-523523-53252-523523-52353
 attribute @s minecraft:generic.movement_speed modifier remove 8978798-523523-53252-523523-52353
-bossbar set sentry color white
+#bossbar set sentry color white

@@ -1,7 +1,7 @@
 scoreboard players set #loop temp 20
 execute positioned as @e[type=marker,tag=samurai_dash_loc,predicate=entities:sam_id] facing entity @s feet rotated ~ 0 run function entities:ai/samurai/charge/find_air_loop
-playsound minecraft:dcustom.entity.evoker.cast_spell hostile @a[distance=..30] ~ ~ ~ 0.3 1.5 0.3
-playsound minecraft:custom.frenzy.end hostile @a ~ ~ ~ 3 0.75
+playsound minecraft:dcustom.entity.evoker.cast_spell block @a[distance=..30] ~ ~ ~ 0.3 1.5 0.3
+playsound minecraft:custom.frenzy.end block @a ~ ~ ~ 3 0.75
 execute facing entity @s feet run function entities:ai/samurai/charge/partraycast
 
 summon marker ~ ~0.5 ~ {Tags:["light_temp"]}

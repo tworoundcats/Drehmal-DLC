@@ -1,4 +1,4 @@
-function entities:ai/samurai/bossbar/tick
+execute as @s run function entities:ai/samurai/bossbar/tick
 execute store result score @s hp_dmg run data get entity @s Health
 execute if entity @s[tag=!sam_angy,scores={hp_dmg=..200}] run function entities:ai/samurai/get_mad
 execute unless score @s ai_state matches 1.. run scoreboard players add @s ai_timer 1

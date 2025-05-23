@@ -4,7 +4,7 @@ execute if score @s ai_timer matches 1 run data merge entity @s {NoAI:1b}
 execute if score @s ai_timer matches 1 run function entities:ai/samurai/gun_equip
 
 execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run attribute @s minecraft:generic.movement_speed base set 0
-execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run playsound minecraft:dcustom.entity.evoker.cast_spell hostile @a ~ ~ ~ 1 0
+execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run playsound minecraft:dcustom.entity.evoker.cast_spell block @a ~ ~ ~ 1 0
 execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 25 run function entities:ai/samurai/machine_gun_bullets_angy/shoot
 execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 30 run function entities:ai/samurai/machine_gun_bullets_angy/shoot
 execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 35 run function entities:ai/samurai/machine_gun_bullets_angy/shoot
@@ -34,7 +34,7 @@ execute if entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity 
 
 
 execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run attribute @s minecraft:generic.movement_speed base set 0
-execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run playsound minecraft:dcustom.entity.evoker.cast_spell hostile @a ~ ~ ~ 1 0
+execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 20 run playsound minecraft:dcustom.entity.evoker.cast_spell block @a ~ ~ ~ 1 0
 execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 25 run function entities:ai/samurai/machine_gun_bullets/shoot
 execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 30 run function entities:ai/samurai/machine_gun_bullets/shoot
 execute unless entity @s[tag=sam_angy] anchored eyes positioned ^ ^ ^ facing entity @a[limit=1] eyes if score @s ai_timer matches 35 run function entities:ai/samurai/machine_gun_bullets/shoot
