@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"Very interesting. Based on their apparent ages, it seems like the items have been steadily accruing energy over time, and they've done so at a notably higher rate than similar items above the water's surface."}]
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:majorquest/5 11s

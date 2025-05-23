@@ -1,4 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Find Artifacts for Major","color":"white"}]
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-function quests:majorquest/summonartifacts
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"The objects should be towards the "},{"text":"bottom","color":"yellow"},{"text":" of the pools, probably "},{"text":"glowing faintly","color":"yellow"},{"text":". I'd count just about anything shiny you find down there!"}]
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:majorquest/accept5 6s

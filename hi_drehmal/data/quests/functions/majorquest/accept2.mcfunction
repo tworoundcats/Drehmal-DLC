@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst2] run tellraw @s ["","<Major> ",{"text":"The only problem is that they're all located ","color":"dark_green"},{"text":"underwater ","color":"green"},{"text":"and I uh.. can't swim","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst2] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"I've scoured the whole place and haven't been able to find these missing artifacts, so there's only one place they could all be: "},{"text":"underwater","color":"yellow"},{"text":"."}]
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:majorquest/accept3 3s
+schedule function quests:majorquest/accept3 7s

@@ -1,5 +1,5 @@
 effect clear @s slowness
 tag @s add qst2
-execute positioned ~ ~ ~ as @p[tag=qst2] run tellraw @s ["","<Major> ",{"text":"I've been studying this cave and I've located ","color":"dark_green"},{"text":"3","color":"green"},{"text":" artifacts in this cave","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst2] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"I've been studying this cave, looking for any "},{"text":"artifacts","color":"yellow"},{"text":" blessed by the divine magic in the area. As far as I can tell, there should be "},{"text":"three more","color":"yellow"},{"text":" of them."}]
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:majorquest/accept2 3s
+schedule function quests:majorquest/accept2 7s
