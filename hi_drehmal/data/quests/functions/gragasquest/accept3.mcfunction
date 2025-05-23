@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst5] at @s run tellraw @s ["","<Gragas> ",{"text":"If you can get me some, I'll reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst5] at @s run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> I don't know much about Vayniklah, but if her mead is as "},{"text":"legendary","color":"yellow"},{"text":" as it sounds, then I have GOT to get my hands on some of that!"}]
 execute positioned ~ ~ ~ as @p[tag=qst5] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:gragasquest/accept4 3s
+schedule function quests:gragasquest/accept4 8s
