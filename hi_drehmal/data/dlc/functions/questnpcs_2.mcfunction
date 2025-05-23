@@ -2,7 +2,7 @@ execute positioned 505.51 67.00 1835.52 unless entity @e[type=villager,name="Sta
 
 execute positioned 880.51 66.06 485.53 unless entity @e[type=villager,name="Archeologist Major"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Archeologist Major"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 1069.63 66.00 1964.44 unless entity @e[type=villager,name="Cinder"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},CustomName:'[{"text":"Cinder"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned 1069.63 66.00 1964.44 unless entity @e[type=villager,name="Cinder",distance=..2] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},CustomName:'[{"text":"Cinder"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 execute positioned -2718.36 64.00 -1657.49 unless entity @e[type=villager,name="Melon Farmer Casey"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:farmer,level:99},CustomName:'[{"text":"Melon Farmer Casey"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 

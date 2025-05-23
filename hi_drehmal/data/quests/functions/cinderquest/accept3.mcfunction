@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst3] at @s run tellraw @s ["","<Cinder> ",{"text":"I saw them go in to take a nap in the ","color":"dark_green"},{"text":"purple ","color":"green"},{"text":" room","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst3] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Cinder","color":"dark_red"},{"text":"> ","color":"white"},{"text":"All you have to do is walk into the "},{"text":"magenta room","color":"dark_purple"},{"text":" where he's sleeping, stab him to death, and come get your money. Simple as. "},{"text":"Magenta","bold":true},{"text":", not pink or purple, yeah?"}]
 execute positioned ~ ~ ~ as @p[tag=qst3] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:cinderquest/accept4 3s
+schedule function quests:cinderquest/accept4 6s
