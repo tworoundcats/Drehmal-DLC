@@ -243,9 +243,9 @@ execute if score count_all towers matches 0.. run execute positioned 4136 42 -52
 
 
 #Quests
-execute positioned 505.51 67.00 1835.52 as @e[name="Stablekeeper Keeko",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..4] run function quests:keekoquest/finish
-execute positioned 505.51 67.00 1835.52 as @e[name="Stablekeeper Keeko",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst,tag=!qst_e] run function quests:keekoquest/base
-execute positioned 505.51 67.00 1835.52 as @e[name="Stablekeeper Keeko",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..4] run function quests:keekoquest/finish
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst,tag=!qst_e] run function quests:keekoquest/base
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qend] if entity @a[distance=..2,tag=qst2,tag=!qst2_e] run execute positioned ~ ~ ~ as @p[tag=qst2] if predicate players:holding/quest/majorartifact run function quests:majorquest/detect
 execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..2,tag=!qst2,tag=!qst2_e] run function quests:majorquest/base
