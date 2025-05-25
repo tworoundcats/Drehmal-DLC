@@ -280,9 +280,9 @@ execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villag
 execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
 execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
-execute positioned 2290.49 50.00 2488.49 as @e[name="Music God Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst9,tag=!qst9_e] run execute positioned ~ ~ ~ as @p[tag=qst9] if predicate players:holding/avpod run function quests:chrisquest/detect
-execute positioned 2290.49 50.00 2488.49 as @e[name="Music God Chris",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
-execute positioned 2290.49 50.00 2488.49 as @e[name="Music God Chris",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst9,tag=!qst9_e] run execute positioned ~ ~ ~ as @p[tag=qst9] if predicate players:holding/avpod run function quests:chrisquest/detect
+execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
+execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned 6105.43 77.00 -1144.57 as @e[name="gamer",type=villager,tag=!qend,tag=qstarted,tag=!tempd] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] if score #lighthouse int matches 0 run execute positioned ~ ~ ~ as @p[tag=qst10] run function quests:gamerquest/finish
 execute positioned 6105.43 77.00 -1144.57 as @e[name="gamer",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst10,tag=!qst10_e] run function quests:gamerquest/base

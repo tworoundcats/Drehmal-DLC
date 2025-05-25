@@ -15,7 +15,7 @@ execute positioned 3827.52 69.00 3577.51 unless entity @e[type=villager,name="Dr
 
 execute positioned -1725.48 161.00 1897.49 unless entity @e[type=villager,name="General Dome"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"General Dome"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 4138.50 65.00 1755.5 unless entity @e[type=villager,name="Music God Chris"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fletcher,level:99},CustomName:'[{"text":"Music God Chris"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned 4138.50 65.00 1755.5 unless entity @e[type=villager,name="Music Man Chris"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fletcher,level:99},CustomName:'[{"text":"Music Man Chris"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[-90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 
 execute positioned 6105.43 77.00 -1144.57 unless entity @e[type=villager,name="gamer"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:butcher,level:99},CustomName:'[{"text":"gamer"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}

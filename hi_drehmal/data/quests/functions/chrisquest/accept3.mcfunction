@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tellraw @s ["","<Chris> ",{"text":"If you can get me one, I'll reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tellraw @s ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> You seem like you've been around quite a bit. If you could find one of these and bring it back here, I'd be more than happy to buy it from you."}]
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:chrisquest/accept4 3s
+schedule function quests:chrisquest/accept4 6s

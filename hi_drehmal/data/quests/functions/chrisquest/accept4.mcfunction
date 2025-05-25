@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Get Portable Music Player for Chris","color":"white"}]
-execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst9] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tellraw @s ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> I can't say for certain where you might find one, but it'd for sure be more than "},{"text":"one day's journey","italic":true},{"text":" from here. Maybe someplace industrial, with a hefty amount of "},{"text":"cobble and smog","italic":true},{"text":"?"}]
+execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:chrisquest/accept5 7s

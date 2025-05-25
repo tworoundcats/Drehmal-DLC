@@ -1,3 +1,3 @@
 scoreboard players reset @s tgrptch.chris_accept
-tellraw @s {"text":"Sure, what's up?","color":"gray"}
+tellraw @s {"text":"Quest Accepted","color":"gray"}
 function quests:chrisquest/accept
