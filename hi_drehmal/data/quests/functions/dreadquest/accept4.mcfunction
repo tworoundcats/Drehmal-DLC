@@ -1,4 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Help Dreadlock With His Experiment","color":"white"}]
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute as @e[type=villager,name="Dreadlock"] run tag @s add qstarted
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Dredd'Lohk","color":"dark_aqua"},{"text":"> ","color":"white"},{"text":"He'd planned to steal that fickle blade, albeit for a more just reason. I learned he'd mapped out the Tidal Palace in preparation, but it's unknown where "},{"text":"Masayoshi","color":"yellow"},{"text":" is being stored nowadays."}]
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:dreadquest/accept5 7s

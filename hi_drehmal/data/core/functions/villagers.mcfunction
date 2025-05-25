@@ -269,11 +269,11 @@ execute positioned -2979.47 141.00 -159.46 as @e[name="Fletcher Mouton",type=vil
 execute positioned -2985.31 141.00 -92.09 if entity @a[distance=..10] unless score #flintgolem int matches 1 run function quests:moutonquest/golem_ai
 execute positioned -2985.31 141.00 -92.09 run execute as @e[tag=moutongolem] run schedule function quests:moutonquest/golemdrops 7t
 
-execute positioned 3827.52 69.00 3577.51 as @e[name="Dreadlock",type=villager,tag=qend] if predicate players:holding/masayoshi if entity @a[distance=..4,tag=!qst7_e] run execute as @p unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[name="Dreadlock",type=villager,tag=qend,limit=1] weapon.mainhand
-execute positioned 3827.52 69.00 3577.51 as @e[name="Dreadlock",type=villager,tag=qend] if predicate players:holding/masayoshi if entity @a[distance=..4,tag=!qst7_e] run execute as @p if predicate players:holding/masayoshi run item replace entity @e[name="Dreadlock",type=villager,tag=qend] weapon.mainhand with air
-execute positioned 3827.52 69.00 3577.51 as @e[name="Dreadlock",type=villager,tag=!qend,tag=qstarted] if entity @a[distance=..3,tag=qst7,tag=!qst7_e] run execute positioned ~ ~ ~ as @p[tag=qst7] if predicate players:holding/masayoshi run function quests:dreadquest/detect
-execute positioned 3827.52 69.00 3577.51 as @e[name="Dreadlock",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst7,tag=!qst7_e] run function quests:dreadquest/base
-execute positioned 3827.52 69.00 3577.51 as @e[name="Dreadlock",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=qend] if predicate players:holding/masayoshi if entity @a[distance=..4,tag=!qst7_e] run execute as @p unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[name="Dredd'Lohk",type=villager,tag=qend,limit=1] weapon.mainhand
+execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=qend] if predicate players:holding/masayoshi if entity @a[distance=..4,tag=!qst7_e] run execute as @p if predicate players:holding/masayoshi run item replace entity @e[name="Dredd'Lohk",type=villager,tag=qend] weapon.mainhand with air
+execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qend,tag=qstarted] if entity @a[distance=..3,tag=qst7,tag=!qst7_e] run execute positioned ~ ~ ~ as @p[tag=qst7] if predicate players:holding/masayoshi run function quests:dreadquest/detect
+execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst7,tag=!qst7_e] run function quests:dreadquest/base
+execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
 execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
