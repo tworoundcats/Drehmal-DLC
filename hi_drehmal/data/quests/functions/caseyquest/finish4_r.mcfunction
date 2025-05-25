@@ -58,7 +58,7 @@ execute positioned ~ ~ ~ as @p[tag=qst4] at @s run give @s mythicmetals:silver_i
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tag @s add qst4_e
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tag @s remove qst4
 execute positioned -2726 66 -1796 run forceload remove ~ ~
-
 execute positioned -2718.36 64.00 -1657.49 as @e[name="Melon Masher Casey",type=villager] run tag @s remove tempd
 
 
+scoreboard players reset #caseyquest bool
