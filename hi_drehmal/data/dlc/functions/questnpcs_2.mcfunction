@@ -10,7 +10,7 @@ execute positioned 2217.55 111.00 -778.46 unless entity @e[type=villager,name="D
 
 execute positioned -2979.47 141.00 -159.46 unless entity @e[type=villager,name="Fletcher Mouton"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fletcher,level:99},CustomName:'[{"text":"Fletcher Mouton"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 3827.52 69.00 3577.51 unless entity @e[type=villager,name="Dreadlock"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Dreadlock"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned 3827.52 69.00 3577.51 unless entity @e[type=villager,name="Dredd'Lohk"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Dredd\'Lohk"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 
 execute positioned -1725.48 161.00 1897.49 unless entity @e[type=villager,name="General Dome"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"General Dome"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}

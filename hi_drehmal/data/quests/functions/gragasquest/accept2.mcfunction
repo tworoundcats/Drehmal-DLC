@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst5] run tellraw @s ["","<Gragas> ",{"text":"And I've always wanted a taste","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst5] run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> It did the trick, sure, but I'm sure there's something better. Barkeep said something about it last night - said his stuff was nearly as strong as "},{"text":"Vayniklah's finest","color":"yellow"},{"text":"."}]
 execute positioned ~ ~ ~ as @p[tag=qst5] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:gragasquest/accept3 3s
+schedule function quests:gragasquest/accept3 9s
