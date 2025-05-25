@@ -1,0 +1,1 @@
+execute if block -2726 66 -1796 air run scoreboard players set #caseyquest bool 1

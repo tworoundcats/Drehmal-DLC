@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"Even a century after the Goddess' disappearance, the Kiln is still too full of prying eyes and goody two-shoes religious pilgrims. So that leaves "},{"text":"Johmund","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
 schedule function quests:caseyquest/accept5 6s

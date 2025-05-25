@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"<"},{"text":"Casey","color":"dark_green"},{"text":"> He was so beside himself, in fact, that he left the door to his caravan unlocked! I'm sure he won't notice anything\u2014at least, not until he's a long way away from Gozak."}]
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
 schedule function quests:caseyquest/finish3 6s

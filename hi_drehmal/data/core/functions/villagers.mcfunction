@@ -255,9 +255,8 @@ execute positioned 1068.89 66.00 1964.35 as @e[name="Cinder",type=villager,tag=!
 execute positioned 1068.89 66.00 1964.35 as @e[name="Cinder",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 execute positioned 1092.56 66.00 1967.79 as @e[name="Slypador",type=villager,distance=..4] unless score #sly int matches 1 run execute positioned ~ ~ ~ as @p[tag=qst3] run schedule function quests:cinderquest/why 5t
 
-execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager,tag=!qend,tag=qstarted] if entity @a[distance=..5,tag=qst4,tag=!qst4_e] run forceload add -2726 -1796
-execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager,tag=!qend,tag=qstarted,tag=!tempd] if entity @a[distance=..3,tag=qst4,tag=!qst4_e] if block -2726 66 -1796 air run execute positioned ~ ~ ~ as @p[tag=qst4] run function quests:caseyquest/finish
-execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager] unless entity @a[distance=..5,tag=qst4,tag=!qst4_e] run forceload remove -2726 -1796
+execute unless score #caseyquest bool matches 1 positioned -2726 66 -1796 if entity @a[distance=..5] run function quests:caseyquest/tick
+execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager,tag=!qend,tag=qstarted,tag=!tempd] if entity @a[distance=..3,tag=qst4,tag=!qst4_e] if score #caseyquest bool matches 1 positioned ~ ~ ~ as @p[tag=qst4] run function quests:caseyquest/finish
 execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst4,tag=!qst4_e] run function quests:caseyquest/base
 execute positioned 2290.49 50.00 2488.49 as @e[name="Melon Masher Casey",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
