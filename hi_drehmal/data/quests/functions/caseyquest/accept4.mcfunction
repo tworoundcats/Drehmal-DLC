@@ -1,5 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Sabotage Johmund","color":"white"}]
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute as @e[type=villager,name="Melon Farmer Casey"] run tag @s add qstarted
-execute positioned -2726 66 -1796 run forceload add ~ ~
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"Even a century after the Goddess' disappearance, the Kiln is still too full of prying eyes and goody two-shoes religious pilgrims. So that leaves "},{"text":"Johmund","color":"yellow"},{"text":"."}]
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:caseyquest/accept5 6s
