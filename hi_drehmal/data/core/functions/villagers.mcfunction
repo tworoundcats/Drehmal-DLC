@@ -293,18 +293,18 @@ execute positioned 31.48 67.00 5263.55 as @e[name="Russell",type=villager,tag=!q
 execute positioned 31.48 67.00 5263.55 as @e[name="Russell",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 execute positioned -46.48 65.00 5338.52 as @e[name="Russell's Friend",type=villager,tag=!collect] if entity @a[distance=..3,tag=qst11,tag=!qst11_e] run function quests:russellquest/givepowder
 
-execute positioned 4167.51 66.00 1777.46 as @e[name="Rift",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst12f] run execute positioned ~ ~ ~ as @p[tag=qst12f] unless score #DLC repeatable matches 1 run function quests:riftquest/1
-execute positioned 4167.51 66.00 1777.46 as @e[name="Rift",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst12f] run execute positioned ~ ~ ~ as @p[tag=qst12f] if score #DLC repeatable matches 1 run function quests:riftquest/1_r
+execute positioned -2719.50 64.00 -1641.50 as @e[name="Rift Technician",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst12f] run execute positioned ~ ~ ~ as @p[tag=qst12f] unless score #DLC repeatable matches 1 run function quests:riftquest/1
+execute positioned -2719.50 64.00 -1641.50 as @e[name="Rift Technician",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst12f] run execute positioned ~ ~ ~ as @p[tag=qst12f] if score #DLC repeatable matches 1 run function quests:riftquest/1_r
 
-execute positioned 4167.51 66.00 1777.46 as @e[name="Rift",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst12,tag=!qst12_e] run function quests:riftquest/base
-execute positioned 4167.51 66.00 1777.46 as @e[name="Rift",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=!qst12_e] unless score #DLC repeatable matches 1 if predicate players:wearing_riftboots run function quests:riftquest/rifttp
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=!qst12_e] if score #DLC repeatable matches 1 if predicate players:wearing_riftboots run function quests:riftquest/rifttp_r
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=qst12_e] if predicate players:wearing_riftboots run function quests:riftquest/rifttp_f
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..14] run scoreboard players add @s timer 1
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run execute at @s as @s[tag=qst12_e] run playsound minecraft:block.portal.ambient player @s ~ ~ ~ 1 0
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run execute at @s as @s[tag=!qst12_e] run playsound minecraft:block.portal.ambient player @s ~ ~ ~ 5 0
-execute positioned 4167.50 67.50 1784.46 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run scoreboard players reset @s timer
+execute positioned -2719.50 64.00 -1641.50 as @e[name="Rift Technician",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst12,tag=!qst12_e] run function quests:riftquest/base
+execute positioned -2719.50 64.00 -1641.50 as @e[name="Rift Technician",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=!qst12_e] unless score #DLC repeatable matches 1 if predicate players:wearing_riftboots run function quests:riftquest/rifttp
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=!qst12_e] if score #DLC repeatable matches 1 if predicate players:wearing_riftboots run function quests:riftquest/rifttp_r
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..1] run execute as @p[distance=..2,tag=qst12_e] if predicate players:wearing_riftboots run function quests:riftquest/rifttp_f
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if entity @a[distance=..14] run scoreboard players add @s timer 1
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run execute at @s as @s[tag=qst12_e] run playsound minecraft:block.portal.ambient player @s ~ ~ ~ 1 0
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run execute at @s as @s[tag=!qst12_e] run playsound minecraft:block.portal.ambient player @s ~ ~ ~ 5 0
+execute positioned -2719.50 65.50 -1635.50 as @e[tag=emmisary_ball1,type=marker] if score @s timer matches 32.. run scoreboard players reset @s timer
 
 
 

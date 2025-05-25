@@ -22,9 +22,9 @@ execute positioned 6105.43 77.00 -1144.57 unless entity @e[type=villager,name="g
 
 execute positioned 31.48 67.00 5263.55 unless entity @e[type=villager,name="Russell"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cleric,level:99},CustomName:'[{"text":"Russell"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned -2720.50 64.00 -1641.50 unless entity @e[type=villager,name="Rift"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Rift"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
-execute positioned 4167.50 67.50 1784.46 run summon marker ~ ~ ~ {Tags:["emmisary_ball1"],Rotation:[0f,20f]}
-execute positioned 4167.50 67.50 1784.46 run summon marker ~ ~ ~ {Tags:["emmisary_ball2"],Rotation:[0f,-90f]}
+execute positioned -2719.50 64.00 -1641.50 unless entity @e[type=villager,name="Rift Technician"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Rift Technician"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned -2719.50 65.50 -1635.50 run summon marker ~ ~ ~ {Tags:["emmisary_ball1"],Rotation:[0f,20f]}
+execute positioned -2719.50 65.50 -1635.50 run summon marker ~ ~ ~ {Tags:["emmisary_ball2"],Rotation:[0f,-90f]}
 
 execute positioned -2167.52 65.00 3701.21 unless entity @e[type=villager,name="Daniel"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Daniel"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 

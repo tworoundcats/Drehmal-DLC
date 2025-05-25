@@ -1,3 +1,3 @@
 scoreboard players reset @s tgrptch.rift_accept
-tellraw @s {"text":"What is this thing behind you?","color":"gray"}
+tellraw @s {"text":"Quest Accepted","color":"gray"}
 function quests:riftquest/accept
