@@ -4,7 +4,7 @@ execute positioned 880.51 66.06 485.53 unless entity @e[type=villager,name="Arch
 
 execute positioned 1069.63 66.00 1964.44 unless entity @e[type=villager,name="Cinder",distance=..2] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},CustomName:'[{"text":"Cinder"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned -2718.36 64.00 -1657.49 unless entity @e[type=villager,name="Melon Farmer Casey"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:farmer,level:99},CustomName:'[{"text":"Melon Farmer Casey"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned 2290.49 50.00 2488.49 unless entity @e[type=villager,name="Melon Masher Casey"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:farmer,level:99},CustomName:'[{"text":"Melon Masher Casey"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 execute positioned 2217.55 111.00 -778.46 unless entity @e[type=villager,name="Drunkard Gragas"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"Drunkard Gragas"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
@@ -15,14 +15,14 @@ execute positioned 3827.52 69.00 3577.51 unless entity @e[type=villager,name="Dr
 
 execute positioned -1725.48 161.00 1897.49 unless entity @e[type=villager,name="General Dome"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"General Dome"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 2290.49 50.00 2488.49 unless entity @e[type=villager,name="Music God Chris"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fletcher,level:99},CustomName:'[{"text":"Music God Chris"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned 4138.50 65.00 1755.5 unless entity @e[type=villager,name="Music God Chris"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fletcher,level:99},CustomName:'[{"text":"Music God Chris"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 
 execute positioned 6105.43 77.00 -1144.57 unless entity @e[type=villager,name="gamer"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:butcher,level:99},CustomName:'[{"text":"gamer"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 execute positioned 31.48 67.00 5263.55 unless entity @e[type=villager,name="Russell"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cleric,level:99},CustomName:'[{"text":"Russell"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 4167.51 66.00 1777.46 unless entity @e[type=villager,name="Rift"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Rift"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned -2720.50 64.00 -1641.50 unless entity @e[type=villager,name="Rift"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Rift"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 execute positioned 4167.50 67.50 1784.46 run summon marker ~ ~ ~ {Tags:["emmisary_ball1"],Rotation:[0f,20f]}
 execute positioned 4167.50 67.50 1784.46 run summon marker ~ ~ ~ {Tags:["emmisary_ball2"],Rotation:[0f,-90f]}
 

@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"The man himself travels around, so I can't tell you for sure where he is. BUT, I do happen to know that he's got a storage shed in the beautiful "},{"text":"Jewel of Casai","color":"yellow"},{"text":"! I bet he thinks they're safe, that far away from me."}]
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:caseyquest/accept6 8s

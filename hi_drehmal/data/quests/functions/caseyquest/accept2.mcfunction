@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst4] run tellraw @s ["","<Casey> ",{"text":"His melon business is way bigger than mine and I can't get any sales","color":"dark_green"},{"text":"","color":"green"},{"text":" ","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst4] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"You see Mr. "},{"text":"Kozdro ","color":"yellow"},{"text":"over here, the "},{"text":"Melon Merchant","color":"yellow"},{"text":"? He's got some of the best stuff around, and we're going to help his business! There's only a couple other real proper merchants in the melon game these days: that good-for-nothing scammer Li over at the Kiln, and Johmund."}]
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:caseyquest/accept3 3s
+schedule function quests:caseyquest/accept3 10s
