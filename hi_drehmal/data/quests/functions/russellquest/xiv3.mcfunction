@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> But I have a hunch! If anyone would've made the expedition out to Xivrhynt, who would it be? "},{"text":"Avsohm","color":"yellow"},{"text":", of course!"}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:russellquest/xiv4 7s

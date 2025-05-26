@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I... I don't even know where to start with this one. Beasts of the Sky and Depths? A larger worm? Clearly, this ends with the Felling of the Primal Tree, so the worm must be Drehmal themself!"}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:russellquest/worm_done4 9s

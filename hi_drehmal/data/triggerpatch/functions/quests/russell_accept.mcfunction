@@ -1,3 +1,3 @@
 scoreboard players reset @s tgrptch.russell_accept
-tellraw @s {"text":"How can I help?","color":"gray"}
+tellraw @s {"text":"Quest Accepted","color":"gray"}
 function quests:russellquest/accept

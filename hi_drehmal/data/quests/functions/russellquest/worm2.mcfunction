@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I swear I overheard one of the monks say something about a "},{"text":"fifth parable","color":"yellow"},{"text":". I looked everywhere I could think, but couldn't find anything!"}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:russellquest/worm3 5s

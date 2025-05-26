@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> "},{"text":"Xivrhynt","italic":true},{"text":". Supposedly, they're the scraps of the world that the Serpent left behind while doing Their work after the Felling. They're barely ever referenced in surviving writing."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:russellquest/xiv3 7s

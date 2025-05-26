@@ -18,7 +18,7 @@ execute positioned 2290.49 50.00 2488.49 run kill @e[type=villager,distance=..2,
 
 execute positioned 6105.43 77.00 -1144.57 run kill @e[type=villager,distance=..2]
 
-execute positioned 31.48 67.00 5263.55 run kill @e[type=villager,distance=..2,name="Scholarly Russell"]
+execute positioned 31.48 67.00 5263.55 run kill @e[type=villager,distance=..2,name="Russell"]
 
 execute positioned 4138.50 65.00 1755.5 run kill @e[type=villager,distance=..2,name="Music Man Chris"]
 
