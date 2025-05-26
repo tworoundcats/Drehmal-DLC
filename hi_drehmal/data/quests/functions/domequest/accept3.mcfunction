@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s  ["","<Dome> ",{"text":"There's a maelmari hideout to the ","color":"dark_green"},{"text":"south ","color":"green"},{"text":"of here","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s  ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> The trek was gorgeous down to Mohta, but it got really risky passing through true "},{"text":"Maelmari","color":"dark_red"},{"text":" territory. I had ALMOST made it to Fort Nimahj when one of the Third General's patrols found me! They didn't take any of the writing, those brutes, but they stole "},{"text":"my only quill","color":"yellow"},{"text":"! My favorite quill! I can't finish my writing without it!"}]
 execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:domequest/accept4 3s
+schedule function quests:domequest/accept4 11s

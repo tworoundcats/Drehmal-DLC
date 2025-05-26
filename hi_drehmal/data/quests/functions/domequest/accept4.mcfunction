@@ -1,6 +1,3 @@
-execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s  ["","<Dome> ",{"text":"If you can retrieve it and bring it back to me, I shall reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
-
-execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s  ["","<Dome> ",{"text":"If you can retrieve just one and bring it back to me, I shall reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
-
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s  ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> I scurried away to safety, but it was near the "},{"text":"encampment south of here","color":"yellow"},{"text":". I'd get it back myself, but... the pen is mightier than the sword, and they've got both now! If you could help me out, I'd be very grateful."}]
 execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:domequest/accept5 3s
+schedule function quests:domequest/accept5 8s

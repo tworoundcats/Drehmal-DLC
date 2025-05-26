@@ -128,7 +128,7 @@ execute if score count_all towers matches 26.. run execute as @e[tag=!m26,type=m
 
 
 
-#New Draybel
+#New Drabyel
 execute if score count_all towers matches 0.. run execute positioned 525.95 65.00 1840.65 run execute as @e[type=villager,name="Runic Blacksmith",distance=..6,tag=!c1] run data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:emerald",Count:12},sell:{id:"mcda:mercenary_armor_helmet",Count:1,tag:{display:{Name:'["",{"text":"Mercenary Helmet","italic":false,"color":"aqua"}]',Lore:['["",{"text":"When on Head:","italic":false,"color":"gray"}]','["",{"text":"+2 Armor","italic":false,"color":"blue"}]','[""]','["",{"text":"Artisan","italic":false,"color":"aqua"}]']},AttributeModifiers:[{AttributeName:"generic.armor",Amount:2,Slot:head,UUID:[I;-12431,27504,83243,-55008]}],HideFlags:32}}}
 execute if score count_all towers matches 0.. run execute positioned 525.95 65.00 1840.65 run execute as @e[type=villager,name="Runic Blacksmith",distance=..6,tag=!c1] run data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:emerald",Count:16},sell:{id:"mcda:mercenary_armor_chestplate",Count:1,tag:{display:{Name:'["",{"text":"Mercenary Chestplate","italic":false,"color":"aqua"}]',Lore:['["",{"text":"When on Body:","italic":false,"color":"gray"}]','["",{"text":"+6 Armor","italic":false,"color":"blue"}]','[""]','["",{"text":"Artisan","italic":false,"color":"aqua"}]']},AttributeModifiers:[{AttributeName:"generic.armor",Amount:6,Slot:chest,UUID:[I;-12431,43488,105014,-86976]}],HideFlags:32}}}
 execute if score count_all towers matches 0.. run execute positioned 525.95 65.00 1840.65 run execute as @e[type=villager,name="Runic Blacksmith",distance=..6,tag=!c1] run data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:emerald",Count:14},sell:{id:"mcda:mercenary_armor_leggings",Count:1,tag:{display:{Name:'["",{"text":"Mercenary Leggings","italic":false,"color":"aqua"}]',Lore:['["",{"text":"When on Legs:","italic":false,"color":"gray"}]','["",{"text":"+5 Armor","italic":false,"color":"blue"}]','[""]','["",{"text":"Artisan","italic":false,"color":"aqua"}]']},AttributeModifiers:[{AttributeName:"generic.armor",Amount:5,Slot:legs,UUID:[I;-12431,33531,105045,-67062]}],HideFlags:32}}}
@@ -140,6 +140,7 @@ execute if score count_all towers matches 0.. run execute positioned 525.95 65.0
 
 
 #Black Forest
+#what the fuck is bro talking about
 execute if score count_all towers matches 0.. run execute positioned 3817.30 66.00 3575.33 run execute as @e[type=villager,name="Runic Blacksmith",distance=..6,tag=!c1] run tag @s add c1
 
 
@@ -276,9 +277,9 @@ execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,t
 execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst7,tag=!qst7_e] run function quests:dreadquest/base
 execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
-execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
-execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
-execute positioned -1725.48 161.00 1897.49 as @e[name="General Dome",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
+execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
+execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst9,tag=!qst9_e] run execute positioned ~ ~ ~ as @p[tag=qst9] if predicate players:holding/avpod run function quests:chrisquest/detect
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
