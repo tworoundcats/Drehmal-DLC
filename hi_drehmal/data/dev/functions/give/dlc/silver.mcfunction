@@ -1,1 +1,7 @@
 give @s mythicmetals:silver_ingot{display: {Name: '{"extra":[{"italic":false,"color":"aqua","text":"Silver Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}', '{"text":""}']}}
+#for trades
+#{id: "mythicmetals:silver_ingot",Count:1,tag:{display: {Name: '{"extra":[{"italic":false,"color":"aqua","text":"Silver Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}', '{"text":""}']}}}
+
+
+#old silver
+#give @s mythicmetals:silver_ingot{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}
