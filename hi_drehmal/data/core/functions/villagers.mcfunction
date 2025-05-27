@@ -322,8 +322,11 @@ execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,t
 execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst14] run function quests:corvidiotquest/base
 execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
-execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Vahid",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/land_salmon run function quests:vahidquest/detect
-execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Vahid",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst15,tag=!qst15_e] run function quests:vahidquest/base
-execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Vahid",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/land_salmon run function quests:tahlrosquest/detect
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/immortal_slap_fish run function quests:tahlrosquest/detect
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/lai_egg run function quests:tahlrosquest/detect_lai
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/lai_bucket run function quests:tahlrosquest/detect_lai
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst15,tag=!qst15_e] run function quests:tahlrosquest/base
+execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned -1265.29 46.00 -4060.85 if entity @a[distance=..10] unless score #gotshield bool matches 1 if score #1S timer matches 10 run particle minecraft:firework -1261.57 47.60 -4062.42 0.2 0.2 0.2 1 50 

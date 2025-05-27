@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst15] run tellraw @s ["",{"text":"<"},{"text":"Tahlros","color":"dark_red"},{"text":"> I have a great fondness for the moon llamas in Rihelma's Domain, and I've cared for a rabbit or two that wandered into my home from around Naharja. But it's time for something permanent."}]
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:tahlrosquest/accept4 8s

@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst15] run tellraw @s ["",{"text":"<"},{"text":"Tahlros","color":"dark_red"},{"text":"> We La are incredibly long-lived, and we take our job of safeguarding the moon's inhabitants very seriously. That means all of them, even the animals."}]
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:tahlrosquest/accept3 6s

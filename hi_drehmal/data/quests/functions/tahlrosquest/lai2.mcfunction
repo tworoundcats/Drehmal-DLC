@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst15] run tellraw @s ["",{"text":"<"},{"text":"Tahlros","color":"dark_red"},{"text":"> They're claiming this is... "},{"text":"Lai","color":"#FF7733"},{"text":"? As in... the Brightwyrm himself? I suppose he does look rather radiant... and feels quite warm..."}]
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst15] run schedule function quests:tahlrosquest/lai3 6s
