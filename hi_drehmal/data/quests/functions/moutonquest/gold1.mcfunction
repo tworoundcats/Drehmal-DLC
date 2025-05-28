@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @e[type=villager,name="Muhton"] run tag @s add goldblock
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> And would you look at that, here's EVEN MORE! Fourteen different Maelmari children from Rhaveloth separately sent in the suggestion to \"Crush the Kiln with Rhavelothi gold!\" You wouldn't happen to have a "},{"text":"gold block","color":"yellow"},{"text":" on your person, would you?"}]
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
