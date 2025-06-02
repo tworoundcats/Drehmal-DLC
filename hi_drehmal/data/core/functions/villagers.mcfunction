@@ -287,9 +287,10 @@ execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villag
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
-execute positioned 6105.43 77.00 -1144.57 as @e[name="gamer",type=villager,tag=!qend,tag=qstarted,tag=!tempd] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] if score #lighthouse int matches 0 run execute positioned ~ ~ ~ as @p[tag=qst10] run function quests:gamerquest/finish
-execute positioned 6105.43 77.00 -1144.57 as @e[name="gamer",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst10,tag=!qst10_e] run function quests:gamerquest/base
-execute positioned 6105.43 77.00 -1144.57 as @e[name="gamer",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned 5878 66 -1088 as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend,tag=qstarted,tag=acceptingwax,tag=!tempd] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] run execute as @p[tag=qst10] if predicate players:holding/quest/corpsewax run function quests:gamerquest/wax_detect
+execute positioned 5878 66 -1088 as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend,tag=qstarted,tag=acceptingsword,tag=!tempd] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] run execute as @p[tag=qst10] if predicate players:holding/quest/gamersword run function quests:gamerquest/sword_detect
+execute positioned 5878 66 -1088 as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst10,tag=!qst10_e] run function quests:gamerquest/base
+execute positioned 5878 66 -1088 as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 #execute positioned 31.48 67.00 5263.55 as @e[name="Russell",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst11] run execute positioned ~ ~ ~ as @p[tag=qst11,tag=!qst11_e] if predicate players:holding/quest/russellpowder run function quests:russellquest/detect
 execute positioned 31.48 67.00 5263.55 as @e[name="Russell",type=villager,tag=!qend,tag=wantsbook1] if entity @a[distance=..3,tag=qst11] run execute positioned ~ ~ ~ as @p[tag=qst11,tag=!qst11_e] if predicate players:holding/quest/russellbook1 run function quests:russellquest/muhs_done1

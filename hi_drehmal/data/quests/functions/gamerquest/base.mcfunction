@@ -1,6 +1,6 @@
 tag @s add qstart
 scoreboard players reset @p tgrptch.gamer_accept
 scoreboard players enable @p tgrptch.gamer_accept
-tellraw @p ["","<gamer> ",{"text":"Hey you there! Do you have a moment?","color":"dark_green"},"\n",{"text":"[Yes]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger tgrptch.gamer_accept"},"hoverEvent":{"action":"show_text","contents":["Yes"]}},{"text":" [No]","color":"red","clickEvent":{"action":"run_command","value":"/trigger tgrptch.quest_deny"},"hoverEvent":{"action":"show_text","contents":["No"]}}]
+tellraw @p ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> You're a new face, are you an adventurer? If so, I am in need of your services."},"\n",{"text":"[I am, what do you need?]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger tgrptch.gamer_accept"},"hoverEvent":{"action":"show_text","contents":["I am, what do you need?"]}},{"text":" [Not interested.]","color":"red","clickEvent":{"action":"run_command","value":"/trigger tgrptch.quest_deny"},"hoverEvent":{"action":"show_text","contents":["Not interested."]}}]
 playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 effect give @p slowness 60 10 true

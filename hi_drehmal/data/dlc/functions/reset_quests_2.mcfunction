@@ -16,7 +16,11 @@ execute positioned -1725.48 161.00 1897.49 run kill @e[type=villager,distance=..
 
 execute positioned 2290.49 50.00 2488.49 run kill @e[type=villager,distance=..2,name="Melon Masher Casey"]
 
-execute positioned 6105.43 77.00 -1144.57 run kill @e[type=villager,distance=..2]
+execute positioned 5878 66 -1088 run kill @e[type=villager,distance=..2,name="Ga'Mahr, Lord of Duht"]
+
+execute positioned 4618 68 -2814 run setblock 4618 68 -2814 air
+
+execute positioned 4727 64 5821 run setblock 4727 64 5821 air
 
 execute positioned 31.48 67.00 5263.55 run kill @e[type=villager,distance=..2,name="Russell"]
 

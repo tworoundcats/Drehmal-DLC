@@ -20,7 +20,7 @@ execute positioned -1725.48 161.00 1897.49 run forceload add ~ ~
 
 execute positioned 2290.49 50.00 2488.49 run forceload add ~ ~
 
-execute positioned 6105.43 77.00 -1144.57 run forceload add ~ ~
+execute positioned 5878 66 -1088 run forceload add ~ ~
 
 execute positioned 31.48 67.00 5263.55 run forceload add ~ ~
 
@@ -31,6 +31,10 @@ execute positioned -2167.52 65.00 3701.21 run forceload add ~ ~
 execute positioned -1261.2 46.50 -4062.47 run forceload add ~ ~
 
 execute positioned 4735.45 71.00 5657.50 run forceload add ~ ~
+
+execute positioned 4618 68 -2814 run forceload add ~ ~
+
+execute positioned 4727 64 5821 run forceload add ~ ~
 
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload add ~ ~
 

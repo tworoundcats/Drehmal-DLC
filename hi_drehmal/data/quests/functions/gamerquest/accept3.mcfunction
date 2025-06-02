@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["","<gamer> ",{"text":"If you can go investigate it and disable it, I'll reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> The only lead I really have in regards to where those thieves are located is that they are "},{"text":"somewhere up north","color":"yellow"},{"text":". I'm not the only one unlucky enough to have crossed them."}]
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:gamerquest/accept4 3s
+schedule function quests:gamerquest/accept4 8s
