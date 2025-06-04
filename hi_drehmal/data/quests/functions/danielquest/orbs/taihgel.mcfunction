@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:dripping_lava ~ ~2 ~ 0.5 0.5 0.5 2 10
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{TaihgelQuestOrb:1b,display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Resolute Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"Do not take the ground beneath"}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"your feet for granted."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"The disc is necessity. The stone"}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"is duty. The soil was love."}],"text":""}']}, CustomModelData: 1182007}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion

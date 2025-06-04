@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:wax_on ~ ~1 ~ 0.5 0.5 0.5 1 20
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Vigorous Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"To live is to have meaning."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"To live is to make meaning."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"To give the gift of life is to"}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"give meaning. A chance, at least."}],"text":""}']}, CustomModelData: 1182008,VayQuestOrb:1b}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion

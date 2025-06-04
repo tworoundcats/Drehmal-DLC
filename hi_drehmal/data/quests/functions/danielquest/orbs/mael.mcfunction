@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:lava ~ ~1 ~ 0.5 0.5 0.5 2 15
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{CustomModelData: 1182002, MaelQuestOrb:1b,display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Scorched Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"Chaos. Like a dream. For better or"}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"worse, it is in His nature."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"Such radiance can only last so long."}],"text":""}']}}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion

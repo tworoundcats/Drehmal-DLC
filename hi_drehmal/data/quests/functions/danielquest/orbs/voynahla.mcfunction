@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:soul ~ ~1 ~ 0.5 0.5 0.5 1 15
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{CustomModelData: 1182009, VoyQuestOrb:1b,display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Macabre Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"Death comes for us all."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"Make your peace with it."}],"text":""}']}}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion

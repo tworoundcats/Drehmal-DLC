@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:nautilus ~ ~1 ~ 1 0.5 1 2 10
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{CustomModelData: 1182005, DahrQuestOrb:1b, display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Mighty Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"A King forged in the power of the "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"depths is not one to be taken lightly."}],"text":""}']}}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion

@@ -1,0 +1,5 @@
+execute as @p[tag=temp_devotion] run playsound minecraft:custom.warp master @s ~ ~ ~ 99999999999999 1 1
+execute as @p[tag=temp_devotion] at @s run particle minecraft:enchant ~ ~1 ~ 1 0.5 1 2 20
+execute as @p[tag=temp_devotion] run tellraw @s {"text":"A strange orb manifests in your hands...","italic":true,"color":"gray"}
+execute as @p[tag=temp_devotion] run give @s minecraft:command_block{CustomModelData: 1182004, KhiveQuestOrb:1b, display: {Name: '{"extra":[{"italic":false,"color":"gold","text":"Watchful Orb"}],"text":""}', Lore: ['{"extra":[{"italic":false,"color":"dark_purple","text":"The Arcane is everywhere, and "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"He is the Arcane."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":"It must not come to pass."}],"text":""}']}}
+execute as @p[tag=temp_devotion] run tag @s remove temp_devotion
