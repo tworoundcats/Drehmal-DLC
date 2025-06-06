@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst13] run tellraw @s ["","<Daniel> ",{"text":"It was an orb of pure ","color":"dark_green"},{"text":"primal energy ","color":"green"},{"text":"and I need 5 of them for... reasons","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> I heard that if you really, "},{"text":"truly devote yourself","color":"yellow"},{"text":" to one of them, your dedication can manifest in a little "},{"text":"orb","color":"yellow"},{"text":" of Primal Energy. Isn't that incredible?"}]
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:danielquest/accept3 3s
+schedule function quests:danielquest/accept3 7s
