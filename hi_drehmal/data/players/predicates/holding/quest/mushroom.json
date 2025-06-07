@@ -1,0 +1,32 @@
+[
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:red_mushroom","minecraft:brown_mushroom","minecraft:warped_fungus","minecraft:crimson_fungus"
+            ]
+          }
+        }
+      }
+    }
+  ]
+  

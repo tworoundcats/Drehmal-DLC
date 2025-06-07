@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> ...I apologize. Just one more. Kay from Dusps says, \"Remove the Crimson Gorge.\" Sure, man. 'Cause you're the one in charge here, right? Unbelievable."}]
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:moutonquest/flammer2 9s

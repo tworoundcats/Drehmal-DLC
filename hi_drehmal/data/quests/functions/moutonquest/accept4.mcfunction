@@ -1,4 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"Quest Started: ","color":"yellow"},{"text":"Bring Flint to Mouton","color":"white"}]  
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-function quests:moutonquest/summongolem
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> With some simple runes, I could just "},{"text":"transplant real-world materials directly onto the page","color":"yellow"},{"text":". It'd be so much easier than drawing, but I don't have time to gather anything. That's where "},{"text":"you","color":"yellow"},{"text":" come in!"}]
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:moutonquest/accept5 9s

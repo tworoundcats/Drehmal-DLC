@@ -14,7 +14,7 @@ scoreboard objectives add tgrptch.major_accept trigger
 scoreboard objectives add tgrptch.mouton_accept trigger
 scoreboard objectives add tgrptch.rift_accept trigger
 scoreboard objectives add tgrptch.russell_accept trigger
-scoreboard objectives add tgrptch.vahid_accept trigger
+scoreboard objectives add tgrptch.tahlros_accept trigger
 
 scoreboard objectives add tgrptch.quest_deny trigger
 scoreboard players reset @a tgrptch.quest_deny

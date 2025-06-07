@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @e[type=villager,name="Muhton"] run tag @s add runic
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> Alright, first up I need something to power the transfusion. Can you find me a "},{"text":"Runic Catalyst","color":"yellow"},{"text":"? Any will do, just one."}]
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 

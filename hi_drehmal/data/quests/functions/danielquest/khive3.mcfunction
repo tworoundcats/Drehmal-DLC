@@ -1,0 +1,3 @@
+execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> I've always been intrigued by Khive. Seemingly the most powerful and wise of the Aspects, who designed our entire system of runic magic. What happened to make a god so involved in mortal lives just cut off all contact?"}]
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:danielquest/khive4 9s

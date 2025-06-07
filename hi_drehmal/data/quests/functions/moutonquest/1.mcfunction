@@ -1,4 +1,5 @@
-execute positioned ~ ~ ~ as @p[tag=qst6] run tellraw @s ["","<Mouton> ",{"text":"Thanks so much! And as promised, here's your reward","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst6] unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[type=villager,name="Muhton",limit=1,sort=nearest] weapon.mainhand
+execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/flammer run item replace entity @e[type=villager,name="Muhton",limit=1,sort=nearest] weapon.mainhand with air
+execute positioned ~ ~ ~ as @p[tag=qst6] run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> That should be enough for those idiot publishers. Thanks for the help. Here, your cut of the profits."}]
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst6] run schedule function quests:moutonquest/3 2s
-execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst6] run schedule function quests:moutonquest/3_r 2s
+schedule function quests:moutonquest/2 7s

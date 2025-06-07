@@ -1,0 +1,3 @@
+execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> One would hope that seeing a Maelmari devoted to someone other than Maelihs would bring us closer together, but I guess that's just not the world we live in."}]
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:danielquest/lai5 7s

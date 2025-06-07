@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["","<Mouton> ",{"text":"If you can bring some flint to me, I can reward you greatly","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> It's so profitable, they've had me churning out new issues every week for years, and now it's almost daily. I am "},{"text":"so","italic":true},{"text":". "},{"text":"tired","italic":true},{"text":"."}]
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:moutonquest/accept4 3s
+schedule function quests:moutonquest/accept4 8s

@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run tellraw @s ["","<Daniel> ",{"text":"If you can bring them to me, maybe I'll show you what primal energy can do","color":"dark_green"},{"text":"","color":"green"},{"text":"","color":"dark_green"}]
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> You aren't from around here. If they're letting you in and out freely, then... have you visited any of their "},{"text":"shrines","color":"yellow"},{"text":"?"}]
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:danielquest/accept4 3s
+schedule function quests:danielquest/accept4 5s

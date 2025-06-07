@@ -1,0 +1,33 @@
+[
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "minecraft:axolotl_spawn_egg"
+            ],
+            "nbt": "{EntityTag:{NoGravity:1b,Variant:2,Team:\"Lai\",Glowing:1b,PersistenceRequired:1b,CustomName:'{\"text\":\"Lai\",\"color\":\"#FF7733\"}',Invulnerable:1b}}"
+          }
+        }
+      }
+    }
+  ]
+  

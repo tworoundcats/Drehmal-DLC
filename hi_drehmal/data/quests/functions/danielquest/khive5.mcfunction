@@ -1,0 +1,3 @@
+execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> This would make an incredible catalyst in any of our machines, but I wouldn't dare disrespect an Elder like that. I'll keep a close eye on this one."}]
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:danielquest/count 6s
