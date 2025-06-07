@@ -1,0 +1,2 @@
+execute positioned -2979.47 141.00 -159.46 as @p run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> I can't give you anything for that, sorry. Above my pay grade."}]
+execute positioned -2979.47 141.00 -159.46 as @p at @s run playsound entity.villager.no player @a ~ ~ ~ 1 1

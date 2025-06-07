@@ -1047,6 +1047,7 @@ scoreboard objectives add dlc trigger
 scoreboard players enable @a dlc
 
 scoreboard objectives add dquest dummy
+scoreboard objectives add priscillatracker dummy
 
 scoreboard objectives add Deaths deathCount {"text":"Deaths","color":"dark_red"}
 scoreboard objectives add tempdeaths dummy

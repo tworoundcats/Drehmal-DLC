@@ -243,10 +243,13 @@ execute if score count_all towers matches 0.. run execute positioned 4136 42 -52
 
 
 #Quests
-execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..4] run function quests:keekoquest/finish
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_map run function quests:keekoquest/priscilla/count
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_magnum_opus run function quests:keekoquest/priscilla/count
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..5] run function quests:keekoquest/finish
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst,tag=!qst_e] run function quests:keekoquest/base
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
+execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qend] if entity @a[distance=..3,tag=!major_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:majorquest/merch
 execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qend] if entity @a[distance=..2,tag=qst2,tag=!qst2_e] run execute positioned ~ ~ ~ as @p[tag=qst2] if predicate players:holding/quest/majorartifact run function quests:majorquest/detect
 execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..2,tag=!qst2,tag=!qst2_e] run function quests:majorquest/base
 execute positioned 880.43 66.06 486.42 as @e[name="Archeologist Major",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
@@ -264,6 +267,8 @@ execute positioned 2217.55 111.00 -778.46 as @e[name="Drunkard Gragas",type=vill
 execute positioned 2217.55 111.00 -778.46 as @e[name="Drunkard Gragas",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst5,tag=!qst5_e] run function quests:gragasquest/base
 execute positioned 2217.55 111.00 -778.46 as @e[name="Drunkard Gragas",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
+
+execute positioned -2979.47 141.00 -159.46 as @e[name="Muhton",type=villager,tag=!qend] if entity @a[distance=..3,tag=!mouton_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:moutonquest/merch
 execute positioned -2979.47 141.00 -159.46 as @e[name="Muhton",type=villager,tag=moutonflammer,tag=!qend] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/flammer run function quests:moutonquest/flammer_detect
 execute positioned -2979.47 141.00 -159.46 as @e[name="Muhton",type=villager,tag=mushroom,tag=!qend] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/mushroom run function quests:moutonquest/mushroom_detect
 execute positioned -2979.47 141.00 -159.46 as @e[name="Muhton",type=villager,tag=goldblock,tag=!qend] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/goldblock run function quests:moutonquest/gold_detect
@@ -283,6 +288,8 @@ execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!
 execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
 execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
+
+execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=!chris_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:chrisquest/merch
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst9,tag=!qst9_e] run execute positioned ~ ~ ~ as @p[tag=qst9] if predicate players:holding/avpod run function quests:chrisquest/detect
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart

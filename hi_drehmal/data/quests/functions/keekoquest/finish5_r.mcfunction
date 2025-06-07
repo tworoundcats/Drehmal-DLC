@@ -1,4 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst] at @s run tellraw @s ["",{"text":"Quest Finished: ","color":"yellow"},{"text":"Return the Missing Horse","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst] at @s run tellraw @s ["",{"text":"Quest Completed: ","color":"yellow"},{"text":"Return the Missing Horse","color":"white"}]
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
