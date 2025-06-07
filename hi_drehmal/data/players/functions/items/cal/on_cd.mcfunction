@@ -22,9 +22,7 @@ execute if predicate dev:random_chance/2_of_20 run effect give @s extraalchemy:p
 execute if predicate dev:random_chance/2_of_20 run effect give @s extraalchemy:photosynthesis 15 0 true
 execute if predicate dev:random_chance/2_of_20 run effect give @s extraalchemy:piper 15 0 true
 execute if predicate dev:random_chance/2_of_20 run effect give @s mcdar:shielding 15 0 true
-execute if predicate dev:random_chance/1_of_20 run effect give @s simplyswords:spore_swarm 15 0 true
-execute if predicate dev:random_chance/1_of_20 run effect give @s simplyswords:fire_vortex 15 0 true
-execute if predicate dev:random_chance/1_of_20 run effect give @s simplyswords:magistorm 15 0 true
+
 
 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/2_of_20 run effect give @s extraalchemy:combustion 6 0 true 

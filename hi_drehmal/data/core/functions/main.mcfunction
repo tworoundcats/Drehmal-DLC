@@ -213,3 +213,7 @@ function core:customweapons
 function core:villagers
 function spm:world/tick
 function n_lev:tick
+
+
+execute if score #1S timer matches 1 store result score #daycount2 timer run time query day
+execute if score #1S timer matches 2 run scoreboard players operation #daycount2 timer %= #5 const

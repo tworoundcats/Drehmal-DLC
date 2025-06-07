@@ -183,3 +183,5 @@ execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run functi
 execute if score #frenzy bool matches 1 run function dlc:frenzy_upgrade/main
 
 execute as @a at @s if predicate players:locations/sahd_forge run execute as @e[predicate=players:is_fateful] at @s if block ~ ~-4 ~ lava run function dlc:frenzy_upgrade/initial
+
+#execute if score #daycount2 timer matches 0 run say hi

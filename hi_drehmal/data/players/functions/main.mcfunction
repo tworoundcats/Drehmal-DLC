@@ -708,3 +708,8 @@ execute as @s[predicate=players:locations/red_dawn_spawn1,tag=!red_dawn_spawn1] 
 execute as @s[predicate=players:locations/red_dawn_spawn2,tag=!red_dawn_spawn2] run function dlc:spawn/red_dawn_spawn2
 
 execute as @s[predicate=players:locations/red_dawn_spawn3,tag=!red_dawn_spawn3] run function dlc:spawn/red_dawn_spawn3
+
+
+execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
+
+function dlc:accessories/main

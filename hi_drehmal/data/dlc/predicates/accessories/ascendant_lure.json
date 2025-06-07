@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{glove:{Items:[{id:\"dlc:ascendant_lure\"}]}}}}}"
+  }
+}

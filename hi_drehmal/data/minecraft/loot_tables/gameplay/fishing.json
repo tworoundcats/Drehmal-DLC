@@ -1,64 +1,147 @@
 {
-  "type": "minecraft:fishing",
   "pools": [
     {
       "rolls": 1,
-      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 100,
-          "quality": -2,
-          "name": "minecraft:gameplay/fishing/junk"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 50,
-          "quality": 2,
-          "name": "minecraft:gameplay/fishing/treasure",
+          "name": "minecraft:gameplay/fishing/rare_loot",
           "conditions": [
             {
-              "condition": "minecraft:entity_properties",
+              "condition": "minecraft:entity_scores",
               "entity": "this",
-              "predicate": {
-                "fishing_hook": {
-                  "in_open_water": true
+              "scores": {
+                "rare_chance": {
+                  "min": 0,
+                  "max": 100
                 }
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t1",
+          "weight": 92500,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T1:1b}"
+            }
+          ],
+          "conditions": []
         },
         {
-          "type": "minecraft:loot_table",
-          "weight": 850,
-          "quality": -1,
-          "name": "minecraft:gameplay/fishing/fish",
+          "type": "minecraft:item",
+          "name": "dlc:t2",
+          "weight": 5000,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T2:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t3",
+          "weight": 950,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T3:1b}"
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:inverted",
               "term": {
-                "condition": "reference",
-                "name": "entities:biomes/noha"
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"dlc:starlit_amulet_bound\"}]}}}}}"
+                }
               }
             }
           ]
         },
         {
-          "type": "minecraft:loot_table",
+          "type": "minecraft:item",
+          "name": "dlc:t4",
+          "weight": 49,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T4:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t5",
           "weight": 1,
-          "quality": -1,
-          "name": "players:fishing/lodahr",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T5:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/treasure_loot",
+          "weight": 1500,
+          "quality": 1000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t3",
+          "weight": 1800,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{T3:1b}"
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "location": {
-                  "dimension": "minecraft:lodahr"
-                }
+                "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"dlc:starlit_amulet_bound\"}]}}}}}"
               }
             }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "rare_chance": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dlc:sea_creature",
+          "weight": 1
         }
       ]
     }

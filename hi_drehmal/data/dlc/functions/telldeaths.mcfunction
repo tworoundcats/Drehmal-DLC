@@ -5,7 +5,7 @@ execute if score @s tempdeaths matches 2.. run tellraw @a ["",{"selector":"@s","
 execute if score @s tempdeaths matches 1 run tellraw @a ["",{"selector":"@s","color":"aqua"},{"text":" Died ","color":"red"},{"score":{"name":"@s","objective":"tempdeaths"},"bold":true,"color":"dark_red"},{"text":" Time","color":"red"}]
 
 execute unless score @s tempdeaths matches 1.. run tellraw @a ["",{"selector":"@s","color":"aqua"},{"text":" Died ","color":"red"},{"text":"0","color":"dark_red","bold": true},{"text":" Times","color":"red"}]
-playsound simplyswords:magic_bow_shoot_miss_02 player @s -3293.47 110.00 1593.37 8 0
+playsound simplyswords:magic_bow_shoot_miss_02 player @s ~ ~ ~ 8 0
 scoreboard players reset @s tempdeaths
 scoreboard players reset #tempdeaths num
 tag @s remove tempdeaths

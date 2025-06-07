@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:fishing_rod",
+      "dlc:novice_rod",
+      "dlc:branched_spruce_rod",
+      "dlc:river_reed_rod",
+      "dlc:driftwood_rod"
+    ]
+  }
+  

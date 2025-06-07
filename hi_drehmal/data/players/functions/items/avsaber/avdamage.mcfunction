@@ -20,3 +20,4 @@ scoreboard players operation #avtemp AvCharge /= #3 const
 
 execute at @s as @e[distance=..6,nbt=!{HurtTime:0s},type=!#core:small] at @s on attacker if entity @s[scores={AvDamage=1..}] as @e[distance=...1] run function players:items/avsaber/particle_normal
 execute at @s as @e[distance=..6,nbt=!{HurtTime:0s},type=#core:small] at @s on attacker if entity @s[scores={AvDamage=1..}] run function players:items/avsaber/avdamage_normal
+

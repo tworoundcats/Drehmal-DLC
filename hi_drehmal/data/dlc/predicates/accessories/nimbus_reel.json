@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{ring:{Items:[{id:\"dlc:nimbus_reel\"}]}}}}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{offhand:{ring:{Items:[{id:\"dlc:nimbus_reel\"}]}}}}}"
+      }
+    }
+  ]
+}

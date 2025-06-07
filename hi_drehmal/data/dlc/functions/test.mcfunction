@@ -1,2 +1,1 @@
-execute as @a run say hi
-advancement revoke @s only entities:hurt_by_phantom
+scoreboard players set @a sf_mod_pointsLossRate 5000

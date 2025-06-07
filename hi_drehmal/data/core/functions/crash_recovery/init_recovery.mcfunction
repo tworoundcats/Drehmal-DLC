@@ -245,3 +245,8 @@ execute if block 26518 167 -88 magenta_concrete run scoreboard players set #numb
 execute if block 26518 167 -88 pink_concrete run scoreboard players set #numberp num 16
 
 execute if block 26516 167 -88 green_concrete run scoreboard players set #ring_facility bool 1
+
+
+
+execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC bool 1
+execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC_install bool 1
