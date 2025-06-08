@@ -1,0 +1,1 @@
+execute as @p[tag=domemerchtarget] run tag @s remove domemerchtarget

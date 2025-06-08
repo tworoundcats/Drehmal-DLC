@@ -1,0 +1,1 @@
+execute as @p[tag=keekomerchtarget] run tag @s remove keekomerchtarget
