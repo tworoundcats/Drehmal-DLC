@@ -18,7 +18,7 @@
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mythicmetals:adamantite_ingot"
+            "item": "dlc:fragment_of_despair"
         },
         "title": {
             "color": "gold",

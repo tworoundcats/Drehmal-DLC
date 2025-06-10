@@ -18,7 +18,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "mythicmetals:silver_ingot",
+                    "name": "dlc:silver_ingot",
                     "weight": 330,
                     "quality": 1,
                     "functions": [
@@ -34,7 +34,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "mythicmetals:midas_gold_ingot",
+                    "name": "dlc:mendarum_crystal",
                     "weight": 150,
                     "quality": 1,
                     "functions": [
@@ -46,7 +46,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "mythicmetals:tin_ingot",
+                    "name": "dlc:olkahan",
                     "weight": 10,
                     "quality": 1,
                     "functions": [
@@ -58,18 +58,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "mythicmetals:mythril_ingot",
-                    "weight": 4,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Serpent:1b,display:{Name:'[{\"text\":\"Infernal Serpentsteel\",\"italic\":false,\"color\":\"dark_red\"}]',Lore:['[{\"text\":\"A rare and mysterious material forged\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"from the depths of the volcano,\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"infused with the essence of ancient\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"serpentine beasts. Its shimmering\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"surface reflects the fiery glow of\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"molten lava, hinting at the intense\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"heat required to craft it.\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"\",\"italic\":false,\"color\":\"dark_purple\"}]','[{\"text\":\"Mythic\",\"italic\":false,\"color\":\"dark_red\",\"obfuscated\":true}]']}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "mythicmetals:raw_quadrillum",
+                    "name": "dlc:spark_of_purity",
                     "weight": 4,
                     "functions": [
                         {

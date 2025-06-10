@@ -8,7 +8,7 @@ execute if entity @s[tag=lava_particles] unless entity @s[tag=arrow.inground] ru
 execute if entity @s[tag=stasis_bolt] unless entity @s[tag=arrow.inground] run particle witch ~ ~ ~ 0 0 0 1 1
 execute if entity @s[tag=noxious_arrow] if entity @s[tag=arrow.inground] run function entities:misc/noxious_arrow
 execute if entity @s[tag=rihelma] if entity @s[tag=arrow.inground] run function entities:misc/rihelma_clear
-
+execute if entity @s[tag=sigma] run function entities:arrow_tick2
 
 
 execute unless entity @s[tag=laserCheck] run function entities:ai/laserbow/lasify

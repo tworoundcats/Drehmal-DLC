@@ -9,7 +9,7 @@
             "color": "gray"
         },
         "icon": {
-            "item": "mcdw:whip_whip"
+            "item": "dlc:leviathan"
         },
         "frame": "task",
         "show_toast": true,

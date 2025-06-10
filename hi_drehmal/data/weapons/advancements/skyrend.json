@@ -18,7 +18,7 @@
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mythicmetals:aquarium_ingot"
+            "item": "dlc:ruinous_tablet"
         },
         "title": {
             "color": "gold",

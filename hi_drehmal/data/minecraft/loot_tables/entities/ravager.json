@@ -27,7 +27,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mythicmetals:midas_gold_ingot",
+          "name": "dlc:mendarum_crystal",
           "weight": 100,
           "quality": 1,
           "functions": [

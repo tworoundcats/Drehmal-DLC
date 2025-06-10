@@ -35,7 +35,7 @@ execute if score #gotvohaln bool matches 1 run advancement grant @s only weapons
 execute if score #gotthundercrux bool matches 1 run advancement grant @s only weapons:thundercrux
 execute if score #gotaeongale bool matches 1 run advancement grant @s only weapons:aeongale
 execute if score #gotparenchyma bool matches 1 run advancement grant @s only weapons:parenchyma
-execute if score #gotpenumbra bool matches 1 run advancement grant @s only weapons:penumbra 
+execute if score #gotpenumbra bool matches 1 run advancement grant @s only weapons:penumbra
 execute if score #goteyebiter bool matches 1 run advancement grant @s only weapons:eyebiter
 
 

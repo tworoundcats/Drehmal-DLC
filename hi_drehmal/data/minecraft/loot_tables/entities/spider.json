@@ -59,7 +59,7 @@
         },
         {
           "type": "item",
-          "name": "mythicmetals:silver_ingot",
+          "name": "dlc:silver_ingot",
           "quality": 2,
           "functions": [
             {

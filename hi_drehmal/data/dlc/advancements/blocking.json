@@ -5,7 +5,7 @@
         "conditions": {
           "item": {
             "items": [
-              "mcdw:shield_tower_guard"
+              "dlc:amarantheon"
             ]
           }
         }

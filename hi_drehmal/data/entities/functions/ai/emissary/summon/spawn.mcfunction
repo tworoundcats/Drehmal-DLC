@@ -10,7 +10,7 @@ execute as @e[type=armor_stand,tag=aj.emis.bone.oblivion] at @s run playsound mi
 execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle portal ^ ^6 ^3 1 1 1 3 250 force
 execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle portal ^ ^6 ^6 1 1 1 3 250 force
 
-execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle bosses_of_mass_destruction:eye_open ^ ^6 ^3 1 1 1 0.01 5 force
-execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle bosses_of_mass_destruction:eye_open ^ ^6 ^6 1 1 1 0.01 5 force
+execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle minecraft:sculk_charge_pop ^ ^6 ^3 1 1 1 0.01 5 force
+execute as @e[type=armor_stand,tag=aj.emis.bone.head] at @s run particle minecraft:sculk_charge_pop ^ ^6 ^6 1 1 1 0.01 5 force
 
 schedule function entities:ai/emissary/summon/spawn_p2 0.5s

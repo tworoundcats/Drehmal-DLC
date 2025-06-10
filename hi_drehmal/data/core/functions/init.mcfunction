@@ -998,7 +998,7 @@ scoreboard objectives add bstimer dummy
 
 team add leviathan
 team modify leviathan color black
-scoreboard objectives add use_levi minecraft.used:mcdw.whip_whip
+scoreboard objectives add use_levi minecraft.used:dlc.leviathan
 scoreboard objectives add levi_reach dummy
 scoreboard objectives add levi_kills totalKillCount
 scoreboard objectives add levi_damage dummy
@@ -1020,7 +1020,7 @@ scoreboard objectives add catch minecraft.custom:minecraft.fish_caught
 scoreboard objectives add destiny_s dummy
 scoreboard objectives add destiny dummy
 scoreboard objectives add destiny_cd dummy
-scoreboard objectives add use_destiny minecraft.used:mythicmetals.celestium_sword
+#scoreboard objectives add use_destiny 
 
 scoreboard objectives add stop dummy
 scoreboard objectives add stop1 dummy

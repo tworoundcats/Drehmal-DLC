@@ -22,7 +22,7 @@
       "equipment": {
         "feet": {
           "items": [
-            "mythicmetals:kyber_boots"
+            "dlc:rift_boots"
           ],
           "nbt": "{RiftBoots:1b}"
         }

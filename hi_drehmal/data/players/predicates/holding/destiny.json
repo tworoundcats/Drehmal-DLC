@@ -6,7 +6,7 @@
       "entity": "this",
       "predicate": {
         "equipment": {
-          "mainhand": {
+          "offhand": {
             "items": [
               "minecraft:air"
             ]
@@ -20,9 +20,9 @@
     "entity": "this",
     "predicate": {
       "equipment": {
-        "mainhand": {
+        "offhand": {
           "items": [
-            "mythicmetals:celestium_sword"
+            "dlc:providence"
           ],
           "nbt": "{DestinyBlade:1b}"
         }

@@ -10,4 +10,4 @@ execute as @s[tag=target1] at @s store result score #PlayerZ_1 num run scoreboar
 execute as @s[tag=target2] at @s store result score #PlayerX_2 num run scoreboard players get @s x 
 execute as @s[tag=target2] at @s store result score #PlayerY_2 num run scoreboard players get @s y 
 execute as @s[tag=target2] at @s store result score #PlayerZ_2 num run scoreboard players get @s z 
-kill @e[type=mythicmetals:star_platinum_arrow]
+kill @e[type=arrow,tag=sigma]

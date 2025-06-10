@@ -22,7 +22,7 @@
         "equipment": {
           "legs": {
             "items": [
-              "mythicmetals:adamantite_leggings"
+              "dlc:escharfex"
             ],
             "nbt": "{Bloodclot:1b}"
           }

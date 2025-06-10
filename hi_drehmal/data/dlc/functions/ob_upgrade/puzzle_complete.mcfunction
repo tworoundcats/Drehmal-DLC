@@ -1,7 +1,7 @@
 summon minecraft:armor_stand 1643.52 14.00 -4199.52 {Tags:["pedestal"],Invisible:1b,Invulnerable:1b}
 execute as @e[tag=pedestal] at @s run photon fx photon:pedestal entity @s
 
-execute as @e[tag=pedestal] at @s positioned ~ ~3.5 ~ run summon minecraft:item_display ~ ~ ~ {Tags:["shard"],item: {Count: 1b, id: "bosses_of_mass_destruction:obsidian_heart"}, transformation: {left_rotation: [-0.008726536f, 0.0f, 0.0f, 0.999962f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.9999999f, 0.99999976f, 0.99999976f], translation: [0.0f, 0.0f, 0.0f]}}
+execute as @e[tag=pedestal] at @s positioned ~ ~3.5 ~ run summon minecraft:item_display ~ ~ ~ {Tags:["shard"],item: {Count: 1b, id: "dlc:shard_of_nothing"}, transformation: {left_rotation: [-0.008726536f, 0.0f, 0.0f, 0.999962f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.9999999f, 0.99999976f, 0.99999976f], translation: [0.0f, 0.0f, 0.0f]}}
 execute positioned 1643 15 -4209 run playsound simplyswords:magic_bow_shoot_impact_03 player @a ~ ~ ~ 2 1
 execute positioned 1643 15 -4209 run playsound simplyswords:dark_sword_spell player @a ~ ~ ~ 2 2
 

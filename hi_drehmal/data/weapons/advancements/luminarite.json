@@ -18,7 +18,7 @@
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mythicmetals:platinum_ingot"
+            "item": "dlc:primal_overclocker"
         },
         "title": {
             "color": "gold",

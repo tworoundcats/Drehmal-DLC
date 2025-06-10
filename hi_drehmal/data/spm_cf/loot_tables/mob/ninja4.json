@@ -10,7 +10,7 @@
         },
         {
           "type": "item",
-          "name": "mythicmetals:silver_ingot",
+          "name": "dlc:silver_ingot",
           "weight": 70,
           "functions": [
             {
@@ -25,7 +25,7 @@
         },
         {
           "type": "item",
-          "name": "mythicmetals:midas_gold_ingot",
+          "name": "dlc:mendarum_crystal",
           "weight": 30,
           "quality": 1,
           "functions": [
@@ -37,7 +37,7 @@
       },
       {
         "type": "item",
-        "name": "mythicmetals:tin_ingot",
+        "name": "dlc:olkahan",
         "weight": 5,
         "quality": 1,
         "functions": [

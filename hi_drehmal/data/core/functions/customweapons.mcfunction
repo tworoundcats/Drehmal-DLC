@@ -134,10 +134,10 @@ execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1
 execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run tag @s remove artifact
 execute as @e[type=item,nbt={Item:{tag:{mquest:1b}}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
 
-execute as @e[type=item,nbt={Item:{id:"mythicmetals:starrite"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"mythicmetals:starrite"}}] run data modify entity @s Glowing set value 1
-execute as @e[type=item,nbt={Item:{id:"mythicmetals:star_platinum_nugget"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"mythicmetals:star_platinum_nugget"}}] run data modify entity @s Glowing set value 1
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] run data modify entity @s Glowing set value 1
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify entity @s Glowing set value 1
 execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run tag @s remove star
 
 

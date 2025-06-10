@@ -8,7 +8,7 @@ kill @e[tag=ossein_explosion]
 kill @e[tag=ossein_minion2_]
 kill @e[tag=ossein_visual]
 kill @e[tag=ossein_phantom]
-kill @e[type=mythicmetals:star_platinum_arrow]
+kill @e[type=arrow,tag=sigma]
 
 
 execute as @a[x=1030,y=59,z=3834,distance=..16] run function players:spawn/save_spawnpoint

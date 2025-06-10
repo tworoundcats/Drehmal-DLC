@@ -25,4 +25,4 @@ execute if entity @s[type=lightning_bolt] positioned ~ ~1 ~ as @e[tag=lightning_
 execute if entity @s[type=evoker_fangs] run function entities:misc/check_fang_owner
 execute if entity @s[tag=nah_fwork] unless entity @p[distance=..192] run kill @s
 execute if entity @s[type=item_display] run function entities:arrow_tick
-execute if entity @s[type=mythicmetals:star_platinum_arrow] run function entities:arrow_tick2
+

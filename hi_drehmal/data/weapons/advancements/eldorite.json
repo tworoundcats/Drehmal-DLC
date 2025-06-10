@@ -18,7 +18,7 @@
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mythicmetals:tin_ingot"
+            "item": "dlc:olkahan"
         },
         "title": {
             "color": "dark_purple",

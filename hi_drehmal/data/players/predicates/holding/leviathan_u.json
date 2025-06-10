@@ -22,7 +22,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "mcdw:whip_whip"
+            "dlc:leviathan"
           ],
           "nbt": "{Leviathan_u:1b}"
         }

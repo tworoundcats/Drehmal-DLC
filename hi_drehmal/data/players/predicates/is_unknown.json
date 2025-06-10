@@ -14,7 +14,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"bosses_of_mass_destruction:obsidian_heart\"}}"
+        "nbt": "{Item:{id:\"dlc:shard_of_nothing\"}}"
       }
     },
     {
@@ -22,7 +22,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:durasteel_ingot\"}}"
+        "nbt": "{Item:{id:\"dlc:burnt_ichor_ingot\"}}"
       }
     },
     {
@@ -30,7 +30,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:aquarium_ingot\"}}"
+        "nbt": "{Item:{id:\"dlc:ruinous_tablet\"}}"
       }
     },
     {
@@ -38,7 +38,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:prometheum_ingot\"}}"
+        "nbt": "{Item:{id:\"dlc:harbinger_fang\"}}"
       }
     },
     {
@@ -46,7 +46,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:adamantite_ingot\"}}"
+        "nbt": "{Item:{id:\"dlc:fragment_of_despair\"}}"
       }
     },
     {
@@ -54,7 +54,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:raw_quadrillum\"}}"
+        "nbt": "{Item:{id:\"dlc:spark_of_purity\"}}"
       }
     },
     {
@@ -62,7 +62,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:mythril_ingot\"}}"
+        "nbt": "{Item:{id:\"dlc:primal_overclocker\"}}"
       }
     },
     {
@@ -70,55 +70,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:platinum_ingot\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals_decorations:stormyx_chain\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals_decorations:celestium_crown\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:celestium_helmet\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:celestium_chestplate\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:celestium_leggings\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
-        "nbt": "{Item:{id:\"mythicmetals:celestium_boots\"}}"
+        "nbt": "{Item:{id:\"dlc:resonant_string\"}}"
       }
     }
   ]

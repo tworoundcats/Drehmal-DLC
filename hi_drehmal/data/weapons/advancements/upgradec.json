@@ -9,7 +9,7 @@
             "text": "Mythic Resources Used to Upgrade the Strongest of Equipment"
         },
         "icon": {
-            "item": "mythicmetals:celestium_ingot"
+            "item": "dlc:mythic_component"
         },
         "frame": "task",
         "show_toast": false,

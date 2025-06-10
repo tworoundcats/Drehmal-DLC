@@ -22,7 +22,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "mcdw:shield_tower_guard"
+            "dlc:amarantheon"
           ],
           "nbt": "{Amaranthine:1b}"
         }
