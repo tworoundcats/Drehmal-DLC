@@ -1,5 +1,5 @@
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s {"text":"3/3 Artifacts Found: ","color":"yellow"}
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"Quest Finished: ","color":"yellow"},{"text":"Retrieve Three Artifacts for the Archeologist","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"Quest Completed: ","color":"yellow"},{"text":"Retrieve Three Artifacts for the Archeologist","color":"white"}]
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run summon experience_orb ~ ~ ~2 {Value:3}

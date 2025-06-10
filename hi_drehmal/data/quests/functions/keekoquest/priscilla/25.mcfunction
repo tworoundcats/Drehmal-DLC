@@ -1,0 +1,4 @@
+execute positioned 505.51 67.00 1835.52 as @p run tellraw @s ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> That's TWENTY-FIVE!!! You've got to be one of the greatest Priscilla whisperers out there! Here, take it! Take it all!"}]
+execute positioned 505.51 67.00 1835.52 as @p at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
+execute positioned 505.51 67.00 1835.52 as @p at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned 505.51 67 1835.52 as @p run give @s mythicmetals:tin_ingot{Eldorite:1b,display:{Name:'[{"text":"Eldorite","italic":false,"color":"light_purple"}]',Lore:['[{"text":"The most saught after Material in all","italic":false}]','[{"text":"of Drehmal, used for top-end jewelry","italic":false}]','[{"text":"","italic":false}]','[{"text":"Legendary","italic":false,"color":"light_purple"}]']}} 3

@@ -1,0 +1,3 @@
+execute positioned 880.43 66.06 486.42 as @p run tellraw @s ["",{"text":"<"},{"text":"Major","color":"light_purple"},{"text":"> Are you... trying to give "},{"text":"me","italic":true},{"text":" that voucher? I've got nothing for you, friend. Sorry."}]
+execute positioned 880.43 66.06 486.42 as @p at @s run playsound entity.villager.no player @a ~ ~ ~ 1 1
+execute positioned 880.43 66.06 486.42 as @p run tag @s add major_merch_deny

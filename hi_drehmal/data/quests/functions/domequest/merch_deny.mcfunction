@@ -1,0 +1,2 @@
+execute in minecraft:overworld positioned -1725.48 161.00 1897.49 as @p[tag=domemerchtarget] run tellraw @s ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> I see. Well, safe travels then!"}]
+schedule function quests:domequest/merch_clear 5s

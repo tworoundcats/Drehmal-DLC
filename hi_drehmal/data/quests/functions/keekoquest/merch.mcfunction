@@ -1,0 +1,4 @@
+execute in minecraft:overworld positioned 505.51 67.00 1835.52 as @p[tag=!haskeekomerch] run tag @s add keekomerchtarget
+execute as @p[tag=keekomerchtarget] run tellraw @s ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> There aren't supposed to be any more merch vouchers in circulation, but I guess I have to honor it. Do you want to turn that in to me?\n"},{"text":"[Yes]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function quests:keekoquest/merch_accept"}},{"text":"\n"},{"text":"[No]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function quests:keekoquest/merch_deny"}}]
+execute as @p[tag=keekomerchtarget] at @s run playsound entity.villager.trade player @a ~ ~ ~ 1 1 
+schedule function quests:keekoquest/merch_clear 60s
