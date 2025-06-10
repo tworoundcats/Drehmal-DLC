@@ -3,4 +3,4 @@ execute positioned 505.51 67.00 1835.52 as @p at @s run playsound minecraft:enti
 execute positioned 505.51 67.00 1835.52 as @p at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned 505.51 67 1835.52 as @p run give @s emerald 64
 execute positioned 505.51 67 1835.52 as @p run give @s diamond 32
-execute positioned 505.51 67 1835.52 as @p run give @s mythicmetals:tin_ingot{Eldorite:1b,display:{Name:'[{"text":"Eldorite","italic":false,"color":"light_purple"}]',Lore:['[{"text":"The most saught after Material in all","italic":false}]','[{"text":"of Drehmal, used for top-end jewelry","italic":false}]','[{"text":"","italic":false}]','[{"text":"Legendary","italic":false,"color":"light_purple"}]']}} 5
+execute positioned 505.51 67 1835.52 as @p run give @s dlc:olkahan{Eldorite:1b,display:{Name:'[{"text":"Eldorite","italic":false,"color":"light_purple"}]',Lore:['[{"text":"The most saught after Material in all","italic":false}]','[{"text":"of Drehmal, used for top-end jewelry","italic":false}]','[{"text":"","italic":false}]','[{"text":"Legendary","italic":false,"color":"light_purple"}]']}} 5
