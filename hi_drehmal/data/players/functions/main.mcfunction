@@ -713,3 +713,4 @@ execute as @s[predicate=players:locations/red_dawn_spawn3,tag=!red_dawn_spawn3] 
 execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
 
 function dlc:accessories/main
+function dev:night_vision

@@ -25,6 +25,7 @@ tag @s remove athrahMusic
 tag @s remove okekeMusic
 tag @s remove nimahjMusic
 tag @s remove shatterhornMusic
+tag @s remove xorhuulMusic
 tag @s remove duspsMusic
 tag @s remove mohtaMusic
 tag @s remove mossfieldMusic

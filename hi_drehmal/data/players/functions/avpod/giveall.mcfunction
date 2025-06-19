@@ -20,6 +20,7 @@ tag @s add athrahMusic
 tag @s add okekeMusic
 tag @s add nimahjMusic
 tag @s add shatterhornMusic
+tag @s add xorhuulMusic
 tag @s add duspsMusic
 tag @s add mohtaMusic
 tag @s add mossfieldMusic

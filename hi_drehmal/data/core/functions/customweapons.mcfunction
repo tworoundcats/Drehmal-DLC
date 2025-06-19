@@ -24,7 +24,7 @@ execute as @a if predicate players:holding/leviathan as @s[scores={use_levi=1..}
 execute as @a if predicate players:holding/leviathan as @s run scoreboard players add @s levi_reach 1
 #execute as @a if predicate players:holding/leviathan as @s[tag=shielded] run function players:items/levi/shielded
 execute as @a if predicate players:holding/leviathan run function players:items/levi/holding
-execute as @a if predicate players:holding/leviathan as @s if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
+#execute as @a if predicate players:holding/leviathan as @s if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:entity_reach 0.67 @s
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:defense 0.5 @s
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run tag @s remove strengthened
@@ -38,8 +38,8 @@ execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reac
 execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scoreboard players reset @s levi_reach
 execute as @a unless predicate players:holding/leviathan as @s[tag=strengthened] run tag @s remove strengthened
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste as @s at @s positioned ~ ~1 ~ run function particle:effects/mist
-execute as @a if predicate players:holding/leviathan_u as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate dev:entity_properties/flags/is_sneaking run function players:items/levi/apotheosis
-execute as @a unless predicate players:holding/leviathan_u if score @s levi_cool matches 1.. run function players:items/levi/cooldown
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate dev:entity_properties/flags/is_sneaking run function players:items/levi/apotheosis
+execute as @a unless predicate players:holding/leviathan if score @s levi_cool matches 1.. run function players:items/levi/cooldown
 
 
 execute as @a if predicate players:holding/thunderclap as @s run scoreboard players add @s thun 1
@@ -141,22 +141,29 @@ execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify en
 execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run tag @s remove star
 
 
-execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run schedule function weapons:give/pocket 5s
+execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run schedule function weapons:give/pocket 1s
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run title @s title {"text":"Teleporting Across Lodahr is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run clear @s fwaystones:pocket_wormhole
 
-execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run schedule function weapons:give/waystone 5s
+execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run schedule function weapons:give/waystone 1s
 execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run title @s title {"text":"Teleporting Across Lodahr is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run clear @s fwaystones:waystone
 
-execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run schedule function weapons:give/pocket 5s
+execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run schedule function weapons:give/pocket 1
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run clear @s fwaystones:pocket_wormhole
 
-execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run schedule function weapons:give/waystone 5s
+execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run schedule function weapons:give/waystone 1s
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run clear @s fwaystones:waystone
 
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run schedule function weapons:give/pocket 1
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run clear @s fwaystones:pocket_wormhole
+
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run schedule function weapons:give/waystone 1s
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run clear @s fwaystones:waystone
 
 
 execute as @e[tag=obscythe] at @s run function players:items/obv/entity

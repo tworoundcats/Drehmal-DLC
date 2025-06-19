@@ -1,6 +1,6 @@
 execute if entity @s[predicate=players:is_not_dev] run function players:overworld_p
 
-execute unless score #rhalon_triggered bool matches 1 if predicate players:locations/rhalon_threshold run function entities:ai/rhalon/spawn
+#execute unless score #rhalon_triggered bool matches 1 if predicate players:locations/rhalon_threshold run function entities:ai/rhalon/spawn
 
 execute if score #5T timer matches 0 if score #game_started bool matches 1 if entity @s[x=26512,y=176,z=-93,dx=16,dy=16,dz=19] run function players:spawn/default_spawn
 

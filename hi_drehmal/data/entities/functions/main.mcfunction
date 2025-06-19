@@ -4,10 +4,10 @@ execute if score #doMobSpawning const matches 1 if entity @a[predicate=players:l
 
 #everything i thought i knew was wrong#
 
-execute as @e[tag=insohmbie] run function entities:ai/insohm_zombie/main
-execute as @e[tag=burnt_soldier] positioned as @s rotated as @s run function entities:ai/burnt_soldier/main
-execute as @e[tag=firestarter] positioned as @s rotated as @s run function entities:ai/firestarter/main
-execute as @e[tag=second_general] positioned as @s rotated as @s run function entities:ai/second_general/main
+#execute as @e[tag=insohmbie] run function entities:ai/insohm_zombie/main
+#execute as @e[tag=burnt_soldier] positioned as @s rotated as @s run function entities:ai/burnt_soldier/main
+#execute as @e[tag=firestarter] positioned as @s rotated as @s run function entities:ai/firestarter/main
+#execute as @e[tag=second_general] positioned as @s rotated as @s run function entities:ai/second_general/main
 
 #--------GIVE EVERYTHING A UUID--------#
 
@@ -30,10 +30,11 @@ execute as @e[type=!#entities:oblivion_immune,tag=!unloaded,predicate=entities:s
 execute as @e[type=!#entities:highcapacity] unless entity @s[scores={uuid0=-2147483648..2147483647}] run function entities:misc/grab_uuid
 
 execute as @e[type=#entities:hostile,tag=Scale] unless score @s ScaleLvl = playercount playercount run function entities:scaling/main
-
+execute as @e[type=piglin] run function entities:piglin_tick
 execute as @e[type=ender_dragon] at @s run function entities:ai/tethlaen/main
 execute as @e[type=#entities:spider,tag=!] at @s run function entities:spider_tick
 execute as @e[type=zombie,tag=!] at @s run function entities:zombie_tick
+execute as @e[type=piglin_brute] run function entities:piglin_brute_tick
 execute as @e[type=#minecraft:skeletons,tag=!] at @s run function entities:skeleton_tick
 execute as @e[type=vex,tag=] at @s run function entities:vex_tick
 execute as @e[type=guardian,tag=!] at @s run function entities:guardian_tick

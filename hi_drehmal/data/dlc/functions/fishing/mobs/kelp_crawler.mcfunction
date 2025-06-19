@@ -1,0 +1,1 @@
+summon silverfish ~ ~ ~ {CustomName:'[{"text":"Kelp Crawler"}]',Health:8,Tags:["kelp_crawler"],Attributes:[{Name:"generic.attack_damage",Base:2f},{Name:"generic.max_health",Base:8f}]}

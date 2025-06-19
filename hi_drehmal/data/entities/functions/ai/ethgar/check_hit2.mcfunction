@@ -1,0 +1,1 @@
+bossbar set minecraft:health3 color red

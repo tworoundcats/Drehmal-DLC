@@ -1,6 +1,7 @@
 execute as @e[type=item,tag=!scanned,predicate=players:is_oblivion] run function players:items/obv/give_back
 item replace entity @s weapon.mainhand from block 1000000 0 1000000 container.0
 setblock 1000000 0 1000000 air
+
 scoreboard players operation #secs temp = @s obv_cool
 scoreboard players add #secs temp 19
 scoreboard players operation #secs temp /= #20 const
@@ -12,3 +13,4 @@ execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Oblivion ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] as @s[scores={ob_cd=1..}] run execute as @s run function players:items/obv/summon
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Oblivion ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] as @s[scores={ob_cd=1..}] run function players:items/obv/on_cd
 execute at @s as @s run tellraw @s[predicate=!players:in_em_arena] ["",{"text":"Force of Nothing is on cooldown for ","color":"red"},{"score":{"name":"#secs","objective":"temp"},"color":"red"},{"text":"s","color":"red"}]
+setblock 1000000 0 1000000 furnace

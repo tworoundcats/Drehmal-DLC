@@ -48,7 +48,6 @@ function weapons:grant
 function core:story/grant
 function core:mystery/grant
 execute if entity @s[tag=syzygy_crawl] run function players:items/syzygy/endcrawl
-#execute if score #DLC int matches 1 run tag @a add DLC
 #execute unless entity @s[tag=DLC] run tellraw @s {"text":"You must run \"/trigger dlc\" to enable the dlc.","bold":true,"color":"dark_red"}
 #
 #execute unless entity @s[tag=DLC] run tellraw @s {"text":"It is recommended to play on 8+ player difficulty scaling","bold":false,"color":"dark_red"}

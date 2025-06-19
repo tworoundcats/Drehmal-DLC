@@ -9,3 +9,4 @@ execute at @s positioned ~ ~1.7 ~ run function players:items/obv/loop
 tag @s remove temp_immune
 execute if score #success temp matches 1.. run function players:items/obv/success
 scoreboard players reset @s drop_netherite
+setblock 1000000 0 1000000 furnace

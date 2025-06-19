@@ -1,0 +1,1 @@
+bossbar set minecraft:health2 color red

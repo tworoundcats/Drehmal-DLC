@@ -13,6 +13,10 @@
             "condition":"reference",
             "name":"players:locations/red_dawn_devzone"
         },
+                {
+            "condition":"reference",
+            "name":"players:in_generals_arena"
+        },
         {
             "condition":"reference",
             "name":"players:locations/exodus_vault"

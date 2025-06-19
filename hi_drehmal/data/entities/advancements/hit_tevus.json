@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "hitdn":{
+            "trigger":"minecraft:player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "nbt":"{Tags:[\"tevus\"]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"entities:ai/tevus/check_hit"
+    }
+}

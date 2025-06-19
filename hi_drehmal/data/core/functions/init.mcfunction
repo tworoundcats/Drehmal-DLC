@@ -27,6 +27,7 @@ scoreboard objectives add ebonrunMusic dummy
 scoreboard objectives add athrahMusic dummy
 scoreboard objectives add nimahjMusic dummy
 scoreboard objectives add shatterhornMusic dummy
+scoreboard objectives add xorhuulMusic dummy
 scoreboard objectives add tharxaxMusic dummy
 scoreboard objectives add mohtaMusic dummy
 scoreboard objectives add gozakMusic dummy
@@ -638,6 +639,7 @@ scoreboard objectives add chargedist dummy
 
 team add oblivion
 team add frenzy
+team add dark_red
 team add mal
 team add mb
 team add cal
@@ -650,6 +652,7 @@ team modify green color green
 team modify oblivion color dark_purple
 team modify frenzy color yellow
 team modify mal color red
+team modify dark_red color dark_red
 team modify mb color black
 team modify cal color gold
 team modify asc color dark_aqua
@@ -915,8 +918,20 @@ function foundry:reset_exec_bar
 execute store result score #tmp temp run bossbar get minecraft:health visible
 execute if score #tmp temp matches 0 run bossbar add health " "
 execute if score #tmp temp matches 0 run bossbar set health players @a
-execute if score #tmp temp matches 0 run bossbar set health color purple
+execute if score #tmp temp matches 0 run bossbar set health color red
 execute if score #tmp temp matches 0 run bossbar set health visible false
+
+execute store result score #tmp temp run bossbar get minecraft:health visible
+execute if score #tmp temp matches 0 run bossbar add health2 " "
+execute if score #tmp temp matches 0 run bossbar set health2 players @a
+execute if score #tmp temp matches 0 run bossbar set health2 color red
+execute if score #tmp temp matches 0 run bossbar set health2 visible false
+
+execute store result score #tmp temp run bossbar get minecraft:health visible
+execute if score #tmp temp matches 0 run bossbar add health3 " "
+execute if score #tmp temp matches 0 run bossbar set health3 players @a
+execute if score #tmp temp matches 0 run bossbar set health3 color red
+execute if score #tmp temp matches 0 run bossbar set health3 visible false
 
 bossbar add loser "Loser"
 bossbar set minecraft:loser color pink

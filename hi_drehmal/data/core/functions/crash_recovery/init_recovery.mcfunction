@@ -250,3 +250,4 @@ execute if block 26516 167 -88 green_concrete run scoreboard players set #ring_f
 
 execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC bool 1
 execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC_install bool 1
+execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC_initialize bool 1

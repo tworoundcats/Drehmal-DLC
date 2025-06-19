@@ -63,5 +63,6 @@ execute positioned -2728 65 -1795 unless entity @e[type=glow_item_frame,distance
 #execute positioned 1683.31 19.00 -2730.20 run summon 
 #
 #execute positioned -1248.64 16.00 480.35 run summon 
+scoreboard players set #DLC_initialize bool 1
 
 schedule function dlc:starrite3_3 3s

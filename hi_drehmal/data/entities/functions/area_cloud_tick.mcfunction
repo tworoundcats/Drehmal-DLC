@@ -4,3 +4,5 @@ execute if entity @s[tag=rihelma_particles_inv] run function entities:misc/rihel
 execute if entity @s[tag=rihelma_particles_horizontal] run function entities:misc/rihelmabeams/horizontal
 execute if entity @s[tag=poisoncloud] run function entities:misc/poisoncloud/main
 execute if entity @s[tag=fdrycloud] run function entities:misc/fdry_cloud/main
+execute if entity @s[tag=owie] run function entities:ai/rhalon/linger
+execute if entity @s[tag=boom] run function entities:ai/tevus/linger
