@@ -1,4 +1,6 @@
 execute if entity @s[tag=ossein] run scoreboard players set #ossein_arrow temp 1
+execute if entity @s[tag=ethgar] run scoreboard players set #ethgar_arrow temp 1
+execute if entity @s[tag=ethgar] run scoreboard players set #ground_clear temp 1
 execute if entity @s[tag=ossein] run scoreboard players set #ground_clear temp 1
 execute if entity @s[tag=foundry_wave] run scoreboard players set #ground_clear temp 1
 execute if entity @s[tag=Ultva] store success score #ground_clear temp run scoreboard players set #ultva temp 1

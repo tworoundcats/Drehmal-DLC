@@ -1,0 +1,1 @@
+damage @s 16 shot by @e[tag=ethgar,limit=1]

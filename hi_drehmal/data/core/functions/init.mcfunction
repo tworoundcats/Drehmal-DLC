@@ -211,6 +211,8 @@ scoreboard objectives add atk_charge dummy
 scoreboard objectives add khive_pcool dummy
 scoreboard objectives add foundry dummy
 scoreboard objectives add sam.id dummy
+team add generals
+team modify generals friendlyFire false
 team add foundry
 team modify foundry friendlyFire false
 team add bernice
@@ -640,6 +642,7 @@ scoreboard objectives add chargedist dummy
 team add oblivion
 team add frenzy
 team add dark_red
+team add blue
 team add mal
 team add mb
 team add cal
@@ -653,6 +656,7 @@ team modify oblivion color dark_purple
 team modify frenzy color yellow
 team modify mal color red
 team modify dark_red color dark_red
+team modify blue color blue
 team modify mb color black
 team modify cal color gold
 team modify asc color dark_aqua

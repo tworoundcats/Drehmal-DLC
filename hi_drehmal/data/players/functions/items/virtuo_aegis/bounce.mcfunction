@@ -1,6 +1,7 @@
 scoreboard players set @s va.iframes 3
 
 execute as @e[type=#players:eye_bite,tag=temp] run function players:items/virtuo_aegis/bounce1
+execute as @e[type=arrow,tag=ethgar_arrow] run function players:items/virtuo_aegis/bounce1
 teleport @s ~ ~ ~
 
 scoreboard players set #blocked_damage temp 5

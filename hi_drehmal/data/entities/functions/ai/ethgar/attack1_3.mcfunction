@@ -1,1 +1,2 @@
-execute as @e[tag=temp_disable] run tag @s add in_air
+execute as @e[tag=temp_disable3] run tag @s remove temp_disable3
+execute as @e[tag=jumpback] run tag @s remove jumpback

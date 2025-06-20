@@ -5,6 +5,7 @@ execute store result score @s uuid2 store result score #temp uuid2 run data get 
 execute store result score @s uuid3 store result score #temp uuid3 run data get storage drehmal:entities tempUuid[3]
 tag @s add owner_tagged
 scoreboard players reset #ossein_arrow temp
+scoreboard players reset #ethgar_arrow temp
 scoreboard players reset #ground_clear temp
 scoreboard players reset #sun_arrow temp 
 scoreboard players reset #teth_velo? temp
@@ -33,6 +34,7 @@ execute if score #mb_shot temp matches 1 run function entities:misc/mb_shoot
 execute if score #mal_arrow temp matches 1 run function entities:misc/fire_bow_shoot
 execute if score #fdry_gun temp matches 1 run function entities:ai/fdry_gunman/shoot
 execute if score #teth_velo? temp matches 1 run function entities:misc/arrow_teth
+execute if score #ethgar_arrow temp matches 1 run function entities:misc/arrow_ethgar
 execute if score #ossein_arrow temp matches 1 run function entities:misc/arrow_ossein
 execute if score #ground_clear temp matches 1 run tag @s add ground_clear
 execute if score #bowblade? temp matches 1 run function entities:misc/bowblade_dmg

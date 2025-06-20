@@ -99,6 +99,9 @@ execute if score #orena_empty? bool matches 1 unless entity @a[x=26303.0,y=193.0
 execute unless score #orena_empty? bool matches 1 unless score #ossein_active? bool matches 1 run scoreboard players remove #ossein_respawn timer 1
 execute if score #ossein_active? bool matches 1 unless entity @a[x=26303.0,y=193.00,z=154.5,distance=..70] run function entities:bosses/ossein/despawn
 
+execute if score #generals_active? bool matches 1 positioned 27339.50 152.00 747.50 unless entity @a[distance=..50] run function entities:bosses/generals/despawn
+
+
 execute if score #seinpress_old bool matches 1 if score #2T timer matches 1 if block 1030 61 3836 minecraft:polished_blackstone_button[powered=false] run scoreboard players reset #seinpress_old bool
 execute unless score #seinpress_old bool matches 1 if score #2T timer matches 0 if block 1030 61 3836 minecraft:polished_blackstone_button[powered=true] run function entities:bosses/ossein/attempt_spawn
 

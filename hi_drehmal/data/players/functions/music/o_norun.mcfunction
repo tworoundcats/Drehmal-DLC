@@ -33,6 +33,7 @@ execute if predicate players:locations/avsal run function players:music/avsal
 execute if predicate players:locations/exodus_vault run function players:music/exodus
 
 execute if score #ossein_music? bool matches 1 positioned 26303.0 ~ 154.5 if entity @s[distance=..40] run function players:music/ossein
+execute if score #generals_music? bool matches 1 positioned 27339.50 152.00 747.50 if entity @s[distance=..40] run function players:music/generals
 
 
 execute if score #ultvamusic bool matches 1 positioned 27294 81 84 if entity @s[distance=..40] run function players:music/ultvaloop

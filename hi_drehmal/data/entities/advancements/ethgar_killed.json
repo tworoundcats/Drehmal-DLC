@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:piglin",
+          "nbt": "{Tags:[\"ethgar\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "entities:ai/ethgar/kill"
+  }
+}

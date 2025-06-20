@@ -47,4 +47,6 @@ data modify entity @s power set from storage drehmal:entities temppower
 tag @s add visfix
 
 execute as @e[type=#players:eye_bite,tag=temp] run function players:items/virtuo_aegis/bounce1_1
+execute as @e[type=arrow,tag=ethgar_arrow] run function players:items/virtuo_aegis/bounce1_1
+
 teleport @s ~ ~ ~

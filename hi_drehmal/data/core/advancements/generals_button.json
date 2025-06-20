@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": -2850.5,
+                "y":  42.5,
+                "z":  5331.5
+              },
+              "dimension": "minecraft:overworld"
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:stone_button",
+            "properties": {
+              "powered": "true"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "entities:bosses/generals/attempt_spawn"
+  }
+}

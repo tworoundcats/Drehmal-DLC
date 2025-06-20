@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+         "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "arrow",
+            "nbt": "{Tags:[\"flashbang\"]}"
+          }
+        }
+      }
+    }
+  }
+  },
+  "rewards": {
+    "function": "entities:ai/ethgar/arrow_hit"
+  }
+}

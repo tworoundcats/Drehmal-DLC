@@ -23,7 +23,7 @@ execute as @e[tag=temp_disable] run execute store result entity @s Motion[0] dou
 execute as @e[tag=temp_disable] run execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
 execute as @e[tag=temp_disable] run execute store result entity @s Motion[2] double 0.02 run scoreboard players get @s spm.z
 
-execute as @e[tag=temp_disable] run execute at @s run playsound minecraft:dcustom.item.flintandsteel.use player @s ~ ~ ~ 2 0
+execute as @e[tag=temp_disable] run execute at @s run playsound minecraft:dcustom.item.flintandsteel.use player @a ~ ~ ~ 2 0
 
 execute as @e[tag=temp_disable] run team leave @s
 schedule function entities:ai/rhalon/attack1_3 5t

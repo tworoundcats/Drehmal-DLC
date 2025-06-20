@@ -27,7 +27,9 @@ execute if score #event temp matches 27 run function entities:dropped_items/fros
 execute if score #event temp matches 28 run function entities:dropped_items/avbot/base
 execute if score #event temp matches 29 run function entities:dropped_items/avbot/boom
 execute if score #event temp matches 30 run function entities:dropped_items/avbot_poison/summon_cloud
-
+execute if score #event temp matches 31 run function entities:ai/rhalon/death
+execute if score #event temp matches 32 run function entities:ai/tevus/death
+execute if score #event temp matches 33 run function entities:ai/ethgar/death
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr
 
 execute if score #event temp matches 25 run function players:items/1kscars/kill/event

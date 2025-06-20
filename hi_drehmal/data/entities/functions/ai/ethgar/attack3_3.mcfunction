@@ -1,1 +1,1 @@
-execute as @e[tag=temp_disable] run tag @s remove unstoppable
+schedule function entities:ai/ethgar/attack1 1t

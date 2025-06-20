@@ -7,7 +7,7 @@ scoreboard players set @s va.cool 100
 
 scoreboard players reset #found temp
 
-execute store result score #found temp if predicate players:holding/aegis 
+execute store result score #found temp if predicate players:holding/aegis
 
 scoreboard players reset #unbreaking temp
 
