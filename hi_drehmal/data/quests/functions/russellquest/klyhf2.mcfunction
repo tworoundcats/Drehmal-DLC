@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> For instance, there's apparently a rumor in the Burnt Palace that Maelihs' most trusted advisor was once a "},{"text":"Drehmari alchemist","color":"yellow"},{"text":"."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+schedule function quests:russellquest/klyhf3 7s

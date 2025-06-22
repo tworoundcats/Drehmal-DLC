@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> It's damn near impossible for me to make heads or tails of these visions he's writing about in here, but... maybe one day it'll all make sense."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound minecraft:item.book.page_turn player @a ~ ~ ~ 5 1 
+schedule function quests:russellquest/dusty_done5 6s
