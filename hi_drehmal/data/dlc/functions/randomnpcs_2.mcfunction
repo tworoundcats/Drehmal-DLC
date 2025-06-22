@@ -11,7 +11,7 @@ execute positioned -2417.54 93.00 -835.42 unless entity @e[type=villager,distanc
 execute positioned -1269.62 64.00 4267.54 unless entity @e[type=villager,distance=..3] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:2},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:"dlc:silver_ingot",Count:3,tag:{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}},sell:{id:enchanted_book,Count:1,tag:{StoredEnchantments:[{lvl:3,id:"enchancement:leech"}]}}}]},Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Rotation:[270f]}
 
 execute positioned 2608.57 63.50 -149.50 unless entity @e[type=villager,distance=..3] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:fisherman,level:2},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:"dlc:silver_ingot",Count:1,tag:{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}},sell:{id:tipped_arrow,Count:16,tag:{Potion:"extraalchemy:fuse_strong"}}}]},Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Rotation:[90f]}
-execute positioned 2608.57 63.50 -149.50 run forceload remove ~ ~ 
+execute positioned 2608.57 63.50 -149.50 run forceload remove ~ ~
 
 execute positioned 5806.41 66.00 -1027.51 unless entity @e[type=villager,distance=..3] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:2},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:"dlc:silver_ingot",Count:1,tag:{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}},sell:{id:tipped_arrow,Count:64,tag:{Potion:"extraalchemy:shrinking_strong"}}}]},Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Rotation:[0f]}
 
@@ -28,5 +28,13 @@ execute positioned -1159.45 80.06 1179.49 unless entity @e[type=villager,distanc
 execute positioned -1534.50 160.50 1970.49 unless entity @e[type=villager,distance=..3] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:2},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:"dlc:silver_ingot",Count:3,tag:{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}},sell:{id:"artifacts:kitty_slippers",Count:1}}]},Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Rotation:[180f]}
 
 execute positioned 3740.49 73.00 466.58 unless entity @e[type=villager,distance=..3] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:2},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:"dlc:silver_ingot",Count:3,tag:{display:{Name:'[{"text":"Silver Bar","italic":false,"color":"aqua"}]',Lore:['[{"text":"The preffered currency for certain","italic":false}]','[{"text":"goods","italic":false}]']}}},sell:{id:"ringsofascension:ring_growth",Count:1}}]},Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Rotation:[0f]}
+
+execute positioned -2794 160 5384 as @e[name="Ethgar, the Third General"] run data merge entity @s {Health:0}
+
+execute positioned -3999 157 5967 as @e[name="Burnt Archer"] run data merge entity @s {HandItems:[{Count:1b,id:"minecraft:crossbow",tag:{Charged:0b,ChargedProjectiles:[],Damage:0,fire_bow:1b}}]}
+
+execute positioned -3999 157 5967 as @e[name="Burnt Soldier"] run tag @s add burnt_soldier
+
+execute positioned -3999 157 5967 as @e[name="Pyro Troop"] run tag @s add firestarter
 
 schedule function dlc:randomnpcs_3 3s

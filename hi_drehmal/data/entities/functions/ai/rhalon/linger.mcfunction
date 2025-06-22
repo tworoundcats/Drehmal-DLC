@@ -1,4 +1,4 @@
-particle minecraft:lava ~ ~ ~ 1 0 1 0 20
+particle minecraft:lava ~ ~ ~ 1 0 1 0 10
 execute unless score #DLC mastermode matches 1 run execute at @s if entity @a[distance=..2] run execute as @a[distance=..2] run damage @s 25 in_fire by @e[tag=rhalon,limit=1]
 execute unless score #DLC mastermode matches 1 run execute at @s if entity @a[distance=..2] run execute as @a[distance=..2] run damage @s 35 in_fire by @e[tag=rhalon,limit=1]
 scoreboard players add @s num 1 

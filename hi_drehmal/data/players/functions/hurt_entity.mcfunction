@@ -28,4 +28,8 @@ execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTim
 
 scoreboard players reset @s atk_charge
 
+
+
+
+
 advancement revoke @s only players:hurt_entity

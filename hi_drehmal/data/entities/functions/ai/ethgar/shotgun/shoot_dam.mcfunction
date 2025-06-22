@@ -1,1 +1,2 @@
-damage @s 16 shot by @e[tag=ethgar,limit=1]
+execute unless score #DLC mastermode matches 1 run damage @s 55 shot by @e[tag=ethgar,limit=1]
+execute if score #DLC mastermode matches 1 run damage @s 65 shot by @e[tag=ethgar,limit=1]

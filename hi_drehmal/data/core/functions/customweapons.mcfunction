@@ -192,3 +192,7 @@ execute if score #frenzy bool matches 1 run function dlc:frenzy_upgrade/main
 execute as @a at @s if predicate players:locations/sahd_forge run execute as @e[predicate=players:is_fateful] at @s if block ~ ~-4 ~ lava run function dlc:frenzy_upgrade/initial
 
 #execute if score #daycount2 timer matches 0 run say hi
+
+execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2
+
+execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=players:holding/male2] run kill @s

@@ -4,9 +4,6 @@ execute if score #doMobSpawning const matches 1 if entity @a[predicate=players:l
 
 #everything i thought i knew was wrong#
 
-#execute as @e[tag=insohmbie] run function entities:ai/insohm_zombie/main
-#execute as @e[tag=burnt_soldier] positioned as @s rotated as @s run function entities:ai/burnt_soldier/main
-#execute as @e[tag=firestarter] positioned as @s rotated as @s run function entities:ai/firestarter/main
 #execute as @e[tag=second_general] positioned as @s rotated as @s run function entities:ai/second_general/main
 
 #--------GIVE EVERYTHING A UUID--------#

@@ -80,6 +80,7 @@ execute if entity @s[tag=osteo_slash] run function players:items/osteo2/slash_ti
 execute if entity @s[tag=zenith_visual] run function players:items/avsaber/particle_tick
 execute if entity @s[tag=oblivion_visual] run function players:items/obv/particle_tick
 execute if entity @s[tag=ossein_visual] run function entities:ai/ossein/tick/particle_tick
+execute if entity @s[tag=mal_drain] run function players:items/mal/particle_tick
 
 
 execute if score #5T timer matches 4 if entity @s[tag=deathmarker] run function entities:misc/deathmarker/kill_on_despawn

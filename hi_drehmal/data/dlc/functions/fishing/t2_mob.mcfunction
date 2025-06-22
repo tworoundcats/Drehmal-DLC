@@ -20,3 +20,4 @@ execute as @e[tag=fished_entity,sort=nearest] run execute store result entity @s
 
 
 execute as @e[tag=fished_entity] run tag @s remove fished_entity
+

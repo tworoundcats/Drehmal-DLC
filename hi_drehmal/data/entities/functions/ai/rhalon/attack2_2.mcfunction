@@ -38,6 +38,7 @@ execute if score #rhalon_jump temp matches 7 run execute as @e[tag=temp_disable]
 execute as @e[tag=temp_disable] run execute store result entity @s Motion[0] double 0.01 run scoreboard players get @s spm.x
 execute as @e[tag=temp_disable] run execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
 execute as @e[tag=temp_disable] run execute store result entity @s Motion[2] double 0.01 run scoreboard players get @s spm.z
+execute as @e[tag=temp_disable] run tag @s add in_air2
 
 
 

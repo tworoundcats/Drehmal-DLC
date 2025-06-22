@@ -7,5 +7,7 @@ execute if score @s mal_cool matches 2.. if score #secs temp matches 0..5 run ti
 execute unless score @s mal_cool matches 2.. run title @s actionbar [{"text":"Infernal Ground is ready for use","color":"green","bold":false}]
 
 #timer for secondary effect
-execute as @s[scores={mal_cd=70}] run playsound minecraft:block.bell.use player @a ~ ~ ~ 1 2
-scoreboard players add @s mal_cd 1 
+#execute as @s[scores={mal_cd=70}] run playsound minecraft:block.bell.use player @a ~ ~ ~ 1 2
+#scoreboard players add @s mal_cd 1 
+
+function players:items/mal/main2

@@ -1122,3 +1122,8 @@ scoreboard objectives add mythic_to_unspoken dummy
 
 scoreboard objectives add rare_chance dummy
 setblock 26516 168 -88 white_concrete
+
+
+
+scoreboard objectives add slash_timer2 dummy
+scoreboard objectives add slash_timer dummy

@@ -1,1 +1,1 @@
-damage @s 10 minecraft:ysold/hole
+damage @s 30 minecraft:ysold/hole

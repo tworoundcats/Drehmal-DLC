@@ -26,6 +26,6 @@ execute if score #generals int matches 1 run tellraw @a[predicate=players:in_gen
 execute unless score #generals int matches 3 run bossbar set health2 visible false
 
 
-execute unless score #generals int matches 3 run schedule function entities:bosses/generals/swap_tevus_2 1s
+execute unless score #generals int matches 3 run schedule function entities:bosses/generals/swap_tevus_2 2s
 
 execute if score #ethgar_active bool matches 1 if score #rhalon_active bool matches 1 if score #rhalon_swap temp >= #rhalon temp if score #ethgar_swap temp >= #ethgar temp run function entities:bosses/generals/swap_tevus_3 

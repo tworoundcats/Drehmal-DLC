@@ -1,5 +1,5 @@
+
 effect clear @e[tag=temp_disable] glowing
-execute as @e[tag=temp_disable] run tag @s add unstoppable
 execute as @e[tag=temp_disable] at @s run scoreboard players reset @s ai_state2
 
 execute as @e[tag=temp_disable] at @s run execute store result score @s spm.x run data get entity @s Pos[0] -100
@@ -26,7 +26,6 @@ execute as @e[tag=temp_disable] at @s run playsound minecraft:dcustom.item.tride
 execute as @e[tag=temp_disable] at @s run playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 2 1.2
 execute as @e[tag=temp_disable] at @s run particle explosion ~ ~ ~ 0.1 0 0.1 0 2 force
 execute as @e[tag=temp_disable] at @s run particle flash ~ ~ ~ 0.1 0 0.1 0 1 force
-
 
 execute as @e[tag=temp_disable] run team leave @s
 schedule function entities:ai/rhalon/attack3_3 10t

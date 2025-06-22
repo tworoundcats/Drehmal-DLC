@@ -29,6 +29,10 @@ execute positioned -1534.50 160.50 1970.49 run forceload add ~ ~
 
 execute positioned 3740.49 73.00 466.58 run forceload add ~ ~
 
+forceload add -2794 5384 -2816 5345
+
+forceload add -3938 5936 -4039 6044
+
 schedule function dlc:randomnpcs_2 3s
 
 tag @s add DLC_temp
