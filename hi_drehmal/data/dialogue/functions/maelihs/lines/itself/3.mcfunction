@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 55
+tellraw @s ["",{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] Don't get too excited now, snakespawn. The fact that you made it here does not make us friends. I do not give power of this kind away for nothing."},{"text":"\n- [ What do you want? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 56"}}]

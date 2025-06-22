@@ -172,12 +172,34 @@ execute if score #tree temp matches 35 if score #step temp matches 1 run functio
 execute if score #tree temp matches 35 if score #step temp matches 2 run function dialogue:maelihs/lines/screams/2
 execute if score #tree temp matches 35 if score #step temp matches 3 run function dialogue:maelihs/lines/screams/3
 
+# itself (DLC)
+execute if score #tree temp matches 55 if score #step temp matches 1 run function dialogue:maelihs/lines/itself/1
+execute if score #tree temp matches 55 if score #step temp matches 2 run function dialogue:maelihs/lines/itself/2
+execute if score #tree temp matches 55 if score #step temp matches 3 run function dialogue:maelihs/lines/itself/3
 
+# generals 1 (DLC)
+execute if score #tree temp matches 56 if score #step temp matches 1 run function dialogue:maelihs/lines/generals1/1
+execute if score #tree temp matches 56 if score #step temp matches 2 run function dialogue:maelihs/lines/generals1/2
+execute if score #tree temp matches 56 if score #step temp matches 3 run function dialogue:maelihs/lines/generals1/3
 
+# generals 2 (DLC)
+execute if score #tree temp matches 57 if score #step temp matches 1 run function dialogue:maelihs/lines/generals2/1
+execute if score #tree temp matches 57 if score #step temp matches 2 run function dialogue:maelihs/lines/generals2/2
+execute if score #tree temp matches 57 if score #step temp matches 3 run function dialogue:maelihs/lines/generals2/3
+execute if score #tree temp matches 57 if score #step temp matches 4 run function dialogue:maelihs/lines/generals2/4
+execute if score #tree temp matches 57 if score #step temp matches 5 run function dialogue:maelihs/lines/generals2/5
+execute if score #tree temp matches 57 if score #step temp matches 6 run function dialogue:maelihs/lines/generals2/6
 
+# reward (DLC)
+execute if score #tree temp matches 59 if score #step temp matches 1 run function dialogue:maelihs/lines/reward/1
+execute if score #tree temp matches 59 if score #step temp matches 2 run function dialogue:maelihs/lines/reward/2
+execute if score #tree temp matches 59 if score #step temp matches 3 run function dialogue:maelihs/lines/reward/3
 
+execute if score #tree temp matches 60 if score #step temp matches 1 run function dialogue:maelihs/lines/reward2/1
+execute if score #tree temp matches 60 if score #step temp matches 2 run function dialogue:maelihs/lines/reward2/2
 
-
-
-
-
+execute if score #tree temp matches 61 if score #step temp matches 1 run function dialogue:maelihs/lines/ichor/1
+execute if score #tree temp matches 61 if score #step temp matches 2 run function dialogue:maelihs/lines/ichor/2
+execute if score #tree temp matches 61 if score #step temp matches 3 run function dialogue:maelihs/lines/ichor/3
+execute if score #tree temp matches 61 if score #step temp matches 4 run function dialogue:maelihs/lines/ichor/4
+execute if score #tree temp matches 61 if score #step temp matches 5 run function dialogue:maelihs/lines/ichor/5

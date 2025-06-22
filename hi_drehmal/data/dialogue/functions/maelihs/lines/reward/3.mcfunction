@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 59
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"It... it does not feel as liberating as I had hoped."},{"text":"\n- [ You asked me for this. ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 60"}}]

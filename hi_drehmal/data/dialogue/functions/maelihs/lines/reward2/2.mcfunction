@@ -1,0 +1,2 @@
+scoreboard players set @s dialogueTreeID 60
+tellraw @s [{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] "},{"text":"There is much left to do. I will ask no more of you."},{"text":"\n- [ What about my payment? ]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger dialogueOption set 61"}}]
