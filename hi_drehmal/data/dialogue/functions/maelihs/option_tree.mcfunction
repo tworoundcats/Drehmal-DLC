@@ -115,8 +115,31 @@ execute if score #tree temp matches 32 if score #option temp matches 52 run func
 execute if score #tree temp matches 33 if score #option temp matches 53 run function dialogue:maelihs/lines/uh/0
 execute if score #tree temp matches 33 if score #option temp matches 54 run function dialogue:maelihs/lines/screams/0
 
-# 34 - uh
-execute if score #tree temp matches 34 if score #option temp matches 55 run function dialogue:maelihs/lines/main_sullen
+# 34 - uh (DLC MODIFIED)
+# original: execute if score #tree temp matches 34 if score #option temp matches 55 run function dialogue:maelihs/lines/main_sullen
+execute if score #tree temp matches 34 if score #option temp matches 55 run function dialogue:maelihs/lines/itself/0
 
-# 35 - screams
-execute if score #tree temp matches 35 if score #option temp matches 56 run function dialogue:maelihs/lines/main_sullen
+# 35 - screams (DLC MODIFIED)
+# original: execute if score #tree temp matches 35 if score #option temp matches 56 run function dialogue:maelihs/lines/main_sullen
+execute if score #tree temp matches 35 if score #option temp matches 55 run function dialogue:maelihs/lines/itself/0
+
+# 55 - itself (NEW DLC UPGRADE PATH)
+execute if score #tree temp matches 55 if score #option temp matches 56 run function dialogue:maelihs/lines/generals1/0
+
+# 56 - Generals (NEW DLC UPGRADE PATH cont.)
+execute if score #tree temp matches 56 if score #option temp matches 57 run function dialogue:maelihs/lines/generals2/0
+
+#57 - Generals back to Main (DLC)
+execute if score #tree temp matches 57 if score #option temp matches 58 run function dialogue:maelihs/lines/upgradequeststarted
+
+# 58 - Smoke (DLC REWARD)
+execute if score #tree temp matches 58 if score #option temp matches 59 run function dialogue:maelihs/lines/reward/0
+
+# 59 - Reward (DLC REWARD)
+execute if score #tree temp matches 59 if score #option temp matches 60 run function dialogue:maelihs/lines/reward2/0
+
+# 60 - Reward 2 to Ichor (DLC)
+execute if score #tree temp matches 60 if score #option temp matches 61 run function dialogue:maelihs/lines/ichor/0
+
+# 61 - Ichor to Quest End (DLC)
+execute if score #tree temp matches 61 if score #option temp matches 62 run function dialogue:maelihs/lines/upgradequestcompleted

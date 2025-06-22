@@ -8,7 +8,8 @@ execute unless entity @s[tag=met_mael] if entity @s[tag=maelhis.maxxed] run func
 
 execute if entity @s[tag=met_mael] unless entity @s[tag=mael_fanatic] unless entity @s[tag=mael_seen_mal] if predicate players:holding/male run function dialogue:maelihs/lines/malevolentia/1_ex
 execute if entity @s[tag=met_mael] unless entity @s[tag=mael_fanatic] unless entity @s[tag=mael_seen_mal] unless predicate players:holding/male run function dialogue:maelihs/lines/main
-execute if entity @s[tag=met_mael] unless entity @s[tag=mael_fanatic] if entity @s[tag=mael_seen_mal] run function dialogue:maelihs/lines/main
+execute if entity @s[tag=met_mael] unless entity @s[tag=mael_fanatic] if entity @s[tag=mael_seen_mal,tag=!killed_generals] run function dialogue:maelihs/lines/main
+execute if entity @s[tag=met_mael] unless entity @s[tag=mael_fanatic] if entity @s[tag=mael_seen_mal,tag=killed_generals] run function dialogue:maelihs/lines/smoke
 execute if entity @s[tag=met_mael] if entity @s[tag=mael_fanatic] run function dialogue:maelihs/lines/worship
 
 tag @s add mael_dialogue
