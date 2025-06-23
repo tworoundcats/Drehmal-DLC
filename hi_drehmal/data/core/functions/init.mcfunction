@@ -788,6 +788,7 @@ scoreboard players set #400 const 400
 scoreboard players set #405 const 405
 scoreboard players set #700 const 700
 scoreboard players set #800 const 800
+scoreboard players set #802 const 802
 scoreboard players set #900 const 900
 scoreboard players set #1000 const 1000
 scoreboard players set #1200 const 1200

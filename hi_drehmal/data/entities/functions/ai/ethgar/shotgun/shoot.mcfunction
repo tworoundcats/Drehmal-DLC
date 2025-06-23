@@ -22,3 +22,4 @@ execute positioned ^0.14 ^-0.14 ^ facing ^0.57 ^-0.57 ^5.9 run function entities
 scoreboard players set #loop temp 55
 execute positioned ^-0.14 ^-0.14 ^ facing ^-0.57 ^-0.57 ^5.9 run function entities:ai/ethgar/shotgun/loop
 
+scale set pehkui:knockback 15 @e[tag=ethgar]
