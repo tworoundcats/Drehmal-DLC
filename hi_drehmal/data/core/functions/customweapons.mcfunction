@@ -142,29 +142,47 @@ execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] ru
 
 
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run schedule function weapons:give/pocket 1t
+
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run tag @s add temp_waystone
 execute as @a if predicate players:hold_pocket at @s if predicate players:lodahr as @s run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
+
 execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run schedule function weapons:give/waystone 1t
-execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run title @s title {"text":"Teleporting Across Lodahr is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run tag @s add temp_waystone
 execute as @a if predicate players:hold_waystone at @s if predicate players:lodahr as @s run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
+
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run schedule function weapons:give/pocket 1t
-execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] as @s[tag=!temp_waystone] run tellraw @s {"text":"Your worhome fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run tag @s add temp_waystone
 execute as @a if predicate players:hold_pocket as @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run schedule function weapons:give/waystone 1t
-execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] as @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run tag @s add temp_waystone
 execute as @a if predicate players:hold_waystone as @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
+
 execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run schedule function weapons:give/pocket 1t
-execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas as @s[tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run tag @s add temp_waystone
 execute as @a if predicate players:hold_pocket at @s if predicate players:adventure_areas run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
+
 execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run schedule function weapons:give/waystone 1t
-execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run title @s title {"text":"Teleporting is Disabled","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas as @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas as @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run tag @s add temp_waystone
 execute as @a if predicate players:hold_waystone at @s if predicate players:adventure_areas run item modify entity @s weapon.mainhand core:soletta/remove_one_item
+
+
 
 execute as @a as @s[tag=temp_waystone] unless predicate players:hold_pocket unless predicate players:hold_waystone run tag @s remove temp_waystone
 
