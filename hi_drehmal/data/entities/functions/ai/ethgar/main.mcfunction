@@ -6,7 +6,7 @@ execute as @s[tag=!swapped] if score #ethgar_swap temp >= #ethgar temp run funct
 
 execute as @s[tag=!swapped2] unless score #noswap bool matches 1 if score #ethgar_swap2 temp >= #ethgar temp run function entities:bosses/generals/swap_ethgar_4
 
-execute as @s[tag=!swapped3] unless score #noswap2 bool matches 1 if score #ethgar_swap3 temp >= #ethgar temp run function entities:bosses/generals/swap_ethgar_6
+execute as @s[tag=!swapped3] unless score #noswap2 bool matches 1 unless score @s ai_state2 matches 1 if score #ethgar_swap3 temp >= #ethgar temp run function entities:bosses/generals/swap_ethgar_6
 
 
 execute if score #5T timer matches 0 run bossbar set health3 players @a

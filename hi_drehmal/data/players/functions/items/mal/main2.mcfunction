@@ -207,4 +207,4 @@ execute if score #mal_swing bool matches 1 run scoreboard players reset #mal_swi
 
 kill @e[type=interaction,tag=swing_marker]
 
-execute as @s[tag=upgraded] at @s run summon minecraft:interaction ~ ~ ~ {Tags:["swing_marker"],width:1.1,height:2}
+execute as @s[tag=upgraded] at @s run summon minecraft:interaction ~ ~ ~ {Tags:["swing_marker"],width:1.3,height:2.4}

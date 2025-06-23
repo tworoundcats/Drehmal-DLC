@@ -13,6 +13,8 @@ execute if score #generals int matches 1 run tellraw @a[predicate=players:in_gen
 
 bossbar set health visible false
 
+scoreboard players set #noswap bool 1
+
+
 schedule function entities:bosses/generals/swap_rhalon_5 2s
 
-scoreboard players set #noswap bool 1

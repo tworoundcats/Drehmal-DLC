@@ -1,6 +1,6 @@
 tag @s add swapped3
 scoreboard players set #noswap2 bool 1
-
+scoreboard players set #noswap bool 1
 execute as @e[tag=tevus,type=piglin_brute,limit=1] if data entity @s NoAI run scoreboard players set #generals int 0
 execute as @e[tag=rhalon,type=piglin_brute,limit=1] if data entity @s NoAI run scoreboard players set #generals int 1
 

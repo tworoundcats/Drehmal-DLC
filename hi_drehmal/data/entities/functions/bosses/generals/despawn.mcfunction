@@ -16,12 +16,12 @@ scoreboard players reset #rhalon_swap temp
 scoreboard players reset #rhalon temp
 scoreboard players reset #ethgar temp
 scoreboard players reset #tevus temp
-
 kill @e[tag=magma_block]
 kill @e[tag=boom]
 kill @e[tag=temp_boom_marker]
 kill @e[tag=owie]
 kill @e[tag=ethgar_arrow]
+kill @e[tag=trap]
 bossbar set health visible false
 bossbar set health2 visible false
 bossbar set health3 visible false

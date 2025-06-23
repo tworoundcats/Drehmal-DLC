@@ -12,7 +12,7 @@ execute if score #generals int matches 0 run tellraw @a[predicate=players:in_gen
 execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General","color": "#FF7300"},{"text":"]"},{"text":" Don’t hold back, Ethgar."}]
 
 bossbar set health2 visible false
+scoreboard players set #noswap bool 1
 
 schedule function entities:bosses/generals/swap_tevus_5 2s
 
-scoreboard players set #noswap bool 1
