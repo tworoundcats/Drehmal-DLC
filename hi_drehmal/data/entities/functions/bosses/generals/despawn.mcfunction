@@ -10,6 +10,13 @@ scoreboard players reset #noswap2 bool
 scoreboard players reset #ethgar_dead bool
 scoreboard players reset #rhalon_dead bool
 scoreboard players reset #tevus_dead bool
+scoreboard players reset #tevus_swap temp
+scoreboard players reset #ethgar_swap temp
+scoreboard players reset #rhalon_swap temp
+scoreboard players reset #rhalon temp
+scoreboard players reset #ethgar temp
+scoreboard players reset #tevus temp
+
 kill @e[tag=magma_block]
 kill @e[tag=boom]
 kill @e[tag=temp_boom_marker]

@@ -1,1 +1,1 @@
-schedule function entities:ai/ethgar/attack1 1t
+schedule function entities:ai/ethgar/attack1 5t

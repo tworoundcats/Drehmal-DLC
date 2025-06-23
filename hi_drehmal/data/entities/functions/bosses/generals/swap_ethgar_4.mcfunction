@@ -5,8 +5,8 @@ execute at @s run playsound simplyswords:dark_sword_parry player @a ~ ~ ~ 2 2
 execute at @s positioned ~ ~1 ~ run summon marker ~ ~ ~ {Tags:["temp_spawn"]}
 tp @s 27339.53 195.00 747.44
 
-execute as @e[tag=tevus] if data entity @s NoAI run scoreboard players set #generals int 0
-execute as @e[tag=rhalon] if data entity @s NoAI run scoreboard players set #generals int 1
+execute as @e[tag=tevus,type=piglin_brute,limit=1] if data entity @s NoAI run scoreboard players set #generals int 0
+execute as @e[tag=rhalon,type=piglin_brute,limit=1] if data entity @s NoAI run scoreboard players set #generals int 1
 
 execute if score #generals int matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" I tire of this game. Tevus, send them to Voynahla."}]
 execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Let your flame speak, Rhalon!"}]
