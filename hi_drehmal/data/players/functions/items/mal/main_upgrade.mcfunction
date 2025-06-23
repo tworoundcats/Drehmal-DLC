@@ -1,5 +1,5 @@
 scoreboard players reset @s mal_cd
-
+execute as @s[tag=!upgraded] at @s run summon minecraft:interaction ~ ~ ~ {Tags:["swing_marker"],width:1.3,height:2.4}
 execute store result score #mal_temp temp run attribute @s[tag=!upgraded] minecraft:generic.attack_speed get 100
 
 execute as @s[tag=!upgraded] if score #mal_temp temp matches -200..-190 run attribute @s minecraft:generic.attack_speed base set 6.8

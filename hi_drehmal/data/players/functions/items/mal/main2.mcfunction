@@ -8,11 +8,13 @@ execute as @s[scores={mal_cd=15..}] run tag @s remove temp_attack_timer2
 execute as @s[scores={mal_cd=15..}] run tag @s remove temp_attack_timer
 execute as @s[scores={mal_cd=15..}] run tag @s remove temp_attack
 execute as @s[scores={mal_cd=15..}] run tag @s remove upgraded
+execute as @s[scores={mal_cd=15..}] run kill @e[type=interaction,tag=swing_marker]
 execute as @s[scores={mal_cd=15..}] run scoreboard players reset @s mal_cd
 
 
 
 execute as @e[type=interaction,tag=swing_marker] if data entity @s attack run scoreboard players set #mal_swing bool 1
+execute as @e[type=interaction,tag=swing_marker] run data remove entity @s attack
 
 execute if score #mal_swing bool matches 1 run tag @s add temp_attack
 execute if score #mal_swing bool matches 1 at @s[tag=!temp_attack_timer] run playsound simplyswords:dark_sword_attack_with_blood_03 player @a ~ ~ ~ 1 0
@@ -204,7 +206,4 @@ execute if score @s slash_timer2 matches 13.. run scoreboard players set @s slas
 
 execute if score #mal_swing bool matches 1 run scoreboard players reset #mal_swing bool
 
-
-kill @e[type=interaction,tag=swing_marker]
-
-execute as @s[tag=upgraded] at @s run summon minecraft:interaction ~ ~ ~ {Tags:["swing_marker"],width:1.3,height:2.4}
+execute as @s[tag=upgraded] at @s run tp @e[type=interaction,limit=1,tag=swing_marker,sort=nearest] ~ ~ ~

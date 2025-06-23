@@ -2,7 +2,7 @@ execute at @s run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 normal
 execute at @s run playsound minecraft:dcustom.block.fire.extinguish player @a ~ ~ ~ 2 2
 execute at @s run playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 0.4 2
 forceload remove 27330 757 27347 739
-
+execute as @a[predicate=players:in_generals_arena] run effect give @s resistance 10 255 true
 kill @e[tag=magma_block]
 kill @e[tag=boom]
 kill @e[tag=temp_boom_marker]
