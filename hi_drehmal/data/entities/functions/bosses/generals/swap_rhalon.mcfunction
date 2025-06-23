@@ -28,4 +28,4 @@ execute unless score #generals int matches 3 run bossbar set health visible fals
 
 execute unless score #generals int matches 3 run schedule function entities:bosses/generals/swap_rhalon_2 2s
 
-execute if score #ethgar_active bool matches 1 if score #tevus_active bool matches 1 if score #tevus_swap temp >= #tevus temp if score #ethgar_swap temp >= #ethgar temp run function entities:bosses/generals/swap_rhalon_3 
+execute if score #generals int matches 3 run function entities:bosses/generals/swap_rhalon_3 

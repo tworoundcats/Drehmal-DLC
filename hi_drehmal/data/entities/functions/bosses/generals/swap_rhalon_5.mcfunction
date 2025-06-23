@@ -8,4 +8,4 @@ execute as @e[tag=rhalon] run data modify entity @s NoAI set value 1b
 execute as @e[tag=rhalon] run tp @s 27339.53 195.00 747.44
 
 kill @e[tag=temp_spawn]
-scoreboard players reset #generals int
+scoreboard players reset #generals2 int

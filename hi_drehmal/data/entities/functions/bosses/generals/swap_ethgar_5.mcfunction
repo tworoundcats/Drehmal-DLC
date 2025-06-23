@@ -11,4 +11,4 @@ execute as @e[tag=ethgar] run tp @s 27339.53 195.00 747.44
 
 
 kill @e[tag=temp_spawn]
-scoreboard players reset #generals int
+scoreboard players reset #generals2 int

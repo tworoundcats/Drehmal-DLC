@@ -4,4 +4,4 @@ kill @e[tag=temp_spawn]
 
 execute as @e[tag=tevus] run data modify entity @s NoAI set value 1b
 
-scoreboard players reset #generals int
+scoreboard players reset #generals2 int

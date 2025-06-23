@@ -6,4 +6,4 @@ execute as @e[tag=ethgar] run effect give @s extraalchemy:recall 10 10 true
 execute as @e[tag=ethgar] run effect clear @s extraalchemy:recall
 execute as @e[tag=ethgar] run data modify entity @s NoAI set value 1b
 
-scoreboard players reset #generals int
+scoreboard players reset #generals2 int
