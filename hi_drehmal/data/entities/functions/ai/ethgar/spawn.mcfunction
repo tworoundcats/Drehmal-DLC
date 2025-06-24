@@ -6,7 +6,7 @@ execute unless score #low_particles? bool matches 1 run particle minecraft:large
 execute unless score #low_particles? bool matches 1 run particle minecraft:flash ~ ~ ~ 0 0 0 0 1
 playsound minecraft:dcustom.entity.illusioner.prepare_blindness ambient @a ~ ~ ~ 3 0.6
 playsound minecraft:dcustom.entity.zombie_villager.cure ambient @a ~ ~ ~ 2 0.8
-execute unless score #rhalon_active bool matches 1 unless score #tevus_active bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color":"#FF4000"},{"text":"]"},{"text":" Today, you meet your end, remnant!"}]
+execute unless score #rhalon_active bool matches 1 unless score #tevus_active bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color":"#FF4000"},{"text":"]"},{"text":" Today you meet your end, remnant!"}]
 
 execute if score #swap temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Suffer they shall."}]
 

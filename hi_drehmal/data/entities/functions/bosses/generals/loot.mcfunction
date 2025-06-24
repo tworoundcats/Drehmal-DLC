@@ -26,3 +26,5 @@ summon item ~ ~ ~ {Motion:[-0.2, 0.3, -0.2], Item:{id:"minecraft:diamond_boots",
 
 
 execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths
+
+schedule function entities:bosses/generals/send_home 15s
