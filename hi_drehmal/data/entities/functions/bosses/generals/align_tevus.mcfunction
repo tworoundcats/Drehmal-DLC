@@ -1,0 +1,1 @@
+execute positioned 27365 161 744 as @e[tag=tevus] run tp @s 27365 161 744 facing entity @p

@@ -1,0 +1,1 @@
+execute positioned 27365 161 747 as @e[tag=rhalon] run tp @s 27365 161 747 facing entity @p

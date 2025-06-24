@@ -18,8 +18,5 @@ execute as @e[type=marker,tag=temp_boom_marker] run data modify entity @s Pos[1]
 
 execute as @e[type=marker,tag=temp_boom_marker] at @s run summon area_effect_cloud ~ ~ ~ {Duration:120,Tags:["boom"]}
 
-kill @e[tag=rhalon_intro]
-kill @e[tag=tevus_intro]
-kill @e[tag=ethgar_intro]
 kill @e[type=marker,tag=temp_boom_marker]
 schedule function entities:bosses/generals/spawnboss_4 4s

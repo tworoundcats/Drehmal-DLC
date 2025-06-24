@@ -12,4 +12,4 @@ bossbar set health2 visible true
 execute as @e[tag=tevus] run scoreboard players reset @s ai_state2
 execute as @e[tag=tevus] run data remove entity @s NoAI
 
-execute if score #noswap2 bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General","color": "#FF7300"},{"text":"]"},{"text":" Stand down, or be broken."}]
+execute if score #noswap2 bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General","color": "#FF7300"},{"text":"]"},{"text":" Avsohm dies with you!"}]

@@ -1,0 +1,1 @@
+execute positioned 27365 161 750 as @e[tag=ethgar] run tp @s 27365 161 750 facing entity @p
