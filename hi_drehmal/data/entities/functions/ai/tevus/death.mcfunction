@@ -4,7 +4,7 @@ scoreboard players operation @s temp = #rand temp
 scoreboard players operation @s temp %= #3 const
 
 
-execute if score @s temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General", "italic": true, "color": "gray"},{"text":"]"},{"text":" My Lord… Why have you… forsaken me…", "italic": true, "color": "dark_gray"}]
+execute if score @s temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General", "italic": true, "color": "gray"},{"text":"]"},{"text":" My Lord… Why have you forsaken me…", "italic": true, "color": "dark_gray"}]
 
 execute if score @s temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General", "italic": true, "color": "gray"},{"text":"]"},{"text":" None will remain… all… will be… ashes…", "italic": true, "color": "dark_gray"}]
 

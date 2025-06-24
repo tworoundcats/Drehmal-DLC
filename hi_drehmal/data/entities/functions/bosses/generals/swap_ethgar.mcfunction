@@ -19,8 +19,8 @@ execute unless score #generals int matches 3 run tp @s 27339.53 195.00 747.44
 
 
 
-execute if score #generals int matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Get them, Tevus! I want a trophy of their antlers out of this!"}]
-execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Get them, Rhalon! They’ll write records of this battle!"}]
+execute if score #generals int matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Get them, Tevus! I want those antlers as a trophy!"}]
+execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Get them, Rhalon! They'll tell tales of what we do here today!"}]
 execute as @e[tag=ethgar] run effect clear @s extraalchemy:recall
 
 

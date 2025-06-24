@@ -6,7 +6,7 @@ scoreboard players operation @s temp %= #3 const
 
 execute if score @s temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General", "italic": true, "color": "gray"},{"text":"]"},{"text":" Mael… Is this how… you repay my loyalty…", "italic": true, "color": "dark_gray"}]
 
-execute if score @s temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General", "italic": true, "color": "gray"},{"text":"]"},{"text":" I… thought I was better… than this…", "italic": true, "color": "dark_gray"}]
+execute if score @s temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General", "italic": true, "color": "gray"},{"text":"]"},{"text":" I… thought I was stronger…", "italic": true, "color": "dark_gray"}]
 
 execute if score @s temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General", "italic": true, "color": "gray"},{"text":"]"},{"text":" You… got lucky this time…", "italic": true, "color": "dark_gray"}]
 

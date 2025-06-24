@@ -12,7 +12,7 @@ scoreboard players set #rhalon_active bool 1
 
 execute if score #swap temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" GLORY IN FLAME!"}]
 
-execute if score #swap temp matches 3 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" I WILL LIGHT THEIR FUNERAL PYRE!"}]
+execute if score #swap temp matches 3 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" I WILL LIGHT YOUR FUNERAL PYRE!"}]
 
 
 bossbar set health name {"text":"Rhalon, the First General","obfuscated":false,"color":"white"}

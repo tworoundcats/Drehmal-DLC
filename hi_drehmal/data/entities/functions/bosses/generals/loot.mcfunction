@@ -3,6 +3,8 @@ execute at @s run playsound minecraft:dcustom.block.fire.extinguish player @a ~ 
 execute at @s run playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 0.4 2
 forceload remove 27330 757 27347 739
 execute as @a[predicate=players:in_generals_arena] run effect give @s resistance 10 255 true
+execute as @p[tag=bg_questholder] run tag @s add killed_generals
+execute as @p[tag=bg_questholder] run tag @s remove bg_questholder
 kill @e[tag=magma_block]
 kill @e[tag=boom]
 kill @e[tag=temp_boom_marker]
