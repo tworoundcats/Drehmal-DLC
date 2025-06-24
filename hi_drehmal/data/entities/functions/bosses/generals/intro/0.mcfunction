@@ -5,5 +5,6 @@ execute positioned -2849.65 41.00 5331.37 as @a[distance=..16,predicate=players:
 execute if score #dlcdeathcounter bool matches 1 positioned -2849.65 41.00 5331.37 as @a[distance=..16] run tag @s add tempdeaths
 execute positioned -2849.65 41.00 5331.37 as @a[distance=..16] run tp @s 27339 147 747
 forceload add 27330 757 27347 739
-schedule function entities:bosses/generals/intro/1 5s
+execute positioned 27340 146 747 unless entity @a[predicate=players:in_generals_arena,tag=seen_generals_intro] run schedule function entities:bosses/generals/intro/1 5s
+execute positioned 27340 146 747 if entity @a[predicate=players:in_generals_arena,tag=seen_generals_intro] run schedule function entities:bosses/generals/spawnboss 1s
 weather clear

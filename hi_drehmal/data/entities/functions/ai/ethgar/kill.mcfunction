@@ -1,7 +1,9 @@
 function core:rng
 scoreboard players operation #death temp = #rand temp
 scoreboard players operation #death temp %= #802 const
-
+kill @e[tag=rhalon_intro]
+kill @e[tag=tevus_intro]
+kill @e[tag=ethgar_intro]
 
 execute if score #death temp matches 0..200 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" I thought you'd put up more of a fight than that!"}]
 
