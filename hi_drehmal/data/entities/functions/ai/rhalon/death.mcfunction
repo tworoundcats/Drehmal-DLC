@@ -16,3 +16,9 @@ execute at @s run kill @e[type=experience_orb]
 scoreboard players set #rhalon_dead bool 1
 execute if score #rhalon_dead bool matches 1 if score #ethgar_dead bool matches 1 if score #tevus_dead bool matches 1 at @s run function entities:bosses/generals/loot
 bossbar set minecraft:health visible false
+
+
+scoreboard players reset #noswap2 bool 
+execute as @e[tag=tevus] if data entity @s NoAI positioned 27339.50 152.00 747.50 run tp @s ~ ~ ~
+execute as @e[tag=ethgar] if data entity @s NoAI positioned 27339.50 152.00 747.50 run tp @s ~ ~ ~
+execute as @e[tag=rhalon] if data entity @s NoAI positioned 27339.50 152.00 747.50 run tp @s ~ ~ ~

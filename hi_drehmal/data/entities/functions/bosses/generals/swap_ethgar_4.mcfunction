@@ -18,3 +18,4 @@ scoreboard players set #noswap bool 1
 
 schedule function entities:bosses/generals/swap_ethgar_5 2s
 
+schedule clear entities:bosses/generals/swap_ethgar_4

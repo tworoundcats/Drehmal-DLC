@@ -15,3 +15,4 @@ execute if score #death temp matches 3 run tellraw @a[predicate=players:in_gener
 
 scoreboard players reset #death temp
 advancement revoke @s only entities:rhalon_killed
+

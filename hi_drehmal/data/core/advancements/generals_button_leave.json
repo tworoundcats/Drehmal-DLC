@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x":  27340.5,
+                "y":  147.5,
+                "z":  747.5
+              },
+              "dimension": "minecraft:overworld"
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:stone_button",
+            "properties": {
+              "powered": "true"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "entities:bosses/generals/send_home"
+  }
+}

@@ -10,6 +10,8 @@ kill @e[tag=boom]
 kill @e[tag=temp_boom_marker]
 kill @e[tag=owie]
 kill @e[tag=ethgar_arrow]
+kill @e[tag=ethgar_arrow2]
+kill @e[tag=trap]
 
 summon item ~ ~ ~ {Motion:[0.0, 0.3, 0.25], Item:{id:"minecraft:player_head", Count:1b, tag:{Enchantments:[{id:"minecraft:protection",lvl:4s}],SkullOwner:{Id:[I;-1662615657,1234258414,-1952748472,534218152],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ1MDA3ZGZkMzE5YWY5YmMxN2NkNDUxOTQ2ZGFlMDhkZjU2OTZiN2NiZGQ1OGMwY2UyMjFmMmIyNjliYTk5NiJ9fX0="}]}},display:{Name:'{"text":"Helmet of the First General","color":"red","italic":false}'}}}}
 
@@ -27,4 +29,10 @@ summon item ~ ~ ~ {Motion:[-0.2, 0.3, -0.2], Item:{id:"minecraft:diamond_boots",
 
 execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths
 
-schedule function entities:bosses/generals/send_home 15s
+setblock 27340 146 747 polished_blackstone
+setblock 27340 147 747 minecraft:stone_button[face=floor]
+particle minecraft:block minecraft:polished_blackstone_bricks 27340 146.5 747 0.3 0.3 0.3 0.1 30
+particle explosion 27340 146.5 747 0 0 0 0.1 1
+playsound minecraft:dcustom.entity.generic.explode block @a 27340 147 747 2 2
+
+scoreboard players set #generals_dead? bool 1

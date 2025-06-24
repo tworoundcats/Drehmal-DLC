@@ -12,4 +12,4 @@ bossbar set health3 visible true
 execute as @e[tag=ethgar] run scoreboard players reset @s ai_state2
 execute as @e[tag=ethgar] run data remove entity @s NoAI
 
-execute if score #noswap2 bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color":"#FF4000"},{"text":"]"},{"text":" You are going to make for a lovely Rhavelothi meat pie!"}]
+execute if score #noswap2 bool matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color":"#FF4000"},{"text":"]"},{"text":" Don’t worry, I’ll make your loss memorable."}]

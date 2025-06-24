@@ -112,32 +112,33 @@ execute as @a as @s[tag=cloud] run function players:checkcloud
 
 execute as @a run execute at @s as @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
 
-execute as @a[advancements={weapons:wings=true},tag=!wings] run execute at @s as @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if data entity @s cardinal_components.trinkets:trinkets.chest.cape.Items[{id:"icarus:magenta_mechanical_leather_wings"}] run execute as @s run function players:nowings
+execute as @a as @s[tag=!wings] unless predicate dlc:wings run execute at @s as @s if predicate players:adventure_areas unless predicate players:locations/in_terminus run execute as @s run function players:nowings
 
-execute as @a[advancements={weapons:wings=true},tag=!wings] run execute at @s as @s if predicate players:lodahr unless predicate players:locations/in_terminus if data entity @s cardinal_components.trinkets:trinkets.chest.cape.Items[{id:"icarus:magenta_mechanical_leather_wings"}] run execute as @s run function players:nowings
+execute as @a as @s[tag=!wings] unless predicate dlc:wings run execute at @s as @s if predicate players:lodahr unless predicate players:locations/in_terminus run execute as @s run function players:nowings
 
 execute as @a as @s[tag=wings] run function players:checkwings
 
 
+execute as @a as @s[tag=wings,advancements={advancements:primordial/enter_yav=false,advancements:primordial/khive_angy=false}] unless predicate dlc:wings run execute at @s as @s run execute unless predicate players:lodahr unless predicate players:adventure_areas run execute as @s run function players:givewings
 
-execute as @a[tag=wings,advancements={weapons:wings=true,advancements:primordial/enter_yav=false,advancements:primordial/khive_angy=false}] run execute at @s as @s run execute unless predicate players:lodahr unless predicate players:adventure_areas run execute as @s run function players:givewings
+execute as @a as @s[tag=wings,advancements={advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] unless predicate dlc:wings run execute at @s as @s run execute unless predicate players:lodahr unless predicate players:adventure_areas run execute as @s run function players:givewings
 
-execute as @a[tag=wings,advancements={weapons:wings=true,advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] run execute at @s as @s run execute unless predicate players:lodahr unless predicate players:adventure_areas run execute as @s run function players:givewings
-
-execute as @a[advancements={weapons:wings=true,advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run function players:nowings
-
+execute as @a as @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] if predicate dlc:wings run function players:nowings
 
 
 
-execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0 
-execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0 
+
+execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0b
+execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0b
 execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run tag @s remove artifact
 execute as @e[type=item,nbt={Item:{tag:{mquest:1b}}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
 
 execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] run data modify entity @s Glowing set value 1
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] run data modify entity @s Glowing set value 1b
 execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify entity @s Glowing set value 1
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify entity @s Glowing set value 1b
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_cluster"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_cluster"}}] run data modify entity @s Glowing set value 1b
 execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run tag @s remove star
 
 
@@ -199,7 +200,8 @@ execute unless score #ob_finish bool matches 2 as @a at @s if predicate players:
 
 execute as @a at @s if predicate players:in_em_arena run scoreboard players set @s obv_cool 2147483647
 execute as @a at @s if predicate core:in_hovadmain run scoreboard players set @s obv_cool 2147483647
-execute as @a as @s[scores={obv_cool=2000000000..}] run execute at @s unless predicate players:in_em_arena unless predicate core:in_hovadmain run scoreboard players reset @s obv_cool
+execute as @a at @s if predicate players:in_generals_arena run scoreboard players set @s obv_cool 2147483647
+execute as @a as @s[scores={obv_cool=2000000000..}] run execute at @s unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena run scoreboard players reset @s obv_cool
 
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run scoreboard players add #station timer 1
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run execute as @e[tag=visual,distance=..5] if score #station timer matches 6.. run function particle:term/animate

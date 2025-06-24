@@ -13,7 +13,7 @@ effect give @s resistance 5 4 true
 
 
 fill 27340 146 747 27340 147 747 air replace
-execute positioned 27340 146 747 run kill @e[type=item,distance=..3]
+
 
 execute positioned 27339.50 152.00 747.50 as @e[tag=ethgar] run tp @s ~ 195 ~
 execute positioned 27339.50 152.00 747.50 as @e[tag=tevus] run tp @s ~ 195 ~
@@ -25,7 +25,7 @@ execute positioned 27339.50 152.00 747.50 as @e[tag=rhalon] run data merge entit
 
 
 
-
+scoreboard players reset #generals_dead? bool
 scoreboard players reset #generals_music? bool
 scoreboard players reset #generals_active? bool
 scoreboard players reset #tevus_active bool 
@@ -44,7 +44,7 @@ scoreboard players reset #rhalon temp
 scoreboard players reset #ethgar temp
 scoreboard players reset #tevus temp
 
-schedule function entities:bosses/generals/despawn_2 10t
+schedule function entities:bosses/generals/despawn_2 5t
 schedule clear entities:bosses/generals/spawnboss
 schedule clear entities:bosses/generals/spawnboss_2
 schedule clear entities:bosses/generals/spawnboss_3

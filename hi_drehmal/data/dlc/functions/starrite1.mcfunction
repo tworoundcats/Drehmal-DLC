@@ -79,4 +79,7 @@ execute positioned -23.56 106.00 5252.51 run forceload add ~ ~
 
 schedule function dlc:starrite1_2 3s
 
+
+execute if score count_all towers matches 8.. run schedule function terminus:gifts/7/0 2s
+
 tag @s add DLC_temp
