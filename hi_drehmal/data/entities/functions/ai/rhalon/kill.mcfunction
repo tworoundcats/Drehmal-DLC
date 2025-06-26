@@ -1,19 +1,18 @@
 function core:rng
 scoreboard players operation #death temp = #rand temp
 scoreboard players operation #death temp %= #4 const
-kill @e[tag=rhalon_intro]
-kill @e[tag=tevus_intro]
-kill @e[tag=ethgar_intro]
-
 
 execute if score #death temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" BURN, SNAKESPAWN! BURN!"}]
 
 execute if score #death temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" YOU BURN JUST LIKE THE REST!"}]
 
-execute if score #death temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" ANOTHER BUG CRUSHED BENEATH THE EMPIRE'S FOOT!"}]
+execute if score #death temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" ANOTHER WORM CRUSHED BENEATH THE EMPIRE'S FOOT!"}]
 
 execute if score #death temp matches 3 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" YOU CANNOT ESCAPE THE INFERNO!"}]
 
+kill @e[tag=rhalon_intro]
+kill @e[tag=tevus_intro]
+kill @e[tag=ethgar_intro]
 
 scoreboard players reset #death temp
 advancement revoke @s only entities:rhalon_killed

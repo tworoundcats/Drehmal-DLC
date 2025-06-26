@@ -1,9 +1,6 @@
 function core:rng
 scoreboard players operation #death temp = #rand temp
 scoreboard players operation #death temp %= #5 const
-kill @e[tag=rhalon_intro]
-kill @e[tag=tevus_intro]
-kill @e[tag=ethgar_intro]
 
 execute if score #death temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General","color": "#FF7300"},{"text":"]"},{"text":" Put these foolish ambitions to rest."}]
 
@@ -18,3 +15,7 @@ execute if score #death temp matches 4 run tellraw @a[predicate=players:in_gener
 scoreboard players reset #death temp
 
 advancement revoke @s only entities:tevus_killed
+
+kill @e[tag=rhalon_intro]
+kill @e[tag=tevus_intro]
+kill @e[tag=ethgar_intro]
