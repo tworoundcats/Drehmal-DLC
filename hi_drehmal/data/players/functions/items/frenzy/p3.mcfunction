@@ -46,5 +46,6 @@ execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,
 
 #display for zed 
 execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] at @s anchored eyes positioned ^ ^0.5 ^ run function particle:effects/zed_shuriken
-execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run damage @s 20 minecraft:falling_anvil
+execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run damage @s 10 generic by @p
+execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run playsound entity.generic.explode player @a ~ ~ ~ 0.3 2
 execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run tag @s remove explode

@@ -206,13 +206,12 @@ execute if score #10terminus100 bool matches 1 unless score #clearancedialogue b
 
 function core:scene/lodahr_portals/main
 
-execute as @a as @s[scores={dlc=1}] run function dlc:triggerdlc
 
 function core:scene/lodahr_portals/main
 
 function core:scene/lodahr_portals/main
 
-function core:customweapons
+#function core:dlc
 function core:villagers
 function spm:world/tick
 function n_lev:tick

@@ -22,12 +22,12 @@ execute if score #mal_swing bool matches 1 at @s[tag=temp_attack_timer] run play
 execute if score #mal_swing bool matches 1 run tag @s[tag=temp_attack_timer] add temp_attack_timer2
 
 execute if score #mal_swing bool matches 1 run scoreboard players reset @s ai_timer2
-execute if score @s ai_timer2 matches 65.. run tag @s remove temp_attack_timer
-execute if score @s ai_timer2 matches 65.. run tag @s remove temp_attack
-execute if score @s ai_timer2 matches 65.. run tag @s remove temp_attack_timer2
-execute if score @s ai_timer2 matches 65.. run scoreboard players reset @s slash_timer 
-execute if score @s ai_timer2 matches 65.. run scoreboard players reset @s slash_timer2
-execute if score @s ai_timer2 matches 65.. run scoreboard players reset @s ai_timer2
+execute if score @s ai_timer2 matches 60.. run tag @s remove temp_attack_timer
+execute if score @s ai_timer2 matches 60.. run tag @s remove temp_attack
+execute if score @s ai_timer2 matches 60.. run tag @s remove temp_attack_timer2
+execute if score @s ai_timer2 matches 60.. run scoreboard players reset @s slash_timer 
+execute if score @s ai_timer2 matches 60.. run scoreboard players reset @s slash_timer2
+execute if score @s ai_timer2 matches 60.. run scoreboard players reset @s ai_timer2
 
 scoreboard players add @s[tag=temp_attack] slash_timer 1
 scoreboard players add @s[tag=temp_attack_timer2] slash_timer2 1

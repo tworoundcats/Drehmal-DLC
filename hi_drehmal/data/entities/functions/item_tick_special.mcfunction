@@ -24,5 +24,5 @@ execute if entity @s[tag=right_fragment,tag=in_tub] run function entities:droppe
 execute unless score #mb_blade_ani? bool matches 1 unless score #mb_blade_right? bool matches 1 if entity @s[tag=right_fragment,tag=!in_tub,x=-120.0,y=8.1,z=1639.00,dx=2,dy=0,dz=2,nbt={OnGround:1b}] run function entities:dropped_items/mb_frag_right
 
 execute if entity @s[tag=celestial_scrap] if score #5T timer matches 3 run function core:scene/lodahr_portals/main_item
-
+execute if entity @s[tag=mb_smoky]
 execute if entity @s[tag=mal_trident] run function players:items/mal/proj/tick

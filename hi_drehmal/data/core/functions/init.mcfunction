@@ -192,6 +192,7 @@ scoreboard objectives add t.fear dummy
 scoreboard objectives add t.id dummy
 scoreboard objectives add t.timer dummy
 scoreboard objectives add HoldingAv dummy
+scoreboard objectives add HoldingLevi dummy
 scoreboard objectives add UsedAvSaber minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add AvDamage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add AvShots dummy
@@ -1050,6 +1051,10 @@ scoreboard objectives add wasHoldingAvs dummy
 scoreboard objectives add zenith_slash dummy
 scoreboard objectives add drop_zenith minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add zenith_cd dummy
+
+scoreboard objectives add holdingLevi dummy
+scoreboard objectives add wasHoldingLevi dummy
+scoreboard objectives add drop_levi minecraft.dropped:dlc.leviathan
 
 gamerule disableElytraMovementCheck true
 function spm:mob/game_load

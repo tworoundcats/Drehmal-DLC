@@ -18,7 +18,7 @@ execute if entity @s[scores={ob_throw=80}] run scoreboard players set @s ob_fini
 execute if entity @s[scores={ob_throw=80}] run scoreboard players set @s ob_throw 2
 execute if entity @s[scores={ob_finish=1..2}] run tp @s ^ ^ ^0.5 facing entity @p[tag=ob_scythe]
 execute if entity @s[scores={ob_throw=..2}] rotated as @p[tag=ob_scythe] run tp @s ^ ^ ^1 ~ ~
-execute if entity @s[scores={ob_throw=..80}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 8 falling_anvil by @p[tag=ob_scythe]
+execute if entity @s[scores={ob_throw=..80}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 8 generic by @p[tag=ob_scythe]
 execute if entity @s[scores={ob_throw=4}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
 execute if entity @s[scores={ob_throw=8}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
 execute if entity @s[scores={ob_throw=12}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
@@ -48,7 +48,7 @@ execute if entity @s[scores={ob_throw=..80}] run particle witch ~ ~1.5 ~ 0.3 0.3
 execute if entity @s[scores={ob_finish=1}] run particle witch ~ ~1.5 ~ 0.1 0.1 0.1 0.1 2 normal
 execute if entity @s[scores={ob_finish=1}] run scoreboard players add @s ob_passive 1
 execute if entity @s[scores={ob_passive=8}] run execute at @s run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
-execute if entity @s[scores={ob_passive=..8}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 3 falling_anvil by @p[tag=ob_scythe]
+execute if entity @s[scores={ob_passive=..8}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 3 generic by @p[tag=ob_scythe]
 execute if entity @s[scores={ob_passive=8..}] run scoreboard players reset @s ob_passive
 
 execute if entity @s[scores={ob_throw=80..,ob_finish=0}] if entity @a[tag=ob_scythe,distance=..1] run execute as @p[sort=nearest,tag=ob_scythe] if predicate players:holding/voidrecall run function players:items/obv/check
@@ -59,7 +59,7 @@ execute if entity @s[scores={ob_finish=1..}] if entity @a[tag=ob_scythe,distance
 execute if entity @s[scores={ob_finish=1..}] if entity @a[tag=ob_scythe,distance=..2] facing entity @p[tag=ob_scythe] eyes run tp @s ^2 ^ ^
 
 
-execute if entity @s[scores={ob_throw=1}] run item replace entity @s weapon.mainhand with minecraft:netherite_sword{CustomModelData:5}
+execute if entity @s[scores={ob_throw=1}] run item replace entity @s weapon.mainhand with minecraft:netherite_sword{CustomModelData:51}
 data merge entity @s[scores={ob_rotated=1}] {Pose:{RightArm:[0f,0f,70f]}}
 data merge entity @s[scores={ob_rotated=2}] {Pose:{RightArm:[18f,0f,70f]}}
 data merge entity @s[scores={ob_rotated=3}] {Pose:{RightArm:[26f,0f,70f]}}

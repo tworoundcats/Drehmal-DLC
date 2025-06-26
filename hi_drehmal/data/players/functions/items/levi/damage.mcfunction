@@ -14,3 +14,4 @@ execute if score #levi levi_damage matches 13 run damage @s 13 generic by @p
 execute if score #levi levi_damage matches 14 run damage @s 14 generic by @p
 execute if score #levi levi_damage matches 15 run damage @s 15 generic by @p
 execute if score #levi levi_damage matches 16 run damage @s 16 generic by @p
+tag @s add levi

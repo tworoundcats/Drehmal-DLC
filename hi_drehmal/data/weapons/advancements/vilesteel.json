@@ -5,24 +5,24 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Vile:1b}"
+                        "nbt":"{Burnt_ichor:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/vilesteel"
+        "function": "weapons:advancement/burnt_ichor"
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "dlc:burnt_ichor_ingot"
+            "item": "dlc:burnt_ichor"
         },
         "title": {
             "color": "gold",
-            "text": "Vilesteel"
+            "text": "Burnt Ichor"
         },
         "description": {
             "color": "gray",

@@ -6,7 +6,7 @@ execute positioned 27365 161 744 run effect give @e[tag=tevus_intro] minecraft:g
 execute unless score #low_particles? bool matches 1 run particle minecraft:flame 27365 161 744 0 0 0 0.5 50
 execute unless score #low_particles? bool matches 1 run particle minecraft:large_smoke 27365 161 744 0 0 0 0.2 20
 execute unless score #low_particles? bool matches 1 run particle minecraft:flash 27365 161 744 0 0 0 0 1
-execute as @a[predicate=players:in_generals_arena] at @s run playsound minecraft:dcustom.entity.piglin.jealous player @s ~ ~ ~ 2 0
+execute positioned 27351.00 162.62 747.48 run playsound minecraft:dcustom.entity.piglin.jealous player @a ~ ~ ~ 2 0
 
 tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Tevus, the Second General","color": "#FF7300"},{"text":"]"},{"text":" And wielding His holy blade. You would dare trespass upon the palace?"}]
 

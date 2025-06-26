@@ -23,21 +23,21 @@ execute as @a if predicate players:holding/leviathan as @s[tag=!strengthened,sco
 execute as @a if predicate players:holding/leviathan as @s[scores={use_levi=1..}] run function players:items/levi/main
 execute as @a if predicate players:holding/leviathan as @s run scoreboard players add @s levi_reach 1
 #execute as @a if predicate players:holding/leviathan as @s[tag=shielded] run function players:items/levi/shielded
-execute as @a if predicate players:holding/leviathan run function players:items/levi/holding
+execute as @a as @s if predicate players:holding/leviathan run function players:items/levi/holding
 #execute as @a if predicate players:holding/leviathan as @s if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
-execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:entity_reach 0.67 @s
-execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:defense 0.5 @s
+execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:entity_reach 1 @s
+#execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scale set pehkui:defense 0.5 @s
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run tag @s remove strengthened
 execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..}] as @s run scale set pehkui:entity_reach 1 @s
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..}] as @s run scale set pehkui:defense 1 @s
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_speed base set 4
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_damage base set 1
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_speed base set 4
-execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_damage base set 1
+#execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..}] as @s run scale set pehkui:defense 1 @s
+#execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_speed base set 4
+#execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run attribute @s generic.attack_damage base set 1
+#execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_speed base set 4
+#execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=1..140}] as @s run attribute @s generic.attack_damage base set 1
 execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=..140}] as @s run scoreboard players reset @s levi_reach
 execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scoreboard players reset @s levi_reach
 execute as @a unless predicate players:holding/leviathan as @s[tag=strengthened] run tag @s remove strengthened
-execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste as @s at @s positioned ~ ~1 ~ run function particle:effects/mist
+#execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste as @s at @s positioned ~ ~1 ~ run function particle:effects/mist
 execute as @a if predicate players:holding/leviathan as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate dev:entity_properties/flags/is_sneaking run function players:items/levi/apotheosis
 execute as @a unless predicate players:holding/leviathan if score @s levi_cool matches 1.. run function players:items/levi/cooldown
 
@@ -112,9 +112,9 @@ execute as @a as @s[tag=cloud] run function players:checkcloud
 
 execute as @a run execute at @s as @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
 
-execute as @a as @s[tag=!wings] unless predicate dlc:wings run execute at @s as @s if predicate players:adventure_areas unless predicate players:locations/in_terminus run execute as @s run function players:nowings
+execute as @a as @s[tag=!wings] if predicate dlc:wings run execute at @s as @s if predicate players:adventure_areas unless predicate players:locations/in_terminus run function players:nowings
 
-execute as @a as @s[tag=!wings] unless predicate dlc:wings run execute at @s as @s if predicate players:lodahr unless predicate players:locations/in_terminus run execute as @s run function players:nowings
+execute as @a as @s[tag=!wings] if predicate dlc:wings run execute at @s as @s if predicate players:lodahr run function players:nowings
 
 execute as @a as @s[tag=wings] run function players:checkwings
 
@@ -124,7 +124,6 @@ execute as @a as @s[tag=wings,advancements={advancements:primordial/enter_yav=fa
 execute as @a as @s[tag=wings,advancements={advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] unless predicate dlc:wings run execute at @s as @s run execute unless predicate players:lodahr unless predicate players:adventure_areas run execute as @s run function players:givewings
 
 execute as @a as @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] if predicate dlc:wings run function players:nowings
-
 
 
 
@@ -218,3 +217,4 @@ execute as @a at @s if predicate players:locations/sahd_forge run execute as @e[
 execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2
 
 execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=players:holding/male2] run kill @s
+
