@@ -83,3 +83,12 @@ execute if score #gotaeongale bool matches 1 run recipe give @s weapons:aeongale
 execute if score #gotparenchyma bool matches 1 run recipe give @s weapons:parenchyma
 execute if score #gotpenumbra bool matches 1 run recipe give @s weapons:penumbra
 execute if score #goteyebiter bool matches 1 run recipe give @s weapons:eyebiter
+
+
+
+
+
+
+
+
+execute if score #gotB52 bool matches 1 run advancement grant @s only weapons:b52

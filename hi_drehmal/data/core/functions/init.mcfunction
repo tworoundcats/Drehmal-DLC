@@ -1128,8 +1128,30 @@ scoreboard objectives add mythic_to_unspoken dummy
 
 scoreboard objectives add rare_chance dummy
 setblock 26516 168 -88 white_concrete
-
+gamerule artifacts.crystalHeart.healthBonus 6
 
 
 scoreboard objectives add slash_timer2 dummy
 scoreboard objectives add slash_timer dummy
+
+
+scoreboard objectives add brkCoal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add brkDeepCoal minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add brkIron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add brkDeepIron minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add brkCopper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add brkDeepCopper minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add brkGold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add brkDeepGold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add brkRedstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add brkDeepRedstone minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add brkEmerald minecraft.mined:minecraft.emerald_ore
+scoreboard objectives add brkDeepEmerald minecraft.mined:minecraft.deepslate_emerald_ore
+scoreboard objectives add brkLapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add brkDeepLapis minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add brkDiamond minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add brkDeepDiamond minecraft.mined:minecraft.deepslate_diamond_ore
+
+scoreboard objectives add brkNetherGold minecraft.mined:minecraft.nether_gold_ore
+scoreboard objectives add brkNetherQuartz minecraft.mined:minecraft.nether_quartz_ore
+scoreboard objectives add brkAncientDebris minecraft.mined:minecraft.ancient_debris

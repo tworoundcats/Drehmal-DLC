@@ -1,0 +1,1 @@
+summon wandering_trader ~ ~ ~ {Silent:1b,NoAI:1b,CustomName:'{"text":"Adventuring Merchant"}'}

@@ -12,7 +12,7 @@
         }
     },
     "rewards": {
-        "function": "weapons:advancement/void"
+        "function": "weapons:advancement/b52"
     },
     "display": {
         "frame": "task",
@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "dark_purple",
-            "text": "Void Breaker"
+            "text": "B-52 Excavator"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Legendary Void Pickaxe"
+            "text": "Obtained the Legendary B-52, tool of Avsohm."
         },
         "hidden": true,
         "show_toast": true

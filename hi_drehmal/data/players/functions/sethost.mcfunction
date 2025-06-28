@@ -39,7 +39,6 @@ execute if score #numberp num matches 15 run setblock 26518 167 -88 magenta_conc
 execute if score #numberp num matches 16 run setblock 26518 167 -88 pink_concrete
 
 recipe give @s *
-
 recipe take @s weapons:norepair/avsohm_kohl
 recipe take @s weapons:aeongale
 recipe take @s weapons:ascendance
@@ -88,3 +87,4 @@ recipe take @s weapons:pearl
 recipe take @s weapons:starry
 recipe take @s weapons:blaze
 execute as @s run function weapons:grant
+
