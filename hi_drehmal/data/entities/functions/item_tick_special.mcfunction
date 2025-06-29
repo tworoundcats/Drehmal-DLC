@@ -26,3 +26,9 @@ execute unless score #mb_blade_ani? bool matches 1 unless score #mb_blade_right?
 execute if entity @s[tag=celestial_scrap] if score #5T timer matches 3 run function core:scene/lodahr_portals/main_item
 execute if entity @s[tag=mb_smoky]
 execute if entity @s[tag=mal_trident] run function players:items/mal/proj/tick
+
+execute if entity @s[tag=standard_backpack,tag=!backpack] run function dlc:modify/backpack
+execute if entity @s[tag=gold_backpack,tag=!backpack] run function dlc:modify/backpack
+execute if entity @s[tag=iron_backpack,tag=!backpack] run function dlc:modify/backpack
+execute if entity @s[tag=celestial_backpack,tag=!backpack] run function dlc:modify/backpack
+execute if entity @s[tag=diamond_backpack,tag=!backpack] run function dlc:modify/backpack

@@ -1,0 +1,123 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "replace": true,
+    "lore": [
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "An adventurer's truest companion, second only"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "to their weapon. Simple canvas and sturdy leather,"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "built to endure the long road and carry the weight"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "of one's fortunes."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": "You can carry a maximum of 3 backpacks"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": "without negative effects."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": "Press \"B\" to open while on back."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": "Press \"Ctrl\" to view inventory."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": false,
+            "color": "green",
+            "text": "Trinket"
+          }
+        ],
+        "text": ""
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{HideFlags:127}",
+    "conditions": []
+  }
+]
