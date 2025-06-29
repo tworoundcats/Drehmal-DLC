@@ -5,31 +5,31 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Harpoon:1b}"
+                        "nbt":"{Piecemaker:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/harpoon"
+        "function": "weapons:advancement/piecemaker"
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:crossbow_harpoon_crossbow"
+            "item": "mcdw:crossbow_cog_crossbow"
         },
         "title": {
             "color": "red",
-            "text": "Leviathan's Grasp"
+            "text": "Piecemaker"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Forgotten Harpoon Bow"
+            "text": "Obtained the Masterwork Crossbow"
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:piecemaker"
+    "parent": "weapons:forgotten"
 }

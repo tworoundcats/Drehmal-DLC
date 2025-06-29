@@ -92,3 +92,4 @@ execute if score #goteyebiter bool matches 1 run recipe give @s weapons:eyebiter
 
 
 execute if score #gotB52 bool matches 1 run advancement grant @s only weapons:b52
+execute if score #gotpiecemaker bool matches 1 run advancement grant @s only weapons:piecemaker

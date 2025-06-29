@@ -26,3 +26,5 @@ execute if entity @s[tag=mb_run_skele] run scoreboard players set #mb_shot temp 
 execute if score @s t.fear matches 1.. run scoreboard players set #teth_velo? temp 1
 execute if predicate players:holding/fdry_gun run scoreboard players set #fdry_gun temp 1
 execute if predicate players:holding/fire_bow run scoreboard players set #mal_arrow temp 1
+
+execute if predicate players:holding/piecemaker run scoreboard players set #piecemaker_arrow temp 1

@@ -28,7 +28,3 @@ execute if entity @s[tag=mb_smoky]
 execute if entity @s[tag=mal_trident] run function players:items/mal/proj/tick
 
 execute if entity @s[tag=standard_backpack,tag=!backpack] run function dlc:modify/backpack
-execute if entity @s[tag=gold_backpack,tag=!backpack] run function dlc:modify/backpack
-execute if entity @s[tag=iron_backpack,tag=!backpack] run function dlc:modify/backpack
-execute if entity @s[tag=celestial_backpack,tag=!backpack] run function dlc:modify/backpack
-execute if entity @s[tag=diamond_backpack,tag=!backpack] run function dlc:modify/backpack
