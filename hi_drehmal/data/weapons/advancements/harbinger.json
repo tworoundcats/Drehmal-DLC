@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "gold",
-            "text": "Harbinger"
+            "text": "Harbinger's Fang"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained An Upgrade Component"
+            "text": "Obtained A Calamitous Upgrade Component"
         },
         "hidden": true,
         "show_toast": true

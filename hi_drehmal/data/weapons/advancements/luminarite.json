@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "gold",
-            "text": "Luminarite"
+            "text": "Primal Overclocker"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained an Upgrade Component"
+            "text": "Obtained a Supercharged Upgrade Component"
         },
         "hidden": true,
         "show_toast": true

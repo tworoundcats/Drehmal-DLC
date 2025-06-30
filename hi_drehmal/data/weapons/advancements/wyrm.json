@@ -4,11 +4,11 @@
         "item": "dlc:spark_of_purity"
       },
       "title": {
-        "text": "Wyrmfire Scales",
+        "text": "Spark of Purity",
         "color": "dark_red"
       },
       "description": {
-        "text": "Obtained An Upgrade Component",
+        "text": "Obtained a Pure Upgrade Component",
         "color": "gray"
       },
       "frame": "task",

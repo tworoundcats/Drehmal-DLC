@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "gold",
-            "text": "Celesticord"
+            "text": "Resonant String"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained an Upgrade Component"
+            "text": "Obtained a Divine Upgrade Component"
         },
         "hidden": true,
         "show_toast": true

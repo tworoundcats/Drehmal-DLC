@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "gold",
-            "text": "Skyrend"
+            "text": "Ruinous Tablet"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained an Upgrade Component"
+            "text": "Obtained a Ruinous Upgrade Component"
         },
         "hidden": true,
         "show_toast": true
