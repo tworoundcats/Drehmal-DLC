@@ -8,7 +8,7 @@ execute if score #death temp matches 201..400 run tellraw @a[predicate=players:i
 
 execute if score #death temp matches 401..601 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Not to brag, but I'm pretty good at this."}]
 
-execute if score #death temp matches 601..800 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Know your place, remnant!"}]
+execute if score #death temp matches 601..800 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Say hello to your beloved emperors for me, won't you?"}]
 
 execute if score #death temp matches 801.. run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color": "#FF4000"},{"text":"]"},{"text":" Go ahead and log off for me, remnant."}]
 

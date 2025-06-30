@@ -10,7 +10,7 @@ execute as @e[tag=tevus,type=piglin_brute,limit=1] if data entity @s NoAI run sc
 execute as @e[tag=ethgar,type=piglin,limit=1] if data entity @s NoAI run scoreboard players set #generals int 1
 
 execute if score #generals int matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" TEVUS, BURY THEM UNDER YOUR JUDGEMENT!"}]
-execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" YOU WANT THE STAGE? TAKE IT ETHGAR!"}]
+execute if score #generals int matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" ETHGAR! THE STAGE IS YOURS!"}]
 
 bossbar set health visible false
 
