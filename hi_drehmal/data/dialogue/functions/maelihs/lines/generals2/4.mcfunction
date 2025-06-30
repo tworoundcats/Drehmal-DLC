@@ -1,5 +1,5 @@
 scoreboard players set @s dialogueTreeID 57
 scoreboard players set @s dialogueStep 5
 scoreboard players set @s dialogueTimer 120
-give @s dlc:burnt_insignia
+give @s dlc:burnt_insignia{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"gold","text":"Burnt Insignia"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"A small charm representing Malevolentia,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"given by Maelihs to his chosen warriors."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"For the first time in history, more than"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"three living soldiers bear this insignia "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"at once."}],"text":""}']}}
 tellraw @s ["",{"text":"["},{"text":"Maelihs","color":"dark_red"},{"text":"] Here. A token of my favor. Bring it to the Sepulchral Altar, and you will be able to call upon the Generals."}]
