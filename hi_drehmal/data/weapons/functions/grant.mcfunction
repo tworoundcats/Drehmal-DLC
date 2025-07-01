@@ -97,3 +97,7 @@ execute if score #gotseren bool matches 1 run advancement grant @s only weapons:
 execute if score #gotdusk bool matches 1 run advancement grant @s only weapons:duskfall
 execute if score #gotday bool matches 1 run advancement grant @s only weapons:daybreak
 execute if score #gotforce bool matches 1 run advancement grant @s only weapons:force
+execute if score #gothang bool matches 1 run advancement grant @s only weapons:hang
+execute if score #gotnight bool matches 1 run advancement grant @s only weapons:night
+execute if score #gotverd bool matches 1 run advancement grant @s only weapons:verdant
+execute if score #gotharvest bool matches 1 run advancement grant @s only weapons:harvest

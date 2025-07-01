@@ -1010,7 +1010,7 @@ scoreboard objectives add syz_cd dummy
 scoreboard objectives add shoot minecraft.used:crossbow
 
 scoreboard objectives add soul_burn dummy
-scoreboard objectives add use_soul minecraft.used:simplyswords.runic_scythe
+scoreboard objectives add use_soul minecraft.used:mcdw.scythe_soul_scythe
 
 scoreboard objectives add use_bs minecraft.used:mcdw.dagger_backstabber
 scoreboard objectives add kills totalKillCount
@@ -1133,7 +1133,6 @@ gamerule artifacts.crystalHeart.healthBonus 6
 
 scoreboard objectives add slash_timer2 dummy
 scoreboard objectives add slash_timer dummy
-
 
 
 scoreboard objectives add brkCoal minecraft.mined:minecraft.coal_ore

@@ -5,32 +5,31 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Shadowblade:1b}"
+                        "nbt":"{Verdant:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/shadowblade"
-        
+        "function": "weapons:advancement/verdant"
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:sword_sinister"
+            "item": "mcdw:crossbow_harpoon_crossbow"
         },
         "title": {
             "color": "red",
-            "text": "Shadowblade Edge"
+            "text": "Verdant Lord"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Shadowblade Edge"
+            "text": "Obtained the Masterwork Crossbow."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:soul"
+    "parent": "weapons:piecemaker"
 }

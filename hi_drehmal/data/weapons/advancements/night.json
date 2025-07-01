@@ -5,32 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{SoulSickle:1b}"
+                        "nbt":"{Nightwatch:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/soul"
+        "function": "weapons:advancement/backstabber"
         
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "simplyswords:runic_scythe"
+            "item": "mcdw:dagger_backstabber"
         },
         "title": {
             "color": "red",
-            "text": "Ethereal Harvester"
+            "text": "Night Watch"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Ethereal Harvester"
+            "text": "Obtained the Masterwork Dagger."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:forgotten"
+    "parent": "weapons:daybreak"
 }

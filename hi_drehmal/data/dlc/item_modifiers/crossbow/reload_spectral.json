@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Charged:1b}"
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{ChargedProjectiles:[{id:\"minecraft:spectral_arrow\",Count:1b}]}"
+  }
+]

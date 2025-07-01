@@ -5,31 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Harpoon:1b}"
+                        "nbt":"{Hangyaku:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/harpoon"
+        "function": "weapons:advancement/hang"
+        
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:crossbow_harpoon_crossbow"
+            "item": "mcdw:sword_sinister"
         },
         "title": {
             "color": "red",
-            "text": "Leviathan's Grasp"
+            "text": "Hangyaku"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Forgotten Harpoon Bow"
+            "text": "Obtained the Masterwork Hangyaku."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:piecemaker"
+    "parent": "weapons:force"
 }

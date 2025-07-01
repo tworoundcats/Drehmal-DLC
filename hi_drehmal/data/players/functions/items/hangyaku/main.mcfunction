@@ -1,0 +1,1 @@
+execute as @s run scoreboard players reset @s use_shad

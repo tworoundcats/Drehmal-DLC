@@ -1,10 +1,11 @@
-scoreboard players remove @s soul_burn 1
-execute unless score #low_particles? bool matches 1 run execute if predicate dev:entity_properties/flags/is_on_fire at @s run function particle:effects/soul
-execute if predicate dev:entity_properties/flags/is_on_fire at @s run playsound minecraft:entity.wither_skeleton.hurt player @a ~ ~ ~ 1 2
-execute if predicate dev:entity_properties/flags/is_on_fire at @s run damage @s 1 minecraft:rubber_nocd
-execute unless data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run execute store result score @s maxHealth run data get entity @s Health
-execute if data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run execute store result score @s maxHealth run attribute @s minecraft:generic.max_health get
-scoreboard players operation @s maxHealth /= #5 const
+execute unless score #low_particles? bool matches 1 at @s positioned ~ ~2 ~ run function particle:effects/soul
+execute unless score #low_particles? bool matches 1 at @s anchored eyes positioned ~ ~1.5 ~ run particle glow ~ ~ ~ 0 0.2 0 0.1 50
+execute at @s run playsound minecraft:entity.wither_skeleton.hurt player @a ~ ~ ~ 1 2
+execute as @s[tag=!maxhealth] unless data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run execute store result score @s prevMaxHealth run data get entity @s Health
+execute if data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run execute store result score @s prevMaxHealth run attribute @s minecraft:generic.max_health get
+scoreboard players operation @s maxHealth = @s prevMaxHealth
+scoreboard players operation @s maxHealth /= #50 const
+execute unless score @s maxHealth matches 1.. run damage @s 1 minecraft:rubber_nocd
 execute if score @s maxHealth matches 1 run damage @s 1 minecraft:rubber_nocd
 execute if score @s maxHealth matches 2 run damage @s 2 minecraft:rubber_nocd
 execute if score @s maxHealth matches 3 run damage @s 3 minecraft:rubber_nocd
@@ -26,7 +27,6 @@ execute if score @s maxHealth matches 18 run damage @s 18 minecraft:rubber_nocd
 execute if score @s maxHealth matches 19 run damage @s 19 minecraft:rubber_nocd
 execute if score @s maxHealth matches 20.. run damage @s 20 minecraft:rubber_nocd
 
-
-execute if score @s soul_burn matches ..1 run tag @s remove soul_burn
-scoreboard players reset @p[tag=temp_burn] soul_burn
-execute if score @s soul_burn matches ..1 run tag @a[tag=temp_burn] remove temp_burn
+tag @s add maxhealth
+execute if score @s soul_burn matches 160 run tag @s remove soul_burn
+execute if score @s soul_burn matches 160 run scoreboard players reset @s soul_burn

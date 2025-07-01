@@ -22,7 +22,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "simplyswords:runic_scythe"
+            "mcdw:scythe_soul_scythe"
           ],
           "nbt": "{SoulSickle:1b}"
         }

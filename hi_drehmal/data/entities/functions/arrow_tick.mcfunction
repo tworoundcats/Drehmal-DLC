@@ -15,6 +15,8 @@ execute if entity @s[tag=stasis_bolt] unless entity @s[tag=arrow.inground] run p
 execute if entity @s[tag=noxious_arrow] if entity @s[tag=arrow.inground] run function entities:misc/noxious_arrow
 execute if entity @s[tag=rihelma] if entity @s[tag=arrow.inground] run function entities:misc/rihelma_clear
 execute if entity @s[tag=sigma] run function entities:arrow_tick2
+execute if entity @s[tag=verdant] as @s run tp @e[type=marker,tag=verdant_tag] @s
+execute if entity @s[tag=verdant,tag=arrow.inground] run tag @s remove verdant 
 
 
 execute unless entity @s[tag=laserCheck] run function entities:ai/laserbow/lasify

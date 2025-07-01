@@ -24,7 +24,7 @@
           "items": [
             "mcdw:dagger_backstabber"
           ],
-          "nbt": "{Backstabber:1b}"
+          "nbt": "{Nightwatch:1b}"
         }
       }
     }

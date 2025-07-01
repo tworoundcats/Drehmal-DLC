@@ -5,32 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Backstabber:1b}"
+                        "nbt":"{SoulSickle:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/backstabber"
+        "function": "weapons:advancement/harvest"
         
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:dagger_backstabber"
+            "item": "mcdw:scythe_soul_scythe"
         },
         "title": {
             "color": "red",
-            "text": "Backstabber"
+            "text": "Harvest's Hope"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Backstabber"
+            "text": "Obtained the Masterwork Scythe."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:duskfall"
+    "parent": "weapons:hang"
 }

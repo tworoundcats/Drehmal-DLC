@@ -1,2 +1,9 @@
 scoreboard players add @s soul_burn 1
-execute as @s[scores={soul_burn=20..}] run execute as @e[tag=soul_burn] run function players:items/soul/burn
+execute as @s[scores={soul_burn=20}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=40}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=60}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=80}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=100}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=120}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=140}] run function players:items/soul/burn
+execute as @s[scores={soul_burn=160}] run function players:items/soul/burn

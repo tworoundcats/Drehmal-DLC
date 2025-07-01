@@ -725,13 +725,13 @@ execute as @s[scores={dlc=1}] run function dlc:triggerdlc
 #               PLAYER-CENTRIC COMMANDS 
 # ===================================================================
 
-### Ethereal ###
+### Harvest's Hope ###
 execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
-execute if predicate players:holding/soul_scythe if entity @s[tag=temp_burn] run function players:items/soul/main
+execute as @e[tag=soul_burn] run function players:items/soul/main
 
 # -------------------------------------------------------------------
 
-### Backstabber ###
+### Night Watch ###
 execute if predicate players:holding/backstabber_mainhand if score @s use_bs matches 1.. run function players:items/backstabber/main
 execute if predicate players:holding/backstabber_mainhand unless predicate dev:entity_properties/effects/invisibility run scoreboard players add @s bstimer 1
 execute if predicate players:holding/backstabber_mainhand if score @s bstimer matches 100.. run function players:items/backstabber/resetreach
@@ -748,6 +748,13 @@ execute unless predicate players:holding/backstabber_mainhand if score @s kills 
 execute unless predicate players:holding/backstabber_offhand if score @s kills matches 1.. run scoreboard players reset @s kills
 
 # -------------------------------------------------------------------
+
+### Verdant ###
+
+execute as @e[tag=reload,limit=1] if predicate entities:hurt run function players:items/verdant/tag
+execute as @s[tag=temp_shooter] at @s positioned ~ ~1 ~ run tag @e[type=#arrows,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!verdant] add verdant
+execute as @s[tag=temp_shooter] at @s positioned ~ ~1 ~ if entity @e[type=spectral_arrow,sort=nearest,limit=1,distance=..3,tag=!arrow.inground] run scoreboard players set #spectral2 bool 1
+
 
 ### Leviathan ###
 
@@ -794,10 +801,7 @@ execute unless predicate players:holding/force if score @s thun matches 1.. run 
 # -------------------------------------------------------------------
 
 ### Shadowblade ###
-execute if predicate players:holding/shadowblade if score @s use_shad matches 1.. if predicate dev:random_chance/8_of_20 run function players:items/shadowblade/main
-execute at @e[tag=bleed,limit=1] run scoreboard players add @s bleed 1
-execute at @e[tag=bleed,limit=1] run function players:items/shadowblade/bleed
-execute unless entity @e[tag=bleed] run scoreboard players reset @s bleed
+execute as @e[tag=bleed,limit=1] at @s run function players:items/hangyaku/bleed
 
 # -------------------------------------------------------------------
 

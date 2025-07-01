@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "fire_crossbow": {
+      "trigger": "minecraft:shot_crossbow"
+    }
+  },
+  "rewards": {
+    "function": "players:items/verdant/shoot"
+  }
+}

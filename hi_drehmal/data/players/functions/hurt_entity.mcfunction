@@ -34,4 +34,11 @@ execute if predicate players:holding/duskfall as @e[type=!player,type=!#core:obl
 
 execute if predicate players:holding/daybreak run function players:items/gauntlets/daybreak
 
+
+execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if predicate dev:random_chance/10_of_20 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
+
+execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=bleed,scores={bleed=5..}] run function players:items/hangyaku/damage
+
+
+
 advancement revoke @s only players:hurt_entity
