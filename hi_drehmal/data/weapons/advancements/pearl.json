@@ -20,11 +20,11 @@
     "display": {
         "title": {
             "color": "dark_purple",
-            "text": "Pearlescence"
+            "text": "Pearlessence"
         },
         "description": {
             "color": "gray",
-            "text": "Recipe for Pearlescence, Dahr's crowning gem unlocked."
+            "text": "Recipe for Pearlessence, Dahr's crowning gem, unlocked."
         },
         "icon": {
             "item": "minecraft:frog_spawn_egg"
