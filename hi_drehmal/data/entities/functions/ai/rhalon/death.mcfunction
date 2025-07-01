@@ -2,11 +2,11 @@ function core:rng
 scoreboard players operation @s temp = #rand temp
 scoreboard players operation @s temp %= #3 const
 
-execute if score @s temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "gray"},{"text":"]"},{"text":" My Radiance... I have failed you…", "italic": true, "color": "dark_gray"}]
+execute if score @s temp matches 0 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "#A46565"},{"text":"]"},{"text":" My Radiance... I have failed you…", "italic": true, "color": "gray"}]
 
-execute if score @s temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "gray"},{"text":"]"},{"text":" This ember… dies with me…", "italic": true, "color": "dark_gray"}]
+execute if score @s temp matches 1 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "#A46565"},{"text":"]"},{"text":" This ember… dies with me…", "italic": true, "color": "gray"}]
 
-execute if score @s temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "gray"},{"text":"]"},{"text":" YOU… no. It can't be…", "italic": true, "color": "dark_gray"}]
+execute if score @s temp matches 2 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General", "italic": true, "color": "#A46565"},{"text":"]"},{"text":" You… no… It can't be…", "italic": true, "color": "gray"}]
 
 execute at @s run particle small_flame ~ ~ ~ 0 0 0 1 100 normal
 execute at @s run particle lava ~ ~ ~ 0 0 0 5 100 normal

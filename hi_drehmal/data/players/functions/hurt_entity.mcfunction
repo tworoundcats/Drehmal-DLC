@@ -28,8 +28,10 @@ execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTim
 
 scoreboard players reset @s atk_charge
 
+execute if predicate players:holding/serendipity as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if predicate dev:random_chance/5_of_20 run function players:items/serendipity/damage
 
+execute if predicate players:holding/duskfall as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/gauntlets/duskfall
 
-
+execute if predicate players:holding/daybreak run function players:items/gauntlets/daybreak
 
 advancement revoke @s only players:hurt_entity

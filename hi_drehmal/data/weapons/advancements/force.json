@@ -5,32 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Aurora:1b}"
+                        "nbt":"{Force:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/aurora"
+        "function": "weapons:advancement/thunder"
         
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:gauntlet_soul_fists"
+            "item": "mcdw:hammer_stormlander"
         },
         "title": {
             "color": "red",
-            "text": "Aurora"
+            "text": "Force Majeure"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Aurora Gauntlet"
+            "text": "Obtained the Masterwork Hammer."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:harpoon"
+    "parent": "weapons:seren"
 }

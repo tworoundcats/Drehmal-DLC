@@ -1,0 +1,47 @@
+[
+  {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "mcdw:gauntlet_soul_fists"
+              ],
+              "nbt": "{Duskfall:1b}"
+            },
+            "offhand": {
+              "items": [
+                "mcdw:gauntlet_soul_fists"
+              ],
+              "nbt": "{Daybreak:1b}"
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "mcdw:gauntlet_soul_fists"
+              ],
+              "nbt": "{Daybreak:1b}"
+            },
+            "offhand": {
+              "items": [
+                "mcdw:gauntlet_soul_fists"
+              ],
+              "nbt": "{Duskfall:1b}"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

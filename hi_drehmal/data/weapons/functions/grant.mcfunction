@@ -93,3 +93,7 @@ execute if score #goteyebiter bool matches 1 run recipe give @s weapons:eyebiter
 
 execute if score #gotB52 bool matches 1 run advancement grant @s only weapons:b52
 execute if score #gotpiecemaker bool matches 1 run advancement grant @s only weapons:piecemaker
+execute if score #gotseren bool matches 1 run advancement grant @s only weapons:seren
+execute if score #gotdusk bool matches 1 run advancement grant @s only weapons:duskfall
+execute if score #gotday bool matches 1 run advancement grant @s only weapons:daybreak
+execute if score #gotforce bool matches 1 run advancement grant @s only weapons:force

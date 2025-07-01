@@ -5,32 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Thunderclap:1b}"
+                        "nbt":"{Daybreak:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/thunder"
+        "function": "weapons:advancement/daybreak"
         
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:hammer_stormlander"
+            "item": "mcdw:gauntlet_soul_fists"
         },
         "title": {
             "color": "red",
-            "text": "Thunderclap"
+            "text": "Daybreak"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Thunderclap"
+            "text": "Obtained the Masterwork Daybreak Gauntlet."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:spear"
+    "parent": "weapons:duskfall"
 }

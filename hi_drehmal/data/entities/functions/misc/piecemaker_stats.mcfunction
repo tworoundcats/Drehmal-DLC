@@ -12,13 +12,14 @@ data modify entity @s CustomPotionEffects set from storage drehmal:entities temp
 
 
 
-execute store result storage drehaml:entities tempEntity.Motion[0] float 1 run data get storage drehmal:entities tempEntity.Motion[0]
-execute store result storage drehaml:entities tempEntity.Motion[1] float 1 run data get storage drehmal:entities tempEntity.Motion[1]
-execute store result storage drehaml:entities tempEntity.Motion[2] float 1 run data get storage drehmal:entities tempEntity.Motion[2]
+#execute store result storage drehaml:entities tempEntity.Motion[0] float 1 run data get storage drehmal:entities tempEntity.Motion[0]
+#execute store result storage drehaml:entities tempEntity.Motion[1] float 1 run data get storage drehmal:entities tempEntity.Motion[1]
+#execute store result storage drehaml:entities tempEntity.Motion[2] float 1 run data get storage drehmal:entities tempEntity.Motion[2]
 
 data modify entity @s Motion[0] set from storage drehmal:entities tempEntity.Motion[0]
 data modify entity @s Motion[1] set from storage drehmal:entities tempEntity.Motion[1]
 data modify entity @s Motion[2] set from storage drehmal:entities tempEntity.Motion[2]
+execute as @s at @s run data modify entity @s Owner set from entity @p UUID
 
-
+tag @s add owner_tagged
 tag @s remove special

@@ -1,4 +1,5 @@
 execute unless entity @s[tag=owner_tagged] run function entities:misc/arrow_owner
+execute if entity @s[tag=piecemaker_arrow] at @s run particle dust 0.976 0 0 1 ~ ~ ~ 0 0 0 0 1
 execute if entity @s[tag=ossein_arrow] at @s run particle crit
 execute if entity @s[tag=ethgar_arrow] at @s run particle firework
 execute if entity @s[tag=ethgar_arrow] at @s run particle flame

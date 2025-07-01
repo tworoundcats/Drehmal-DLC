@@ -29,4 +29,4 @@ execute if score @s maxHealth matches 20.. run damage @s 20 minecraft:rubber_noc
 
 execute if score @s soul_burn matches ..1 run tag @s remove soul_burn
 scoreboard players reset @p[tag=temp_burn] soul_burn
-execute if score @s soul_burn matches ..1 run tag @p[tag=temp_burn] remove temp_burn
+execute if score @s soul_burn matches ..1 run tag @a[tag=temp_burn] remove temp_burn

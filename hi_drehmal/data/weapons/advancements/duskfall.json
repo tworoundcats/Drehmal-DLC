@@ -27,10 +27,10 @@
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Duskfall Gauntlet"
+            "text": "Obtained the Masterwork Duskfall Gauntlet."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:aurora"
+    "parent": "weapons:forgotten"
 }

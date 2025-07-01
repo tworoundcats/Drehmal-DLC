@@ -1135,6 +1135,7 @@ scoreboard objectives add slash_timer2 dummy
 scoreboard objectives add slash_timer dummy
 
 
+
 scoreboard objectives add brkCoal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add brkDeepCoal minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add brkIron minecraft.mined:minecraft.iron_ore

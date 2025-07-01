@@ -12,8 +12,7 @@
         }
     },
     "rewards": {
-        "function": "weapons:advancement/spear"
-        
+        "function": "weapons:advancement/seren"
     },
     "display": {
         "frame": "task",
@@ -23,14 +22,14 @@
         },
         "title": {
             "color": "red",
-            "text": "Lucky Spear"
+            "text": "Serendipity"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Lucky Spear"
+            "text": "Obtained the Masterwork Spear"
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:shadowblade"
+    "parent": "weapons:forgotten"
 }

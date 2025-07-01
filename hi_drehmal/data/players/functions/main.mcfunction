@@ -787,12 +787,9 @@ scoreboard players reset @s drop_levi
 
 # -------------------------------------------------------------------
 
-### Thunderclap ###
-execute if predicate players:holding/thunderclap run scoreboard players add @s thun 1
-execute if predicate players:holding/thunderclap if score @s thun matches 160.. if score @s use_thun matches 1.. run function players:items/thunderclap/main
-execute if predicate players:holding/thunderclap if score @s thun matches ..159 if score @s use_thun matches 1.. run function players:items/thunderclap/reset
-execute if predicate players:holding/thunderclap if score @s thun matches 160 at @s run playsound minecraft:dcustom.block.respawn_anchor.charge player @a ^ ^ ^ 1 0
-execute unless predicate players:holding/thunderclap if score @s thun matches 1.. run scoreboard players reset @s thun
+### Force Majeure ###
+execute if predicate players:holding/force run function players:items/force/main
+execute unless predicate players:holding/force if score @s thun matches 1.. run scoreboard players reset @s thun
 
 # -------------------------------------------------------------------
 
@@ -805,21 +802,12 @@ execute unless entity @e[tag=bleed] run scoreboard players reset @s bleed
 # -------------------------------------------------------------------
 
 ### Gauntlets ###
-execute if predicate players:holding/gauntlet_mainhand if predicate players:holding/gauntlet_offhand run function players:items/gauntlets/main
-execute if predicate players:holding/gauntlet_mainhand run scoreboard players add @s gaunt_stats 1
-execute if predicate players:holding/gauntlet_offhand run scoreboard players add @s gaunt_stats 1
-execute unless predicate players:holding/gauntlet_mainhand as @s[scores={gaunt_stats=1..}] run execute as @s run function players:items/gauntlets/reset
-execute unless predicate players:holding/gauntlet_mainhand unless predicate players:holding/gauntlet_offhand as @s[scores={gaunt_stats=1..}] run execute as @s run function players:items/gauntlets/reset
-execute unless predicate players:holding/gauntlet_mainhand as @s[scores={gaunt_stats=1..}] run execute as @s run scoreboard players reset @s gaunt_stats
-execute unless predicate players:holding/gauntlet_offhand as @s[scores={gaunt_stats=1..}] run execute as @s run function players:items/gauntlets/reset
-execute unless predicate players:holding/gauntlet_offhand as @s[scores={gaunt_stats=1..}] run execute as @s run scoreboard players reset @s gaunt_stats
-
+execute if predicate players:holding/gauntlets run function players:items/gauntlets/main
+execute unless predicate players:holding/gauntlets as @s[scores={gaunt_stats=1..}] run function players:items/gauntlets/reset
 # -------------------------------------------------------------------
 
-### Lucky Spear ###
-execute if predicate players:holding/luckyspear if entity @s[tag=!luckyspear] run function players:items/luckyspear/clear
-execute if predicate players:holding/luckyspear if entity @s[tag=!luckyspear1] run function players:items/luckyspear/apply
-execute if predicate players:holding/luckyspear if score @s lucky matches 9.. run tag @s remove luckyspear
+### Serendipity ###
+execute if predicate players:holding/serendipity as @s[scores={lucky=10..}] run function players:items/serendipity/main
 
 # -------------------------------------------------------------------
 

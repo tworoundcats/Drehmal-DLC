@@ -1,19 +1,41 @@
-execute at @s positioned ~ ~1 ~ run tag @e[type=minecraft:arrow,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!side_arrow_temp,tag=!main_arrow_temp,tag=!special] add main_arrow_temp
+execute at @s positioned ~ ~1 ~ if entity @e[type=spectral_arrow,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!side_arrow_temp,tag=!main_arrow_temp,tag=!speciall] run scoreboard players set #spectral bool 1
+execute at @s positioned ~ ~1 ~ run tag @e[type=#arrows,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!side_arrow_temp,tag=!main_arrow_temp,tag=!special] add piecemaker_arrow
+execute at @s positioned ~ ~1 ~ run tag @e[type=#arrows,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!side_arrow_temp,tag=!main_arrow_temp,tag=!special] add main_arrow_temp
+execute as @e[type=#arrows,tag=main_arrow_temp] run data modify entity @s crit set value false
 
-data modify storage drehmal:entities tempEntity set from entity @e[type=arrow,tag=main_arrow_temp,limit=1] {}
+data modify storage drehmal:entities tempEntity set from entity @e[type=#arrows,tag=main_arrow_temp,limit=1] {}
+execute store result storage drehmal:entities tempEntity.damage double 1 run data get storage drehmal:entities tempEntity.damage 3
+execute as @e[type=#arrows,tag=main_arrow_temp] run data modify entity @s damage set from storage drehmal:entities tempEntity.damage
 
-
-
-
-execute as @p at @s rotated ~ 0 run summon arrow ^1 ^1.5 ^ {Tags:["special"]}
-execute as @p at @s rotated ~ 0 run summon arrow ^1.25 ^1.5 ^ {Tags:["special"]}
-
-
-execute as @p at @s rotated ~ 0 run summon arrow ^-1 ^1.5 ^ {Tags:["special"]}
-execute as @p at @s rotated ~ 0 run summon arrow ^-1.25 ^1.5 ^ {Tags:["special"]}
+data modify storage drehmal:entities tempEntity set from entity @e[type=#arrows,tag=main_arrow_temp,limit=1] {}
 
 
-execute as @e[type=arrow,tag=special] run function entities:misc/piecemaker_stats
 
-tag @e[type=arrow,tag=main_arrow_temp] remove main_arrow_temp
+
+execute unless score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s unless score #spectral bool matches 1 rotated ~ 0 run summon arrow ^1 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute unless score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s unless score #spectral bool matches 1 rotated ~ 0 run summon arrow ^-1 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute unless score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s unless score #spectral bool matches 1 rotated ~ 0 run summon arrow ^1.25 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute unless score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s unless score #spectral bool matches 1 rotated ~ 0 run summon arrow ^-1.25 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+
+
+
+execute if score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:spectral_arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s if score #spectral bool matches 1 rotated ~ 0 run summon spectral_arrow ^1 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute if score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:spectral_arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s if score #spectral bool matches 1 rotated ~ 0 run summon spectral_arrow ^-1 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute if score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:spectral_arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s if score #spectral bool matches 1 rotated ~ 0 run summon spectral_arrow ^1.25 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+execute if score #spectral bool matches 1 store result score #arrow_count num run clear @p minecraft:spectral_arrow 1
+execute if score #arrow_count num matches 1.. as @p at @s if score #spectral bool matches 1 rotated ~ 0 run summon spectral_arrow ^-1.25 ^1.5 ^ {Tags:["special","piecemaker_arrow"]}
+
+
+execute as @e[type=#arrows,tag=special] run function entities:misc/piecemaker_stats
+
+
+scoreboard players reset #spectral bool
+tag @e[type=#arrows,tag=main_arrow_temp] remove main_arrow_temp
 scoreboard players reset #piecemaker_arrow temp

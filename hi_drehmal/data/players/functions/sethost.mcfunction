@@ -87,4 +87,3 @@ recipe take @s weapons:pearl
 recipe take @s weapons:starry
 recipe take @s weapons:blaze
 execute as @s run function weapons:grant
-
