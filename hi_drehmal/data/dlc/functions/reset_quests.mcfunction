@@ -36,6 +36,8 @@ execute positioned 4618 68 -2814 run forceload add ~ ~
 
 execute positioned 4727 64 5821 run forceload add ~ ~
 
+execute positioned -1570 65 -522 run forceload add ~ ~
+
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload add ~ ~
 
 scoreboard players set dlc#c spawnqnpc 0

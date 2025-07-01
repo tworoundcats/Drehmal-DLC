@@ -408,9 +408,9 @@ execute positioned -2167.55 65.00 3701.51 as @e[name="Daniel",type=villager,tag=
 execute positioned -2167.55 65.00 3701.51 as @e[name="Daniel",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Corvid - Okeke
-execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,tag=!qend] if entity @a[distance=..2,tag=qst14] run execute positioned ~ ~ ~ as @p[tag=qst14] if predicate players:holding/quest/corvidiotquest run function quests:corvidiotquest/detect
-execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst14] run function quests:corvidiotquest/base
-execute positioned -1571.48 61.00 -494.49 as @e[name="Corvidiot",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=painting_ready,tag=!qend] if entity @a[distance=..3,tag=qst14,tag=!qst14_e] run execute positioned ~ ~ ~ as @p[tag=qst14] if predicate players:holding/quest/corvidpainting run function quests:corvidiotquest/detect
+execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst14,tag=!qst14_e] run function quests:corvidiotquest/base
+execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Tahlros - Naharja
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/land_salmon run function quests:tahlrosquest/detect

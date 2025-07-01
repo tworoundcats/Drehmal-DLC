@@ -32,6 +32,10 @@ execute positioned 4618 68 -2814 run forceload remove ~ ~
 
 execute positioned 4727 64 5821 run forceload remove ~ ~
 
+execute positioned -1570 65 -522 run forceload remove ~ ~
+
+execute positioned 2021 116 -787 run forceload remove ~ ~
+
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload remove ~ ~
 
 

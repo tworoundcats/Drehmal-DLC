@@ -28,6 +28,8 @@ execute positioned 4138.50 65.00 1755.5 run kill @e[type=villager,distance=..2,n
 
 execute positioned -2167.52 65.00 3701.21 run kill @e[type=villager,distance=..2]
 
+execute positioned -1570 65.00 -522 run kill @e[type=villager,name="Corv Ihd",distance=..5]
+
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run kill @e[type=villager,name="Tahlros",distance=..2]
 
 schedule function dlc:reset_quests_3 3s

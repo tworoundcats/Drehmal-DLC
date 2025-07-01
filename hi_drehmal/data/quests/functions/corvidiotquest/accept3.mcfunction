@@ -1,3 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tellraw @s ["","<Corvidiot> ",{"text":"And they even stole one of my paintings and locked it away in the ","color":"dark_green"},{"text":"parliament head office","color":"green"}]
+execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tellraw @s ["",{"text":"<"},{"text":"Corv Ihd","color":"black"},{"text":"> I made my way over here without too much trouble, but I really want that painting back. It's very special to me."}]
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:corvidiotquest/accept4 3s
+execute if score #DLC repeatable matches 1 run execute positioned 2021 116 -787 run forceload remove ~ ~
+schedule function quests:corvidiotquest/accept4 6s
