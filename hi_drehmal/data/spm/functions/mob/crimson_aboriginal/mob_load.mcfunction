@@ -7,6 +7,6 @@ execute if predicate spm_cf:mob/crimson_aboriginal/with_crossbow run item replac
 
 attribute @s generic.max_health base set 20
 attribute @s generic.movement_speed base set 0.36
-data merge entity @s {Health:20.0f,IsImmuneToZombification:1b,DeathLootTable:"spm:death/crimson_aboriginal",CustomName:'{"text": "Crimson Aboriginal","color": "red","italic": false}',CustomNameVisible:1b}
+data merge entity @s {Health:20.0f,IsImmuneToZombification:1b,DeathLootTable:"spm:death/crimson_aboriginal",CustomName:'{"text": "Crimson Aboriginal","color": "red","italic": false}',CustomNameVisible:0b}
 
 function spm:mob/mob_load

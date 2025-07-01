@@ -8,6 +8,6 @@ item replace entity @s weapon.offhand with lantern
 attribute @s generic.movement_speed base set 0.24
 attribute @s generic.knockback_resistance base set 0.5
 attribute @s generic.max_health base set 40
-data merge entity @s {Health:40,DeathLootTable:"spm:death/miner",CustomName:'{"text": "Miner","color": "gray","italic": false}',CustomNameVisible:1b}
+data merge entity @s {Health:40,DeathLootTable:"spm:death/miner",CustomName:'{"text": "Miner","color": "gray","italic": false}',CustomNameVisible:0b}
 
 function spm:mob/mob_load

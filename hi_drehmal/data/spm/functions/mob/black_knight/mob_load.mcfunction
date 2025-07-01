@@ -9,6 +9,6 @@ item replace entity @s weapon.offhand with shield{BlockEntityTag:{Base:15,Patter
 attribute @s generic.movement_speed base set 0.29
 attribute @s generic.knockback_resistance base set 0.2
 attribute @s generic.max_health base set 40
-data merge entity @s {DeathLootTable:"spm:death/black_knight",Health:40.0f,CustomName:'{"text": "Black Knight","color": "dark_red","italic": false}',CustomNameVisible:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+data merge entity @s {DeathLootTable:"spm:death/black_knight",Health:40.0f,CustomName:'{"text": "Black Knight","color": "dark_red","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 function spm:mob/mob_load

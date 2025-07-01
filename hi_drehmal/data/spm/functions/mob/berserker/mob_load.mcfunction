@@ -22,6 +22,6 @@ execute if score count_all towers matches 24.. run enchant @s sharpness 3
 
 
 attribute @s generic.knockback_resistance base set 0.6
-data merge entity @s {DeathLootTable:"spm:death/berserker",CustomName:'{"text": "Berserker","color": "gold","italic": false}',CustomNameVisible:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],IsImmuneToZombification:1b}
+data merge entity @s {DeathLootTable:"spm:death/berserker",CustomName:'{"text": "Berserker","color": "gold","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],IsImmuneToZombification:1b}
 
 function spm:mob/mob_load

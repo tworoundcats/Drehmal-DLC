@@ -24,13 +24,13 @@ execute if score count_all towers matches 24.. run execute if predicate spm_cf:m
 
 attribute @s generic.movement_speed base set 0.29
 execute if score count_all towers matches ..12 run attribute @s generic.max_health base set 20
-execute if score count_all towers matches ..12 run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:20.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches ..12 run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:20.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 execute if score count_all towers matches 12..24 run attribute @s generic.max_health base set 30
-execute if score count_all towers matches 12..24 run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:30.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches 12..24 run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:30.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 execute if score count_all towers matches 24.. run attribute @s generic.max_health base set 40
-execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:40.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"spm:death/barbarian",Health:40.0f,CustomName:'{"text": "Barbarian","color": "green","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 
 function spm:mob/mob_load
