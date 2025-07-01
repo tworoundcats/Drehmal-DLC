@@ -8,4 +8,5 @@ playsound minecraft:dcustom.entity.item_frame.remove_item player @a ~ ~1 ~
 playsound minecraft:custom.ward_staff.remove player @a ~ ~ ~
 
 tp @s ~ ~-1000 ~
+kill @e[tag=ward_staff_place,sort=nearest,limit=1]
 kill @s

@@ -5,15 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "items": ["mcdw:bow_haunted_bow"]
+                        "nbt":"{Pleasures:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/phantom"
-        
+        "function": "weapons:advancement/pleasures"
     },
     "display": {
         "frame": "task",
@@ -23,14 +22,14 @@
         },
         "title": {
             "color": "red",
-            "text": "Phantom's Spectre"
+            "text": "Pleasures of War"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Phantom's Spectre"
+            "text": "Obtained the Masterwork Bow."
         },
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:forgotten"
+    "parent": "weapons:verdant"
 }

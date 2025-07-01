@@ -28,3 +28,4 @@ execute if predicate players:holding/fdry_gun run scoreboard players set #fdry_g
 execute if predicate players:holding/fire_bow run scoreboard players set #mal_arrow temp 1
 
 execute if predicate players:holding/piecemaker run scoreboard players set #piecemaker_arrow temp 1
+execute if predicate players:holding/pleasures run scoreboard players set #pleasure_arrow temp 1

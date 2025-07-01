@@ -729,7 +729,10 @@ execute as @s[scores={dlc=1}] run function dlc:triggerdlc
 execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
 execute as @e[tag=soul_burn] run function players:items/soul/main
 
-# -------------------------------------------------------------------
+### Pleasures of War ###
+execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
+execute as @e[tag=soul_burn] run function players:items/soul/main
+
 
 ### Night Watch ###
 execute if predicate players:holding/backstabber_mainhand if score @s use_bs matches 1.. run function players:items/backstabber/main

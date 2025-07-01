@@ -26,7 +26,7 @@
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Masterwork Crossbow"
+            "text": "Obtained the Masterwork Crossbow."
         },
         "hidden": true,
         "show_toast": true

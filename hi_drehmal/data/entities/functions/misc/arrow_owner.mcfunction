@@ -22,6 +22,7 @@ scoreboard players reset #bowblade? temp
 scoreboard players reset #com.assault? temp
 scoreboard players reset #ultva temp
 scoreboard players reset #piecemaker_arrow temp
+scoreboard players reset #pleasure_arrow temp
 
 
 execute as @e[type=#core:bow_users] if score @s uuid0 = #temp uuid0 if score @s uuid1 = #temp uuid1 if score @s uuid2 = #temp uuid2 if score @s uuid3 = #temp uuid3 run function entities:misc/arrow_data
@@ -35,7 +36,6 @@ execute unless score #com.assault? temp matches 1 if score #avgun? temp matches 
 execute if score #mb_shot temp matches 1 run function entities:misc/mb_shoot
 
 execute if score #mal_arrow temp matches 1 run function entities:misc/fire_bow_shoot
-execute if score #piecemaker_arrow temp matches 1 run function entities:misc/piecemaker_shoot
 execute if score #fdry_gun temp matches 1 run function entities:ai/fdry_gunman/shoot
 execute if score #teth_velo? temp matches 1 run function entities:misc/arrow_teth
 execute if score #ethgar_arrow temp matches 1 run function entities:misc/arrow_ethgar
@@ -50,3 +50,7 @@ execute if predicate entities:noxious_arrow run tag @s add noxious_arrow
 execute if predicate entities:stun_arrow run function entities:misc/stasis_bolt_init
 
 execute if score #sun_arrow temp matches 1 run kill @s
+
+execute if score #piecemaker_arrow temp matches 1 run function entities:misc/piecemaker_shoot
+
+execute if score #pleasure_arrow temp matches 1 run function entities:misc/pleasure_shoot
