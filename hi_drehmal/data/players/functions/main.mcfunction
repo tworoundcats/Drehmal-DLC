@@ -970,6 +970,9 @@ execute at @s if predicate players:locations/sahd_forge as @e[predicate=players:
 # --- B52 ---
 execute if predicate players:broke_ore run function players:items/b52/broke_block
 
+# --- Burnt Generals Button Message ---
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=!bg_questholder,distance=..10] actionbar {"text":"A malevolent aura emanates from the central brazier...","color":"dark_red"}
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=bg_questholder,distance=..10] actionbar {"text":"The Burnt Generals eagerly await your summons.","color":"dark_red"}
 
 
 #execute if score #daycount2 timer matches 0 run say hi
