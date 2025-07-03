@@ -1,5 +1,5 @@
 scoreboard players set dlc#c spawnrnpc 1
-tellraw @s {"text":"This may take a while... do not run any additional commands till this is finished","bold":true,"color":"dark_red"}
+tellraw @s {"text":"This may take a while... do not run any additional commands until this is finished","bold":true,"color":"dark_red"}
 
 execute positioned 581.51 80.94 1500.61 run forceload add ~ ~
 
@@ -28,6 +28,8 @@ execute positioned -1159.45 80.06 1179.49 run forceload add ~ ~
 execute positioned -1534.50 160.50 1970.49 run forceload add ~ ~
 
 execute positioned 3740.49 73.00 466.58 run forceload add ~ ~
+
+execute positioned 699 94 4607 run forceload add ~ ~
 
 forceload add -2794 5384 -2816 5345
 
