@@ -883,7 +883,7 @@ execute if predicate players:hold_waystone if predicate players:lodahr run tag @
 execute if predicate players:hold_waystone if predicate players:lodahr run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run schedule function weapons:give/pocket 1t
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp_waystone] run tellraw @s {"text":"Your worhome fizzles away in your hand","bold":true,"color":"dark_red"}
+execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run tag @s add temp_waystone
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
