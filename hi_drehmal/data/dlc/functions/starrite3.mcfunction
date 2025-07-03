@@ -1,5 +1,5 @@
 scoreboard players set dlc#c spawnstarrite3 1
-tellraw @s {"text":"This may take a while... do not run any additional commands till this is finished","bold":true,"color":"dark_red"}
+tellraw @s {"text":"This may take a while... do not run any additional commands until this is finished","bold":true,"color":"dark_red"}
 
 execute positioned -3250 149 -480 run forceload add ~ ~
 
