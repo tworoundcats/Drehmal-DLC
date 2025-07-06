@@ -38,7 +38,13 @@ execute positioned 2021 116 -787 run forceload remove ~ ~
 
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload remove ~ ~
 
+execute in minecraft:lodahr positioned -964 246 -946 run forceload remove ~ ~
 
+execute in minecraft:lodahr positioned -69 11 -1646 run forceload remove ~ ~
+
+execute in minecraft:lodahr positioned -857 194 534 run forceload remove ~ ~
+
+execute in minecraft:lodahr positioned 1269 54 1205 run forceload remove ~ ~
 
 scoreboard players set dlc#c spawnqnpc 1
 execute as @a[tag=DLC_temp] run function dlc:settings

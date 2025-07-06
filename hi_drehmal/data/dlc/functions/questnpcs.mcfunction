@@ -42,6 +42,14 @@ execute positioned 2021 116 -787 run forceload add ~ ~
 
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload add ~ ~
 
+execute in minecraft:lodahr positioned -964 246 -946 run forceload add ~ ~
+
+execute in minecraft:lodahr positioned -69 11 -1646 run forceload add ~ ~
+
+execute in minecraft:lodahr positioned -857 194 534 run forceload add ~ ~
+
+execute in minecraft:lodahr positioned 1269 54 1205 run forceload add ~ ~
+
 schedule function dlc:questnpcs_2 3s
 
 tag @s add DLC_temp
