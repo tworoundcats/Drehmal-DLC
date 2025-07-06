@@ -982,6 +982,6 @@ execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if scor
 
 # --- Trial Legendary - Ihted Spawn ---
 
-execute if score #ihted_spellforged_spawn bool matches 0 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
+execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
 
 #execute if score #daycount2 timer matches 0 run say hi
