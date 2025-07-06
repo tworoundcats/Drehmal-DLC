@@ -705,17 +705,23 @@ execute as @s[predicate=players:adventure_areas] if predicate players:frost_walk
 
 execute as @s[predicate=!players:adventure_areas,tag=disable_frost_walker] run function players:enable_frost_walker
 
+execute unless predicate players:locations/in_arena run tag @s remove initialloop
+
 execute as @s[predicate=players:locations/red_dawn_spawn1,tag=!red_dawn_spawn1] run function dlc:spawn/red_dawn_spawn1
 
 execute as @s[predicate=players:locations/red_dawn_spawn2,tag=!red_dawn_spawn2] run function dlc:spawn/red_dawn_spawn2
 
 execute as @s[predicate=players:locations/red_dawn_spawn3,tag=!red_dawn_spawn3] run function dlc:spawn/red_dawn_spawn3
 
+execute as @s[predicate=players:locations/red_dawn_spawn4,tag=!red_dawn_spawn4] run function dlc:spawn/red_dawn_spawn4
+
+execute if predicate players:locations/red_dawn_nomusic run function players:music/stopfurtherance
+
+execute unless predicate players:locations/red_dawn_nomusic if entity @s[tag=bossmusic] run function players:music/startfurtherance
 
 execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
 
 function dlc:accessories/main
-function dev:night_vision
 
 
 execute as @s[scores={dlc=1}] run function dlc:triggerdlc

@@ -9,7 +9,6 @@ execute if score @s ai_state matches 2 if entity @a[predicate=players:locations/
 execute if score @s ai_state matches 4 if entity @a[predicate=players:locations/in_arena] run function entities:ai/samurai/shotgun
 
 
-tag @a[distance=..50] add lazerMusic
 execute as @a[predicate=players:locations/in_arena] run function entities:ai/samurai/arena/music_loop
 execute if predicate entities:teth_shoot unless entity @s[tag=sam_angy] run particle dust 0.78 0 1 0.9 ~ ~1 ~ 0.2 0.45 0.2 0 20
 execute if predicate entities:teth_shoot if entity @s[tag=sam_angy] run particle dust 1 0.0 0.0 1 ~ ~1 ~ 0.2 0.45 0.2 0 20

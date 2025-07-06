@@ -17,6 +17,7 @@ execute if entity @s[x=3193,y=31,z=3284,dx=180,dy=100,dz=200] run function playe
 #execute if entity @s[x=4799,y=74,z=5708,distance=..100] run function players:music/firteid
 execute if predicate players:in_firt run function players:music/firteid
 execute if entity @s[x=26395,y=132,z=-187,dx=162,dy=25,dz=162] run function players:music/terminus
+execute if predicate players:locations/red_dawn_devzone run function players:music/furtherance
 
 scoreboard players reset #at_palace temp
 execute positioned -3994 ~ 5981 if entity @s[distance=..100] run scoreboard players set #at_palace temp 1

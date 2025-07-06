@@ -13,8 +13,7 @@ execute as @e[type=item,tag=temp] run function players:misc/mythic_owner
 #kill @e[type=item,predicate=players:is_asc,tag=!scanned]
 scoreboard players reset #z_picked? bool
 
-fill -2152 10 -1572 -2148 5 -1573 minecraft:water
-schedule function entities:ai/samurai/arena/open_exit_scheduled 9s
+clone from minecraft:overworld 27451 173 777 27445 167 759 to minecraft:overworld 27491 176 861
 
 advancement grant @a only weapons:red_dawn
 advancement revoke @s only players:red_dawn

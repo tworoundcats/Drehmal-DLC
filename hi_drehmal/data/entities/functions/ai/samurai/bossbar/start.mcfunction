@@ -1,4 +1,4 @@
-bossbar add sentry "Elite Red Dawn Sentry"
+bossbar add sentry "Hegemon Unit"
 bossbar set sentry max 400
 bossbar set sentry style progress
 bossbar set minecraft:sentry color purple
