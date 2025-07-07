@@ -1,7 +1,7 @@
 function players:avpod/clearchat
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}
-tellraw @s {"text":"                 DLC SETUP","bold":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"These must be run for the DLC to work.","color":"gray"}]}}
+tellraw @s {"text":"                 REQUIRED SETUP","bold":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"These must be run for the DLC to work.","color":"gray"}]}}
 tellraw @s {"text":" "}
 
 function dlc:check1
@@ -10,6 +10,8 @@ function dlc:check3
 function dlc:check4
 function dlc:check5
 function dlc:check8
+function dlc:check10
+function dlc:check11
 
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}
