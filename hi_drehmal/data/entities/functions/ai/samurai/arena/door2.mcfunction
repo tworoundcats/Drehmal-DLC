@@ -1,2 +1,2 @@
 clone from minecraft:overworld 27450 107 825 27442 115 825 to minecraft:overworld 27490 162 826
-execute positioned 27494 166 826 run playsound minecraft:entity.iron_golem.hurt ambient @a[distance=..50] 27494 166 826 4 0
+execute positioned 27494 166 826 run playsound minecraft:dcustom.entity.iron_golem.hurt ambient @a[distance=..50] 27494 166 826 4 0

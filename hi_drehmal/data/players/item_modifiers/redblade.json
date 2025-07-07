@@ -1,7 +1,7 @@
 [
   {
       "function":"set_nbt",
-      "tag":"{weapon_attributes:'{\"parent\":\"minecraft:avrad\"}',CustomModelData:14,AttributeModifiers:[]}"
+      "tag":"{weapon_attributes:'{\"parent\":\"minecraft:avrad\"}',CustomModelData:114,AttributeModifiers:[]}"
   },
   {
     "function": "set_attributes",

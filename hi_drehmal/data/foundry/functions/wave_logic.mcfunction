@@ -9,12 +9,21 @@ execute if score wave_time foundry matches 1.. run scoreboard players add #fdry_
 execute positioned -3310.00 100.00 1543.00 unless entity @a[dx=40,dy=20,dz=36,gamemode=adventure] run function foundry:arena_loss
 
 #checks which wave is active and runs it
-execute if score wave_number foundry matches 1 run function foundry:wave_1
-execute if score wave_number foundry matches 2 run function foundry:wave_2
-execute if score wave_number foundry matches 3 run function foundry:wave_3
-execute if score wave_number foundry matches 4 run function foundry:wave_4
-execute if score wave_number foundry matches 5 run function foundry:wave_5
-execute if score wave_number foundry matches 6 run function foundry:wave_6
+execute if score wave_number foundry matches 1 unless score #fdry_charged bool matches 1 run function foundry:wave_1
+execute if score wave_number foundry matches 2 unless score #fdry_charged bool matches 1 run function foundry:wave_2
+execute if score wave_number foundry matches 3 unless score #fdry_charged bool matches 1 run function foundry:wave_3
+execute if score wave_number foundry matches 4 unless score #fdry_charged bool matches 1 run function foundry:wave_4
+execute if score wave_number foundry matches 5 unless score #fdry_charged bool matches 1 run function foundry:wave_5
+execute if score wave_number foundry matches 6 unless score #fdry_charged bool matches 1 run function foundry:wave_6
+
+execute if score wave_number foundry matches 1 if score #fdry_charged bool matches 1 run function foundry:wave1_2
+execute if score wave_number foundry matches 2 if score #fdry_charged bool matches 1 run function foundry:wave2_2
+execute if score wave_number foundry matches 3 if score #fdry_charged bool matches 1 run function foundry:wave3_2
+execute if score wave_number foundry matches 4 if score #fdry_charged bool matches 1 run function foundry:wave4_2
+execute if score wave_number foundry matches 5 if score #fdry_charged bool matches 1 run function foundry:wave5_2
+execute if score wave_number foundry matches 6 if score #fdry_charged bool matches 1 run function foundry:wave6_2
+
+
 execute if score #valhalla bool matches 1 if score arena_active foundry matches 1 unless score wave_number foundry matches 1..6 run function foundry:wave_n
 
 #move the waves forward
@@ -28,7 +37,8 @@ execute if score wave_time foundry matches 220.. unless score #fdry_count temp m
 
 #win
 
-execute unless score #valhalla bool matches 1 if score wave_number foundry matches 7.. run function foundry:arena_victory
+execute unless score #valhalla bool matches 1 if score wave_number foundry matches 7.. unless score #fdry_charged bool matches 1 run function foundry:arena_victory
+execute unless score #valhalla bool matches 1 if score wave_number foundry matches 7.. if score #fdry_charged bool matches 1 run function foundry:arena_victory_2
 
 #display wave messages
 

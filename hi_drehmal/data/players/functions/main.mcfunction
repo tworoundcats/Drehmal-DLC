@@ -88,13 +88,6 @@ execute if score @s holdingavrad matches 1 if score @s avrad_charge_c matches 1.
 
 execute unless score @s avrad_cool matches ..-1 run scoreboard players remove @s avrad_cool 1
 
-execute as @s[predicate=players:locations/compass_fall] run effect give @s minecraft:slow_falling 1 0 true
-execute as @s[predicate=players:locations/compass_levitat] run effect give @s minecraft:levitation 1 2 true
-
-execute if predicate players:locations/compass_lower if entity @s[tag=refine_start,tag=interact_person] run function terminus:upg/refining
-execute if entity @e[type=item,predicate=players:is_esc,x=26475,y=128,z=-54] if score #1S timer matches 1 as @s[tag=!refine_start,tag=interact_person] if predicate players:locations/compass_lower run function terminus:upg/menu
-execute if score @s aegis_cool matches 1 run function players:items/aegis/remove_cooldown
-
 #--------#
 #TRIGGERS#
 #--------#

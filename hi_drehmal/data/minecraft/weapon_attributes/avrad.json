@@ -2,7 +2,7 @@
   "attributes": {
     "attack_range": 2.75,
     "pose": "bettercombat:pose_two_handed_sword",
-    "two_handed": true,
+    "two_handed": false,
     "category": "sword",
     "attacks": [
       {
@@ -14,18 +14,6 @@
         "swing_sound": {
           "id": "bettercombat:staff_slash",
           "pitch": 0.6,
-          "volume": 1
-        }
-      },
-      {
-        "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 1,
-        "angle": 120,
-        "upswing": 0.5,
-        "animation": "bettercombat:one_handed_uppercut_right",
-        "swing_sound": {
-          "id": "bettercombat:staff_slash",
-          "pitch": 0.75,
           "volume": 1
         }
       },
