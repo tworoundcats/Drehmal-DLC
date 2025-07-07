@@ -1,0 +1,3 @@
+execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> I can't say for sure what they were up to, but my connections told me some… unsettling things. Whispers of a large military operation. A new supersoldier program."}]
+execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.celebrate master @s ~ ~ ~ 2 0.8
+schedule function quests:mahkarquest/4 5s

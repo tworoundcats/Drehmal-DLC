@@ -30,6 +30,7 @@ execute if score #event temp matches 30 run function entities:dropped_items/avbo
 execute if score #event temp matches 31 run function entities:ai/rhalon/death
 execute if score #event temp matches 32 run function entities:ai/tevus/death
 execute if score #event temp matches 33 run function entities:ai/ethgar/death
+execute if score #event temp matches 34 run function quests:mahkarquest/count
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr
 
 execute if score #event temp matches 25 run function players:items/1kscars/kill/event

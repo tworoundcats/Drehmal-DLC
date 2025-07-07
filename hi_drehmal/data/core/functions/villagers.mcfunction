@@ -301,6 +301,15 @@ execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=pain
 execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst14,tag=!qst14_e] run function quests:corvidiotquest/base
 execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
+# Mahkar - Rhaveloth
+execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=qst16,tag=mahkar_proven,tag=!qst16_e] run function quests:mahkarquest/1
+execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst16,tag=!qst16_e] run function quests:mahkarquest/base
+#execute as @e[type=piglin_brute,tag=mahkar_target1,tag=!active_mahkar_target] if entity @a[distance=..20] run function quests:mahkarquest/brute_ai
+#execute as @e[type=piglin_brute,tag=mahkar_target2,tag=!active_mahkar_target] if entity @a[distance=..20] run function quests:mahkarquest/brute_ai
+#execute as @e[type=piglin_brute,tag=mahkar_target3,tag=!active_mahkar_target] if entity @a[distance=..20] run function quests:mahkarquest/brute_ai
+execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+
+
 # Tahlros - Naharja
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/land_salmon run function quests:tahlrosquest/detect
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/immortal_slap_fish run function quests:tahlrosquest/detect

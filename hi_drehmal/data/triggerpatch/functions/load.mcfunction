@@ -1,5 +1,5 @@
 ## Quests
-# Casey
+
 scoreboard objectives add tgrptch.casey_accept trigger
 scoreboard objectives add tgrptch.chris_accept trigger
 scoreboard objectives add tgrptch.cinder_accept trigger
@@ -10,11 +10,13 @@ scoreboard objectives add tgrptch.dread_accept trigger
 scoreboard objectives add tgrptch.gamer_accept trigger
 scoreboard objectives add tgrptch.gragas_accept trigger
 scoreboard objectives add tgrptch.keeko_accept trigger
+scoreboard objectives add tgrptch.mahkar_accept trigger
 scoreboard objectives add tgrptch.major_accept trigger
 scoreboard objectives add tgrptch.mouton_accept trigger
 scoreboard objectives add tgrptch.rift_accept trigger
 scoreboard objectives add tgrptch.russell_accept trigger
 scoreboard objectives add tgrptch.tahlros_accept trigger
+scoreboard objectives add tgrptch.weller_accept trigger
 
 scoreboard objectives add tgrptch.quest_deny trigger
 scoreboard players reset @a tgrptch.quest_deny
