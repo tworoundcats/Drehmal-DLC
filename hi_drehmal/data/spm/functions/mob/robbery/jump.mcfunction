@@ -23,7 +23,7 @@ execute store result entity @s Motion[2] double 0.01 run scoreboard players get 
 scoreboard players set @s spm.energy 0
 
 particle poof ~ ~0.1 ~ 1 0.2 1 0 20
-playsound entity.horse.jump master @a
+playsound minecraft:dcustom.entity.horse.jump hostile @a
 
 scoreboard players set @s spm.bomb 1
 data modify entity @s OnGround set value 0b

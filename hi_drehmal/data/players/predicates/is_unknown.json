@@ -62,7 +62,7 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"dlc:primal_overclocker\"}}"
+        "nbt": "{Item:{id:\"dlc:primal_focus\"}}"
       }
     },
         {

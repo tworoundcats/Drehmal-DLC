@@ -16,5 +16,8 @@ execute if entity @s[tag=chained_samurai] run function entities:ai/samurai/main
 execute if entity @s[tag=avbot] run function entities:ai/avbot/main
 execute if entity @s[tag=avbot_boom] run function entities:ai/avbot_boom/main
 execute if entity @s[tag=avbot_zoomy] run function entities:ai/avbot_zoom/main
+execute if entity @s[tag=buffer] run function entities:ai/buffer/main
+execute if entity @s[tag=disabler] run function entities:ai/disabler/main
+
 
 execute if entity @s[tag=timeworn_thrall] run function entities:ai/timeworn/main

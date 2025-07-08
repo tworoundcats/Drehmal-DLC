@@ -20,5 +20,5 @@ execute store result entity @s Motion[0] double 0.01 run scoreboard players get 
 execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
 execute store result entity @s Motion[2] double 0.01 run scoreboard players get @s spm.z
 
-playsound entity.horse.jump master @a
+playsound minecraft:dcustom.entity.horse.jump hostile @a
 

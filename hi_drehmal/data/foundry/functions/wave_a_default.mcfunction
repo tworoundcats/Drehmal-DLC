@@ -10,3 +10,5 @@ scoreboard players set superheavy_mob_count foundry 1
 scoreboard players set rage_mob_count foundry 1
 scoreboard players set technomancer_mob_count foundry 1
 scoreboard players set executive_mob_count foundry 1
+scoreboard players set buffer_mob_count foundry 1
+scoreboard players set disabler_mob_count foundry 1

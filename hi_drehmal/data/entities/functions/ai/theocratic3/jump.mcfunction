@@ -24,7 +24,7 @@ execute store result entity @s Motion[2] double 0.01 run scoreboard players get 
 data modify entity @s OnGround set value 0b
 
 particle poof ~ ~0.1 ~ 1 0.2 1 0 20
-playsound entity.horse.jump master @a
+playsound minecraft:dcustom.entity.horse.jump hostile @a
 tag @s add jumping
 item replace entity @s weapon.mainhand with diamond_sword{CustomModelData:8,Damage:0,Enchantments:[{id:"minecraft:sharpness",lvl:20}]} 1
 attribute @s minecraft:generic.movement_speed base set 0.22

@@ -46,6 +46,8 @@ execute positioned 3740.49 73.00 466.58 unless entity @e[type=villager,distance=
 # Tahva - anchor artisan
 execute positioned 699 94 4607 run execute as @e[type=villager,name="Runic Blacksmith",distance=..6] run data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:emerald",Count:20},sell:{id: "mcdw:axe_anchor", tag: {Enchantments: [{id: "minecraft:unbreaking", lvl: 3s}], HideFlags: 126, Damage: 0, display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"yellow","text":"Mariner\'s Wrath"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"An anchor for a small ship, wielded as a"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"comically cumbersome weapon by a fanatical"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"group of Dahr worshippers native to the"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"far northwestern seas."}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"gray","text":"When in Main Hand:"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"11 Attack Damage"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"0.6 Attack Speed"}],"text":""}', '{"extra":[{"italic":false,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"yellow","text":"Artisan"}],"text":""}']}}, Count: 1}}
 
+execute positioned -3293.07 110.00 1592.22 run function dlc:summon/foundry2
+
 
 execute positioned -2794 160 5384 as @e[name="Ethgar, the Third General"] run data merge entity @s {Health:0}
 

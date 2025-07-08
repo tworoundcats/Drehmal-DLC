@@ -28,6 +28,8 @@ execute positioned 3740.49 73.00 466.58 run forceload remove ~ ~
 
 execute positioned 699 94 4607 run forceload remove ~ ~
 
+forceload remove -3294 1592
+
 forceload remove -2794 5384 -2816 5345
 
 forceload remove -3938 5936 -4039 6044

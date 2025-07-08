@@ -17,6 +17,9 @@ scoreboard players set superheavy_mob_count foundry 1
 scoreboard players set rage_mob_count foundry 1
 scoreboard players set technomancer_mob_count foundry 1
 scoreboard players set executive_mob_count foundry 1
+scoreboard players set buffer_mob_count foundry 1
+scoreboard players set disabler_mob_count foundry 1
+
 
 function foundry:reset_exec_bar
 execute as @a[predicate=players:locations/foundry_arena] run tag @s add tempdeaths

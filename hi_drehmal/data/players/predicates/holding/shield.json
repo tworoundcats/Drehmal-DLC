@@ -24,7 +24,7 @@
           "items": [
             "dlc:amarantheon"
           ],
-          "nbt": "{Amaranthine:1b}"
+          "nbt": "{Amarantheon:1b}"
         }
       }
     }

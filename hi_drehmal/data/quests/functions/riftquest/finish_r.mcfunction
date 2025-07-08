@@ -98,7 +98,7 @@ execute positioned ~ ~ ~ as @p[tag=qst12] at @s run summon experience_orb ~ ~ ~1
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run summon experience_orb ~ ~ ~2 {Value:4}
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run summon experience_orb ~ ~ ~1 {Value:4}
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
-execute positioned ~ ~ ~ as @p[tag=qst12] at @s run give @s dlc:starfall_cluster{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Starfall Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"A large amount of refined Starfall,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"basking in the light and majesty of"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"worlds beyond the Veil."}],"text":""}']}} 1
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run give @s dlc:starfall_ingot{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Starfall Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"A large amount of refined Starfall,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"basking in the light and majesty of"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"worlds beyond the Veil."}],"text":""}']}} 1
 
 
 

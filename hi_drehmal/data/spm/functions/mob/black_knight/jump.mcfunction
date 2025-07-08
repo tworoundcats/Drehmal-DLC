@@ -25,5 +25,5 @@ scoreboard players set @s spm.bomb 1
 data modify entity @s OnGround set value 0b
 
 particle poof ~ ~0.1 ~ 1 0.2 1 0 20
-playsound entity.horse.jump master @a
+playsound minecraft:dcustom.entity.horse.jump hostile @a
 

@@ -200,12 +200,12 @@ execute if predicate players:daytime run function players:misc/1aday_refresh
 
 scoreboard players operation @s wasHoldingAvs = @s holdingAvs
 scoreboard players reset @s holdingAvs
-execute store success score @s holdingAvs if predicate players:holding/avstate2 if predicate players:holding/zenith2
+execute store success score @s[tag=!disabled] holdingAvs if predicate players:holding/avstate2 if predicate players:holding/zenith2
 execute if score @s wasHoldingAvs matches 1 if score @s drop_zenith matches 1 run function players:items/avsaber/misfire
 
 
-execute store success score @s HoldingAv if predicate players:holding/holdingav
-execute if score @s HoldingAv matches 1.. run function players:items/avsaber/holdingav
+execute store success score @s[tag=!disabled] HoldingAv if predicate players:holding/holdingav
+execute if score @s[tag=!disabled] HoldingAv matches 1.. run function players:items/avsaber/holdingav
 
 execute if score @s UsedAvSaber matches 1.. run scoreboard players set @s UsedAvSaber 0
 execute if score @s AvDamage matches 1.. run scoreboard players set @s AvDamage 0
@@ -220,7 +220,8 @@ execute if score @s AvTimer matches 80.. run scoreboard players set @s AvTimer 0
 
 scoreboard players operation @s wasHoldingObv = @s holdingObv
 scoreboard players reset @s holdingObv
-execute store success score @s holdingObv if predicate players:holding/oblivion
+execute store success score @s[tag=!disabled] holdingObv if predicate players:holding/oblivion
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingObv 0
 
 execute if score @s holdingObv matches 1 if score @s wasHoldingObv matches 0 run scoreboard players set @s maxObvCooldown 800
 execute if score @s holdingObv matches 1 if score @s wasHoldingObv matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxObvCooldown 600
@@ -243,7 +244,8 @@ execute if score #5T timer matches 0 run function players:misc/portal/standcheck
 
 scoreboard players operation @s wasHoldingAsc = @s holdingAsc
 scoreboard players reset @s holdingAsc
-execute store result score @s holdingAsc if predicate players:holding/asc
+execute store result score @s[tag=!disabled] holdingAsc if predicate players:holding/asc
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingAsc 0
 scoreboard players remove @s asc_cool 1
 
 execute if score @s holdingAsc matches 1 if score @s wasHoldingAsc matches 0 run scoreboard players set @s maxAscCooldown 400
@@ -260,14 +262,15 @@ execute as @s[tag=asc_cd] if predicate players:holding/empty run function player
 # Malevolentia Stuff #
 #====================#
 
-execute store result score @s holdingMal if predicate players:holding/male
+execute store result score @s[tag=!disabled] holdingMal if predicate players:holding/male
 execute if score @s holdingMal matches 1 if score @s wasHoldingMal matches 0 run scoreboard players set @s maxMalCooldown 400
 execute if score @s holdingMal matches 1 if score @s wasHoldingMal matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxMalCooldown 300
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingMal 0
 
-execute if score @s holdingMal matches 1 unless score @s mal_cool2 matches 1.. if score @s mal_cool matches 1.. run function players:items/mal/cooldown
-execute if score @s holdingMal matches 1 unless score @s mal_cool matches 1.. unless score @s mal_cool2 matches 1.. run function players:items/mal/main
-execute if score @s holdingMal matches 1 if score @s mal_cool2 matches 1.. run function players:items/mal/active
-execute if score @s holdingMal matches 0 if score @s wasHoldingMal matches 1 run function players:items/mal/nothold
+execute if score @s holdingMal matches 1 unless score @s[tag=!disabled] mal_cool2 matches 1.. if score @s mal_cool matches 1.. run function players:items/mal/cooldown
+execute if score @s holdingMal matches 1 unless score @s[tag=!disabled] mal_cool matches 1.. unless score @s mal_cool2 matches 1.. run function players:items/mal/main
+execute if score @s holdingMal matches 1 if score @s[tag=!disabled] mal_cool2 matches 1.. run function players:items/mal/active
+execute if score @s holdingMal matches 0 if score @s[tag=!disabled] wasHoldingMal matches 1 run function players:items/mal/nothold
 
 execute unless score @s mal_cool2 matches 1.. run scoreboard players remove @s mal_cool 1
 execute unless entity @s[tag=notick_mal] run scoreboard players remove @s mal_cool2 1
@@ -283,7 +286,9 @@ execute if predicate players:nether unless entity @s[tag=dead] run function play
 # Syzygy Stuff #
 #==============#
 
-execute store success score @s holdingSy if predicate players:holding/syzygy
+execute store success score @s[tag=!disabled] holdingSy if predicate players:holding/syzygy
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingSy 0
+
 execute if score @s holdingSy matches 1 if score @s wasHoldingSy matches 0 run scoreboard players set @s maxSzyCooldown 400
 execute if score @s holdingSy matches 1 if score @s wasHoldingSy matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxSzyCooldown 300
 
@@ -312,7 +317,8 @@ scoreboard players operation @s wasHoldingSy = @s holdingSy
 scoreboard players remove @s fzy_cool 1
 scoreboard players operation @s wasHoldingFzy = @s holdingFzy
 scoreboard players reset @s holdingFzy
-execute store success score @s holdingFzy if predicate players:holding/frenzy
+execute store success score @s[tag=!disabled] holdingFzy if predicate players:holding/frenzy
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingFzy 0
 execute if score @s holdingFzy matches 1 if score @s wasHoldingFzy matches 0 unless predicate players:holding/frenzy2 run scoreboard players set @s maxFzyCooldown 1200
 execute if score @s holdingFzy matches 1 if score @s wasHoldingFzy matches 0 if predicate players:holding/frenzy2 run scoreboard players set @s maxFzyCooldown 600
 execute if score @s holdingFzy matches 1 if score @s wasHoldingFzy matches 0 if predicate players:holding/cooldown_ench unless predicate players:holding/frenzy2 run scoreboard players set @s maxFzyCooldown 900
@@ -327,7 +333,8 @@ execute if score @s holdingFzy matches 1 run function players:items/frenzy/main
 
 scoreboard players operation @s wasHoldingCal = @s holdingCal
 scoreboard players reset @s holdingCal
-execute store success score @s holdingCal if predicate players:holding/calamity
+execute store success score @s[tag=!disabled] holdingCal if predicate players:holding/calamity
+execute as @s[tag=disabled] run scoreboard players set @s wasHoldingCal 0
 execute if score @s holdingCal matches 1 if score @s wasHoldingCal matches 0 run scoreboard players set @s maxCalCooldown 800
 execute if score @s holdingCal matches 1 if score @s wasHoldingCal matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxCalCooldown 600
 
@@ -402,12 +409,12 @@ execute store result score @s holdingMb if predicate players:holding/mb
 execute if score @s holdingMb matches 1 if score @s wasHoldingMb matches 0 run scoreboard players set @s maxMbCooldown 1200
 execute if score @s holdingMb matches 1 if score @s wasHoldingMb matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxMbCooldown 900
 
-execute if score @s wasHoldingMb matches 1 if score @s holdingMb matches 0 if score @s mb_charge matches 1.. run function players:items/mb/reset
+execute if score @s wasHoldingMb matches 1 if score @s holdingMb matches 0 if score @s[tag=!disabled] mb_charge matches 1.. run function players:items/mb/reset
 execute if score @s mb_charge matches 1.. if score @s mb_charge_cool matches ..0 run scoreboard players remove @s mb_charge 2
-execute if score @s mb_charge matches 0 run function players:items/mb/reset
+execute if score @s[tag=!disabled] mb_charge matches 0 run function players:items/mb/reset
 
-execute if score @s holdingMb matches 1 if score @s mb_cool matches ..0 run function players:items/mb/main
-execute if score @s holdingMb matches 1 if score @s mb_cool matches 1.. run function players:items/mb/actionbar
+execute if score @s holdingMb matches 1 if score @s[tag=!disabled] mb_cool matches ..0 run function players:items/mb/main
+execute if score @s holdingMb matches 1 if score @s[tag=!disabled] mb_cool matches 1.. run function players:items/mb/actionbar
 
 scoreboard players remove @s mb_cool 1
 
@@ -600,8 +607,8 @@ execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTi
 scoreboard players reset @s drop_netherite
 scoreboard players reset @s drop_zenith
 
-execute as @a[predicate=players:holding/shield] if score @s shield_cool matches 0.. run function dlc:shield/actionbar
-execute as @a[predicate=players:holding/shield_offhand] if score @s shield_cool matches 0.. run function dlc:shield/actionbar
+execute as @s[predicate=players:holding/shield] if score @s[tag=!disabled] shield_cool matches 0.. run function dlc:shield/actionbar
+execute as @s[predicate=players:holding/shield_offhand] if score @s[tag=!disabled] shield_cool matches 0.. run function dlc:shield/actionbar
 scoreboard players remove @s shield_cool 1
 
 
@@ -948,8 +955,8 @@ execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] at @s run kill @e[t
 execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] run data modify entity @s Glowing set value 1b
 execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
 execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify entity @s Glowing set value 1b
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_cluster"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_cluster"}}] run data modify entity @s Glowing set value 1b
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_ingot"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
+execute as @e[type=item,nbt={Item:{id:"dlc:starfall_ingot"}}] run data modify entity @s Glowing set value 1b
 
 # -------------------------------------------------------------------
 
@@ -978,3 +985,17 @@ execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if scor
 execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
 
 #execute if score #daycount2 timer matches 0 run say hi
+
+# --- Foundry Anim ---
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
+
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered] if predicate players:holding/primal_focus run function dlc:foundry_power 
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
+
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3
+
+
+
+
+
+execute as @s[tag=disabled] run function players:misc/disabled
