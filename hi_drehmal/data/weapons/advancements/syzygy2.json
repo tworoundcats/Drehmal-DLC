@@ -27,7 +27,8 @@
             "color": "gray"
         },
         "icon": {
-            "item": "minecraft:cod_spawn_egg"
+      "item": "minecraft:crossbow",
+      "nbt": "{CustomModelData:11}"
         },
         "frame": "task",
         "show_toast": true,

@@ -9,7 +9,8 @@
             "color": "gray"
         },
         "icon": {
-            "item": "minecraft:ocelot_spawn_egg"
+      "item": "minecraft:netherite_sword",
+      "nbt": "{CustomModelData:31}"
         },
         "frame": "task",
         "show_toast": true,

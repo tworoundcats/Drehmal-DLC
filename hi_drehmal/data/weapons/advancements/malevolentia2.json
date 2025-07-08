@@ -1,38 +1,39 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "nbt":"{Malevolentia2:1b}"
-                    }
-                ]
-            }
-        }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{Malevolentia2:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "weapons:malevolentia"
+    ],
+    "function": "weapons:advancement/mal"
+  },
+  "display": {
+    "title": {
+      "color": "gold",
+      "text": "Malevolentia ✪"
     },
-    "rewards": {
-        "recipes": [
-            "weapons:malevolentia"
-        ],
-        "function":"weapons:advancement/mal"
+    "description": {
+      "text": "Unlocked the true potential of Malevolentia.",
+      "color": "gray"
     },
-    "display": {
-        "title": {
-            "color": "gold",
-            "text": "Malevolentia ✪"
-        },
-        "description": {
-            "text": "Unlocked the true potential of Malevolentia.",
-            "color": "gray"
-        },
-        "icon": {
-            "item": "minecraft:pig_spawn_egg"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true
+    "icon": {
+      "item": "minecraft:netherite_sword",
+      "nbt": "{CustomModelData:41}"
     },
-    "parent": "weapons:zenith2"
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "weapons:zenith2"
 }
