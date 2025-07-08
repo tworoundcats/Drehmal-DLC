@@ -39,6 +39,7 @@ execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if pr
 
 execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=bleed,scores={bleed=5..}] run function players:items/hangyaku/damage
 
-
+execute at @s as @e[type=piglin,tag=neutral,tag=!hostile,distance=..8,nbt={HurtTime:10s}] run tag @s add hostile
+execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag @s remove friend_of_mahkar2
 
 advancement revoke @s only players:hurt_entity

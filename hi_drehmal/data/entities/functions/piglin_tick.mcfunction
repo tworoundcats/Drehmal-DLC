@@ -1,1 +1,2 @@
 execute if entity @s[tag=ethgar] run function entities:ai/ethgar/main
+execute at @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160] unless entity @e[tag=hostile,type=piglin] if entity @p[distance=..30,tag=friend_of_mahkar] run function entities:piglin_tick2
