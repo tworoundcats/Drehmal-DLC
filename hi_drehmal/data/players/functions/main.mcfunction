@@ -824,6 +824,20 @@ execute if predicate players:holding/serendipity as @s[scores={lucky=10..}] run 
 
 # -------------------------------------------------------------------
 
+### First End ###
+
+execute if predicate players:holding/first_end as @s[scores={use_first=1..}] run function players:items/first_end/main
+
+# -------------------------------------------------------------------
+
+### Unchecked Ambition ###
+
+execute if predicate players:holding/ambition as @s[scores={use_ambition=1..}] run function players:items/ambition/main
+execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
+execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..3}] run scoreboard players remove @s tag_cd 1
+
+# -------------------------------------------------------------------
+
 ### Destiny Armor ###
 execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] run scoreboard players add @s destiny 1
 execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet if predicate players:sneak if score @s destiny matches 100.. unless entity @s[tag=destiny] run function players:items/destiny_armor/main

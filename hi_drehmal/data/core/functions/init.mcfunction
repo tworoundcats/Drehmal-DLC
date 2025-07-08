@@ -1136,6 +1136,10 @@ gamerule artifacts.crystalHeart.healthBonus 6
 
 scoreboard objectives add slash_timer2 dummy
 scoreboard objectives add slash_timer dummy
+scoreboard objectives add tag_cd dummy
+scoreboard objectives add use_first minecraft.used:mcdw.double_axe_double
+
+scoreboard objectives add use_ambition minecraft.used:simplyswords.diamond_chakram
 
 
 scoreboard objectives add brkCoal minecraft.mined:minecraft.coal_ore

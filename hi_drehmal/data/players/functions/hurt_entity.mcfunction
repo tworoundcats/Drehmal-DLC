@@ -42,4 +42,7 @@ execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTim
 execute at @s as @e[type=piglin,tag=neutral,tag=!hostile,distance=..8,nbt={HurtTime:10s}] run tag @s add hostile
 execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag @s remove friend_of_mahkar2
 
+
+
+
 advancement revoke @s only players:hurt_entity
