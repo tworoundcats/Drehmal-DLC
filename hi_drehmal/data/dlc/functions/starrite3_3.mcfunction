@@ -64,5 +64,7 @@ execute positioned 1683.31 19.00 -2730.20 run forceload remove ~ ~
 
 execute positioned -1248.64 16.00 480.35 run forceload remove ~ ~
 
+execute in minecraft:lodahr positioned 17 130 -1570 run forceload remove ~ ~
+
 execute as @a[tag=DLC_temp] run function dlc:settings
 execute as @a[tag=DLC_temp] run tag @s remove DLC_temp

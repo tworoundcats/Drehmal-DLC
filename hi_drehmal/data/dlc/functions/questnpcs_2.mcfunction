@@ -34,7 +34,7 @@ execute positioned -1570 65.00 -522 unless entity @e[type=villager,name="Corv Ih
 
 execute positioned 2021 116 -787 unless entity @e[type=minecraft:painting,distance=..2] run summon minecraft:painting 2021 116 -787 {variant:"water"}
 
-execute positioned -2944 92 5160 unless entity @e[type=villager,distance=..5,name="Mahkar"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:armorer},CustomName:'[{"text":"Mahkar"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned -2944 92 5160 unless entity @e[type=villager,distance=..5,name="Mahkar"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:armorer,level:99},CustomName:'[{"text":"Mahkar"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 unless entity @e[type=villager,name="Tahlros",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:cartographer,level:99},CustomName:'[{"text":"Tahlros"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 

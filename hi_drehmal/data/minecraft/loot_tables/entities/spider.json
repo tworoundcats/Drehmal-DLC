@@ -68,7 +68,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Silver Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"The preffered currency for certain\",\"italic\":false}]','[{\"text\":\"goods\",\"italic\":false}]']}}"
+              "tag": "{display:{Lore:['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"The merchants of Drehmal like a\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"sack of scales as much as any\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"other, but for special equipment,\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"silver is the currency of choice.\"}],\"text\":\"\"}','{\"text\":\"\"}'],Name:'{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"aqua\",\"text\":\"Silver Ingot\"}],\"text\":\"\"}'}}"
             }
           ]
         }

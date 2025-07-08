@@ -67,6 +67,7 @@ execute positioned 1683.31 19.00 -2730.20 run forceload add ~ ~
 
 execute positioned -1248.64 16.00 480.35 run forceload add ~ ~
 
+execute in minecraft:lodahr positioned 17 130 -1570 run forceload add ~ ~
 
 schedule function dlc:starrite3_2 3s
 

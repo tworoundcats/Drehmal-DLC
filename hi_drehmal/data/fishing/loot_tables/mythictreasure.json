@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'[{\"text\":\"Silver Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"The preffered currency for certain\",\"italic\":false}]','[{\"text\":\"goods\",\"italic\":false}]']}}"
+                            "tag": "{display:{Lore:['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"The merchants of Drehmal like a\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"sack of scales as much as any\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"other, but for special equipment,\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"silver is the currency of choice.\"}],\"text\":\"\"}','{\"text\":\"\"}'],Name:'{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"aqua\",\"text\":\"Silver Ingot\"}],\"text\":\"\"}'}}"
                         }
                     ]
                 },
@@ -40,7 +40,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'[{\"text\":\"Midas Gold Bar\",\"italic\":false,\"color\":\"aqua\"}]',Lore:['[{\"text\":\"A rare and valuable trading\",\"italic\":false}]','[{\"text\":\"currency\",\"italic\":false}]']}}"
+                            "tag": "{display: {Name: '{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"yellow\",\"text\":\"Mendarum Crystal\"}],\"text\":\"\"}', Lore: ['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Second in potentia only to rehntite,\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"mendarum crystals of this size and\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"quality are hard to come by since\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Insohm\\'s dissolution. Any Runic \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Blacksmith would kill to work with it.\"}],\"text\":\"\"}']}}"
                         }
                     ]
                 },
@@ -52,18 +52,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Eldorite:1b,display:{Name:'[{\"text\":\"Eldorite\",\"italic\":false,\"color\":\"light_purple\"}]',Lore:['[{\"text\":\"The most saught after Material in all\",\"italic\":false}]','[{\"text\":\"of Drehmal, used for top-end jewelry\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Legendary\",\"italic\":false,\"color\":\"light_purple\"}]']}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "dlc:spark_of_purity",
-                    "weight": 4,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Wyrm:1b,display:{Name:'[{\"text\":\"Wyrmfire Scales\",\"italic\":false,\"color\":\"dark_red\"}]',Lore:['[{\"text\":\"A set of scales found submerged deep\",\"italic\":false}]','[{\"text\":\"inside the heart of a volcano,\",\"italic\":false}]','[{\"text\":\"tempered in obsidian. Gleaming with\",\"italic\":false}]','[{\"text\":\"a molten sheen, these scales possess\",\"italic\":false}]','[{\"text\":\"an otherworldly resilience and seem\",\"italic\":false}]','[{\"text\":\"to lift you aloft with just the\",\"italic\":false}]','[{\"text\":\"slightest updraft.\",\"italic\":false},{\"text\":\"\",\"italic\":false}]','[{\"text\":\"\",\"italic\":false}]','[{\"text\":\"Mythic\",\"italic\":false,\"color\":\"dark_red\",\"obfuscated\":true}]']}}"
+                            "tag": "{Olkahan:1b,display: {Name: '{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"light_purple\",\"text\":\"Olkahan Ingot\"}],\"text\":\"\"}', Lore: ['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"An immensely rare metal only found\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"on the underside of the Disc. In a \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"post-rehntite era, it may be the single \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"most sought-after mineral in the realm\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"—for those who even know of its existence.\"}],\"text\":\"\"}']}}"
                         }
                     ]
                 }

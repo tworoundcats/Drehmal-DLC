@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Eldorite:1b}"
+                        "nbt":"{Olkahan:1b}"
                     }
                 ]
             }
@@ -22,11 +22,11 @@
         },
         "title": {
             "color": "dark_purple",
-            "text": "Eldorite"
+            "text": "Olkahan"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained the Most Valuable Resource In All the Land"
+            "text": "Obtained an Olkahan Ingot, the most valuable currency in Drehmal."
         },
         "hidden": true,
         "show_toast": true
