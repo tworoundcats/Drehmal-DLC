@@ -838,6 +838,15 @@ execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type
 
 # -------------------------------------------------------------------
 
+### Reticent Resolve ###
+
+execute if predicate players:holding/reticent as @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
+execute as @s[scores={blocked=1..}] run scoreboard players reset @s blocked
+execute as @s[scores={blocked=1..,blocking3=5..}] unless predicate players:holding/reticent run scoreboard players reset @s blocked
+execute as @a[scores={blocking3=2..}] unless predicate players:is_blocking run scoreboard players reset @s blocking3
+
+# -------------------------------------------------------------------
+
 ### Destiny Armor ###
 execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] run scoreboard players add @s destiny 1
 execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet if predicate players:sneak if score @s destiny matches 100.. unless entity @s[tag=destiny] run function players:items/destiny_armor/main

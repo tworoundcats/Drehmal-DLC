@@ -1082,7 +1082,8 @@ scoreboard objectives add tempdeaths dummy
 
 
 scoreboard objectives add blocking dummy
-
+scoreboard objectives add blocked minecraft.custom:minecraft.damage_blocked_by_shield
+scoreboard objectives add blocking3 dummy
 scoreboard objectives add shield_cool dummy
 
 scoreboard objectives add prevMaxHealth dummy

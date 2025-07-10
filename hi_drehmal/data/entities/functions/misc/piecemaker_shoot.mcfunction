@@ -4,7 +4,7 @@ execute at @s positioned ~ ~1 ~ run tag @e[type=#arrows,sort=nearest,limit=1,dis
 execute as @e[type=#arrows,tag=main_arrow_temp] run data modify entity @s crit set value false
 
 data modify storage drehmal:entities tempEntity set from entity @e[type=#arrows,tag=main_arrow_temp,limit=1] {}
-execute store result storage drehmal:entities tempEntity.damage double 1 run data get storage drehmal:entities tempEntity.damage 3
+execute store result storage drehmal:entities tempEntity.damage double 1 run data get storage drehmal:entities tempEntity.damage 3.5
 execute as @e[type=#arrows,tag=main_arrow_temp] run data modify entity @s damage set from storage drehmal:entities tempEntity.damage
 
 data modify storage drehmal:entities tempEntity set from entity @e[type=#arrows,tag=main_arrow_temp,limit=1] {}
