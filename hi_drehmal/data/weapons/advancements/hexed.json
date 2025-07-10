@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Hexed:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/hexed"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:spear_spear"
+        },
+        "title": {
+            "color": "red",
+            "text": "Hexed King"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Masterwork Spear."
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:first"
+}

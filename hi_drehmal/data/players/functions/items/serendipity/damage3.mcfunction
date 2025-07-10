@@ -35,10 +35,6 @@ execute if score #rand temp matches 9667..9772 run damage @e[tag=stupid,limit=1]
 execute if score #rand temp matches 9773..9878 run damage @e[tag=stupid,limit=1] 33 minecraft:strangled by @p
 execute if score #rand temp matches 9879..9990 run damage @e[tag=stupid,limit=1] 34 minecraft:strangled by @p
 
-execute if score #rand temp matches 9990.. run damage @e[tag=stupid,limit=1] 35 minecraft:strangled by @p
-
-
-
 execute if score #rand temp matches 9990.. run damage @e[tag=stupid,limit=1] 100 minecraft:strangled by @p
 
 tag @s remove stupid

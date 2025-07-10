@@ -28,16 +28,14 @@ execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTim
 
 scoreboard players reset @s atk_charge
 
-execute if predicate players:holding/serendipity as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if predicate dev:random_chance/5_of_20 run function players:items/serendipity/damage
-
 execute if predicate players:holding/duskfall as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/gauntlets/duskfall
-
 execute if predicate players:holding/daybreak run function players:items/gauntlets/daybreak
 
-
-execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if predicate dev:random_chance/10_of_20 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
-
 execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=bleed,scores={bleed=5..}] run function players:items/hangyaku/damage
+
+execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run effect clear @s extraalchemy:recall
+execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run effect clear @s glowing
+execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run tag @s remove hexed
 
 execute at @s as @e[type=piglin,tag=neutral,tag=!hostile,distance=..8,nbt={HurtTime:10s}] run tag @s add hostile
 execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag @s remove friend_of_mahkar2

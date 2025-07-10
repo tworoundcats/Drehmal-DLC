@@ -9,3 +9,4 @@ execute if entity @s[tag=trap] run function entities:ai/rhalon/trap
 execute if entity @s[tag=boom] run function entities:ai/tevus/linger
 execute if entity @s[tag=lightning] at @s rotated ~ 0 positioned ^ ^50 ^20 facing ^ ^0.3 ^1 run function particle:effects/beizer/main
 execute if entity @s[tag=first_end] at @s run function players:items/first_end/tick
+execute if entity @s[tag=warring] at @s run function particle:effects/black

@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{FirstEnd:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/first"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:double_axe_double"
+        },
+        "title": {
+            "color": "red",
+            "text": "The First End"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Masterwork War Axe."
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:forgotten"
+}

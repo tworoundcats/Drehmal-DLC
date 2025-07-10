@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Reticent:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/reticent"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:shield_royal_guard"
+        },
+        "title": {
+            "color": "red",
+            "text": "Reticent Resolve"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Masterwork Shield."
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:ambition"
+}

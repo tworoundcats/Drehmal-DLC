@@ -817,12 +817,9 @@ execute as @e[tag=bleed,limit=1] at @s run function players:items/hangyaku/bleed
 ### Gauntlets ###
 execute if predicate players:holding/gauntlets run function players:items/gauntlets/main
 execute unless predicate players:holding/gauntlets as @s[scores={gaunt_stats=1..}] run function players:items/gauntlets/reset
-# -------------------------------------------------------------------
-
-### Serendipity ###
-execute if predicate players:holding/serendipity as @s[scores={lucky=10..}] run function players:items/serendipity/main
 
 # -------------------------------------------------------------------
+
 
 ### First End ###
 
@@ -846,6 +843,34 @@ execute as @s[scores={blocked=1..,blocking3=5..}] unless predicate players:holdi
 execute as @a[scores={blocking3=2..}] unless predicate players:is_blocking run scoreboard players reset @s blocking3
 
 # -------------------------------------------------------------------
+
+### Hexed King ###
+
+execute as @e[tag=hexed] unless predicate players:recall run function players:items/hexed/loop
+execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
+execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboard players reset @s hex
+
+# -------------------------------------------------------------------
+
+### Serendipity ###
+
+execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if predicate dev:random_chance/5_of_20 run function players:items/serendipity/damage
+execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] run scoreboard players reset @s lucky
+
+# -------------------------------------------------------------------
+
+### Hangyaku ###
+
+execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if predicate dev:random_chance/10_of_20 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
+
+# -------------------------------------------------------------------
+
+### Warring States ###
+
+execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/warring/use
+
+# -------------------------------------------------------------------
+
 
 ### Destiny Armor ###
 execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] run scoreboard players add @s destiny 1

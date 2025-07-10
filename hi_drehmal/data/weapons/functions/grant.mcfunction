@@ -102,3 +102,9 @@ execute if score #gotnight bool matches 1 run advancement grant @s only weapons:
 execute if score #gotverd bool matches 1 run advancement grant @s only weapons:verdant
 execute if score #gotharvest bool matches 1 run advancement grant @s only weapons:harvest
 execute if score #gotpleasure bool matches 1 run advancement grant @s only weapons:pleasures
+
+execute if score #gotfirst bool matches 1 run advancement grant @s only weapons:first
+execute if score #gotreticent bool matches 1 run advancement grant @s only weapons:reticent
+execute if score #gothexed bool matches 1 run advancement grant @s only weapons:hexed
+execute if score #gotambition bool matches 1 run advancement grant @s only weapons:ambition
+execute if score #gotwar bool matches 1 run advancement grant @s only weapons:war

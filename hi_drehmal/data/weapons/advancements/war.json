@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{War:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:advancement/war"
+        
+    },
+    "display": {
+        "frame": "task",
+        "announce_to_chat": true,
+        "icon": {
+            "item": "mcdw:hammer_mace"
+        },
+        "title": {
+            "color": "red",
+            "text": "Warring States"
+        },
+        "description": {
+            "color": "gray",
+            "text": "Obtained the Masterwork Mace."
+        },
+        "hidden": true,
+        "show_toast": true
+    },
+    "parent": "weapons:harvest"
+}
