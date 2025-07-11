@@ -23,7 +23,7 @@ execute positioned 3356.51 62.06 522.44 run forceload add ~ ~
 
 execute positioned -3727.45 62.00 5892.50 run forceload add ~ ~
 
-execute positioned -1159.45 80.06 1179.49 run forceload add ~ ~
+execute positioned -1225 95 3753 run forceload add ~ ~
 
 execute positioned -1534.50 160.50 1970.49 run forceload add ~ ~
 
