@@ -16,3 +16,4 @@ tp @e[type=minecraft:vex,x=-3291,y=111,z=1560,distance=..40] ~ ~-1000 ~
 
 schedule function foundry:arena_victory2 3s
 fill -3271 104 1558 -3271 110 1560 minecraft:air
+

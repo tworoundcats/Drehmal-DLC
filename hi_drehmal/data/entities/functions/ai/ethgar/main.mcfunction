@@ -26,3 +26,7 @@ execute as @s[tag=!spawned_once] run scale set pehkui:knockback 15
 tag @s[tag=!spawned_once] add spawned_once
 
 
+execute as @s unless data entity @s Brain.memories.minecraft:angry_at.value at @s run data modify entity @s Brain.memories.minecraft:angry_at.value set from entity @p UUID
+execute as @s if data entity @s HandItems[{id:"minecraft:gold_ingot"}] run function entities:ai/ethgar/bribe
+stopsound @a[predicate=players:in_generals_arena] * minecraft:entity.piglin.admiring_item
+stopsound @a[predicate=players:in_generals_arena] * minecraft:entity.piglin.jealous

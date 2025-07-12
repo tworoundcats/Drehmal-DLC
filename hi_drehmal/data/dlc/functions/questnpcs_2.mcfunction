@@ -13,7 +13,7 @@ execute positioned -2979 141 -159 unless entity @e[type=item_frame,distance=..3]
 
 execute positioned 3827.52 69.00 3577.51 unless entity @e[type=villager,name="Dredd'Lohk",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:jungle,profession:cartographer,level:99},CustomName:'[{"text":"Dredd\'Lohk"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[180f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned -1725.48 161.00 1897.49 unless entity @e[type=villager,name="Dohm",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"Dohm"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
+execute positioned -1718.49 161.00 1900.50 unless entity @e[type=villager,name="Dohm",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:weaponsmith,level:99},CustomName:'[{"text":"Dohm"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
 execute positioned 4138.50 65.00 1755.5 unless entity @e[type=villager,name="Music Man Chris",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:taiga,profession:fletcher,level:99},CustomName:'[{"text":"Music Man Chris"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[-90f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 

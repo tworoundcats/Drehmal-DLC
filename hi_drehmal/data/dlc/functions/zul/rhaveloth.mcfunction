@@ -1,0 +1,10 @@
+setblock -2930 83 5217 air
+setblock -2931 84 5216 minecraft:soul_lantern
+setblock -2931 83 5218 minecraft:respawn_anchor
+setblock -2928 83 5218 air
+setblock -2931 84 5218 air
+fill -2931 82 5216 -2928 82 5218 minecraft:light_gray_concrete_powder replace minecraft:red_concrete_powder
+fill -2931 82 5216 -2928 82 5218 minecraft:gray_concrete_powder replace minecraft:red_sand
+setblock -2926 86 5218 minecraft:gray_wall_banner[facing=east]
+setblock -2926 86 5216 minecraft:light_gray_wall_banner[facing=east]
+summon dlc:collector -2928.46 83.00 5217.53 {Silent: 1b, DeathTime: 0s, DespawnDelay: 0, LeftHanded: 0b, OnGround: 0b, AbsorptionAmount: 0.0f, Attributes: [{Name: "minecraft:generic.movement_speed", Base: 0.699999988079071d}, {Name: "stepheightentityattribute:stepheight", Base: 0.0d}, {Name: "additionalentityattributes:generic.lung_capacity", Base: 0.0d}], Invulnerable: 1b, Brain: {memories: {}}, Age: 0, HandDropChances: [0.085f, 0.085f], Rotation: [180.0f, 0.0f], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], HurtByTimestamp: 0, ForcedAge: 0, CustomName: '{"extra":[{"bold":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Zul, Chronicler’s Envoy"}],"text":""}', cardinal_components: {"enchancement:frozen": {ForcedHeadYaw: 0.0f, TicksFrozen: 0, ForcedBodyYaw: 0.0f, ForcedPose: "STANDING", ForcedClientAge: 0, ForcedLimbAngle: 0.0f, ForcedPitch: 0.0f, Frozen: 0b, ForcedLimbDistance: 0.0f}, "enchancement:projectile_timer": {ResetTicks: 0, TimesHit: 0}, "enchancement:air_mobility": {ResetBypassTicks: 0, TicksInAir: 0}, "enchancement:extended_water": {TicksWet: 0}, "mythicmetals:combustion_cooldown": {cooldown: 0}}, ArmorItems: [{}, {}, {}, {}], Air: 300s, HandItems: [{}, {}], NoAI: 1b, Inventory: [], FallDistance: 0.0f, Motion: [0.0d, 0.0d, 0.0d], Fire: 0s, CanPickUpLoot: 0b, Health: 20.0f, HurtTime: 0s, FallFlying: 0b, PersistenceRequired: 1b, PortalCooldown: 0}

@@ -12,7 +12,7 @@ execute positioned -2979.47 141.00 -159.46 run kill @e[type=villager,distance=..
 
 execute positioned 3827.52 69.00 3577.51 run kill @e[type=villager,distance=..2,name="Dredd'Lohk"]
 
-execute positioned -1725.48 161.00 1897.49 run kill @e[type=villager,distance=..2,name="Dohm"]
+execute positioned -1718.49 161.00 1900.50 run kill @e[type=villager,distance=..2,name="Dohm"]
 
 execute positioned 2290.49 50.00 2488.49 run kill @e[type=villager,distance=..2,name="Melon Masher Casey"]
 

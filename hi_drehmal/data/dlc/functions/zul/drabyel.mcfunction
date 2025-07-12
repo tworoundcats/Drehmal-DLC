@@ -1,0 +1,1 @@
+place template minecraft:drabyel 545 67 1832

@@ -1,0 +1,1 @@
+place template minecraft:tharxax -2163 64 3632

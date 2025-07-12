@@ -14,7 +14,7 @@ execute positioned -2979.47 141.00 -159.46 run forceload remove ~ ~
 
 execute positioned 3827.52 69.00 3577.51 run forceload remove ~ ~
 
-execute positioned -1725.48 161.00 1897.49 run forceload remove ~ ~
+execute positioned -1718.49 161.00 1900.50 run forceload remove ~ ~
 
 execute positioned 2290.49 50.00 2488.49 run forceload remove ~ ~
 

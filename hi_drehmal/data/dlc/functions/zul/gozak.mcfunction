@@ -1,0 +1,1 @@
+place template minecraft:gozak 2248 50 2469

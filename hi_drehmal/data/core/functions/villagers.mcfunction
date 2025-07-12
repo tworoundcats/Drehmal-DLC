@@ -225,10 +225,10 @@ execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,t
 execute positioned 3827.52 69.00 3577.51 as @e[name="Dredd'Lohk",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Dome - Fort Nimahj
-execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager] if entity @a[distance=..3,tag=!hasdomemerch,tag=!domemerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:domequest/merch
-execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
-execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
-execute positioned -1725.48 161.00 1897.49 as @e[name="Dohm",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
+execute positioned -1718.49 161.00 1900.50 as @e[name="Dohm",type=villager] if entity @a[distance=..3,tag=!hasdomemerch,tag=!domemerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:domequest/merch
+execute positioned -1718.49 161.00 1900.50 as @e[name="Dohm",type=villager,tag=!qend] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
+execute positioned -1718.49 161.00 1900.50 as @e[name="Dohm",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
+execute positioned -1718.49 161.00 1900.50 as @e[name="Dohm",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Chris - Mossfield
 execute positioned 4138.50 65.00 1755.5 as @e[name="Music Man Chris",type=villager,tag=!qend] if entity @a[distance=..3,tag=!chris_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:chrisquest/merch
