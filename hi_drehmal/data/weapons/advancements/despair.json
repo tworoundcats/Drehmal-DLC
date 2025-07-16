@@ -31,5 +31,5 @@
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:shard_of_nothing"
+    "parent": "weapons:upgradec"
 }

@@ -28,6 +28,9 @@ scoreboard objectives add ebonrunMusic dummy
 scoreboard objectives add athrahMusic dummy
 scoreboard objectives add nimahjMusic dummy
 scoreboard objectives add shatterhornMusic dummy
+scoreboard objectives add furtheranceMusic dummy
+scoreboard objectives add obscolescenceMusic dummy
+
 scoreboard objectives add xorhuulMusic dummy
 scoreboard objectives add tharxaxMusic dummy
 scoreboard objectives add mohtaMusic dummy

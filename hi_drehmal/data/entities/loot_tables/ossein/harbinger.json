@@ -1,19 +1,19 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "dlc:harbinger_fang",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{HideFlags:32,Harbinger:1b,display:{Name:'[\"\",{\"text\":\"Harbinger\\'s Fang\",\"italic\":false,\"color\":\"gold\"}]',Lore:['[\"\",{\"text\":\"Drehmal was not the only land\",\"italic\":false}]','[\"\",{\"text\":\"to know of the Ruinous Mother.\",\"italic\":false}]','[\"\",{\"text\":\"Out in the edges of the Disc,\",\"italic\":false}]','[\"\",{\"text\":\"craters still smolder with Her\",\"italic\":false}]','[\"\",{\"text\":\"fury, left behind from a\",\"italic\":false}]','[\"\",{\"text\":\"forgotten war. She was capable\",\"italic\":false}]','[\"\",{\"text\":\"of so much more than mere\",\"italic\":false}]','[\"\",{\"text\":\"desolation - long before the fall\",\"italic\":false}]','[\"\",{\"text\":\"of the Primal Tree, Her wrath\",\"italic\":false}]','[\"\",{\"text\":\"could shatter the Veil itself. \",\"italic\":false}]','[\"\",{\"text\":\" \",\"italic\":false}]','[\"\",{\"text\":\"Mythical\",\"italic\":false,\"color\":\"gold\"}]']}}"
-                        }
-                    ]
-                }
-            ]
+          "type": "minecraft:item",
+          "name": "dlc:harbinger_fang",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Harbinger:1b,HideFlags:32,display:{Lore:[\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"Drehmal was not the only land to know of\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"the Ruinous Mother. Out in the edges of the\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"Disc, craters still smolder with Her fury,\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"left behind from a forgotten war. She was\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"capable of so much more than mere desolation\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\"- long before the fall of the Primal Tree.\\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\" \\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_gray\\\",\\\"text\\\":\\\"Her wrath could shatter the Veil itself. \\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":true,\\\"color\\\":\\\"dark_purple\\\",\\\"text\\\":\\\" \\\"}],\\\"text\\\":\\\"\\\"}\",\"{\\\"extra\\\":[{\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\",\\\"text\\\":\\\"Mythical\\\"}],\\\"text\\\":\\\"\\\"}\"],Name:\"[\\\"\\\",{\\\"text\\\":\\\"Harbinger's Fang\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\",\\\"underlined\\\":true}]\"}}"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

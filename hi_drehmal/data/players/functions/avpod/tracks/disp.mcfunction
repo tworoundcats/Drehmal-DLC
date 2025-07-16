@@ -34,6 +34,9 @@ execute if score @s avpod.songid matches 30 run data merge storage drehmal:playe
 execute if score @s avpod.songid matches 31 run data merge storage drehmal:players {avpodTempText:["True Catastrophe","Ossein","3:01"]}
 execute if score @s avpod.songid matches 32 run data merge storage drehmal:players {avpodTempText:["Earn Your Glory","The Foundry","6:03"]}
 execute if score @s avpod.songid matches 57 run data merge storage drehmal:players {avpodTempText:["Fate of the Fettered","Shatterhorn Gulch", "2:43"]}
+execute if score @s avpod.songid matches 58 run data merge storage drehmal:players {avpodTempText:["Plagued","Xor'Huul", "1:53"]}
+execute if score @s avpod.songid matches 59 run data merge storage drehmal:players {avpodTempText:["Furtherance","Red Dawn", "1:43"]}
+execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:13"]}
 execute if score @s avpod.songid matches 33 run data merge storage drehmal:players {avpodTempText:["Nascence","Lodahr Ambience","2:07"]}
 execute if score @s avpod.songid matches 34 run data merge storage drehmal:players {avpodTempText:["Gloom","Lodahr Ambience","2:31"]}
 execute if score @s avpod.songid matches 35 run data merge storage drehmal:players {avpodTempText:["Tribute","Lodahr Ambience","3:08"]}

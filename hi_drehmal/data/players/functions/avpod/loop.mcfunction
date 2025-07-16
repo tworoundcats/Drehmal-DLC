@@ -55,3 +55,6 @@ execute if score @s avpod.songid matches 54 run function players:music/hotv
 execute if score @s avpod.songid matches 55 run function players:music/emissary
 execute if score @s avpod.songid matches 56 run function players:music/credits
 execute if score @s avpod.songid matches 57 run function players:music/shatterhorn
+execute if score @s avpod.songid matches 58 run function players:music/xorhuul
+execute if score @s avpod.songid matches 59 run function players:music/furtherance
+execute if score @s avpod.songid matches 60 run function players:music/obsolescence

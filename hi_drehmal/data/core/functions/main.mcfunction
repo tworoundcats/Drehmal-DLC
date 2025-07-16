@@ -218,4 +218,5 @@ function n_lev:tick
 
 
 execute if score #1S timer matches 1 store result score #daycount2 timer run time query day
-execute if score #1S timer matches 2 run scoreboard players operation #daycount2 timer %= #5 const
+execute if score #1S timer matches 1 if score #daycount2 timer > #daycount3 timer run function dlc:zul/update
+execute if score #1S timer matches 1 run scoreboard players operation #daycount3 timer = #daycount2 timer

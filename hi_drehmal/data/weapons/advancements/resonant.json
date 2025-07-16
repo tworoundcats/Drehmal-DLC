@@ -5,31 +5,32 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Skyrend:1b}"
+                        "nbt":"{Resonant:1b}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "weapons:advancement/skyrend"
+        "function": "weapons:advancement/resonant"
     },
     "display": {
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "dlc:ruinous_tablet"
+            "item": "dlc:resonant_string"
         },
         "title": {
             "color": "gold",
-            "text": "Ruinous Tablet"
+            "text": "Resonant String"
         },
         "description": {
             "color": "gray",
-            "text": "Obtained a Ruinous Upgrade Component"
+            "text": "Obtained a Divine Upgrade Component"
         },
         "hidden": true,
         "show_toast": true
+        
     },
-    "parent": "weapons:despair"
+    "parent": "weapons:shard_of_nothing"
 }

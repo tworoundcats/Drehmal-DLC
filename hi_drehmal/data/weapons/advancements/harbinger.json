@@ -31,5 +31,5 @@
         "hidden": true,
         "show_toast": true
     },
-    "parent": "weapons:upgradec"
+    "parent": "weapons:ruinous"
 }

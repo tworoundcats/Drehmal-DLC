@@ -4,11 +4,11 @@
         "item": "dlc:serpent_fin"
       },
       "title": {
-        "text": "Abyssal Carapace",
+        "text": "Serpent's Fin",
         "color": "dark_red"
       },
       "description": {
-        "text": "Obtained A Torrential Upgrade Component",
+        "text": "Obtained A Torrential ????? Component",
         "color": "gray"
       },
       "frame": "task",
@@ -16,21 +16,21 @@
       "announce_to_chat": true,
       "hidden": true
     },
-    "parent": "weapons:wyrm",
+    "parent": "weapons:resonant",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-              "nbt": "{Abyssal:1b}"
+              "nbt": "{Serpent:1b}"
             }
           ]
         }
       }
     },
     "rewards": {
-      "function": "weapons:advancement/abyssal"
+      "function": "weapons:advancement/serpents"
     }
   }
   

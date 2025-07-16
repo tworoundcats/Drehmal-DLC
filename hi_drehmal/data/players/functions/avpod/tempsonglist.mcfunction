@@ -43,6 +43,9 @@ execute if entity @s[tag=osseinMusic] run data modify storage drehmal:players te
 execute if entity @s[tag=foundryMusic] run data modify storage drehmal:players tempSongList append value 32
 execute if entity @s[tag=shatterhornMusic] run data modify storage drehmal:players tempSongList append value 57
 execute if entity @s[tag=xorhuulMusic] run data modify storage drehmal:players tempSongList append value 58
+execute if entity @s[tag=furtheranceMusic] run data modify storage drehmal:players tempSongList append value 59
+execute if entity @s[tag=obsolescenceMusic] run data modify storage drehmal:players tempSongList append value 60
+
 execute if entity @s[tag=nascenceMusic] run data modify storage drehmal:players tempSongList append value 33
 execute if entity @s[tag=gloomMusic] run data modify storage drehmal:players tempSongList append value 34
 execute if entity @s[tag=tributeMusic] run data modify storage drehmal:players tempSongList append value 35

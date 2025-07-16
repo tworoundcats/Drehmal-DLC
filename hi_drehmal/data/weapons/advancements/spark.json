@@ -16,21 +16,21 @@
       "announce_to_chat": true,
       "hidden": true
     },
-    "parent": "weapons:serpent",
+    "parent": "weapons:serpents",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-              "nbt": "{Wyrm:1b}"
+              "nbt": "{Spark:1b}"
             }
           ]
         }
       }
     },
     "rewards": {
-      "function": "weapons:advancement/wyrm"
+      "function": "weapons:advancement/spark"
     }
   }
   
