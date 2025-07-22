@@ -3,39 +3,39 @@ tellraw @s {"text":"This may take a while... do not run any additional commands 
 
 execute positioned 581.51 80.94 1500.61 run forceload add ~ ~
 
-execute positioned 2090.56 63.00 222.96 run forceload add ~ ~
+execute positioned -2087 81 -3814 run forceload add ~ ~
 
-execute positioned 1697.46 63.50 -234.36 run forceload add ~ ~
+execute positioned 5806 66 -1028 run forceload add ~ ~
 
-execute positioned -193.51 65.00 4668.53 run forceload add ~ ~
+execute positioned -45 63.00 4935 run forceload add ~ ~
 
 execute positioned -2417.54 93.00 -835.42 run forceload add ~ ~
 
-execute positioned -1269.62 64.00 4267.54 run forceload add ~ ~
+execute positioned 1853 63 4263 run forceload add ~ ~
 
 execute positioned 2608.57 63.50 -149.50 run forceload add ~ ~
 
-execute positioned 5806.41 66.00 -1027.51 run forceload add ~ ~
+execute positioned 1111 68 1056 run forceload add ~ ~
 
 execute positioned 3325.52 105.00 82.46 run forceload add ~ ~
 
-execute positioned 3356.51 62.06 522.44 run forceload add ~ ~
+execute positioned 4226 72 589 run forceload add ~ ~
 
 execute positioned -3727.45 62.00 5892.50 run forceload add ~ ~
 
 execute positioned -1225 95 3753 run forceload add ~ ~
 
-execute positioned -1534.50 160.50 1970.49 run forceload add ~ ~
+execute positioned -1649 102 2608 run forceload add ~ ~
 
 execute positioned 3740.49 73.00 466.58 run forceload add ~ ~
-
-execute positioned 699 94 4607 run forceload add ~ ~
 
 forceload add -3294 1592
 
 forceload add -2794 5384 -2816 5345
 
 forceload add -3938 5936 -4039 6044
+
+forceload add 27781 64 -487
 
 schedule function dlc:randomnpcs_2 3s
 
