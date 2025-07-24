@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"drift_bone\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:fishing/scc/driftbone"
+  }
+}

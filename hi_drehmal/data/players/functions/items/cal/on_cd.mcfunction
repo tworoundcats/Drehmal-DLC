@@ -27,7 +27,6 @@ execute if predicate dev:random_chance/2_of_20 run effect give @s mcdar:shieldin
 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/2_of_20 run effect give @s extraalchemy:combustion 6 0 true 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/1_of_20 run effect give @s extraalchemy:shrinking 1 0 true 
-execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/2_of_20 run effect give @s mcda:freezing 6 0 true 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/1_of_20 run effect give @s mcdar:stunned 3 0 true 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/2_of_20 run effect give @s levitation 3 0 true 
 execute as @e[type=#entities:hostile,distance=..10] if predicate dev:random_chance/2_of_20 run effect give @s poison 6 0 true 

@@ -52,7 +52,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mcda:bone_rib_cage",
+          "name": "minecraft:air",
           "weight": 100,
           "quality": 1,
           "functions": [

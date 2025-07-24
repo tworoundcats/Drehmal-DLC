@@ -841,7 +841,6 @@ execute if predicate players:holding/reticent as @s[scores={blocking3=..4,blocke
 execute as @s[scores={blocked=1..}] run scoreboard players reset @s blocked
 execute as @s[scores={blocked=1..,blocking3=5..}] unless predicate players:holding/reticent run scoreboard players reset @s blocked
 execute as @a[scores={blocking3=2..}] unless predicate players:is_blocking run scoreboard players reset @s blocking3
-
 # -------------------------------------------------------------------
 
 ### Hexed King ###
@@ -1044,6 +1043,6 @@ execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag
 
 
 
-
+execute as @s[tag=waterspiked] run function entities:ai/waterspiked/bleed
 
 execute as @s[tag=disabled] run function players:misc/disabled

@@ -2,7 +2,7 @@ tellraw @s {"text":"This may take a while... do not run any additional commands 
 
 setblock 1000003 63 1000002 minecraft:spruce_sign
 
-execute positioned 505.51 67.00 1835.52 run forceload add ~ ~ 
+execute positioned 505.51 67.00 1835.52 run forceload add ~ ~
 
 execute positioned 880.51 66.06 485.53 run forceload add ~ ~
 

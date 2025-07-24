@@ -1,5 +1,5 @@
 # Zelario
-forceload remove 27781 64 -487
+forceload remove 27781 64 27781 -487
 
 # Spider
 execute positioned 3625 12 -2556 run forceload remove ~ ~

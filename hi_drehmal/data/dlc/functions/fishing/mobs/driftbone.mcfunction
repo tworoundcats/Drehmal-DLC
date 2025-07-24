@@ -1,0 +1,1 @@
+summon zombie ~ ~ ~ {DeathLootTable:"entities:mob/driftbone",CustomName:'[{"text":"Driftbone"}]',Health:36,Tags:["drift_bone","fished_entity"],ActiveEffects:[{Id:12,Duration:222222222,Amplifier:1,ShowParticles:0b}],Attributes:[{Name:"generic.attack_damage",Base:8f},{Name:"generic.max_health",Base:36f}],HandItems:[{id:bone,Count:1},{}],HandDropChances:[0f,0f]}

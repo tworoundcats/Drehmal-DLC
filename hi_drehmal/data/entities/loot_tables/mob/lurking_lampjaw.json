@@ -1,0 +1,77 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dlc:silver_ingot",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Lore:['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"The merchants of Drehmal like a\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"sack of scales as much as any\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"other, but for special equipment,\"}],\"text\":\"\"}','{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"silver is the currency of choice.\"}],\"text\":\"\"}','{\"text\":\"\"}'],Name:'{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"aqua\",\"text\":\"Silver Ingot\"}],\"text\":\"\"}'}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dlc:mendarum_crystal",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: '{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"yellow\",\"text\":\"Mendarum Crystal\"}],\"text\":\"\"}', Lore: ['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Second in potentia only to rehntite,\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"mendarum crystals of this size and\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"quality are hard to come by since\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Insohm\\'s dissolution. Any Runic \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Blacksmith would kill to work with it.\"}],\"text\":\"\"}']}}"
+            }
+          ]
+        },
+        {
+            "type": "item",
+            "name": "dlc:olkahan",
+            "weight": 3,
+            "functions": [
+                {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{Olkahan:1b,display: {Name: '{\"extra\":[{\"italic\":false,\"underlined\":true,\"color\":\"light_purple\",\"text\":\"Olkahan Ingot\"}],\"text\":\"\"}', Lore: ['{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"An immensely rare metal only found\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"on the underside of the Disc. In a \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"post-rehntite era, it may be the single \"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"most sought-after mineral in the realm\"}],\"text\":\"\"}', '{\"extra\":[{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"—for those who even know of its existence.\"}],\"text\":\"\"}']}}"
+                }
+            ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glow_ink_sac",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+            "type": "item",
+            "name": "minecraft:prismarine_crystals",
+            "weight": 150,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 4
+                }
+              }
+            ]
+        }
+      ]
+    }
+  ]
+}

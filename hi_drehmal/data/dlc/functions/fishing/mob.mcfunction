@@ -37,4 +37,3 @@ execute if entity @p[tag=temp_catch,predicate=dlc:holding_t5] if score #sea_crea
 
 scoreboard players reset #sea_creature bool 
 kill @s
-

@@ -1111,6 +1111,7 @@ scoreboard players set #DLC bool 1
 scoreboard objectives add common dummy
 scoreboard objectives add rare dummy
 scoreboard objectives add legendary dummy
+scoreboard objectives add mythic dummy
 scoreboard objectives add unspoken dummy
 scoreboard objectives add creature dummy
 

@@ -18,7 +18,8 @@ execute if entity @s[tag=sigma] run function entities:arrow_tick2
 execute if entity @s[tag=verdant] as @s run tp @e[type=marker,tag=verdant_tag] @s
 execute if entity @s[tag=verdant,tag=arrow.inground] run tag @s remove verdant 
 
-
+execute if entity @s[tag=revenant_arrow] at @s run particle splash
+execute if entity @s[tag=revenant_arrow,tag=arrow.inground] at @s run function entities:ai/revenant/trap_spawn
 execute unless entity @s[tag=laserCheck] run function entities:ai/laserbow/lasify
 
 execute unless score #trial_com_khive bool matches 1 unless entity @s[tag=khive1] if predicate entities:k1 run tag @s add khive1

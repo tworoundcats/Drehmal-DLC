@@ -23,3 +23,4 @@ execute if entity @s[tag=fdry_shotgun] run function entities:ai/fdry_shotgun/mai
 execute if entity @s[tag=verp] run function entities:ai/verp/main
 execute if entity @s[tag=aph_shotgun] run function entities:ai/aph_shotgun/main
 execute if entity @s[tag=em_summon] at @s run particle minecraft:witch ~ ~1.5 ~ 0.1 0.2 0.1 0 1
+execute if entity @s[tag=revenant] run function entities:ai/revenant/main

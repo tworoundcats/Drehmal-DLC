@@ -1,0 +1,1 @@
+summon cave_spider ~ ~ ~ {DeathLootTable:"entities:mob/waterspiked_crab",CustomName:'[{"text":"Waterspiked Crab"}]',Health:50,Tags:["waterspiked","fished_entity","day_aggro"],Attributes:[{Name:"generic.attack_damage",Base:10f},{Name:"generic.max_health",Base:50f},{Name:"generic.movement_speed",Base:0.4f}]}

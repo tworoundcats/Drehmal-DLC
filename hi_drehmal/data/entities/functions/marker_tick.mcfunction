@@ -84,6 +84,8 @@ execute if entity @s[tag=mal_drain] run function players:items/mal/particle_tick
 execute if entity @s[tag=verdant_tag] positioned ^ ^ ^0.5 unless entity @e[tag=verdant] run function players:items/verdant/detect
 execute if entity @s[tag=buffer_heal] run function entities:ai/buffer/particle_tick
 execute if entity @s[tag=ambition] run function players:items/ambition/particle_tick
+execute if entity @s[tag=driftbone] run function entities:ai/driftbone/particle_tick
+execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/particle_tick
 
 
 execute if score #5T timer matches 4 if entity @s[tag=deathmarker] run function entities:misc/deathmarker/kill_on_despawn

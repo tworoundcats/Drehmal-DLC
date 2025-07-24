@@ -11,6 +11,9 @@
         "minecraft:creeper",
         "minecraft:magma_cube",
         "minecraft:phantom",
-        "minecraft:silverfish"
+        "minecraft:silverfish",
+        "minecraft:drowned",
+        "minecraft:husk"
+
     ]
   }

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:cave_spider",
+            "nbt": "{Tags:[\"waterspiked\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:fishing/scc/waterspiked"
+  }
+}

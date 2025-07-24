@@ -1,6 +1,6 @@
 
 
-execute positioned 505.51 67.00 1835.52 run forceload remove ~ ~ 
+execute positioned 505.51 67.00 1835.52 run forceload remove ~ ~
 
 execute positioned 880.51 66.06 485.53 run forceload remove ~ ~
 

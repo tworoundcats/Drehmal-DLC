@@ -9,3 +9,5 @@ execute if entity @s[tag=kakuna] run function entities:ai/kakuna/main
 execute if entity @s[tag=bee_ghast] if score #5S timer matches 0 run playsound minecraft:dcustom.entity.bee.loop hostile @a ~ ~ ~ 4 1
 execute if entity @s[tag=5tick] run function entities:5tick
 execute if entity @s[tag=phoenix] unless predicate entities:in_stasis run function entities:ai/phoenix/main
+execute if entity @s[tag=sludgeback] run function entities:ai/sludgeback/main
+execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/main
