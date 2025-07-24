@@ -90,8 +90,11 @@ execute if score #goteyebiter bool matches 1 run recipe give @s weapons:eyebiter
 
 
 
-
+#dlc legendaries
 execute if score #gotB52 bool matches 1 run advancement grant @s only weapons:b52
+execute if score #gotChrono bool matches 1 run advancement grant @s only weapons:chrono
+
+#dlc masterworks
 execute if score #gotpiecemaker bool matches 1 run advancement grant @s only weapons:piecemaker
 execute if score #gotseren bool matches 1 run advancement grant @s only weapons:seren
 execute if score #gotdusk bool matches 1 run advancement grant @s only weapons:duskfall
@@ -102,9 +105,34 @@ execute if score #gotnight bool matches 1 run advancement grant @s only weapons:
 execute if score #gotverd bool matches 1 run advancement grant @s only weapons:verdant
 execute if score #gotharvest bool matches 1 run advancement grant @s only weapons:harvest
 execute if score #gotpleasure bool matches 1 run advancement grant @s only weapons:pleasures
+execute if score #gotwar bool matches 1 run advancement grant @s only weapons:war
 
+#zul masterworks
 execute if score #gotfirst bool matches 1 run advancement grant @s only weapons:first
 execute if score #gotreticent bool matches 1 run advancement grant @s only weapons:reticent
 execute if score #gothexed bool matches 1 run advancement grant @s only weapons:hexed
 execute if score #gotambition bool matches 1 run advancement grant @s only weapons:ambition
-execute if score #gotwar bool matches 1 run advancement grant @s only weapons:war
+
+#upgraded mythics
+execute if score #gotAsc2 bool matches 1 run advancement grant @s only weapons:ascendance2
+execute if score #gotCal2 bool matches 1 run advancement grant @s only weapons:calamity2
+execute if score #gotFzy2 bool matches 1 run advancement grant @s only weapons:frenzy2
+execute if score #gotMal2 bool matches 1 run advancement grant @s only weapons:malevolentia2
+execute if score #gotObv2 bool matches 1 run advancement grant @s only weapons:oblivion2
+execute if score #gotsy2 bool matches 1 run advancement grant @s only weapons:syzygy2
+execute if score #gotZen2 bool matches 1 run advancement grant @s only weapons:zenith2
+
+#unspokens
+execute if score #gotLev bool matches 1 run advancement grant @s only weapons:leviathan
+execute if score #gotWings bool matches 1 run advancement grant @s only weapons:wings
+
+#components
+execute if score #burnt bool matches 1 run advancement grant @s only weapons:burnt
+execute if score #gotDespair bool matches 1 run advancement grant @s only weapons:despair
+execute if score #gotHarbinger bool matches 1 run advancement grant @s only weapons:harbinger
+execute if score #gotPrimalFocus bool matches 1 run advancement grant @s only weapons:primal_focus
+execute if score #gotResonant bool matches 1 run advancement grant @s only weapons:resonant
+execute if score #gotRuinous bool matches 1 run advancement grant @s only weapons:ruinous
+execute if score #gotSerpents bool matches 1 run advancement grant @s only weapons:serpents
+execute if score #gotShardOfNothing bool matches 1 run advancement grant @s only weapons:shard_of_nothing
+execute if score #gotSpark bool matches 1 run advancement grant @s only weapons:spark

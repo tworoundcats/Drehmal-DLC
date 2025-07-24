@@ -1,6 +1,12 @@
 data modify entity @s[tag=!spawned_once] Invulnerable set value 1b
 data modify entity @s[tag=!spawned_once] CustomName set value '{"extra":[{"bold":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Zul, Chronicler’s Envoy"}],"text":""}'
 data modify entity @s[tag=!spawned_once] PersistenceRequired set value 1b
+tag @s[tag=!spawned_once] add zul
+execute as @s[tag=zul_cd] run scoreboard players add @s ai_timer 1
+execute if score @s ai_timer matches 100 run tag @s remove zul_cd
+execute if score @s ai_timer matches 100 run scoreboard players reset @s ai_timer
+execute as @s[tag=zul_speak,tag=!zul_cd] at @s run function dlc:zul/speak
+
 
 
 execute at @s if entity @a[distance=..50] run forceload add ~ ~
@@ -9,10 +15,11 @@ execute at @s unless entity @a[distance=..50] run forceload remove ~ ~
 
 
 execute if score #zul bool matches 1 run function dlc:zul/update_trades
-execute at @s positioned ~ ~0.2 ~ run particle squid_ink ~ ~ ~ 0.2 0.05 0.2 0 1 normal
+execute at @s positioned ~ ~0.1 ~ run particle mycelium ~ ~ ~ 0.2 0.05 0.2 0 1 normal
 
 
-
+execute at @s[tag=!zul_greet] at @s if entity @a[distance=..2] run function dlc:zul/greet
+execute at @s[tag=zul_greet] at @s unless entity @a[distance=..30] run tag @s remove zul_greet
 
 
 

@@ -33,7 +33,7 @@ execute as @e[type=#minecraft:skeletons,tag=!] at @s run function entities:skele
 execute as @e[type=vex,tag=] at @s run function entities:vex_tick
 execute as @e[type=guardian,tag=!] at @s run function entities:guardian_tick
 execute as @e[type=#entities:tickless_hostile,tag=!] at @s run function entities:misc_hostile_tick
-execute as @e[type=dlc:collector,tag=!spawned_once] at @s run function dlc:zul/tick
+execute as @e[type=dlc:collector] at @s run function dlc:zul/tick
 execute as @e[tag=waterspiked,type=cave_spider] run function entities:ai/waterspiked/main
 
 #execute as @e[type=!player,type=!#entities:highcapacity,tag=!unloaded] at @s run function entities:low_capacity_tick

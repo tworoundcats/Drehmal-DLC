@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt":"{Void:1b}"
+                        "nbt":"{B52:1b}"
                     }
                 ]
             }

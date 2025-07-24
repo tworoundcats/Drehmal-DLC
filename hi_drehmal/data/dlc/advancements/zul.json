@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "dlc:collector"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:zul/test"
+  }
+}
