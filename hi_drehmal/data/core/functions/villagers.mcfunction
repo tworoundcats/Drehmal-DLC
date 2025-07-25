@@ -177,6 +177,7 @@ execute if score count_all towers matches 24.. run execute as @e[tag=!m24,type=m
 
 #Quests
 # Keeko - Drabyel
+execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager] if entity @a[distance=..3] run execute as @p if predicate players:holding/quest/sushi run function quests:keekoquest/librarian
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager] if entity @a[distance=..3,tag=!haskeekomerch,tag=!keekomerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:keekoquest/merch
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_map run function quests:keekoquest/priscilla/count
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_magnum_opus run function quests:keekoquest/priscilla/count
@@ -291,7 +292,10 @@ execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=pain
 execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst14,tag=!qst14_e] run function quests:corvidiotquest/base
 execute positioned -1570 65.00 -522 as @e[name="Corv Ihd",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 execute positioned 2018.39 116.40 -787.00 as @e[type=painting,distance=..2,sort=nearest] at @s run schedule function quests:corvidiotquest/painting 2t
+
+
 # Mahkar - Rhaveloth
+execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!apophenia] if entity @a[distance=..4] run execute as @p if predicate players:holding/quest/sushi run function quests:mahkarquest/eye
 execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=qst16,tag=mahkar_proven,tag=!qst16_e] run function quests:mahkarquest/1
 execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qstart,tag=!qend] if entity @a[distance=..3,tag=!qst16,tag=!qst16_e] run function quests:mahkarquest/base
 #execute as @e[type=piglin_brute,tag=mahkar_target1,tag=!active_mahkar_target] if entity @a[distance=..20] run function quests:mahkarquest/brute_ai
@@ -309,6 +313,3 @@ execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros"
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 execute positioned -1265.29 46.00 -4060.85 if entity @a[distance=..10] unless score #gotshield bool matches 1 if score #1S timer matches 10 run particle minecraft:firework -1261.57 47.60 -4062.42 0.2 0.2 0.2 1 50
-
-# ZUL STUFF (put where it actually belongs later)
-#dlc>zul>update_trades

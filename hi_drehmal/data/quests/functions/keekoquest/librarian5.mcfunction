@@ -1,0 +1,2 @@
+execute at @e[type=villager,name="Stablemaster Keehko"] run tellraw @a[distance=..20] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] "},{"text":"Oh, well. Find me another time?","hoverEvent":{"action":"show_text","contents":"Check back in full release :)"}}]
+schedule function quests:keekoquest/librarianover 5s
