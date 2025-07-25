@@ -32,5 +32,4 @@ forceload remove -2794 5384 -2816 5345
 
 forceload remove -3938 5936 -4039 6044
 
-execute as @a[tag=DLC_temp] run function dlc:settings
-execute as @a[tag=DLC_temp] run tag @s remove DLC_temp
+function dlc:morerandomnpcs

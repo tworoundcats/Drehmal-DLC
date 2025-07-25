@@ -27,3 +27,6 @@ execute positioned -14 117 1734 run forceload remove ~ ~
 
 execute positioned -1117 67 -3638 run forceload remove ~ ~
 execute positioned 2846 121 -2046 run forceload remove ~ ~
+
+execute as @a[tag=DLC_temp] run function dlc:settings
+execute as @a[tag=DLC_temp] run tag @s remove DLC_temp
