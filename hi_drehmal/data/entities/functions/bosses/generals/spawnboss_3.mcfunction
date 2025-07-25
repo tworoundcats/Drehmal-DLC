@@ -1,5 +1,5 @@
-
-
+execute as @a[predicate=players:in_generals_arena] run tag @s add generals_music
+execute as @a[predicate=players:in_generals_arena] at @s run function players:music/generals
 execute at @p run summon marker ~ ~ ~ {Tags:["temp_boom_marker"]}
 execute at @p run summon marker ~ ~ ~ {Tags:["temp_boom_marker"]}
 execute at @p run summon marker ~ ~ ~ {Tags:["temp_boom_marker"]}

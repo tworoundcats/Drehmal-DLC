@@ -40,7 +40,7 @@ execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=he
 execute at @s as @e[type=piglin,tag=neutral,tag=!hostile,distance=..8,nbt={HurtTime:10s}] run tag @s add hostile
 execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag @s remove friend_of_mahkar2
 
-
-
+execute if predicate players:holding/providence if score @s destiny_damage matches 40.. as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=!destiny] at @s run function players:items/providence/main
+scoreboard players reset @s destiny_damage
 
 advancement revoke @s only players:hurt_entity

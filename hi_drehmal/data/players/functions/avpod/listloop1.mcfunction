@@ -71,7 +71,9 @@ execute if score #songid temp matches 58 run tellraw @s [""," -",{"text":"[Plagu
 
 execute if score #songid temp matches 59 run tellraw @s [""," -",{"text":"[Furtherance]","color":"red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 159"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Red Dawn","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
-execute if score #songid temp matches 60 run tellraw @s [""," -",{"text":"[Obscolescence]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 160"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Hegemon","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+execute if score #songid temp matches 60 run tellraw @s [""," -",{"text":"[Obsolescence]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 160"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Hegemon","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+
+execute if score #songid temp matches 61 run tellraw @s [""," -",{"text":"[Mark of the Burnt]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 161"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"The Burnt Generals","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
 
 execute if score #songid temp matches 33 run tellraw @s [""," -",{"text":"[Nascence]","color":"green","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 133"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Lodahr Ambience","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]

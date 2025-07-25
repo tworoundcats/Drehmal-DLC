@@ -8,3 +8,4 @@ forceload add 27330 757 27347 739
 execute positioned 27340 146 747 unless entity @a[predicate=players:in_generals_arena,tag=seen_generals_intro] run schedule function entities:bosses/generals/intro/1 5s
 execute positioned 27340 146 747 if entity @a[predicate=players:in_generals_arena,tag=seen_generals_intro] run schedule function entities:bosses/generals/spawnboss 1s
 weather clear
+execute as @a[predicate=players:in_generals_arena] run stopsound @s record

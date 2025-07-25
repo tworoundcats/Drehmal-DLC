@@ -1,5 +1,6 @@
 
 execute positioned 359 63 905 run place template minecraft:observatory ~ ~ ~
+execute positioned 392.33 68.00 913.87 run kill @e[type=villager,distance=..2]
 fill 391 62 905 391 57 905 minecraft:oak_log
 fill 395 62 905 395 57 905 minecraft:oak_log
 fill 397 62 906 397 58 906 minecraft:oak_log

@@ -814,6 +814,11 @@ scoreboard players set #18000 const 18000
 scoreboard players set #20000 const 20000
 scoreboard players set #36000 const 36000
 scoreboard players set #40000 const 40000
+scoreboard players set #50000 const 50000
+scoreboard players set #60000 const 60000
+scoreboard players set #70000 const 70000
+scoreboard players set #80000 const 80000
+scoreboard players set #90000 const 90000
 scoreboard players set #65536 const 65536
 scoreboard players set #72000 const 72000
 scoreboard players set #86400 const 86400
@@ -1169,3 +1174,5 @@ scoreboard objectives add brkDeepDiamond minecraft.mined:minecraft.deepslate_dia
 scoreboard objectives add brkNetherGold minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add brkNetherQuartz minecraft.mined:minecraft.nether_quartz_ore
 scoreboard objectives add brkAncientDebris minecraft.mined:minecraft.ancient_debris
+
+scoreboard objectives add destiny_damage minecraft.custom:minecraft.damage_dealt

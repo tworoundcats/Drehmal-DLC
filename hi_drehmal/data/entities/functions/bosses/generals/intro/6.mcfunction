@@ -5,4 +5,4 @@ tp @e[tag=tevus_intro] 27365 161 744 facing entity @r[predicate=players:in_gener
 tp @e[tag=ethgar_intro] 27365 161 750 facing entity @r[predicate=players:in_generals_arena]
 execute as @a[predicate=players:in_generals_arena] run tag @s add seen_generals_intro
 
-schedule function entities:bosses/generals/spawnboss 5s
+schedule function entities:bosses/generals/spawnboss 3s

@@ -6,5 +6,4 @@ execute unless score #low_particles? bool matches 1 run particle minecraft:large
 execute unless score #low_particles? bool matches 1 run particle minecraft:flash 27365 161 747 0 0 0 0 1
 execute positioned 27351.00 162.62 747.48 run playsound minecraft:dcustom.entity.polar_bear.warning player @a ~ ~ ~ 10 1.5
 tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" YOU! UNBURNT, CARRYING THE INSIGNIA OF OUR LORD?! WHAT TREACHERY IS THIS?!"}]
-
 schedule function entities:bosses/generals/intro/2 6s

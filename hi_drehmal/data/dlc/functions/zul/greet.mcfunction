@@ -26,7 +26,7 @@ execute if score #rand temp matches 20 run tellraw @a[distance=..5] ["",{"text":
 #really
 execute if score #rand temp matches 21 run tellraw @a[distance=..5] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" Get good, Seeker."}]
 
-
+tag @a add zul
 playsound minecraft:entity.villager.no player @a ~ ~ ~ 1 0
 
 tag @s add zul_greet

@@ -1,0 +1,1 @@
+place template minecraft:fort_nima -1730 161 1896

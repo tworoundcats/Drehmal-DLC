@@ -32,7 +32,8 @@ execute positioned -2167.52 65.00 3701.21 unless entity @e[type=villager,name="D
 
 execute positioned -1570 65.00 -522 unless entity @e[type=villager,name="Corv Ihd",distance=..5] run summon villager ~ ~ ~ {VillagerData:{type:plains},CustomName:'[{"text":"Corv Ihd"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 
-execute positioned 2021 116 -787 unless entity @e[type=minecraft:painting,distance=..2] run summon minecraft:painting 2021 116 -787 {variant:"water"}
+execute positioned 2018.10 116.31 -787.00 as @e[type=minecraft:painting,distance=..2] run kill @s
+execute positioned 2018.10 116.31 -787.00 unless entity @e[type=minecraft:painting,distance=..2] run summon minecraft:painting 2016.68 116.47 -787.00 {variant:"dlc:corvid_painting"}
 
 execute positioned -2944 92 5160 unless entity @e[type=villager,distance=..5,name="Mahkar"] run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:armorer,level:99},CustomName:'[{"text":"Mahkar"}]',Health:2048,Invulnerable:1b,NoAI:1b,OnGround:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f],Attributes:[{Name:"generic.max_health",Base:2048f}]}
 

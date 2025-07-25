@@ -72,5 +72,6 @@ execute if score @s avpod.songid matches 55 run function players:avpod/tracks/em
 execute if score @s avpod.songid matches 56 run function players:avpod/tracks/credits
 execute if score @s avpod.songid matches 57 run function players:avpod/tracks/shatterhorn
 execute if score @s avpod.songid matches 58 run function players:avpod/tracks/xorhuul
-execute if score @s avpod.songid matches 58 run function players:avpod/tracks/furtherance
-execute if score @s avpod.songid matches 58 run function players:avpod/tracks/obsolescence
+execute if score @s avpod.songid matches 59 run function players:avpod/tracks/furtherance
+execute if score @s avpod.songid matches 60 run function players:avpod/tracks/obsolescence
+execute if score @s avpod.songid matches 61 run function players:avpod/tracks/generals

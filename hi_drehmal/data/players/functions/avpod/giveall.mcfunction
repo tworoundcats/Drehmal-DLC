@@ -22,6 +22,7 @@ tag @s add nimahjMusic
 tag @s add shatterhornMusic
 tag @s add furtheranceMusic
 tag @s add obsolescenceMusic
+tag @s add generalsMusic
 tag @s add xorhuulMusic
 tag @s add duspsMusic
 tag @s add mohtaMusic

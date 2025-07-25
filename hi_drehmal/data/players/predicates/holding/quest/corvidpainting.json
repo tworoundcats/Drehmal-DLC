@@ -22,7 +22,7 @@
         "equipment": {
           "mainhand": {
             "items": [
-              "minecraft:painting"
+              "dlc:corvid_painting"
             ]
           }
         }

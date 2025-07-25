@@ -1,0 +1,1 @@
+place template minecraft:mohta 18 65 5297

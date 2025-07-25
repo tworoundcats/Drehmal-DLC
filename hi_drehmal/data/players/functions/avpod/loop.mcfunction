@@ -58,3 +58,4 @@ execute if score @s avpod.songid matches 57 run function players:music/shatterho
 execute if score @s avpod.songid matches 58 run function players:music/xorhuul
 execute if score @s avpod.songid matches 59 run function players:music/furtherance
 execute if score @s avpod.songid matches 60 run function players:music/obsolescence
+execute if score @s avpod.songid matches 61 run function players:music/generals

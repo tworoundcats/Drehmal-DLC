@@ -24,7 +24,7 @@
           "items": [
             "dlc:providence"
           ],
-          "nbt": "{DestinyBlade:1b}"
+          "nbt": "{Providence:1b}"
         }
       }
     }

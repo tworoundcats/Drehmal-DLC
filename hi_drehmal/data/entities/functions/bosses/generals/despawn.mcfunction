@@ -63,3 +63,4 @@ schedule clear entities:bosses/generals/intro/3
 schedule clear entities:bosses/generals/intro/4
 schedule clear entities:bosses/generals/intro/5
 schedule clear entities:bosses/generals/intro/6
+tag @a remove generals_music

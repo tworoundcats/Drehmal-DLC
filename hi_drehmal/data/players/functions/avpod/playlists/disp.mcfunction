@@ -34,6 +34,7 @@ execute if score #id temp matches 57 run data merge storage drehmal:players {avp
 execute if score #id temp matches 58 run data merge storage drehmal:players {avpodTempText:["§d[Plagued]","Xor'Huul"]}
 execute if score #id temp matches 59 run data merge storage drehmal:players {avpodTempText:["§c[Furtherance]","Red Dawn"]}
 execute if score #id temp matches 60 run data merge storage drehmal:players {avpodTempText:["§4[Obsolescence]","Hegemon"]}
+execute if score #id temp matches 61 run data merge storage drehmal:players {avpodTempText:["§6[Mark of the Burnt]","Hegemon"]}
 execute if score #id temp matches 33 run data merge storage drehmal:players {avpodTempText:["§a[Nascence]","Lodahr Ambience"]}
 execute if score #id temp matches 34 run data merge storage drehmal:players {avpodTempText:["§8[Gloom]","Lodahr Ambience"]}
 execute if score #id temp matches 35 run data merge storage drehmal:players {avpodTempText:["§b[Tribute]","Lodahr Ambience"]}

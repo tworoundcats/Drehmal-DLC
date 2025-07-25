@@ -3,7 +3,7 @@ execute if predicate players:is_oblivion run team join oblivion
 execute if predicate players:is_frenzy run team join frenzy
 execute if predicate players:is_tempest run team join frenzy
 execute if predicate players:is_amaranthine run team join frenzy
-execute if predicate players:is_destiny run team join frenzy
+execute if predicate players:is_providence run team join frenzy
 execute if predicate players:is_unknown run team join frenzy
 execute if predicate players:is_mal run team join mal
 execute if predicate players:is_mb run team join mb

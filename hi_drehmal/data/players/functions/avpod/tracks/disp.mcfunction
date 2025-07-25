@@ -37,6 +37,7 @@ execute if score @s avpod.songid matches 57 run data merge storage drehmal:playe
 execute if score @s avpod.songid matches 58 run data merge storage drehmal:players {avpodTempText:["Plagued","Xor'Huul", "1:53"]}
 execute if score @s avpod.songid matches 59 run data merge storage drehmal:players {avpodTempText:["Furtherance","Red Dawn", "1:43"]}
 execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:13"]}
+execute if score @s avpod.songid matches 61 run data merge storage drehmal:players {avpodTempText:["Mark of the Burnt","The Burnt Generals", "2:40"]}
 execute if score @s avpod.songid matches 33 run data merge storage drehmal:players {avpodTempText:["Nascence","Lodahr Ambience","2:07"]}
 execute if score @s avpod.songid matches 34 run data merge storage drehmal:players {avpodTempText:["Gloom","Lodahr Ambience","2:31"]}
 execute if score @s avpod.songid matches 35 run data merge storage drehmal:players {avpodTempText:["Tribute","Lodahr Ambience","3:08"]}

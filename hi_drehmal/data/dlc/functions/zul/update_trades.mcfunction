@@ -1,10 +1,10 @@
 scoreboard players reset #zul bool
 data remove entity @s Offers.Recipes
-
+tag @s add trades
 
 #trade 1 is any misc stuff
-#trade 2 is any masterworks
-#trade 3 is any talismans
+#trade 2 is any weapons
+#trade 3 is any talismans and or trinkets
 #we should prob have made a better system cause the more items in each category will dilute the pool but alas (if it's too much we can just say fuck the categories and make it true random though)
 function dlc:zul/update_trades2
 function dlc:zul/update_trades3
@@ -56,3 +56,4 @@ execute if score #gotAvKohl bool matches 1 run data modify entity @s Offers.Reci
 # proxigea/leviathan upgrade hint book
 execute if score #gotprox bool matches 1 run data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id: "dlc:silver_ingot",Count:2,tag:{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}}},sell:{id: "minecraft:written_book", tag: {pages: ['{"text":"...and rather than let Proxigea gather dust among his many treasures, Dahr saw it fit to serve as a reward for his challenge. The weapon was actually meant to be refurbished by Ytaj\'s resident Runic Blacksmith, but according to the smith, doing so would have required completing"}', '{"text":"the challenge themself. To this day, the challenge remains unbeaten, its grand prize unclaimed..."}'], author: "", display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"white","text":"A History of Lo\'Dahr, Volume I"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Two torn-out pages of a Tehrmari"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"history book, pertaining to the Abyssal"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Elder."}],"text":""}']}, RepairCost: 0, title: ""}, Count: 1}}
 
+data modify storage drehmal:entities zul set from entity @s Offers.Recipes

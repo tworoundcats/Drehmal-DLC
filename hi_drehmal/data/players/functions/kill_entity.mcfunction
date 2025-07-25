@@ -13,3 +13,7 @@ execute if predicate players:holding/frenzy if entity @s[tag=rampage] run functi
 execute if predicate players:heal_boots run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:6,Age:4,Effects:[{Id:10b,Amplifier:5b,Duration:1,ShowParticles:0b}]}
 execute if predicate players:heal_boots run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:6,Age:4,Effects:[{Id:10b,Amplifier:5b,Duration:1,ShowParticles:0b}]}
 execute if predicate players:heal_boots run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:6,Age:4,Effects:[{Id:10b,Amplifier:5b,Duration:1,ShowParticles:0b}]}
+
+
+execute if predicate players:holding/providence if score @s destiny_damage matches 40.. as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=!destiny] at @s run function players:items/providence/main
+scoreboard players reset @s destiny_damage

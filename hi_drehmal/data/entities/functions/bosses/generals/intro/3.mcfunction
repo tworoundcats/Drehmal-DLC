@@ -9,5 +9,6 @@ execute unless score #low_particles? bool matches 1 run particle minecraft:large
 execute unless score #low_particles? bool matches 1 run particle minecraft:flash 27365 161 750 0 0 0 0 1
 execute positioned 27351.00 162.62 747.48 run playsound minecraft:dcustom.entity.piglin.angry player @a ~ ~ ~ 2 0
 tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Ethgar, the Third General","color":"#FF4000"},{"text":"]"},{"text":" Usurper! Thief! Disgusting, vile worm! I'll rip it from your hands and skewer you myself!"}]
+execute as @a[predicate=players:in_generals_arena] at @s run playsound minecraft:custom.generals_intro record @s ~ ~ ~ 1 1
 
-schedule function entities:bosses/generals/intro/4 5s
+schedule function entities:bosses/generals/intro/4 4s

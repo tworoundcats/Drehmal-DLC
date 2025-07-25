@@ -34,5 +34,5 @@
         ],
         "function":"weapons:inert_mythbreaker"
     },
-    "parent": "weapons:mythical"
+    "parent": "weapons:providence"
 }

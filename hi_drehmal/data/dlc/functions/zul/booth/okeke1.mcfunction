@@ -1,0 +1,1 @@
+place template minecraft:okeke -1557 65 -483

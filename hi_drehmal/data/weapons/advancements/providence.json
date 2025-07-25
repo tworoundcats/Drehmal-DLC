@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "color": "gold",
+            "text": "Providence"
+        },
+        "description": {
+            "text": "Unlocked the Mythical Providence.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "dlc:providence"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Providence:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function":"weapons:providence"
+    },
+    "parent": "weapons:mythical"
+}

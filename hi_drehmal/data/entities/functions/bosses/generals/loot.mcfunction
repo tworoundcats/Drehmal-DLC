@@ -41,3 +41,8 @@ scoreboard players set #generals_dead? bool 1
 bossbar set minecraft:health3 visible false
 bossbar set minecraft:health2 visible false
 bossbar set minecraft:health visible false
+
+stopsound @a[tag=generals_music] record
+execute as @a[tag=generals_music] run tag @s add finished
+execute as @a[tag=generals_music] run playsound minecraft:custom.generals_victory record @s
+tag @a[tag=generals_music] remove generals_music

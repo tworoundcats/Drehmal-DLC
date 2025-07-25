@@ -1,4 +1,5 @@
-
+execute as @a[predicate=players:in_generals_arena] run tag @s remove generals_music
+execute as @a[predicate=players:in_generals_arena] run stopsound @s record
 effect clear @e[tag=rhalon_intro] minecraft:glowing
 effect clear @e[tag=tevus_intro] minecraft:glowing
 effect clear @e[tag=ethgar_intro] minecraft:glowing

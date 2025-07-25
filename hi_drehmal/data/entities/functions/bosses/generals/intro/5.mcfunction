@@ -4,4 +4,4 @@ tp @e[tag=rhalon_intro] 27365 161 747 facing entity @r[predicate=players:in_gene
 tp @e[tag=tevus_intro] 27365 161 744 facing entity @r[predicate=players:in_generals_arena]
 tp @e[tag=ethgar_intro] 27365 161 750 facing entity @r[predicate=players:in_generals_arena]
 
-schedule function entities:bosses/generals/intro/6 8s
+schedule function entities:bosses/generals/intro/6 5s
