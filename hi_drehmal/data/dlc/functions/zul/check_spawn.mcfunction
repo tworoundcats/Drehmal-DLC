@@ -20,7 +20,7 @@ execute if entity @s[x=-1725,y=155,z=1882,distance=..60,tag=!zul_spawn] unless e
 execute if entity @s[x=2276,y=60,z=2463,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/gozak
 
 # Mohta
-execute if entity @s[x=-21,y=72,z=5273,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/mohta
+execute if entity @s[x=-21,y=72,z=5273,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/mohta2
 
 # Mossfield
 execute if entity @s[x=4129,y=75,z=1726,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/mossfield
