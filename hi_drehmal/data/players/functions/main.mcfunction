@@ -840,6 +840,8 @@ execute if predicate players:holding/reticent as @s[scores={blocking3=..4,blocke
 execute as @s[scores={blocked=1..}] run scoreboard players reset @s blocked
 execute as @s[scores={blocked=1..,blocking3=5..}] unless predicate players:holding/reticent run scoreboard players reset @s blocked
 execute as @a[scores={blocking3=2..}] unless predicate players:is_blocking run scoreboard players reset @s blocking3
+execute if predicate players:holding/reticent as @e[tag=parried] run function players:items/reticent/parry
+
 # -------------------------------------------------------------------
 
 ### Hexed King ###
@@ -1054,3 +1056,5 @@ execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
 
 execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
+
+

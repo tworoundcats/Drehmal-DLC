@@ -1,5 +1,3 @@
-
-
 damage @s 1 ossein_siphon
 heal @e[tag=ossein,limit=1] 15
 
