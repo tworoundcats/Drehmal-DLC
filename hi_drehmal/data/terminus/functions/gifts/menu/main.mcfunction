@@ -2,7 +2,7 @@ function players:avpod/clearchat
 tellraw @s ["","  [",{"text":"ａｖＳＹＳ","color":"aqua"},"] －－－－－－－－－－－－－－－－－－－－－－"]
 tellraw @s "   | "
 
-execute if score count_all towers matches 8.. run tellraw @s ["","   | ",{"text":"ＨＡＲＤ ＲＥＳＥＴ","underlined":true,"color":"dark_red","clickEvent":{"action":"run_command","value":"/execute as @s run function dlc:modify/hardreset"},"hoverEvent":{"action":"show_text","contents":["ＣＬＩＣＫ ＴＯ ＦＵＬＬＹ ＲＥＳＥＴ ＧＥＡＲ ＭＯＤＩＦＩＣＡＴＩＯＮ ＳＴＡＴＩＯＮ ＡＮＤ ＤＲＯＰ ＡＬＬ ＩＴＥＭＳ"]}}]
+execute if score count_all towers matches 8.. run tellraw @s ["","   | ",{"text":"ＨＡＲＤ ＲＥＳＥＴ","underlined":true,"color":"dark_red","clickEvent":{"action":"run_command","value":"/execute as @s run function dlc:modify/hardreset"},"hoverEvent":{"action":"show_text","contents":["ＣＬＩＣＫ ＴＯ ＦＵＬＬＹ ＲＥＳＥＴ ＧＥＡＲ ＭＯＤＩＦＩＣＡＴＩＯＮ ＳＴＡＴＩＯＮ ＡＮＤ ＤＲＯＰ ＡＬＬ ＩＴＥＭＳ（ＯＮＬＹ ＵＳＥ ＩＮ ＥＭＥＲＧＥＮＣＩＥＳ)"]}}]
 
 execute unless score #terminusoff bool matches 1 run tellraw @s ["","   | ",{"text":"０ｘＡＶＳ","underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger terminus.compass set 100"},"hoverEvent":{"action":"show_text","contents":[{"text":"ＣＬＩＣＫ ＴＯ ＲＥＣＥＩＶＥ ＡＮ ＡＶ＇ＳＡＬ ＴＥＲＭＩＮＡＬ ＬＯＣＡＴＯＲ","color":"gray"}]}}]
 execute if score #terminusoff bool matches 1 run tellraw @s ["","   | ",{"text":"ＥＲＲ： ＭＩＳＳＩＮＧ ＩＮＤＥＸ","underlined":true,"color":"dark_gray","hoverEvent":{"action":"show_text","contents":[{"text":"ＩＮＣＲＥＡＳＥ ＮＥＴＷＯＲＫ ＬＩＮＫＡＧＥ","color":"gray"}]}}]

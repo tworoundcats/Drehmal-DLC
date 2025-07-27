@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Subjugation",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Unlocked the Mythical Subjugation.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "warden_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "rewards": {
+        "function": "weapons:subjugation"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{avrad:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "weapons:shield"
+}

@@ -1,0 +1,3 @@
+tellraw @p[tag=selector] ["","[",{"text":"ａｖＳＹＳ","color":"dark_aqua"},"]"," ／／ ",{"text":" ＩＮＳＵＦＦＩＣＩＥＮＴ ＰＯＷＥＲ ","color":"dark_red"},"／／"]
+execute as @e[tag=visual] at @s run playsound minecraft:dcustom.block.beacon.deactivate player @a ~ ~ ~ 5 0
+tellraw @p[tag=selector] ["","[",{"text":"ａｖＳＹＳ","color":"dark_aqua"},"]",{"text":"／／ ＲＥＴＲＩＥＶＥ ＩＴＥＭ ／／","clickEvent":{"action":"run_command","value":"/execute as @p[tag=selector] run function dlc:modify/retrieve_c"},"hoverEvent":{"action":"show_text","contents":["CLICK TO RETRIEVE ITEM"]}}]

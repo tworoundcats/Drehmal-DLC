@@ -1,9 +1,28 @@
-execute as @e[tag=visual] at @s run function dlc:modify/retrieve
-execute as @e[tag=visual] at @s run function dlc:modify/retrieve_b
-execute as @e[tag=visual] at @s run function dlc:modify/retrieve_l
-execute as @e[tag=visual] at @s run function dlc:modify/retrieve_c
-execute as @e[tag=visual] at @s run function dlc:modify/retrieve_h
-execute as @e[tag=tempwings] at @s run function dlc:modify/retrieve_c_wings
+execute as @e[tag=valid] at @s run summon item ~-1 ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[tag=invalid] at @s run summon item ~-1 ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=valid,limit=1] HandItems[0]
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] HandItems[0]
+execute as @e[type=item,tag=temp] run tag @s remove temp
+execute as @e[tag=valid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[tag=invalid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=valid,limit=1] ArmorItems[0]
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] ArmorItems[0]
+execute as @e[type=item,tag=temp] run tag @s remove temp
+execute as @e[tag=valid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[tag=invalid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=valid,limit=1] ArmorItems[1]
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] ArmorItems[1]
+execute as @e[type=item,tag=temp] run tag @s remove temp
+execute as @e[tag=valid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[tag=invalid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=valid,limit=1] ArmorItems[2]
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] ArmorItems[2]
+execute as @e[type=item,tag=temp] run tag @s remove temp
+execute as @e[tag=valid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[tag=invalid] at @s run summon item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b},Tags:["temp"]}
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=valid,limit=1] ArmorItems[3]
+execute as @e[type=item,tag=temp] at @s run data modify entity @s Item set from entity @e[tag=invalid,limit=1] ArmorItems[3]
+execute as @e[type=item,tag=temp] run tag @s remove temp
 execute as @e[tag=visual] at @s run kill @e[type=armor_stand,distance=..5,tag=!terminus_text]
 scoreboard players reset #station timer
 scoreboard players remove #station int 1

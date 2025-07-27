@@ -74,12 +74,12 @@ execute if score @s flesh_timer matches ..0 run scoreboard players set @s flesh_
 #--------#
 #AVRAD#
 #--------#
-execute as @a[predicate=players:holding/avrad] if score @s avrad_cool matches 0.. run function players:items/avrad/actionbar
+execute as @s[predicate=players:holding/avrad,tag=!disabled] if score @s avrad_cool matches 0.. run function players:items/avrad/actionbar
 execute if score @s avrad_charge_c matches 1.. run scoreboard players remove @s avrad_charge_c 1
 
 scoreboard players operation @s washoldingavrad = @s holdingavrad
 scoreboard players reset @s holdingavrad
-execute store result score @s holdingavrad if predicate players:holding/avrad
+execute store result score @s[tag=!disabled] holdingavrad if predicate players:holding/avrad
 
 execute if score @s wasHoldingavrad matches 1 if score @s holdingavrad matches 0 if score @s avrad_charge matches 1.. run function players:items/avrad/reset
 execute if score @s avrad_charge matches 1.. if score @s avrad_charge_c matches ..0 run function players:items/avrad/reset
@@ -153,6 +153,9 @@ execute if score #5T timer matches 0 if score @s soulDamage matches 1.. run part
 # Avsohm'Kohl Stuff
 execute if entity @s[tag=wearing_avsmkohl] if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/holding_riptide
 execute if score @s fly_cm matches 1.. if entity @s[tag=wearing_avsmkohl] run function players:items/avsohm_kohl/main
+execute if predicate dlc:wings if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/wings_holding_riptide
+execute if score @s fly_cm matches 1.. if predicate dlc:wings run function players:items/avsohm_kohl/main
+execute as @s[tag=wearing_avsmkohl] if predicate dlc:wings run function players:items/avsohm_kohl/unequip
 scoreboard players reset @s fly_cm
 scoreboard players reset @s usedFirework
 
@@ -904,7 +907,7 @@ execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[type=
 # -------------------------------------------------------------------
 
 # --- Cloud in a Bottle ---
-execute at @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if data entity @s cardinal_components.trinkets:trinkets.legs.belt.Items[{id:"artifacts:cloud_in_a_bottle"}] run scoreboard players add @s stop 1
+execute at @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if predicate dlc:cloud run scoreboard players add @s stop 1
 execute if entity @s[tag=!cloud,scores={stop=40..}] run function players:nocloud
 execute if entity @s[tag=cloud] run function players:checkcloud
 execute at @s if entity @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
@@ -1056,5 +1059,3 @@ execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
 
 execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
-
-

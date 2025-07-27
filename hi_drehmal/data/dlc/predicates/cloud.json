@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"artifacts:cloud_in_a_bottle\"}]}}}}}"
+  }
+}

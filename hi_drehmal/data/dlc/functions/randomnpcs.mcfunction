@@ -29,7 +29,7 @@ execute positioned -1649 102 2608 run forceload add ~ ~
 
 execute positioned 3740.49 73.00 466.58 run forceload add ~ ~
 
-forceload add -3294 1595
+forceload remove -2797 5308 -2814 5322
 
 forceload add -2794 5384 -2816 5345
 

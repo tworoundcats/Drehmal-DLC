@@ -8,8 +8,8 @@ execute unless score #low_particles? bool matches 1 if predicate entities:hurt r
 
 scoreboard players add @s ai_timer 1
 
-execute if score @s ai_timer matches 90.. run function entities:ai/disabler/jump
-execute if score @s ai_timer matches 90.. run scoreboard players set @s ai_timer 0
+execute if score @s ai_timer matches 240.. run function entities:ai/disabler/jump
+execute if score @s ai_timer matches 240.. run scoreboard players set @s ai_timer 0
 
 execute as @s[tag=in_air] if predicate entities:on_ground run function entities:ai/disabler/explode
 

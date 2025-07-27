@@ -123,6 +123,9 @@ execute if score #gotsy2 bool matches 1 run advancement grant @s only weapons:sy
 execute if score #gotZen2 bool matches 1 run advancement grant @s only weapons:zenith2
 
 execute if score #gotProvidence bool matches 1 run advancement grant @s only weapons:providence
+execute if score #gotshield bool matches 1 run advancement grant @s only weapons:shield
+execute if score #gotsubjugation bool matches 1 run advancement grant @s only weapons:subjugation
+
 
 #unspokens
 execute if score #gotLev bool matches 1 run advancement grant @s only weapons:leviathan

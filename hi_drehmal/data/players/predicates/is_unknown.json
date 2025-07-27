@@ -10,6 +10,14 @@
       }
     },
     {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:item",
+      "nbt": "{Item:{tag:{avrad:1b}}}"
+    }
+    },
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {

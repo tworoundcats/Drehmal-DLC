@@ -212,6 +212,7 @@ function core:scene/lodahr_portals/main
 function core:scene/lodahr_portals/main
 
 #function core:dlc
+execute if score #1S timer matches 1 run function core:adventuring_merchants
 function core:villagers
 function spm:world/tick
 function n_lev:tick
