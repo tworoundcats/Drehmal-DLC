@@ -2,8 +2,8 @@ scoreboard players reset #boss int
 scoreboard players reset #ossein_active? bool
 scoreboard players reset #ossein_horse? bool
 scoreboard players reset #ossein_music? bool
-scoreboard players set #ossein_dead? bool 1
 execute if score #ossein_dead? bool matches 1 run scoreboard players set #ossein_dead?2 bool 1
+scoreboard players set #ossein_dead? bool 1
 execute if score #ossein_dead? bool matches 1 run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
 execute if score #ossein_dead? bool matches 1 run playsound minecraft:dcustom.entity.wither.death hostile @a ~ ~ ~ 10 2
 execute as @a[tag=ossein_weak] run scale reset @s

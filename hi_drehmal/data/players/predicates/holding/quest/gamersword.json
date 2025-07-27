@@ -22,7 +22,7 @@
         "equipment": {
           "mainhand": {
             "items": [
-              "minecraft:iron_sword"
+              "mythicmetals:osmium_sword"
             ],
             "nbt": "{GamerSword:1b}"
           }

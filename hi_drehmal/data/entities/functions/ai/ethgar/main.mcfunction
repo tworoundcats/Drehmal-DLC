@@ -30,3 +30,5 @@ execute as @s unless data entity @s Brain.memories.minecraft:angry_at.value at @
 execute as @s if data entity @s HandItems[{id:"minecraft:gold_ingot"}] run function entities:ai/ethgar/bribe
 stopsound @a[predicate=players:in_generals_arena] * minecraft:entity.piglin.admiring_item
 stopsound @a[predicate=players:in_generals_arena] * minecraft:entity.piglin.jealous
+tag @s[tag=neutral] remove neutral
+tag @s[tag=!hostile] add hostile

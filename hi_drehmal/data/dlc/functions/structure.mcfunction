@@ -29,6 +29,8 @@ execute positioned 4638 62 5893 run forceload add ~ ~
 
 execute positioned -2163 64 3632 run forceload add ~ ~
 
+execute positioned 5978 71 -1089 run forceload add ~ ~
+
 
 forceload add -2862 5322 -2843 5340
 

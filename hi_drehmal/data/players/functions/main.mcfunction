@@ -760,7 +760,6 @@ execute unless predicate players:holding/backstabber_offhand if score @s kills m
 
 ### Verdant ###
 
-execute as @e[tag=reload,limit=1] if predicate entities:hurt run function players:items/verdant/tag
 execute as @s[tag=temp_shooter] at @s positioned ~ ~1 ~ run tag @e[type=#arrows,sort=nearest,limit=1,distance=..3,tag=!arrow.inground,tag=!verdant] add verdant
 execute as @s[tag=temp_shooter] at @s positioned ~ ~1 ~ if entity @e[type=spectral_arrow,sort=nearest,limit=1,distance=..3,tag=!arrow.inground] run scoreboard players set #spectral2 bool 1
 
@@ -861,6 +860,7 @@ execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] run s
 ### Hangyaku ###
 
 execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if predicate dev:random_chance/10_of_20 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
+execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku run scoreboard players reset @s use_shad
 
 # -------------------------------------------------------------------
 
@@ -1052,3 +1052,5 @@ execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
 execute as @e[tag=destiny] run scoreboard players add @s destiny 1
 execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
+
+execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths

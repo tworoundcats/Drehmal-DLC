@@ -38,14 +38,15 @@
       "mcdw:dagger_backstabber",
       "mcdw:dagger_swift_striker",
       "mcdw:hammer_stormlander",
+      "mcdw:double_axe_double",
+      "mcdw:hammer_mace",
       "mcdw:scythe_soul_scythe",  
       "mcdw:sword_frost_slayer",
       "mcdw:sword_sinister",
       "mcdw:bow_shortbow",
       "mcdw:bow_haunted_bow",
       "mcdw:crossbow_harpoon_crossbow",
-      "dlc:providence",
-      "dlc:gourdsgrave",
+      "mythicmetals:orichalcum_axe",
       "dlc:b52"
     ]
   }

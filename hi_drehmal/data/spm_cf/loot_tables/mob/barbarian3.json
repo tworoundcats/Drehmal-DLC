@@ -6,12 +6,12 @@
               {
                   "type": "item",
                   "name": "leather",
-                  "weight": 20
+                  "weight": 330
               },
               {
                 "type": "item",
                 "name": "dlc:silver_ingot",
-                "weight": 7,
+                "weight": 60,
                 "functions": [
                   {
                     "function": "minecraft:set_count",
@@ -26,7 +26,7 @@
               {
                 "type": "item",
                 "name": "dlc:mendarum_crystal",
-                "weight": 1,
+                "weight": 10,
                 "quality": 1,
                 "functions": [
                     {
@@ -38,12 +38,12 @@
               {
                   "type": "item",
                   "name": "book",
-                  "weight": 20
+                  "weight": 300
               },
               {
                   "type": "item",
                   "name": "feather",
-                  "weight": 20
+                  "weight": 300
               }
           ]
       }

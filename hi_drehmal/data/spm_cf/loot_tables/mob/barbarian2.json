@@ -6,12 +6,12 @@
               {
                   "type": "item",
                   "name": "leather",
-                  "weight": 20
+                  "weight": 360
               },
               {
                 "type": "item",
                 "name": "dlc:silver_ingot",
-                "weight": 5,
+                "weight": 40,
                 "functions": [
                   {
                     "function": "minecraft:set_count",
@@ -26,12 +26,12 @@
               {
                   "type": "item",
                   "name": "book",
-                  "weight": 20
+                  "weight": 300
               },
               {
                   "type": "item",
                   "name": "feather",
-                  "weight": 20
+                  "weight": 300
               }
           ]
       }

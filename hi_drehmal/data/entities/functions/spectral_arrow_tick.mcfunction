@@ -4,6 +4,8 @@ execute unless entity @s[tag=ground_clear] unless entity @s[tag=arrow.inground] 
 execute if entity @s[tag=piecemaker_arrow] at @s run particle dust 0.976 0 0 1 ~ ~ ~ 0 0 0 0 1
 
 execute if entity @s[tag=verdant] as @s run tp @e[type=marker,tag=verdant_tag] @s
+execute if entity @s[tag=verdant,tag=!reduced] run data remove entity @s crit
+execute if entity @s[tag=verdant,tag=!reduced] run tag @s add reduced
 execute if entity @s[tag=verdant,tag=arrow.inground] run tag @s remove verdant 
 
 execute if predicate entities:khiverings as @s run function core:scene/khiverings/rings

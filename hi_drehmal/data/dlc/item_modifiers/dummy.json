@@ -1,0 +1,78 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "replace": true,
+    "lore": [
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "A simple but durable straw dummy used by blacksmiths"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "to test the sharpness of their new blades"
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": "without dulling them on stone."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_purple",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": "Crouch and left click with an empty hand to break."
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": true,
+            "color": "dark_gray",
+            "text": " "
+          }
+        ],
+        "text": ""
+      },
+      {
+        "extra": [
+          {
+            "italic": false,
+            "color": "green",
+            "text": "Trinket"
+          }
+        ],
+        "text": ""
+      }
+    ]
+  }
+]

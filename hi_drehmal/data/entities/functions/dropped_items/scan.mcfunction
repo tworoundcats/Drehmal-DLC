@@ -38,5 +38,7 @@ execute if predicate entities:avhorse_armor if entity @e[type=horse,distance=..1
 execute if predicate entities:netheritescrap store success score #load_this temp run tag @s add celestial_scrap
 execute if predicate entities:standard_backpack unless data entity @s Thrower store success score #load_this temp run tag @s add standard_backpack
 
+execute if predicate entities:dummy unless data entity @s Thrower store success score #load_this temp run tag @s add dummy
+
 tag @s add scanned
 execute if score #load_this temp matches 0 run tag @s add unloaded.item

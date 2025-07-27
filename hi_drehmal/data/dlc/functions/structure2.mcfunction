@@ -22,6 +22,7 @@ execute positioned 3942.49 88.00 3475.50 run function dlc:zul/booth/firteid
 execute positioned -1730 161 1896 run function dlc:zul/booth/fort_nima
 execute positioned 2248 50 2469 run function dlc:zul/booth/gozak
 execute positioned 18 65 5297 run function dlc:zul/booth/mohta
+execute positioned 5978 71 -1089 run function dlc:zul/booth/highfall
 execute positioned 4098 65 1721 run function dlc:zul/booth/mossfield
 execute positioned -1557 65 -483 run function dlc:zul/booth/okeke
 execute positioned -2930 83 5217 run function dlc:zul/booth/rhaveloth

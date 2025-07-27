@@ -12,6 +12,7 @@ execute if predicate players:is_asc run team join asc
 execute if predicate players:is_zenith run team join zenith
 execute if predicate players:is_syzygy run team join syzygy
 execute if predicate players:is_mb_in run team join mb_in
+execute if predicate players:is_prismatic run team join leviathan
 execute if predicate players:is_levi run team join leviathan
 execute if predicate players:is_wings run team join leviathan
 execute if predicate players:is_soul run team join leviathan

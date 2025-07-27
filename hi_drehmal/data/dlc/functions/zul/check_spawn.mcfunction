@@ -25,6 +25,9 @@ execute if entity @s[x=-21,y=72,z=5273,distance=..60,tag=!zul_spawn] unless enti
 # Mossfield
 execute if entity @s[x=4129,y=75,z=1726,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/mossfield
 
+# Highfall
+execute if entity @s[x=5963,y=89,z=-1107,distance=..150,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/highfall
+
 # Okeke
 execute if entity @s[x=-1563,y=75,z=-471,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/okeke
 

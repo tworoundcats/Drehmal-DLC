@@ -8,7 +8,6 @@
         {
           "type": "item",
           "name": "dlc:silver_ingot",
-          "quality": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -27,7 +26,7 @@
         },
         {
           "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.025,
+          "chance": 0.005,
           "looting_multiplier": 0.01
         }
       ]

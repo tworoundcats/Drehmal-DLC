@@ -40,4 +40,3 @@ execute as @e[tag=valid_cal] run schedule function dlc:modify/charge/mythic/cal_
 execute as @e[tag=valid_fre] run schedule function dlc:modify/charge/mythic/fre_5 3s
 
 
-

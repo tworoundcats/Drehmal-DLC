@@ -2,11 +2,11 @@
     "display": {
         "title": {
             "color": "red",
-            "text": "Forgotten Weapons"
+            "text": "Masterwork Weapons"
         },
         "description": {
             "color": "gray",
-            "text": "Weapons whose origins are unknown and history forgotten."
+            "text": "Crafted to near perfection, Masterwork weapons push the boundaries of craftsmanship. Reliable, rare, and deadly in the right hands."
         },
         "icon": {
             "item": "mcdw:sword_frost_slayer"

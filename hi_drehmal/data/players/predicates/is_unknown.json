@@ -6,14 +6,6 @@
       "entity": "this",
       "predicate": {
         "type": "minecraft:item",
-        "nbt": "{Item:{id:\"simplyswords:empowered_remnant\"}}"
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "type": "minecraft:item",
         "nbt": "{Item:{id:\"dlc:shard_of_nothing\"}}"
       }
     },

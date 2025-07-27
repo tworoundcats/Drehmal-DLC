@@ -5,8 +5,8 @@ summon minecraft:item_frame 1069.50 66.03 1964.50 {Invisible: 1b, ItemDropChance
 execute as @e[name="Cinder",type=villager] run tp @s ~ 1000 ~
 execute as @e[name="Cinder",type=villager] run kill @s
 #execute positioned ~ ~ ~ as @p[tag=qst3] run effect give @s blindness 2 2 true
-execute as @e[distance=..40,type=iron_golem] run data modify entity @s AngryAt set from entity @p[tag=qst3] UUID
-execute as @e[distance=..40,type=iron_golem] run data modify entity @s AngerTime set value 60000
+execute positioned 1092.55 66.56 1965.51 as @e[distance=..40,type=iron_golem] run data modify entity @s AngryAt set from entity @p[tag=qst3] UUID
+execute positioned 1092.55 66.56 1965.51 as @e[distance=..40,type=iron_golem] run data modify entity @s AngerTime set value 60000
 execute positioned ~ ~ ~ as @p[tag=qst3] at @s run tag @s remove qst3
 execute positioned 1092.55 66.56 1965.51 run forceload remove ~ ~
 

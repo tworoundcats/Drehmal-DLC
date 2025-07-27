@@ -6,12 +6,12 @@
         {
           "type": "item",
           "name": "raw_copper",
-          "weight": 17
+          "weight": 490
         },
         {
           "type": "item",
           "name": "dlc:silver_ingot",
-          "weight": 1,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -26,7 +26,7 @@
         {
           "type": "item",
           "name": "raw_iron",
-          "weight": 13
+          "weight": 490
         }
       ]
     }

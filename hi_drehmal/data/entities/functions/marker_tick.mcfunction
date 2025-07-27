@@ -87,6 +87,8 @@ execute if entity @s[tag=ambition] run function players:items/ambition/particle_
 execute if entity @s[tag=driftbone] run function entities:ai/driftbone/particle_tick
 execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/particle_tick
 
+execute if entity @s[tag=terminus_visual] run function dlc:modify/particle_tick
+
 
 execute if score #5T timer matches 4 if entity @s[tag=deathmarker] run function entities:misc/deathmarker/kill_on_despawn
 

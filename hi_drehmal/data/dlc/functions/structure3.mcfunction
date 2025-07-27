@@ -34,6 +34,8 @@ execute positioned 4638 62 5893 run forceload remove ~ ~
 
 execute positioned -2163 64 3632 run forceload remove ~ ~
 
+execute positioned 5978 71 -1089 run forceload remove ~ ~
+
 
 effect give Drehn_Malsohm minecraft:wither 5 4
 

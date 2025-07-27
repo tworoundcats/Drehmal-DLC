@@ -12,7 +12,7 @@
         }
     },
     "rewards": {
-        "function": "weapons:advancement/backstabber"
+        "function": "weapons:advancement/night"
         
     },
     "display": {

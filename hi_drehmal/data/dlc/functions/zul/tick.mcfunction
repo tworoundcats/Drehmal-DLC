@@ -9,7 +9,7 @@ execute as @s[tag=zul_speak,tag=!zul_cd] at @s run function dlc:zul/speak
 
 
 
-execute at @s if entity @a[distance=..50] run forceload add ~ ~
+execute at @s if entity @a[distance=..60] run forceload add ~ ~
 execute at @s unless entity @a[distance=..50] at @s run function dlc:zul/despawn
 
 

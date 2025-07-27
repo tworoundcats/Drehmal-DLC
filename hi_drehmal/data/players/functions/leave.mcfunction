@@ -80,7 +80,7 @@ execute if score #5mbleft bool matches 1 as @a run fmvariable set salmevir false
 
 execute if score #7mbright bool matches 1 as @a run fmvariable set exodus false 1
 
-execute if entity @a[tag=zul] as @a run fmvariable set zul 1 false 1
+execute if entity @a[tag=zul] as @a run fmvariable set zul false 1
 execute if score count_all towers matches 8 as @a run fmvariable set terminus1 false 1
 execute if score count_all towers matches 24 if score lo_dahr towers matches 1 as @a run fmvariable set lodahr false 1
 

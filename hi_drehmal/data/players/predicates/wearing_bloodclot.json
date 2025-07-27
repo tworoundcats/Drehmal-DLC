@@ -6,7 +6,7 @@
         "entity": "this",
         "predicate": {
           "equipment": {
-            "head": {
+            "legs": {
               "items": [
                 "minecraft:air"
               ]
@@ -22,12 +22,10 @@
         "equipment": {
           "legs": {
             "items": [
-              "dlc:escharfex"
-            ],
-            "nbt": "{Bloodclot:1b}"
+              "mythicmetals:adamantite_leggings"
+            ]
           }
         }
       }
     }
   ]
-

@@ -9,4 +9,3 @@ execute if score #arrow_count num matches 2.. as @p at @s if score #spectral2 bo
 scoreboard players reset #spectral2 bool
 
 execute as @a[tag=temp_shooter] run tag @s remove temp_shooter
-tag @s remove reload

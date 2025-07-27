@@ -1,0 +1,33 @@
+[
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": [
+              "icarus:magenta_mechanical_leather_wings"
+            ],
+            "nbt": "{Wings:1b}"
+          }
+        }
+      }
+    }
+  ]
+  

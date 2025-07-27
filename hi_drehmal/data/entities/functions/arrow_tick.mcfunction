@@ -16,6 +16,8 @@ execute if entity @s[tag=noxious_arrow] if entity @s[tag=arrow.inground] run fun
 execute if entity @s[tag=rihelma] if entity @s[tag=arrow.inground] run function entities:misc/rihelma_clear
 execute if entity @s[tag=sigma] run function entities:arrow_tick2
 execute if entity @s[tag=verdant] as @s run tp @e[type=marker,tag=verdant_tag] @s
+execute if entity @s[tag=verdant,tag=!reduced] run data remove entity @s crit
+execute if entity @s[tag=verdant,tag=!reduced] run tag @s add reduced
 execute if entity @s[tag=verdant,tag=arrow.inground] run tag @s remove verdant 
 
 execute if entity @s[tag=revenant_arrow] at @s run particle splash
