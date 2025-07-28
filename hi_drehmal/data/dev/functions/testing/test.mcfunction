@@ -1,4 +1,3 @@
-
 playsound minecraft:dcustom.entity.ender_dragon.flap player @a ~ ~ ~ 0.5 1.5 0.1
 playsound minecraft:dcustom.entity.experience_orb.pickup player @a ~ ~ ~ 0.7 1.2 0.3
 playsound minecraft:dcustom.item.bottle.fill_dragonbreath player @a ~ ~ ~ 0.4 1.4 0.3

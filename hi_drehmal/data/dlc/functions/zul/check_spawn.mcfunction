@@ -35,7 +35,7 @@ execute if entity @s[x=-1563,y=75,z=-471,distance=..60,tag=!zul_spawn] unless en
 execute if entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/rhaveloth
 
 # Sahd
-execute as @s[tag=!zul_spawn] if predicate players:in_sahd run function dlc:zul/booth/sahd
+execute as @s[tag=!zul_spawn] at @s if predicate players:in_sahd run function dlc:zul/booth/sahd
 
 # Tharxax
 execute if entity @s[x=-2170,y=76,z=3659,distance=..80,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/tharxax
@@ -78,3 +78,5 @@ execute as @a[advancements={advancements:primordial/closure=true}] run execute a
 execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariable set arcane false 1
 execute as @a[advancements={weapons:olkahan=true}] run execute as @a run fmvariable set olkahan false 1
 execute as @a[advancements={weapons:providence=true}] run execute as @a run fmvariable set providence false 1
+
+execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths

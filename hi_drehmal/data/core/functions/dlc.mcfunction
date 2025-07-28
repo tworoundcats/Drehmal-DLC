@@ -4,13 +4,13 @@
 #
 #
 #execute as @a if predicate players:holding/backstabber_mainhand as @s[scores={use_bs=1..}] run function players:items/backstabber/main
-#execute as @a if predicate players:holding/backstabber_mainhand unless predicate dev:entity_properties/effects/invisibility run execute as @s run scoreboard players add @s bstimer 1
+#execute as @a if predicate players:holding/backstabber_mainhand unless predicate players:invisibilty run execute as @s run scoreboard players add @s bstimer 1
 #execute as @a if predicate players:holding/backstabber_mainhand as @s[scores={bstimer=100..}] run function players:items/backstabber/resetreach
 #execute as @a if predicate players:holding/backstabber_offhand as @s[scores={use_bs=1..}] run function players:items/backstabber/main
-#execute as @a if predicate players:holding/backstabber_offhand unless predicate dev:entity_properties/effects/invisibility run execute as @s run scoreboard players add @s bstimer 1
+#execute as @a if predicate players:holding/backstabber_offhand unless predicate players:invisibilty run execute as @s run scoreboard players add @s bstimer 1
 #execute as @a if predicate players:holding/backstabber_offhand as @s[scores={bstimer=100..}] run function players:items/backstabber/resetreach
-#execute as @a if predicate players:holding/backstabber_mainhand if predicate dev:entity_properties/flags/is_sneaking if predicate dev:entity_properties/effects/invisibility run function #players:items/backstabber/invis
-#execute as @a if predicate players:holding/backstabber_mainhand if predicate players:holding/backstabber_offhand if predicate dev:entity_properties/flags/is_sneaking if predicate #dev:entity_properties/effects/invisibility run function players:items/backstabber/dual
+#execute as @a if predicate players:holding/backstabber_mainhand if predicate players:sneak if predicate players:invisibilty run function #players:items/backstabber/invis
+#execute as @a if predicate players:holding/backstabber_mainhand if predicate players:holding/backstabber_offhand if predicate players:sneak if predicate #players:invisibilty run function players:items/backstabber/dual
 #execute as @a unless predicate players:holding/backstabber_offhand unless predicate players:holding/backstabber_mainhand as @s[scores={bskills=1..}] run execute as @s run function players:items/#backstabber/resetreach
 #execute as @a unless predicate players:holding/backstabber_mainhand as @s[scores={kills=..1}] run scoreboard players reset @s kills
 #execute as @a unless predicate players:holding/backstabber_mainhand as @s[scores={kills=1..}] run scoreboard players reset @s kills
@@ -38,7 +38,7 @@
 #execute as @a unless predicate players:holding/leviathan as @s[scores={levi_reach=140..}] as @s run scoreboard players reset @s levi_reach
 #execute as @a unless predicate players:holding/leviathan as @s[tag=strengthened] run tag @s remove strengthened
 ##execute as @a if predicate players:holding/leviathan as @s[scores={levi_reach=..140}] if predicate dev:entity_properties/effects/haste as @s at @s positioned ~ ~1 ~ run function #particle:effects/mist
-#execute as @a if predicate players:holding/leviathan as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate dev:entity_properties/flags/is_sneaking run function #players:items/levi/apotheosis
+#execute as @a if predicate players:holding/leviathan as @s[scores={levi_kills=5..}] unless score @s levi_cool matches 1.. if predicate players:sneak run function #players:items/levi/apotheosis
 #execute as @a unless predicate players:holding/leviathan if score @s levi_cool matches 1.. run function players:items/levi/cooldown
 #
 #

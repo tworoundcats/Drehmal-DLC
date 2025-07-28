@@ -6,7 +6,7 @@ execute at @s run particle minecraft:bubble_pop ~ ~ ~ 0.6 0 0.6 0.1 100
 execute at @s run tp @e[type=!player,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=5,tag=!oblivion_immune] @s
 
 execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run damage @s 2 minecraft:generic by @p
-execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=1] if predicate dev:entity_properties/flags/is_hurt run scoreboard players add #levi num 1
+execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=1] if predicate entities:hurt2 run scoreboard players add #levi num 1
 execute if score #levi num matches 30 at @s run playsound simplyswords:elemental_sword_water_attack_01 player @a ~ ~ ~ 1 1
 execute if score #levi num matches 60 at @s run playsound simplyswords:elemental_sword_water_attack_02 player @a ~ ~ ~ 1 1
 execute if score #levi num matches 90 at @s run playsound simplyswords:elemental_sword_water_attack_03 player @a ~ ~ ~ 1 1

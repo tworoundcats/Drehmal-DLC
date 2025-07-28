@@ -722,9 +722,9 @@ execute if predicate players:locations/red_dawn_nomusic run function players:mus
 
 execute unless predicate players:locations/red_dawn_nomusic if entity @s[tag=bossmusic] run function players:music/startfurtherance
 
-execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
+#execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
 
-function dlc:accessories/main
+#function dlc:accessories/main
 
 
 execute as @s[scores={dlc=1}] run function dlc:triggerdlc
@@ -745,15 +745,15 @@ execute as @e[tag=soul_burn] run function players:items/soul/main
 
 ### Night Watch ###
 execute if predicate players:holding/backstabber_mainhand if score @s use_bs matches 1.. run function players:items/backstabber/main
-execute if predicate players:holding/backstabber_mainhand unless predicate dev:entity_properties/effects/invisibility run scoreboard players add @s bstimer 1
+execute if predicate players:holding/backstabber_mainhand unless predicate players:invisibilty run scoreboard players add @s bstimer 1
 execute if predicate players:holding/backstabber_mainhand if score @s bstimer matches 100.. run function players:items/backstabber/resetreach
 
 execute if predicate players:holding/backstabber_offhand if score @s use_bs matches 1.. run function players:items/backstabber/main
-execute if predicate players:holding/backstabber_offhand unless predicate dev:entity_properties/effects/invisibility run scoreboard players add @s bstimer 1
+execute if predicate players:holding/backstabber_offhand unless predicate players:invisibilty run scoreboard players add @s bstimer 1
 execute if predicate players:holding/backstabber_offhand if score @s bstimer matches 100.. run function players:items/backstabber/resetreach
 
-execute if predicate players:holding/backstabber_mainhand if predicate dev:entity_properties/flags/is_sneaking if predicate dev:entity_properties/effects/invisibility run function players:items/backstabber/invis
-execute if predicate players:holding/backstabber_mainhand if predicate players:holding/backstabber_offhand if predicate dev:entity_properties/flags/is_sneaking if predicate dev:entity_properties/effects/invisibility run function players:items/backstabber/dual
+execute if predicate players:holding/backstabber_mainhand if predicate players:sneak if predicate players:invisibilty run function players:items/backstabber/invis
+execute if predicate players:holding/backstabber_mainhand if predicate players:holding/backstabber_offhand if predicate players:sneak if predicate players:invisibilty run function players:items/backstabber/dual
 
 execute unless predicate players:holding/backstabber_offhand unless predicate players:holding/backstabber_mainhand unless predicate players:holding/leviathan if score @s bskills matches 1.. run function players:items/backstabber/resetreach
 execute unless predicate players:holding/backstabber_mainhand if score @s kills matches 1.. run scoreboard players reset @s kills
@@ -856,15 +856,17 @@ execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboar
 # -------------------------------------------------------------------
 
 ### Serendipity ###
-
-execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if predicate dev:random_chance/5_of_20 run function players:items/serendipity/damage
+function core:rng
+scoreboard players operation #rand temp %= #4 const
+execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if score #rand temp matches 1 run function players:items/serendipity/damage
 execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] run scoreboard players reset @s lucky
 
 # -------------------------------------------------------------------
 
 ### Hangyaku ###
-
-execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if predicate dev:random_chance/10_of_20 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
+function core:rng
+scoreboard players operation #rand temp %= #2 const
+execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if score #rand temp matches 1 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
 execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku run scoreboard players reset @s use_shad
 
 # -------------------------------------------------------------------
@@ -910,15 +912,15 @@ execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[type=
 execute at @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if predicate dlc:cloud run scoreboard players add @s stop 1
 execute if entity @s[tag=!cloud,scores={stop=40..}] run function players:nocloud
 execute if entity @s[tag=cloud] run function players:checkcloud
-execute at @s if entity @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
+execute if score #1S timer matches 0 run execute at @s if entity @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
 
 # --- Wings ---
-execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:adventure_areas unless predicate players:locations/in_terminus run function players:nowings
-execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:lodahr run function players:nowings
+execute if score #1S timer matches 0 run execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:adventure_areas unless predicate players:locations/in_terminus run function players:nowings
+execute if score #1S timer matches 0 run execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:lodahr run function players:nowings
 execute if entity @s[tag=wings] run function players:checkwings
-execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=false,advancements:primordial/khive_angy=false}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
-execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
-execute if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] if predicate dlc:wings run function players:nowings
+execute if score #1S timer matches 0 run execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=false,advancements:primordial/khive_angy=false}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
+execute if score #1S timer matches 0 run execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
+execute if score #1S timer matches 0 run execute if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] if predicate dlc:wings run function players:nowings
 
 # -------------------------------------------------------------------
 
@@ -991,20 +993,6 @@ execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=play
 
 # -------------------------------------------------------------------
 
-### Item Frame & Quest Item Logic ###
-execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0b
-execute as @e[type=glow_item_frame,tag=star] at @s if entity @a[distance=..1] run tag @s remove star
-execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run data modify entity @s Fixed set value 0b
-execute as @e[type=glow_item_frame,tag=artifact] at @s if entity @a[distance=..1] run tag @s remove artifact
-
-# --- Item Cleanup & Effects ---
-execute as @e[type=item,nbt={Item:{tag:{mquest:1b}}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mote"}}] run data modify entity @s Glowing set value 1b
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_mound"}}] run data modify entity @s Glowing set value 1b
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_ingot"}}] at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glow_item_frame"}},distance=..1]
-execute as @e[type=item,nbt={Item:{id:"dlc:starfall_ingot"}}] run data modify entity @s Glowing set value 1b
 
 # -------------------------------------------------------------------
 
@@ -1018,7 +1006,7 @@ execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] if score #
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run function dlc:modify/main
 
 # --- Frenzy Upgrade ---
-execute if score #frenzy bool matches 1 run function dlc:frenzy_upgrade/main
+execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main
 execute at @s if predicate players:locations/sahd_forge as @e[predicate=players:is_fateful] at @s if block ~ ~-4 ~ lava run function dlc:frenzy_upgrade/initial
 
 # --- B52 ---
@@ -1058,4 +1046,4 @@ execute as @e[tag=destiny] run scoreboard players add @s destiny 1
 execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
 
-execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
+

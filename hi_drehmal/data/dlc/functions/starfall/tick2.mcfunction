@@ -1,0 +1,9 @@
+particle lava ~ ~ ~ 0 0 0 0.1 1 force
+particle lava ~0.2 ~ ~ 0 0.05 0 0.1 1 force
+particle lava ~-0.2 ~ ~ 0 0.05 0 0.1 1 force
+particle lava ~ ~ ~0.2 0 0.05 0 0.1 1 force
+particle lava ~ ~ ~-0.2 0 0.05 0 0.1 1 force
+particle lava ~0.1 ~ ~0.1 0 0.1 0 0.1 1 force
+particle lava ~-0.1 ~ ~-0.1 0 0.1 0 0.1 1 force
+particle lava ~0.3 ~ ~ 0 0.1 0 0.1 1 force
+particle lava ~-0.3 ~ ~ 0 0.1 0 0.1 1 force

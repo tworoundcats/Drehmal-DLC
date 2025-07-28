@@ -30,3 +30,7 @@ execute if entity @s[tag=mal_trident] run function players:items/mal/proj/tick
 execute if entity @s[tag=standard_backpack,tag=!backpack] run function dlc:modify/backpack
 
 execute if entity @s[tag=dummy,tag=!dummy2] run function dlc:modify/dummy
+
+execute if entity @s[tag=starfall,tag=!starfall2] run function dlc:modify/starfall
+
+execute if entity @s[tag=starfall_glow,tag=!starfall_glow2] run function dlc:modify/starfall2

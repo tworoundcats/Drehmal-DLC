@@ -1,7 +1,6 @@
 execute as @e[tag=frenzy_shard] at @s run tp @s ^ ^0.1 ^0.6 facing entity @e[tag=frenzy_display,limit=1,sort=nearest]
 
 
-
 execute positioned 4723 153 5325 if entity @e[tag=frenzy_shard,distance=..0.5,type=armor_stand] run kill @e[tag=frenzy_fire]
 execute positioned 4723 153 5325 if entity @e[tag=frenzy_shard,distance=..0.5,type=armor_stand] run scoreboard players set #frenzy bool 0
 execute positioned 4723 153 5325 if entity @e[tag=frenzy_shard,distance=..0.5,type=armor_stand] at @e[tag=frenzy_shard] positioned ~4 ~ ~ run tp @s ~ ~0.1 ~
