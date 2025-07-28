@@ -19,11 +19,11 @@ execute if entity @s[nbt={HurtTime:10s}] run function entities:ai/ossein/hit
 
 
 execute unless score @s ai_state2 matches 1 run scoreboard players add @s ai_timer2 1
-execute unless score #DLC mastermode matches 1 unless score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 240.. run function entities:ai/ossein/attack_decide
-execute if score #DLC mastermode matches 1 unless score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 200.. run function entities:ai/ossein/attack_decide
+execute if score #ossein_dead? bool matches 1 unless score #DLC mastermode matches 1 unless score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 240.. run function entities:ai/ossein/attack_decide
+execute if score #ossein_dead? bool matches 1 if score #DLC mastermode matches 1 unless score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 200.. run function entities:ai/ossein/attack_decide
 
-execute unless score #DLC mastermode matches 1 if score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 200.. run function entities:ai/ossein/attack_decide
-execute if score #DLC mastermode matches 1 if score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 160.. run function entities:ai/ossein/attack_decide
+execute if score #ossein_dead? bool matches 1 unless score #DLC mastermode matches 1 if score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 200.. run function entities:ai/ossein/attack_decide
+execute if score #ossein_dead? bool matches 1 if score #DLC mastermode matches 1 if score #gravity2 bool matches 1 run execute if score @s ai_timer2 matches 160.. run function entities:ai/ossein/attack_decide
 
 
 

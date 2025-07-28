@@ -47,7 +47,7 @@ execute if score #avpod.newsong temp matches 30 run tellraw @s {"text":"Added [T
 execute if score #avpod.newsong temp matches 31 run tellraw @s {"text":"Added [True Catastrophe]!","color":"green"}
 execute if score #avpod.newsong temp matches 32 run tellraw @s {"text":"Added [Earn Your Glory]!","color":"green"}
 execute if score #avpod.newsong temp matches 57 run tellraw @s {"text":"Added [Fate of the Fettered]!","color":"green"}
-execute if score #avpod.newsong temp matches 58 run tellraw @s {"text":"Added [Plagued]!","color":"green"}
+execute if score #avpod.newsong temp matches 58 run tellraw @s {"text":"Added [Xor'huul]!","color":"green"}
 execute if score #avpod.newsong temp matches 59 run tellraw @s {"text":"Added [Furtherance]!","color":"green"}
 execute if score #avpod.newsong temp matches 60 run tellraw @s {"text":"Added [Obsolescence]!","color":"green"}
 execute if score #avpod.newsong temp matches 61 run tellraw @s {"text":"Added [Mark of the Burnt]!","color":"green"}

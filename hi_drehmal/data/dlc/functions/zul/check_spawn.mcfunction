@@ -79,4 +79,4 @@ execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariab
 execute as @a[advancements={weapons:olkahan=true}] run execute as @a run fmvariable set olkahan false 1
 execute as @a[advancements={weapons:providence=true}] run execute as @a run fmvariable set providence false 1
 
-execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
+#execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths

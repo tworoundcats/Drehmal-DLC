@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+        "items": [
+          {
+            "items": [
+              "dlc:t1"
+            ]
+          }
+        ]
+      }
+    }
+    },
+    "rewards": {
+      "function": "dlc:gamble"
+    }
+  }

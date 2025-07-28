@@ -1,4 +1,5 @@
 tag @s remove em.nohit_reward
+tag @s remove ossein.nohit_reward
 tag @s remove anyr_active
 tag @s remove anyr_cd
 tag @s remove zen

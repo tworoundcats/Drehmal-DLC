@@ -46,7 +46,9 @@ execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predi
 
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/wings run execute at @s run function dlc:modify/maxed
 
-execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/prismatic run execute at @s run function dlc:modify/valid_pri
+execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 unless score #unspoken bool matches 1 if predicate players:holding/prismatic run execute at @s run function dlc:modify/valid_pri
+
+execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if score #unspoken bool matches 1 if predicate players:holding/prismatic run execute at @s run function dlc:modify/maxed
 
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/male run execute at @s run function dlc:modify/valid_mal
 

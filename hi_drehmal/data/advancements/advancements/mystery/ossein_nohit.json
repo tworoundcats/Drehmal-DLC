@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_block"
+    },
+    "title": {
+      "text": "Godlike",
+      "color": "gold",
+      "bold": false
+    },
+    "description": {
+      "text": "WHAT THE FUCK HOW DID YOU DO THAT?????????? - Defeat Ossein Prime with NoHit active.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "players:misc/mystery_root"
+  },
+  "parent": "advancements:mystery/root"
+}

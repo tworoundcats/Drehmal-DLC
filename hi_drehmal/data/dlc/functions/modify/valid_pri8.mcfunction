@@ -4,4 +4,4 @@ scoreboard players set #unspoken bool 1
 execute as @e[tag=interact] run data modify entity @s DisabledSlots set value 32
 execute as @e[tag=valid] run tag @s remove valid
 execute as @e[tag=invalid] run tag @s remove invalid
-#26475 145 -105
+advancement grant @a only advancements:mystery/power

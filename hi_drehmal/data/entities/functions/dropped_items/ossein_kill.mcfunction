@@ -8,6 +8,8 @@ execute if score #ossein_dead? bool matches 1 run particle explosion_emitter ~ ~
 execute if score #ossein_dead? bool matches 1 run playsound minecraft:dcustom.entity.wither.death hostile @a ~ ~ ~ 10 2
 execute as @a[tag=ossein_weak] run scale reset @s
 execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths
+execute if score #ossein_dead?2 bool matches 1 as @a[tag=ossein.nohit_reward] run advancement grant @s only advancements:mystery/ossein_nohit
+execute if score #ossein_dead?2 bool matches 1 as @a[tag=ossein.nohit_reward] run tag @s remove ossein.nohit_reward
 scoreboard players set #ossein_respawn timer 600
 execute as @a[tag=ossein_spawnpoint] run function players:spawn/clear_temp_spawn
 forceload remove 26334 188 26268 121

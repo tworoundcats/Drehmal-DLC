@@ -67,7 +67,7 @@ execute if score #songid temp matches 32 run tellraw @s [""," -",{"text":"[Earn 
 
 execute if score #songid temp matches 57 run tellraw @s [""," -",{"text":"[Fate of the Fettered]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 157"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Shatterhorn Gulch","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
-execute if score #songid temp matches 58 run tellraw @s [""," -",{"text":"[Plagued]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 158"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Xor'Huul","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
+execute if score #songid temp matches 58 run tellraw @s [""," -",{"text":"[Xor'huul]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 158"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Xor'Huul","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
 execute if score #songid temp matches 59 run tellraw @s [""," -",{"text":"[Furtherance]","color":"red","clickEvent":{"action":"run_command","value":"/trigger avpod.menu_press set 159"},"hoverEvent":{"action":"show_text","contents":[{"text":"Theme of ","color":"gray"},{"text":"Red Dawn","color":"aqua"},"\n",{"text":"Click to Play!","color":"yellow"}]}},"-"]
 
