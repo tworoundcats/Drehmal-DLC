@@ -11,7 +11,7 @@ execute if entity @s[x=2104,y=101,z=-840,distance=..100,tag=!zul_spawn] unless e
 execute if entity @s[x=-2976,y=145,z=-192,distance=..55,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/ebonrun
 
 # Firteid
-execute as @s[tag=!zul_spawn] if predicate players:in_firt unless entity @e[type=dlc:collector] run function dlc:zul/booth/firteid
+execute if entity @s[tag=!zul_spawn] at @s if predicate players:in_firt unless entity @e[type=dlc:collector] run function dlc:zul/booth/firteid
 
 # Fort Nima
 execute if entity @s[x=-1725,y=155,z=1882,distance=..60,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/fort_nima
@@ -35,7 +35,7 @@ execute if entity @s[x=-1563,y=75,z=-471,distance=..60,tag=!zul_spawn] unless en
 execute if entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/rhaveloth
 
 # Sahd
-execute as @s[tag=!zul_spawn] at @s if predicate players:in_sahd run function dlc:zul/booth/sahd
+execute if entity @s[tag=!zul_spawn] at @s if predicate players:in_sahd run function dlc:zul/booth/sahd
 
 # Tharxax
 execute if entity @s[x=-2170,y=76,z=3659,distance=..80,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/tharxax
@@ -80,3 +80,8 @@ execute as @a[advancements={weapons:olkahan=true}] run execute as @a run fmvaria
 execute as @a[advancements={weapons:providence=true}] run execute as @a run fmvariable set providence false 1
 
 #execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
+
+execute store result score @s clock run clear @s mythicmetals:platinum_watch 0
+execute if score @s[tag=!clocked] clock matches 1.. if score #zul bool matches 1 run tellraw @s {"text":"The hour has struck. The Chronicler's Envoy has new wares.","color":"dark_gray","bold":false,"italic":true}
+execute if score @s[tag=!clocked] clock matches 1.. if score #zul bool matches 1 run tag @s add clocked
+execute if score @s[tag=clocked] clock matches 1.. unless score #zul bool matches 1 run tag @s remove clocked

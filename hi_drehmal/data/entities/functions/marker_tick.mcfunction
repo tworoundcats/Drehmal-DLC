@@ -89,7 +89,6 @@ execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/particle_tick
 execute if entity @s[tag=starfall_tag] at @s run forceload add ~ ~
 
 
-
 execute if entity @s[tag=terminus_visual] run function dlc:modify/particle_tick
 
 

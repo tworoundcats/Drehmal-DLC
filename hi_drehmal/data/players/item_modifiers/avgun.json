@@ -111,37 +111,37 @@
       },
       {
         "text": " "
-      },
-        {
-          "text": "Apex Radiance ",
-          "color": "gold",
-          "italic": false
-        },
-      {
-        "text": "Use your drop item key to consume",
-        "color": "dark_gray",
-        "italic": true
-      },
-      {
-        "text": "a charge and fire a long range",
-        "color": "dark_gray",
-        "italic": true
-      },
-      {
-        "text": "energy beam that stuns and damages",
-        "color": "dark_gray",
-        "italic": true
-      },
-      {
-        "text": "all hit enemies. Additionally, gain +3",
-        "color": "dark_gray",
-        "italic": true
-      },
-      {
-        "text": "Max Charges.",
-        "color": "dark_gray",
-        "italic": true
-      },
+       },
+              {
+                "text": "Ontology",
+                "color": "gold",
+                "italic": false
+              },
+            {
+              "text": "Crouch and right click to switch modes.",
+              "color": "dark_gray",
+              "italic": true
+            },
+            {
+              "text": "Build up charges by dealing damage",
+              "color": "dark_gray",
+              "italic": true
+            },
+            {
+              "text": "with the blade. Use a charge by right",
+              "color": "dark_gray",
+              "italic": true
+            },
+            {
+              "text": "clicking while the blade is retracted,",
+              "color": "dark_gray",
+              "italic": true
+            },
+            {
+              "text": "creating a blast of damaging energy.",
+              "color": "dark_gray",
+              "italic": true
+            },
       {
         "text": " "
       },
@@ -161,7 +161,7 @@
         "italic": false
       },
       {
-        "text": "10 Attack Damage",
+        "text": "0 Attack Damage",
         "color": "blue",
         "italic": false
       },

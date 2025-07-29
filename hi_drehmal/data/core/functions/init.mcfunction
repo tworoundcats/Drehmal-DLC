@@ -1176,3 +1176,7 @@ scoreboard objectives add brkNetherQuartz minecraft.mined:minecraft.nether_quart
 scoreboard objectives add brkAncientDebris minecraft.mined:minecraft.ancient_debris
 
 scoreboard objectives add destiny_damage minecraft.custom:minecraft.damage_dealt
+
+bossbar add asc " "
+scoreboard objectives add gamble dummy
+scoreboard objectives add clock dummy

@@ -16,7 +16,6 @@ execute positioned 4723 153 5325 if entity @e[tag=frenzy_shard,distance=..0.5,ty
 
 
 
-
 scoreboard players add @e[tag=frenzy_fire] num 1
 execute as @e[tag=frenzy_fire,scores={num=7..}] at @s run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 10 0
 execute as @e[tag=frenzy_fire,scores={num=14..}] at @s run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 10 0

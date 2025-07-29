@@ -227,3 +227,5 @@ execute if score #1S timer matches 0 store result score #worldtime2 timer run ti
 
 
 execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. unless score #starfallen bool matches 1 run function dlc:starfall/summon
+
+execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main

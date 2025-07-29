@@ -1,7 +1,7 @@
 # i was gonna do a more complex system for this but we don't have time
 function core:rng
 scoreboard players operation #rand temp %= #6 const
-execute unless score #gotprox bool matches 1 run scoreboard players remove #rand temp 1
+execute unless score #gotprox bool matches 1 if score #rand temp matches 5 run scoreboard players remove #rand temp 1
 
 
 # maelruhn king/toamm lore book
