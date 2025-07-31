@@ -222,10 +222,18 @@ execute if score #1S timer matches 1 store result score #daycount2 timer run tim
 execute if score #1S timer matches 1 if score #daycount2 timer > #daycount3 timer run function dlc:zul/update
 execute if score #1S timer matches 1 run scoreboard players operation #daycount3 timer = #daycount2 timer
 
+execute if score #1S timer matches 1 store result score #daycount5 timer run time query day
+execute if score #1S timer matches 1 run scoreboard players operation #daycount5 timer %= #16 const
+
 execute if score #starfallen bool matches 1 if score #worldtime2 timer matches 17800..17990 run scoreboard players reset #starfallen bool
 execute if score #1S timer matches 0 store result score #worldtime2 timer run time query daytime
 
 
-execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. unless score #starfallen bool matches 1 run function dlc:starfall/summon
+execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. unless score #daycount5 timer matches 15 unless score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon
+
+execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon_1
+
+execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 15 unless score #starfallen bool matches 1 run function dlc:starfall/summon_2
+
 
 execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main

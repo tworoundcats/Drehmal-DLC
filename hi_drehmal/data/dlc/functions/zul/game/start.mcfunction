@@ -1,0 +1,2 @@
+execute at @e[type=dlc:collector] run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" Very well Seeker... Three cards lie before you, their faces hidden. One is the Ace. There is no skill here, only fate. Make your choice."}]
+execute at @e[type=dlc:collector] run playsound minecraft:dcustom.entity.villager.ambient player @a ~ ~ ~ 1 0

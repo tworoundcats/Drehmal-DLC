@@ -33,9 +33,7 @@ execute if predicate players:holding/daybreak run function players:items/gauntle
 
 execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=bleed,scores={bleed=5..}] run function players:items/hangyaku/damage
 
-execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run effect clear @s extraalchemy:recall
-execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run effect clear @s glowing
-execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run tag @s remove hexed
+execute as @e[type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=hexed] run function players:items/hexed/reset
 
 execute at @s as @e[type=piglin,tag=neutral,tag=!hostile,distance=..8,nbt={HurtTime:10s}] run tag @s add hostile
 execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag @s remove friend_of_mahkar2

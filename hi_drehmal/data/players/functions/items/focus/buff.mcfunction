@@ -13,8 +13,7 @@ execute as @s if entity @s[tag=focus] at @s run attribute @s minecraft:generic.a
 
 execute if predicate players:crouch if score @s focus_timer matches 0.. run scoreboard players add @s focus_timer 1
 execute unless predicate players:crouch run scoreboard players set @s focus_timer 0
-execute if predicate players:crouch if score @s focus_timer matches 40 run heal @s 3
-execute if predicate players:crouch if score @s focus_timer matches 40 run effect give @s minecraft:saturation 2 0 true
+execute if predicate players:crouch if score @s focus_timer matches 40 run heal @s 2
 execute if predicate players:crouch if score @s focus_timer matches 41.. run scoreboard players set @s focus_timer 0
 
 execute if predicate players:crouch if score @s focus_timer matches 0.. run particle minecraft:electric_spark ~ ~1 ~ 0.6 0.6 0.6 0.1 1
@@ -27,8 +26,8 @@ execute if predicate players:crouch if score @s focus_timer matches 40.. run pla
 execute if predicate players:crouch if score @s focus_timer matches 40.. run playsound minecraft:block.enchantment_table.use player @s ~ ~ ~ 1 0.9
 execute if predicate players:crouch if score @s focus_timer matches 40.. run particle minecraft:end_rod ~ ~1 ~ 0.3 0.6 0.3 0.1 20 normal
 
-execute as @s[nbt={HurtTime:9s}] if predicate players:crouch run scoreboard players set @s focus_timer 0
-execute as @s[nbt={HurtTime:9s}] if predicate players:crouch run particle minecraft:smoke ~ ~1 ~ 0.4 0.6 0.4 0.05 70 normal
-execute as @s[nbt={HurtTime:9s}] if predicate players:crouch run playsound minecraft:entity.player.attack.crit player @s ~ ~ ~ 1.5 0.7
+execute as @s[predicate=entities:hurt] if predicate players:crouch run scoreboard players set @s focus_timer 0
+execute as @s[predicate=entities:hurt] if predicate players:crouch run particle minecraft:smoke ~ ~1 ~ 0.4 0.6 0.4 0.05 70 normal
+execute as @s[predicate=entities:hurt] if predicate players:crouch run playsound minecraft:entity.player.attack.crit player @s ~ ~ ~ 1.5 0.7
 
 execute as @s unless predicate players:crouch run tag @s remove focus

@@ -1,5 +1,4 @@
 advancement revoke @s only players:interact/seashell
-advancement revoke @s only players:interact/seashell
 advancement revoke @s only players:interact/seashell_a
 
 execute as @e[type=interaction,tag=seashell] run data remove entity @s attack

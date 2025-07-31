@@ -19,12 +19,12 @@ execute if score #zul bool matches 1 run function dlc:zul/update_trades
 execute at @s positioned ~ ~0.1 ~ run particle mycelium ~ ~ ~ 0.2 0.05 0.2 0 1 normal
 
 
-execute at @s[tag=!zul_greet] at @s if entity @a[distance=..2] run function dlc:zul/greet
+execute at @s[tag=!zul_greet] at @s if entity @a[distance=..4] run function dlc:zul/greet
 execute at @s[tag=zul_greet] at @s unless entity @a[distance=..30] run tag @s remove zul_greet
 
 
 
-
+execute unless score #card_game bool matches 1 at @s as @a[distance=..3,predicate=players:holding/seeker] run function players:interact/zul
 
 
 

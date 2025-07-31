@@ -10,7 +10,7 @@ execute as @s if entity @s[tag=comp] at @s run attribute @s minecraft:generic.mo
 
 execute as @s if entity @s[tag=comp] at @s run attribute @s additionalentityattributes:generic.jump_height modifier add 986a1a0c-6601-43ee-b9b2-5d56bf36eb4a jump.height -200 add
 
-execute as @s if entity @s[tag=comp] at @s run effect give @s minecraft:resistance 1 3 true
+execute as @s if entity @s[tag=comp] at @s run effect give @s minecraft:resistance 1 2 true
 
 
 execute as @s unless entity @s[tag=comp] at @s run attribute @s minecraft:generic.attack_damage modifier remove ed4038e8-ac21-45c0-ad14-ca3025e61265

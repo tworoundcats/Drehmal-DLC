@@ -1,0 +1,4 @@
+execute at @e[type=dlc:collector,limit=1] run tellraw @a[distance=..14] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":"  Your perception is a rare gift, Seeker. Use it well..."}]
+execute at @e[type=dlc:collector,limit=1] run playsound minecraft:dcustom.entity.villager.celebrate player @a ~ ~ ~ 1 0
+execute as @e[type=dlc:collector,limit=1] at @s as @e[type=item_display,distance=..4,limit=1,sort=nearest] at @s run function dlc:zul/game/win
+execute as @e[type=dlc:collector,limit=1] at @s as @e[type=item_display,distance=..4,limit=1,sort=nearest] at @s run function dlc:zul/game/despawn

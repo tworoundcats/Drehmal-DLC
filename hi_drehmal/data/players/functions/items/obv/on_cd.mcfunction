@@ -1,3 +1,2 @@
 scoreboard players reset @s ob_cd
-execute if entity @e[tag=obscythe] run item replace entity @s weapon.mainhand with black_dye{VoidRecall:1b,display:{Name:'["",{"text":"Void Recall","italic":false,"color":"aqua"}]',Lore:['["",{"text":"Oblivion will be recalled onto this item, if it is lost then you cannot retrieve your weapon. ","color":"gray"}]']}}
-
+execute if entity @e[tag=obscythe] run item replace entity @s weapon.mainhand with black_dye{VoidRecall:1b,display:{Lore:['{"extra":[{"italic":true,"color":"dark_gray","text":"Oblivion will be recalled onto this item once held,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_gray","text":"if it is lost then you cannot retrieve your weapon. "}],"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Void Recall"}],"text":""}'}}

@@ -21,7 +21,7 @@ execute if score #rand temp matches 15 run tellraw @a[distance=..12] ["",{"text"
 execute if score #rand temp matches 16 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" This carries echoes of a power you do not yet comprehend."}]
 execute if score #rand temp matches 17 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" There are consequences to every choice. This one will be... enlightening."}]
 execute if score #rand temp matches 18 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" From a world that was, for the world that will be."}]
-playsound minecraft:entity.villager.ambient player @a ~ ~ ~ 1 0
+playsound minecraft:dcustom.entity.villager.ambient player @a ~ ~ ~ 1 0
 
 
 

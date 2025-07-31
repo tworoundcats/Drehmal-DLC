@@ -66,8 +66,8 @@ execute if score @s flesh_level matches 2 run particle dust 0.58 0.0 0.0 1 ~ ~0.
 execute if score @s flesh_level matches 3 run particle dust 0.48 0.0 0.0 1 ~ ~0.25 ~ 0.25 -0.25 0.25 9 10
 execute if score @s flesh_level matches 4 run particle dust 0.38 0.0 0.0 1 ~ ~0.25 ~ 0.275 -0.25 0.275 9 15
 
-execute as @s unless predicate players:holding/flesh run scoreboard players set @s flesh_level 0
-execute as @s unless predicate players:holding/flesh run scoreboard players set @s flesh_timer 0
+execute if score @s flesh_level matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_level
+execute if score @s flesh_timer matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_timer
 execute unless score @s flesh_timer matches ..0 run scoreboard players remove @s flesh_timer 1
 execute if score @s flesh_timer matches ..0 run scoreboard players set @s flesh_level 0
 
@@ -153,7 +153,7 @@ execute if score #5T timer matches 0 if score @s soulDamage matches 1.. run part
 # Avsohm'Kohl Stuff
 execute if entity @s[tag=wearing_avsmkohl] if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/holding_riptide
 execute if score @s fly_cm matches 1.. if entity @s[tag=wearing_avsmkohl] run function players:items/avsohm_kohl/main
-execute if predicate dlc:wings if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/wings_holding_riptide
+execute as @s[advancements={weapons:wings=true}] if predicate dlc:wings if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/wings_holding_riptide
 execute if score @s fly_cm matches 1.. if predicate dlc:wings run function players:items/avsohm_kohl/main
 execute as @s[tag=wearing_avsmkohl] if predicate dlc:wings run function players:items/avsohm_kohl/unequip
 scoreboard players reset @s fly_cm
@@ -225,7 +225,6 @@ scoreboard players operation @s wasHoldingObv = @s holdingObv
 scoreboard players reset @s holdingObv
 execute store success score @s[tag=!disabled] holdingObv if predicate players:holding/oblivion
 execute as @s[tag=disabled] run scoreboard players set @s wasHoldingObv 0
-
 execute if score @s holdingObv matches 1 if score @s wasHoldingObv matches 0 run scoreboard players set @s maxObvCooldown 800
 execute if score @s holdingObv matches 1 if score @s wasHoldingObv matches 0 if predicate players:holding/cooldown_ench run scoreboard players set @s maxObvCooldown 600
 execute if entity @s[tag=obv_active] run function players:items/obv/active
@@ -833,7 +832,7 @@ execute if predicate players:holding/first_end as @s[scores={use_first=1..}] run
 
 execute if predicate players:holding/ambition as @s[scores={use_ambition=1..}] run function players:items/ambition/main
 execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
-execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..3}] run scoreboard players remove @s tag_cd 1
+execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
 
 # -------------------------------------------------------------------
 
@@ -848,7 +847,7 @@ execute if predicate players:holding/reticent as @e[tag=parried] run function pl
 # -------------------------------------------------------------------
 
 ### Hexed King ###
-
+execute as @e[tag=hexed] if predicate entities:hurt run function players:items/hexed/reset
 execute as @e[tag=hexed] unless predicate players:recall run function players:items/hexed/loop
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboard players reset @s hex

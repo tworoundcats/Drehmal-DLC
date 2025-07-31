@@ -57,43 +57,6 @@ execute if entity @s[tag=syzygy_crawl] run function players:items/syzygy/endcraw
 
 
 
-execute if score count_all towers matches 2 as @a run fmvariable set terminus false 1
-execute if score count_all towers matches 2 as @a run fmvariable set pre25 false 0
-
-execute if score count_all towers matches 1.. as @a run fmvariable set avsal false 1
-
-execute if score count_all towers matches 8 as @a run fmvariable set pre25 false 1
-execute if score count_all towers matches 9 as @a run fmvariable set pre50 false 0
-
-execute if score count_all towers matches 16 as @a run fmvariable set pre50 false 1
-execute if score count_all towers matches 17 as @a run fmvariable set pre75 false 0
-
-execute if score count_all towers matches 24 if score lo_dahr towers matches 1 as @a run fmvariable set pre75 false 1
-execute if score lo_dahr towers matches 1 as @a run fmvariable set aphelion false 1
-
-
-execute if score count_all towers matches 25 as @a run fmvariable set core false 1
-execute if score #coretrigs int matches 1.. as @a run fmvariable set core_inside false 1
-execute if score count_all towers matches 27 if score lo_dahr towers matches 1 as @a run fmvariable set pre100 false 0
-
-
-execute if score #5mbleft bool matches 1 as @a run fmvariable set salmevir false 1
-
-execute if score #7mbright bool matches 1 as @a run fmvariable set exodus false 1
-
-execute if entity @a[tag=zul] as @a run fmvariable set zul false 1
-execute if score count_all towers matches 8 as @a run fmvariable set terminus1 false 1
-execute if score count_all towers matches 24 if score lo_dahr towers matches 1 as @a run fmvariable set lodahr false 1
-
-
-execute as @a[advancements={advancements:primordial/enter_yav=true}] run execute as @a run fmvariable set yav false 1
-execute as @a[advancements={advancements:primordial/azimuth=true}] run execute as @a run fmvariable set azimuth false 1
-execute as @a[advancements={advancements:primordial/god_machine=true}] run execute as @a run fmvariable set god_machine false 1
-execute as @a[advancements={advancements:primordial/heart=true}] run execute as @a run fmvariable set end false 1
-execute as @a[advancements={advancements:primordial/closure=true}] run execute as @a run fmvariable set primal_end false 1
-execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariable set arcane false 1
-execute as @a[advancements={weapons:olkahan=true}] run execute as @a run fmvariable set olkahan false 1
-execute as @a[advancements={weapons:providence=true}] run execute as @a run fmvariable set providence false 1
 scoreboard players enable @a dlc
 execute as @a[tag=obv_active] if score @s OBVuuid0 = #temp uuid0 if score @s OBVuuid1 = #temp uuid1 if score @s OBVuuid2 = #temp uuid2 if score @s OBVuuid3 = #temp uuid3 run function players:items/obv/end_hold
 scale reset @s
