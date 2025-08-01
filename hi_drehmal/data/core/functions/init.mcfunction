@@ -137,6 +137,9 @@ scoreboard objectives add ai_ani dummy
 scoreboard objectives add ai_state dummy
 scoreboard objectives add ai_state2 dummy
 
+scoreboard objectives add ace_hp dummy
+scoreboard objectives add ace_maxhp_old dummy
+scoreboard objectives add ace_maxhp_current dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add num dummy
 scoreboard objectives add speed dummy

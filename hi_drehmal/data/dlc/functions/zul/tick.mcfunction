@@ -18,13 +18,17 @@ execute as @s[tag=!trades] unless score #zul bool matches 1 run function dlc:zul
 execute if score #zul bool matches 1 run function dlc:zul/update_trades
 execute at @s positioned ~ ~0.1 ~ run particle mycelium ~ ~ ~ 0.2 0.05 0.2 0 1 normal
 
+execute unless score #card_game bool matches 1 at @s unless entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160] unless predicate players:in_sahd as @a[distance=..4,predicate=players:holding/seeker] run function players:interact/zul
+
+execute if entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160,tag=!decline] as @a[distance=..4,predicate=players:holding/seeker] run function dlc:zul/game/decline
+execute as @s[tag=!decline] at @s if predicate players:in_sahd as @a[distance=..4,predicate=players:holding/seeker] run function dlc:zul/game/decline_2
+
 
 execute at @s[tag=!zul_greet] at @s if entity @a[distance=..4] run function dlc:zul/greet
 execute at @s[tag=zul_greet] at @s unless entity @a[distance=..30] run tag @s remove zul_greet
 
 
 
-execute unless score #card_game bool matches 1 at @s as @a[distance=..3,predicate=players:holding/seeker] run function players:interact/zul
 
 
 

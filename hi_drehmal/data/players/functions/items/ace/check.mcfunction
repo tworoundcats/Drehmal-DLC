@@ -1,0 +1,14 @@
+execute as @s unless score @s ace_hp matches ..90 run function players:items/ace/reset_full
+execute as @s[tag=ace80] unless score @s ace_hp matches ..80 run function players:items/ace/reset
+execute as @s[tag=ace75] unless score @s ace_hp matches ..75 run function players:items/ace/reset
+execute as @s[tag=ace70] unless score @s ace_hp matches ..70 run function players:items/ace/reset
+execute as @s[tag=ace65] unless score @s ace_hp matches ..65 run function players:items/ace/reset
+execute as @s[tag=ace60] unless score @s ace_hp matches ..60 run function players:items/ace/reset
+execute as @s[tag=ace55] unless score @s ace_hp matches ..55 run function players:items/ace/reset
+execute as @s[tag=ace50] unless score @s ace_hp matches ..50 run function players:items/ace/reset
+execute as @s[tag=ace45] unless score @s ace_hp matches ..45 run function players:items/ace/reset
+execute as @s[tag=ace40] unless score @s ace_hp matches ..40 run function players:items/ace/reset
+execute as @s[tag=ace35] unless score @s ace_hp matches ..35 run function players:items/ace/reset
+execute as @s[tag=ace30] unless score @s ace_hp matches ..30 run function players:items/ace/reset
+execute as @s[tag=ace25] unless score @s ace_hp matches ..25 run function players:items/ace/reset
+execute as @s[tag=ace20] unless score @s ace_hp matches ..20 run function players:items/ace/reset

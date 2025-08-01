@@ -1,0 +1,1 @@
+scale reset pehkui:attack @s

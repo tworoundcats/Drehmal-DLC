@@ -1046,3 +1046,9 @@ execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
 execute as @e[tag=destiny] run scoreboard players add @s destiny 1
 execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
+
+
+
+
+execute if predicate players:holding/ace run function players:items/ace/main
+execute as @s[tag=ace] unless predicate players:holding/ace run function players:items/ace/main_2
