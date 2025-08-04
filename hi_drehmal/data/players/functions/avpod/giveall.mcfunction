@@ -24,6 +24,7 @@ tag @s add furtheranceMusic
 tag @s add obsolescenceMusic
 tag @s add generalsMusic
 tag @s add xorhuulMusic
+tag @s add salanyrMusic
 tag @s add duspsMusic
 tag @s add mohtaMusic
 tag @s add mossfieldMusic

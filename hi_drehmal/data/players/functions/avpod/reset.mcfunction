@@ -29,6 +29,7 @@ tag @s remove obsolescenceMusic
 tag @s remove generalsMusic
 tag @s remove furtheranceMusic
 tag @s remove xorhuulMusic
+tag @s remove salanyrMusic
 tag @s remove duspsMusic
 tag @s remove mohtaMusic
 tag @s remove mossfieldMusic

@@ -5,6 +5,7 @@ execute if entity @s[x=-2717,y=66,z=-1770,distance=..100] run function players:m
 execute if entity @s[x=-1725,y=155,z=1882,distance=..60] run function players:music/nimahj
 execute if entity @s[predicate=players:locations/shatterhorn_gulch] run function players:music/shatterhorn
 execute if entity @s[predicate=players:locations/xorhuul] run function players:music/xorhuul
+execute if entity @s[predicate=players:locations/salanyr] run function players:music/salanyr
 execute if entity @s[x=-2170,y=76,z=3659,distance=..80] run function players:music/tharxax
 execute if entity @s[x=-21,y=72,z=5273,distance=..60] run function players:music/mohta
 execute if entity @s[x=2276,y=60,z=2463,distance=..60] run function players:music/gozak

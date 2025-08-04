@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+        "items": [
+          {
+            "items": [
+              "dlc:primal_focus_empty"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:advancement/component"
+  }
+}

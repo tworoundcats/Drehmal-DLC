@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:vertebrae\"}}"
+      }
+    },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:ruinous_tablet_empty\"}}"
+      }
+    },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:primal_focus_empty\"}}"
+      }
+        },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:oblivious_thing\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:fateful_ore\"}}"
+      }
+    }
+  ]
+}

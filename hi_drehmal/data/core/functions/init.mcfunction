@@ -32,6 +32,7 @@ scoreboard objectives add furtheranceMusic dummy
 scoreboard objectives add obscolescenceMusic dummy
 
 scoreboard objectives add xorhuulMusic dummy
+scoreboard objectives add salanyrMusic dummy
 scoreboard objectives add tharxaxMusic dummy
 scoreboard objectives add mohtaMusic dummy
 scoreboard objectives add gozakMusic dummy
@@ -1029,6 +1030,9 @@ scoreboard objectives add kills totalKillCount
 scoreboard objectives add bskills totalKillCount
 scoreboard objectives add bstimer dummy
 
+team add component
+team modify component color green
+
 team add leviathan
 team modify leviathan color black
 scoreboard objectives add use_levi minecraft.used:dlc.leviathan
@@ -1063,6 +1067,10 @@ scoreboard objectives add wasHoldingAvs dummy
 scoreboard objectives add zenith_slash dummy
 scoreboard objectives add drop_zenith minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add zenith_cd dummy
+
+scoreboard objectives add holdingob dummy
+scoreboard objectives add wasHoldingOb dummy
+scoreboard objectives add drop_ob minecraft.dropped:minecraft.black_dye
 
 scoreboard objectives add holdingLevi dummy
 scoreboard objectives add wasHoldingLevi dummy
@@ -1183,3 +1191,5 @@ scoreboard objectives add destiny_damage minecraft.custom:minecraft.damage_dealt
 bossbar add asc " "
 scoreboard objectives add gamble dummy
 scoreboard objectives add clock dummy
+
+team modify asc friendlyFire false

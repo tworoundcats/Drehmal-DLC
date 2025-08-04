@@ -5,5 +5,6 @@ execute unless predicate players:holding/empty run tag @s add asc_cd
 execute if predicate players:holding/asc run setblock 1000000 16 1000000 air
 
 scoreboard players operation @s asc_cool = @s maxAscCooldown
-function players:items/asc/proj
+execute unless predicate players:holding/asc2 run function players:items/asc/proj
+execute if predicate players:holding/asc2 run function players:items/asc/proj2
 execute if predicate players:holding/asc run tag @s remove asc_cd

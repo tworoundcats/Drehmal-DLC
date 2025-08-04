@@ -41,12 +41,6 @@ execute if entity @s[tag=burntPalaceMusic] run data modify storage drehmal:playe
 execute if entity @s[tag=kilnMusic] run data modify storage drehmal:players tempSongList append value 30
 execute if entity @s[tag=osseinMusic] run data modify storage drehmal:players tempSongList append value 31
 execute if entity @s[tag=foundryMusic] run data modify storage drehmal:players tempSongList append value 32
-execute if entity @s[tag=shatterhornMusic] run data modify storage drehmal:players tempSongList append value 57
-execute if entity @s[tag=xorhuulMusic] run data modify storage drehmal:players tempSongList append value 58
-execute if entity @s[tag=furtheranceMusic] run data modify storage drehmal:players tempSongList append value 59
-execute if entity @s[tag=obsolescenceMusic] run data modify storage drehmal:players tempSongList append value 60
-execute if entity @s[tag=generalsMusic] run data modify storage drehmal:players tempSongList append value 61
-
 execute if entity @s[tag=nascenceMusic] run data modify storage drehmal:players tempSongList append value 33
 execute if entity @s[tag=gloomMusic] run data modify storage drehmal:players tempSongList append value 34
 execute if entity @s[tag=tributeMusic] run data modify storage drehmal:players tempSongList append value 35
@@ -71,4 +65,10 @@ execute if entity @s[tag=ultvaMusic] run data modify storage drehmal:players tem
 execute if entity @s[tag=hotvMusic] run data modify storage drehmal:players tempSongList append value 54
 execute if entity @s[tag=emissaryMusic] run data modify storage drehmal:players tempSongList append value 55
 execute if entity @s[tag=creditsMusic] run data modify storage drehmal:players tempSongList append value 56
+execute if entity @s[tag=shatterhornMusic] run data modify storage drehmal:players tempSongList append value 57
+execute if entity @s[tag=xorhuulMusic] run data modify storage drehmal:players tempSongList append value 58
+execute if entity @s[tag=furtheranceMusic] run data modify storage drehmal:players tempSongList append value 59
+execute if entity @s[tag=obsolescenceMusic] run data modify storage drehmal:players tempSongList append value 60
+execute if entity @s[tag=generalsMusic] run data modify storage drehmal:players tempSongList append value 61
+execute if entity @s[tag=salanyrMusic] run data modify storage drehmal:players tempSongList append value 62
 

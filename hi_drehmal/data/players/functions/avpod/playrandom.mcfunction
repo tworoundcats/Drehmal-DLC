@@ -75,3 +75,4 @@ execute if score @s avpod.songid matches 58 run function players:avpod/tracks/xo
 execute if score @s avpod.songid matches 59 run function players:avpod/tracks/furtherance
 execute if score @s avpod.songid matches 60 run function players:avpod/tracks/obsolescence
 execute if score @s avpod.songid matches 61 run function players:avpod/tracks/generals
+execute if score @s avpod.songid matches 62 run function players:avpod/tracks/salanyr

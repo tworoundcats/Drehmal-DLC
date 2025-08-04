@@ -30,7 +30,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:command_block",
+            "name": "dlc:t2",
             "functions": [
               {
                 "function": "minecraft:set_nbt",

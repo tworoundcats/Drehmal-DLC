@@ -237,3 +237,35 @@ execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #w
 
 
 execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main
+
+# Asc Dungeon
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,type=armor_stand] at @s positioned ~ ~2 ~ run function particle:asc/animate
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if predicate players:holding/inert_tablet run function dlc:tablet_start
+execute if score #asc bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset
+
+
+# --- Foundry Anim ---
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis,type=armor_stand] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
+
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered,type=armor_stand] if predicate players:holding/primal_focus run function dlc:foundry_power 
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
+
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3
+
+
+# --- Burnt Generals Button Message ---
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=!bg_questholder,distance=..10] actionbar {"text":"A malevolent aura emanates from the central brazier...","color":"dark_red"}
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=bg_questholder,distance=..10] actionbar {"text":"A presence stirs, waiting to be called forth...","color":"dark_red"}
+
+
+
+# --- Terminus Animation ---
+execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run scoreboard players add #station timer 1
+execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] as @e[tag=visual,distance=..5] at @s positioned ~ ~1.25 ~ if score #station timer matches 6.. run function particle:term/animate
+execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] if score #station timer matches 6.. run scoreboard players reset #station timer
+execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run function dlc:modify/main
+
+
+# --- Trial Legendary - Ihted Spawn ---
+
+execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn

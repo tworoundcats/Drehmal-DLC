@@ -998,53 +998,28 @@ execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=play
 # --- Oblivion Puzzle ---
 execute unless score #ob_finish bool matches 2 as @a at @s if predicate players:locations/oblivion run function dlc:ob_upgrade/puzzle_main
 
-# --- Terminus Animation ---
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run scoreboard players add #station timer 1
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] as @e[tag=visual,distance=..5] at @s positioned ~ ~1.25 ~ if score #station timer matches 6.. run function particle:term/animate
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] if score #station timer matches 6.. run scoreboard players reset #station timer
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run function dlc:modify/main
 
 # --- Frenzy Upgrade ---
 execute at @s if predicate players:locations/sahd_forge as @e[predicate=players:is_fateful] at @s if block ~ ~-4 ~ lava run function dlc:frenzy_upgrade/initial
 
 # --- B52 ---
-execute if predicate players:broke_ore run function players:items/b52/broke_block
+execute if predicate players:holding/b52 if predicate players:broke_ore run function players:items/b52/broke_block
 
-# --- Burnt Generals Button Message ---
-execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=!bg_questholder,distance=..10] actionbar {"text":"A malevolent aura emanates from the central brazier...","color":"dark_red"}
-execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=bg_questholder,distance=..10] actionbar {"text":"The Burnt Generals eagerly await your summons.","color":"dark_red"}
-
-# --- Trial Legendary - Ihted Spawn ---
-
-execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
-
-#execute if score #daycount2 timer matches 0 run say hi
-
-# --- Foundry Anim ---
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis,type=armor_stand] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
-
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered,type=armor_stand] if predicate players:holding/primal_focus run function dlc:foundry_power 
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
-
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3
-
-
-# Asc Dungeon
-execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,type=armor_stand] at @s positioned ~ ~2 ~ run function particle:asc/animate
-execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if predicate players:holding/inert_tablet run function dlc:tablet_start
-execute if score #asc bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset
-
-
+# waterspiked crab
 execute as @s[tag=waterspiked] run function entities:ai/waterspiked/bleed
 
+# mythic abilities disabler
 execute as @s[tag=disabled] run function players:misc/disabled
 
-
+# generals music
 execute as @s[tag=generals_music,tag=!finished] if predicate players:in_generals_arena unless score @s playingMusic matches 1.. at @s run function players:music/generals
 execute as @s[tag=generals_music] unless predicate players:in_generals_arena run tag @s remove generals_music
 
+
+# zul spawning
 execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
 
+# providence cd
 execute as @e[tag=destiny] run scoreboard players add @s destiny 1
 execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
 execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
@@ -1054,3 +1029,10 @@ execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
 # Ace
 execute if predicate players:holding/ace run function players:items/ace/main
 execute as @s[tag=ace] unless predicate players:holding/ace run function players:items/ace/main_2
+
+
+scoreboard players operation @s wasHoldingOb = @s holdingob
+scoreboard players reset @s holdingob
+execute store success score @s[tag=!disabled] holdingob if predicate players:holding/voidrecall
+execute if score @s wasHoldingOb matches 1 if score @s drop_ob matches 1 run function players:items/obv/misfire3
+scoreboard players reset @s drop_ob

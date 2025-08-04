@@ -33,11 +33,6 @@ execute if score @s avpod.songid matches 29 run data merge storage drehmal:playe
 execute if score @s avpod.songid matches 30 run data merge storage drehmal:players {avpodTempText:["The Kiln","The Kiln of Virtuo","4:08"]}
 execute if score @s avpod.songid matches 31 run data merge storage drehmal:players {avpodTempText:["True Catastrophe","Ossein","3:01"]}
 execute if score @s avpod.songid matches 32 run data merge storage drehmal:players {avpodTempText:["Earn Your Glory","The Foundry","6:03"]}
-execute if score @s avpod.songid matches 57 run data merge storage drehmal:players {avpodTempText:["Fate of the Fettered","Shatterhorn Gulch", "2:43"]}
-execute if score @s avpod.songid matches 58 run data merge storage drehmal:players {avpodTempText:["Xor'huul","Xor'Huul", "1:53"]}
-execute if score @s avpod.songid matches 59 run data merge storage drehmal:players {avpodTempText:["Furtherance","Red Dawn", "1:43"]}
-execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:13"]}
-execute if score @s avpod.songid matches 61 run data merge storage drehmal:players {avpodTempText:["Mark of the Burnt","The Burnt Generals", "2:40"]}
 execute if score @s avpod.songid matches 33 run data merge storage drehmal:players {avpodTempText:["Nascence","Lodahr Ambience","2:07"]}
 execute if score @s avpod.songid matches 34 run data merge storage drehmal:players {avpodTempText:["Gloom","Lodahr Ambience","2:31"]}
 execute if score @s avpod.songid matches 35 run data merge storage drehmal:players {avpodTempText:["Tribute","Lodahr Ambience","3:08"]}
@@ -62,6 +57,12 @@ execute if score @s avpod.songid matches 53 run data merge storage drehmal:playe
 execute if score @s avpod.songid matches 54 run data merge storage drehmal:players {avpodTempText:["Before the Storm","The Heart of the Void","3:33"]}
 execute if score @s avpod.songid matches 55 run data merge storage drehmal:players {avpodTempText:["At The Edge of Oblivion","The Emissary of the Void","4:51"]}
 execute if score @s avpod.songid matches 56 run data merge storage drehmal:players {avpodTempText:["Death of a World","The End","4:34"]}
+execute if score @s avpod.songid matches 57 run data merge storage drehmal:players {avpodTempText:["Fate of the Fettered","Shatterhorn Gulch", "2:43"]}
+execute if score @s avpod.songid matches 58 run data merge storage drehmal:players {avpodTempText:["Xor'Huul","Xor'Huul", "1:53"]}
+execute if score @s avpod.songid matches 59 run data merge storage drehmal:players {avpodTempText:["Furtherance","Red Dawn", "1:43"]}
+execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:13"]}
+execute if score @s avpod.songid matches 61 run data merge storage drehmal:players {avpodTempText:["Mark of the Burnt","The Burnt Generals", "2:40"]}
+execute if score @s avpod.songid matches 62 run data merge storage drehmal:players {avpodTempText:["Sal'Anyr","Sal'Anyr", "1:46"]}
 
 execute unless entity @s[tag=playlist] run tellraw @s {"text":"No Playlist Selected","italic":false,"color":"gray"}
 execute if entity @s[tag=playlist] run function players:avpod/playlists/play/dispplaylist

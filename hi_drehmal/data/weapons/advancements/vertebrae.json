@@ -12,5 +12,8 @@
         ]
       }
     }
-}
+  },
+  "rewards": {
+    "function": "weapons:advancement/component"
+  }
 }

@@ -18,7 +18,7 @@ execute if entity @s[scores={ob_throw=80}] run scoreboard players set @s ob_fini
 execute if entity @s[scores={ob_throw=80}] run scoreboard players set @s ob_throw 2
 execute if entity @s[scores={ob_finish=1..2}] run tp @s ^ ^ ^0.5 facing entity @p[tag=ob_scythe]
 execute if entity @s[scores={ob_throw=..2}] rotated as @p[tag=ob_scythe] run tp @s ^ ^ ^1 ~ ~
-execute if entity @s[scores={ob_throw=..80}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 4 generic by @p[tag=ob_scythe]
+execute if entity @s[scores={ob_throw=..80}] as @s run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 6 generic by @p[tag=ob_scythe]
 execute if entity @s[scores={ob_throw=4}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
 execute if entity @s[scores={ob_throw=8}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
 execute if entity @s[scores={ob_throw=12}] run playsound minecraft:dcustom.item.trident.throw player @a ~ ~ ~ 1 0
