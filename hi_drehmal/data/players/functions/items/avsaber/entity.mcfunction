@@ -14,7 +14,7 @@ execute if entity @s[scores={zenith_slash=..1}] rotated as @p[tag=zenith_send] r
 execute if entity @s[scores={zenith_slash=2..}] as @e[tag=zenith_beam] run execute positioned ^-0.7 ^ ^ run function players:items/avsaber/particle_beam
 execute if entity @s[scores={zenith_slash=12..}] run particle flash ^ ^ ^ 0 0 0 0 1 normal @a 
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 15 minecraft:zenith
-execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s mcdar:stunned 3 2 true
+execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune] mcdar:stunned 3 2 true
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s glowing 3 2 true
 
 

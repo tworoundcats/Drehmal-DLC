@@ -8,6 +8,10 @@ playsound minecraft:dcustom.block.ender_chest.close player @a ~ ~ ~ 1 2
 playsound minecraft:dcustom.item.shield.break player @a ~ ~ ~ 1 2
 execute unless block ~ ~ ~0.4 #core:empty run function projectiles:fancy/zplane
 execute unless block ~ ~ ~-0.4 #core:empty run function projectiles:fancy/zplane
-scoreboard players add @s asc_bounces 10
-execute if score @s time_limit <= @s asc_bounces run kill @s
+scoreboard players add @s[tag=!asc_beam2] asc_bounces 10
+scoreboard players add @s[tag=asc_beam2] asc_bounces 5
+execute if score @s time_limit <= @s[tag=!asc_beam2] asc_bounces run kill @s
+execute if score @s time_limit <= @s[tag=asc_beam2] asc_bounces run function projectiles:out_of_time2
 scoreboard players set #bounced? temp 1
+scoreboard players reset @s ai_state2
+tag @s add bounce

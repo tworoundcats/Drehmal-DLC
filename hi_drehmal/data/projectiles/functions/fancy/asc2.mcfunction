@@ -60,7 +60,7 @@ scoreboard players reset #bounced? temp
 
 execute at @s if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!invul2,distance=..20,type=!player] if score #1S timer matches 0 run function projectiles:fancy/spawn_particle
 
-execute at @s unless block ^ ^ ^0.3 #core:empty run function projectiles:fancy/asc_bounce
+execute at @s unless block ^ ^ ^0.4 #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^0.3 ^ ^0.3 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^-0.3 ^ ^0.3 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^0.6 ^ ^0.15 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce
@@ -70,7 +70,18 @@ execute at @s unless score #bounced? temp matches 1 positioned ^-0.9 ^ ^ unless 
 
 #execute if score @s time_limit matches ..0 run kill @s
 #execute if score @s asc_bounces matches 4.. run kill @s
+execute as @p[predicate=players:holding/asc2,predicate=players:sneak] at @s run data modify entity @e[tag=asc_beam2,limit=1,sort=nearest,tag=!bounce] Rotation set from entity @s Rotation
 
-execute as @a[predicate=players:holding/asc2] at @s anchored eyes run teleport @e[tag=asc_beam2] ^ ^ ^0.2
+execute as @s[tag=bounce] run scoreboard players add @s ai_state2 1
+execute if score @s ai_state2 matches 10 run tag @s remove bounce
+execute unless entity @p[predicate=players:holding/asc2,predicate=players:sneak] as @s run teleport @s ^ ^ ^0.2
+execute if entity @p[predicate=players:holding/asc2,predicate=players:sneak] as @s[tag=!bounce] run teleport @s ^ ^ ^0.3
+execute if entity @p[predicate=players:holding/asc2,predicate=players:sneak] as @s[tag=bounce] run teleport @s ^ ^ ^0.2
+execute as @e[tag=invul2] run scoreboard players add @s HovadTimer 1
+execute as @e[tag=invul2,scores={HovadTimer=15..}] run tag @s remove invul2
+execute as @e[scores={HovadTimer=15..}] run scoreboard players reset @s HovadTimer
+
+execute if score #1S timer matches 0 at @s as @s run playsound simplyswords:dark_activation_distorted player @a ~ ~ ~ 0.1 0
+
 execute as @e[tag=invul] run scoreboard players add @s InvulFrame 1
 execute as @e[tag=invul,scores={InvulFrame=30..}] run function projectiles:hurt_entity_cd

@@ -4,6 +4,9 @@ scoreboard players reset #top? temp
 execute if entity @s[tag=asc_beam] positioned ~-5 ~ ~-5 store result score #top? temp if entity @a[tag=temp_va_check,dx=10,dy=0,dz=10]
 execute unless entity @s[tag=asc_beam] positioned ~-5 ~1.2 ~-5 store result score #top? temp if entity @a[tag=temp_va_check,dx=10,dy=0,dz=10]
 
+execute if entity @s[tag=asc_beam2] positioned ~-5 ~ ~-5 store result score #top? temp if entity @a[tag=temp_va_check,dx=10,dy=0,dz=10]
+execute unless entity @s[tag=asc_beam2] positioned ~-5 ~1.2 ~-5 store result score #top? temp if entity @a[tag=temp_va_check,dx=10,dy=0,dz=10]
+
 execute if score #top? temp matches 1 at @s run function projectiles:enemy/va/bounce1
 execute unless score #top? temp matches 1 run execute store result entity @s Rotation[1] float -1 run data get entity @s Rotation[1]
 
@@ -16,3 +19,5 @@ execute at @s run teleport @s ^ ^ ^0.5
 
 scoreboard players set @s va.iframes 4
 execute if entity @s[tag=asc_beam] run scoreboard players set @s va.iframes 10
+
+execute if entity @s[tag=asc_beam2] run scoreboard players set @s va.iframes 10
