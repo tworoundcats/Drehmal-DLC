@@ -1021,16 +1021,18 @@ execute unless score #ihted_spellforged_spawn bool matches 1 run execute in mine
 #execute if score #daycount2 timer matches 0 run say hi
 
 # --- Foundry Anim ---
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis,type=armor_stand] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
 
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered] if predicate players:holding/primal_focus run function dlc:foundry_power 
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered,type=armor_stand] if predicate players:holding/primal_focus run function dlc:foundry_power 
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
 
-execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3
+execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3
 
 
-execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,tag=!powered] at @s positioned ~ ~2 ~ run function particle:asc/animate
-execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,tag=!powered] if predicate players:holding/inert_tablet run function dlc:tablet_start
+# Asc Dungeon
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,type=armor_stand] at @s positioned ~ ~2 ~ run function particle:asc/animate
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if predicate players:holding/inert_tablet run function dlc:tablet_start
+execute if score #asc bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset
 
 
 execute as @s[tag=waterspiked] run function entities:ai/waterspiked/bleed
@@ -1049,6 +1051,6 @@ execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
 
 
 
-
+# Ace
 execute if predicate players:holding/ace run function players:items/ace/main
 execute as @s[tag=ace] unless predicate players:holding/ace run function players:items/ace/main_2

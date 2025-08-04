@@ -6,19 +6,10 @@ execute as @s[scores={bleed=20}] run playsound minecraft:dcustom.entity.turtle.e
 
 execute as @s[scores={bleed=40}] run damage @s 3 generic
 execute as @s[scores={bleed=40}] positioned ~ ~1 ~ run particle block redstone_block ~ ~ ~ 0.4 0.3 0.4 0.1 60
-execute as @s[scores={bleed=40}] run playsound minecraft:dcustom.entity.turtle.egg_break player @a ~ ~ ~ 1 0
+execute as @s[scores={bleed=40}] run playsound minecraft:dcustom.entity.turtle.egg_break player @a ~ ~ ~ 1 0.5
 
 execute as @s[scores={bleed=60}] run damage @s 3 generic
 execute as @s[scores={bleed=60}] positioned ~ ~1 ~ run particle block redstone_block ~ ~ ~ 0.4 0.3 0.4 0.1 60
 execute as @s[scores={bleed=60}] run playsound minecraft:dcustom.entity.turtle.egg_break player @a ~ ~ ~ 1 0
 
-execute as @s[scores={bleed=80}] run damage @s 3 generic
-execute as @s[scores={bleed=80}] positioned ~ ~1 ~ run particle block redstone_block ~ ~ ~ 0.4 0.3 0.4 0.1 60
-execute as @s[scores={bleed=80}] run playsound minecraft:dcustom.entity.turtle.egg_break player @a ~ ~ ~ 1 0
-
-execute as @s[scores={bleed=100}] run damage @s 3 generic
-execute as @s[scores={bleed=100}] positioned ~ ~1 ~ run particle block redstone_block ~ ~ ~ 0.4 0.3 0.4 0.1 60
-execute as @s[scores={bleed=100}] run playsound minecraft:dcustom.entity.turtle.egg_break player @a ~ ~ ~ 1 0
-execute as @s[scores={bleed=100}] as @s run tag @s remove waterspiked
-
-execute as @s[scores={bleed=100..}] run scoreboard players reset @s bleed
+execute as @s[scores={bleed=60..}] run scoreboard players reset @s bleed

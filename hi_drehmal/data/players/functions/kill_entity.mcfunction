@@ -19,3 +19,5 @@ execute if predicate players:holding/providence if score @s destiny_damage match
 scoreboard players reset @s destiny_damage
 
 execute if predicate players:holding/verdant run function players:items/verdant/tag
+
+execute if predicate players:holding/asc run function dlc:asc/kill/1

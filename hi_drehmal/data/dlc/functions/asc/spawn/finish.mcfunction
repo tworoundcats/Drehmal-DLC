@@ -1,0 +1,9 @@
+execute as @e[tag=asc_wave] at @s run tp ~ ~-100 ~
+execute as @e[tag=asc_wave] run data merge entity @s {Health:0}
+bossbar set asc visible false
+execute as @e[tag=asc_vis] at @s run playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 2 0
+execute as @e[tag=asc_vis] at @s run particle end_rod ~ ~1.5 ~ 0.2 0.2 0.2 0.4 1000
+execute as @e[tag=asc_vis] at @s run data modify entity @s DisabledSlots set value 62
+execute as @e[tag=asc_vis] at @s run data remove entity @s Marker
+execute as @e[tag=asc_vis] at @s run item replace entity @s weapon.mainhand with dlc:ruinous_tablet{HideFlags:32,Ruinous:1b,display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"In these tablets, Saint Raene designed the first of"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"the Necrotic Engines, derived from dreams of"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"memories not her own - vivid images of ancient"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"obsidian daggers, jagged teeth, and endless death."}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"She allowed the whispers to guide her then, but"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"never could rid herself of a nagging question:"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"  "}],"text":""}','{"extra":[{"italic":true,"color":"dark_gray","text":"How could one whisper from a space bereft of life?"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}','{"extra":[{"italic":false,"color":"gold","text":"Mythical"}],"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"gold","text":"Ruinous Tablet"}],"text":""}'}}
+scoreboard players reset #asc bool

@@ -67,6 +67,7 @@ scale reset @s
 tag @s remove freefall
 
 tag @s remove disabled
+tag @s remove waterspiked
 scoreboard players reset @s spm.x
 
 
