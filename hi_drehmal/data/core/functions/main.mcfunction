@@ -248,6 +248,7 @@ execute if score #asc bool matches 1 positioned -555.46 32.00 4997.47 unless ent
 execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..50] as @e[tag=foundry_vis,type=armor_stand] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
 
 execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=!powered,type=armor_stand] if predicate players:holding/primal_focus run function dlc:foundry_power 
+
 execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] unless predicate players:holding/primal_focus run function dlc:foundry_power2 
 
 execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag=foundry_display,tag=powered,type=armor_stand] if score #fdry_finished bool matches 1 if predicate players:holding/primal_focus run function dlc:foundry_power3

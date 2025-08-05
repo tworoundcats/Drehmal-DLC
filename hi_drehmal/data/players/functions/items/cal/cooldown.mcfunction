@@ -9,7 +9,7 @@ execute unless score @s cal_cool matches 2.. run title @s actionbar {"text":"Tru
 execute unless score @s cal_cool matches 2.. run scoreboard players reset @s cal_cd
 
 #timer for secondary effect
-scoreboard players add @s cal_cd 1
+#scoreboard players add @s cal_cd 1
 
-execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Calamity ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] as @s[scores={cal_cd=70..}] run function players:items/cal/on_cd
+#execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Calamity ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] as @s[scores={cal_cd=70..}] run function players:items/cal/on_cd
 

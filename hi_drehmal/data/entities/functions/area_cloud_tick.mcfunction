@@ -13,3 +13,4 @@ execute if entity @s[tag=warring] at @s run function particle:effects/black
 execute if entity @s[tag=trap2] run function entities:ai/revenant/trap
 execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/blind
 execute if entity @s[tag=lampjaw_orb] run function entities:ai/lampjaw/orb_tick
+execute if entity @s[tag=cal_spike] run function players:items/cal/spike

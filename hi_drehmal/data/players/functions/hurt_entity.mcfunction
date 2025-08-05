@@ -41,4 +41,6 @@ execute at @s if entity @e[type=piglin,tag=hostile,limit=1,sort=nearest] run tag
 execute if predicate players:holding/providence if score @s destiny_damage matches 40.. as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s},tag=!destiny] at @s run function players:items/providence/main
 scoreboard players reset @s destiny_damage
 
+execute if predicate players:holding/calamity2 run tag @s remove dash_cd
+
 advancement revoke @s only players:hurt_entity

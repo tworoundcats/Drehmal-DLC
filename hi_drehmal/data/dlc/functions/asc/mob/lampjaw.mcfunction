@@ -4,4 +4,5 @@ playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 3 2
 playsound minecraft:dcustom.entity.evoker.prepare_summon player @a ~ ~ ~ 5 0
 particle minecraft:squid_ink ~ ~1 ~ 0.3 0.3 0.3 0.2 150 force
 particle minecraft:flash ~ ~1 ~ 0.3 0.3 0.3 0.2 1 force
+effect give @e[tag=lampjaw] glowing infinite 255 true
 tellraw @a ["","[",{"text":"Ascendant Voice","color":"dark_aqua"},"] A hand of darkness arrives."]
