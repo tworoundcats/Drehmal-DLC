@@ -17,6 +17,6 @@ kill @e[type=marker,tag=starfall_tag]
 kill @e[type=marker,tag=starfall_tag2]
 kill @e[type=marker,tag=starfall_tag3]
 kill @e[type=marker,tag=starfall_tag4]
-tellraw @a[distance=..400] {"text":"A shower of shing lights appear in the sky.","color":"dark_gray","bold":false,"italic":true}
+tellraw @a[distance=..400] {"text":"A shower of shining lights descends from the sky.","color":"dark_gray","bold":false,"italic":true}
 
 scoreboard players set #starfallen bool 1
