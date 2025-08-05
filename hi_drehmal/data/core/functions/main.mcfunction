@@ -255,8 +255,8 @@ execute positioned -3293.01 112.16 1595.00 if entity @a[distance=..15] as @e[tag
 
 
 # --- Burnt Generals Button Message ---
-execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=!bg_questholder,distance=..10] actionbar {"text":"A malevolent aura emanates from the central brazier...","color":"dark_red"}
-execute positioned -2851 41 5331 if entity @a[distance=..10] run execute if score #generals_dead? bool matches 0 run title @a[tag=bg_questholder,distance=..10] actionbar {"text":"A presence stirs, waiting to be called forth...","color":"dark_red"}
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute unless score #generals_dead? bool matches 1 run title @a[tag=!bg_questholder,distance=..10] actionbar {"text":"A malevolent aura emanates from the central brazier...","color":"dark_red"}
+execute positioned -2851 41 5331 if entity @a[distance=..10] run execute unless score #generals_dead? bool matches 1 run title @a[tag=bg_questholder,distance=..10] actionbar {"text":"A presence stirs, waiting to be called forth...","color":"dark_red"}
 
 
 
