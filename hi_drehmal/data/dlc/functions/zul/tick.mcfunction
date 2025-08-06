@@ -1,6 +1,8 @@
 data modify entity @s[tag=!spawned_once] Invulnerable set value 1b
 data modify entity @s[tag=!spawned_once] CustomName set value '{"extra":[{"bold":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Zul, Chronicler’s Envoy"}],"text":""}'
 data modify entity @s[tag=!spawned_once] PersistenceRequired set value 1b
+execute as @s[tag=!spawned_once] at @s run particle smoke ~ ~ ~ 0.2 1 0.2 0 100 force
+
 tag @s[tag=!spawned_once] add zul
 execute as @s[tag=zul_cd] run scoreboard players add @s ai_timer 1
 execute if score @s ai_timer matches 100 run tag @s remove zul_cd

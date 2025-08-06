@@ -7,3 +7,5 @@ execute if score #rand temp matches 321..2800 run function players:items/provide
 execute if score #rand temp matches 2801..7500 run function players:items/providence/common
 
 tag @s add destiny
+
+execute as @a[predicate=players:holding/providence] run function players:items/providence/flash

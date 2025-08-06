@@ -14,3 +14,5 @@ execute if score #rand temp matches 90..99 run summon item ~ ~ ~ {Item:{id:"dlc:
 execute if score #rand temp matches 90..99 at @s run particle minecraft:dust 0.392 0.965 0.937 0.7 ~ ~ ~ 0.2 0.2 0.2 0 10 force
 
 execute at @s run playsound dcustom.entity.experience_orb.pickup player @a ~ ~ ~ 1 1
+
+execute as @a[predicate=players:holding/providence] run function players:items/providence/flash

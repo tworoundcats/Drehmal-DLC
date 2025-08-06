@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:ace"
+    },
+    "title": {
+      "text": "Fortune's Favorite",
+      "color": "gold",
+      "bold": false
+    },
+    "description": {
+      "text": "You were not fooled by the lesser cards, seeing only the one that truly mattered. - Win a game of Fate against Zul.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dlc:advancement/zul_card"
+  },
+  "parent": "dlc:root"
+}

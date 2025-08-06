@@ -8,3 +8,4 @@ execute if score #rand temp matches 50.. at @s run particle minecraft:smoke ~ ~0
 
 execute at @s run playsound dcustom.block.ender_chest.open player @a ~ ~ ~ 2 0
 
+execute as @a[predicate=players:holding/providence] run function players:items/providence/flash

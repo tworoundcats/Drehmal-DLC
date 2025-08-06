@@ -60,7 +60,7 @@ scoreboard players reset #bounced? temp
 
 execute at @s if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!invul2,distance=..20,type=!player] if score #1S timer matches 0 run function projectiles:fancy/spawn_particle
 
-execute at @s unless block ^ ^ ^0.4 #core:empty run function projectiles:fancy/asc_bounce
+execute at @s unless block ^ ^ ^0.6 #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^0.3 ^ ^0.3 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^-0.3 ^ ^0.3 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^0.6 ^ ^0.15 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce

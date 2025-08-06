@@ -1,14 +1,4 @@
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-execute at @s if block ^ ^-0.1 ^ #core:empty2 run tp ~ ~-0.05 ~
-
+execute at @s if block ^ ^-0.1 ^ #core:empty2 run function players:items/cal/spike_down
 
 
 scoreboard players add @s timer 1
@@ -19,6 +9,3 @@ execute if score @s timer matches 1..20 run particle block dirt ~ ~ ~ 0.35 0 0.3
 
 
 execute if score @s timer matches 21 run function players:items/cal/spike_summon
-
-
-

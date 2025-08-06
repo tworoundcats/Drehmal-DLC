@@ -2,6 +2,8 @@ function core:rng
 execute if score #zul_seen bool matches 1 run scoreboard players operation #rand temp %= #84 const
 execute unless score #zul_seen bool matches 1 run scoreboard players set #rand temp 1000
 
+execute unless score #gotObv3 bool matches 1 run scoreboard players set #rand temp 1001
+
 execute if score #rand temp matches 0..3 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" O dunes, O dunes."}]
 execute if score #rand temp matches 4..7 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" A gift, from someone you know."}]
 execute if score #rand temp matches 8..11 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" My will is my own. My body is not."}]
@@ -29,6 +31,11 @@ execute if score #rand temp matches 84 run tellraw @a[distance=..12] ["",{"text"
 
 # first dia
 execute if score #rand temp matches 1000 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" Ah, a new face. Trade with me if you wish, but know that what I offer is merely a glimpse into the Chronicler's hoard. This glimpse is fleeting... it shifts with every sunrise. Do not expect what you see today to be here tomorrow."}]
+
+# oblivious thing
+execute if score #rand temp matches 1001 run function dlc:zul/shard1
+
+
 
 scoreboard players set #zul_seen bool 1
 tag @a add zul

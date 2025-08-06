@@ -10,3 +10,5 @@ execute if score #rand temp matches 88..99 run summon item ~ ~ ~ {Item:{id:"mine
 execute if score #rand temp matches 88..99 at @s run particle minecraft:totem_of_undying ~ ~0.5 ~ 0.4 0.4 0.4 0.7 100 force
 
 execute at @s run playsound dcustom.entity.ender_dragon.growl player @a ~ ~ ~ 2 2
+
+execute as @a[predicate=players:holding/providence] run function players:items/providence/flash

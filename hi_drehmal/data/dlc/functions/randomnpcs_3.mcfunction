@@ -34,4 +34,6 @@ forceload remove -2794 5384 -2816 5345
 
 forceload remove -3938 5936 -4039 6044
 
+forceload remove -2818 5345 -2797 5308
+
 function dlc:morerandomnpcs

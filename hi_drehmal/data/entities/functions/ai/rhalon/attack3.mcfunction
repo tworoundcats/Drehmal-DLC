@@ -1,7 +1,11 @@
 scoreboard players set @s ai_state2 1
 team join mal
-effect give @s glowing 1 1 true
+effect give @s glowing 2 1 true
 execute at @s run playsound simplyswords:dark_sword_unfold player @a ~ ~ ~ 2 0
-schedule function entities:ai/rhalon/attack3_2 0.55s
-schedule function entities:ai/rhalon/attack3_4 0.5s
+execute unless score #DLC mastermode matches 1 run schedule function entities:ai/rhalon/attack3_2 1.05s
+execute unless score #DLC mastermode matches 1 run schedule function entities:ai/rhalon/attack3_4 1.0s
+
+execute if score #DLC mastermode matches 1 run schedule function entities:ai/rhalon/attack3_2 0.55s
+execute if score #DLC mastermode matches 1 run schedule function entities:ai/rhalon/attack3_4 0.5s
+
 tag @s add temp_disable

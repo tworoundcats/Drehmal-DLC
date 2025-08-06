@@ -1,11 +1,11 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:ender_eye"
+      "item": "fwaystones:abyss_watcher"
     },
     "title": {
       "text": "Reforged",
-      "color": "gold",
+      "color": "#cd42ff",
       "italic": false
     },
     "description": {

@@ -53,6 +53,8 @@ execute in minecraft:lodahr positioned -857 194 534 run forceload add ~ ~
 execute in minecraft:lodahr positioned 1269 54 1205 run forceload add ~ ~
 
 
+forceload add -2818 5345 -2797 5308
+
 schedule function dlc:questnpcs_2 3s
 
 tag @s add DLC_temp
