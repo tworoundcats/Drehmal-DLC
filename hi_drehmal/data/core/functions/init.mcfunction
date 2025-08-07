@@ -1193,3 +1193,5 @@ scoreboard objectives add gamble dummy
 scoreboard objectives add clock dummy
 
 team modify asc friendlyFire false
+
+scoreboard objectives add moment minecraft.used:dlc.moments_peace

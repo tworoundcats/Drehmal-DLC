@@ -1,4 +1,4 @@
-#tag @s[tag=!dash_cd] add dash
+tag @s[tag=!dash_cd] add dash
 tag @s add dash
 tag @s add dash_cd
 tag @s add cal_spike

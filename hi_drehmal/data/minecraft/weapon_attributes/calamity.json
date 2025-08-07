@@ -27,7 +27,7 @@
           },
           {
             "hitbox": "HORIZONTAL_PLANE",
-            "damage_multiplier": 1.3,
+            "damage_multiplier": 1,
             "angle": 120,
             "upswing": 0.5,
             "animation": "bettercombat:one_handed_uppercut_right",

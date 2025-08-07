@@ -1037,6 +1037,7 @@ execute if predicate players:holding/ace run function players:items/ace/main
 execute as @s[tag=ace] unless predicate players:holding/ace run function players:items/ace/main_2
 
 
+# oblivion 2 voidrecall preventing drops
 scoreboard players operation @s wasHoldingOb = @s holdingob
 scoreboard players reset @s holdingob
 execute store success score @s[tag=!disabled] holdingob if predicate players:holding/voidrecall
@@ -1045,3 +1046,5 @@ scoreboard players reset @s drop_ob
 
 
 
+# moments peace
+execute as @s[scores={moment=1..}] run function players:items/moment/use
