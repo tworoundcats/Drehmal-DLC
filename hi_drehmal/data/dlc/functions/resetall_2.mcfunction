@@ -21,4 +21,8 @@ setblock 27472 160 898 air
 fill 27513 154 971 27513 154 973 air
 setblock 27484 167 882 minecraft:iron_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=true]
 
+
+
+execute positioned -556 30 4997 run function dlc:summon/asc 
+
 schedule function dlc:resetall_3 3s

@@ -65,6 +65,7 @@ execute as @s[tag=tempdeaths] run scoreboard players add @s tempdeaths 1
 execute as @s[tag=tempdeaths] run tag @s remove tempdeaths
 scale reset @s
 tag @s remove freefall
+tag @s remove initialloop
 
 tag @s remove disabled
 tag @s remove waterspiked

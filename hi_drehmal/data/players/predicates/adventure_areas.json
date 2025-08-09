@@ -77,6 +77,10 @@
             "condition":"reference",
             "name":"players:locations/oblivion"
         },
+                {
+            "condition":"reference",
+            "name":"players:locations/asc_dungeon"
+        },
         {
             "condition":"reference",
             "name":"players:locations/heatmap_place"

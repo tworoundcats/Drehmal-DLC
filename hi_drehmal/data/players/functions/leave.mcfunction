@@ -61,6 +61,8 @@ scoreboard players enable @a dlc
 execute as @a[tag=obv_active] if score @s OBVuuid0 = #temp uuid0 if score @s OBVuuid1 = #temp uuid1 if score @s OBVuuid2 = #temp uuid2 if score @s OBVuuid3 = #temp uuid3 run function players:items/obv/end_hold
 scale reset @s
 
+
+tag @s remove initialloop
 tag @s remove disabled
 tag @s remove waterspiked
 execute if score #mystery.power bool matches 1 run advancement grant @s only advancements:mystery/power

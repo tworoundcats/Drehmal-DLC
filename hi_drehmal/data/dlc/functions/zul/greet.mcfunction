@@ -2,7 +2,7 @@ function core:rng
 execute if score #zul_seen bool matches 1 run scoreboard players operation #rand temp %= #84 const
 execute unless score #zul_seen bool matches 1 run scoreboard players set #rand temp 1000
 
-execute unless score #gotObv3 bool matches 1 run scoreboard players set #rand temp 1001
+execute if score #gotObv bool matches 1 unless score #gotObv3 bool matches 1 run scoreboard players set #rand temp 1001
 
 execute if score #rand temp matches 0..3 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" O dunes, O dunes."}]
 execute if score #rand temp matches 4..7 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" A gift, from someone you know."}]

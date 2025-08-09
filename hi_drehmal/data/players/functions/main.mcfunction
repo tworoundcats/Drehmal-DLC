@@ -853,7 +853,7 @@ execute if predicate players:holding/reticent as @e[tag=parried] run function pl
 ### Hexed King ###
 execute as @e[tag=hexed] if predicate entities:hurt run function players:items/hexed/reset
 execute as @e[tag=hexed] unless predicate players:recall run function players:items/hexed/loop
-execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
+execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,tag=!obv.immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboard players reset @s hex
 
 # -------------------------------------------------------------------

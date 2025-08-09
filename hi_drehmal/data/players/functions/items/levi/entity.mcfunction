@@ -3,7 +3,7 @@ execute at @s run photon fx photon:apotheosis entity @s 0 0 0 0 0 0 1 1 1 0 true
 execute at @s run photon fx photon:apotheosis entity @s 0 0 0 0 0 0 1 1 1 0 true false none
 execute at @s run particle minecraft:bubble_pop ~ ~ ~ 0.6 0 0.6 0.1 100
 
-execute at @s run tp @e[type=!player,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=5,tag=!oblivion_immune] @s
+execute at @s run tp @e[type=!player,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=5,tag=!oblivion_immune,tag=!obv.immune] @s
 
 execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run damage @s 2 minecraft:generic by @p
 execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=1] if predicate entities:hurt2 run scoreboard players add #levi num 1

@@ -28,7 +28,7 @@ execute if predicate dlc:20 run effect give @s mcdar:shielding 15 0 true
 
 execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:20 run effect give @s extraalchemy:combustion 6 0 true 
 execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:10 run effect give @s extraalchemy:shrinking 1 0 true 
-execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:10 run effect give @s[tag=!oblivion_immune] mcdar:stunned 2 0 true 
+execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:10 run effect give @s[tag=!oblivion_immune,tag=!obv.immune] mcdar:stunned 2 0 true 
 execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:20 run effect give @s levitation 3 0 true 
 execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:20 run effect give @s poison 6 0 true 
 execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..10] if predicate dlc:20 run effect give @s weakness 3 0 true 
