@@ -126,6 +126,16 @@ execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qstart,t
 #execute as @e[type=piglin_brute,tag=mahkar_target3,tag=!active_mahkar_target] if entity @a[distance=..20] run function quests:mahkarquest/brute_ai
 execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
+# Weller - New Sahd
+execute if score #weller_happy bool matches 1 run execute positioned 4623 63 5865 as @e[type=villager,tag=wellerman,tag=!seenfrenzy,tag=!followup,distance=..3] if entity @a[distance=..5] run function quests:wellerquest/epilogue
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,distance=..4] if entity @a[distance=..15,predicate=players:holding/frenzy] run function quests:wellerquest/fail
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_fury run function quests:wellerquest/fury
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_hate run function quests:wellerquest/hate
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_pain run function quests:wellerquest/pain
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_rage run function quests:wellerquest/rage
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_wrath run function quests:wellerquest/wrath
+execute positioned 4623 63 5865 as @e[type=villager,tag=wellerman,tag=!qstart,tag=!qend,tag=!seenfrenzy,distance=..4] if entity @a[distance=..3,tag=!qst17] run function quests:wellerquest/base
+execute positioned 4623 63 5865 as @e[type=villager,tag=wellerman,tag=!qend,tag=qstart,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Tahlros - Naharja
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 as @e[name="Tahlros",type=villager,tag=qstarted,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst15] run execute positioned ~ ~ ~ as @p[tag=qst15,tag=!qst15_e] if predicate players:holding/quest/land_salmon run function quests:tahlrosquest/detect

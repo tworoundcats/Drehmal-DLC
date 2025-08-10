@@ -1,0 +1,1 @@
+scoreboard players set #weller_happy bool 1

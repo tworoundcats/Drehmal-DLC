@@ -1,0 +1,4 @@
+execute as @p[tag=qst17] at @s run tellraw @a[distance=..50] ["",{"text":"<Wehl'r> Therefore, I, Wehl'r, on behalf of the people of Sahd, do hereby task you with the act of excision. Outsider, "},{"text":"find all five fragments of the weapon","color":"yellow"},{"text":", then take them as far away from these lands as possible."}]
+execute if score #gotFzy bool matches 1 as @p[tag=qst17] run tellraw @s ["",{"text":"- ","color":"gray"},{"text":"[Oh... about that...]","color":"gray","clickEvent":{"action":"run_command","value":"/function quests:wellerquest/oops"}}]
+execute as @p[tag=qst17] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute unless score #gotFzy bool matches 1 run schedule function quests:wellerquest/accept9 8s

@@ -1092,6 +1092,8 @@ scoreboard objectives add dlc trigger
 scoreboard players enable @a dlc
 
 scoreboard objectives add dquest dummy
+scoreboard objectives add wquest dummy
+scoreboard objectives add weller_happy dummy
 scoreboard objectives add priscillatracker dummy
 scoreboard objectives add ihted_spellforged_spawn dummy
 scoreboard objectives add mahkar_kills dummy

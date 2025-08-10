@@ -42,6 +42,8 @@ execute positioned 2021 116 -787 run forceload add ~ ~
 
 execute positioned -2944 92 5160 run forceload add ~ ~
 
+execute positioned 4623 63 5865 run forceload add ~ ~
+
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 run forceload add ~ ~
 
 execute in minecraft:lodahr positioned -964 246 -946 run forceload add ~ ~

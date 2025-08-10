@@ -1,0 +1,2 @@
+execute at @e[tag=wellerman] run tellraw @a[distance=..50] {"text":"<Wehl'r> And always remember that wherever The Path takes you, you are welcome in Sahd. "}
+execute positioned 4623 63 5865 as @p run execute at @s run playsound entity.villager.ambient player @a ~ ~ ~ 5 1 
