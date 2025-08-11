@@ -1,4 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tellraw @s ["",{"text":"Quest Completed: ","color":"yellow"},{"text":"Traverse the Rift","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Riftsent Roundtrip","underlined":true},{"text":"\n"},{"text":"Traverse the Rift","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run summon experience_orb ~ ~ ~2 {Value:4}

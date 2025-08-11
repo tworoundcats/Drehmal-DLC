@@ -1,6 +1,6 @@
 execute positioned ~ ~ ~ as @p[tag=qst7] unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[type=villager,name="Dredd'Lohk",limit=1,sort=nearest] weapon.mainhand
 execute positioned ~ ~ ~ as @p[tag=qst7] if predicate players:holding/masayoshi run item replace entity @e[type=villager,name="Dredd'Lohk",limit=1,sort=nearest] weapon.mainhand with air
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"Quest Completed: ","color":"yellow"},{"text":"Steal the Tide Queen's Blade","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Tidal Heist!","underlined":true},{"text":"\n"},{"text":"Steal the Tide Queen's Blade","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:7}

@@ -1,0 +1,1 @@
+scoreboard players set #dquest_done_once bool 1

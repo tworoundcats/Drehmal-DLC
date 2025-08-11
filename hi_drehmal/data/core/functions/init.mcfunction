@@ -1092,11 +1092,13 @@ scoreboard objectives add dlc trigger
 scoreboard players enable @a dlc
 
 scoreboard objectives add dquest dummy
+scoreboard objectives add dquest_done_once dummy
 scoreboard objectives add wquest dummy
 scoreboard objectives add weller_happy dummy
 scoreboard objectives add priscillatracker dummy
 scoreboard objectives add ihted_spellforged_spawn dummy
 scoreboard objectives add mahkar_kills dummy
+scoreboard objectives add tahlros_sushi dummy
 
 scoreboard objectives add Deaths deathCount {"text":"Deaths","color":"dark_red"}
 scoreboard objectives add tempdeaths dummy

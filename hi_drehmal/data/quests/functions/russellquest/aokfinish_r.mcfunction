@@ -36,5 +36,6 @@ execute positioned ~ ~ ~ as @p[tag=qst11] at @s run summon experience_orb ~ ~ ~1
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run give @s emerald 10
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run give @s dlc:silver_ingot{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}} 1
+execute positioned 31.48 67.00 5263.55 as @e[name="Russell",type=villager,distance=..4] run tag @s remove activerussell
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tag @s add qst11_e
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tag @s remove qst11

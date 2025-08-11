@@ -1,4 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s ["",{"text":"Quest Completed: ","color":"yellow"},{"text":"Recover Dohm's Quill","color":"white"}]
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Writer's Woe","underlined":true},{"text":"\n"},{"text":"Recover Dohm's Quill","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst8] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst8] at @s run summon experience_orb ~ ~ ~2 {Value:3}
