@@ -5,8 +5,8 @@ execute as @e[tag=thun,tag=!thum_dmg] as @s at @s run function particle:effects/
 execute as @e[tag=thun,tag=!thum_dmg] as @s at @s run playsound minecraft:dcustom.entity.lightning_bolt.impact player @a ~ ~ ~ 1 1
 execute as @e[tag=thun,tag=!thum_dmg] as @s at @s as @s run effect give @s slowness 6 0 false
 execute as @e[tag=thun,tag=!thum_dmg] at @s as @s run effect give @s weakness 6 0 false
-execute as @e[tag=thun,tag=!thum_dmg] at @s as @s run effect give @s mcdar:stunned 1 0 false
-execute as @e[tag=thun,tag=!thum_dmg] at @s as @s run effect give @s glowing 1 0 false
+execute as @e[tag=thun,tag=!thum_dmg] at @s as @s run effect give @s[tag=!oblivion_immune,tag=!obv.immune] mcdar:stunned 2 0 false
+execute as @e[tag=thun,tag=!thum_dmg] at @s as @s run effect give @s[tag=!oblivion_immune,tag=!obv.immune] glowing 2 0 false
 execute at @e[tag=thun] run summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["lightning"]}
 execute at @e[tag=thun] run summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["lightning"]}
 execute at @e[tag=thun] run summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["lightning"]}

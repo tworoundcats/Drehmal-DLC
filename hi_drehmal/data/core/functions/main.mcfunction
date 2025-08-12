@@ -261,12 +261,34 @@ execute positioned -2851 41 5331 if entity @a[distance=..10] run execute unless 
 
 
 # --- Terminus Animation ---
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run scoreboard players add #station timer 1
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] as @e[tag=visual,distance=..5] at @s positioned ~ ~1.25 ~ if score #station timer matches 6.. run function particle:term/animate
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] if score #station timer matches 6.. run scoreboard players reset #station timer
 execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run function dlc:modify/main
 
 
 # --- Trial Legendary - Ihted Spawn ---
 
 execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
+
+
+execute as @e[tag=explode] at @s anchored eyes positioned ^ ^0.5 ^ run function particle:effects/zed_shuriken
+
+execute as @e[tag=soul_burn] run function players:items/soul/main
+
+execute as @e[tag=soul_burn] run function players:items/soul/main
+
+execute as @e[tag=bleed,limit=1] at @s run function players:items/hangyaku/bleed
+
+execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
+execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
+
+execute as @e[tag=hexed] run function players:items/hexed/main
+
+execute as @e[tag=obscythe] at @s run function players:items/obv/entity
+execute as @e[tag=zenith_beam] at @s run function players:items/avsaber/entity
+execute as @e[tag=apotheosis] at @s run function players:items/levi/entity
+
+# if we want to give mal 2 the draining ability
+#execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2
+execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=players:holding/male2] run kill @s
+
+
+execute as @e[tag=destiny] run function players:items/providence/main_entity

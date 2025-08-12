@@ -1,12 +1,12 @@
 scoreboard players add @s zenith_slash 1
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:tall_grass run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:grass run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:fern run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:large_fern run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:vine run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:tall_flowers run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:flowers run setblock ^ ^1 ^ air
-execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:crops run setblock ^ ^1 ^ air
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:tall_grass run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:grass run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:fern run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:large_fern run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ minecraft:vine run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:tall_flowers run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:flowers run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={zenith_slash=2..}] if block ^ ^1 ^ #minecraft:crops run setblock ^ ^1 ^ air destroy
 execute if entity @s[scores={zenith_slash=1..10}] if block ^ ^1 ^ #core:empty run tp @s ^ ^ ^0.2
 execute if entity @s[scores={zenith_slash=10..}] run tp @s ^ ^ ^1.3
 execute if entity @s[scores={zenith_slash=5..}] unless block ^ ^1 ^ #core:empty run kill @s
@@ -15,7 +15,7 @@ execute if entity @s[scores={zenith_slash=2..}] as @e[tag=zenith_beam] run execu
 execute if entity @s[scores={zenith_slash=12..}] run particle flash ^ ^ ^ 0 0 0 0 1 normal @a 
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 15 minecraft:zenith
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] mcdar:stunned 3 2 true
-execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s glowing 3 2 true
+execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] glowing 3 2 true
 
 
 execute if entity @s[scores={zenith_slash=1..4}] run playsound minecraft:dcustom.entity.player.attack.sweep player @a ~ ~ ~ 1 2

@@ -739,11 +739,9 @@ execute as @s[scores={dlc=1}] run function dlc:triggerdlc
 
 ### Harvest's Hope ###
 execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
-execute as @e[tag=soul_burn] run function players:items/soul/main
 
 ### Pleasures of War ###
 execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
-execute as @e[tag=soul_burn] run function players:items/soul/main
 
 
 ### Night Watch ###
@@ -815,7 +813,6 @@ execute unless predicate players:holding/force if score @s thun matches 1.. run 
 # -------------------------------------------------------------------
 
 ### Shadowblade ###
-execute as @e[tag=bleed,limit=1] at @s run function players:items/hangyaku/bleed
 
 # -------------------------------------------------------------------
 
@@ -835,8 +832,7 @@ execute if predicate players:holding/first_end as @s[scores={use_first=1..}] run
 ### Unchecked Ambition ###
 
 execute if predicate players:holding/ambition as @s[scores={use_ambition=1..}] run function players:items/ambition/main
-execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
-execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
+
 
 # -------------------------------------------------------------------
 
@@ -851,8 +847,7 @@ execute if predicate players:holding/reticent as @e[tag=parried] run function pl
 # -------------------------------------------------------------------
 
 ### Hexed King ###
-execute as @e[tag=hexed] if predicate entities:hurt run function players:items/hexed/reset
-execute as @e[tag=hexed] unless predicate players:recall run function players:items/hexed/loop
+
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,tag=!obv.immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboard players reset @s hex
 
@@ -988,13 +983,7 @@ execute at @s if score @s obv_cool matches 2000000000.. unless predicate players
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Special Entity Ticking ###
-execute as @e[tag=obscythe] at @s run function players:items/obv/entity
-execute as @e[tag=zenith_beam] at @s run function players:items/avsaber/entity
-execute as @e[tag=apotheosis] at @s run function players:items/levi/entity
 
-# if we want to give mal 2 the draining ability
-#execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2
-execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=players:holding/male2] run kill @s
 
 # -------------------------------------------------------------------
 
@@ -1026,9 +1015,7 @@ execute as @s[tag=generals_music] unless predicate players:in_generals_arena run
 execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
 
 # providence cd
-execute as @e[tag=destiny] run scoreboard players add @s destiny 1
-execute as @e[tag=destiny,scores={destiny=3..}] run tag @s remove destiny
-execute as @e[scores={destiny=3..}] run scoreboard players reset @s destiny
+
 
 
 
@@ -1048,3 +1035,8 @@ scoreboard players reset @s drop_ob
 
 # moments peace
 execute as @s[scores={moment=1..}] run function players:items/moment/use
+
+
+execute if score #10S timer matches 0 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
+
+

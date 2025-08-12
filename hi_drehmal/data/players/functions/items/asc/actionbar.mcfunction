@@ -12,5 +12,5 @@ execute if score @s asc_cool matches 1.. if score #secs temp matches 6..9 run ti
 execute if score @s asc_cool matches 1.. if score #secs temp matches 0..5 run title @s actionbar ["",{"text":"Holy Moonlight Cooldown: ","color":"dark_aqua"},{"score":{"name":"#secs","objective":"temp"},"color":"green"},{"text":"s","color":"green"}]
 
 #timer for secondary effect
-scoreboard players add @s asc_cd 1
-execute as @s[scores={asc_cd=70}] run playsound minecraft:block.bell.use player @a ~ ~ ~ 1 2
+#scoreboard players add @s asc_cd 1
+#execute as @s[scores={asc_cd=70}] run playsound minecraft:block.bell.use player @a ~ ~ ~ 1 2

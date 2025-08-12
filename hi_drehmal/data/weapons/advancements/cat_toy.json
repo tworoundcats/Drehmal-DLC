@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+        "items": [
+          {
+            "items": [
+              "dlc:cat_toy"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:advancement/component"
+  }
+}

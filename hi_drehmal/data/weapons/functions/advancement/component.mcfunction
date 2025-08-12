@@ -4,3 +4,4 @@ execute as @a[advancements={weapons:primal_focus_empty=true}] run scoreboard pla
 execute as @a[advancements={weapons:fateful=true}] run scoreboard players set #gotFzy3 bool 1
 execute as @a[advancements={weapons:inert=true}] run scoreboard players set #gotAsc3 bool 1
 execute as @a[advancements={weapons:tattered=true}] run scoreboard players set #gotMal3 bool 1
+execute as @a[advancements={weapons:cat_toy=true}] run scoreboard players set #gotSzy3 bool 1

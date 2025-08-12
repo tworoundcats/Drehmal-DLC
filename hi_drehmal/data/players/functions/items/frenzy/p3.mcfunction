@@ -38,14 +38,8 @@ execute rotated 350 0 run particle block redstone_block ^ ^ ^1.5
 #timer for secondary effect
 scoreboard players add @s zed 1
 
-execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Frenzy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run effect give @s strength 5 0 true
-execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Frenzy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run effect give @s speed 5 1 true
 
 #test for if using the upgraded weapon
-execute if entity @a[nbt={SelectedItem:{id:"minecraft:netherite_sword",Count:1b,tag:{display:{Name:"{\"text\":\"Frenzy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] as @s[scores={zed=150..}] run function players:items/frenzy/zed
+execute if predicate players:holding/frenzy2 at @s[scores={zed=150..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..14] if predicate dlc:25 run function players:items/frenzy/zed
 
-#display for zed 
-execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] at @s anchored eyes positioned ^ ^0.5 ^ run function particle:effects/zed_shuriken
-execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run damage @s 10 generic by @p
-execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run playsound entity.generic.explode player @a ~ ~ ~ 0.3 2
-execute if score @s fzy_lvl matches 1..3 run execute as @e[tag=explode] as @s if predicate entities:hurt at @s run tag @s remove explode
+execute as @s[scores={zed=150..}] run scoreboard players reset @s zed

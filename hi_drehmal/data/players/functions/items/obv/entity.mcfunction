@@ -2,14 +2,14 @@ scoreboard players add @s ob_throw 1
 scoreboard players add @s ob_rotated 2
 execute if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..4] run tag @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..4,sort=random] add DIE1
 execute if entity @e[tag=DIE1] if block ~ ~2 ~ #core:empty run function players:items/obv/tp_entity
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:tall_grass run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:grass run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:fern run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:large_fern run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:vine run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:tall_flowers run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:flowers run setblock ^ ^1 ^ air
-execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:crops run setblock ^ ^1 ^ air
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:tall_grass run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:grass run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:fern run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:large_fern run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ minecraft:vine run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:tall_flowers run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:flowers run setblock ^ ^1 ^ air destroy
+execute if entity @s[scores={ob_throw=2..}] if block ^ ^1 ^ #minecraft:crops run setblock ^ ^1 ^ air destroy
 execute if entity @s[scores={ob_throw=2..}] unless entity @e[tag=DIE1] if block ~ ~2 ~ air run tp @s ^ ^ ^0.5
 execute if entity @s[scores={ob_throw=2..}] unless block ~ ~2 ~ air run scoreboard players set @p[tag=ob_scythe] ob_cd 71
 execute if entity @s[scores={ob_throw=2..}] unless block ~ ~2 ~ air run tag @e[tag=DIE1] remove DIE1

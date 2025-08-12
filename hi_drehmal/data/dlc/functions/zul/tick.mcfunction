@@ -26,7 +26,7 @@ execute if entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160,tag=!decline] as @a
 execute as @s[tag=!decline] at @s if predicate players:in_sahd as @a[distance=..4,predicate=players:holding/seeker] run function dlc:zul/game/decline_2
 
 
-execute at @s[tag=!zul_greet] at @s if entity @a[distance=..4] run function dlc:zul/greet
+execute at @s[tag=!zul_greet] at @s if entity @a[distance=..3.5] run function dlc:zul/greet
 execute at @s[tag=zul_greet] at @s unless entity @a[distance=..30] run tag @s remove zul_greet
 
 

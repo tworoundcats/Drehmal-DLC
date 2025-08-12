@@ -1,0 +1,2 @@
+setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=up]{Command:'summon zombie ~ ~ ~ {DeathLootTable:"empty"}',CustomName:'{"text":"@"}',SuccessCount:0,TrackOutput:0b,UpdateLastExecution:1b,auto:0b,conditionMet:0b,powered:0b}
+setblock ~ ~1 ~ minecraft:stone_button[face=floor,facing=west,powered=false]

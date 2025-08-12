@@ -15,3 +15,5 @@ execute if score #station_wings int matches 1.. run execute as @e[tag=display] r
 execute as @p[tag=selector] unless score #station_wings int matches 1.. run tellraw @s ["","[",{"text":"ａｖＳＹＳ","color":"dark_aqua"},"]"," ／／ ",{"text":"ＩＮＳＥＲＴ ＵＰＧＲＡＤＥ ＣＯＭＰＯＮＥＮＴ","color":"yellow"},"／／"]
 execute as @p[tag=selector] unless score #station_wings int matches 1.. run tellraw @s[tag=selector] ["","[",{"text":"ａｖＳＹＳ","color":"dark_aqua"},"]",{"text":"／／ ＲＥＴＲＩＥＶＥ ＩＴＥＭ ／／","clickEvent":{"action":"run_command","value":"/execute as @p[tag=selector] run function dlc:modify/retrieve_c"},"hoverEvent":{"action":"show_text","contents":["CLICK TO RETRIEVE ITEM"]}}]
 execute as @p[tag=selector] unless score #station_wings int matches 1.. run function dlc:modify/verify_wings
+
+execute as @e[tag=interact] run data modify entity @s DisabledSlots set value 63
