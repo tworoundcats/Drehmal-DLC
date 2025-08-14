@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie",
+          "nbt": "{Tags:[\"mb_run_blind\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "entities:ai/khive_zombie/kill"
+  }
+}

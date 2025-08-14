@@ -5,7 +5,8 @@ execute if entity @s[tag=ethgar_arrow] at @s run particle firework
 execute if entity @s[tag=ethgar_arrow] at @s run particle flame
 execute if entity @s[tag=ethgar_arrow] at @s run execute as @e[tag=tevus,distance=..3,type=piglin_brute] run effect give @s mcdar:shielding 1 1 true
 execute if entity @s[tag=ethgar_arrow] at @s run execute as @e[tag=rhalon,distance=..3,type=piglin_brute] run effect give @s mcdar:shielding 1 1 true
-execute if entity @s[tag=ethgar_arrow2] at @s run execute as @a[distance=..2.5] run damage @s 50 in_fire by @e[tag=ethgar,limit=1]
+execute unless score #DLC mastermode matches 1 if entity @s[tag=ethgar_arrow2] at @s run execute as @a[distance=..2.5] run damage @s 30 in_fire by @e[tag=ethgar,limit=1]
+execute if score #DLC mastermode matches 1 if entity @s[tag=ethgar_arrow2] at @s run execute as @a[distance=..2.5] run damage @s 50 in_fire by @e[tag=ethgar,limit=1]
 execute if entity @s[tag=ground_clear] if predicate entities:in_ground run function entities:misc/ground_clear
 execute unless entity @s[tag=ground_clear] unless entity @s[tag=arrow.inground] if predicate entities:in_ground run tag @s add arrow.inground
 execute if entity @s[tag=syzygy_particles] unless entity @s[tag=arrow.inground] run particle end_rod

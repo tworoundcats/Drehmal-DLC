@@ -8,7 +8,12 @@ execute at @s if score @s ai_timer matches 1..40 unless entity @s[tag=top] run t
 execute at @s if score @s ai_timer matches 40..120 unless entity @s[tag=top] run particle end_rod ~ ~1.5 ~ 0.1 0.6 0.1 0 1 force
 execute at @s if score @s ai_timer matches 2 unless entity @s[tag=top] run playsound minecraft:custom.warp hostile @a ~ ~ ~ 3
 execute at @s if score @s ai_timer matches 40..120 unless entity @s[tag=top] positioned ~ ~1.5 ~ run function core:scene/mb_run/primal_ring
-execute at @s if score @s ai_timer matches 40 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
-execute at @s if score @s ai_timer matches 80 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
-execute at @s if score @s ai_timer matches 120 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
+execute unless score #DLC mastermode matches 1 at @s if score @s ai_timer matches 40 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
+execute unless score #DLC mastermode matches 1 at @s if score @s ai_timer matches 80 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
+execute unless score #DLC mastermode matches 1 at @s if score @s ai_timer matches 120 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn
+
+execute if score #DLC mastermode matches 1 at @s if score @s ai_timer matches 40 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn2
+execute if score #DLC mastermode matches 1 at @s if score @s ai_timer matches 80 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn2
+execute if score #DLC mastermode matches 1 at @s if score @s ai_timer matches 120 unless entity @s[tag=top] run function core:scene/mb_run/krune2_spawn2
+
 execute if score @s ai_timer matches 200.. run kill @s

@@ -1,2 +1,3 @@
-execute if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] If thou seeketh destruction, it surely lies within!"]
+execute unless score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] If thou seeketh destruction, it surely lies within!"]
+execute if score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] A borrowed power, wielded by a witless pawn. It will not avail you."]
 execute if score #khive_talk bool matches 1 run schedule function core:scene/mb_run/dia/2/2 6s

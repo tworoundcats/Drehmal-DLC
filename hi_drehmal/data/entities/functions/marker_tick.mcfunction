@@ -89,6 +89,11 @@ execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/particle_tick
 execute if entity @s[tag=starfall_tag] at @s run forceload add ~ ~
 execute if entity @s[tag=asc_star] run function projectiles:fancy/particle_tick
 
+execute if entity @s[tag=mb_boom] rotated 0 65 run function players:items/mb/laser_effect
+execute if entity @s[tag=small_spiral] at @s run function players:items/mb/small_spiral
+execute if entity @s[tag=khive_blind] run function entities:ai/khive_zombie/particle_tick
+
+
 execute if entity @s[tag=terminus_visual] run function dlc:modify/particle_tick
 
 

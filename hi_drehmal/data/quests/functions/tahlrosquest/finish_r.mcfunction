@@ -116,3 +116,4 @@ execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s minecraft:paper{Merc
 scoreboard players set #tahlros_sushi bool 1
 execute as @p[tag=qst15] run tag @s add qst15_e
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15_e

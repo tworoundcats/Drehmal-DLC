@@ -1,5 +1,9 @@
 execute if score @s ai_timer matches ..0 run function entities:ai/emissary/newattack
 
+
+
+execute unless score #DLC mastermode matches 1 if score @s ai_state2 matches 12 run scoreboard players set @s ai_state2 4
+execute unless score #DLC mastermode matches 1 if score @s ai_state2 matches 11 run scoreboard players set @s ai_state2 2
 execute if score @s ai_state2 matches 1..9 if entity @s[tag=aj.emis.anim.walk] run function emis:animations/walk/stop
 execute if score @s ai_state2 matches 1 run function entities:ai/emissary/slamphase
 execute if score @s ai_state2 matches 2 run function entities:ai/emissary/stomphase

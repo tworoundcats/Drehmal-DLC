@@ -38,6 +38,7 @@
     "minecraft:tnt",
     "minecraft:trident",
     "minecraft:wither_skull",
-    "minecraft:item_display"
+    "minecraft:item_display",
+    "interaction"
   ]
 }

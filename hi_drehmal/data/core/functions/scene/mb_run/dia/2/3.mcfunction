@@ -1,1 +1,2 @@
-execute if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] Go on, see for yourself."]
+execute unless score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] Go on, see for yourself."]
+execute if score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] Thou art unworthy of the path. Turn back, or be unmade."]

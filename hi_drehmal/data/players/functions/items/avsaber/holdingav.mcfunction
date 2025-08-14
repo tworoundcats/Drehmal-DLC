@@ -1,4 +1,4 @@
-execute as @s[scores={zenith_cd=70,AvShots=1..}] run playsound minecraft:dcustom.block.bell.use player @a ~ ~ ~ 1 2
+execute as @s[scores={zenith_cd=70,AvShots=1..}] run playsound minecraft:dcustom.item.lodestone_compass.lock player @s ~ ~ ~ 1 0
 
 execute unless predicate players:holding/avstate unless predicate players:holding/avstate2 unless predicate players:holding/zenith2 run function players:items/avsaber/avdisplay1
 

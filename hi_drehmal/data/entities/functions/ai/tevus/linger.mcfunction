@@ -5,7 +5,7 @@ execute unless score #DLC mastermode matches 1 run execute at @s if score @s num
 execute unless score #DLC mastermode matches 1 run execute at @s if score @s num matches 20.. if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 40 in_fire by @e[tag=tevus,limit=1]
 
 execute unless score #DLC mastermode matches 1 unless score #tevus_active bool matches 1 run execute at @s if score @s num matches 20.. if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 30 in_fire
-execute unless score #DLC mastermode matches 1 unless score #tevus_active bool matches 1 run execute at @s if score @s num matches 20.. if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 40 in_fire
+execute if score #DLC mastermode matches 1 unless score #tevus_active bool matches 1 run execute at @s if score @s num matches 20.. if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 40 in_fire
 execute if score @s num matches 20 run particle minecraft:lava ~ ~-0.5 ~ 0.1 0.1 0.1 0.0 10 normal @a
 
 execute if score @s num matches 20 run particle explosion ~ ~ ~ 0 0 0 1 1 force

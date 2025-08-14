@@ -11,3 +11,4 @@ execute if score #part temp matches 4 positioned ~ ~1.7 ~ run particle end_rod ^
 execute if score #part temp matches 5 positioned ~ ~1.7 ~ run particle end_rod ^-0.07 ^-0.07 ^ 0 0 0 0.005 1 force
 execute if score #part temp matches 6 positioned ~ ~1.7 ~ run particle end_rod ^-0.1 ^ ^ 0 0 0 0.005 1 force
 execute if score #part temp matches 7 positioned ~ ~1.7 ~ run particle end_rod ^-0.07 ^0.07 ^ 0 0 0 0.005 1 force
+execute as @a[distance=..1] run damage @s 7 khivewrath by @e[tag=mb_run_skele,limit=1,sort=nearest]

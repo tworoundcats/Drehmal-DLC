@@ -18,6 +18,7 @@ execute if entity @s[tag=avbot_boom] run function entities:ai/avbot_boom/main
 execute if entity @s[tag=avbot_zoomy] run function entities:ai/avbot_zoom/main
 execute if entity @s[tag=buffer] run function entities:ai/buffer/main
 execute if entity @s[tag=disabler] run function entities:ai/disabler/main
+execute if entity @s[tag=mb_run_blind] run function entities:ai/khive_zombie/blind
 
 execute if entity @s[tag=drift_bone] run function entities:ai/driftbone/main
 execute if entity @s[tag=timeworn_thrall] run function entities:ai/timeworn/main

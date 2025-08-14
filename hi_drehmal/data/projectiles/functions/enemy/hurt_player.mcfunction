@@ -1,6 +1,7 @@
 execute if score @s damage_s matches 5 run damage @s 15 minecraft:skullmissle
 execute if score @s damage_s matches 12 run damage @s 36 minecraft:idk
 execute if score @s damage_s matches 31 run damage @s 8 minecraft:khivewrath
+execute if score @s damage_s matches 31 if score #DLC mastermode matches 1 run advancement grant @s only players:hurt_by_mbrun
 
 
 scoreboard players operation @s damage_s = #dam_s temp

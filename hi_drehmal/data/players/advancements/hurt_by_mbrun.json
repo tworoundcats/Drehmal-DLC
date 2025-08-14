@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"mastermode_mb\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "players:misc/hurt_by_mbrun"
+  }
+}

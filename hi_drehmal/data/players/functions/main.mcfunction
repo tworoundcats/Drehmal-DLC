@@ -731,6 +731,7 @@ execute unless predicate players:locations/red_dawn_nomusic if entity @s[tag=bos
 
 
 execute as @s[scores={dlc=1}] run function dlc:triggerdlc
+execute as @s[scores={sex=1}] run function dlc:triggersex
 
 
 # ===================================================================
@@ -942,6 +943,19 @@ execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run tag @s add temp_waystone
 execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
 
+execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run schedule function weapons:give/pocket 1t
+execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
+execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run tag @s add temp_waystone
+execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
+
+execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run schedule function weapons:give/waystone 1t
+execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
+execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
+execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run tag @s add temp_waystone
+execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
+
+
 execute if predicate players:hold_waystone if entity @s[tag=supersoldier] run schedule function weapons:give/waystone 1t
 execute if predicate players:hold_waystone if entity @s[tag=supersoldier,tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
 execute if predicate players:hold_waystone if entity @s[tag=supersoldier,tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
@@ -1009,7 +1023,7 @@ execute as @s[tag=disabled] run function players:misc/disabled
 # generals music
 execute as @s[tag=generals_music,tag=!finished] if predicate players:in_generals_arena unless score @s playingMusic matches 1.. at @s run function players:music/generals
 execute as @s[tag=generals_music] unless predicate players:in_generals_arena run tag @s remove generals_music
-
+execute if score #1S timer matches 0 if predicate players:in_generals_arena run effect clear @s fire_resistance
 
 # zul spawning
 execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
@@ -1039,4 +1053,4 @@ execute as @s[scores={moment=1..}] run function players:items/moment/use
 
 execute if score #10S timer matches 0 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
 
-
+execute as @s[tag=suffering] run function players:misc/suffer

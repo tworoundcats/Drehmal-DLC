@@ -1,2 +1,3 @@
-execute if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] This mountain will swallow you whole."]
+execute unless score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] This mountain will swallow you whole."]
+execute if score #DLC mastermode matches 1 if score #khive_talk bool matches 1 run tellraw @a ["","[",{"text":"Mystic Elder Khive","color":"yellow"},"] There is no glory here for you. Only a cold, forgotten grave."]
 execute if score #khive_talk bool matches 1 run schedule function core:scene/mb_run/dia/2/3 6s

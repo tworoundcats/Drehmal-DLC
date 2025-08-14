@@ -61,12 +61,13 @@ scoreboard players reset @s mb_cool
 scoreboard players reset @s sy_cool
 scoreboard players reset @s obv_cool
 scoreboard players reset @s mal_cool
+tag @s remove dash_cd
 execute as @s[tag=tempdeaths] run scoreboard players add @s tempdeaths 1
 execute as @s[tag=tempdeaths] run tag @s remove tempdeaths
 scale reset @s
 tag @s remove freefall
 tag @s remove initialloop
-
+tag @s remove suffering
 tag @s remove disabled
 tag @s remove waterspiked
 scoreboard players reset @s spm.x
