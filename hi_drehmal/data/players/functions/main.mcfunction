@@ -776,7 +776,6 @@ scoreboard players reset @s holdingLevi
 execute store success score @s holdingLevi if predicate players:holding/leviathan
 execute if score @s wasHoldingLevi matches 1 if score @s drop_levi matches 1 run function players:items/levi/misfire
 
-
 execute store success score @s HoldingLevi if predicate players:holding/leviathan
 
 execute if predicate players:holding/leviathan if score @s levi_reach matches 1.. as @s[tag=!strengthened] run function players:items/levi/weaken
@@ -785,20 +784,13 @@ execute if predicate players:holding/leviathan run scoreboard players add @s lev
 execute if predicate players:holding/leviathan run function players:items/levi/holding
 #execute if predicate players:holding/leviathan if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
 
-
 execute if predicate players:holding/leviathan if score @s levi_reach matches 140.. run scale set pehkui:entity_reach 1 @s
 #execute if predicate players:holding/leviathan if score @s levi_reach matches 140.. run scale set pehkui:defense 0.5 @s
 execute if predicate players:holding/leviathan if score @s levi_reach matches 140.. run tag @s remove strengthened
 
-
 execute if predicate players:holding/leviathan if score @s levi_kills matches 5.. unless score @s levi_cool matches 1.. if score @s drop_levi matches 1 run function players:items/levi/apotheosis
-#execute if predicate players:holding/leviathan if score @s levi_reach matches ..140 if predicate dev:entity_properties/effects/haste at @s positioned ~ ~1 ~ run function particle:effects/mist
-
 
 execute unless predicate players:holding/leviathan if score @s levi_reach matches 1.. run scale set pehkui:entity_reach 1 @s
-#execute unless predicate players:holding/leviathan if score @s levi_reach matches 1.. run scale set pehkui:defense 1 @s
-#execute unless predicate players:holding/leviathan if score @s levi_reach matches 1.. run attribute @s generic.attack_speed base set 4
-#execute unless predicate players:holding/leviathan if score @s levi_reach matches 1.. run attribute @s generic.attack_damage base set 1
 execute unless predicate players:holding/leviathan if score @s levi_reach matches 1.. run scoreboard players reset @s levi_reach
 execute unless predicate players:holding/leviathan if entity @s[tag=strengthened] run tag @s remove strengthened
 execute unless predicate players:holding/leviathan if score @s levi_cool matches 1.. run function players:items/levi/cooldown
@@ -813,16 +805,11 @@ execute unless predicate players:holding/force if score @s thun matches 1.. run 
 
 # -------------------------------------------------------------------
 
-### Shadowblade ###
-
-# -------------------------------------------------------------------
-
 ### Gauntlets ###
 execute if predicate players:holding/gauntlets run function players:items/gauntlets/main
 execute unless predicate players:holding/gauntlets as @s[scores={gaunt_stats=1..}] run function players:items/gauntlets/reset
 
 # -------------------------------------------------------------------
-
 
 ### First End ###
 
@@ -833,7 +820,6 @@ execute if predicate players:holding/first_end as @s[scores={use_first=1..}] run
 ### Unchecked Ambition ###
 
 execute if predicate players:holding/ambition as @s[scores={use_ambition=1..}] run function players:items/ambition/main
-
 
 # -------------------------------------------------------------------
 
@@ -876,109 +862,26 @@ execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[type=
 
 # -------------------------------------------------------------------
 
-
-### Destiny Armor ###
-#execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet #if predicate players:sneak unless entity @s[tag=destiny] run scoreboard players add @s destiny 1
-#execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_helmet #if predicate players:sneak if score @s destiny matches 100.. unless entity @s[tag=destiny] run function players:items/destiny_armor/main
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] if score @s destiny matches 20 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.2
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] if score @s destiny matches 40 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.4
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] if score @s destiny matches 60 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.6
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] if score @s destiny matches 80 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.8
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_helmet if predicate players:sneak unless entity @s[tag=destiny] if score @s destiny matches 100 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 2
-#
-#execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_crown if #predicate players:sneak unless entity @s[tag=destinyc] run scoreboard players add @s destinyc 1
-#execute if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate players:wearing_destiny_crown if #predicate players:sneak if score @s destinyc matches 100.. unless entity @s[tag=destinyc] run function players:items/destiny_armor/main_c
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_crown if predicate players:sneak unless entity @s[tag=destinyc] if score @s destinyc matches 20 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 2
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_crown if predicate players:sneak unless entity @s[tag=destinyc] if score @s destinyc matches 40 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.8
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_crown if predicate players:sneak unless entity @s[tag=destinyc] if score @s destinyc matches 60 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.6
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_crown if predicate players:sneak unless entity @s[tag=destinyc] if score @s destinyc matches 80 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1.4
-#execute at @s if predicate players:wearing_destiny_boots if predicate players:wearing_destiny_chestplate if predicate players:wearing_destiny_leggings if predicate #players:wearing_destiny_crown if predicate players:sneak unless entity @s[tag=destinyc] if score @s destinyc matches 100 run playsound minecraft:dcustom.block.enchantment_table.use master @a #~ ~ ~ 1 1
-#
-
-#execute unless predicate players:sneak run scoreboard players reset @s destiny
-#execute unless predicate players:sneak run scoreboard players reset @s destinyc
-#execute if predicate players:sneak if entity @s[tag=destiny] run effect give @s blindness 2 2 true
-#execute if predicate players:sneak if entity @s[tag=destiny] run effect give @s slowness 2 2 true
-
-# -------------------------------------------------------------------
-
-### Providence ###
-#in hurt:entity and kill:entity now
-
-# -------------------------------------------------------------------
-
 # --- Cloud in a Bottle ---
-execute at @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if predicate dlc:cloud run scoreboard players add @s stop 1
-execute if entity @s[tag=!cloud,scores={stop=40..}] run function players:nocloud
+execute if score #1S timer matches 0 run function players:cloud
 execute if entity @s[tag=cloud] run function players:checkcloud
-execute if score #1S timer matches 0 run execute at @s if entity @s[tag=cloud] unless predicate players:adventure_areas run function players:givecloud
 
 # --- Wings ---
-execute if score #1S timer matches 0 run execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:adventure_areas unless predicate players:locations/in_terminus run function players:nowings
-execute if score #1S timer matches 0 run execute at @s if entity @s[tag=!wings] if predicate dlc:wings if predicate players:lodahr run function players:nowings
+execute if score #1S timer matches 0 run function players:wings
 execute if entity @s[tag=wings] run function players:checkwings
-execute if score #1S timer matches 0 run execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=false,advancements:primordial/khive_angy=false}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
-execute if score #1S timer matches 0 run execute at @s if entity @s[tag=wings,advancements={advancements:primordial/enter_yav=true,advancements:primordial/khive_angy=true}] unless predicate dlc:wings unless predicate players:lodahr unless predicate players:adventure_areas run function players:givewings
-execute if score #1S timer matches 0 run execute if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] if predicate dlc:wings run function players:nowings
-
 # -------------------------------------------------------------------
 
 ### Waystones & Pocket Wormhole ###
 
-execute at @s if predicate players:hold_pocket if predicate players:lodahr run schedule function weapons:give/pocket 1t
-execute at @s if predicate players:hold_pocket if predicate players:lodahr if entity @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
-execute at @s if predicate players:hold_pocket if predicate players:lodahr if entity @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_pocket if predicate players:lodahr run tag @s add temp_waystone
-execute if predicate players:hold_pocket if predicate players:lodahr run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute at @s if predicate players:hold_waystone if predicate players:lodahr run schedule function weapons:give/waystone 1t
-execute at @s if predicate players:hold_waystone if predicate players:lodahr if entity @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
-execute at @s if predicate players:hold_waystone if predicate players:lodahr if entity @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_waystone if predicate players:lodahr run tag @s add temp_waystone
-execute if predicate players:hold_waystone if predicate players:lodahr run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run schedule function weapons:give/pocket 1t
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier,tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run tag @s add temp_waystone
-execute if predicate players:hold_pocket if entity @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run schedule function weapons:give/pocket 1t
-execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
-execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run tag @s add temp_waystone
-execute if predicate players:hold_pocket if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run schedule function weapons:give/waystone 1t
-execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
-execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false},tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run tag @s add temp_waystone
-execute if predicate players:hold_waystone if entity @s[advancements={advancements:primordial/khive_angy=true,advancements:primordial/enter_yav=false}] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-
-execute if predicate players:hold_waystone if entity @s[tag=supersoldier] run schedule function weapons:give/waystone 1t
-execute if predicate players:hold_waystone if entity @s[tag=supersoldier,tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
-execute if predicate players:hold_waystone if entity @s[tag=supersoldier,tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_waystone if entity @s[tag=supersoldier] run tag @s add temp_waystone
-execute if predicate players:hold_waystone if entity @s[tag=supersoldier] run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute at @s if predicate players:hold_pocket if predicate players:adventure_areas run schedule function weapons:give/pocket 1t
-execute at @s if predicate players:hold_pocket if predicate players:adventure_areas if entity @s[tag=!temp_waystone] run tellraw @s {"text":"Your wormhole fizzles away in your hand","bold":true,"color":"dark_red"}
-execute at @s if predicate players:hold_pocket if predicate players:adventure_areas if entity @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_pocket if predicate players:adventure_areas run tag @s add temp_waystone
-execute if predicate players:hold_pocket if predicate players:adventure_areas run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
-execute at @s if predicate players:hold_waystone if predicate players:adventure_areas run schedule function weapons:give/waystone 1t
-execute at @s if predicate players:hold_waystone if predicate players:adventure_areas if entity @s[tag=!temp_waystone] run tellraw @s {"text":"Your waystone fizzles away in your hand","bold":true,"color":"dark_red"}
-execute at @s if predicate players:hold_waystone if predicate players:adventure_areas if entity @s[tag=!temp_waystone] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0
-execute if predicate players:hold_waystone if predicate players:adventure_areas run tag @s add temp_waystone
-execute if predicate players:hold_waystone if predicate players:adventure_areas run item modify entity @s weapon.mainhand core:soletta/remove_one_item
-
+# Pocket Wormhole
+execute if predicate players:hold_pocket run function players:pocket
 execute if entity @s[tag=temp_waystone] unless predicate players:hold_pocket unless predicate players:hold_waystone run tag @s remove temp_waystone
+
+# Waystone 
+execute if predicate players:hold_waystone run function players:waystone
 
 # -------------------------------------------------------------------
 
-### Other Player-Specific Logic ###
 # --- Zenith ---
 execute if predicate players:holding/zenith2 run scoreboard players add @s zenith_cd 1
 
@@ -987,20 +890,6 @@ execute at @s if predicate players:in_em_arena run scoreboard players set @s obv
 execute at @s if predicate core:in_hovadmain run scoreboard players set @s obv_cool 2147483647
 execute at @s if predicate players:in_generals_arena run scoreboard players set @s obv_cool 2147483647
 execute at @s if score @s obv_cool matches 2000000000.. unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena run scoreboard players reset @s obv_cool
-
-
-# ===================================================================
-#             GLOBAL / ENTITY-BASED COMMANDS
-# ===================================================================
-# This section contains commands that run on entities or from fixed 
-# positions, and do not depend on the player-centric execution.
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-### Special Entity Ticking ###
-
-
-# -------------------------------------------------------------------
-
 
 # -------------------------------------------------------------------
 
@@ -1020,6 +909,9 @@ execute as @s[tag=waterspiked] run function entities:ai/waterspiked/bleed
 # mythic abilities disabler
 execute as @s[tag=disabled] run function players:misc/disabled
 
+# mb run mastermode
+execute as @s[tag=suffering] run function players:misc/suffer
+
 # generals music
 execute as @s[tag=generals_music,tag=!finished] if predicate players:in_generals_arena unless score @s playingMusic matches 1.. at @s run function players:music/generals
 execute as @s[tag=generals_music] unless predicate players:in_generals_arena run tag @s remove generals_music
@@ -1028,15 +920,9 @@ execute if score #1S timer matches 0 if predicate players:in_generals_arena run 
 # zul spawning
 execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
 
-# providence cd
-
-
-
-
 # Ace
 execute if predicate players:holding/ace run function players:items/ace/main
 execute as @s[tag=ace] unless predicate players:holding/ace run function players:items/ace/main_2
-
 
 # oblivion 2 voidrecall preventing drops
 scoreboard players operation @s wasHoldingOb = @s holdingob
@@ -1045,12 +931,9 @@ execute store success score @s[tag=!disabled] holdingob if predicate players:hol
 execute if score @s wasHoldingOb matches 1 if score @s drop_ob matches 1 run function players:items/obv/misfire3
 scoreboard players reset @s drop_ob
 
-
-
 # moments peace
 execute as @s[scores={moment=1..}] run function players:items/moment/use
 
-
+# zul spawning
 execute if score #10S timer matches 0 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
 
-execute as @s[tag=suffering] run function players:misc/suffer

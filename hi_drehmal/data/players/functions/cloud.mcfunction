@@ -1,0 +1,1 @@
+execute at @s if predicate players:adventure_areas unless predicate players:locations/in_terminus if predicate dlc:cloud run function players:nocloud
