@@ -1,0 +1,3 @@
+execute positioned 4623 63 5865 run tellraw @a[distance=..50] ["",{"text":"<Wehl'r> You\u2026 lied straight to my face? I "},{"text":"TRUSTED","underlined":true},{"text":" you! You could have been a "},{"text":"HERO","underlined":true},{"text":"! You never cared about Sahd at all!"}]
+execute positioned 4623 63 5865 run playsound entity.villager.no player @a ~ ~ ~ 100 1
+schedule function quests:wellerquest/betrayal_3 7s

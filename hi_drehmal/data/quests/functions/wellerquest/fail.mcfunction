@@ -1,6 +1,6 @@
-execute as @e[tag=wellerman] run tag @s add qend
-execute as @e[tag=wellerman] run tag @s add seenfrenzy
-execute as @e[tag=wellerman] run tag @s remove fragmentcollecting
+execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s add qend
+execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s add seenfrenzy
+execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s remove fragmentcollecting
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run scoreboard players reset @s wquest
 execute as @a[tag=qst17] run tag @s remove qst17
 
@@ -26,5 +26,7 @@ schedule clear quests:wellerquest/done3
 schedule clear quests:wellerquest/done4
 schedule clear quests:wellerquest/done5
 schedule clear quests:wellerquest/finish
+
+schedule clear quests:wellerquest/make_happy
 
 schedule function quests:wellerquest/fail_1 1s

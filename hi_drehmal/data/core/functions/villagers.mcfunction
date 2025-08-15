@@ -129,7 +129,8 @@ execute positioned -2944 92 5160 as @e[name="Mahkar",type=villager,tag=!qend,dis
 
 # Weller - New Sahd
 execute if score #weller_happy bool matches 1 run execute positioned 4623 63 5865 as @e[type=villager,tag=wellerman,tag=!seenfrenzy,tag=!followup,distance=..3] if entity @a[distance=..5] run function quests:wellerquest/epilogue
-execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,distance=..4] if entity @a[distance=..15,predicate=players:holding/frenzy] run function quests:wellerquest/fail
+execute positioned 4623 63 5865 as @e[type=villager,tag=qend,tag=wellerman,tag=!seenfrenzy,distance=..4] if entity @a[distance=..15,predicate=players:holding/frenzy] run function quests:wellerquest/betrayal
+execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=!seenfrenzy,distance=..4] if entity @a[distance=..15,predicate=players:holding/frenzy] run function quests:wellerquest/fail
 execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_fury run function quests:wellerquest/fury
 execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_hate run function quests:wellerquest/hate
 execute positioned 4623 63 5865 as @e[type=villager,tag=!qend,tag=wellerman,tag=fragmentcollecting,tag=!seenfrenzy,tag=!temp_speaking,distance=..4] if entity @a[distance=..3,tag=qst17] run execute as @p[tag=qst17] if predicate players:holding/quest/fragment_pain run function quests:wellerquest/pain

@@ -49,9 +49,9 @@ execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~2
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~1 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~2 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~1 {Value:10}
-execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
+execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon firework_rocket ~ ~3 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
 execute as @e[tag=wellerman,type=villager] run tag @s add qend
-execute positioned ~ ~ ~ as @p[tag=qst177] at @s run scoreboard players reset @s wquest
+execute positioned ~ ~ ~ as @p[tag=qst17] at @s run scoreboard players reset @s wquest
 execute as @p[tag=qst17] run tag @s remove qst17
 
 
