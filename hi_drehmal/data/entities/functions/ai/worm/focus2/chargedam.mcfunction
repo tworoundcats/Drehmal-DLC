@@ -1,1 +1,1 @@
-damage @s 31 minecraft:bernice/swallow
+damage @s[scores={blocking3=..4,blocked=1..}] 31 minecraft:bernice/swallow

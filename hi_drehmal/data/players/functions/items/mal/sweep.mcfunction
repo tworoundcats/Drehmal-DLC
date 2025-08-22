@@ -43,24 +43,24 @@ execute positioned ^ ^ ^2.8 as @e[type=!player,type=!#entities:dummy,type=!#enti
 execute positioned ^ ^ ^3 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=!draining] run function players:items/mal/drain
 
 
-execute positioned ^ ^ ^-1 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^-0.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^-0.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^-0.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^-0.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^ as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^0.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^0.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^0.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^0.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^1 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^1.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^1.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^1.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^1.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^2.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^2.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^2.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^2.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
-execute positioned ^ ^ ^3 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s 10 generic
+execute positioned ^ ^ ^-1 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^-0.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^-0.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^-0.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^-0.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^ as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^0.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^0.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^0.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^0.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^1 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^1.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^1.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^1.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^1.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^2.2 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^2.4 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^2.6 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^2.8 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic
+execute positioned ^ ^ ^3 as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2,tag=draining] run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic

@@ -1,4 +1,4 @@
-damage @s 15 minecraft:ossein/shattered by @p
+damage @s[scores={blocking3=..4,blocked=1..}] 15 minecraft:ossein/shattered by @p
 
 effect give @s slowness 10 3 true
 

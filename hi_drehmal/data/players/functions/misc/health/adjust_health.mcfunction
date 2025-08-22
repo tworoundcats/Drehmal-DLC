@@ -1,4 +1,4 @@
-    damage @s 0.0000001
+    damage @s[scores={blocking3=..4,blocked=1..}] 0.0000001
 execute at @s run stopsound @a[distance=..30] * entity.player.hurt
 tag @s add adjust
 

@@ -1,4 +1,4 @@
-damage @s 5 minecraft:nothing
+damage @s[scores={blocking3=..4,blocked=1..}] 5 minecraft:nothing
 
 tag @s remove em_grab
 particle explosion_emitter ^ ^ ^5 0 0 0 0 1 force

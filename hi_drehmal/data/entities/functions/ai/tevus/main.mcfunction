@@ -12,7 +12,7 @@ execute as @s[tag=!swapped3] unless score #noswap2 bool matches 1 if score #nosw
 execute if score #5T timer matches 0 run bossbar set health2 players @a
 
 execute at @s[tag=aura] run particle lava ~ ~1 ~ 0.5 0.2 0.5 5 5 normal
-execute at @s[tag=aura] as @a[distance=..3] run damage @s 30 in_fire
+execute at @s[tag=aura] as @a[distance=..3] run damage @s[scores={blocking3=..4,blocked=1..}] 30 in_fire
 execute if score @s[tag=!temp_disable3] ai_state2 matches 1 run effect give @s slowness 2 2 true
 execute unless score @s ai_state2 matches 1 run effect clear @s slowness
 

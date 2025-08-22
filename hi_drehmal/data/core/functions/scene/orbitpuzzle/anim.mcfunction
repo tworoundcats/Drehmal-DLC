@@ -195,9 +195,9 @@ execute if score #orbitpuzzle y matches 300 run fill 1234 127 306 1232 127 304 f
 
 execute if score #orbitpuzzle y matches 300 run scoreboard players set #supplydepotadvancement bool 1
 #kill
-execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..5] run damage @s 40 minecraft:overreacted
-execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..10] run damage @s 20 minecraft:overreacted
-execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..20] run damage @s 10 minecraft:overreacted
+execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..5] run damage @s[scores={blocking3=..4,blocked=1..}] 40 minecraft:overreacted
+execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..10] run damage @s[scores={blocking3=..4,blocked=1..}] 20 minecraft:overreacted
+execute if score #orbitpuzzle y matches 300 positioned 1233 127 310 as @a[distance=..20] run damage @s[scores={blocking3=..4,blocked=1..}] 10 minecraft:overreacted
 
 execute if score #orbitpuzzle y matches 280..300 run particle campfire_signal_smoke 1233 129 305 0 0 0 1 50
 execute if score #orbitpuzzle y matches 300..350 run particle campfire_signal_smoke 1233 129 305 0 0 0 0.25 50

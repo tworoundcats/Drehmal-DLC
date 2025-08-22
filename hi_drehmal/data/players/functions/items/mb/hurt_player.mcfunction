@@ -1,1 +1,1 @@
-damage @s 25 minecraft:primalenergy2
+damage @s[scores={blocking3=..4,blocked=1..}] 25 minecraft:primalenergy2

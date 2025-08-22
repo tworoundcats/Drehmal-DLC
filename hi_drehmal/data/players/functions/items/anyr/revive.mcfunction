@@ -8,7 +8,7 @@ tag @s add temp_h
 
 effect give @s resistance 1 4 true
 attribute @s minecraft:generic.max_health base set -100
-damage @s 1 
+damage @s[scores={blocking3=..4,blocked=1..}] 1 
 
 
 schedule function players:items/anyr/revive_2 4t

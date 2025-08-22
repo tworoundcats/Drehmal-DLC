@@ -1,2 +1,2 @@
 tag @s add draining
-damage @s 20 generic by @p[predicate=players:holding/male2]
+damage @s[scores={blocking3=..4,blocked=1..}] 20 generic by @p[predicate=players:holding/male2]

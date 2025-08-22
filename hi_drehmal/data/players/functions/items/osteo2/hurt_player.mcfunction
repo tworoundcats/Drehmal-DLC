@@ -1,1 +1,1 @@
-damage @s 12 minecraft:bonesdissolved
+damage @s[scores={blocking3=..4,blocked=1..}] 12 minecraft:bonesdissolved

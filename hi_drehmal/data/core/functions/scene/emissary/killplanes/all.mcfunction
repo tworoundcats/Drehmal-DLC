@@ -1,4 +1,4 @@
-damage @s 6 minecraft:multiverse
+damage @s[scores={blocking3=..4,blocked=1..}] 6 minecraft:multiverse
 
 effect give @s blindness 5 1 true
 playsound minecraft:dcustom.block.deepslate.fall block @s ~ ~ ~ 100 0.5

@@ -1,1 +1,1 @@
-damage @s 9 minecraft:bifurcated
+damage @s[scores={blocking3=..4,blocked=1..}] 9 minecraft:bifurcated

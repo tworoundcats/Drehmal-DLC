@@ -29,8 +29,8 @@ execute as @s[tag=in_air2] at @s if predicate entities:on_ground run function en
 
 
 execute as @s[tag=unstoppable] at @s unless score #low_particles? bool matches 1 run execute at @s run particle firework ~ ~1 ~ 0.2 1 0.2 0.2 10 normal
-execute unless score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s 30 fly_into_wall by @e[tag=rhalon,limit=1]
-execute if score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s 40 fly_into_wall by @e[tag=rhalon,limit=1]
+execute unless score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s[scores={blocking3=..4,blocked=1..}] 30 fly_into_wall by @e[tag=rhalon,limit=1]
+execute if score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s[scores={blocking3=..4,blocked=1..}] 40 fly_into_wall by @e[tag=rhalon,limit=1]
 
 attribute @s[tag=!spawned_once] generic.movement_speed base set 0.4
 tag @s[tag=!spawned_once] add spawned_once

@@ -1,5 +1,5 @@
 tag @s remove AvHit
-damage @s 1 minecraft:zenith by @p
+damage @s[scores={blocking3=..4,blocked=1..}] 1 minecraft:zenith by @p
 execute at @s run playsound minecraft:dcustom.entity.zombie_villager.cure ambient @a ~ ~ ~ 1 1.2
 
 scoreboard players operation @s AvPos0 -= #avkbX const

@@ -1,1 +1,1 @@
-damage @s 1 minecraft:scalded
+damage @s[scores={blocking3=..4,blocked=1..}] 1 minecraft:scalded

@@ -107,5 +107,5 @@ execute if score #alch_ani int matches 283 positioned -2428.0 35 2940.0 run func
 execute if score #alch_ani int matches 283 run summon falling_block -2428 34.8 2940 {BlockState:{Name:"minecraft:light_blue_carpet"},Time:1}
 execute if score #alch_ani int matches 283 run summon falling_block -2429 35.2 2939 {BlockState:{Name:"minecraft:light_blue_carpet"},Time:1}
 execute if score #alch_ani int matches 283 run summon minecraft:falling_block -2428 38 2941 {Time:1,BlockState:{Name:"minecraft:polished_andesite_slab"}}
-execute if score #alch_ani int matches 283 run execute as @a at @s positioned -2428.0 ~ 2940.0 if entity @a[distance=..3] run execute as @s run damage @s 44 minecraft:labaccident 
+execute if score #alch_ani int matches 283 run execute as @a at @s positioned -2428.0 ~ 2940.0 if entity @a[distance=..3] run execute as @s run damage @s[scores={blocking3=..4,blocked=1..}] 44 minecraft:labaccident 
 execute if score #alch_ani int matches 293 run fill -2430 34 2941 -2427 36 2938 air replace light

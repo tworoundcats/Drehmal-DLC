@@ -1,4 +1,4 @@
-damage @s 16 generic
+damage @s[scores={blocking3=..4,blocked=1..}] 16 generic
 
 
 data modify storage drehmal:players tempMotion set from entity @s Pos

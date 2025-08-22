@@ -13,4 +13,4 @@ summon marker ^-0.3 ^-0.5 ^ {Tags:["asc_star","special"]}
 execute as @e[type=marker,tag=special] run function projectiles:fancy/particle_tag
 summon marker ^-0.3 ^-0.5 ^ {Tags:["asc_star","special"]}
 execute as @e[type=marker,tag=special] run function projectiles:fancy/particle_tag
-execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run damage @s 10 bifurcated by @p
+execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run damage @s[scores={blocking3=..4,blocked=1..}] 10 bifurcated by @p

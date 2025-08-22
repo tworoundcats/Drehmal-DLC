@@ -1,4 +1,4 @@
-damage @s 24
+damage @s[scores={blocking3=..4,blocked=1..}] 24
 
 effect give @s slowness 10 3 true
 

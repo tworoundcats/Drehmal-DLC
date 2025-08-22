@@ -1,1 +1,1 @@
-damage @s 6 minecraft:fdry_blown
+damage @s[scores={blocking3=..4,blocked=1..}] 6 minecraft:fdry_blown

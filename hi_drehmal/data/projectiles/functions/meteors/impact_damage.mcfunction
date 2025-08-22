@@ -34,6 +34,6 @@ scoreboard players set #epower temp 5
 
 function entities:misc/explode
 
-damage @s 200 minecraft:ducked
+damage @s[scores={blocking3=..4,blocked=1..}] 200 minecraft:ducked
 
 advancement grant @s only minecraft:lodahr/hitbystruckbytruck

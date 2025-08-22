@@ -1,1 +1,1 @@
-damage @s 14 minecraft:ysold/hole
+damage @s[scores={blocking3=..4,blocked=1..}] 14 minecraft:ysold/hole
