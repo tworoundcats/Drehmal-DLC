@@ -9,8 +9,8 @@ execute anchored feet positioned ^0.4 ^0.4 ^ if score @s uuid0 = #tmp uuid0 if s
 
 
 
-execute if entity @s[tag=Bonemage,type=!player] run damage @s[scores={blocking3=..4,blocked=1..}] 3
-execute if entity @s[tag=Bonemage,type=player] run damage @s[scores={blocking3=..4,blocked=1..}] 10 minecraft:whacked
+execute if entity @s[tag=Bonemage,type=!player] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3
+execute if entity @s[tag=Bonemage,type=player] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 minecraft:whacked
 
 
 execute if entity @s[tag=Bonemage] run scoreboard players set @e[type=armor_stand,tag=Bonerang,tag=Bonified,limit=1,sort=nearest] BoneTimer 41

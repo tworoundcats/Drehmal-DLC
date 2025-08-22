@@ -53,7 +53,7 @@ summon enchancement:amethyst_shard ~ ~1 ~ {Motion:[0.45,0.0,0.45],damage:10}
 summon enchancement:amethyst_shard ~ ~1 ~ {Motion:[0.45,0.0,-0.45],damage:10}
 summon enchancement:amethyst_shard ~ ~1 ~ {Motion:[-0.45,0.0,0.45],damage:10}
 summon enchancement:amethyst_shard ~ ~1 ~ {Motion:[-0.45,0.0,-0.45],damage:10}
-execute at @p[tag=shielded] run execute as @e[type=#core:hostile,distance=..5] run damage @s[scores={blocking3=..4,blocked=1..}] 10
+execute at @p[tag=shielded] run execute as @e[type=#core:hostile,distance=..5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10
 
 execute as @p[tag=shielded] run scoreboard players set @s shield_cool 600
 function dlc:shield/explosion_d

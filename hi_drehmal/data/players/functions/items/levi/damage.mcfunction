@@ -1,101 +1,101 @@
-execute if score #levi levi_damage matches 1 run damage @s[scores={blocking3=..4,blocked=1..}] 1 generic by @p
-execute if score #levi levi_damage matches 2 run damage @s[scores={blocking3=..4,blocked=1..}] 2 generic by @p
-execute if score #levi levi_damage matches 3 run damage @s[scores={blocking3=..4,blocked=1..}] 3 generic by @p
-execute if score #levi levi_damage matches 4 run damage @s[scores={blocking3=..4,blocked=1..}] 4 generic by @p
-execute if score #levi levi_damage matches 5 run damage @s[scores={blocking3=..4,blocked=1..}] 5 generic by @p
-execute if score #levi levi_damage matches 6 run damage @s[scores={blocking3=..4,blocked=1..}] 6 generic by @p
-execute if score #levi levi_damage matches 7 run damage @s[scores={blocking3=..4,blocked=1..}] 7 generic by @p
-execute if score #levi levi_damage matches 8 run damage @s[scores={blocking3=..4,blocked=1..}] 8 generic by @p
-execute if score #levi levi_damage matches 9 run damage @s[scores={blocking3=..4,blocked=1..}] 9 generic by @p
-execute if score #levi levi_damage matches 10 run damage @s[scores={blocking3=..4,blocked=1..}] 10 generic by @p
-execute if score #levi levi_damage matches 11 run damage @s[scores={blocking3=..4,blocked=1..}] 11 generic by @p
-execute if score #levi levi_damage matches 12 run damage @s[scores={blocking3=..4,blocked=1..}] 12 generic by @p
-execute if score #levi levi_damage matches 13 run damage @s[scores={blocking3=..4,blocked=1..}] 13 generic by @p
-execute if score #levi levi_damage matches 14 run damage @s[scores={blocking3=..4,blocked=1..}] 14 generic by @p
-execute if score #levi levi_damage matches 15 run damage @s[scores={blocking3=..4,blocked=1..}] 15 generic by @p
-execute if score #levi levi_damage matches 16 run damage @s[scores={blocking3=..4,blocked=1..}] 16 generic by @p
-execute if score #levi levi_damage matches 17 run damage @s[scores={blocking3=..4,blocked=1..}] 17 generic by @p
-execute if score #levi levi_damage matches 18 run damage @s[scores={blocking3=..4,blocked=1..}] 18 generic by @p
-execute if score #levi levi_damage matches 19 run damage @s[scores={blocking3=..4,blocked=1..}] 19 generic by @p
-execute if score #levi levi_damage matches 20 run damage @s[scores={blocking3=..4,blocked=1..}] 20 generic by @p
-execute if score #levi levi_damage matches 21 run damage @s[scores={blocking3=..4,blocked=1..}] 21 generic by @p
-execute if score #levi levi_damage matches 22 run damage @s[scores={blocking3=..4,blocked=1..}] 22 generic by @p
-execute if score #levi levi_damage matches 23 run damage @s[scores={blocking3=..4,blocked=1..}] 23 generic by @p
-execute if score #levi levi_damage matches 24 run damage @s[scores={blocking3=..4,blocked=1..}] 24 generic by @p
-execute if score #levi levi_damage matches 25 run damage @s[scores={blocking3=..4,blocked=1..}] 25 generic by @p
-execute if score #levi levi_damage matches 26 run damage @s[scores={blocking3=..4,blocked=1..}] 26 generic by @p
-execute if score #levi levi_damage matches 27 run damage @s[scores={blocking3=..4,blocked=1..}] 27 generic by @p
-execute if score #levi levi_damage matches 28 run damage @s[scores={blocking3=..4,blocked=1..}] 28 generic by @p
-execute if score #levi levi_damage matches 29 run damage @s[scores={blocking3=..4,blocked=1..}] 29 generic by @p
-execute if score #levi levi_damage matches 30 run damage @s[scores={blocking3=..4,blocked=1..}] 30 generic by @p
-execute if score #levi levi_damage matches 31 run damage @s[scores={blocking3=..4,blocked=1..}] 31 generic by @p
-execute if score #levi levi_damage matches 32 run damage @s[scores={blocking3=..4,blocked=1..}] 32 generic by @p
-execute if score #levi levi_damage matches 33 run damage @s[scores={blocking3=..4,blocked=1..}] 33 generic by @p
-execute if score #levi levi_damage matches 34 run damage @s[scores={blocking3=..4,blocked=1..}] 34 generic by @p
-execute if score #levi levi_damage matches 35 run damage @s[scores={blocking3=..4,blocked=1..}] 35 generic by @p
-execute if score #levi levi_damage matches 36 run damage @s[scores={blocking3=..4,blocked=1..}] 36 generic by @p
-execute if score #levi levi_damage matches 37 run damage @s[scores={blocking3=..4,blocked=1..}] 37 generic by @p
-execute if score #levi levi_damage matches 38 run damage @s[scores={blocking3=..4,blocked=1..}] 38 generic by @p
-execute if score #levi levi_damage matches 39 run damage @s[scores={blocking3=..4,blocked=1..}] 39 generic by @p
-execute if score #levi levi_damage matches 40 run damage @s[scores={blocking3=..4,blocked=1..}] 40 generic by @p
-execute if score #levi levi_damage matches 41 run damage @s[scores={blocking3=..4,blocked=1..}] 41 generic by @p
-execute if score #levi levi_damage matches 42 run damage @s[scores={blocking3=..4,blocked=1..}] 42 generic by @p
-execute if score #levi levi_damage matches 43 run damage @s[scores={blocking3=..4,blocked=1..}] 43 generic by @p
-execute if score #levi levi_damage matches 44 run damage @s[scores={blocking3=..4,blocked=1..}] 44 generic by @p
-execute if score #levi levi_damage matches 45 run damage @s[scores={blocking3=..4,blocked=1..}] 45 generic by @p
-execute if score #levi levi_damage matches 46 run damage @s[scores={blocking3=..4,blocked=1..}] 46 generic by @p
-execute if score #levi levi_damage matches 47 run damage @s[scores={blocking3=..4,blocked=1..}] 47 generic by @p
-execute if score #levi levi_damage matches 48 run damage @s[scores={blocking3=..4,blocked=1..}] 48 generic by @p
-execute if score #levi levi_damage matches 49 run damage @s[scores={blocking3=..4,blocked=1..}] 49 generic by @p
-execute if score #levi levi_damage matches 50 run damage @s[scores={blocking3=..4,blocked=1..}] 50 generic by @p
-execute if score #levi levi_damage matches 51 run damage @s[scores={blocking3=..4,blocked=1..}] 51 generic by @p
-execute if score #levi levi_damage matches 52 run damage @s[scores={blocking3=..4,blocked=1..}] 52 generic by @p
-execute if score #levi levi_damage matches 53 run damage @s[scores={blocking3=..4,blocked=1..}] 53 generic by @p
-execute if score #levi levi_damage matches 54 run damage @s[scores={blocking3=..4,blocked=1..}] 54 generic by @p
-execute if score #levi levi_damage matches 55 run damage @s[scores={blocking3=..4,blocked=1..}] 55 generic by @p
-execute if score #levi levi_damage matches 56 run damage @s[scores={blocking3=..4,blocked=1..}] 56 generic by @p
-execute if score #levi levi_damage matches 57 run damage @s[scores={blocking3=..4,blocked=1..}] 57 generic by @p
-execute if score #levi levi_damage matches 58 run damage @s[scores={blocking3=..4,blocked=1..}] 58 generic by @p
-execute if score #levi levi_damage matches 59 run damage @s[scores={blocking3=..4,blocked=1..}] 59 generic by @p
-execute if score #levi levi_damage matches 60 run damage @s[scores={blocking3=..4,blocked=1..}] 60 generic by @p
-execute if score #levi levi_damage matches 61 run damage @s[scores={blocking3=..4,blocked=1..}] 61 generic by @p
-execute if score #levi levi_damage matches 62 run damage @s[scores={blocking3=..4,blocked=1..}] 62 generic by @p
-execute if score #levi levi_damage matches 63 run damage @s[scores={blocking3=..4,blocked=1..}] 63 generic by @p
-execute if score #levi levi_damage matches 64 run damage @s[scores={blocking3=..4,blocked=1..}] 64 generic by @p
-execute if score #levi levi_damage matches 65 run damage @s[scores={blocking3=..4,blocked=1..}] 65 generic by @p
-execute if score #levi levi_damage matches 66 run damage @s[scores={blocking3=..4,blocked=1..}] 66 generic by @p
-execute if score #levi levi_damage matches 67 run damage @s[scores={blocking3=..4,blocked=1..}] 67 generic by @p
-execute if score #levi levi_damage matches 68 run damage @s[scores={blocking3=..4,blocked=1..}] 68 generic by @p
-execute if score #levi levi_damage matches 69 run damage @s[scores={blocking3=..4,blocked=1..}] 69 generic by @p
-execute if score #levi levi_damage matches 70 run damage @s[scores={blocking3=..4,blocked=1..}] 70 generic by @p
-execute if score #levi levi_damage matches 71 run damage @s[scores={blocking3=..4,blocked=1..}] 71 generic by @p
-execute if score #levi levi_damage matches 72 run damage @s[scores={blocking3=..4,blocked=1..}] 72 generic by @p
-execute if score #levi levi_damage matches 73 run damage @s[scores={blocking3=..4,blocked=1..}] 73 generic by @p
-execute if score #levi levi_damage matches 74 run damage @s[scores={blocking3=..4,blocked=1..}] 74 generic by @p
-execute if score #levi levi_damage matches 75 run damage @s[scores={blocking3=..4,blocked=1..}] 75 generic by @p
-execute if score #levi levi_damage matches 76 run damage @s[scores={blocking3=..4,blocked=1..}] 76 generic by @p
-execute if score #levi levi_damage matches 77 run damage @s[scores={blocking3=..4,blocked=1..}] 77 generic by @p
-execute if score #levi levi_damage matches 78 run damage @s[scores={blocking3=..4,blocked=1..}] 78 generic by @p
-execute if score #levi levi_damage matches 79 run damage @s[scores={blocking3=..4,blocked=1..}] 79 generic by @p
-execute if score #levi levi_damage matches 80 run damage @s[scores={blocking3=..4,blocked=1..}] 80 generic by @p
-execute if score #levi levi_damage matches 81 run damage @s[scores={blocking3=..4,blocked=1..}] 81 generic by @p
-execute if score #levi levi_damage matches 82 run damage @s[scores={blocking3=..4,blocked=1..}] 82 generic by @p
-execute if score #levi levi_damage matches 83 run damage @s[scores={blocking3=..4,blocked=1..}] 83 generic by @p
-execute if score #levi levi_damage matches 84 run damage @s[scores={blocking3=..4,blocked=1..}] 84 generic by @p
-execute if score #levi levi_damage matches 85 run damage @s[scores={blocking3=..4,blocked=1..}] 85 generic by @p
-execute if score #levi levi_damage matches 86 run damage @s[scores={blocking3=..4,blocked=1..}] 86 generic by @p
-execute if score #levi levi_damage matches 87 run damage @s[scores={blocking3=..4,blocked=1..}] 87 generic by @p
-execute if score #levi levi_damage matches 88 run damage @s[scores={blocking3=..4,blocked=1..}] 88 generic by @p
-execute if score #levi levi_damage matches 89 run damage @s[scores={blocking3=..4,blocked=1..}] 89 generic by @p
-execute if score #levi levi_damage matches 90 run damage @s[scores={blocking3=..4,blocked=1..}] 90 generic by @p
-execute if score #levi levi_damage matches 91 run damage @s[scores={blocking3=..4,blocked=1..}] 91 generic by @p
-execute if score #levi levi_damage matches 92 run damage @s[scores={blocking3=..4,blocked=1..}] 92 generic by @p
-execute if score #levi levi_damage matches 93 run damage @s[scores={blocking3=..4,blocked=1..}] 93 generic by @p
-execute if score #levi levi_damage matches 94 run damage @s[scores={blocking3=..4,blocked=1..}] 94 generic by @p
-execute if score #levi levi_damage matches 95 run damage @s[scores={blocking3=..4,blocked=1..}] 95 generic by @p
-execute if score #levi levi_damage matches 96 run damage @s[scores={blocking3=..4,blocked=1..}] 96 generic by @p
-execute if score #levi levi_damage matches 97 run damage @s[scores={blocking3=..4,blocked=1..}] 97 generic by @p
-execute if score #levi levi_damage matches 98 run damage @s[scores={blocking3=..4,blocked=1..}] 98 generic by @p
-execute if score #levi levi_damage matches 99 run damage @s[scores={blocking3=..4,blocked=1..}] 99 generic by @p
-execute if score #levi levi_damage matches 100 run damage @s[scores={blocking3=..4,blocked=1..}] 100 generic by @p
+execute if score #levi levi_damage matches 1 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1 generic by @p
+execute if score #levi levi_damage matches 2 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 2 generic by @p
+execute if score #levi levi_damage matches 3 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3 generic by @p
+execute if score #levi levi_damage matches 4 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 4 generic by @p
+execute if score #levi levi_damage matches 5 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 5 generic by @p
+execute if score #levi levi_damage matches 6 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 6 generic by @p
+execute if score #levi levi_damage matches 7 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 7 generic by @p
+execute if score #levi levi_damage matches 8 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 8 generic by @p
+execute if score #levi levi_damage matches 9 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 9 generic by @p
+execute if score #levi levi_damage matches 10 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 generic by @p
+execute if score #levi levi_damage matches 11 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 11 generic by @p
+execute if score #levi levi_damage matches 12 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 12 generic by @p
+execute if score #levi levi_damage matches 13 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 13 generic by @p
+execute if score #levi levi_damage matches 14 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 14 generic by @p
+execute if score #levi levi_damage matches 15 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 15 generic by @p
+execute if score #levi levi_damage matches 16 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 16 generic by @p
+execute if score #levi levi_damage matches 17 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 17 generic by @p
+execute if score #levi levi_damage matches 18 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 18 generic by @p
+execute if score #levi levi_damage matches 19 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 19 generic by @p
+execute if score #levi levi_damage matches 20 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 20 generic by @p
+execute if score #levi levi_damage matches 21 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 21 generic by @p
+execute if score #levi levi_damage matches 22 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 22 generic by @p
+execute if score #levi levi_damage matches 23 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 23 generic by @p
+execute if score #levi levi_damage matches 24 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 24 generic by @p
+execute if score #levi levi_damage matches 25 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 25 generic by @p
+execute if score #levi levi_damage matches 26 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 26 generic by @p
+execute if score #levi levi_damage matches 27 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 27 generic by @p
+execute if score #levi levi_damage matches 28 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 28 generic by @p
+execute if score #levi levi_damage matches 29 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 29 generic by @p
+execute if score #levi levi_damage matches 30 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 30 generic by @p
+execute if score #levi levi_damage matches 31 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 31 generic by @p
+execute if score #levi levi_damage matches 32 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 32 generic by @p
+execute if score #levi levi_damage matches 33 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 33 generic by @p
+execute if score #levi levi_damage matches 34 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 34 generic by @p
+execute if score #levi levi_damage matches 35 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 35 generic by @p
+execute if score #levi levi_damage matches 36 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 36 generic by @p
+execute if score #levi levi_damage matches 37 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 37 generic by @p
+execute if score #levi levi_damage matches 38 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 38 generic by @p
+execute if score #levi levi_damage matches 39 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 39 generic by @p
+execute if score #levi levi_damage matches 40 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 40 generic by @p
+execute if score #levi levi_damage matches 41 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 41 generic by @p
+execute if score #levi levi_damage matches 42 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 42 generic by @p
+execute if score #levi levi_damage matches 43 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 43 generic by @p
+execute if score #levi levi_damage matches 44 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 44 generic by @p
+execute if score #levi levi_damage matches 45 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 45 generic by @p
+execute if score #levi levi_damage matches 46 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 46 generic by @p
+execute if score #levi levi_damage matches 47 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 47 generic by @p
+execute if score #levi levi_damage matches 48 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 48 generic by @p
+execute if score #levi levi_damage matches 49 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 49 generic by @p
+execute if score #levi levi_damage matches 50 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 50 generic by @p
+execute if score #levi levi_damage matches 51 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 51 generic by @p
+execute if score #levi levi_damage matches 52 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 52 generic by @p
+execute if score #levi levi_damage matches 53 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 53 generic by @p
+execute if score #levi levi_damage matches 54 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 54 generic by @p
+execute if score #levi levi_damage matches 55 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 55 generic by @p
+execute if score #levi levi_damage matches 56 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 56 generic by @p
+execute if score #levi levi_damage matches 57 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 57 generic by @p
+execute if score #levi levi_damage matches 58 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 58 generic by @p
+execute if score #levi levi_damage matches 59 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 59 generic by @p
+execute if score #levi levi_damage matches 60 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 60 generic by @p
+execute if score #levi levi_damage matches 61 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 61 generic by @p
+execute if score #levi levi_damage matches 62 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 62 generic by @p
+execute if score #levi levi_damage matches 63 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 63 generic by @p
+execute if score #levi levi_damage matches 64 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 64 generic by @p
+execute if score #levi levi_damage matches 65 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 65 generic by @p
+execute if score #levi levi_damage matches 66 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 66 generic by @p
+execute if score #levi levi_damage matches 67 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 67 generic by @p
+execute if score #levi levi_damage matches 68 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 68 generic by @p
+execute if score #levi levi_damage matches 69 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 69 generic by @p
+execute if score #levi levi_damage matches 70 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 70 generic by @p
+execute if score #levi levi_damage matches 71 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 71 generic by @p
+execute if score #levi levi_damage matches 72 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 72 generic by @p
+execute if score #levi levi_damage matches 73 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 73 generic by @p
+execute if score #levi levi_damage matches 74 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 74 generic by @p
+execute if score #levi levi_damage matches 75 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 75 generic by @p
+execute if score #levi levi_damage matches 76 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 76 generic by @p
+execute if score #levi levi_damage matches 77 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 77 generic by @p
+execute if score #levi levi_damage matches 78 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 78 generic by @p
+execute if score #levi levi_damage matches 79 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 79 generic by @p
+execute if score #levi levi_damage matches 80 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 80 generic by @p
+execute if score #levi levi_damage matches 81 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 81 generic by @p
+execute if score #levi levi_damage matches 82 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 82 generic by @p
+execute if score #levi levi_damage matches 83 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 83 generic by @p
+execute if score #levi levi_damage matches 84 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 84 generic by @p
+execute if score #levi levi_damage matches 85 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 85 generic by @p
+execute if score #levi levi_damage matches 86 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 86 generic by @p
+execute if score #levi levi_damage matches 87 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 87 generic by @p
+execute if score #levi levi_damage matches 88 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 88 generic by @p
+execute if score #levi levi_damage matches 89 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 89 generic by @p
+execute if score #levi levi_damage matches 90 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 90 generic by @p
+execute if score #levi levi_damage matches 91 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 91 generic by @p
+execute if score #levi levi_damage matches 92 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 92 generic by @p
+execute if score #levi levi_damage matches 93 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 93 generic by @p
+execute if score #levi levi_damage matches 94 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 94 generic by @p
+execute if score #levi levi_damage matches 95 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 95 generic by @p
+execute if score #levi levi_damage matches 96 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 96 generic by @p
+execute if score #levi levi_damage matches 97 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 97 generic by @p
+execute if score #levi levi_damage matches 98 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 98 generic by @p
+execute if score #levi levi_damage matches 99 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 99 generic by @p
+execute if score #levi levi_damage matches 100 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 100 generic by @p
 tag @s add levi

@@ -16,7 +16,7 @@ execute if entity @s[scores={zenith_slash=12..}] run particle flash ^ ^ ^ 0 0 0 
 
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] mcdar:stunned 1 2 true
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] glowing 1 2 true
-execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s[scores={blocking3=..4,blocked=1..}] 15 minecraft:generic
+execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 15 minecraft:generic
 
 execute if entity @s[scores={zenith_slash=1..4}] run playsound minecraft:dcustom.entity.player.attack.sweep player @a ~ ~ ~ 1 2
 execute if entity @s[scores={zenith_slash=1..4}] run playsound minecraft:dcustom.block.enchantment_table.use player @a ~ ~ ~ 1 2

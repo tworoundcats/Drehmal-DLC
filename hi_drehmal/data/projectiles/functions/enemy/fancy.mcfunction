@@ -29,5 +29,5 @@ execute if entity @s[tag=sentry_machine_gun_angy] run function projectiles:enemy
 execute if entity @s[tag=ob_shard] at @s run particle witch ~ ~ ~ 0 0 0 0 1
 execute if entity @s[tag=ob_shard,tag=!player] at @s run tp @s ~ ~ ~ facing entity @p[distance=10..]
 execute if entity @s[tag=ob_shard] at @s if entity @a[distance=..10] run tag @s add player
-execute if entity @s[tag=ob_shard] at @s if entity @a[distance=..1.5] run damage @s[scores={blocking3=..4,blocked=1..}] 24 minecraft:deconceptualized
+execute if entity @s[tag=ob_shard] at @s if entity @a[distance=..1.5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 24 minecraft:deconceptualized
 execute if entity @s[tag=escythe_spawn] at @s run particle witch ~ ~1.7 ~ 0 0 0 0 0

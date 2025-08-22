@@ -4,9 +4,9 @@ scoreboard players operation #secs temp = @s obv_cool
 scoreboard players add #secs temp 19
 scoreboard players operation #secs temp /= #20 const
 execute if score @s obv_cool matches 1 run function players:items/obv/end_hold_no_item
-execute if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 17.. run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"red"},{"text":"s","color":"red"}]
-execute if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 6..16 run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"yellow"},{"text":"s","color":"yellow"}]
-execute if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 0..5 run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"green"},{"text":"s","color":"green"}]
+execute unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 17.. run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"red"},{"text":"s","color":"red"}]
+execute unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 6..16 run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"yellow"},{"text":"s","color":"yellow"}]
+execute unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if score #secs temp matches 0..5 run title @s actionbar ["",{"text":"Force of Nothing Cooldown: ","color":"dark_purple"},{"score":{"name":"#secs","objective":"temp"},"color":"green"},{"text":"s","color":"green"}]
 
 #timer for secondary effect
 scoreboard players add @s ob_cd 1

@@ -18,9 +18,9 @@ execute if score @s ai_timer matches 60..70 rotated ~ 0 positioned ~ ~1.3 ~ faci
 scoreboard players set #swee.reverse temp 0
 execute if score @s ai_timer matches 60..70 rotated ~ 0 positioned ~ ~1.3 ~ facing ^-0.3 ^0.6 ^ run function entities:ai/samurai/sweep/main
 
-execute unless entity @s[tag=sam_angy] if score @s ai_timer matches 65 positioned ~-6 ~ ~-6 as @a[dx=11.5,dy=3,dz=11.5] positioned ~6 ~ ~6 if entity @a[distance=..20] as @p run damage @s[scores={blocking3=..4,blocked=1..}] 18 minecraft:atomized
+execute unless entity @s[tag=sam_angy] if score @s ai_timer matches 65 positioned ~-6 ~ ~-6 as @a[dx=11.5,dy=3,dz=11.5] positioned ~6 ~ ~6 if entity @a[distance=..20] as @p unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 18 minecraft:atomized
 
-execute if entity @s[tag=sam_angy] if score @s ai_timer matches 65 positioned ~-6 ~ ~-6 as @a[dx=11.5,dy=3,dz=11.5] positioned ~6 ~ ~6 if entity @a[distance=..20] as @p run damage @s[scores={blocking3=..4,blocked=1..}] 30 minecraft:atomized
+execute if entity @s[tag=sam_angy] if score @s ai_timer matches 65 positioned ~-6 ~ ~-6 as @a[dx=11.5,dy=3,dz=11.5] positioned ~6 ~ ~6 if entity @a[distance=..20] as @p unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 30 minecraft:atomized
 
 execute if entity @s[tag=sam_angy] if score @s ai_timer matches 65 positioned ~-6 ~ ~-6 as @a[dx=11.5,dy=3,dz=11.5] positioned ~6 ~ ~6 if entity @a[distance=..20] as @p run effect give @a[distance=..20] minecraft:wither 5 20
 

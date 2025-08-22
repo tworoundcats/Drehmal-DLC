@@ -81,5 +81,5 @@ execute as @s[scores={freefall=8}] run playsound minecraft:dcustom.entity.ender_
 execute as @s[scores={freefall=16}] run playsound minecraft:dcustom.entity.ender_dragon.flap player @a ~ ~ ~ 1 2
 execute as @s[scores={freefall=8}] run playsound minecraft:dcustom.entity.ghast.shoot player @a ~ ~ ~ 0.5 1
 execute as @s[scores={freefall=20}] run summon minecraft:small_fireball ~ ~2.1 ~ {Motion:[0.0,-10.0,0.0]}
-execute as @s[scores={freefall=11}] run damage @s[scores={blocking3=..4,blocked=1..}] 4 minecraft:atmosphere
+execute as @s[scores={freefall=11}] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 4 minecraft:atmosphere
 execute as @s[scores={freefall=20..}] run scoreboard players reset @s freefall

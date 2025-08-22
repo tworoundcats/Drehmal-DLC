@@ -64,7 +64,7 @@ execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 r
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run tag @s add anyr_active
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run attribute @s generic.max_health base set 10
-execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run damage @s[scores={blocking3=..4,blocked=1..}] 1
+execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run playsound minecraft:dcustom.block.respawn_anchor.charge player @s ~ ~ ~ 1 0
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run playsound minecraft:dcustom.block.note_block.bell player @s ~ ~ ~ 1 2
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run playsound minecraft:dcustom.entity.experience_orb.pickup player @s ~ ~ ~ 1 2
@@ -72,7 +72,7 @@ execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 r
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 1 run playsound minecraft:dcustom.block.note_block.xylophone player @s ~ ~ ~ 1 2
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 run attribute @s generic.max_health base set 5
-execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 run damage @s[scores={blocking3=..4,blocked=1..}] 1
+execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 run playsound minecraft:dcustom.block.respawn_anchor.charge player @s ~ ~ ~ 1 0.4
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 run playsound minecraft:dcustom.block.note_block.bell player @s ~ ~ ~ 1 1.6
@@ -82,7 +82,7 @@ execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 2 r
 
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 run attribute @s generic.max_health base set 0
-execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 run damage @s[scores={blocking3=..4,blocked=1..}] 1
+execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 run playsound minecraft:dcustom.block.respawn_anchor.charge player @s ~ ~ ~ 1 0.8
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 run playsound minecraft:dcustom.block.note_block.bell player @s ~ ~ ~ 1 1.2
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 run playsound minecraft:dcustom.entity.experience_orb.pickup player @s ~ ~ ~ 1 1.2
@@ -91,7 +91,7 @@ execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 3 r
 
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 run attribute @s generic.max_health base set -10
-execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 run damage @s[scores={blocking3=..4,blocked=1..}] 1
+execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 run playsound minecraft:dcustom.block.respawn_anchor.charge player @s ~ ~ ~ 1 1.2
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 run playsound minecraft:dcustom.block.note_block.bell player @s ~ ~ ~ 1 0.8
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 run playsound minecraft:dcustom.entity.experience_orb.pickup player @s ~ ~ ~ 1 0
@@ -100,7 +100,7 @@ execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 4 r
 
 
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 run attribute @s generic.max_health base set -100
-execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 run damage @s[scores={blocking3=..4,blocked=1..}] 1
+execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 run playsound minecraft:dcustom.entity.generic.explode player @s ~ ~ ~ 1 1
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 run playsound minecraft:dcustom.dcustom.entity.generic.extinguish_fire player @s ~ ~ ~ 1 0
 execute if score @s anyr_particles matches 22 if score @s anyr_timer matches 5 run playsound minecraft:dcustom.block.respawn_anchor.charge player @s ~ ~ ~ 1 2
