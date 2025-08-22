@@ -1,3 +1,4 @@
+execute unless score #check_host int matches 1 run scoreboard objectives add sex trigger
 execute unless score #check_host int matches 1 run tag @s add host
 scoreboard players add #numberp num 1
 scoreboard players set #check_host int 1

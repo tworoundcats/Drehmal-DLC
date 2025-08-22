@@ -15,6 +15,8 @@ execute if score #swap temp matches 2 run tellraw @a[predicate=players:in_genera
 
 execute if score #swap temp matches 3 run tellraw @a[predicate=players:in_generals_arena] ["",{"text":"["},{"text":"Rhalon, the First General","color":"dark_red"},{"text":"]"},{"text":" YOU FACE THE SECOND FALL OF AVSOHM!!!"}]
 
+execute as @e[tag=rhalon] run function entities:ai/rhalon/scale
+
 
 bossbar set health name {"text":"Rhalon, the First General","obfuscated":false,"color":"white"}
 bossbar set health visible true

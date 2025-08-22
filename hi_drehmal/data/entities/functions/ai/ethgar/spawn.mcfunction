@@ -2,7 +2,7 @@ summon minecraft:piglin ~ ~ ~ {DeathTime: 0s, DeathLootTable: "entities:ethgar",
 tp @e[tag=ethgar_intro] ~ ~-150 ~
 schedule function entities:bosses/generals/ethgar_intro_kill 1s
 
-function entities:ai/ethgar/scale
+execute as @e[tag=ethgar] run function entities:ai/ethgar/scale
 
 execute unless score #low_particles? bool matches 1 run particle minecraft:flame ~ ~ ~ 0 0 0 0.5 300
 execute unless score #low_particles? bool matches 1 run particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.2 100

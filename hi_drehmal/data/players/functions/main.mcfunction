@@ -882,17 +882,6 @@ execute if predicate players:hold_waystone run function players:waystone
 
 # -------------------------------------------------------------------
 
-# --- Zenith ---
-execute if predicate players:holding/zenith2 run scoreboard players add @s zenith_cd 1
-
-# --- Oblivion Cooldown Logic ---
-execute at @s if predicate players:in_em_arena run scoreboard players set @s obv_cool 2147483647
-execute at @s if predicate core:in_hovadmain run scoreboard players set @s obv_cool 2147483647
-execute at @s if predicate players:in_generals_arena run scoreboard players set @s obv_cool 2147483647
-execute at @s if score @s obv_cool matches 2000000000.. unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena run scoreboard players reset @s obv_cool
-
-# -------------------------------------------------------------------
-
 # --- Oblivion Puzzle ---
 execute unless score #ob_finish bool matches 2 as @a at @s if predicate players:locations/oblivion run function dlc:ob_upgrade/puzzle_main
 

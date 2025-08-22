@@ -19,7 +19,7 @@ execute if score #swap temp matches 3 run tellraw @a[predicate=players:in_genera
 bossbar set health2 name {"text":"Tevus, the Second General","obfuscated":false,"color":"white"}
 bossbar set health2 visible true
 
-function entities:ai/tevus/scale
+execute as @e[tag=tevus] run function entities:ai/tevus/scale
 
 execute store result score #tevus_swap temp run attribute @e[tag=tevus,limit=1] minecraft:generic.max_health get
 

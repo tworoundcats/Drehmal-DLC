@@ -10,3 +10,12 @@ execute if score @s obv_cool matches 1.. unless entity @s[tag=obv_active] if sco
 
 #timer for secondary effect
 scoreboard players add @s ob_cd 1
+
+
+
+
+# --- Oblivion Cooldown Logic ---
+execute at @s if predicate players:in_em_arena run scoreboard players set @s obv_cool 2147483647
+execute at @s if predicate core:in_hovadmain run scoreboard players set @s obv_cool 2147483647
+execute at @s if predicate players:in_generals_arena run scoreboard players set @s obv_cool 2147483647
+execute at @s if score @s obv_cool matches 2000000000.. unless predicate players:in_em_arena unless predicate core:in_hovadmain unless predicate players:in_generals_arena run scoreboard players reset @s obv_cool

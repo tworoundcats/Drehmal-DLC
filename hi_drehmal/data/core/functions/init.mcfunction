@@ -1201,6 +1201,4 @@ team modify asc friendlyFire false
 
 scoreboard objectives add moment minecraft.used:dlc.moments_peace
 
-scoreboard objectives add sex trigger
-
 scoreboard objectives add suffer dummy

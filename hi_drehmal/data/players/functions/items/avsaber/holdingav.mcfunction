@@ -25,3 +25,7 @@ execute if predicate players:holding/zenith2 if entity @s[scores={UsedAvSaber=1}
 execute if predicate players:holding/zenith2 if entity @s[scores={UsedAvSaber=1}] unless score @s AvTimer matches 41..80 if score @s AvShots matches 1.. at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.5 ~ unless predicate players:holding/avstate2 unless predicate players:sneak run function players:items/avsaber/avfire
 
 execute if entity @s[scores={UsedAvSaber=1}] unless predicate players:sneak if score @s AvShots matches 0 run scoreboard players set @s AvTimer 21
+
+
+# --- Zenith ---
+execute if predicate players:holding/zenith2 run scoreboard players add @s zenith_cd 1

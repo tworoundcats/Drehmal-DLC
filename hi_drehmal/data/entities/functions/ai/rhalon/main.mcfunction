@@ -29,9 +29,8 @@ execute as @s[tag=in_air2] at @s if predicate entities:on_ground run function en
 
 
 execute as @s[tag=unstoppable] at @s unless score #low_particles? bool matches 1 run execute at @s run particle firework ~ ~1 ~ 0.2 1 0.2 0.2 10 normal
-execute unless score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 30 fly_into_wall by @e[tag=rhalon,limit=1]
-execute if score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s if entity @a[distance=..2] run execute as @a[distance=..2.5] run damage @s 40 fly_into_wall by @e[tag=rhalon,limit=1]
+execute unless score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s 30 fly_into_wall by @e[tag=rhalon,limit=1]
+execute if score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at @s as @a[distance=..2.3] run damage @s 40 fly_into_wall by @e[tag=rhalon,limit=1]
 
 attribute @s[tag=!spawned_once] generic.movement_speed base set 0.4
 tag @s[tag=!spawned_once] add spawned_once
-execute as @s unless data entity @s Brain.memories.minecraft:angry_at.value at @s run data modify entity @s Brain.memories.minecraft:angry_at.value set from entity @p UUID

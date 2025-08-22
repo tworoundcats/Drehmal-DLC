@@ -28,7 +28,6 @@ execute if score #DLC mastermode matches 1 if score @s ai_timer2 matches 60.. ru
 
 #attribute @s[tag=!spawned_once] generic.movement_speed base set 0.4
 #tag @s[tag=!spawned_once] add spawned_once
-execute as @s unless data entity @s Brain.memories.minecraft:angry_at.value at @s run data modify entity @s Brain.memories.minecraft:angry_at.value set from entity @p UUID
 
 
 execute as @s[tag=in_air] at @s if predicate entities:on_ground run function entities:ai/tevus/attack4_land

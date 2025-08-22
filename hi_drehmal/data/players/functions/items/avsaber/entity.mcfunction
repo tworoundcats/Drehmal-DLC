@@ -13,10 +13,10 @@ execute if entity @s[scores={zenith_slash=5..}] unless block ^ ^1 ^ #core:empty 
 execute if entity @s[scores={zenith_slash=..1}] rotated as @p[tag=zenith_send] run tp @s ^ ^ ^ ~ ~
 execute if entity @s[scores={zenith_slash=2..}] as @e[tag=zenith_beam] run execute positioned ^-0.7 ^ ^ run function players:items/avsaber/particle_beam
 execute if entity @s[scores={zenith_slash=12..}] run particle flash ^ ^ ^ 0 0 0 0 1 normal @a 
-execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 15 minecraft:zenith
+
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] mcdar:stunned 1 2 true
 execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run effect give @s[tag=!oblivion_immune,tag=!obv.immune] glowing 1 2 true
-
+execute if entity @s[scores={zenith_slash=10..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run damage @s 15 minecraft:generic
 
 execute if entity @s[scores={zenith_slash=1..4}] run playsound minecraft:dcustom.entity.player.attack.sweep player @a ~ ~ ~ 1 2
 execute if entity @s[scores={zenith_slash=1..4}] run playsound minecraft:dcustom.block.enchantment_table.use player @a ~ ~ ~ 1 2
