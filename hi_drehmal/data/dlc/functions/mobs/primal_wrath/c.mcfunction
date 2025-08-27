@@ -1,0 +1,1 @@
+execute if predicate dlc:35 run function dlc:mobs/primal_wrath/spawn

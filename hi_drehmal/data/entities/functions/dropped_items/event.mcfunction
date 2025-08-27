@@ -36,6 +36,13 @@ execute if score #event temp matches 36 at @s run function dlc:asc/kill/2
 execute if score #event temp matches 37 at @s run function dlc:asc/kill/3
 execute if score #event temp matches 38 at @s run function dlc:asc/kill/4
 execute if score #event temp matches 39 run function quests:wellerquest/murder
+execute if score #event temp matches 40 run function dlc:mobs/primal_fury/death
+execute if score #event temp matches 41 run function dlc:mobs/primal_sorrow/death
+execute if score #event temp matches 42 run function dlc:mobs/primal_yearning/death
+execute if score #event temp matches 43 run function dlc:mobs/primal_wrath/death
+
+
+
 
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr
 

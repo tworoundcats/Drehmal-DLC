@@ -13,5 +13,5 @@ execute if entity @s[tag=spm.mob.ninja] run function spm:mob/ninja/summon
 execute if entity @s[tag=spm.mob.robbery] run function spm:mob/robbery/summon
 execute if entity @s[tag=spm.mob.slime_spider] run function spm:mob/slime_spider/summon
 execute if entity @s[tag=spm.mob.soul_knight] run function spm:mob/soul_knight/summon
-execute if entity @s[tag=spm.mob.wither_ghost] run function spm:mob/wither_ghost/summon_random
-execute if entity @s[tag=spm.mob.chorus_ghost] run function spm:mob/chorus_ghost/summon
+#execute if entity @s[tag=spm.mob.wither_ghost] run function spm:mob/wither_ghost/summon_random
+#execute if entity @s[tag=spm.mob.chorus_ghost] run function spm:mob/chorus_ghost/summon

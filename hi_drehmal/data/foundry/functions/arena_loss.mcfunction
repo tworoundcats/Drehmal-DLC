@@ -19,6 +19,8 @@ scoreboard players reset #foundry.glow bool
 scoreboard players reset #fdry_active bool
 scoreboard players reset #fdry_total timer
 scoreboard players reset #glory bool
+kill @e[tag=fdry_laser_lower]
+kill @e[tag=fdry_laser_top]
 forceload remove -3307 1546 -3273 1575
 fill -3292 110 1578 -3296 114 1580 air
 setblock -3306 101 1586 air

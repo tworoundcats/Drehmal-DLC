@@ -4,3 +4,5 @@ execute if score wave_number foundry matches 3 run tellraw @a ["","[",{"text":"�
 execute if score wave_number foundry matches 4 run tellraw @a ["","[",{"text":"ꜰᴏᴜɴᴅʀy ᴀɪ","color":"red","bold":"true"},"] ᴘʀᴇᴘᴀʀɪɴɢ ꜰᴏᴜʀᴛʜ ᴡᴀᴠᴇ..."]
 execute if score wave_number foundry matches 5 run tellraw @a ["","[",{"text":"ꜰᴏᴜɴᴅʀy ᴀɪ","color":"red","bold":"true"},"] ᴘʀᴇᴘᴀʀɪɴɢ ꜰɪꜰᴛʜ ᴡᴀᴠᴇ..."]
 execute if score wave_number foundry matches 6 run tellraw @a ["","[",{"text":"ꜰᴏᴜɴᴅʀy ᴀɪ","color":"red","bold":"true"},"] ᴘʀᴇᴘᴀʀɪɴɢ ꜰɪɴᴀʟ ᴡᴀᴠᴇ..."]
+
+execute if score #DLC mastermode matches 1 unless entity @e[tag=fdry_laser_top] run function dlc:summon/foundry_laser

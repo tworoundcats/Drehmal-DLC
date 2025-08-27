@@ -22,3 +22,9 @@ execute if entity @s[tag=mb_run_blind] run function entities:ai/khive_zombie/bli
 
 execute if entity @s[tag=drift_bone] run function entities:ai/driftbone/main
 execute if entity @s[tag=timeworn_thrall] run function entities:ai/timeworn/main
+
+
+
+execute if entity @s[tag=primal_fury] run function dlc:mobs/primal_fury/tick
+execute if entity @s[tag=primal_yearning] run function dlc:mobs/primal_yearning/tick
+execute if entity @s[tag=primal_yearning_child] run function dlc:mobs/primal_yearning/child/tick

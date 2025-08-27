@@ -1,0 +1,1 @@
+execute if entity @a[distance=..5] as @s[predicate=entities:hurt] run function dlc:mobs/primal_sorrow/hurt

@@ -23,6 +23,8 @@ execute if score wave_number foundry matches 4 if score #fdry_charged bool match
 execute if score wave_number foundry matches 5 if score #fdry_charged bool matches 1 run function foundry:wave5_2
 execute if score wave_number foundry matches 6 if score #fdry_charged bool matches 1 run function foundry:wave6_2
 
+execute as @e[type=block_display,tag=fdry_laser_top] at @s run function dlc:foundry/laser
+execute as @e[type=block_display,tag=fdry_laser_lower] at @s run function dlc:foundry/laser_lower
 
 execute if score #valhalla bool matches 1 if score arena_active foundry matches 1 unless score wave_number foundry matches 1..6 run function foundry:wave_n
 

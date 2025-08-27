@@ -27,5 +27,6 @@ execute if score #failed_wave foundry matches 3.. run scoreboard players set wav
 execute if score #failed_wave foundry matches 5.. run scoreboard players set wave_number foundry 5
 
 fill -3296 110 1580 -3292 114 1578 minecraft:black_stained_glass
-
+kill @e[tag=fdry_laser_lower]
+kill @e[tag=fdry_laser_top]
 schedule function foundry:wave_logic 1t

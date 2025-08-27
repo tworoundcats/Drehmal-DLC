@@ -1158,7 +1158,8 @@ scoreboard objectives add mythic_to_unspoken dummy
 scoreboard objectives add rare_chance dummy
 setblock 26516 168 -88 white_concrete
 gamerule artifacts.crystalHeart.healthBonus 6
-
+gamerule artifacts.noveltyDrinkingHat.eatingDurationMultiplier 75
+gamerule artifacts.noveltyDrinkingHat.drinkingDurationMultiplier 75
 
 scoreboard objectives add slash_timer2 dummy
 scoreboard objectives add slash_timer dummy

@@ -9,5 +9,7 @@ setblock -3271 104 1559 minecraft:polished_basalt[axis=z]
 setblock -3271 106 1559 minecraft:polished_basalt[axis=z]
 setblock -3271 108 1559 minecraft:polished_basalt[axis=z]
 setblock -3271 110 1559 minecraft:polished_basalt[axis=z]
+kill @e[tag=fdry_laser_lower]
+kill @e[tag=fdry_laser_top]
 
 function foundry:reset_exec_bar
