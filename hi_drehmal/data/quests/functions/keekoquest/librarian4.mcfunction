@@ -1,2 +1,0 @@
-execute at @e[type=villager,name="Stablemaster Keehko"] run tellraw @a[distance=..20] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] "},{"text":"In all honesty, I'm not entirely sure what I want to say to you."}]
-schedule function quests:keekoquest/librarian5 6s

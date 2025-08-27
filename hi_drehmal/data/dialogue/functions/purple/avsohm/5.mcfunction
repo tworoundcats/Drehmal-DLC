@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Even after everything they saw, they refused to consider the possibility of a bigger fish."}]
+schedule function dialogue:purple/avsohm/6 6s

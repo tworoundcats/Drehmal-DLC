@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Far to the west lies a charred land, its hardened survivors tormented by all manner of beasts and acts of cruelty."}]
+schedule function dialogue:purple/xiv/4 8s

@@ -1,5 +1,5 @@
 function core:rng
-scoreboard players operation #rand temp %= #19 const
+scoreboard players operation #rand temp %= #20 const
 
 
 execute if score #rand temp matches 0 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" From a mutual friend, Seeker."}]
@@ -21,6 +21,7 @@ execute if score #rand temp matches 15 run tellraw @a[distance=..12] ["",{"text"
 execute if score #rand temp matches 16 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" This carries echoes of a power you do not yet comprehend."}]
 execute if score #rand temp matches 17 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" There are consequences to every choice. This one will be... enlightening."}]
 execute if score #rand temp matches 18 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" From a world that was, for the world that will be."}]
+execute if score #rand temp matches 19 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" Rift? ...what rift?"}]
 playsound minecraft:dcustom.entity.villager.ambient player @a ~ ~ ~ 1 0
 
 

@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] They did what so many great empires do. They overextended, thought themselves too strong to die, and subsequently died."}]
+schedule function dialogue:purple/avsohm/4 7s

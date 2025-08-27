@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Do find me another time, won't you? To see your passion firsthand is a greater pleasure than you could possibly know."}]
+schedule function dialogue:purple/exit/12 8s

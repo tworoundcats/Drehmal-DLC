@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Surrounded by creatures with a prolific taste for flesh, quartz, and glass."}]
+schedule function dialogue:purple/xiv/9 5s

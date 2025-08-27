@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] It is not my place to aid you directly. I wish only to understand why you do what you do, not influence it."}]
+schedule function dialogue:purple/whatdo/4 8s

@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Well, I suppose there is a debate to be had. Are we truly meeting right now? Must I present you with a physical form to \"meet\"?"}]
+schedule function dialogue:purple/met/4 8s

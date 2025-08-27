@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] A hand that wields a quill, chronicling your exploits and so, so many others. Grand and mundane alike, each has its place in the vast sea over which I preside."}]
+schedule function dialogue:purple/who/7 8s

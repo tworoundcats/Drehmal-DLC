@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] But you can think of me as a historian. A figure most knowledgeable in matters of triumph and collapse, sacrifice and ambition."}]
+schedule function dialogue:purple/who/5 7s

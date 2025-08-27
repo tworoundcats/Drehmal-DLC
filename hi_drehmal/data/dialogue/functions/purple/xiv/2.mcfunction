@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Fascinated by the Realmbinder's scraps, are we? Quite a choice!"}]
+schedule function dialogue:purple/xiv/3 4s

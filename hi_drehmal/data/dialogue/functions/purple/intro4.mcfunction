@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] But alas, this is a special moment for you. I mustn't be studying in the presence of eager company! Speak to me, o Seeker mine."}]
+schedule function dialogue:purple/base 6s

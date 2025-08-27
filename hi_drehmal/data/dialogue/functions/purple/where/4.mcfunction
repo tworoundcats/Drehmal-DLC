@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] I wouldn't dare step foot in your realm. Especially not with the kind of prying eyes that you attract."}]
+schedule function dialogue:purple/where/5 7.5s

@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] If it's a name you're looking for, I'm afraid that you're out of luck, my dear."}]
+schedule function dialogue:purple/who/4 5s

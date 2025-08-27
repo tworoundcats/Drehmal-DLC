@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] In fact, my direct involvement in this conversation may even be called an overreach!"}]
+schedule function dialogue:purple/whatdo/5 6.5s

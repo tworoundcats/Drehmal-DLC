@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] By no means is the Drehmal of the Fourth Avihm perfect, but... you should consider yourself lucky to be where you are."}]
+schedule function dialogue:purple/base 7s

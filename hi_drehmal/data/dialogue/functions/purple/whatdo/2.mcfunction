@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] I think you misunderstand my role, Seeker. I will not bequeath to you a fearsome blade or send you on a daunting quest."}]
+schedule function dialogue:purple/whatdo/3 8s

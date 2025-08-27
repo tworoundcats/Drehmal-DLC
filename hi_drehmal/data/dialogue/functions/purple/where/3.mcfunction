@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] As for your vision, what would you hope to see? Do you believe me to be standing before you now?"}]
+schedule function dialogue:purple/where/4 7s

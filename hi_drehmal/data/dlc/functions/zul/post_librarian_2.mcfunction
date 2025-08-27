@@ -1,0 +1,1 @@
+execute at @e[type=dlc:collector] run tellraw @a[distance=..12,tag=been_visited] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" Carry yourself with pride. She has called upon you, and you have answered. There is no greater honor."}]

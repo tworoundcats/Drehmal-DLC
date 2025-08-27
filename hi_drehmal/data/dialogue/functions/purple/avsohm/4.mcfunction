@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Was there a bit more flourish than usual? Perhaps. No shortage of holes or golden rays of energy."}]
+schedule function dialogue:purple/avsohm/5 6s

@@ -1,0 +1,4 @@
+execute as @a[tag=chronicler_meeting,predicate=players:im_chronicling_it] run tag @s add oh_yeah_im_gonna_chronicle
+tellraw @a[tag=chronicler_meeting,tag=!oh_yeah_im_gonna_chronicle] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] "},{"text":"But to a most devoted Seeker who bears my own offering? How could I resist granting you a boon?","obfuscated":true}]
+tellraw @a[tag=chronicler_meeting,tag=oh_yeah_im_gonna_chronicle] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] But to a most devoted Seeker who bears my own offering? How could I resist granting you a boon?"}]
+schedule function dialogue:purple/whatdo/7 6s

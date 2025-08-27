@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Have you met the protagonist of your favorite book? The worms that till the soil beneath your home?"}]
+schedule function dialogue:purple/met/6 7s

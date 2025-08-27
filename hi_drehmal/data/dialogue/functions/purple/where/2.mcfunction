@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] You have not left your Veil. That is as much as you need to know."}]
+schedule function dialogue:purple/where/3 5s

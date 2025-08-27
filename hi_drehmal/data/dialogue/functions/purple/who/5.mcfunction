@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] The keeper of a great library, one whose pages you find yourself strewn about. An interested party in the grand narrative that reveals itself across every little bubble."}]
+schedule function dialogue:purple/who/6 8s

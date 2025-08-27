@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Scarred by glass and knowledge alike, the prodigal son returned from his pilgrimage only to see the world as he knew it come to an end."}]
+schedule function dialogue:purple/xiv/6 7s

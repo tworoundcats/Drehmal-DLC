@@ -4,6 +4,8 @@ execute unless score #zul_seen bool matches 1 run scoreboard players set #rand t
 
 execute if score #gotObv bool matches 1 unless score #gotObv3 bool matches 1 run scoreboard players set #rand temp 1001
 
+execute if entity @a[tag=been_visited,tag=!zul_visit_acknowledged,distance=..12] run scoreboard players set #rand temp 1002
+
 execute if score #rand temp matches 0..3 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" O dunes, O dunes."}]
 execute if score #rand temp matches 4..7 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" A gift, from someone you know."}]
 execute if score #rand temp matches 8..11 run tellraw @a[distance=..12] ["",{"text":"["},{"text":"Zul, Chronicler’s Envoy","color":"gray"},{"text":"]"},{"text":" My will is my own. My body is not."}]
@@ -35,7 +37,8 @@ execute if score #rand temp matches 1000 run tellraw @a[distance=..12] ["",{"tex
 # oblivious thing
 execute if score #rand temp matches 1001 run function dlc:zul/shard1
 
-
+# sushi follow-up
+execute if score #rand temp matches 1002 run function dlc:zul/post_librarian
 
 scoreboard players set #zul_seen bool 1
 tag @a add zul

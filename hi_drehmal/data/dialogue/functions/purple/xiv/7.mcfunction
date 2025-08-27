@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Your Lady of the Mirror finds herself there now, in a misguided attempt to heal an irrevocably broken land."}]
+schedule function dialogue:purple/xiv/8 8s

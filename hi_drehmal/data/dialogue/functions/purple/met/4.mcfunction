@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Have two people met if they have only exchanged letters? Heard of one another secondhand?"}]
+schedule function dialogue:purple/met/5 7s

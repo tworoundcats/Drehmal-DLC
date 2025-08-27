@@ -1,6 +1,6 @@
 #Quests
 # Keeko - Drabyel
-execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/quest/sushi run function quests:keekoquest/librarian
+execute if loaded 505 67 1835 positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3,tag=!offerer,tag=!chronicler_meeting,tag=!been_visited] run execute as @p[tag=!offerer] if predicate players:holding/quest/sushi run function quests:keekoquest/sushi_question
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3,tag=!haskeekomerch,tag=!keekomerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:keekoquest/merch
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_map run function quests:keekoquest/priscilla/count
 execute positioned 505.51 67.00 1835.52 as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_magnum_opus run function quests:keekoquest/priscilla/count

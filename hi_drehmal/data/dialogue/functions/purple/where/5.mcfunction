@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] You aren't worried about permanent damage, are you? I'm disappointed that you don't trust me. I mean you no harm, truly."}]
+schedule function dialogue:purple/where/6 9s

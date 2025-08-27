@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] You may not quite be able to make sense of them without the proper context, though. Oh, well. I do love to reward thoroughness!"}]
+schedule function dialogue:purple/exit/6 7s

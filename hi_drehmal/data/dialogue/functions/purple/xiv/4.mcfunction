@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] One act in particular echoes to this very day. Its true ramifications have come home to roost only once, but that was more than enough."}]
+schedule function dialogue:purple/xiv/5 7s

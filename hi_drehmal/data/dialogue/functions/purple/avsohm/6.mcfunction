@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Surely you don’t need me to explain the concept of hubris, do you?"}]
+schedule function dialogue:purple/base 6s

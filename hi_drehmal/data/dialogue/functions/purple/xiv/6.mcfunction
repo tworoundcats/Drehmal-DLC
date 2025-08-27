@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] The far east is a fractured remnant, home to many things you do not know. Things you couldn't even begin to guess at..."}]
+schedule function dialogue:purple/xiv/7 7s

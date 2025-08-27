@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] A little game: Two truths, and two lies - a favorite of the Star-Rise Drake!"}]
+schedule function dialogue:purple/exit/5 6s

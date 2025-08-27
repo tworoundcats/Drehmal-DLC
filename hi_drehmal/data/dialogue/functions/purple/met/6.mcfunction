@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Have you met the people in your dreams? The essence of your own thoughts?"}]
+schedule function dialogue:purple/met/7 5s

@@ -1,0 +1,2 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] Hmph. I was not "},{"text":"summoned by him","italic":true},{"text":". He doesn't control me, I just\u2026 I saw an opportunity to interact with a curious mind. Forgive me."}]
+schedule function dialogue:purple/stable/4 9s

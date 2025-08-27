@@ -1,0 +1,3 @@
+tellraw @a[tag=chronicler_meeting] ["",{"text":"["},{"text":"???","color":"#71368A"},{"text":"] So, no. I will not give you a weapon. To do so would signal that you should act violently, and it is imperative that I do not affect the story. I am only here to watch and listen."}]
+execute unless entity @a[tag=chronicler_meeting,predicate=players:im_chronicling_it] run schedule function dialogue:purple/base 7s
+execute if entity @a[tag=chronicler_meeting,predicate=players:im_chronicling_it] run schedule function dialogue:purple/whatdo/6 7s

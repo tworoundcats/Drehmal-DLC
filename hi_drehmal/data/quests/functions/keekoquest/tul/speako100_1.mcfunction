@@ -1,0 +1,2 @@
+execute positioned 505.51 67.00 1835.52 run tellraw @a[distance=..50] ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> ","color":"white"},{"text":"Oh! Okay. Well… I'm a little strapped for cash, but I... I can call in a favor."}]
+schedule function quests:keekoquest/tul/speako100_2 5s
