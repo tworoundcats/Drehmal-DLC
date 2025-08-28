@@ -1,4 +1,5 @@
 tag @s add primal_sorrow
+tag @s add primal
 
 item replace entity @s armor.head with mythicmetals:silver_helmet
 item replace entity @s weapon.mainhand with bow{CustomModelData:9}

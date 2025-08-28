@@ -1,4 +1,5 @@
 tag @s add primal_frost_caller
+tag @s add primal
 
 item replace entity @s armor.head with mythicmetals:runite_helmet
 item replace entity @s weapon.mainhand with bow{CustomModelData:10}

@@ -1,0 +1,1 @@
+tag @e[tag=abbot] add attack1

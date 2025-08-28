@@ -1,4 +1,5 @@
 tag @s add primal_yearning
+tag @s add primal
 
 item replace entity @s armor.head with mythicmetals:legendary_banglum_helmet
 

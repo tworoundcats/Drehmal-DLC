@@ -1,4 +1,5 @@
 tag @s add primal_splitter
+tag @s add primal
 
 execute if score count_all towers matches ..8 run attribute @s generic.max_health base set 20
 execute if score count_all towers matches ..8 run data merge entity @s {DeathLootTable:"dlc:primal_splitter",Health:20,CustomName:'{"text":"Primal Splitter","color": "green"}',CustomNameVisible:0b}

@@ -1,4 +1,6 @@
 tag @s add primal_thief
+tag @s add primal
+
 execute if score count_all towers matches ..8 run item replace entity @s weapon.mainhand with bundle{AttributeModifiers:[{Amount:8.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-675813962,1409567728,-1745231379,711165459]}],Items:[]}
 item replace entity @s armor.head with mythicmetals:banglum_helmet
 execute if score count_all towers matches ..8 run item replace entity @s armor.chest with iron_chestplate

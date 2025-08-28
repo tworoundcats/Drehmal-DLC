@@ -1,4 +1,6 @@
 tag @s add primal_fury
+tag @s add primal
+
 execute if score count_all towers matches 12.. run item replace entity @s weapon.offhand with shield
 item replace entity @s armor.head with azalea
 

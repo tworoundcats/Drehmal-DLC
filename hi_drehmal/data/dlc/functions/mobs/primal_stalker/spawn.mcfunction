@@ -1,4 +1,6 @@
 tag @s add primal_stalker
+tag @s add primal
+
 item replace entity @s armor.head with mythicmetals:midas_gold_helmet
 item replace entity @s armor.chest with mythicmetals:midas_gold_chestplate
 

@@ -53,5 +53,6 @@ execute if score @s damage_s matches 43 unless entity @s[scores={blocking3=..4,b
 execute if score @s damage_s matches 43 run execute at @s positioned ^ ^ ^ as @s run summon small_fireball ~ ~1.8 ~ {power:[0.0,-10000.0,0.0]}
 
 execute if score @s damage_s matches 44 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 12 minecraft:fdry_blown
+execute if score @s damage_s matches 45 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 22 diced
 
 scoreboard players reset @s damage_s
