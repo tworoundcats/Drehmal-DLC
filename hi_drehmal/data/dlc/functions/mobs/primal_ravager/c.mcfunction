@@ -1,0 +1,1 @@
+function dlc:mobs/primal_ravager/spawn

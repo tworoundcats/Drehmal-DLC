@@ -22,6 +22,6 @@ execute if score count_all towers matches 16.. run attribute @s generic.max_heal
 execute if score count_all towers matches 16.. run data merge entity @s {DeathLootTable:"dlc:primal_wrath",Health:35.0f,CustomName:'{"text": "Primal Wrath","color": "white","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 
-particle minecraft:dust 0.796 0.643 0.027 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
+particle minecraft:dust 0.616 0.027 0.796 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant
 scale set pehkui:falling 0 @s

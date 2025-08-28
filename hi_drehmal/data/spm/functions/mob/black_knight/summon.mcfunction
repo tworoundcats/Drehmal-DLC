@@ -1,1 +1,0 @@
-summon wither_skeleton ~ ~ ~ {Tags:[spm.mob.black_knight,spm.mob]}

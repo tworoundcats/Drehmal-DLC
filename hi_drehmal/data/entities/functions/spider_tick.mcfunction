@@ -3,3 +3,4 @@ execute if entity @s[tag=spawnspinner] unless score @s spawnspinnerID matches -2
 execute if entity @s[tag=burrower] unless predicate entities:in_stasis run function entities:ai/burrower/main
 
 execute if entity @s[tag=webspinner] unless predicate entities:in_stasis run function entities:ai/webspinner/main
+execute if entity @s[tag=primal_splitter] run function dlc:mobs/primal_splitter/tick

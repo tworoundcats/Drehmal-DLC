@@ -1,1 +1,0 @@
-function spm:mob/bastion_guard/summon

@@ -33,6 +33,8 @@ execute if score count_all towers matches 12..24 run data merge entity @s {Death
 execute if score count_all towers matches 24.. run attribute @s generic.max_health base set 40
 execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"dlc:primal_fury",Health:40.0f,CustomName:'{"text": "Primal Fury","color": "#F47710","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
+execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_fury/xorhuul
+
 particle minecraft:dust 0.925 0.4 0.114 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant
 scale set pehkui:falling 0 @s

@@ -12,6 +12,7 @@ function dlc:check5
 function dlc:check8
 function dlc:check10
 function dlc:check11
+function dlc:check13
 function dlc:check12
 
 tellraw @s {"text":" "}

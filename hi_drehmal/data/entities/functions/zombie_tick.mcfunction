@@ -28,3 +28,5 @@ execute if entity @s[tag=timeworn_thrall] run function entities:ai/timeworn/main
 execute if entity @s[tag=primal_fury] run function dlc:mobs/primal_fury/tick
 execute if entity @s[tag=primal_yearning] run function dlc:mobs/primal_yearning/tick
 execute if entity @s[tag=primal_yearning_child] run function dlc:mobs/primal_yearning/child/tick
+execute if entity @s[tag=primal_aegis] run function dlc:mobs/primal_aegis/tick
+execute if entity @s[tag=primal_stalker] run function dlc:mobs/primal_stalker/tick

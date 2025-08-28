@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:husk",
+            "nbt": "{Tags:[\"primal_thief\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:mobs/primal_thief/hurt"
+  }
+}

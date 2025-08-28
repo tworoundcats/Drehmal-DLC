@@ -1,1 +1,0 @@
-give @s slime_spawn_egg{display:{Name:'{"text": "Fire Spirit Spawn Egg","italic": false}'},EntityTag:{id:"armor_stand",Tags:[spm.mob.respawn,spm.mob.fire_spirit]}} 1

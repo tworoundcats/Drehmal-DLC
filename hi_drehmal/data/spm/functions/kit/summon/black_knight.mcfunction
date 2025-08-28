@@ -1,1 +1,0 @@
-function spm:mob/black_knight/summon

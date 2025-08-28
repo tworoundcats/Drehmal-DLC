@@ -2,3 +2,5 @@ summon minecraft:zombie ~ ~ ~ {DeathLootTable:"minecraft:empty",IsBaby:1b,ArmorD
 scoreboard players reset @s ai_timer
 execute at @s run playsound minecraft:dcustom.item.flintandsteel.use player @a ~ ~ ~ 1 1.5
 execute at @s run particle dust 1 0.078 0.078 1 ~ ~ ~ 0.2 0.3 0.2 0.1 30
+
+execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_yearning/xorhuul_explode

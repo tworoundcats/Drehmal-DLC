@@ -1,1 +1,0 @@
-function spm:mob/ice_shooter/summon

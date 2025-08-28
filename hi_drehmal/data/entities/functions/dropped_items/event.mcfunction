@@ -40,6 +40,13 @@ execute if score #event temp matches 40 run function dlc:mobs/primal_fury/death
 execute if score #event temp matches 41 run function dlc:mobs/primal_sorrow/death
 execute if score #event temp matches 42 run function dlc:mobs/primal_yearning/death
 execute if score #event temp matches 43 run function dlc:mobs/primal_wrath/death
+execute if score #event temp matches 44 run function dlc:mobs/primal_splitter/death
+execute if score #event temp matches 45 run function dlc:mobs/primal_ravager/death
+execute if score #event temp matches 46 run function dlc:mobs/primal_aegis/death
+execute if score #event temp matches 47 run function dlc:mobs/primal_stalker/death
+execute if score #event temp matches 48 run function dlc:mobs/primal_frost_caller/death
+execute if score #event temp matches 49 run function dlc:mobs/primal_thief/death
+execute if score #event temp matches 50 run function dlc:mobs/crystal_mite/death
 
 
 

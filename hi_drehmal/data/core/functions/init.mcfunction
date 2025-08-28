@@ -1078,8 +1078,18 @@ scoreboard objectives add wasHoldingLevi dummy
 scoreboard objectives add drop_levi minecraft.dropped:dlc.leviathan
 
 gamerule disableElytraMovementCheck true
-function spm:mob/game_load
-function spm:world/load
+
+scoreboard objectives add spm.energy dummy
+scoreboard objectives add spm.bomb dummy
+scoreboard objectives add spm.x dummy
+scoreboard objectives add spm.px dummy
+scoreboard objectives add spm.y dummy
+scoreboard objectives add spm.py dummy
+scoreboard objectives add spm.z dummy
+scoreboard objectives add spm.pz dummy
+scoreboard objectives add spm.hurt dummy
+scoreboard objectives add spm.fire dummy
+
 function n_lev:load
 function triggerpatch:load
 scoreboard objectives add mquest dummy

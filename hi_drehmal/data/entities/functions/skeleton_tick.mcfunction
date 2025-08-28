@@ -27,3 +27,4 @@ execute if entity @s[tag=revenant] run function entities:ai/revenant/main
 
 execute if entity @s[tag=primal_sorrow] run function dlc:mobs/primal_sorrow/tick
 execute if entity @s[tag=primal_wrath] run function dlc:mobs/primal_wrath/tick
+execute if entity @s[tag=primal_frost_caller] run function dlc:mobs/primal_frost_caller/tick

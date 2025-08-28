@@ -1,1 +1,0 @@
-scoreboard players set #world spm.spawn.nature 1

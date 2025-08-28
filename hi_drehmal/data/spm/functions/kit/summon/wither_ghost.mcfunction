@@ -1,1 +1,0 @@
-function spm:mob/wither_ghost/summon_random

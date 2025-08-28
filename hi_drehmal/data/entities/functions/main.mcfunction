@@ -35,6 +35,7 @@ execute as @e[type=guardian,tag=!] at @s run function entities:guardian_tick
 execute as @e[type=#entities:tickless_hostile,tag=!] at @s run function entities:misc_hostile_tick
 execute as @e[type=dlc:collector] at @s run function dlc:zul/tick
 execute as @e[tag=waterspiked,type=cave_spider] run function entities:ai/waterspiked/main
+execute as @e[tag=primal_splitter_child,type=cave_spider] run function dlc:mobs/primal_splitter/small_tick
 execute as @e[type=#entities:hostile,tag=!converted] at @s if entity @a[distance=..80] run function dlc:mobs/convert
 
 #execute as @e[type=!player,type=!#entities:highcapacity,tag=!unloaded] at @s run function entities:low_capacity_tick

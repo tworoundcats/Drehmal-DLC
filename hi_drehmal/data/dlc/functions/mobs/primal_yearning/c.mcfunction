@@ -1,1 +1,1 @@
-execute if predicate dlc:35 run function dlc:mobs/primal_yearning/spawn
+function dlc:mobs/primal_yearning/spawn

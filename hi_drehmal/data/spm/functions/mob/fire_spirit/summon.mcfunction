@@ -1,1 +1,0 @@
-summon phantom ~ ~ ~ {Tags:[spm.mob,spm.mob.fire_spirit]}

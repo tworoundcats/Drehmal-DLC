@@ -1,4 +1,5 @@
 scoreboard players set dlc#c spawnstarrite1 1
+execute positioned 392.33 68.00 913.87 run kill @e[type=villager,distance=..5]
 
 execute positioned 721.55 65.00 591.49 run forceload remove ~ ~ 
 

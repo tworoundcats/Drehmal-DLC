@@ -1,2 +1,0 @@
-execute if predicate spm:location/bastion if predicate spm_cf:mob/bastion_guard/replace_rate run function spm:mob/bastion_guard/replace
-execute if predicate spm:location/crimson_forest unless predicate spm:location/bastion if predicate spm_cf:mob/crimson_aboriginal/replace_rate run function spm:mob/crimson_aboriginal/replace
