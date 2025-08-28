@@ -8,7 +8,7 @@ scoreboard players set #arrow_speed_scale num 2000
 
 execute at @s run summon marker ~ ~ ~ {Tags:["motion_calc_helper"]}
 
-tp @e[type=marker,tag=motion_calc_helper,limit=1,sort=nearest] @e[predicate=!entities:hurt,type=!player,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,limit=1,sort=nearest]
+tp @e[type=marker,tag=motion_calc_helper,limit=1,sort=nearest] @e[predicate=!entities:hurt,tag=!mythic_pvp,predicate=!players:holding/pleasures,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,limit=1,sort=nearest]
 
 execute as @e[type=marker,tag=motion_calc_helper,limit=1,sort=nearest] at @s run tp @s ~ ~2 ~
 

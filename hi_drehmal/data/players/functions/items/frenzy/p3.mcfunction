@@ -40,6 +40,6 @@ scoreboard players add @s zed 1
 
 
 #test for if using the upgraded weapon
-execute if predicate players:holding/frenzy2 at @s[scores={zed=150..}] as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..14] if predicate dlc:25 run function players:items/frenzy/zed
+execute if predicate players:holding/frenzy2 at @s[scores={zed=150..}] as @e[tag=!mythic_pvp,predicate=!players:holding/frenzy2,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..14] if predicate dlc:25 run function players:items/frenzy/zed
 
 execute as @s[scores={zed=150..}] run scoreboard players reset @s zed

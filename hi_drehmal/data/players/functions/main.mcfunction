@@ -843,7 +843,7 @@ execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboar
 ### Serendipity ###
 function core:rng
 scoreboard players operation #rand temp %= #4 const
-execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if score #rand temp matches 1 run function players:items/serendipity/damage
+execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] as @e[tag=!mythic_pvp,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] if score #rand temp matches 1 run function players:items/serendipity/damage
 execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] run scoreboard players reset @s lucky
 
 # -------------------------------------------------------------------
@@ -851,14 +851,14 @@ execute if predicate players:holding/serendipity as @s[scores={lucky=1..}] run s
 ### Hangyaku ###
 function core:rng
 scoreboard players operation #rand temp %= #2 const
-execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if score #rand temp matches 1 as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
+execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku if score #rand temp matches 1 as @e[tag=!mythic_pvp,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hangyaku/use
 execute as @s[scores={use_shad=1..}] if predicate players:holding/hangyaku run scoreboard players reset @s use_shad
 
 # -------------------------------------------------------------------
 
 ### Warring States ###
 
-execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/warring/use
+execute as @s[scores={war=1..}] if predicate players:holding/warring as @e[tag=!mythic_pvp,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/warring/use
 
 # -------------------------------------------------------------------
 

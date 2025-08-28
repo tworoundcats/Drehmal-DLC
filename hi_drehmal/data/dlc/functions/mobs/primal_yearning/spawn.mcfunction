@@ -1,5 +1,6 @@
 tag @s add primal_yearning
 tag @s add primal
+team join primal @s
 
 item replace entity @s armor.head with mythicmetals:legendary_banglum_helmet
 
@@ -29,6 +30,7 @@ execute if score count_all towers matches 24.. run attribute @s generic.max_heal
 execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"dlc:primal_yearning",Health:40.0f,CustomName:'{"text": "Primal Yearning","color": "#b52f1a","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_yearning/xorhuul
+execute at @s if predicate players:locations/teiruun run function dlc:mobs/primal_yearning/teiruun
 
 particle minecraft:dust 0.392 0.027 0.027 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant

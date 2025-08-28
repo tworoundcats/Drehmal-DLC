@@ -1,5 +1,6 @@
 tag @s add primal_stalker
 tag @s add primal
+team join primal @s
 
 item replace entity @s armor.head with mythicmetals:midas_gold_helmet
 item replace entity @s armor.chest with mythicmetals:midas_gold_chestplate
@@ -24,7 +25,7 @@ execute if score count_all towers matches 24.. run attribute @s generic.max_heal
 execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"dlc:primal_stalker",Health:40.0f,CustomName:'{"text": "Primal Stalker","color": "#414109","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_stalker/xorhuul
-
+execute at @s if predicate players:locations/teiruun run function dlc:mobs/primal_stalker/teiruun
 
 particle minecraft:dust 0.925 0.4 0.114 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant

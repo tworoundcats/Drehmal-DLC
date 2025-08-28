@@ -17,4 +17,6 @@ forceload add -1146 -4131 -1222 -4130
 
 forceload add -1175 -4146 -1160 -4182
 
+forceload add 5621 2966 5532 3011
+
 tag @s add DLC_temp

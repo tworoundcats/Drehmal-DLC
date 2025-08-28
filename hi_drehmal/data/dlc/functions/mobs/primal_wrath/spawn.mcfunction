@@ -1,5 +1,6 @@
 tag @s add primal_wrath
 tag @s add primal
+team join primal @s
 
 item replace entity @s armor.head with mythicmetals:steel_helmet
 item replace entity @s weapon.mainhand with crying_obsidian{AttributeModifiers:[{Amount:8.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-2089036053,-1866382397,-1432444016,-102408760]}]}

@@ -20,8 +20,8 @@ execute at @s run summon marker ^ ^ ^4 {Tags:["levi_dmg"]}
 execute at @s run summon marker ^ ^ ^5 {Tags:["levi_dmg"]}
 execute at @s run summon marker ^ ^ ^6 {Tags:["levi_dmg"]}
 execute as @s run function players:items/levi/heal
-execute at @e[type=marker,tag=levi_dmg] unless score #levi bool matches 1 run execute as @e[tag=!levi,type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..1.1] run function players:items/levi/damage_true
-execute at @e[type=marker,tag=levi_dmg] run execute as @e[tag=!levi,type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..1.1] run function players:items/levi/damage
+execute at @e[type=marker,tag=levi_dmg] unless score #levi bool matches 1 run execute as @e[tag=!strengthened,tag=!levi,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..1.1] run function players:items/levi/damage_true
+execute at @e[type=marker,tag=levi_dmg] run execute as @e[tag=!strengthened,tag=!levi,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..1.1] run function players:items/levi/damage
 execute as @e[tag=levi] run tag @s remove levi
 scoreboard players reset #levi bool
 kill @e[type=marker,tag=levi_dmg]

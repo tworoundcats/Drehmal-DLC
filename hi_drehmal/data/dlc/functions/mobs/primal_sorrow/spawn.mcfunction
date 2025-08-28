@@ -1,5 +1,6 @@
 tag @s add primal_sorrow
 tag @s add primal
+team join primal @s
 
 item replace entity @s armor.head with mythicmetals:silver_helmet
 item replace entity @s weapon.mainhand with bow{CustomModelData:9}
@@ -25,6 +26,7 @@ execute if score count_all towers matches 16.. run attribute @s generic.max_heal
 execute if score count_all towers matches 16.. run data merge entity @s {DeathLootTable:"dlc:primal_sorrow",Health:35.0f,CustomName:'{"text": "Primal Sorrow","color": "white","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_sorrow/xorhuul
+execute at @s if predicate players:locations/teiruun run function dlc:mobs/primal_sorrow/teiruun
 
 particle minecraft:dust 0.102 0.098 0.098 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant

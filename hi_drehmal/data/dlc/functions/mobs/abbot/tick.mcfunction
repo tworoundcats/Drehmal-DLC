@@ -30,3 +30,10 @@ execute if score #5T timer matches 0 run bossbar set health players @a
 
 
 execute if entity @s[predicate=entities:hurt] run function dlc:mobs/abbot/hurt
+
+execute at @s unless predicate players:locations/teiruun run function dlc:mobs/abbot/tp
+
+execute at @s unless entity @a[distance=..20] run effect give @s glowing 1 1 true
+
+execute at @s unless block ~ ~ ~ #core:empty3 unless block ~ ~1 ~ #core:empty3 run function dlc:mobs/abbot/unstuck
+execute at @s if block ~ ~ ~ #core:empty3 if block ~ ~1 ~ #core:empty3 run scoreboard players reset @s ai_ani

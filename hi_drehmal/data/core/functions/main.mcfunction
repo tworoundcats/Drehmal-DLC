@@ -277,7 +277,7 @@ execute as @e[tag=soul_burn] run function players:items/soul/main
 execute as @e[tag=bleed,limit=1] at @s run function players:items/hangyaku/bleed
 
 execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
-execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,type=!player,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
+execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,predicate=!players:holding/ambition,tag=!mythic_pvp,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
 
 execute as @e[tag=hexed] run function players:items/hexed/main
 

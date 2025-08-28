@@ -58,7 +58,7 @@ execute unless score #mythic_pvp? const matches 1 run function projectiles:fancy
 tag @e remove asc_invul
 scoreboard players reset #bounced? temp
 
-execute at @s if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!invul2,distance=..20,type=!player] if score #1S timer matches 0 run function projectiles:fancy/spawn_particle
+execute at @s if entity @e[tag=!mythic_pvp,predicate=!players:holding/asc2,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!invul2,distance=..20] if score #1S timer matches 0 run function projectiles:fancy/spawn_particle
 
 execute at @s unless block ^ ^ ^0.4 #core:empty run function projectiles:fancy/asc_bounce
 execute at @s unless score #bounced? temp matches 1 positioned ^0.3 ^ ^0.3 unless block ~ ~ ~ #core:empty run function projectiles:fancy/asc_bounce

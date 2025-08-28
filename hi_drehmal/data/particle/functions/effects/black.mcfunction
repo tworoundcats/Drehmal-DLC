@@ -101,6 +101,6 @@ particle dust 0 0 0 1 ^1.839 ^0.000 ^-0.679 0 0 0 0 1 force @a
 particle dust 0 0 0 1 ^1.384 ^0.000 ^1.416 0 0 0 0 1 force @a
 
 
-execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run effect give @s slowness 1 2 false
+execute at @s as @e[tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] run effect give @s slowness 1 2 false
 
-execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] at @s run particle dust 0.18 0.18 0.243 1 ~ ~1 ~ 0.5 1 0.5 0 7 force @a
+execute at @s as @e[tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] at @s run particle dust 0.18 0.18 0.243 1 ~ ~1 ~ 0.5 1 0.5 0 7 force @a

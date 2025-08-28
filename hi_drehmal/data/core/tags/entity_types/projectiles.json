@@ -9,6 +9,8 @@
       "minecraft:dragon_fireball",
       "minecraft:small_fireball",
       "minecraft:llama_spit",
-      "minecraft:firework_rocket"
+      "minecraft:firework_rocket",
+      "enchancement:amethyst_shard",
+      "enchancement:ice_shard"
     ]
   }

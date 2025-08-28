@@ -1,5 +1,6 @@
 tag @s add primal_aegis
 tag @s add primal
+team join primal @s
 
 item replace entity @s weapon.offhand with mcdw:shield_royal_guard
 item replace entity @s weapon.mainhand with mcdw:shield_royal_guard

@@ -1,8 +1,10 @@
-execute unless score #low_particles? bool matches 1 run execute at @s run particle squid_ink ~ ~1 ~ 0.5 2 0.5 0.2 50 normal
+execute unless score #low_particles? bool matches 1 run execute at @s if entity @a[distance=..10] run particle squid_ink ~ ~1 ~ 0.5 2 0.5 0.2 50 normal
 effect give @s resistance 3 5 true
 effect give @s invisibility 2 5 true
 tag @s add temp_tp
-execute at @s if predicate players:locations/xorhuul run function dlc:mobs/primal_stalker/xorhuul_explode
+
+execute at @s if entity @a[distance=..10] if predicate players:locations/xorhuul as @s run function dlc:mobs/xorhuul_explode
+execute at @s if entity @a[distance=..10] if predicate players:locations/teiruun as @s run function dlc:mobs/teiruun_explode
 
 execute store result score @s x2 run data get entity @s Pos[0] 1000
 execute store result score @s y2 run data get entity @s Pos[1] 1000

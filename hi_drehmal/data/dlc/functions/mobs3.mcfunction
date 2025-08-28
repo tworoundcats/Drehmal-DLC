@@ -12,5 +12,8 @@ forceload remove -1146 -4131 -1222 -4130
 
 forceload remove -1175 -4146 -1160 -4182
 
+forceload remove 5621 2966 5532 3011
+
+
 execute as @a[tag=DLC_temp] run function dlc:settings
 execute as @a[tag=DLC_temp] run tag @s remove DLC_temp

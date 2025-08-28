@@ -227,6 +227,8 @@ team modify foundry friendlyFire false
 team add bernice
 team modify bernice friendlyFire false
 team modify bernice color dark_aqua
+team add primal
+team modify primal friendlyFire false
 
 scoreboard objectives add prevLambient dummy
 scoreboard objectives add tpLimit dummy

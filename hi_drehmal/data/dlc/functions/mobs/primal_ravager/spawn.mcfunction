@@ -1,5 +1,6 @@
 tag @s add primal_ravager
 tag @s add primal
+team join primal @s
 
 execute if score count_all towers matches ..8 run item replace entity @s armor.head with iron_helmet
 execute if score count_all towers matches ..8 run item replace entity @s armor.chest with diamond_chestplate
