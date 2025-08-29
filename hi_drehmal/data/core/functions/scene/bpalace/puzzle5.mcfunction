@@ -1,6 +1,7 @@
 scoreboard players add #bpalace int 1 
 execute positioned -4044.46 91.11 5985.56 run function particle:flame_beam/animate
 execute positioned -4044.46 91.11 5985.56 run execute as @a[distance=..1] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 15 in_fire
+execute positioned -4044.46 91.11 5985.56 run execute as @a[distance=..1] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 
 execute if score #bpalace int matches 1 positioned -4044.46 91.11 5985.56 run playsound minecraft:dcustom.entity.blaze.shoot block @a ~ ~ ~ 1 1.2

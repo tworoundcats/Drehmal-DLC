@@ -1,4 +1,5 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 5 minecraft:nothing
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 5 minecraft:nothing
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 tag @s remove emissary.infight
 tag @s remove em_grab

@@ -22,7 +22,7 @@
         "equipment": {
           "mainhand": {
             "items": [
-              "mcdw:bow_haunted_bow"
+              "mcdw:bow_love_spell_bow"
             ],
             "nbt": "{Pleasures:1b}"
           }

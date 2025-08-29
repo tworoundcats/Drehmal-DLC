@@ -4,6 +4,7 @@ particle lava ~ ~ ~ 0.5 0 0.5 0 100
 particle large_smoke ~ ~ ~ 0.5 0 0.5 0 100
 particle explosion ~ ~ ~ 0.05 0.05 0.05 0.1 5
 execute positioned ~-1 ~ ~-1 run execute as @a[dx=2,dy=3,dz=2] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 40 minecraft:labaccident
+execute positioned ~-1 ~ ~-1 run execute as @a[dx=2,dy=3,dz=2] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 particle minecraft:flame ~ ~ ~ 1 0 0 0.25 0 force
 particle minecraft:flame ~ ~ ~ -1 0 0 0.25 0 force

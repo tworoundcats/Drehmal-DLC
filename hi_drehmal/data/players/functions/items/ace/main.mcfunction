@@ -5,7 +5,7 @@ scoreboard players operation @s ace_hp *= #100 const
 scoreboard players operation @s ace_hp /= @s ace_maxhp_current
 
 
-execute unless score @s ace_maxhp_current = @s ace_maxhp_old run function players:items/ace/reset_hp
+execute if score #1S timer matches 1 run function players:items/ace/reset_hp
 
 scoreboard players operation @s ace_maxhp_old = @s ace_maxhp_current
 

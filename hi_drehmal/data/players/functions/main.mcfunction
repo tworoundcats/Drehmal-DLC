@@ -542,7 +542,9 @@ execute if entity @s[tag=has_radar] run function players:items/pradar/zones
 
 execute if score #1S timer matches 0 at @s[x=-2777,y=15,z=2171,dx=56,dz=-46,dy=6] run playsound minecraft:dcustom.ui.button.click block @s[x=-2777,y=15,z=2171,dx=56,dz=-46,dy=6] ~ ~ ~ 0.25 2
 execute as @s if predicate players:in_watertoggle if score #electrowater y matches 1 if score #5T timer matches 0 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3 minecraft:rubber
+execute as @s if predicate players:in_watertoggle if score #electrowater y matches 1 if score #5T timer matches 0 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute as @s if predicate players:in_waterelectro unless predicate players:in_watersafe if score #electrowater x matches 1 at @s if block ~ ~ ~ water if score #5T timer matches 0 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3 minecraft:rubber
+execute as @s if predicate players:in_waterelectro unless predicate players:in_watersafe if score #electrowater x matches 1 at @s if block ~ ~ ~ water if score #5T timer matches 0 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 
 #================#
@@ -925,5 +927,3 @@ execute as @s[scores={moment=1..}] run function players:items/moment/use
 
 # zul spawning
 execute if score #10S timer matches 0 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
-
-

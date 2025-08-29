@@ -1,5 +1,6 @@
 scoreboard players set @s hurtby_timer -10000
-damage @s[scores={blocking3=..4,blocked=1..}] 20 generic
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 20 generic
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute store result score #hp temp run data get entity @s Health 100
 execute store result score #absorb temp run data get entity @s AbsorptionAmount 100
 scoreboard players remove #absorb temp 500

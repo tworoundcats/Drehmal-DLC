@@ -5,5 +5,7 @@ execute if score #5T timer matches 0 run playsound minecraft:dcustom.entity.bee.
 execute if score #5T timer matches 0 run playsound minecraft:dcustom.entity.bee.loop_aggressive ambient @a 3176.44 61.08 -987.44 0.3 0
 
 execute if score #5T timer matches 0 positioned 3176.44 61.08 -987.44 as @a[distance=..1] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 2 minecraft:rubber_nocd
+execute if score #5T timer matches 0 positioned 3176.44 61.08 -987.44 as @a[distance=..1] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 execute if score #5T timer matches 0 positioned 3178.54 60.08 -981.56 as @a[distance=..1] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 2 minecraft:rubber_nocd
+execute if score #5T timer matches 0 positioned 3178.54 60.08 -981.56 as @a[distance=..1] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

@@ -29,6 +29,7 @@ execute if score #dia_lunbase timer matches 215 as @e[tag=lunabling] run schedul
 execute if score #dia_lunbase timer matches 215 run scoreboard players set #lunasparks bool 1
 
 execute if score #dia_lunbase timer matches 215 positioned 3178 72.00 -984 as @a[distance=..10] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 300 minecraft:primalenergy
+execute if score #dia_lunbase timer matches 215 positioned 3178 72.00 -984 as @a[distance=..10] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score #dia_lunbase timer matches 215 positioned 3178 72.00 -984 as @a[distance=..10] run function dialogue:myth/dia10/3lunarbase/kill 
 
 #execute if score #stop_lunarbase bool matches 0 run schedule function dialogue:myth/dia10/3lunarbase/5 6s

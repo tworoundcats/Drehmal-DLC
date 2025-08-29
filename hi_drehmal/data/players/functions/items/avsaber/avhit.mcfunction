@@ -1,5 +1,6 @@
 tag @s remove AvHit
-damage @s[scores={blocking3=..4,blocked=1..}] 1 minecraft:zenith by @p
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1 minecraft:zenith by @p
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute at @s run playsound minecraft:dcustom.entity.zombie_villager.cure ambient @a ~ ~ ~ 1 1.2
 
 scoreboard players operation @s AvPos0 -= #avkbX const

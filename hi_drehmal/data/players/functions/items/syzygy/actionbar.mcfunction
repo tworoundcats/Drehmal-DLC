@@ -7,8 +7,8 @@ execute as @s[scores={shoot=1}] run execute if entity @a[nbt={SelectedItem:{id:"
 
 execute as @s[scores={shoot=3}] run execute if entity @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{display:{Name:"{\"text\":\"Syzygy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run execute as @s unless entity @e[type=#entities:hostile,distance=..8] run function players:items/syzygy/dark_shot
 
-execute as @s[scores={shoot=2}] run execute if entity @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{display:{Name:"{\"text\":\"Syzygy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run execute as @s unless entity @e[type=#entities:hostile,distance=..8] run playsound minecraft:block.respawn_anchor.charge player @a ~ ~ ~ 1 0 
+execute as @s[scores={shoot=2}] run execute if entity @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{display:{Name:"{\"text\":\"Syzygy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run execute as @s unless entity @e[type=#entities:hostile,distance=..8] run playsound minecraft:dcustom.block.respawn_anchor.charge player @a ~ ~ ~ 1 0 
 execute as @s[scores={shoot=2}] run scoreboard players set @s shoot 3
 
-execute as @s[scores={shoot=4}] run execute if entity @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{display:{Name:"{\"text\":\"Syzygy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run execute as @s unless entity @e[type=#entities:hostile,distance=..8] run playsound minecraft:block.respawn_anchor.charge player @a ~ ~ ~ 1 2
+execute as @s[scores={shoot=4}] run execute if entity @a[nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{display:{Name:"{\"text\":\"Syzygy ✪\",\"color\":\"gold\",\"italic\":false,\"underlined\":true}"}}}}] run execute as @s unless entity @e[type=#entities:hostile,distance=..8] run playsound minecraft:dcustom.block.respawn_anchor.charge player @a ~ ~ ~ 1 2
 execute as @s[scores={shoot=4..}] run scoreboard players set @s shoot 1

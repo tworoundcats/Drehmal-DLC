@@ -13,6 +13,7 @@ execute at @e[tag=thun] run summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["l
 execute at @e[tag=thun] run summon area_effect_cloud ~ ~ ~ {Duration:40,Tags:["lightning"]}
 
 execute as @e[tag=thun] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 minecraft:strangled by @p
+execute as @e[tag=thun] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 kill @e[tag=thun_dmg]
 kill @e[tag=playerdist]
 tag @e[tag=thun] remove thun

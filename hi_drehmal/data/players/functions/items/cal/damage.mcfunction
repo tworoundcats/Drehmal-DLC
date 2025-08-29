@@ -1,4 +1,5 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 24
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 24
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 effect give @s slowness 10 3 true
 

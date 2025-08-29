@@ -1,2 +1,4 @@
 execute unless score #DLC mastermode matches 1 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 45 shot_ethgar by @e[tag=ethgar,limit=1]
+execute unless score #DLC mastermode matches 1 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score #DLC mastermode matches 1 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 65 shot_ethgar by @e[tag=ethgar,limit=1]
+execute if score #DLC mastermode matches 1 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

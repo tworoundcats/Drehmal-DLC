@@ -1,1 +1,2 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 14 minecraft:ysold/hole
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 14 minecraft:ysold/hole
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

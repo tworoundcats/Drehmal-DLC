@@ -1,6 +1,7 @@
 execute as @e[tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!1firsthit,tag=!1firsthit1] at @s if predicate entities:hurt2 run tag @s add 1firsthit
 execute as @e[tag=firsthit,tag=!1firsthit1] run execute as @s at @s run playsound minecraft:entity.turtle.egg_break player @a ~ ~ ~ 1 0
 execute as @e[tag=firsthit,tag=!1firsthit1] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 60 generic by @p
+execute as @e[tag=firsthit,tag=!1firsthit1] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute as @e[tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!1firsthit1] at @s if predicate entities:hurt2 run tag @s add 1firsthit1
 function core:rng
 scoreboard players operation #rand temp %= #20 const
@@ -8,4 +9,5 @@ execute if score #rand temp matches 1 run execute as @e[tag=!mythic_pvp,type=!#e
 execute as @e[tag=1secondhit,tag=!1secondhit1] run execute as @s at @s run playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 1 0.6
 execute as @e[tag=1secondhit,tag=!1secondhit1] run execute as @s at @s run particle soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 100 normal @a
 execute as @e[tag=1secondhit,tag=!1secondhit1] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 80 generic by @p
+execute as @e[tag=1secondhit,tag=!1secondhit1] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute as @e[tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,tag=!1secondhit1] at @s if predicate entities:hurt2 run tag @s add 1secondhit1

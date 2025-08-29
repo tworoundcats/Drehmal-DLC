@@ -11,5 +11,6 @@ execute positioned -3069 41 2214 as @s[distance=..20,tag=exodusspawn,gamemode=!c
 execute positioned -3069 41 2214 as @s[distance=..20,tag=exodusspawn,gamemode=!creative,gamemode=!spectator] run tag @s remove exodusspawn
  
 execute as @a[x=-2741, y=7 ,z=2116,dx=13,dy=4,dz=13] at @s if block ~ ~-0.25 ~ minecraft:yellow_stained_glass if score #5T timer matches 0 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 2 minecraft:moon/melt
+execute as @a[x=-2741, y=7 ,z=2116,dx=13,dy=4,dz=13] at @s if block ~ ~-0.25 ~ minecraft:yellow_stained_glass if score #5T timer matches 0 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 #big door exit entrance
 

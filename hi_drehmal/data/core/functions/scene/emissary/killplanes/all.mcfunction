@@ -1,5 +1,5 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 6 minecraft:multiverse
-
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 6 minecraft:multiverse
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 effect give @s blindness 5 1 true
 playsound minecraft:dcustom.block.deepslate.fall block @s ~ ~ ~ 100 0.5
 playsound minecraft:dcustom.entity.generic.hurt block @s ~ ~ ~ 100

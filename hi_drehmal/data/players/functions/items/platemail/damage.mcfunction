@@ -1,4 +1,5 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 16 generic
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 16 generic
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 
 data modify storage drehmal:players tempMotion set from entity @s Pos

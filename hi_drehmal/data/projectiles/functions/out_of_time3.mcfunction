@@ -14,3 +14,4 @@ execute as @e[type=marker,tag=special] run function projectiles:fancy/particle_t
 summon marker ^-0.3 ^-0.5 ^ {Tags:["asc_star","special"]}
 execute as @e[type=marker,tag=special] run function projectiles:fancy/particle_tag
 execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 bifurcated by @p
+execute at @s as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

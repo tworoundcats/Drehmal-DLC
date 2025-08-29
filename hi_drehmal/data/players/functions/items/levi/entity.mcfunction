@@ -6,6 +6,7 @@ execute at @s run particle minecraft:bubble_pop ~ ~ ~ 0.6 0 0.6 0.1 100
 execute at @s run tp @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=5,tag=!oblivion_immune,tag=!obv.immune] @s
 
 execute at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 4 minecraft:generic by @p
+execute at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5,limit=1] if predicate entities:hurt2 run scoreboard players add #levi num 1
 execute if score #levi num matches 30 at @s run playsound simplyswords:elemental_sword_water_attack_01 player @a ~ ~ ~ 1 1
 execute if score #levi num matches 60 at @s run playsound simplyswords:elemental_sword_water_attack_02 player @a ~ ~ ~ 1 1
@@ -23,4 +24,5 @@ execute if score @s num matches 200.. at @s run particle minecraft:bubble_pop ~ 
 execute if score @s num matches 200.. at @s run playsound simplyswords:dark_sword_breaks player @a ~ ~ ~ 6 1
 execute if score @s num matches 200.. at @s run playsound entity.generic.explode player @a ~ ~ ~ 1 0
 execute if score @s num matches 200.. at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 50 minecraft:truedamage by @p
+execute if score @s num matches 200.. at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s num matches 200.. run kill @s

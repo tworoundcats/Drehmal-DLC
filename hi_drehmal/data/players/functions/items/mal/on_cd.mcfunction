@@ -3,5 +3,6 @@ execute anchored eyes at @s positioned ^ ^ ^0.5 as @s run function particle:effe
 scoreboard players reset @s mal_cd
 summon marker ^ ^ ^3 {Tags:["mal_dmg"]}
 execute at @e[type=minecraft:marker,tag=mal_dmg] run execute as @e[type=!#entities:fire_mobs,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 21 generic by @p
+execute at @e[type=minecraft:marker,tag=mal_dmg] run execute as @e[type=!#entities:fire_mobs,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute at @e[type=minecraft:marker,tag=mal_dmg] run execute as @e[type=!#entities:fire_mobs,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] run data merge entity @s {Fire:120}
 kill @e[tag=mal_dmg]

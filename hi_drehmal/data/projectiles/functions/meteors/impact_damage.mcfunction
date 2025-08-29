@@ -34,6 +34,7 @@ scoreboard players set #epower temp 5
 
 function entities:misc/explode
 
-damage @s[scores={blocking3=..4,blocked=1..}] 200 minecraft:ducked
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 200 minecraft:ducked
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 advancement grant @s only minecraft:lodahr/hitbystruckbytruck

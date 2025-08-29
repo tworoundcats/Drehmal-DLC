@@ -8,7 +8,8 @@ tag @s add temp_h
 
 effect give @s resistance 1 4 true
 attribute @s minecraft:generic.max_health base set -100
-damage @s[scores={blocking3=..4,blocked=1..}] 1 
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1 
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 
 schedule function players:items/anyr/revive_2 4t

@@ -1,0 +1,21 @@
+
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.5 ~0.1 ~0 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.5 ~0.1 ~0 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0 ~0.1 ~1.5 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0 ~0.1 ~-1.5 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.06 ~0.1 ~1.06 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.06 ~0.1 ~1.06 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.06 ~0.1 ~-1.06 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.06 ~0.1 ~-1.06 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.38 ~0.1 ~0.57 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.38 ~0.1 ~0.57 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.38 ~0.1 ~-0.57 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.38 ~0.1 ~-0.57 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0.57 ~0.1 ~1.38 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-0.57 ~0.1 ~1.38 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0.57 ~0.1 ~-1.38 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-0.57 ~0.1 ~-1.38 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~1.38 ~0.57 ~0 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~-1.38 ~0.57 ~0 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0 ~0.57 ~1.38 0 0 0 0 1
+particle minecraft:dust_color_transition 0.361 0.012 0.302 0.9 0.212 0.565 0.855 ~0 ~0.57 ~-1.38 0 0 0 0 1

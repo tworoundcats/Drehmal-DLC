@@ -1,1 +1,2 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 9 minecraft:bifurcated
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 9 minecraft:bifurcated
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

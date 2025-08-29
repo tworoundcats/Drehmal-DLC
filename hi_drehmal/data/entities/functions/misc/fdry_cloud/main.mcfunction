@@ -12,3 +12,4 @@ execute if score @s ai_timer matches 300..350 run particle minecraft:dust_color_
 execute if score @s ai_timer matches 350..400 run particle minecraft:dust_color_transition 1 0.97 0 1 1 0.68 0 ~ ~-1 ~ 2.65 2.65 2.65 0 25 normal
 
 execute if score #10T timer matches 1 run execute as @a[distance=..5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 minecraft:radiation
+execute if score #10T timer matches 1 run execute as @a[distance=..5] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

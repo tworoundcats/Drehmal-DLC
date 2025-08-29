@@ -5,6 +5,7 @@
 #execute as @s if predicate players:sneak if score @s fzy_lvl matches 3 run execute as @e[sort=nearest,distance=..5,limit=1,type=!player,type=!#entities:dummy,#type=!#entities:highcapacity,type=!#entities:proj] at @e anchored eyes positioned ^0.5 ^ ^ run effect give @s glowing 5 0 true
 #execute as @s if predicate players:sneak if score @s fzy_lvl matches 3 run execute as @e[sort=nearest,distance=..5,limit=1,type=!player,type=!#entities:dummy,#type=!#entities:highcapacity,type=!#entities:proj] at @s anchored eyes positioned ^0.5 ^ ^ run playsound minecraft:entity.wither.death player @a ~ ~ ~ 4 0
 #execute as @s if predicate players:sneak if score @s fzy_lvl matches 3 run execute anchored eyes positioned ^ ^ ^ run execute as @e[sort=nearest,distance=..5,#limit=1,type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 150 falling_anvil
+#execute as @s if predicate players:sneak if score @s fzy_lvl matches 3 run execute anchored eyes positioned ^ ^ ^ run execute as @e[sort=nearest,distance=..5,#limit=1,type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 #
 #
 #execute as @s if predicate players:sneak if score @s fzy_lvl matches 3 run effect give @s absorption 10 4 true

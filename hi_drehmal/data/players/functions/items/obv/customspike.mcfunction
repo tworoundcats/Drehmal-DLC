@@ -23,3 +23,4 @@ execute if score @s ob_spike matches 24 run kill @s
 
 
 execute if entity @s[scores={ob_spike=10..}] run execute at @s if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..4] run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 20
+execute if entity @s[scores={ob_spike=10..}] run execute at @s if entity @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..4] run execute as @e[type=!player,type=!#entities:dummy,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

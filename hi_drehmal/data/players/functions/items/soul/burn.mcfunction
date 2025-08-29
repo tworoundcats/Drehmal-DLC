@@ -6,26 +6,47 @@ execute if data entity @s Attributes[{Name:"minecraft:generic.max_health"}] run 
 scoreboard players operation @s maxHealth = @s prevMaxHealth
 scoreboard players operation @s maxHealth /= #50 const
 execute unless score @s maxHealth matches 1.. unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1 minecraft:truedamage
+execute unless score @s maxHealth matches 1.. if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 1 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 1 minecraft:truedamage
+execute if score @s maxHealth matches 1 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 2 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 2 minecraft:truedamage
+execute if score @s maxHealth matches 2 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 3 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3 minecraft:truedamage
+execute if score @s maxHealth matches 3 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 4 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 4 minecraft:truedamage
+execute if score @s maxHealth matches 4 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 5 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 5 minecraft:truedamage
+execute if score @s maxHealth matches 5 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 6 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 6 minecraft:truedamage
+execute if score @s maxHealth matches 6 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 7 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 7 minecraft:truedamage
+execute if score @s maxHealth matches 7 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 8 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 8 minecraft:truedamage
+execute if score @s maxHealth matches 8 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 9 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 9 minecraft:truedamage
+execute if score @s maxHealth matches 9 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 10 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 10 minecraft:truedamage
+execute if score @s maxHealth matches 10 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 11 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 11 minecraft:truedamage
+execute if score @s maxHealth matches 11 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 12 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 12 minecraft:truedamage
+execute if score @s maxHealth matches 12 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 13 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 13 minecraft:truedamage
+execute if score @s maxHealth matches 13 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 14 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 14 minecraft:truedamage
+execute if score @s maxHealth matches 14 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 15 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 15 minecraft:truedamage
+execute if score @s maxHealth matches 15 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 16 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 16 minecraft:truedamage
+execute if score @s maxHealth matches 16 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 17 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 17 minecraft:truedamage
+execute if score @s maxHealth matches 17 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 18 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 18 minecraft:truedamage
+execute if score @s maxHealth matches 18 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 19 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 19 minecraft:truedamage
+execute if score @s maxHealth matches 19 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s maxHealth matches 20.. unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 20 minecraft:truedamage
+execute if score @s maxHealth matches 20.. if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 tag @s add maxhealth
 execute if score @s soul_burn matches 160 run tag @s remove soul_burn

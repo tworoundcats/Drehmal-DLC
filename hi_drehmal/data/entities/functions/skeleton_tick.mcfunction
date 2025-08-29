@@ -25,6 +25,8 @@ execute if entity @s[tag=aph_shotgun] run function entities:ai/aph_shotgun/main
 execute if entity @s[tag=em_summon] at @s run particle minecraft:witch ~ ~1.5 ~ 0.1 0.2 0.1 0 1
 execute if entity @s[tag=revenant] run function entities:ai/revenant/main
 
+
 execute if entity @s[tag=primal_sorrow] run function dlc:mobs/primal_sorrow/tick
 execute if entity @s[tag=primal_wrath] run function dlc:mobs/primal_wrath/tick
 execute if entity @s[tag=primal_frost_caller] run function dlc:mobs/primal_frost_caller/tick
+execute if entity @s[tag=timeworn_hunter] run function dlc:mobs/timeworn_hunter/tick

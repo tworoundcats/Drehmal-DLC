@@ -1,1 +1,2 @@
-damage @s[scores={blocking3=..4,blocked=1..}] 7 minecraft:primalenergy
+execute unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 7 minecraft:primalenergy
+execute if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
