@@ -1,0 +1,1 @@
+#execute unless predicate dlc:accessories/air run advancement grant @s only dlc:full

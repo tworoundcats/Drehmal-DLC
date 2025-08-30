@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythicmetals:kyber_boots"
+    },
+    "title": {
+      "text": "Riftwalker",
+      "color": "dark_purple",
+      "bold": false
+    },
+    "description": {
+      "text": "Gave a mysterious portal in Athrah a test run. - Completed the Rift Technician's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/rift"
+  },
+  "parent": "dlc:corvid"
+}

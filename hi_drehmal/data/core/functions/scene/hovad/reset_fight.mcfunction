@@ -17,3 +17,4 @@ bossbar set minecraft:hovad visible false
 bossbar set minecraft:ultva visible false
 
 forceload remove 27314 60 27276 102
+kill @e[tag=orb]

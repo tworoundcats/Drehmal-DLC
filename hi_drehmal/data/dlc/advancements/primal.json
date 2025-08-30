@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "simplyswords:runic_tablet"
+      },
+      "title": {
+        "text": "Primal Slayer",
+        "color": "#a7116d",
+        "italic": false
+      },
+      "description": {
+        "text": "You have faced every facet of this world's raw, untamed soul, its Fury, its Sorrow, its Wrath, and its Yearning. - Defeat one of each type of Primal Mob.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:challenges",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/primal"
+    }
+  }
+  

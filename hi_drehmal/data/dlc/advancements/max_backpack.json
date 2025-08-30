@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "travelersbackpack:netherite"
+    },
+    "title": {
+      "text": "Inventory Managed!",
+      "color": "#a827cf",
+      "bold": false
+    },
+    "description": {
+      "text": "Lesser adventurers are bound by what they can carry. You are bound by nothing. - Fully upgrade a backpack to Celestial Tier.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt":"{Tier:4}"
+                    }
+                ]
+            }
+        }
+    },
+  "rewards": {
+    "function": "dlc:advancement/max_backpack"
+  },
+  "parent": "dlc:challenges"
+}

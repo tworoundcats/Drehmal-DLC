@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "feather"
+    },
+    "title": {
+      "text": "Quill Collection Services",
+      "color": "blue",
+      "bold": false
+    },
+    "description": {
+      "text": "Repossessed a special item for a writer in Fort Nimahj. - Completed Dohm's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/dome"
+  },
+  "parent": "dlc:mouton"
+}

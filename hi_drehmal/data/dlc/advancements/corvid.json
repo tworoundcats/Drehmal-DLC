@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:corvid_painting"
+    },
+    "title": {
+      "text": "Reuniting Art and the Artist",
+      "color": "blue",
+      "bold": false
+    },
+    "description": {
+      "text": "Returned a special piece to a painter in Okeke. - Completed Corv Ihd's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/corvid"
+  },
+  "parent": "dlc:quests"
+}

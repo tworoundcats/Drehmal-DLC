@@ -1,5 +1,7 @@
 execute unless entity @s[tag=owner_tagged] run function entities:misc/arrow_owner
 execute if entity @s[tag=piecemaker_arrow] at @s run particle dust 0.976 0 0 1 ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=ultva_arrow] at @s run execute as @e[tag=Hovadchear,distance=..3,type=wither_skeleton] run effect give @s mcdar:shielding 1 1 true
+execute if entity @s[tag=ultva_arrow] at @s run particle dust 0.678 0.569 0.082 1 ~ ~ ~ 0 0 0 0 1
 execute if entity @s[tag=hunter_arrow] at @s run particle minecraft:dust_color_transition 0.361 0.012 0.302 1 0.212 0.565 0.855 ~ ~ ~ 0 0 0 0 1
 execute if entity @s[tag=ossein_arrow] at @s run particle crit
 execute if entity @s[tag=ethgar_arrow] at @s run particle firework

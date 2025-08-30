@@ -108,6 +108,8 @@ execute positioned ~ ~ ~ as @p[tag=qst15] at @s run summon experience_orb ~ ~ ~1
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run summon experience_orb ~ ~ ~2 {Value:6}
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run summon experience_orb ~ ~ ~1 {Value:6}
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
+execute positioned ~ ~ ~ as @p[tag=qst15] run advancement grant @s only dlc:tahlros
+
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s minecraft:amethyst_shard 32
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s dlc:silver_ingot{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}} 3
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s dlc:olkahan{Olkahan:1b,display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"light_purple","text":"Olkahan Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"An immensely rare metal only found"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"on the underside of the Disc. In a "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"post-rehntite era, it may be the single "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"most sought-after mineral in the realm"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"—for those who even know of its existence."}],"text":""}']}} 1
@@ -117,3 +119,7 @@ scoreboard players set #tahlros_sushi bool 1
 execute as @p[tag=qst15] run tag @s add qst15_e
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15_e
+
+execute unless score #quest15 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest15 bool 1

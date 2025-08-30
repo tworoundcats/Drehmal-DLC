@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "dlc:starfall_mote"
+      },
+      "title": {
+        "text": "Flyout",
+        "color": "#a011c7",
+        "italic": false
+      },
+      "description": {
+        "text": "I got it! I got it! - Caught a falling Starfall Mote before it hit the ground.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dlc:advancement/starfall"
+  },
+  "parent": "dlc:zul_card"
+}

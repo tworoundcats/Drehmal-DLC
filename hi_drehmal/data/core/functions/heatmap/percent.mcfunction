@@ -6,12 +6,14 @@ scoreboard players set #wadv temp 0
 scoreboard players set #dadv temp 0
 scoreboard players set #sadv temp 0
 scoreboard players set #minadv temp 0
+scoreboard players set #dlcadv temp 0
 
-scoreboard players set #advancement_total const 206
+scoreboard players set #advancement_total const 247
 scoreboard players set #minecraft_total const 60
 scoreboard players set #story_total const 29
-scoreboard players set #disc_total const 78
-scoreboard players set #weapons_total const 39
+scoreboard players set #disc_total const 79
+scoreboard players set #weapons_total const 79
+scoreboard players set #dlc_total const 40
 
 execute if entity @s[advancements={advancements:mystery/em_nohit=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={advancements:mystery/green=true}] run scoreboard players add #adv temp 1
@@ -234,6 +236,59 @@ execute if entity @s[advancements={weapons:voidtear=true}] run scoreboard player
 execute if entity @s[advancements={weapons:warphorse=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={weapons:whispersong=true}] run scoreboard players add #adv temp 1
 execute if entity @s[advancements={weapons:zenith=true}] run scoreboard players add #adv temp 1
+
+#components 
+execute if entity @s[advancements={weapons:despair=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:ruinous=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:harbinger=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:primal_focus=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:burnt=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:shard_of_nothing=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:resonant=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:serpents=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:spark=true}] run scoreboard players add #adv temp 1
+
+#legendaries
+execute if entity @s[advancements={weapons:b52=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:comp=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:blaze=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:pearl=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:starry=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:chrono=true}] run scoreboard players add #adv temp 1
+
+#mythicals+
+execute if entity @s[advancements={weapons:frenzy2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:ascendance2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:calamity2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:zenith2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:malevolentia2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:oblivion2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:syzygy2=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:shield=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:providence=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:subjugation=true}] run scoreboard players add #adv temp 1
+
+
+#masterworks
+execute if entity @s[advancements={weapons:piecemaker=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:verdant=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:pleasures=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:seren=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:force=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:hang=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:harvest=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:war=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:duskfall=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:daybreak=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:night=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:first=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:hexed=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:ambition=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={weapons:reticent=true}] run scoreboard players add #adv temp 1
+
+#location
+execute if entity @s[advancements={advancements:discoveries/xorhuul=true}] run scoreboard players add #adv temp 1
+
 execute if entity @s[advancements={weapons:aeongale=true}] run scoreboard players add #wadv temp 1
 execute if entity @s[advancements={weapons:ascendance=true}] run scoreboard players add #wadv temp 1
 execute if entity @s[advancements={weapons:avpod=true}] run scoreboard players add #wadv temp 1
@@ -273,6 +328,55 @@ execute if entity @s[advancements={weapons:voidtear=true}] run scoreboard player
 execute if entity @s[advancements={weapons:warphorse=true}] run scoreboard players add #wadv temp 1
 execute if entity @s[advancements={weapons:whispersong=true}] run scoreboard players add #wadv temp 1
 execute if entity @s[advancements={weapons:zenith=true}] run scoreboard players add #wadv temp 1
+
+#components
+execute if entity @s[advancements={weapons:despair=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:ruinous=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:harbinger=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:primal_focus=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:burnt=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:shard_of_nothing=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:resonant=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:serpents=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:spark=true}] run scoreboard players add #wadv temp 1
+
+#legendaries
+execute if entity @s[advancements={weapons:b52=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:comp=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:blaze=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:pearl=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:starry=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:chrono=true}] run scoreboard players add #wadv temp 1
+
+#masterworks
+execute if entity @s[advancements={weapons:piecemaker=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:verdant=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:pleasures=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:seren=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:force=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:hang=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:harvest=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:war=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:duskfall=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:daybreak=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:night=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:first=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:hexed=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:ambition=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:reticent=true}] run scoreboard players add #wadv temp 1
+
+#mythicals+
+execute if entity @s[advancements={weapons:frenzy2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:ascendance2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:calamity2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:zenith2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:malevolentia2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:oblivion2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:syzygy2=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:shield=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:providence=true}] run scoreboard players add #wadv temp 1
+execute if entity @s[advancements={weapons:subjugation=true}] run scoreboard players add #wadv temp 1
+
 execute if entity @s[advancements={advancements:discoveries/aeongale=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/ancel=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/arbiter=true}] run scoreboard players add #dadv temp 1
@@ -351,6 +455,11 @@ execute if entity @s[advancements={advancements:discoveries/wokonori=true}] run 
 execute if entity @s[advancements={advancements:discoveries/yavhlixdiscovery=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/ytaj=true}] run scoreboard players add #dadv temp 1
 execute if entity @s[advancements={advancements:discoveries/ziggurat=true}] run scoreboard players add #dadv temp 1
+
+#location
+execute if entity @s[advancements={advancements:discoveries/xorhuul=true}] run scoreboard players add #dadv temp 1
+
+
 execute if entity @s[advancements={advancements:primordial/75p=true}] run scoreboard players add #sadv temp 1
 execute if entity @s[advancements={advancements:primordial/a0_repository=true}] run scoreboard players add #sadv temp 1
 execute if entity @s[advancements={advancements:primordial/a0_repository_all=true}] run scoreboard players add #sadv temp 1
@@ -440,6 +549,7 @@ execute if entity @s[advancements={minecraft:lodahr/silk_touch_kill=true}] run s
 execute if entity @s[advancements={minecraft:lodahr/throw_trident=true}] run scoreboard players add #minadv temp 1
 execute if entity @s[advancements={minecraft:lodahr/very_very_frightening=true}] run scoreboard players add #minadv temp 1
 execute if entity @s[advancements={minecraft:lodahr/withstand_cold=true}] run scoreboard players add #minadv temp 1
+
 execute if entity @s[advancements={advancements:mystery/em_nohit=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={advancements:mystery/green=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={advancements:mystery/mstone1=true}] run scoreboard players add #madv temp 1
@@ -456,6 +566,96 @@ execute if entity @s[advancements={minecraft:lodahr/hitbystruckbytruck=true}] ru
 execute if entity @s[advancements={minecraft:lodahr/suffer=true}] run scoreboard players add #madv temp 1
 execute if entity @s[advancements={minecraft:lodahr/survive_wastes=true}] run scoreboard players add #madv temp 1
 
+#new secret adv
+execute if entity @s[advancements={advancements:mystery/power=true}] run scoreboard players add #madv temp 1
+execute if entity @s[advancements={dlc:visitation=true}] run scoreboard players add #madv temp 1
+execute if entity @s[advancements={weapons:leviathan=true}] run scoreboard players add #madv temp 1
+execute if entity @s[advancements={weapons:wings=true}] run scoreboard players add #madv temp 1
+
+
+#dlc adv
+execute if entity @s[advancements={dlc:ambition=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:archeology=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:chris=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:cold=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:corvid=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:crystal=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:daniel=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:dome=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:dreadnaught=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:echo=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:full=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:gamer=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:generals=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:gragas=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:hegemon=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:hexed=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:keeper=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:lucky=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:mahkar=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:mastermode_mb=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:max_backpack=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:melon=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:mouton=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:polytheism=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:primal=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:questmaster=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:reticent=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:rift=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:runic=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:safe=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:social=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:starfall=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:study=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:tahlros=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:terminus=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:tidal=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:unspoken=true}] run scoreboard players add #dlcadv temp 1
+execute if score #weller_quest bool matches 1 run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:zul_trade=true}] run scoreboard players add #dlcadv temp 1
+execute if entity @s[advancements={dlc:zul_card=true}] run scoreboard players add #dlcadv temp 1
+
+#dlc adv towards main %
+execute if entity @s[advancements={dlc:ambition=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:archeology=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:chris=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:cold=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:corvid=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:crystal=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:daniel=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:dome=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:dreadnaught=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:echo=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:full=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:gamer=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:generals=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:gragas=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:hegemon=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:hexed=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:keeper=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:lucky=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:mahkar=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:mastermode_mb=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:max_backpack=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:melon=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:mouton=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:polytheism=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:primal=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:questmaster=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:reticent=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:rift=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:runic=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:safe=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:social=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:starfall=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:study=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:tahlros=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:terminus=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:tidal=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:unspoken=true}] run scoreboard players add #adv temp 1
+execute if score #weller_quest bool matches 1 run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:zul_trade=true}] run scoreboard players add #adv temp 1
+execute if entity @s[advancements={dlc:zul_card=true}] run scoreboard players add #adv temp 1
 
 #------------------------------------------------------#
 
@@ -474,6 +674,16 @@ scoreboard players operation #wadv temp *= #10000 const
 execute store result score #wadv_dec temp run scoreboard players operation #wadv temp /= #weapons_total const
 scoreboard players operation #wadv_dec temp %= #100 const
 scoreboard players operation #wadv temp /= #100 const
+
+#------------------------------------------------------#
+
+
+scoreboard players operation #dlc_total temp = #dlcadv temp
+scoreboard players operation #dlcadv temp *= #10000 const
+
+execute store result score #dlc_dec temp run scoreboard players operation #dlcadv temp /= #dlc_total const
+scoreboard players operation #dlc_dec temp %= #100 const
+scoreboard players operation #dlcadv temp /= #100 const
 
 #------------------------------------------------------#
 
@@ -529,6 +739,10 @@ execute if score #wadv_total temp >= #weapons_total const run data modify storag
 
 execute if score #wadv_dec temp matches 10.. run tellraw @s ["",{"nbt":"tempStar","storage":"drehmal:core"},{"score":{"name":"#wadv_total","objective":"temp"},"color":"red"},{"text":" / ","color":"dark_gray"},{"score":{"name":"#weapons_total","objective":"const"},"color":"gray"},{"text":" Fabled Equipment ","color":"dark_gray"},{"text":"(","color":"gray"},{"score":{"name":"#wadv","objective":"temp"},"color":"dark_red"},{"text":".","color":"dark_red"},{"score":{"name":"#wadv_dec","objective":"temp"},"color":"dark_red"},{"text":"%","color":"dark_red"},{"text":")","color":"gray"}]
 execute if score #wadv_dec temp matches ..9 run tellraw @s ["",{"nbt":"tempStar","storage":"drehmal:core"},{"score":{"name":"#wadv_total","objective":"temp"},"color":"red"},{"text":" / ","color":"dark_gray"},{"score":{"name":"#weapons_total","objective":"const"},"color":"gray"},{"text":" Fabled Equipment ","color":"dark_gray"},{"text":"(","color":"gray"},{"score":{"name":"#wadv","objective":"temp"},"color":"dark_red"},{"text":".0","color":"dark_red"},{"score":{"name":"#wadv_dec","objective":"temp"},"color":"dark_red"},{"text":"%","color":"dark_red"},{"text":")","color":"gray"}]
+
+#dlc total
+execute if score #dlc_dec temp matches 10.. run tellraw @s ["",{"nbt":"tempStar","storage":"drehmal:core"},{"score":{"name":"#dlc_total","objective":"temp"},"color":"#cd42ff"},{"text":" / ","color":"dark_gray"},{"score":{"name":"#dlc_total","objective":"const"},"color":"gray"},{"text":" The Unspoken Path ","color":"dark_gray"},{"text":"(","color":"gray"},{"score":{"name":"#dlcadv","objective":"temp"},"color":"#cd42ff"},{"text":".","color":"#cd42ff"},{"score":{"name":"#dlc_dec","objective":"temp"},"color":"#cd42ff"},{"text":"%","color":"#cd42ff"},{"text":")","color":"gray"}]
+execute if score #dlc_dec temp matches ..9 run tellraw @s ["",{"nbt":"tempStar","storage":"drehmal:core"},{"score":{"name":"#dlc_total","objective":"temp"},"color":"#cd42ff"},{"text":" / ","color":"dark_gray"},{"score":{"name":"#dlc_total","objective":"const"},"color":"gray"},{"text":" The Unspoken Path ","color":"dark_gray"},{"text":"(","color":"gray"},{"score":{"name":"#dlcadv","objective":"temp"},"color":"#cd42ff"},{"text":".0","color":"#cd42ff"},{"score":{"name":"#dlc_dec","objective":"temp"},"color":"#cd42ff"},{"text":"%","color":"#cd42ff"},{"text":")","color":"gray"}]
 
 data modify storage drehmal:core tempStar set value '§8✦ '
 

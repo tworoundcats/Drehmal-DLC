@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythicmetals:osmium_sword"
+    },
+    "title": {
+      "text": "Spiritual Severance",
+      "color": "dark_purple",
+      "bold": false
+    },
+    "description": {
+      "text": "Restored an ancient sword to its former glory in Highfall. - Completed Ga'Mahr's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/gamer"
+  },
+  "parent": "dlc:weller"
+}

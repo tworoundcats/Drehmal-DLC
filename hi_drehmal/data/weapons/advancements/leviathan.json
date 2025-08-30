@@ -31,5 +31,5 @@
             }
         }
     },
-    "parent": "weapons:syzygy"
+    "parent": "advancements:mystery/power"
 }

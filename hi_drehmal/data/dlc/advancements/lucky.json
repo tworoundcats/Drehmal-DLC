@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+  "item": "minecraft:potion",
+  "nbt": "{CustomPotionColor:8380347}"
+    },
+      "title": {
+        "text": "I Can't Stop Winning!",
+        "color": "#16f63b",
+        "italic": false
+      },
+      "description": {
+        "text": "Jackpot! - Roll the highest-tier rewards from a Runic Hoard two times in a row.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dlc:advancement/lucky"
+  },
+  "parent": "dlc:runic"
+}

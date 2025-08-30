@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:bloody_chum"
+    },
+    "title": {
+      "text": "A Forever Home",
+      "color": "dark_red",
+      "bold": false
+    },
+    "description": {
+      "text": "Brought an immortal pet to a La'Tehrmari in Naharja. - Completed Tahlros' quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/tahlros"
+  },
+  "parent": "dlc:mahkar"
+}

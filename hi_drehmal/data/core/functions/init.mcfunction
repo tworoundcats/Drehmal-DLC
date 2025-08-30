@@ -1032,6 +1032,7 @@ scoreboard objectives add use_bs minecraft.used:mcdw.dagger_backstabber
 scoreboard objectives add kills totalKillCount
 scoreboard objectives add bskills totalKillCount
 scoreboard objectives add bstimer dummy
+scoreboard objectives add ambition_kills totalKillCount
 
 team add component
 team modify component color green

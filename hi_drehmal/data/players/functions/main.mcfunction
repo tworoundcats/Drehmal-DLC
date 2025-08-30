@@ -821,8 +821,7 @@ execute if predicate players:holding/first_end as @s[scores={use_first=1..}] run
 
 ### Unchecked Ambition ###
 
-execute if predicate players:holding/ambition as @s[scores={use_ambition=1..}] run function players:items/ambition/main
-
+execute if predicate players:holding/ambition run function players:items/ambition/hold
 # -------------------------------------------------------------------
 
 ### Reticent Resolve ###
@@ -869,7 +868,7 @@ execute if score #1S timer matches 0 run function players:cloud
 execute if entity @s[tag=cloud] run function players:checkcloud
 
 # --- Wings ---
-execute if score #1S timer matches 0 run function players:wings
+execute as @s[advancements={weapons:wings=true}] if score #1S timer matches 0 run function players:wings
 execute if entity @s[tag=wings] run function players:checkwings
 # -------------------------------------------------------------------
 
@@ -909,7 +908,7 @@ execute as @s[tag=generals_music] unless predicate players:in_generals_arena run
 execute if score #1S timer matches 0 if predicate players:in_generals_arena run effect clear @s fire_resistance
 
 # zul spawning
-execute at @s if score #5T timer matches 0 run function dlc:zul/check_spawn
+execute at @s if score #5T timer matches 3 run function dlc:zul/check_spawn
 
 # Ace
 execute if predicate players:holding/ace run function players:items/ace/main
@@ -926,4 +925,9 @@ scoreboard players reset @s drop_ob
 execute as @s[scores={moment=1..}] run function players:items/moment/use
 
 # zul spawning
-execute if score #10S timer matches 0 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
+execute if score #10S timer matches 50 unless entity @e[type=dlc:collector] run tag @s remove zul_spawn
+
+execute if predicate dlc:strength run effect give @s strength infinite 0 true
+execute if predicate dlc:jump_boost run effect give @s jump_boost infinite 0 true
+execute if predicate dlc:fire_resistance run effect give @s fire_resistance infinite 0 true
+execute if predicate dlc:speed run effect give @s speed infinite 0 true

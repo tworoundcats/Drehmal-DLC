@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_stal"
+    },
+    "title": {
+      "text": "Avsohmic Symphony",
+      "color": "dark_blue",
+      "bold": false
+    },
+    "description": {
+      "text": "Helped to inspire a budding composer in Mossfield. - Completed Chris' quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/chris"
+  },
+  "parent": "dlc:gragas"
+}

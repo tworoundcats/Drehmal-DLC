@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "fwaystones:scroll_of_infinite_knowledge"
+    },
+    "title": {
+      "text": "Challenges",
+      "color": "#bb0101",
+      "bold": false
+    },
+    "description": {
+      "text": "A challenge is earned through a thousand failures.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+  },
+  "parent": "dlc:root"
+}

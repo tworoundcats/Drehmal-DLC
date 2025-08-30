@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:heartbreak_pottery_sherd"
+      },
+      "title": {
+        "text": "On a Razor's Edge",
+        "color": "#ff3d54",
+        "italic": false
+      },
+      "description": {
+        "text": "In the moment between life and death, you still managed. - Successfully parried an attack while at half a heart.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:ambition",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/reticent"
+    }
+  }
+  

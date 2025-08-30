@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:seeker_sushi"
+    },
+    "title": {
+      "text": "Questmaster",
+      "color": "#c6be1f",
+      "bold": false
+    },
+    "description": {
+      "text": "They asked and you answered. The world had problems and you fixed them. All of them. - Completed all 17 DLC Quests.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dlc:advancement/questmaster"
+  },
+  "parent": "dlc:tahlros"
+}

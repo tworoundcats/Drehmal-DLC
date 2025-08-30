@@ -3,6 +3,7 @@ execute at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ as @e[type=ite
 function players:misc/mb/replace_inert
 execute as @a at @s run function players:music/reset
 tag @s remove mb_holder
+tag @s remove mastermode
 scoreboard players reset #mb_run_active? bool
 tag @s remove exploded
 execute in minecraft:overworld positioned 26512 161 -96 run setblock ~3 ~ ~15 minecraft:light_gray_concrete

@@ -1,5 +1,5 @@
-execute unless score @s bool matches 1 run tp ~ ~ ~0.1
-execute if score @s bool matches 1 run tp ~ ~ ~-0.1
+execute unless score @s bool matches 1 run tp ~ ~ ~0.5
+execute if score @s bool matches 1 run tp ~ ~ ~-0.4
 
 execute store result score @s z run data get entity @s Pos[2] 1
 

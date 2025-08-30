@@ -1,0 +1,148 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:silver_ingot"
+    },
+    "title": {
+      "text": "Social Butterfly",
+      "color": "#e524ff",
+      "bold": false
+    },
+    "description": {
+      "text": "Who wants to trade? - Discovered every random NPC trader.",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "find_neverdawn_envoy": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 3620, "max": 3630}, "y": {"min": 7, "max": 17}, "z": {"min": -2561, "max": -2551}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_enri": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -3175, "max": -3165}, "y": {"min": 132, "max": 142}, "z": {"min": 851, "max": 861}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_tetra": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 4318, "max": 4328}, "y": {"min": 41, "max": 51}, "z": {"min": -888, "max": -878}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_nat": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 4879, "max": 4889}, "y": {"min": 96, "max": 106}, "z": {"min": -3377, "max": -3367}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_virtuo_fanatic": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 4159, "max": 4169}, "y": {"min": 88, "max": 98}, "z": {"min": 2479, "max": 2489}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_peppa": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -3320, "max": -3310}, "y": {"min": 135, "max": 145}, "z": {"min": -914, "max": -904}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_xahks": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 3653, "max": 3663}, "y": {"min": 62, "max": 72}, "z": {"min": -1660, "max": -1650}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_rev": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -19, "max": -9}, "y": {"min": 112, "max": 122}, "z": {"min": 1729, "max": 1739}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_abigail": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -1122, "max": -1112}, "y": {"min": 62, "max": 72}, "z": {"min": -3643, "max": -3633}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_helena": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 2841, "max": 2851}, "y": {"min": 116, "max": 126}, "z": {"min": -2051, "max": -2041}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_contrail": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 576, "max": 586}, "y": {"min": 75, "max": 85}, "z": {"min": 1495, "max": 1505}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_horgno": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -2092, "max": -2082}, "y": {"min": 76, "max": 86}, "z": {"min": -3819, "max": -3809}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_numbers": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 5801, "max": 5811}, "y": {"min": 61, "max": 71}, "z": {"min": -1033, "max": -1023}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_typhoon": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -50, "max": -40}, "y": {"min": 58, "max": 68}, "z": {"min": 4930, "max": 4940}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_pundus": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -1224, "max": -1214}, "y": {"min": 102, "max": 112}, "z": {"min": 4818, "max": 4828}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_hilks": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 1848, "max": 1858}, "y": {"min": 58, "max": 68}, "z": {"min": 4258, "max": 4268}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_coal": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -1556, "max": -1546}, "y": {"min": 64, "max": 74}, "z": {"min": -458, "max": -448}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_tildehz": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 1106, "max": 1116}, "y": {"min": 63, "max": 73}, "z": {"min": 1051, "max": 1061}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_purple": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 4502, "max": 4512}, "y": {"min": 61, "max": 71}, "z": {"min": 5723, "max": 5733}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_kalikars": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 4221, "max": 4231}, "y": {"min": 67, "max": 77}, "z": {"min": 584, "max": 594}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_drehn": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -3732, "max": -3722}, "y": {"min": 57, "max": 67}, "z": {"min": 5887, "max": 5897}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_slime_king": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -1230, "max": -1220}, "y": {"min": 90, "max": 100}, "z": {"min": 3748, "max": 3758}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_kyte": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": -1654, "max": -1644}, "y": {"min": 97, "max": 107}, "z": {"min": 2603, "max": 2613}}, "dimension": "minecraft:overworld"}}}
+    },
+    "find_dunch": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": { "location": { "position": { "x": {"min": 3735, "max": 3745}, "y": {"min": 68, "max": 78}, "z": {"min": 461, "max": 471}}, "dimension": "minecraft:overworld"}}}
+    }
+  },
+  "requirements": [
+    ["find_neverdawn_envoy"],
+    ["find_enri"],
+    ["find_tetra"],
+    ["find_nat"],
+    ["find_virtuo_fanatic"],
+    ["find_peppa"],
+    ["find_xahks"],
+    ["find_rev"],
+    ["find_abigail"],
+    ["find_helena"],
+    ["find_contrail"],
+    ["find_horgno"],
+    ["find_numbers"],
+    ["find_typhoon"],
+    ["find_pundus"],
+    ["find_hilks"],
+    ["find_coal"],
+    ["find_tildehz"],
+    ["find_purple"],
+    ["find_kalikars"],
+    ["find_drehn"],
+    ["find_slime_king"],
+    ["find_kyte"],
+    ["find_dunch"]
+  ],
+  "rewards": {
+    "function": "dlc:advancement/social"
+  },
+  "parent": "dlc:challenges"
+}

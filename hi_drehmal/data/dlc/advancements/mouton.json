@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "red_mushroom"
+    },
+    "title": {
+      "text": "Advent-urer",
+      "color": "dark_purple",
+      "bold": false
+    },
+    "description": {
+      "text": "Provided the materials for a unique project in Ebonrun. - Completed Muhton's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/mouton"
+  },
+  "parent": "dlc:rift"
+}

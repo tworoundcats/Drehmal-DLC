@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "cake"
+      },
+      "title": {
+        "text": "Sevenfold Ambition",
+        "color": "#02798e",
+        "italic": false
+      },
+      "description": {
+        "text": "That's gotta be the fastest Great Work on record! - Defeat 7 enemies with a single throw of Unchecked Ambition.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:hexed",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/ambition"
+    }
+  }
+  

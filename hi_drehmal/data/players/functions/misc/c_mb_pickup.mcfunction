@@ -12,7 +12,7 @@ tag @a add tempdeaths
 execute in minecraft:lodahr run forceload add 27304 55
 execute in overworld run forceload add 1737 -4393 1754 -4197
 tag @s add mb_holder
-
+execute if score #DLC mastermode matches 1 run tag @s add mastermode
 scoreboard players set #mb_picked bool 1
 scoreboard players set #khive_scroll bool 1
 

@@ -1,0 +1,93 @@
+{
+    "display": {
+      "icon": {
+        "item": "dlc:starlit_amulet"
+      },
+      "title": {
+        "text": "Walking Treasury",
+        "color": "#37295c",
+        "italic": false
+      },
+      "description": {
+        "text": "You have reached the pinnacle of your potential. There is nothing left to add.\n - Equip a full loadout of armor, talismans and hold something in both hands.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+"parent": "dlc:max_backpack",
+  "criteria": {
+    "all_slots_filled": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "head": { "items": ["minecraft:air"] }}}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "chest": { "items": ["minecraft:air"] }}}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "legs": { "items": ["minecraft:air"] }}}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "feet": { "items": ["minecraft:air"] }}}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "mainhand": { "items": ["minecraft:air"] }}}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "equipment": { "offhand": { "items": ["minecraft:air"] }}}}
+              },
+
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{ring:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{offhand:{ring:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{glove:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{chest:{cape:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{chest:{necklace:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "nbt": "{cardinal_components:{\"trinkets:trinkets\":{head:{hat:{Items:[{id:\"minecraft:air\"}]}}}}}"}}
+              }
+            ]
+          }
+        ]
+      }
+    }
+    },
+    "rewards": {
+      "function": "dlc:advancement/full"
+    }
+  }
+  

@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "mythicmetals:banglum_tnt_minecart"
+      },
+      "title": {
+        "text": "Mutually Assured Destruction",
+        "color": "#a93414",
+        "italic": false
+      },
+      "description": {
+        "text": "Fighting Fire With Fire. - Used the explosion from Echo of Karesh to kill a Creeper before it could detonate.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:challenges",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/echo"
+    }
+  }
+  

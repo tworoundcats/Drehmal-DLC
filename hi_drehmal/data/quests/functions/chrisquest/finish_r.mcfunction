@@ -54,3 +54,7 @@ execute positioned ~ ~ ~ as @p[tag=qst9] at @s run give @s minecraft:paper{Merch
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run give @s dlc:olkahan{Olkahan:1b,display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"light_purple","text":"Olkahan Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"An immensely rare metal only found"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"on the underside of the Disc. In a "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"post-rehntite era, it may be the single "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"most sought-after mineral in the realm"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"—for those who even know of its existence."}],"text":""}']}} 1
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tag @s add qst9_e
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tag @s remove qst9
+
+execute unless score #quest9 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest9 bool 1

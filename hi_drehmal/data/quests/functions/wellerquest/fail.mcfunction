@@ -2,7 +2,6 @@ execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s add
 execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s add seenfrenzy
 execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s remove fragmentcollecting
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run scoreboard players reset @s wquest
-execute as @a[tag=qst17] run tag @s remove qst17
 
 scoreboard players set #weller_happy bool 0
 

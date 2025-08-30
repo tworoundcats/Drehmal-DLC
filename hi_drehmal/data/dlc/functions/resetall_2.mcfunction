@@ -21,6 +21,9 @@ setblock 27472 160 898 air
 fill 27513 154 971 27513 154 973 air
 setblock 27484 167 882 minecraft:iron_trapdoor[facing=south,half=top,open=false,powered=false,waterlogged=true]
 
+execute positioned 2149.26 113.00 -815.55 run function dev:summon/easel
+
+execute positioned 1089.48 67.00 1979.50 run function dev:summon/balloon
 
 
 execute positioned -556 30 4997 run function dlc:summon/asc 

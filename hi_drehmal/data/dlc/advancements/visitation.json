@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:black_concrete"
+      },
+      "title": {
+        "text": "Visitation",
+        "color": "#1f1818",
+        "italic": false
+      },
+      "description": {
+        "text": "Your company was greatly appreciated, Seeker. - Spoke with an enigmatic figure",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+  "parent": "advancements:mystery/root",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "players:misc/mystery_visitation"
+  }
+}

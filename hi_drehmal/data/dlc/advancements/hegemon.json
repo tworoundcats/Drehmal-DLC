@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:redstone_block"
+      },
+      "title": {
+        "text": "Hard Reboot",
+        "color": "#ff1212",
+        "italic": false
+      },
+      "description": {
+        "text": "A terrifying demonstration of Avsohm's technological prowess and capacity for cruelty in battle. - Defeated the HEGEMON Unit.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:dreadnaught",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "dlc:advancement/hegemon"
+    }
+  }
+  

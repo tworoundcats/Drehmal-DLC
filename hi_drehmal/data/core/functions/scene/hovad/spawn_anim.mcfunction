@@ -76,6 +76,9 @@ execute if score #hovadbossintro timer matches 289 run execute positioned 27294.
 execute if score #hovadbossintro timer matches 289 run bossbar set minecraft:ultva visible true
 execute if score #hovadbossintro timer matches 289 run schedule function core:scene/hovad/bossabilities/name1 4t
 
+execute if score #hovadbossintro timer matches 289 if score #DLC mastermode matches 1 positioned 27307.48 93.00 85.00 run summon minecraft:marker ~ ~ ~ {Tags:["orb"]}
+
+execute if score #hovadbossintro timer matches 289 if score #DLC mastermode matches 1 positioned 27284.00 93.00 85.00 run summon minecraft:marker ~ ~ ~ {Tags:["orb"]}
 
 execute if score #hovadbossintro timer matches 290 run clone 27264 5 88 27294 23 118 27280 82 70 replace force
 execute if score #hovadbossintro timer matches 290 run clone 27293 4 57 27297 6 59 27293 82 57

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "fwaystones:waystone_scroll"
+    },
+    "title": {
+      "text": "Discoveries",
+      "color": "#e9cfaf",
+      "bold": false
+    },
+    "description": {
+      "text": "The world is deeper than you know. Look closer and you might uncover more.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+  },
+  "parent": "dlc:root"
+}

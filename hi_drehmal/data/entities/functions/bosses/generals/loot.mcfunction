@@ -37,6 +37,7 @@ particle explosion 27340 146.5 747 0 0 0 0.1 1
 playsound minecraft:dcustom.entity.generic.explode block @a 27340 147 747 2 2
 
 scoreboard players set #generals_dead? bool 1
+advancement grant @a only dlc:generals
 
 bossbar set minecraft:health3 visible false
 bossbar set minecraft:health2 visible false

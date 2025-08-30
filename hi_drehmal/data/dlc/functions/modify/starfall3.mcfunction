@@ -1,0 +1,2 @@
+summon item ~ ~ ~ {Tags:["starfall_fall","starfall2"],Item:{id:"dlc:starfall_mote",Count:1b,tag:{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Starfall Mote"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"A small amount of loose Starfall,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"shining with the light of the"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"night sky."}],"text":""}']}}}}
+kill @s

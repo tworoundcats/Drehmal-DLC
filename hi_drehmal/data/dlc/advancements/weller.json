@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:fateful_ore"
+    },
+    "title": {
+      "text": "Following the Path",
+      "color": "white",
+      "bold": false
+    },
+    "description": {
+      "text": "Ensured that an ancient evil could never again grace the island of Sahd. - Completed Wehl'r's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/weller"
+  },
+  "parent": "dlc:tidal"
+}

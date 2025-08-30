@@ -291,3 +291,4 @@ execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=play
 
 
 execute as @e[tag=destiny] run function players:items/providence/main_entity
+

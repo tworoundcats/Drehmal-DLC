@@ -12,3 +12,5 @@ execute if score #rand temp matches 88..99 at @s run particle minecraft:totem_of
 execute at @s run playsound dcustom.entity.ender_dragon.growl player @a ~ ~ ~ 2 2
 
 execute as @a[predicate=players:holding/providence] run function players:items/providence/flash
+
+execute at @s as @a[distance=..20,sort=nearest,limit=1,predicate=players:holding/providence] run advancement grant @s only dlc:crystal

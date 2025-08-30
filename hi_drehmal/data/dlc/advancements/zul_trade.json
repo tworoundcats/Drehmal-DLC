@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:lead_weighted_hook"
+    },
+    "title": {
+      "text": "Communion",
+      "color": "#333333",
+      "bold": false
+    },
+    "description": {
+      "text": "Made contact with the envoy of an otherworldly being. - Traded with Zul",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dlc:advancement/zul_trade"
+  },
+  "parent": "dlc:discoveries"
+}

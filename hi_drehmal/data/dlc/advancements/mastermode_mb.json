@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "mythicmetals:mythril_drill_smithing_template"
+      },
+      "title": {
+        "text": "Unbreakable Will",
+        "color": "#9e8721",
+        "italic": false
+      },
+      "description": {
+        "text": "Let Nothing stand in your way. - Completed the Mythbreaker Run with Master Mode active.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:challenges",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/mastermode_mb"
+    }
+  }
+  

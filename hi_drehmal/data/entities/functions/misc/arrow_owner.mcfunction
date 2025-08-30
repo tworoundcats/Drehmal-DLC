@@ -24,6 +24,7 @@ scoreboard players reset #ultva temp
 scoreboard players reset #piecemaker_arrow temp
 scoreboard players reset #pleasure_arrow temp
 scoreboard players reset #hunter_arrow temp
+scoreboard players reset #ultva_arrow temp
 
 execute as @e[type=#core:bow_users] if score @s uuid0 = #temp uuid0 if score @s uuid1 = #temp uuid1 if score @s uuid2 = #temp uuid2 if score @s uuid3 = #temp uuid3 run function entities:misc/arrow_data
 execute if score #syzygy_arrow temp matches 1 run function entities:misc/syzygy_power
@@ -53,5 +54,6 @@ execute if score #sun_arrow temp matches 1 run kill @s
 
 execute if score #piecemaker_arrow temp matches 1 run function entities:misc/piecemaker_shoot
 execute if score #hunter_arrow temp matches 1 run function dlc:mobs/timeworn_hunter/arrow_stats
+execute if score #ultva_arrow temp matches 1 run function entities:ai/ultva/arrow_stats
 
 execute if score #pleasure_arrow temp matches 1 run function entities:misc/pleasure_shoot

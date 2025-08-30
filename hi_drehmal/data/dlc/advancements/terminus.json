@@ -1,0 +1,33 @@
+{
+    "display": {
+    "icon": {
+            "item": "minecraft:command_block",
+            "nbt": "{CustomModelData:1000018}"
+      },
+      "title": {
+        "text": "Augmented",
+        "color": "#00debd",
+        "italic": false
+      },
+      "description": {
+        "text": "A Taste of Power. - Upgrade any piece of gear in the Terminus station by infusing it with a Runic Amplifier.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:discoveries",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/terminus"
+    }
+  }
+  

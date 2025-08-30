@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:clock"
+      },
+      "title": {
+        "text": "Stasis Overload",
+        "color": "#1856c3",
+        "italic": false
+      },
+      "description": {
+        "text": "Truly, you are the last remnant of Avsohm. - Trapped 23 mobs in a timeloop at once using Hexed King",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:echo",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/hexed"
+    }
+  }
+  

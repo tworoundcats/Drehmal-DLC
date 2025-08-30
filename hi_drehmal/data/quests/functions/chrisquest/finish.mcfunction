@@ -55,4 +55,6 @@ execute positioned ~ ~ ~ as @p[tag=qst9] at @s run give @s dlc:olkahan{Olkahan:1
 execute as @e[name="Music Man Chris",type=villager] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run tag @s remove qst9
 
-
+execute unless score #quest9 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest9 bool 1

@@ -20,6 +20,8 @@ execute in minecraft:overworld positioned 26512 161 -96 run setblock ~2 ~ ~15 mi
 
 tag @s remove mb_holder
 tag @s remove exploded
+execute as @s[tag=mastermode] run advancement grant @s only dlc:mastermode_mb
+tag @s remove mastermode
 
 function players:misc/mb/replace_air
 

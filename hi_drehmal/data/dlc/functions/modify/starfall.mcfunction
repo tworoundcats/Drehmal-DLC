@@ -24,3 +24,4 @@ execute if score @s ai_ani matches 1 at @s run particle minecraft:firework ~ ~ ~
 execute if score @s ai_ani matches 1 at @s run particle minecraft:enchant ~ ~1 ~ 0.2 0.5 0.2 5 500 force
 execute if score @s ai_ani matches 1 at @s run particle minecraft:dragon_breath ~ ~1 ~ 0.2 0.5 0.2 0.1 500 force
 execute if score @s ai_ani matches 1 run tag @s add starfall2
+execute if score @s ai_ani matches 1 at @s run function dlc:modify/starfall3

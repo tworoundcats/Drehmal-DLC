@@ -1,0 +1,75 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": { "items": ["minecraft:air"] },
+          "chest": { "items": ["minecraft:air"] },
+          "legs": { "items": ["minecraft:air"] },
+          "feet": { "items": ["minecraft:air"] },
+          "mainhand": { "items": ["minecraft:air"] },
+          "offhand": { "items": ["minecraft:air"] }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{ring:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{offhand:{ring:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{hand:{glove:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{legs:{belt:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{chest:{cape:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{chest:{necklace:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+          },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{cardinal_components:{\"trinkets:trinkets\":{head:{hat:{Items:[{id:\"minecraft:air\"}]}}}}}"
+      }
+    }
+  ]
+}

@@ -7,3 +7,6 @@ execute at @s run playsound item.chorus_fruit.teleport player @a ~ ~ ~ 1 2
 effect give @s minecraft:glowing 3 1 true
 effect give @s extraalchemy:recall 2 0 true 
 tag @s[tag=!hexed] add hexed
+
+execute store result score #hexed_king num run execute if entity @e[tag=hexed]
+execute if score #hexed_king num matches 23.. at @s run advancement grant @a[predicate=players:holding/hexed] only dlc:hexed

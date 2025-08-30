@@ -67,3 +67,7 @@ tag @s remove disabled
 tag @s remove suffering
 tag @s remove waterspiked
 execute if score #mystery.power bool matches 1 run advancement grant @s only advancements:mystery/power
+execute if score #mystery.visitation bool matches 1 run advancement grant @s only dlc:visitation
+
+
+execute as @e[type=dlc:collector] at @s unless entity @a[distance=..50] run function dlc:zul/despawn

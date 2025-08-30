@@ -22,7 +22,7 @@ execute unless block ^ ^-0.3 ^ #core:empty run tp @s ^ ^0.3 ^
 execute if score @s num matches 200.. at @s run particle minecraft:soul ~ ~1 ~ 0.3 0 0.3 0.4 500
 execute if score @s num matches 200.. at @s run particle minecraft:bubble_pop ~ ~1 ~ 0.3 0 0.3 2 1000
 execute if score @s num matches 200.. at @s run playsound simplyswords:dark_sword_breaks player @a ~ ~ ~ 6 1
-execute if score @s num matches 200.. at @s run playsound entity.generic.explode player @a ~ ~ ~ 1 0
+execute if score @s num matches 200.. at @s run playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~ 1 0
 execute if score @s num matches 200.. at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 50 minecraft:truedamage by @p
 execute if score @s num matches 200.. at @s as @e[tag=!mythic_pvp,predicate=!players:holding/leviathan,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2.5] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s num matches 200.. run kill @s

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:quests"
+    },
+    "title": {
+      "text": "Quests",
+      "color": "green",
+      "bold": false
+    },
+    "description": {
+      "text": "Every favor asked is a story waiting to be told.",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          ]
+        }
+      }
+  },
+  "parent": "dlc:root"
+}

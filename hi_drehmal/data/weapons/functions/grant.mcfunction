@@ -141,3 +141,29 @@ execute if score #gotRuinous bool matches 1 run advancement grant @s only weapon
 execute if score #gotSerpents bool matches 1 run advancement grant @s only weapons:serpents
 execute if score #gotShardOfNothing bool matches 1 run advancement grant @s only weapons:shard_of_nothing
 execute if score #gotSpark bool matches 1 run advancement grant @s only weapons:spark
+
+#quests
+execute if score #questmaster bool matches 1 run advancement grant @s only dlc:questmaster
+execute if score #archeology bool matches 1 run advancement grant @s only dlc:archeology
+execute if score #chris bool matches 1 run advancement grant @s only dlc:chris
+execute if score #cold bool matches 1 run advancement grant @s only dlc:cold
+execute if score #corvid bool matches 1 run advancement grant @s only dlc:corvid
+execute if score #daniel bool matches 1 run advancement grant @s only dlc:daniel
+execute if score #dome bool matches 1 run advancement grant @s only dlc:dome
+execute if score #gamer bool matches 1 run advancement grant @s only dlc:gamer
+execute if score #gragas bool matches 1 run advancement grant @s only dlc:gragas
+execute if score #mahkar bool matches 1 run advancement grant @s only dlc:mahkar
+execute if score #melon bool matches 1 run advancement grant @s only dlc:melon
+execute if score #mouton bool matches 1 run advancement grant @s only dlc:mouton
+execute if score #rift bool matches 1 run advancement grant @s only dlc:rift
+execute if score #safe bool matches 1 run advancement grant @s only dlc:safe
+execute if score #study bool matches 1 run advancement grant @s only dlc:study
+execute if score #tahlros bool matches 1 run advancement grant @s only dlc:tahlros
+execute if score #tidal bool matches 1 run advancement grant @s only dlc:tidal
+execute if score #weller_fail bool matches 1 run advancement grant @s only dlc:weller_fail
+execute if score #weller bool matches 1 run advancement grant @s only dlc:weller
+
+#other advancements
+execute if score #generals_dead? bool matches 1 run advancement grant @s only dlc:generals
+execute if score #unspoken_craft bool matches 1 run advancement grant @s only dlc:unspoken
+execute if score #mastermode_mb bool matches 1 run advancement grant @s only dlc:mastermode_mb

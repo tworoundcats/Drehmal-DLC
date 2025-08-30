@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mythicmetals:hallowed_boots"
+    },
+    "title": {
+      "text": "Safe and Sound",
+      "color": "dark_green",
+      "bold": false
+    },
+    "description": {
+      "text": "Returned a runaway horse to the Drabyel stables. - Completed Keehko's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/safe"
+  },
+  "parent": "dlc:archeology"
+}

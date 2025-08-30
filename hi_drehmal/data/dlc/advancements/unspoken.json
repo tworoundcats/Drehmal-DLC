@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "mythicmetals:mythril_drill_smithing_template"
+      },
+      "title": {
+        "text": "Something More",
+        "color": "#050505",
+        "italic": false
+      },
+      "description": {
+        "text": "A Power Beyond Mortals. - Used the enhanced Terminus Upgrade Station to create a tool of unspeakable power.",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:terminus",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/unspoken"
+    }
+  }
+  

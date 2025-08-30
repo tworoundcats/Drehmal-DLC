@@ -86,8 +86,9 @@ execute if entity @s[tag=buffer_heal] run function entities:ai/buffer/particle_t
 execute if entity @s[tag=ambition] run function players:items/ambition/particle_tick
 execute if entity @s[tag=driftbone] run function entities:ai/driftbone/particle_tick
 execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/particle_tick
-execute if entity @s[tag=starfall_tag] at @s run forceload add ~ ~
+#execute if entity @s[tag=starfall_tag] at @s run forceload add ~ ~
 execute if entity @s[tag=asc_star] run function projectiles:fancy/particle_tick
+execute if entity @s[tag=ultva_orb] run function entities:ai/ultva/particle_tick
 
 execute if entity @s[tag=mb_boom] rotated 0 65 run function players:items/mb/laser_effect
 execute if entity @s[tag=small_spiral] at @s run function players:items/mb/small_spiral

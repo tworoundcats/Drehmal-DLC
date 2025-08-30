@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:amethyst_cluster"
+      },
+      "title": {
+        "text": "Something More",
+        "color": "#fbff0e",
+        "italic": false
+      },
+      "description": {
+        "text": "Hold the lantern, and the light shall guide your path. - Reaped the highest reward from Providence",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:zul_trade",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/crystal"
+    }
+  }
+  

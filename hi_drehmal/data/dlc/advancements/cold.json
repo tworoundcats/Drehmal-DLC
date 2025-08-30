@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcdw:dagger_swift_striker"
+    },
+    "title": {
+      "text": "In Cold Blood",
+      "color": "dark_red",
+      "bold": false
+    },
+    "description": {
+      "text": "Carried out an impromptu assassination at the Rhaverik Inn. - Completed Cinder's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/cold"
+  },
+  "parent": "dlc:safe"
+}

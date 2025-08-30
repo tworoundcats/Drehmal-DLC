@@ -21,3 +21,5 @@ scoreboard players reset @s destiny_damage
 execute if predicate players:holding/verdant run function players:items/verdant/tag
 
 execute if score #asc bool matches 1 if predicate players:holding/asc run function dlc:asc/kill/1
+
+execute unless predicate players:holding/ambition run scoreboard players reset @s ambition_kills

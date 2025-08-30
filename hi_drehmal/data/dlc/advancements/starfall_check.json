@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                      "nbt":"{starfall_air:1b}"
+                    }
+                ]
+            }
+        }
+    },
+  "rewards": {
+    "function": "dlc:advancement/starfall"
+  }
+}

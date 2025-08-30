@@ -36,4 +36,9 @@ setblock 26475 145 -54 sea_lantern
 setblock 26472 142 -65 minecraft:quartz_block
 schedule clear dlc:modify/verify_wings
 schedule clear dlc:modify/verify_wings_loop
+execute as @p[tag=selector] run tag @s add selector_temp
+
 execute as @p[tag=selector] run function dlc:modify/success_c_wings
+
+execute as @p[tag=selector_temp] run advancement grant @s only dlc:unspoken
+execute as @p[tag=selector_temp] run tag @s remove selector_temp

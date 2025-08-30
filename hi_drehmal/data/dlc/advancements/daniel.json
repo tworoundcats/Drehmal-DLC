@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "simplyswords:empowered_remnant"
+    },
+    "title": {
+      "text": "Prismatic Aspirations",
+      "color": "gray",
+      "bold": false
+    },
+    "description": {
+      "text": "Collected five tokens of divine favor for a devotee in Tharxax City. - Completed Daniel's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/daniel"
+  },
+  "parent": "dlc:dome"
+}

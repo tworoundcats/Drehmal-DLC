@@ -26,5 +26,5 @@
   "rewards": {
     "function": "dlc:advancement/zul_card"
   },
-  "parent": "dlc:root"
+  "parent": "dlc:challenges"
 }

@@ -6,7 +6,8 @@ execute as @s[tag=!spawnedonce] run scoreboard players operation @s ace_hp /= #2
 
 execute as @s[tag=!sam_angy] if score @s hp_dmg <= @s ace_hp run function entities:ai/samurai/get_mad
 execute unless score @s ai_state matches 1.. run scoreboard players add @s ai_timer 1
-execute unless score @s ai_state matches 1.. if entity @s[scores={ai_timer=35..}] run function entities:ai/samurai/attack_choose
+execute unless score #DLC mastermode matches 1 unless score @s ai_state matches 1.. if entity @s[scores={ai_timer=35..}] run function entities:ai/samurai/attack_choose
+execute if score #DLC mastermode matches 1 unless score @s ai_state matches 1.. if entity @s[scores={ai_timer=25..}] run function entities:ai/samurai/attack_choose
 execute if score @s ai_state matches 1 if entity @a[predicate=players:locations/in_arena] run function entities:ai/samurai/dash
 execute if score @s ai_state matches 3 if entity @a[predicate=players:locations/in_arena] run function entities:ai/samurai/machine_gun
 execute if score @s ai_state matches 2 if entity @a[predicate=players:locations/in_arena] run function entities:ai/samurai/slash

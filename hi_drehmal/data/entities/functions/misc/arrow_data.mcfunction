@@ -29,4 +29,5 @@ execute if predicate players:holding/fire_bow run scoreboard players set #mal_ar
 
 execute if predicate players:holding/piecemaker run scoreboard players set #piecemaker_arrow temp 1
 execute if entity @s[tag=timeworn_hunter] run scoreboard players set #hunter_arrow temp 1
+execute if entity @s[tag=Ultva] run scoreboard players set #ultva_arrow temp 1
 execute if predicate players:holding/pleasures run scoreboard players set #pleasure_arrow temp 1

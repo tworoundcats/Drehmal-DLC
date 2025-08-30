@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "dlc:burnt_insignia"
+      },
+      "title": {
+        "text": "The Inferno Rests",
+        "color": "#de4e00",
+        "italic": false
+      },
+      "description": {
+        "text": "To exemplify what it means to be Burnt is to be a menace to all other things that live. - Slew the Burnt Generals",
+        "color": "gray",
+        "italic": false
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "dlc:primal",
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/generals"
+    }
+  }
+  

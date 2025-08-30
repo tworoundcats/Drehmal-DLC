@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dlc:fateful_ore"
+    },
+    "title": {
+      "text": "The Blood-Soaked Path",
+      "color": "white",
+      "bold": false
+    },
+    "description": {
+      "text": "You were tasked with ending a dark legacy. Instead, you chose to inherit it. - Failed Wehl'r's quest",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "overworld": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+        },
+    "rewards": {
+      "function": "dlc:advancement/weller_fail"
+  },
+  "parent": "dlc:melon"
+}

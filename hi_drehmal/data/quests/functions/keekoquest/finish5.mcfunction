@@ -43,6 +43,7 @@ execute positioned ~ ~ ~ as @p[tag=qst] at @s run summon experience_orb ~ ~ ~2 {
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run summon experience_orb ~ ~ ~2 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run summon experience_orb ~ ~ ~2 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
+execute positioned ~ ~ ~ as @p[tag=qst] run advancement grant @s only dlc:safe
 
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run give @s emerald 12
 #execute positioned ~ ~ ~ as @p[tag=qst] at @s run give @s dlc:well_worn_boots{Unbreakable:1b,display:{color:16383998,Name:'["",{"text":"Keeko\'s Boots","italic":false,"color":"dark_aqua"}]',Lore:['[""]','["",{"text":"When on Boots:","italic":false,"color":"gray"}]','["",{"text":"15% Speed","italic":false,"color":"blue"}]','["",{"text":"Unbreakable","italic":false,"color":"blue"}]','[""]','["",{"text":"Quest Reward","italic":false,"color":"yellow"}]']},AttributeModifiers:[{AttributeName:"generic.movement_speed",Amount:0.15,Slot:feet,Operation:1,Name:"generic.movement_speed",UUID:[I;-124321,19574,72315,-39148]}],HideFlags:66}
@@ -50,3 +51,7 @@ execute positioned ~ ~ ~ as @p[tag=qst] at @s run give @s mythicmetals:hallowed_
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run give @s dlc:silver_ingot{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}} 2
 execute as @e[type=villager,name="Stablemaster Keehko"] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst] at @s run tag @s remove qst
+
+execute unless score #quest1 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest1 bool 1

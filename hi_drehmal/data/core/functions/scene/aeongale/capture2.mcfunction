@@ -1,43 +1,42 @@
 scoreboard players add #aeoncap1 x 1 
 
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
 
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
 
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
 
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
 
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
 
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
-
-execute positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
-
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
-
-execute positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 880.87 33.00 1197.41 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
 
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
 
-execute positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
+execute if score #DLC mastermode matches 1 positioned 894.43 35.00 1195.42 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
+
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 100 run function core:scene/aeongale/summon
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 200 run function core:scene/aeongale/summon
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 300 run function core:scene/aeongale/summon
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 400 run function core:scene/aeongale/summon
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 500 run function core:scene/aeongale/summon
+
+execute if score #DLC mastermode matches 1 positioned 896.70 33.00 1202.46 if score #aeoncap1 x matches 599 run function core:scene/aeongale/summon
 
 
 execute if score #aeoncap1 x matches 1 unless score #aeonspawned bool matches 1 run summon marker ~ ~0 ~ {Tags:["Aeoncap"]}
