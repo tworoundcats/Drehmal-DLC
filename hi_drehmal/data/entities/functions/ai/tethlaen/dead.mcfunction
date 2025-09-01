@@ -5,4 +5,3 @@ scoreboard players operation #uuid3 temp = @s uuid3
 summon marker ~ ~ ~ {Tags:["dragon_tracker","special"]}
 execute as @e[type=marker,tag=special] run function entities:ai/tethlaen/uuid
 tag @s add tracked
-

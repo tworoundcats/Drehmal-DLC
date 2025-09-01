@@ -1,0 +1,1 @@
+tellraw @s[tag=!primal_journey] ["",{"text":"[","color":"dark_gray"},{"text":"!","bold":true,"color":"red"},{"text":"] ","color":"dark_gray"},{"text":"An encounter is already in progress.","color":"dark_gray"},{"text":" Please wait until the current fight is over.","color":"dark_gray"}]

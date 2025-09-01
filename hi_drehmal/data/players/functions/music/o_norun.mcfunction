@@ -22,7 +22,6 @@ execute if entity @s[x=26395,y=132,z=-187,dx=162,dy=25,dz=162] run function play
 execute if entity @s[predicate=players:locations/red_dawn_devzone] run function players:music/furtherance
 
 
-
 scoreboard players reset #at_palace temp
 execute positioned -3994 ~ 5981 if entity @s[distance=..100] run scoreboard players set #at_palace temp 1
 execute if entity @s[x=-3930,y=36,z=5972,dx=105,dy=10,dz=17] run scoreboard players set #at_palace temp 1

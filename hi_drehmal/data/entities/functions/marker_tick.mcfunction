@@ -94,10 +94,14 @@ execute if entity @s[tag=mb_boom] rotated 0 65 run function players:items/mb/las
 execute if entity @s[tag=small_spiral] at @s run function players:items/mb/small_spiral
 execute if entity @s[tag=khive_blind] run function entities:ai/khive_zombie/particle_tick
 
-
+execute if entity @s[tag=temp_spawn_primal] run function dlc:primal_journey/spawn_tick
 execute if entity @s[tag=terminus_visual] run function dlc:modify/particle_tick
 
 
 execute if score #5T timer matches 4 if entity @s[tag=deathmarker] run function entities:misc/deathmarker/kill_on_despawn
 
 execute if score #worm_moving? bool matches 1 unless score #b.passive_forceai? bool matches 1 if entity @s[tag=forceload] run function entities:ai/worm/load/forceload_tick
+
+
+execute if entity @s[tag=ossein_default] run function entities:bosses/ossein/spawn_ani_default
+execute if entity @s[tag=ossein_prime] run function entities:bosses/ossein/spawn_ani_prime

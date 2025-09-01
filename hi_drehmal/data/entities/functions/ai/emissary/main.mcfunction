@@ -42,3 +42,4 @@ execute unless score @s ai_state matches -1 unless score @s ai_state matches 4 u
 execute if score @s ai_state matches 0 run function entities:ai/emissary/mainphase
 #execute if score @s ai_state matches 100 run function entities:ai/emissary/spincharge/main
 #execute if score @s ai_state matches 0 run function entities:ai/emissary/spincharge_start
+scoreboard players add #tempdeaths timer 1

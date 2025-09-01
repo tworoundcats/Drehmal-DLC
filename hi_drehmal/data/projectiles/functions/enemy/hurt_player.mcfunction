@@ -86,5 +86,6 @@ execute if score @s damage_s matches 44 unless entity @s[scores={blocking3=..4,b
 execute if score @s damage_s matches 44 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute if score @s damage_s matches 45 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 22 diced
 execute if score @s damage_s matches 45 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
+execute if score @s damage_s matches 46 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 scoreboard players reset @s damage_s

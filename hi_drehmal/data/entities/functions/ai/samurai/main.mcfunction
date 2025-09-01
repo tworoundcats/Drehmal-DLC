@@ -9,3 +9,4 @@ fill 27495 167 848 27494 167 848 barrier
 fill 27499 169 845 27494 168 845 barrier
 fill 27498 171 846 27496 172 846 barrier
 fill 27497 171 847 27496 172 847 barrier
+scoreboard players add #tempdeaths timer 1

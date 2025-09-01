@@ -19,4 +19,5 @@ execute if block 56 75 -78 minecraft:end_gateway run fill 55 73 -77 57 77 -79 ai
 execute if block 29 75 -92 minecraft:end_gateway run fill 28 73 -93 30 77 -91 air
 execute if block 0 75 -96 minecraft:end_gateway run fill -1 73 -97 1 77 -95 air
 execute as @a[predicate=players:the_end] run tag @s add tempdeaths
+execute as @a[predicate=players:the_end] run tag @s add tethdeaths
 execute as @a[tag=!dead,scores={hate.timer=..0},predicate=players:the_end,x=0,z=0,distance=400..] at @s run function core:end_kill

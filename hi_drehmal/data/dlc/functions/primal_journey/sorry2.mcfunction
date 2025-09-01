@@ -1,0 +1,1 @@
+advancement revoke @a only dlc:primal_journey/sorry

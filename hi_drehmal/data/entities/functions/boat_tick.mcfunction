@@ -14,3 +14,4 @@ execute if entity @s[tag=!syzygy_box,predicate=players:locations/red_dawn_devzon
 execute if entity @s[tag=!syzygy_box,predicate=players:locations/ossein_arena] run function entities:misc/break_boat
 execute if entity @s[tag=!syzygy_box,predicate=players:in_em_arena] run function entities:misc/break_boat
 execute if entity @s[tag=!syzygy_box,predicate=players:in_generals_arena] run function entities:misc/break_boat
+execute if entity @s[tag=!syzygy_box,predicate=players:in_primal_journey] run function entities:misc/break_boat

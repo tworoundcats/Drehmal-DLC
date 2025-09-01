@@ -234,3 +234,32 @@ scoreboard players set #berndoor y 0
 
 
 scoreboard players set #orbitpuzzle z 0
+
+
+scoreboard players set #emissary timer 2147483647
+scoreboard players set #generals timer 2147483647
+scoreboard players set #court timer 2147483647
+scoreboard players set #teth timer 2147483647
+scoreboard players set #bernice timer 2147483647
+scoreboard players set #ossein_default timer 2147483647
+scoreboard players set #ossein_prime timer 2147483647
+scoreboard players set #hegemon timer 2147483647
+
+
+scoreboard players set #emissary Deaths 0
+scoreboard players set #generals Deaths 0
+scoreboard players set #court Deaths 0
+scoreboard players set #teth Deaths 0
+scoreboard players set #bernice Deaths 0
+scoreboard players set #ossein_default Deaths 0
+scoreboard players set #ossein_prime Deaths 0
+scoreboard players set #hegemon Deaths 0
+
+scoreboard players set #emissary emissary 0
+scoreboard players set #generals generals 0
+scoreboard players set #court court 0
+scoreboard players set #teth teth 0
+scoreboard players set #bernice bernice 0
+scoreboard players set #ossein_default ossein_default 0
+scoreboard players set #ossein_prime ossein_prime 0
+scoreboard players set #hegemon hegemon 0

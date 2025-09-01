@@ -1,6 +1,7 @@
 execute unless entity @s[tag=yav_dia_end] run function players:name_game/yavmain
 
 execute if entity @s[x=26476,y=206,z=-106,distance=..150] run function core:scene/invul_adventure
+execute as @s[predicate=players:in_primal_journey] run function core:scene/invul_adventure
 execute if score #5T timer matches 0 unless score #game_started bool matches 1 if entity @s[x=26512,y=176,z=-93,dx=16,dy=16,dz=19] run scoreboard players set @s playingMusic 2147483647
 
 execute if score #1S timer matches 0 if entity @s[x=26400,y=65,z=-362,dx=121,dy=20,dz=127] run kill @s

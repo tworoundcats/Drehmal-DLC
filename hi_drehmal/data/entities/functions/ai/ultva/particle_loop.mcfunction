@@ -13,6 +13,8 @@ execute positioned ~ ~-1 ~ unless entity @a[distance=..9] run kill @s[tag=noai]
 
 particle dust 0.678 0.569 0.082 1.5 ~ ~ ~ 0 0 0 0 0 force
 
+execute positioned ~ ~ ~ unless block ~ ~ ~ #core:empty run kill @s
+
+
 execute at @s run teleport @s ^ ^ ^0.05
 execute if score #loop temp matches 1.. unless score #done temp matches 1 at @s run function entities:ai/ultva/particle_loop
-

@@ -1,0 +1,1 @@
+scoreboard players set #primal_portal bool 1

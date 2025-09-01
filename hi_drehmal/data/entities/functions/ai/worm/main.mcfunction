@@ -15,3 +15,4 @@ execute unless entity @a[predicate=players:lodahr,x=-424,y=45,z=560,distance=..7
 execute if entity @a[predicate=players:lodahr,x=-424,y=45,z=560,distance=..72] as @e[type=armor_stand,tag=worm_head] run scoreboard players remove #wdespawn timer 1
 execute if score #wdespawn timer matches 10.. run function entities:bosses/worm/despawn
 execute if score #wdespawn timer matches ..0 run scoreboard players set #wdespawn timer 0
+scoreboard players add #tempdeaths timer 1

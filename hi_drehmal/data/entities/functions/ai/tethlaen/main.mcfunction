@@ -36,10 +36,27 @@ execute store result score #hp temp store result score @s hp run data get storag
 execute store result score #mhp temp run attribute @s minecraft:generic.max_health get
 scoreboard players operation #hp temp /= #mhp temp
 
-execute unless score #hp temp matches ..0 if score @s hp_old > @s hp run function entities:ai/tethlaen/hurt
+
+execute store result bossbar tethlaen max run attribute @s minecraft:generic.max_health get
+execute store result score #why temp run data get entity @s Health
+execute store result bossbar tethlaen value run scoreboard players get #why temp
+
+execute if score #5T timer matches 0 run bossbar set tethlaen players @a[tag=primal_journey]
+execute if score #5T timer matches 0 if entity @a[tag=primal_journey] run bossbar set tethlaen visible true
+
+execute unless score #hp temp matches 0 if score @s hp_old > @s hp run function entities:ai/tethlaen/hurt
 execute if score #hp temp matches ..20 if predicate entities:teth_volley positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 execute if score #hp temp matches ..10 if predicate entities:teth_volley positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 
 execute unless entity @s[tag=no_crystals] unless entity @e[type=end_crystal,x=0,z=0,y=80,distance=..60] positioned ~ ~1 ~ run function entities:ai/tethlaen/no_crystals
 
 execute if score @s ai_state matches 0..2 if entity @s[tag=no_crystals] if score @s ai_ani matches ..-50 if score #hp temp matches ..50 if predicate entities:teth_volley run function entities:ai/tethlaen/force_fireball
+
+
+
+execute if score #teth_active bool matches 1 in the_end positioned 0.37 67.00 0.27 unless entity @a[distance=..400] run function entities:ai/tethlaen/despawn
+
+
+
+
+scoreboard players add #tempdeaths timer 1

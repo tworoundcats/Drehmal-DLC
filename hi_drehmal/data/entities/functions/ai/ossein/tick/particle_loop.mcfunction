@@ -12,7 +12,7 @@ execute positioned ~ ~-1 ~ if entity @a[tag=temp.target,distance=..6] run tag @s
 execute positioned ~ ~-1 ~ unless entity @a[distance=..6] run kill @s[tag=noai]
 
 particle dust 0.624 0.188 0.161 2 ~ ~ ~ 0 0 0 0 0 force
-
+execute positioned ~ ~ ~ unless block ~ ~ ~ #core:empty run kill @s
 execute at @s run teleport @s ^ ^ ^0.05
 execute if score #loop temp matches 1.. unless score #done temp matches 1 at @s run function entities:ai/ossein/tick/particle_loop
 

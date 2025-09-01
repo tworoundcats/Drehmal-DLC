@@ -931,3 +931,8 @@ execute if predicate dlc:strength run effect give @s strength infinite 0 true
 execute if predicate dlc:jump_boost run effect give @s jump_boost infinite 0 true
 execute if predicate dlc:fire_resistance run effect give @s fire_resistance infinite 0 true
 execute if predicate dlc:speed run effect give @s speed infinite 0 true
+
+
+execute as @s[tag=primal_dead] run function dlc:primal_journey/spectate
+
+execute as @s[predicate=players:in_primal_journey] unless score @s playingMusic matches 1.. run stopsound @s music

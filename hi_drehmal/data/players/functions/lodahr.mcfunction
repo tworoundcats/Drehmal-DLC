@@ -91,3 +91,4 @@ execute if predicate players:holding/ward_staff positioned ~ ~0.5 ~ run function
 execute if entity @s[tag=freefall] as @s at @s run function core:space_freefall
 
 execute unless score #bernicedead bool matches 1 if predicate players:locations/bernice_home run tag @s add tempdeaths
+execute unless score #bernicedead bool matches 1 if predicate players:locations/bernice_home run tag @s add bernicedeaths

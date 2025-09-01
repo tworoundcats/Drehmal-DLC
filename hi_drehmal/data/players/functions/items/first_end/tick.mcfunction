@@ -1,4 +1,8 @@
 scoreboard players add @s ai_timer 1
+
+execute if score @s ai_timer matches 1 positioned ~ ~-2 ~ run function particle:effects/orange
+execute if score @s ai_timer matches 1 positioned ~ ~-2 ~ run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1.6
+
 execute if score @s ai_timer matches 1 positioned ~ ~ ~-2 run particle sweep_attack ~ ~ ~ 0 0 0 0 1 force
 execute if score @s ai_timer matches 1 run playsound minecraft:dcustom.entity.firework_rocket.twinkle player @a ~ ~ ~ 2 1.0
 execute if score @s ai_timer matches 1 positioned ~ ~ ~-2 run particle explosion ~ ~ ~ 0 0 0 0 1 force
@@ -118,3 +122,5 @@ execute if score @s ai_timer matches 15 positioned ~ ~ ~-3 run particle electric
 execute if score @s ai_timer matches 15 positioned ~ ~ ~-3 run particle lava ~ ~ ~ 0.2 0 0.2 0 20 force
 execute if score @s ai_timer matches 15 positioned ~ ~ ~-3 as @e[tag=!mythic_pvp,predicate=!players:holding/first_end,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] unless entity @s[scores={blocking3=..4,blocked=1..}] at @s run function players:items/first_end/damage
 execute if score @s ai_timer matches 15 positioned ~ ~ ~-3 as @e[tag=!mythic_pvp,predicate=!players:holding/first_end,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..2] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
+
+execute at @s if block ^ ^-0.1 ^ #core:empty2 run function players:items/cal/spike_down

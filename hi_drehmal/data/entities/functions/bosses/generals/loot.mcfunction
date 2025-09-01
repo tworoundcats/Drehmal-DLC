@@ -28,7 +28,8 @@ summon item ~ ~ ~ {Motion:[-0.2, 0.3, -0.2], Item:{id:"minecraft:diamond_boots",
 
 summon item ~ ~ ~ {Motion:[0.3, 0.3, -0.1], Item:{id: "minecraft:written_book", tag: {pages: ['{"text":"\\n\\n\\n\\nAsh and Ember —\\n\\nWritten by Rhalon —\\n\\nFirst Burnt General —\\n"}', '{"text":"MALEVOLENTIA. \\n\\nThe sword of Maelihs still sits at the peak of his Burnt Palace, the divine power within unreachable. The brightest of our Red Dawn thought its potentia would be forever locked away - but I foresaw a way."}', '{"text":"THE TRAITOR. \\n\\nI do not write his name here, in accord with Maelihs’ wishes. What research and schematics survived him was too scarce to be understood. We required knowledge from someplace else - who better than the wretched corpse of Insohm?"}', '{"text":"THE COVEN. \\n\\nThe Gulch’s warden told of an island near the Shattered Peninsula, a hidden shame of Insohm. There, those of high potentia had their souls sundered for secrets to Aspectlike power. And they claimed themselves the moral betters!"}', '{"text":"ASCENSION. \\n\\nWe learnt of how potentia could be transferred, how godly essence can be rendered to sweet power. The power within Malevolentia could be controlled, given to those who can wield it."}', '{"text":"CONQUEST. \\n\\nWith the blade’s power, we will raise a new legion of Maelmari, with potency rivaling that of those from the Deity War. Nothing will stand in the way of our new invasion."}', '{"text":"All other great powers, from Avsohm to Insohm, have failed the test of time. We will not."}'], RepairCost: 0, author: "Rhalon", display: {Name: '{"text":"The Burning Path"}'}, title: "Burning Path", resolved: 1b}, Count: 1b}}
 
-execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths
+scoreboard players set #generals tempdeaths 1
+execute as @a run function dlc:telldeaths
 
 setblock 27340 146 747 polished_blackstone
 setblock 27340 147 747 minecraft:stone_button[face=floor]

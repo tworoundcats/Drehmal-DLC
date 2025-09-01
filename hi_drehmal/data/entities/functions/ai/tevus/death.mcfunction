@@ -18,7 +18,8 @@ execute at @s run playsound minecraft:dcustom.entity.generic.explode block @a ~ 
 execute at @s run playsound simplyswords:magic_bow_shoot_impact_03 block @a ~ ~ ~ 5 0
 execute at @s run kill @e[type=experience_orb]
 scoreboard players set #tevus_dead bool 1
-execute if score #rhalon_dead bool matches 1 if score #ethgar_dead bool matches 1 if score #tevus_dead bool matches 1 at @s run function entities:bosses/generals/loot
+execute if score #rhalon_dead bool matches 1 if score #ethgar_dead bool matches 1 if score #tevus_dead bool matches 1 at @s unless entity @a[tag=primal_journey] run function entities:bosses/generals/loot
+execute if score #rhalon_dead bool matches 1 if score #ethgar_dead bool matches 1 if score #tevus_dead bool matches 1 at @s if entity @a[tag=primal_journey] run function entities:bosses/generals/loot2
 bossbar set minecraft:health2 visible false
 
 

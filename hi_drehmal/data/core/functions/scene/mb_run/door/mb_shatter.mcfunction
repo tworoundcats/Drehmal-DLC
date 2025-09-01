@@ -29,6 +29,6 @@ execute in minecraft:lodahr as @e[type=villager,tag=c_mb_replace] at @s run tele
 execute in minecraft:lodahr as @e[type=villager,tag=c_mb_replace] at @s run kill @s
 
 execute in minecraft:lodahr run forceload remove 27304 55
-execute if score #dlcdeathcounter bool matches 1 run execute as @a run function dlc:telldeaths
+execute as @a run function dlc:telldeaths
 
 scoreboard players set #mb_finish bool 1

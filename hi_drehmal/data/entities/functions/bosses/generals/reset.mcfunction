@@ -51,9 +51,8 @@ scoreboard players reset #rhalon_swap temp
 scoreboard players reset #rhalon temp
 scoreboard players reset #ethgar temp
 scoreboard players reset #tevus temp
-tag @a remove seen_generals_intro
-
-schedule function entities:bosses/generals/despawn_2 5t
+tag @a[tag=!primal_journey] remove seen_generals_intro
+schedule function entities:bosses/generals/despawn_2 10t
 schedule clear entities:bosses/generals/spawnboss
 schedule clear entities:bosses/generals/spawnboss_2
 schedule clear entities:bosses/generals/spawnboss_3
@@ -66,3 +65,4 @@ schedule clear entities:bosses/generals/intro/3
 schedule clear entities:bosses/generals/intro/4
 schedule clear entities:bosses/generals/intro/5
 schedule clear entities:bosses/generals/intro/6
+execute as @p[tag=primal_journey] run function entities:bosses/generals/spawnboss

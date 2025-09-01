@@ -54,8 +54,9 @@ playsound minecraft:dcustom.entity.wither.death hostile @a ~ ~ ~ 20 0.5
 playsound minecraft:dcustom.entity.ender_dragon.hurt hostile @a ~ ~ ~ 20 0.5
 
 execute in lodahr run forceload add -54 -1508
+execute if score @s timer matches 180.. if score #hp temp matches ..0 if score #teth.dia.kill bool matches 1 if entity @a[tag=primal_journey] run schedule function dialogue:teth/kill/0_primal 20s
 
 schedule function core:scene/ytaj/teth_dead 5s
-
+bossbar set tethlaen visible false
 execute if score @s timer matches 180.. run kill @s
 

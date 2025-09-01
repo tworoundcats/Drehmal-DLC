@@ -71,3 +71,5 @@ execute if score #mystery.visitation bool matches 1 run advancement grant @s onl
 
 
 execute as @e[type=dlc:collector] at @s unless entity @a[distance=..50] run function dlc:zul/despawn
+
+execute as @s[tag=primal_journey] run function dlc:primal_journey/die

@@ -16,3 +16,4 @@ execute if predicate players:lodahr positioned 27304 122 55 if entity @s[distanc
 execute if predicate players:overworld if entity @s[x=-3310.00,y=100.00,z=1543.00,dx=40,dy=20,dz=36] run scoreboard players set #nodata? temp 1
 execute if predicate players:space run scoreboard players set #nodata? temp 1
 execute unless score #bernice_cleared? bool matches 1 if entity @s[predicate=players:lodahr,x=-424,y=45,z=560,distance=..75] run scoreboard players set #nodata? temp 1
+#execute if entity @s[predicate=players:in_primal_journey] run scoreboard players set #nodata? temp 1

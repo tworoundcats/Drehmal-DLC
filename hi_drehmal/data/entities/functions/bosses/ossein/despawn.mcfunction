@@ -7,6 +7,8 @@ forceload remove 26334 188 26268 121
 bossbar set health visible false
 bossbar set health value 0
 kill @e[type=marker,tag=ossein]
+kill @e[type=marker,tag=ossein_default]
+kill @e[type=marker,tag=ossein_prime]
 kill @e[tag=ossein_chain]
 kill @e[tag=ossein_turret]
 kill @e[tag=ossein_minion_]

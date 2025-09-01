@@ -8,10 +8,17 @@ execute if entity @s[tag=Enraged] run effect give @s minecraft:speed 1 1 false
 execute if entity @s[nbt={HurtTime:10s}] run function entities:ai/hovad/hurt
 
 execute unless score @s HovadTimer matches 1.. run scoreboard players set @s HovadTimer 62
-execute if score @s HovadTimer matches 150 run function entities:ai/hovad/attack_decide
+execute if score @s[tag=!Enraged] HovadTimer matches 150 run function entities:ai/hovad/attack_decide
+
+execute if score @s[tag=Enraged] HovadTimer matches 100 run function entities:ai/hovad/attack_decide
+
+
 execute if score @s HovadTimer matches 1.. run scoreboard players add @s HovadTimer 1
-execute unless score #DLC mastermode matches 1 if score @s HovadTimer matches 222.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
-execute if score #DLC mastermode matches 1 if score @s HovadTimer matches 160.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
+execute unless score #DLC mastermode matches 1 if score @s[tag=!Enraged] HovadTimer matches 222.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
+execute if score #DLC mastermode matches 1 if score @s[tag=!Enraged] HovadTimer matches 160.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
+
+execute unless score #DLC mastermode matches 1 if score @s[tag=Enraged] HovadTimer matches 160.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
+execute if score #DLC mastermode matches 1 if score @s[tag=Enraged] HovadTimer matches 110.. if entity @a[distance=..40] run scoreboard players set @s HovadTimer 1
 
 execute if score @s HovadCharge matches 1.. run function entities:ai/hovad/charge
 
@@ -28,3 +35,6 @@ execute if score @s ai_timer2 matches 15.. run function entities:ai/hovad/attack
 
 
 execute as @s[tag=in_air,predicate=entities:on_ground] run function entities:ai/hovad/attack2_3
+
+execute unless entity @e[tag=Ultva] run effect give @s mcdar:shielding 1 1 true
+execute as @s[tag=!court] run team join court

@@ -47,6 +47,10 @@ execute if score #event temp matches 47 run function dlc:mobs/primal_stalker/dea
 execute if score #event temp matches 48 run function dlc:mobs/primal_frost_caller/death
 execute if score #event temp matches 49 run function dlc:mobs/primal_thief/death
 execute if score #event temp matches 50 run function dlc:mobs/crystal_mite/death
+execute if score #event temp matches 51 run function entities:dropped_items/ossein_kill2
+execute if score #event temp matches 52 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_horse_kill
+execute if score #event temp matches 53 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_kill_default
+execute if score #event temp matches 54 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_kill_prime
 
 
 

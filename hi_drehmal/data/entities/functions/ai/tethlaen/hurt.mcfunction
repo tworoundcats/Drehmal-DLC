@@ -12,3 +12,9 @@ execute if entity @s[tag=no_crystals] positioned ~ ~2 ~ run function entities:ai
 execute if entity @s[tag=no_crystals] if score #hp temp matches ..66 if predicate entities:teth_shoot positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 execute if entity @s[tag=no_crystals] if score #hp temp matches ..33 if predicate entities:teth_shoot positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
 execute if entity @s[tag=no_crystals] if score #hp temp matches ..10 if predicate entities:teth_shoot positioned ~ ~2 ~ run function entities:ai/tethlaen/marker/ichor
+
+bossbar set minecraft:tethlaen color white
+schedule function entities:ai/tethlaen/hurt_2 5t
+
+execute in the_end positioned 0.37 67.00 0.27 unless entity @a[distance=..400] run function entities:ai/tethlaen/despawn
+

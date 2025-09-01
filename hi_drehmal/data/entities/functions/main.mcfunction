@@ -25,7 +25,7 @@ execute as @e[type=!#entities:oblivion_immune,tag=!unloaded,predicate=entities:s
 execute as @e[type=!#entities:highcapacity] unless entity @s[scores={uuid0=-2147483648..2147483647}] run function entities:misc/grab_uuid
 execute as @e[type=#entities:hostile,tag=Scale] unless score @s ScaleLvl = playercount playercount run function entities:scaling/main
 execute as @e[type=piglin] run function entities:piglin_tick
-execute as @e[type=ender_dragon] at @s run function entities:ai/tethlaen/main
+execute as @e[type=ender_dragon,tag=!teth_loser] at @s run function entities:ai/tethlaen/main
 execute as @e[type=#entities:spider,tag=!] at @s run function entities:spider_tick
 execute as @e[type=zombie,tag=!] at @s run function entities:zombie_tick
 execute as @e[type=piglin_brute] run function entities:piglin_brute_tick

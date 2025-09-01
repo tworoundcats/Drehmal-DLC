@@ -1,0 +1,1 @@
+scoreboard players set #voidportal bool 1

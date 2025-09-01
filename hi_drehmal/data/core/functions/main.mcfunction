@@ -100,6 +100,7 @@ execute unless score #orena_empty? bool matches 1 unless score #ossein_active? b
 execute if score #ossein_active? bool matches 1 unless entity @a[x=26303.0,y=193.00,z=154.5,distance=..70] run function entities:bosses/ossein/despawn
 
 execute if score #generals_active? bool matches 1 positioned 27339.50 152.00 747.50 unless entity @a[distance=..50] run function entities:bosses/generals/despawn
+execute if score #generals_active? bool matches 1 positioned 27339.50 152.00 747.50 if entity @a[distance=..50] run scoreboard players add #tempdeaths timer 1
 
 
 execute if score #seinpress_old bool matches 1 if score #2T timer matches 1 if block 1030 61 3836 minecraft:polished_blackstone_button[powered=false] run scoreboard players reset #seinpress_old bool
@@ -155,7 +156,8 @@ execute if score #exodusdoor timer matches 1..300 run function core:scene/exodus
 #inscription animation
 
 #hovadchear fight
-execute if entity @a[predicate=core:in_hovadmain] run function core:scene/hovad/main
+execute if entity @a[predicate=core:in_hovadmain] unless entity @a[tag=primal_journey] run function core:scene/hovad/main
+execute if entity @a[predicate=core:in_hovadmain] if entity @a[tag=primal_journey] run function core:scene/hovad/main2
 
 
 #World timer
@@ -228,11 +230,11 @@ execute if score #starfallen bool matches 1 if score #worldtime2 timer matches 1
 execute if score #1S timer matches 0 store result score #worldtime2 timer run time query daytime
 
 
-execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. unless score #daycount5 timer matches 15 unless score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon
+execute as @a[limit=1,sort=random,predicate=players:overworld,predicate=!players:locations/in_terminus,predicate=!players:in_generals_arena,predicate=!players:locations/red_dawn_devzone,predicate=!players:locations/court_of_nothing,predicate=!players:in_primal_journey,predicate=!players:locations/ossein_arena] at @s if score #worldtime2 timer matches 18000.. unless score #daycount5 timer matches 15 unless score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon
 
-execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon_1
+execute as @a[limit=1,sort=random,predicate=players:overworld,predicate=!players:locations/in_terminus,predicate=!players:in_generals_arena,predicate=!players:locations/red_dawn_devzone,predicate=!players:locations/court_of_nothing,predicate=!players:in_primal_journey,predicate=!players:locations/ossein_arena] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 7 unless score #starfallen bool matches 1 run function dlc:starfall/summon_1
 
-execute as @a[limit=1,sort=random,predicate=players:overworld] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 15 unless score #starfallen bool matches 1 run function dlc:starfall/summon_2
+execute as @a[limit=1,sort=random,predicate=players:overworld,predicate=!players:locations/in_terminus,predicate=!players:in_generals_arena,predicate=!players:locations/red_dawn_devzone,predicate=!players:locations/court_of_nothing,predicate=!players:in_primal_journey,predicate=!players:locations/ossein_arena] at @s if score #worldtime2 timer matches 18000.. if score #daycount5 timer matches 15 unless score #starfallen bool matches 1 run function dlc:starfall/summon_2
 
 
 execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main
@@ -291,4 +293,12 @@ execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=play
 
 
 execute as @e[tag=destiny] run function players:items/providence/main_entity
+
+execute if score #hege bool matches 1 positioned 27493.64 161.50 839.79 unless entity @a[distance=..50] run function entities:ai/samurai/arena/reset
+
+execute if score #bern_active? bool matches 1 positioned -418.50 54.00 596.55 in lodahr unless entity @a[distance=..300] run function entities:ai/worm/despawn
+
+execute if score #teth_active bool matches 1 in the_end positioned 0.37 67.00 0.27 unless entity @a[distance=..400] run function entities:ai/tethlaen/despawn
+
+execute if score #fightinghovad bool matches 1 positioned 27295.52 82.00 86.05 unless entity @a[distance=..100] run function core:scene/hovad/reset_fight
 

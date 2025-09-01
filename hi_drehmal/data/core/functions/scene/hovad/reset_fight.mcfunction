@@ -1,3 +1,4 @@
+forceload add 27314 60 27276 102
 scoreboard players reset #hovadbossintro timer
 scoreboard players reset #fightinghovad bool
 scoreboard players reset #hovadspawned bool
@@ -13,8 +14,14 @@ clone 27299 4 57 27303 6 59 27293 82 57
 execute as @e[tag=Hovadchear] run tp @s ~ ~-300 ~
 execute as @e[tag=Ultva] run tp @s ~ ~-300 ~
 
+
+execute as @e[tag=Hovadchear] run data merge entity @s {Health:0}
+execute as @e[tag=Ultva] run data merge entity @s {Health:0}
 bossbar set minecraft:hovad visible false
 bossbar set minecraft:ultva visible false
 
 forceload remove 27314 60 27276 102
 kill @e[tag=orb]
+kill @e[tag=ultva_laser]
+kill @e[tag=ultva_orb]
+team modify court color gold

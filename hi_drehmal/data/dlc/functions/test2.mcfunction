@@ -1,0 +1,1 @@
+execute as @e[type=text_display] run data merge entity @s {text:'[{"text":"Times Killed: ","color":"gray"},{"text":"0","color":"aqua","bold":true},{"text":"\\n"},{"text":"Times Died To: ","color":"gray"},{"text":"0","color":"yellow","bold":true},{"text":"\\n"},{"text":"Best Time: ","color":"gray"},{"text":"N/A","color":"gold","bold":true}]'}

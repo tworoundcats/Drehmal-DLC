@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": 26497.5,
+                "y": 209.5,
+                "z": 907.5
+              }
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:lever",
+            "properties": {
+              "powered": "true"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "dlc:primal_journey/ossein/start"
+  }
+}

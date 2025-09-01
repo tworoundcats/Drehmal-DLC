@@ -967,7 +967,7 @@ bossbar add hovad "Hovadchear, Master of the Order"
 bossbar set hovad color red
 
 bossbar add ultva "Ultva, Genocide of One"
-bossbar set hovad color purple
+bossbar set ultva color purple
 
 
 data modify storage drehmal:core inert_mythbreaker set value {display:{Name:'{"text":"Inert Mythbreaker","color":"gold","italic":false,"underlined":true}',Lore:['{"text":"While perfect in form, it is clear"}','{"text":"that the weapon lacks something."}','{"text":"A blade with such infinite potential"}','{"text":"should not go to waste."}','{"text":" "}','{"text":"When in main hand:","color":"gray","italic":false}','{"text":"-4 Max Health","color":"blue","italic":false}','{"text":"-0.015 Movement Speed","color":"blue","italic":false}','{"text":"18 Attack Damage","color":"blue","italic":false}','{"text":"0.5 Attack Speed","color":"blue","italic":false}','{"text":" "}','{"text":"Mythical","color":"gold","italic":false}']},weapon_attributes:'{"parent":"minecraft:inert"}',HideFlags:2,CustomModelData:5,inertMythbreaker:1b,Mythic:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-4,Operation:0,UUID:[I;-1304414262,-112508035,-2096964732,-1917796446],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.015,Operation:0,UUID:[I;-1677363711,-594982570,-2022347546,-963373517],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:17,Operation:0,UUID:[I;700122283,1240223458,-1782611278,-1827475741],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.5,Operation:0,UUID:[I;673885855,-1271313444,-1933484148,-22947873],Slot:"mainhand"}]}
@@ -1216,3 +1216,19 @@ team modify asc friendlyFire false
 scoreboard objectives add moment minecraft.used:dlc.moments_peace
 
 scoreboard objectives add suffer dummy
+
+scoreboard objectives add emissary dummy
+scoreboard objectives add generals dummy
+scoreboard objectives add court dummy
+scoreboard objectives add teth dummy
+scoreboard objectives add bernice dummy
+scoreboard objectives add emissary dummy
+scoreboard objectives add ossein_default dummy
+scoreboard objectives add ossein_prime dummy
+scoreboard objectives add hegemon dummy
+
+bossbar add tethlaen "Tethlaen, Lost to Nothing"
+bossbar set tethlaen color yellow
+
+team add court
+team modify court color gold

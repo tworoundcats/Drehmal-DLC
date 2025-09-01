@@ -12,5 +12,6 @@ scoreboard players set #returnportal bool 0
 scoreboard players set #returnportal z 0
 scoreboard players set #returnportal timer 0
 scoreboard players set #gearportal timer 0 
+scoreboard players set #game_finished bool 1
 
 function core:scene/emissary/reset

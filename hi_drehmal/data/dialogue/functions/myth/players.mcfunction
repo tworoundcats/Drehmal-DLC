@@ -80,3 +80,6 @@ execute if score #returnportal bool matches 1 in true_end if score #returnportal
 
 
 execute if score #returnportal bool matches 1 in true_end if score #returnportal z matches 1 in true_end positioned 10010 61.5 10000 as @s[distance=..4] run function dialogue:myth/geartp
+
+
+execute positioned 26504.48 205.00 919.58 in overworld as @s[distance=..1,tag=!talking] run function core:scene/credits/29

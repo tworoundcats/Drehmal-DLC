@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{event:3}"
+              "tag": "{event:51}"
             }
           ]
         }

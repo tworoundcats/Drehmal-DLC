@@ -35,3 +35,4 @@ execute as @e[tag=ossein_explosion] run function entities:ai/ossein/tick/explosi
 execute as @s[tag=spawning] at @s run function entities:ai/ossein/gravity_particle
 
 execute as @e[type=phantom,predicate=players:locations/ossein_arena,tag=ossein_phantom] run data modify entity @s Fire set value -1
+scoreboard players add #tempdeaths timer 1

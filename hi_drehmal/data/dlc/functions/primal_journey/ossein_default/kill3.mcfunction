@@ -1,0 +1,1 @@
+execute positioned 26499.47 205.00 907.50 unless entity @e[tag=temp_spawn_primal,distance=..20] run forceload remove ~ ~

@@ -41,9 +41,17 @@ execute in true_end if score #emmportal timer matches 1.. positioned 10000 103 1
 
 
 execute if score #finalbeacon bool matches 1 in true_end run particle dust_color_transition 1 0.9 0.1 1 1 1 1 917 72 224 0.2 25 0.2 0 100 force
-
+execute if score #primal_journey bool matches 1 in true_end run function dialogue:myth/final/no/portal1
 
 execute if score #returnportal bool matches 1 in true_end unless score #returnportal z matches 1 in true_end positioned 10010 62 10000 run function dialogue:myth/returnportalanim
 
 execute if score #returnportal bool matches 1 in true_end if score #returnportal z matches 1 in true_end positioned 10010 61.5 10000 facing ~1 ~ ~0 run function dialogue:portal/animate
 execute if score #returnportal bool matches 1 in true_end if score #returnportal z matches 1 in true_end positioned 10010 61.5 10000 facing ~1 ~ ~0 run particle minecraft:dust_color_transition 0.5 0 0.5 1 1 0.9 0.1 ~ ~ ~ 0 0.7 0.5 1 25 force
+
+execute in overworld positioned 26504.48 205.00 919.58 run particle dust_color_transition 1 0.9 0.1 1 1 1 1 ~ ~4 ~ 0.2 2 0.2 0 5 force
+
+
+execute if score #primal_portal bool matches 1 in overworld positioned 782.50 3.00 564.53 if entity @a[distance=..50] run function dialogue:myth/final/no/portal2
+
+
+execute in overworld positioned 778.54 2.00 556.57 if score #game_finished bool matches 1 unless score #myth_dia_primal bool matches 1 if entity @a[distance=..80] run function dialogue:myth/primal_journey/0

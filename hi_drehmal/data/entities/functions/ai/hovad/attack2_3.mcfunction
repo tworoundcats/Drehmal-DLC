@@ -2,7 +2,8 @@ particle poof ~ ~ ~ 2 2 2 0.6 100
 particle explosion ~ ~ ~ 0.8 0.8 0.8 0.3 50
 playsound minecraft:dcustom.entity.generic.explode player @a ~ ~ ~
 
-execute as @a[distance=..5] run damage @s 35 explosion by @e[tag=Hovadchear,limit=1,sort=nearest]
+execute as @s[tag=!Enraged] as @a[distance=..5] run damage @s 35 explosion by @e[tag=Hovadchear,limit=1,sort=nearest]
+execute as @s[tag=Enraged] as @a[distance=..5] run damage @s 50 explosion by @e[tag=Hovadchear,limit=1,sort=nearest]
 effect give @a[distance=..5] slowness 3 3 true
 effect give @a[distance=..5] weakness 3 2 true
 scoreboard players reset @s ai_timer2

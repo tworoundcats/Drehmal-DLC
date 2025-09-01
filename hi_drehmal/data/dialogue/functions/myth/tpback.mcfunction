@@ -14,3 +14,4 @@ execute run effect give @s nausea 6 2 true
 execute run particle squid_ink 778 3.5 460 0.1 0.1 0.1 0 100
 function players:music/reset
 execute if score #emmportal timer matches 1.. run schedule function dialogue:myth/final/finalstoryreset 1s
+scoreboard players set #game_finished bool 1
