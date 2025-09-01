@@ -239,6 +239,9 @@ execute as @a[limit=1,sort=random,predicate=players:overworld,predicate=!players
 
 execute if score #frenzy bool matches 1 positioned 4723 153 5325 run function dlc:frenzy_upgrade/main
 
+#Dreadnought Tick Handler
+execute if entity @a[predicate=players:locations/red_dawn_devzone] run function core:dreadnought_tick
+
 # Asc Dungeon
 execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,type=armor_stand] at @s positioned ~ ~2 ~ run function particle:asc/animate
 execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if predicate players:holding/inert_tablet run function dlc:tablet_start

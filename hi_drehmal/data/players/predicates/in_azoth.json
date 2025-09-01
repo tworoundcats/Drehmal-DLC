@@ -1,0 +1,148 @@
+{
+    "condition":"any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27503,
+                        "max": 27517
+                    },
+                    "y": {
+                        "min": 147,
+                        "max": 150.9
+                    },
+                    "z": {
+                        "min": 891,
+                        "max": 906
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27486,
+                        "max": 27502
+                    },
+                    "y": {
+                        "min": 140,
+                        "max": 151.9
+                    },
+                    "z": {
+                        "min": 884,
+                        "max": 938
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": -2162,
+                        "max": -2138
+                    },
+                    "y": {
+                        "min": -18,
+                        "max": -17
+                    },
+                    "z": {
+                        "min": -1665,
+                        "max": -1626
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27413,
+                        "max": 27431
+                    },
+                    "y": {
+                        "min": 148,
+                        "max": 151.9
+                    },
+                    "z": {
+                        "min": 886,
+                        "max": 994
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27440,
+                        "max": 27469
+                    },
+                    "y": {
+                        "min": 148,
+                        "max": 152.9
+                    },
+                    "z": {
+                        "min": 885,
+                        "max": 911
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27468,
+                        "max": 27586
+                    },
+                    "y": {
+                        "min": 140,
+                        "max": 151.9
+                    },
+                    "z": {
+                        "min": 911,
+                        "max": 931
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "dimension": "minecraft:overworld",
+                "position":{
+                    "x": {
+                        "min": 27481,
+                        "max": 27507 
+                    },
+                    "y": {
+                        "min": 154,
+                        "max": 160.8
+                    },
+                    "z": {
+                        "min": 827,
+                        "max": 850
+                    }
+                }
+            }
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,6 @@
+{
+    "death_message_type": "default",
+    "message_id": "azoth_bullet",
+    "exhaustion": 0.1,
+    "scaling": "never"
+}

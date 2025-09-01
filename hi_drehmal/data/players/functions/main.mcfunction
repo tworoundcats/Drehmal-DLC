@@ -546,6 +546,11 @@ execute as @s if predicate players:in_watertoggle if score #electrowater y match
 execute as @s if predicate players:in_waterelectro unless predicate players:in_watersafe if score #electrowater x matches 1 at @s if block ~ ~ ~ water if score #5T timer matches 0 unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 3 minecraft:rubber
 execute as @s if predicate players:in_waterelectro unless predicate players:in_watersafe if score #electrowater x matches 1 at @s if block ~ ~ ~ water if score #5T timer matches 0 if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
+#================#
+# Azoth #
+#================#
+
+execute if predicate players:in_azoth run damage @s 8 minecraft:azoth
 
 #================#
 # Orbit Puzzle   #

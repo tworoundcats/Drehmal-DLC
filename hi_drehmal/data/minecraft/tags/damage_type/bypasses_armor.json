@@ -12,6 +12,8 @@
         "minecraft:avrad",
         "minecraft:ossein_siphon",
         "minecraft:truedamage",
+        "minecraft:azoth",
+        "minecraft:azoth_bullet",
         "minecraft:shot_ethgar"
     ]
 }
