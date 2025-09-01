@@ -48,6 +48,6 @@ kill @e[type=armor_stand,tag=emissary_orb]
 kill @e[type=armor_stand,tag=em_spike1]
 kill @e[type=armor_stand,tag=escythe]
 
-execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 14s
+execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 17s
 scoreboard players set #emissary tempdeaths 1
 execute as @a run function dlc:telldeaths

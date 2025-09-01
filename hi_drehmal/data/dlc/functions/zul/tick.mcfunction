@@ -15,9 +15,9 @@ execute at @s if entity @a[distance=..60] run forceload add ~ ~
 execute at @s unless entity @a[distance=..50] at @s run function dlc:zul/despawn
 
 
-execute as @s[tag=!trades] unless score #zul bool matches 1 run function dlc:zul/set_trades
+execute as @s[tag=!trades] unless score #zul bool matches 1.. run function dlc:zul/set_trades
 
-execute if score #zul bool matches 1 run function dlc:zul/update_trades
+execute if score #5T timer matches 4 if score #zul bool matches 1.. run function dlc:zul/update_trades
 execute at @s positioned ~ ~0.1 ~ run particle mycelium ~ ~ ~ 0.2 0.05 0.2 0 1 normal
 
 execute unless score #card_game bool matches 1 at @s unless entity @s[x=-2990,y=44,z=5135,dx=230,dy=60,dz=160] unless predicate players:in_sahd as @a[distance=..4,predicate=players:holding/seeker] run function players:interact/zul

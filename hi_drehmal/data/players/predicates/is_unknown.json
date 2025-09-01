@@ -73,6 +73,15 @@
         "nbt": "{Item:{id:\"dlc:serpent_fin\"}}"
       }
     },
+        },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:serpent_fin_unrefined\"}}"
+      }
+    },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",

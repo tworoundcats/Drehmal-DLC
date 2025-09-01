@@ -26,4 +26,4 @@ execute as @a[tag=generals_music] run tag @s add finished
 execute as @a[tag=generals_music] run playsound minecraft:custom.generals_victory record @s
 tag @a[tag=generals_music] remove generals_music
 
-execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 6s
+execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 7.5s

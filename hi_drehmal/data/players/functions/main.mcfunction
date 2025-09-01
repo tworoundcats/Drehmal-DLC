@@ -36,7 +36,7 @@ execute unless predicate players:wearing_pearl run function players:items/focus/
 #--------#
 #STAR HELMET#
 #--------#
-execute if predicate players:wearing_starry run function players:items/star_helm/buff
+execute if predicate players:wearing_starry run function players:items/star_helm/main
 execute if score @s soundfix matches 1.. run scoreboard players remove @s soundfix 1
 execute unless predicate players:wearing_starry run attribute @s minecraft:generic.movement_speed modifier remove ce887b47-db5e-41be-ab92-4b6eb53c48c2
 
@@ -153,7 +153,7 @@ execute if score #5T timer matches 0 if score @s soulDamage matches 1.. run part
 # Avsohm'Kohl Stuff
 execute if entity @s[tag=wearing_avsmkohl] if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/holding_riptide
 execute if score @s fly_cm matches 1.. if entity @s[tag=wearing_avsmkohl] run function players:items/avsohm_kohl/main
-execute as @s[advancements={weapons:wings=true}] if predicate dlc:wings if predicate players:holding/riptide_trident run function players:items/avsohm_kohl/wings_holding_riptide
+execute as @s[advancements={weapons:wings=true}] if predicate players:holding/riptide_trident if predicate dlc:wings run function players:items/avsohm_kohl/wings_holding_riptide
 execute if score @s fly_cm matches 1.. if predicate dlc:wings run function players:items/avsohm_kohl/main
 execute as @s[tag=wearing_avsmkohl] if predicate dlc:wings run function players:items/avsohm_kohl/unequip
 scoreboard players reset @s fly_cm
@@ -732,7 +732,7 @@ execute if predicate players:locations/red_dawn_nomusic run function players:mus
 
 execute unless predicate players:locations/red_dawn_nomusic if entity @s[tag=bossmusic] run function players:music/startfurtherance
 
-#execute as @s unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
+execute as @s[predicate=players:holding/catfisher] unless score @s catch_old >= @s catch run function dlc:fishing/temp_catch
 
 #function dlc:accessories/main
 

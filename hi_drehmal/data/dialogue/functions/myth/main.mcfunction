@@ -41,7 +41,7 @@ execute in true_end if score #emmportal timer matches 1.. positioned 10000 103 1
 
 
 execute if score #finalbeacon bool matches 1 in true_end run particle dust_color_transition 1 0.9 0.1 1 1 1 1 917 72 224 0.2 25 0.2 0 100 force
-execute if score #primal_journey bool matches 1 in true_end run function dialogue:myth/final/no/portal1
+execute if score #primal_journey bool matches 1 in true_end run function dialogue:myth/final/no/portal
 
 execute if score #returnportal bool matches 1 in true_end unless score #returnportal z matches 1 in true_end positioned 10010 62 10000 run function dialogue:myth/returnportalanim
 

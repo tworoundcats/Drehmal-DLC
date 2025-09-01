@@ -10,7 +10,7 @@ execute as @a[predicate=players:locations/in_arena] run advancement grant @s onl
 scoreboard players set #hegemon tempdeaths 1
 execute as @a run function dlc:telldeaths
 forceload remove 27481 828 27506 848
-execute as @a[predicate=players:locations/in_arena,tag=primal_journey] run schedule function dlc:primal_journey/win 3s
+execute as @a[predicate=players:locations/in_arena,tag=primal_journey] run schedule function dlc:primal_journey/win 14s
 
 scoreboard players reset #hege bool
 

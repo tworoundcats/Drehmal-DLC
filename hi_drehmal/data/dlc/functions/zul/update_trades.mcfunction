@@ -1,3 +1,5 @@
+execute unless entity @a[tag=clock,tag=!clocked] run scoreboard players reset #zul bool
+execute if entity @a[tag=!clocked,tag=clock] if score #zul bool matches 1.. as @a[tag=!clocked,tag=clock] run function dlc:zul/clock
 scoreboard players reset #zul bool
 data remove entity @s Offers.Recipes
 tag @s add trades

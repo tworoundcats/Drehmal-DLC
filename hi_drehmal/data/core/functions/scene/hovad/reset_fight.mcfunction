@@ -19,9 +19,10 @@ execute as @e[tag=Hovadchear] run data merge entity @s {Health:0}
 execute as @e[tag=Ultva] run data merge entity @s {Health:0}
 bossbar set minecraft:hovad visible false
 bossbar set minecraft:ultva visible false
-
-forceload remove 27314 60 27276 102
 kill @e[tag=orb]
 kill @e[tag=ultva_laser]
 kill @e[tag=ultva_orb]
 team modify court color gold
+
+forceload remove 27314 60 27276 102
+

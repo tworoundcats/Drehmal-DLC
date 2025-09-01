@@ -19,7 +19,7 @@ execute as @e[type=#entities:proj,tag=!unloaded,tag=!arrow.inground] at @s run f
 #--------------OTHER_TICK--------------#
 execute as @e[type=#entities:tickless_passive,tag=!] at @s run function entities:misc_passive_tick
 execute as @e[type=#entities:tickless_nuetral,tag=!] at @s run function entities:misc_nuetral_tick
-execute as @e[type=!#entities:oblivion_immune,tag=!unloaded,predicate=entities:status_scores] at @s run function entities:status_tick
+execute as @e[tag=!oblivion_immune,tag=!unloaded,predicate=entities:status_scores] at @s run function entities:status_tick
 
 #-------------HOSTILE_TICK-------------#
 execute as @e[type=!#entities:highcapacity] unless entity @s[scores={uuid0=-2147483648..2147483647}] run function entities:misc/grab_uuid

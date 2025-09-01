@@ -1,3 +1,9 @@
+execute store result score @s clock run clear @s mythicmetals:platinum_watch 0
+execute if score @s clock matches 1.. run tag @s add clock
+execute as @s[tag=!clocked,tag=clock] if score #zul bool matches 1.. run tellraw @s {"text":"The hour has struck. The Chronicler's Envoy has new wares.","color":"dark_gray","bold":false,"italic":true}
+execute as @s[tag=!clocked] if score #zul bool matches 1.. run tag @s add clocked
+execute as @s[tag=clocked] unless score #zul bool matches 1.. run tag @s remove clocked
+
 # Athrah
 execute if entity @s[x=-2717,y=66,z=-1770,distance=..100,tag=!zul_spawn] unless entity @e[type=dlc:collector] run function dlc:zul/booth/athrah
 
@@ -81,11 +87,6 @@ execute as @a[advancements={weapons:providence=true}] run execute as @a run fmva
 
 #execute if score #dlcdeathcounter bool matches 1 as @s[tag=!tempdeaths] run tag @s add tempdeaths
 
-execute store result score @s clock run clear @s mythicmetals:platinum_watch 0
-execute if score @s clock matches 1.. run tag @s add clock
-execute as @s[tag=!clocked,tag=clock] if score #zul bool matches 1 run tellraw @s {"text":"The hour has struck. The Chronicler's Envoy has new wares.","color":"dark_gray","bold":false,"italic":true}
-execute as @s[tag=!clocked] if score #zul bool matches 1 run tag @s add clocked
-execute as @s[tag=clocked] unless score #zul bool matches 1 run tag @s remove clocked
 
 execute unless score #mythic_pvp? const matches 1 run tag @s add mythic_pvp
 execute if score #mythic_pvp? const matches 1 run tag @s remove mythic_pvp

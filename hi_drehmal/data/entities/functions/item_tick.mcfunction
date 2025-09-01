@@ -20,3 +20,4 @@ execute if score @s d.type matches 1.. run function entities:dropped_items/devot
 #execute if entity @s[type=item,nbt={Item:{id:"dlc:sea_creature"}}] run function dlc:fishing/mob
 
 
+execute if entity @s[tag=cat] run function dlc:fishing/cat

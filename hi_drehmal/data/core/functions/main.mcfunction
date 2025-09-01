@@ -226,7 +226,7 @@ execute if score #1S timer matches 1 run scoreboard players operation #daycount3
 execute if score #1S timer matches 1 store result score #daycount5 timer run time query day
 execute if score #1S timer matches 1 run scoreboard players operation #daycount5 timer %= #16 const
 
-execute if score #starfallen bool matches 1 if score #worldtime2 timer matches 17800..17990 run scoreboard players reset #starfallen bool
+execute if score #starfallen bool matches 1 if score #worldtime2 timer matches 17800..17970 run scoreboard players reset #starfallen bool
 execute if score #1S timer matches 0 store result score #worldtime2 timer run time query daytime
 
 
@@ -273,7 +273,6 @@ execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run functi
 execute unless score #ihted_spellforged_spawn bool matches 1 run execute in minecraft:lodahr positioned -963 245 -967 if entity @a[distance=..15] run function dlc:ihted_spawn
 
 
-execute as @e[tag=explode] at @s anchored eyes positioned ^ ^0.5 ^ run function particle:effects/zed_shuriken
 
 execute as @e[tag=soul_burn] run function players:items/soul/main
 

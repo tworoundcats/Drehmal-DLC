@@ -1,4 +1,4 @@
 tellraw @p ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> Do you see it too?"}]
 execute as @e[type=villager,name="Mahkar"] run data modify entity @s Offers.Recipes append value {maxUses:100,buy:{id: "minecraft:gold_ingot",Count:1},sell:{id: "dlc:eye_of_rot", tag: {display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_gray","text":"Eye of Rot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Apophenia is a blessing and "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"a curse, is it not?"}],"text":""}']}}, Count: 1}}
 give @p dlc:eye_of_rot{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_gray","text":"Eye of Rot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Apophenia is a blessing and "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"a curse, is it not?"}],"text":""}']}}
-execute as @e[type=villager,name="Mahkar"] run tag @s add apophenia 
+execute as @e[type=villager,name="Mahkar"] run tag @s add apophenia

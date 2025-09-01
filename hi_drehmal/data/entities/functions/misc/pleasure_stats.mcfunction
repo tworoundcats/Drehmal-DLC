@@ -1,5 +1,6 @@
-data modify entity @s damage set from storage drehmal:entities tempEntity.damage
 data modify entity @s crit set from storage drehmal:entities tempEntity.crit
+execute if data entity @s crit store result storage drehmal:entities tempEntity.damage double 1 run data get storage drehmal:entities tempEntity.damage 1.25
+data modify entity @s damage set from storage drehmal:entities tempEntity.damage
 data modify entity @s PierceLevel set from storage drehmal:entities tempEntity.PierceLevel
 data modify entity @s Color set from storage drehmal:entities tempEntity.Color
 data modify entity @s CustomPotionEffects set from storage drehmal:entities tempEntity.CustomPotionEffects

@@ -16,7 +16,7 @@ execute as @a run function dlc:telldeaths
 
 clone 27299 3 57 27303 6 59 27293 81 57
 
-execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 3s
+execute as @a[tag=primal_journey] run schedule function dlc:primal_journey/win 7s
 
 forceload remove 27314 60 27276 102
 

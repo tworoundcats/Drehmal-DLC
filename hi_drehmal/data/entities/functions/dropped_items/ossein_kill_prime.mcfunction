@@ -28,4 +28,4 @@ playsound minecraft:dcustom.entity.lightning_bolt.thunder hostile @a ~ ~ ~ 10 2
 kill @e[type=skeleton_horse,tag=ossein_horse]
 schedule function core:scene/ossein/1 24t
 
-execute as @a[predicate=players:locations/ossein_arena,tag=primal_journey] run schedule function dlc:primal_journey/win 3s
+execute as @a[predicate=players:locations/ossein_arena,tag=primal_journey] run schedule function dlc:primal_journey/win 11s

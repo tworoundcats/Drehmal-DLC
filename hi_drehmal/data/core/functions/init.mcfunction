@@ -1232,3 +1232,5 @@ bossbar set tethlaen color yellow
 
 team add court
 team modify court color gold
+
+scoreboard objectives add as_foretold dummy
