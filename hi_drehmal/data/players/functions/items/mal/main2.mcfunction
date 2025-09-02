@@ -11,8 +11,8 @@ execute as @s[scores={mal_cd=15..}] run tag @s remove upgraded
 execute as @s[scores={mal_cd=15..}] run kill @e[type=interaction,tag=swing_marker]
 execute as @s[scores={mal_cd=15..}] run scoreboard players reset @s mal_cd
 
-
-
+execute as @e[type=interaction,tag=swing_marker] if data entity @s attack run execute store result score @s uuid0 run data get entity @s attack.player[0]
+execute as @e[type=interaction,tag=swing_marker] if data entity @s attack if score @s uuid0 = @p[predicate=players:holding/male2] uuid0
 execute as @e[type=interaction,tag=swing_marker] if data entity @s attack run scoreboard players set #mal_swing bool 1
 execute as @e[type=interaction,tag=swing_marker] run data remove entity @s attack
 

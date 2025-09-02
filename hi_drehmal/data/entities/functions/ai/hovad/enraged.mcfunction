@@ -12,3 +12,5 @@ bossbar set minecraft:hovad visible true
 schedule function core:scene/hovad/bossabilities/name1 4t
 
 bossbar set minecraft:ultva visible false
+
+effect give @s resistance infinite 2 true

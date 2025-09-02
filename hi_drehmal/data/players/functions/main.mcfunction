@@ -941,3 +941,6 @@ execute if predicate dlc:speed run effect give @s speed infinite 0 true
 execute as @s[tag=primal_dead] run function dlc:primal_journey/spectate
 
 execute as @s[predicate=players:in_primal_journey] unless score @s playingMusic matches 1.. run stopsound @s music
+
+#weaver needle
+execute as @s[scores={weaver=1..}] run function players:items/weaver/use

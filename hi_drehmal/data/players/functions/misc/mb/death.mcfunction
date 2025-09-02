@@ -3,6 +3,7 @@ execute at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ as @e[type=ite
 function players:misc/mb/replace_inert
 execute as @a at @s run function players:music/reset
 tag @s remove mb_holder
+scoreboard players reset @s mb_run
 tag @s remove mastermode
 scoreboard players reset #mb_run_active? bool
 tag @s remove exploded

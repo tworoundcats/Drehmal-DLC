@@ -1,4 +1,5 @@
 tag @s remove mb_holder
+scoreboard players reset @s mb_run
 tag @s remove mastermode
 scoreboard players reset #found temp
 scoreboard players reset #found_check temp

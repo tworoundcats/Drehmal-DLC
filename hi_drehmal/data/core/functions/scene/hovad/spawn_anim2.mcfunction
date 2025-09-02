@@ -65,6 +65,7 @@ execute if score #hovadbossintro timer matches 289 store result bossbar minecraf
 execute if score #hovadbossintro timer matches 289 store result bossbar minecraft:hovad max run attribute @e[tag=Hovadchear,limit=1] minecraft:generic.max_health get
 execute if score #hovadbossintro timer matches 289 run bossbar set minecraft:ultva name {"text":"Ultva, Genocide of One","obfuscated":true,"color":"white"}
 execute if score #hovadbossintro timer matches 289 run execute positioned 27294.60 82.00 84.56 as @a[distance=..50] run bossbar set minecraft:ultva players @s
+execute if score #hovadbossintro timer matches 289 run execute positioned 27294.60 82.00 84.56 as @a[distance=..50] run bossbar set minecraft:hovad players @s
 execute if score #hovadbossintro timer matches 289 run bossbar set minecraft:ultva visible true
 execute if score #hovadbossintro timer matches 289 run bossbar set minecraft:hovad visible true
 execute if score #hovadbossintro timer matches 289 run schedule function core:scene/hovad/bossabilities/name1 4t

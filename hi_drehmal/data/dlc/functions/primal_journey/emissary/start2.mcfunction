@@ -7,6 +7,7 @@ execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run tag @s add te
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run tag @s add emissarydeaths
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run tag @s add primal_journey
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run scoreboard players reset @s respawn_timer
+execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run function players:music/reset
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] in true_end run tp @s 10000.40 101.00 10016.
 function core:scene/emissary/despawn
 function core:scene/emissary/reset

@@ -41,7 +41,7 @@ execute if score #level temp matches 5.. as @e[type=#tamable,distance=..5.75] if
 
 
 
-execute if score #level temp matches ..1 as @a[distance=..1.,predicate=players:holding/male2] run function players:items/mal/main_upgrade
+execute if score #level temp matches ..1 as @a[distance=..1,predicate=players:holding/male2] run function players:items/mal/main_upgrade
 execute if score #level temp matches 2 as @a[distance=..2.75,predicate=players:holding/male2] run function players:items/mal/main_upgrade
 execute if score #level temp matches 3 as @a[distance=..3.,predicate=players:holding/male2] run function players:items/mal/main_upgrade
 execute if score #level temp matches 4 as @a[distance=..4.75,predicate=players:holding/male2] run function players:items/mal/main_upgrade

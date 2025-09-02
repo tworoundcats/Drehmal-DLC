@@ -772,6 +772,7 @@ scoreboard players set #48 const 48
 scoreboard players set #49 const 49
 scoreboard players set #50 const 50
 scoreboard players set #54 const 54
+scoreboard players set #55 const 545
 scoreboard players set #58 const 58
 scoreboard players set #60 const 60
 scoreboard players set #64 const 64
@@ -1214,6 +1215,7 @@ scoreboard objectives add clock dummy
 team modify asc friendlyFire false
 
 scoreboard objectives add moment minecraft.used:dlc.moments_peace
+scoreboard objectives add weaver minecraft.used:dlc.weaver_needle
 
 scoreboard objectives add suffer dummy
 
@@ -1234,3 +1236,4 @@ team add court
 team modify court color gold
 
 scoreboard objectives add as_foretold dummy
+scoreboard objectives add mb_run dummy

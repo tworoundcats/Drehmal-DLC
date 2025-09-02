@@ -4,6 +4,6 @@ execute unless score #DLC mastermode matches 1 run scoreboard players operation 
 
 execute if score #rand temp matches 0 run tag @s add temp_attack
 
-execute if score #rand temp matches 1 run function entities:ai/ultva/attack2
+execute if score #rand temp matches 1 run function entities:ai/ultva/attack2_1 
 
 #execute if score #rand temp matches 2 run function entities:ai/ultva/attack3

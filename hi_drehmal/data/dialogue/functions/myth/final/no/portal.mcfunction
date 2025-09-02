@@ -1,4 +1,4 @@
-execute unless score #returnportal3 z3 matches 3 run scoreboard players reset #returnportal3 timer
+execute unless score #returnportal3 z3 matches 1 run scoreboard players reset #returnportal3 timer
 execute unless score #returnportal3 timer matches 0.. run scoreboard players set #returnportal3 timer 0
 execute unless score #returnportal3 timer matches 200.. run scoreboard players add #returnportal3 timer 1
 

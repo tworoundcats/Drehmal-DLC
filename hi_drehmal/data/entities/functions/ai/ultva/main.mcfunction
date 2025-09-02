@@ -15,3 +15,4 @@ execute as @e[tag=orb,type=marker] run function entities:ai/ultva/orb_tick
 
 execute as @s[tag=temp_attack] at @s run function entities:ai/ultva/attack
 execute as @s[tag=!court] run team join court
+scale set pehkui:falling 0 @s

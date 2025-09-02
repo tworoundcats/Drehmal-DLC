@@ -105,3 +105,5 @@ execute if score #worm_moving? bool matches 1 unless score #b.passive_forceai? b
 
 execute if entity @s[tag=ossein_default] run function entities:bosses/ossein/spawn_ani_default
 execute if entity @s[tag=ossein_prime] run function entities:bosses/ossein/spawn_ani_prime
+
+execute if entity @s[tag=weaver_needle] run function players:items/weaver/particle_tick

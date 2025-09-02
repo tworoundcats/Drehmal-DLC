@@ -1,6 +1,6 @@
 execute if entity @s[tag=!Enraged] unless entity @e[type=wither_skeleton,tag=Ultva] run function entities:ai/hovad/enraged
 execute if entity @s[tag=!Enraged] run function entities:ai/hovad/shield
-execute if entity @s[tag=!Enraged] run effect give @s resistance 1 4 true
+execute if entity @s[tag=!Enraged] run effect give @s resistance 1 5 true
 
 execute if entity @s[tag=Enraged] run effect give @s minecraft:strength 1 0 false
 execute if entity @s[tag=Enraged] run effect give @s minecraft:speed 1 1 false
@@ -38,3 +38,4 @@ execute as @s[tag=in_air,predicate=entities:on_ground] run function entities:ai/
 
 execute unless entity @e[tag=Ultva] run effect give @s mcdar:shielding 1 1 true
 execute as @s[tag=!court] run team join court
+scale set pehkui:falling 0 @s

@@ -60,6 +60,7 @@
     "minecraft:rabbit",
     "minecraft:fox",
     "minecraft:sheep",
-    "minecraft:item_display"
+    "minecraft:item_display",
+    "minecraft:text_display"
   ]
 }

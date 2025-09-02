@@ -6,6 +6,7 @@ execute positioned 26499.50 205.00 871.50 as @a[distance=..24,predicate=players:
 execute positioned 26499.50 205.00 871.50 as @a[distance=..24] run tag @s add tempdeaths
 execute positioned 26499.50 205.00 871.50 as @a[distance=..24] run tag @s add generalsdeaths
 execute positioned 26499.50 205.00 871.50 as @a[distance=..24] run tag @s add primal_journey
+execute positioned 26499.50 205.00 871.50 as @a[distance=..24] run function players:music/reset
 execute positioned 26499.50 205.00 871.50 as @a[distance=..24] run tp @s 27339 147 747
 function entities:bosses/generals/reset
 summon minecraft:marker 26499.50 205.00 871.50 {Tags:["temp_spawn_primal"]}

@@ -6,6 +6,7 @@ playsound minecraft:dcustom.entity.wither.death player @a ~ ~ ~ 0.5 0
 playsound minecraft:dcustom.block.ender_chest.open player @a ~ ~ ~ 0.5 0
 playsound minecraft:dcustom.item.trident.thunder player @a ~ ~ ~ 0.5
 tag @s remove mb_holder
+scoreboard players reset @s mb_run
 tag @s remove mastermode
 
 scoreboard players reset #hold? temp

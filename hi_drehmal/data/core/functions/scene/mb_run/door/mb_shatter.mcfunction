@@ -19,6 +19,7 @@ scoreboard players reset #khive_scroll bool
 execute in minecraft:overworld positioned 26512 161 -96 run setblock ~2 ~ ~15 minecraft:light_gray_concrete
 
 tag @s remove mb_holder
+scoreboard players reset @s mb_run
 tag @s remove exploded
 execute as @s[tag=mastermode] run advancement grant @s only dlc:mastermode_mb
 tag @s remove mastermode
