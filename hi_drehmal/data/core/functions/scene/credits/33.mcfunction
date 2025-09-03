@@ -1,0 +1,1 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"3.0 Update Beta Playtesters","underlined":true,"color":"gold"},{"text":"\n\n- RussellGeorgi\n- Purpleleven\n- the_gamer\n- CJ \n- White_Fang\n- Tildez\n- kaiathecoolkid"}]

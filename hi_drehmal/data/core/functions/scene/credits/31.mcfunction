@@ -1,0 +1,3 @@
+tellraw @a[predicate=players:true_end] ["",{"text":"\n"},{"text":"Main Development Team","underlined":true,"color":"gold"},{"text":"\n\ntworoundcats (Elmers_Glue_Gunner)\nProject Lead/Creator\nLead Coder\nTexture Artist/Modeler\nBuilder\nWriter/Designer\n\nMacharoni2 (k182)\nWriter/Designer (3.0 Co-Lead Writer)\nAssociate Coder\n\nWellerman\nWriter/Designer (3.0 Co-Lead Writer)\n\nalbinokoopa (Corvidiot)\nCoder\nBuilder\nTexture Artist/Modeler\n\nWaterflow (Kofi)\nComposer/Sound Designer\nTexture Artist\n\nthe_gamer\nAssociate Writer (Highfall + Firteid quests)"}]
+
+schedule function core:scene/credits/32 6s
