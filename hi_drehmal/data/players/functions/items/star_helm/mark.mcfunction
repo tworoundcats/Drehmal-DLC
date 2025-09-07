@@ -1,2 +1,2 @@
-execute as @e[type=!player,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..20,limit=1,sort=random] run tag @s add marked
+execute as @e[predicate=!entities:invul,tag=!mythic_pvp,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,distance=..20,limit=1,sort=random] run tag @s add marked
 scoreboard players reset @s as_foretold

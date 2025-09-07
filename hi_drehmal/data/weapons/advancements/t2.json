@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+        "items": [
+          {
+            "items": [
+              "dlc:t2"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:advancement/t2"
+  }
+}

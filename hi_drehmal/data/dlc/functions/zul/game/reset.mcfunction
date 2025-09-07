@@ -14,7 +14,7 @@ execute if entity @e[x=2104,y=101,z=-840,distance=..100,type=dlc:collector] at @
 execute if entity @e[x=-2976,y=145,z=-192,distance=..55,type=dlc:collector] at @e[type=dlc:collector] run place template cards -2994 131 -186
 
 # Firteid
-execute if entity @e[type=dlc:collector] at @s if predicate players:in_firt at @e[type=dlc:collector] run place template cards 3941 88 3476 counterclockwise_90
+execute if entity @e[type=dlc:collector] at @e[type=dlc:collector] if predicate players:in_firt at @e[type=dlc:collector] run place template cards 3941 88 3476 counterclockwise_90
 
 # Fort Nima
 execute if entity @e[x=-1725,y=155,z=1882,distance=..60,type=dlc:collector] at @e[type=dlc:collector] run place template cards -1729 161 1896

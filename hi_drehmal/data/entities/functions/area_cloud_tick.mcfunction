@@ -14,3 +14,5 @@ execute if entity @s[tag=trap2] run function entities:ai/revenant/trap
 execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/blind
 execute if entity @s[tag=lampjaw_orb] run function entities:ai/lampjaw/orb_tick
 execute if entity @s[tag=cal_spike] run function players:items/cal/spike
+
+execute if entity @s[tag=zenith_beam] at @s run function players:items/avsaber/entity

@@ -9,7 +9,15 @@ item replace entity @s armor.feet with leather_boots{display:{color:15395340}}
 
 item replace entity @s armor.legs with air
 
-item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:8.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
+execute if score count_all towers matches 0..4 run item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:4.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
+
+execute if score count_all towers matches 5..8 run item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:6.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
+
+execute if score count_all towers matches 9..12 run item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:8.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
+
+execute if score count_all towers matches 13..16 run item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:10.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
+
+execute if score count_all towers matches 17.. run item replace entity @s weapon.mainhand with mcdw:dagger_fangs_of_frost{AttributeModifiers:[{Amount:12.0d,AttributeName:"minecraft:generic.attack_damage",Name:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;559086024,-1766635338,-2125507216,-798064663]}],Damage:0}
 
 attribute @s generic.movement_speed base set 0.29
 execute if score count_all towers matches ..5 run attribute @s generic.max_health base set 20

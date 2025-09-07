@@ -31,3 +31,4 @@ execute if entity @s[tag=primal_yearning] run function dlc:mobs/primal_yearning/
 execute if entity @s[tag=primal_yearning_child] run function dlc:mobs/primal_yearning/child/tick
 execute if entity @s[tag=primal_aegis] run function dlc:mobs/primal_aegis/tick
 execute if entity @s[tag=primal_stalker] run function dlc:mobs/primal_stalker/tick
+execute if entity @s[tag=primal_excavator] run function dlc:mobs/primal_excavator/tick

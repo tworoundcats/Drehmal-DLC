@@ -33,3 +33,6 @@ execute if entity @s[tag=slime_puddle] run function dlc:mobs/primal_splitter/sho
 #execute if entity @s[tag=spawn] run function entities:spawn/main_stand
 
 #execute if entity @s[tag=em_summon] run function entities:ai/emissary/summon/tick
+
+execute if entity @s[tag=obscythe] at @s run function players:items/obv/entity
+execute if entity @s[tag=apotheosis] at @s run function players:items/levi/entity

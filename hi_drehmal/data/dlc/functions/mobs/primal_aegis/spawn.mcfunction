@@ -20,14 +20,14 @@ item replace entity @s armor.feet with mythicmetals:durasteel_boots{AttributeMod
 
 attribute @s generic.movement_speed base set 0.2
 attribute @s generic.knockback_resistance base set 0.5
-execute if score count_all towers matches ..12 run attribute @s generic.max_health base set 20
-execute if score count_all towers matches ..12 run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:20.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches ..12 run attribute @s generic.max_health base set 40
+execute if score count_all towers matches ..12 run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:40.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
-execute if score count_all towers matches 12..24 run attribute @s generic.max_health base set 30
-execute if score count_all towers matches 12..24 run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:30.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches 12..24 run attribute @s generic.max_health base set 50
+execute if score count_all towers matches 12..24 run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:50.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
-execute if score count_all towers matches 24.. run attribute @s generic.max_health base set 40
-execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:40.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute if score count_all towers matches 24.. run attribute @s generic.max_health base set 60
+execute if score count_all towers matches 24.. run data merge entity @s {DeathLootTable:"dlc:primal_aegis",Health:60.0f,CustomName:'{"text": "Primal Aegis","color": "#dfd50d","italic": false}',CustomNameVisible:0b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 particle minecraft:dust 0.886 0.925 0.114 1 ~ ~1 ~ 0.5 1 0.5 0.1 100
 function dlc:mobs/enchant

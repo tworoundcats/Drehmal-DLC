@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{title:'SK Notes'}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:advancement/component"
+  }
+}

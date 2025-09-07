@@ -285,10 +285,6 @@ execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,predicate=!player
 
 execute as @e[tag=hexed] run function players:items/hexed/main
 
-execute as @e[tag=obscythe] at @s run function players:items/obv/entity
-execute as @e[tag=zenith_beam] at @s run function players:items/avsaber/entity
-execute as @e[tag=apotheosis] at @s run function players:items/levi/entity
-
 # if we want to give mal 2 the draining ability
 #execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2
 execute as @e[type=interaction,tag=swing_marker] unless entity @a[predicate=players:holding/male2] run kill @s
@@ -303,4 +299,3 @@ execute if score #bern_active? bool matches 1 positioned -418.50 54.00 596.55 in
 execute if score #teth_active bool matches 1 in the_end positioned 0.37 67.00 0.27 unless entity @a[distance=..400] run function entities:ai/tethlaen/despawn
 
 execute if score #fightinghovad bool matches 1 positioned 27295.52 82.00 86.05 unless entity @a[distance=..100] run function core:scene/hovad/reset_fight
-

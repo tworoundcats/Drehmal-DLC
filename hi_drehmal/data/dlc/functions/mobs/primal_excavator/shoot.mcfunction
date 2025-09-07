@@ -1,0 +1,3 @@
+summon minecraft:item_display ^ ^2 ^-1 {Tags:["excavator"],FallDistance: 0.0f, item: {Count: 1b, id: "mcdw:pick_hailing_pinnacle", tag: {Damage: 0}}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0000001f], translation: [0.0f, 0.0f, 0.0f]}}
+playsound minecraft:dcustom.item.trident.throw hostile @a ~ ~ ~ 2 0.6
+scoreboard players reset @s ai_timer
