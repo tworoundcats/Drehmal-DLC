@@ -65,18 +65,6 @@ execute if score @s crafted matches 1.. run function players:crafts/avpod
 execute store result score @s crafted run clear @s wandering_trader_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/aurastaff
 
-#corvid stuff
-execute store result score @s crafted run clear @s camel_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/blaze
-execute store result score @s crafted run clear @s cave_spider_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/starry
-execute store result score @s crafted run clear @s frog_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/pearl
-execute store result score @s crafted run clear @s tadpole_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/comp
-execute store result score @s crafted run clear @s strider_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/flesh
-
 #mythicals
 execute store result score @s crafted run clear @s llama_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/ascendance
@@ -96,8 +84,7 @@ execute store result score @s crafted run clear @s cod_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/syzygy
 execute store result score @s crafted run clear @s dolphin_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/zenith
-execute store result score @s crafted run clear @s warden_spawn_egg
-execute if score @s crafted matches 1.. run function players:crafts/red_dawn
+
 
 execute store result score @s crafted run clear @s turtle_spawn_egg
 execute if score @s crafted matches 1.. run function players:crafts/eldermead_bottle

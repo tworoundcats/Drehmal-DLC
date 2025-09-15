@@ -1,5 +1,5 @@
 tag @s remove special
-tp @s ^ ^ ^ ~ ~
+#tp @s ^ ^ ^ ~ ~
 function core:rng
 scoreboard players operation #rand temp %= #10 const
 execute store result score @s timer run scoreboard players get #rand temp

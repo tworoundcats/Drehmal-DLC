@@ -944,3 +944,7 @@ execute as @s[predicate=players:in_primal_journey] unless score @s playingMusic 
 
 #weaver needle
 execute as @s[scores={weaver=1..}] run function players:items/weaver/use
+
+#lunar sunscreen
+execute as @s[scores={lunar=1..}] run function players:items/lunar/use
+execute as @s[tag=lunar] run function players:items/lunar/main

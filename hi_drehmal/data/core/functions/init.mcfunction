@@ -1216,6 +1216,8 @@ team modify asc friendlyFire false
 
 scoreboard objectives add moment minecraft.used:dlc.moments_peace
 scoreboard objectives add weaver minecraft.used:dlc.weaver_needle
+scoreboard objectives add lunar minecraft.used:dlc.lunar_sunscreen
+scoreboard objectives add lunar_timer dummy
 
 scoreboard objectives add suffer dummy
 
