@@ -3,15 +3,15 @@ execute if entity @s[nbt={Silent:1b}] run tag @s add is_silent
 execute unless entity @s[tag=is_silent] as @s run data merge entity @s {Silent:1b}
 tag @s add hitbygun
 
-execute as @s[type=!#core:avgun_medium,type=!#core:avgun_big,type=!#core:avgun_massive] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.45 avrad
+execute as @s[type=!#core:avgun_medium,type=!#core:avgun_big,type=!#core:avgun_massive] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.45 avrad by @p
 execute as @s[type=!#core:avgun_medium,type=!#core:avgun_big,type=!#core:avgun_massive] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 
 #-----------damage for specific entities-------------#
-execute as @s[type=#core:avgun_medium] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.3 avrad
+execute as @s[type=#core:avgun_medium] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.3 avrad by @p
 execute as @s[type=#core:avgun_medium] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
-execute as @s[type=#core:avgun_big] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.225 avrad
+execute as @s[type=#core:avgun_big] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.225 avrad by @p
 execute as @s[type=#core:avgun_big] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
-execute as @s[type=#core:avgun_massive] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.175 avrad
+execute as @s[type=#core:avgun_massive] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.175 avrad by @p
 execute as @s[type=#core:avgun_massive] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main
 execute as @s[type=ender_dragon] unless entity @s[scores={blocking3=..4,blocked=1..}] run damage @s 0.01 avrad by @p
 execute as @s[type=ender_dragon] if entity @s[scores={blocking3=..4,blocked=1..}] run function players:items/reticent/main

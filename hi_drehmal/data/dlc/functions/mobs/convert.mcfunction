@@ -21,10 +21,10 @@ execute as @s[type=skeleton,name="Timeworn Hunter"] run function dlc:mobs/timewo
 
 
 
-execute unless score #DLC mastermode matches 1 if predicate dlc:1 unless data entity @s[type=!creeper] Tags unless data entity @s CustomName as @s run function dlc:mobs/convert_elite
+execute unless score #DLC mastermode matches 1 if predicate dlc:1 unless data entity @s[type=!creeper] Tags unless data entity @s CustomName as @s at @s unless entity @e[tag=primal_staff,type=item_display,distance=..48] run function dlc:mobs/convert_elite
 execute unless score #DLC mastermode matches 1 if predicate dlc:1 as @s[tag=primal] run function dlc:mobs/convert_elite
 
-execute if score #DLC mastermode matches 1 if predicate dlc:1_5 unless data entity @s[type=!creeper] Tags unless data entity @s CustomName as @s run function dlc:mobs/convert_elite
+execute if score #DLC mastermode matches 1 if predicate dlc:1_5 unless data entity @s[type=!creeper] Tags unless data entity @s CustomName as @s at @s unless entity @e[tag=primal_staff,type=item_display,distance=..48] run function dlc:mobs/convert_elite
 execute if score #DLC mastermode matches 1 if predicate dlc:1_5 as @s[tag=primal] run function dlc:mobs/convert_elite
 
 tag @s add converted

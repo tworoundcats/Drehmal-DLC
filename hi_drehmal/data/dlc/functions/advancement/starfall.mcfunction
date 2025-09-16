@@ -4,3 +4,4 @@ scoreboard players set #starfall bool 1
 
 clear @s dlc:starfall_mote{starfall_air:1b}
 function dlc:give/starfall_mote
+function dlc:give/starfall_mote

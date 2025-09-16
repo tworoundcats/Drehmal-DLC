@@ -99,6 +99,11 @@ execute as @s[tag=emissarydeaths] run tag @s remove emissarydeaths
 
 execute as @s[tag=primal_journey] run function dlc:primal_journey/die
 
+
+execute store result score @s temp run clear @s minecraft:black_dye{VoidRecall:1b} 0
+execute if score @s temp matches 1.. run function players:items/obv/check
+
+
 scale reset @s
 tag @s remove freefall
 tag @s remove initialloop

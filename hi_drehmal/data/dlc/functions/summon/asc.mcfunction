@@ -3,5 +3,5 @@ summon minecraft:armor_stand -555.46 32.00 4997.47 {Marker:0b,Rotation:[180f,0f]
 #execute as @e[tag=foundry_vis] at @s rotated 0 180 positioned ~ ~1 ~0.2 if score #5T timer matches 0 run function particle:term/animate
 
 
-summon minecraft:armor_stand -555.46 32.00 4997.47 {Tags: ["asc_display"],Pose:{RightArm:[270f,0f,0f]},ShowArms:1b,Invisible:1b,DisabledSlots:63,Rotation:[0f,0f],NoGravity:1b,Marker:1b}
+summon minecraft:armor_stand -555.46 32.00 4997.47 {Tags: ["asc_display"],Pose:{RightArm:[270f,0f,0f]},ShowArms:1b,Invisible:1b,DisabledSlots:63,Rotation:[0f,0f],NoGravity:1b,Marker:1b,Invulnerable:1b}
 

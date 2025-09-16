@@ -240,6 +240,7 @@ execute unless entity @s[tag=obv_active] run scoreboard players remove @s obv_co
 
 execute if score #5T timer matches 0 run function players:misc/portal/standcheck
 
+
 #==================#
 # Ascendance Stuff #
 #==================#
@@ -337,7 +338,8 @@ scoreboard players operation @s wasHoldingCal = @s holdingCal
 scoreboard players reset @s holdingCal
 execute as @s[tag=!cal2] if predicate players:holding/calamity2 run tag @s add cal2
 execute as @s[tag=cal_spike] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["cal_spike"],Duration:400}
-execute as @s[tag=cal_spike] if predicate entities:on_ground run tag @s remove cal_spike
+execute as @s[tag=cal_spike2] if predicate entities:on_ground run tag @s remove cal_spike
+execute as @s[tag=cal_spike2] if predicate entities:on_ground run tag @s remove cal_spike2
 execute if score @s[tag=cal2] wasHoldingCal matches 1 if score @s drop_netherite matches 1 run function players:items/cal/misfire
 execute store success score @s[tag=!disabled] holdingCal if predicate players:holding/calamity
 execute as @s[tag=disabled] run scoreboard players set @s wasHoldingCal 0

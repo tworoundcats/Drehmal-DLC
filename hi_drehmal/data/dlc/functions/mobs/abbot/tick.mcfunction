@@ -1,8 +1,13 @@
 scoreboard players add @s ai_timer 1
-execute if score @s ai_timer matches 80.. run function dlc:mobs/abbot/attack_decide
+
+# old timer for 3 attacks
+#execute if score @s ai_timer matches 80.. run function dlc:mobs/abbot/attack_decide
+execute if score @s ai_timer matches 120.. run function dlc:mobs/abbot/attack_decide
+
 execute as @s[tag=spear_spawn] at @s run function dlc:mobs/abbot/attack2_2
 
-execute if predicate entities:hurt at @s run function dlc:mobs/abbot/attack4
+# dash backwards if hit
+#execute if predicate entities:hurt at @s run function dlc:mobs/abbot/attack4
 
 effect give @s fire_resistance 1 0 true
 effect clear @s slowness

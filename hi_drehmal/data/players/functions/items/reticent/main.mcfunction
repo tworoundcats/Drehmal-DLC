@@ -1,4 +1,4 @@
-execute anchored eyes positioned ^ ^ ^0.5 run particle flash
+execute anchored eyes positioned ^ ^-0.5 ^0.5 run particle flash ~ ~ ~ 0 0 0 0 0
 
 playsound minecraft:dcustom.entity.iron_golem.repair player @a ~ ~ ~ 1 2
 playsound minecraft:dcustom.entity.experience_orb.pickup player @s ~ ~ ~ 1 2

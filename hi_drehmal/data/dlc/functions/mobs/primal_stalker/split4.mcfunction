@@ -61,6 +61,9 @@ execute as @e[tag=clone2] at @s run execute store result entity @s Motion[0] dou
 execute as @e[tag=clone2] at @s run execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
 execute as @e[tag=clone2] at @s run execute store result entity @s Motion[2] double 0.015 run scoreboard players get @s spm.z
 
+execute if score @s bool matches 1 as @e[tag=clone] run data modify entity @s IsBaby set value 1b
+execute if score @s bool matches 1 as @e[tag=clone2] run data modify entity @s IsBaby set value 1b
+
 tag @e[tag=clone] remove clone
 tag @e[tag=clone2] remove clone2
 

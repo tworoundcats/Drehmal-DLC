@@ -1,1 +1,1 @@
-function dlc:mobs/primal_stalker/spawn
+execute at @s unless entity @e[tag=primal_staff,type=item_display,distance=..48] run function dlc:mobs/primal_stalker/spawn

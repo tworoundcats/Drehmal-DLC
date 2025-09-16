@@ -68,7 +68,10 @@ execute store result storage drehmal:particles tempPos[2] double 0.01 run scoreb
 
 data modify entity @s Pos set from storage drehmal:particles tempPos
 
-execute unless score #particle_light.end_rod bool matches 1 facing entity @s feet run function particle:effects/lightning/light_loop
-execute if score #particle_light.end_rod bool matches 1 facing entity @s feet run function particle:effects/lightning/end_rod_loop
+execute unless score #zap bool matches 1 unless score #particle_light.end_rod bool matches 1 facing entity @s feet run function particle:effects/lightning/light_loop
+execute unless score #zap bool matches 1 if score #particle_light.end_rod bool matches 1 facing entity @s feet run function particle:effects/lightning/end_rod_loop
+
+execute if score #zap bool matches 1 facing entity @s feet run function particle:effects/lightning/zap_loop
+
 
 execute if score #loop int < #loop_sentinel int at @s run function particle:effects/beizer/loop

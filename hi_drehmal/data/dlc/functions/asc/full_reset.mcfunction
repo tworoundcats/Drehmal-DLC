@@ -13,4 +13,3 @@ execute as @e[tag=asc_wave,type=item_display] run kill @s
 bossbar set asc visible false
 scoreboard players reset #asc bool
 bossbar set asc value 0
-

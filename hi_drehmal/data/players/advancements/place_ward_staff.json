@@ -3,22 +3,16 @@
     "requirement": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "player": [
+        "location": [
           {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
+            "condition": "minecraft:match_tool",
             "predicate": {
-              "equipment": {
-                "mainhand": {
-                  "items": [
-                    "minecraft:polar_bear_spawn_egg"
-                  ]
-                }
-              }
+              "items": [
+                "minecraft:polar_bear_spawn_egg"
+              ]
             }
           }
-        ],
-        "location": []
+        ]
       }
     }
   },

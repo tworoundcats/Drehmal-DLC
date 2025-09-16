@@ -8,6 +8,7 @@ scoreboard players set #hps temp 2000
 scoreboard players operation #hps temp /= #mspeed temp
 
 execute if predicate players:holding/masayoshi run function players:items/mayo_dam
+execute if predicate players:holding/masayoshi_offhand run function players:items/mayo_dam
 
 execute as @e[type=!player,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:hurt_mob
 

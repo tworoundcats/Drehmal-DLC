@@ -16,5 +16,6 @@ execute store result score @s y3 run data get entity @s Rotation[1] 100
 effect give @s invisibility 1 10 true
 execute at @s run playsound simplyswords:dark_sword_parry player @a ~ ~ ~ 2 1
 
-tp @s ~ ~100 ~
+data modify entity @s NoGravity set value 1b
+execute in overworld run tp @s 26302.42 181.00 157.57
 schedule function entities:ai/ossein/vanish2p1 18t

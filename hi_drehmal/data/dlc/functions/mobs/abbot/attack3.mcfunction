@@ -16,9 +16,13 @@ scoreboard players operation @s spm.z -= @s spm.pz
 
 scoreboard players add @s spm.y 240
 
-execute store result entity @s Motion[0] double 0.012 run scoreboard players get @s spm.x
+
+# old jump values
+#execute store result entity @s Motion[0] double 0.012 run scoreboard players get @s spm.x
+#execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
+#execute store result entity @s Motion[2] double 0.012 run scoreboard players get @s spm.z
+
 execute store result entity @s Motion[1] double 0.01 run scoreboard players get @s spm.y
-execute store result entity @s Motion[2] double 0.012 run scoreboard players get @s spm.z
 
 tag @s add in_air
 tag @s add in_air2

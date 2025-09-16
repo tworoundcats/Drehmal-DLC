@@ -57,8 +57,10 @@ execute if score #loop_sentinel int matches 300.. run scoreboard players set #lo
 
 execute if score #loop_sentinel int matches 1.. at @s run function particle:effects/beizer/loop
 
-execute unless score #particle_light.end_rod bool matches 1 facing entity @s feet unless entity @s[distance=5..] run function particle:effects/lightning/light_loop
-execute if score #particle_light.end_rod bool matches 1 facing entity @s feet unless entity @s[distance=5..] run function particle:effects/lightning/end_rod_loop
+execute unless score #zap bool matches 1 unless score #particle_light.end_rod bool matches 1 facing entity @s feet unless entity @s[distance=5..] run function particle:effects/lightning/light_loop
+execute unless score #zap bool matches 1 if score #particle_light.end_rod bool matches 1 facing entity @s feet unless entity @s[distance=5..] run function particle:effects/lightning/end_rod_loop
+execute if score #zap bool matches 1 facing entity @s feet unless entity @s[distance=5..] run function particle:effects/lightning/zap_loop
+
 kill @s
 
 scoreboard players reset #particle_light.end_rod bool

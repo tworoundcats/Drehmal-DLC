@@ -2,7 +2,7 @@ execute unless score #low_particles? bool matches 1 run execute at @s if entity 
 effect give @s resistance 3 5 true
 effect give @s invisibility 2 5 true
 tag @s add temp_tp
-
+execute store result score @s bool run data get entity @s IsBaby
 execute at @s if entity @a[distance=..10] if predicate players:locations/xorhuul as @s run function dlc:mobs/xorhuul_explode
 execute at @s if entity @a[distance=..10] if predicate players:locations/teiruun as @s run function dlc:mobs/teiruun_explode
 
