@@ -34,6 +34,9 @@ execute if data storage drehmal:entities tempEntity.Item.tag.fzy_frag store succ
 execute if predicate entities:nether_star store success score #load_this temp run tag @s add nether_star
 execute if predicate entities:golden_apple store success score #load_this temp run tag @s add golden_apple
 execute if predicate entities:item_nondespawning run tag @s add no_magnet
+execute if predicate entities:t3 store success score #load_this temp run tag @s add gummy
+execute if predicate entities:t4 store success score #load_this temp run tag @s add gummy_nomotion
+
 execute if predicate entities:avhorse_armor if entity @e[type=horse,distance=..10,tag=avHorse,predicate=!entities:wearing_avhorse_armor] run function entities:dropped_items/unlink_avhorse_owner
 execute if predicate entities:netheritescrap store success score #load_this temp run tag @s add celestial_scrap
 execute if predicate entities:standard_backpack unless data entity @s Thrower store success score #load_this temp run tag @s add standard_backpack

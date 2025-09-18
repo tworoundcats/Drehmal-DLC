@@ -21,3 +21,4 @@ execute if score @s d.type matches 1.. run function entities:dropped_items/devot
 
 
 execute if entity @s[tag=cat] run function dlc:fishing/cat
+

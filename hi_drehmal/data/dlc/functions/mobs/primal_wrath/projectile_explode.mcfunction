@@ -1,4 +1,3 @@
-
 particle minecraft:dragon_breath ~ ~0.5 ~ 0.1 0.1 0.1 0.0 10 normal @a
 particle minecraft:explosion ~ ~-0.5 ~ 0.1 0.1 0.1 0.0 1 normal @a
 playsound minecraft:dcustom.entity.generic.explode hostile @a ~ ~ ~ 0.5 2

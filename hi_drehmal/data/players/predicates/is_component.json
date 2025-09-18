@@ -32,6 +32,30 @@
         "type": "minecraft:item",
         "nbt": "{Item:{id:\"dlc:oblivious_thing\"}}"
       }
+        },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:agony_gummy\"}}"
+      }
+    },
+        {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:luxury_gummy\"}}"
+      }
+    },
+            {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt": "{Item:{id:\"dlc:worry_gummy\"}}"
+      }
     },
     {
       "condition": "minecraft:entity_properties",

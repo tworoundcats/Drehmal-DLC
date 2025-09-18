@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "dlc:agony_gummy"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "dlc:misc/eat_agony"
+    }
+  }
+  

@@ -49,27 +49,27 @@ execute unless predicate players:wearing_comp run function players:items/comp/bu
 #--------#
 #FLESH#
 #--------#
-execute if score @s flesh_timer matches 1.. run effect give @s minecraft:hunger 1 49 true
-
-execute if score @s flesh_level matches 1 run attribute @s minecraft:generic.max_health modifier add dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2 flesh 5 add
-execute if score @s flesh_level matches 2 run attribute @s minecraft:generic.max_health modifier add 8ba9cd06-534b-4524-84b2-789c15f0acac flesh 5 add
-execute if score @s flesh_level matches 3 run attribute @s minecraft:generic.max_health modifier add 9273ff45-5bdb-4e37-8315-257ee86a92fe flesh 5 add
-execute if score @s flesh_level matches 4 run attribute @s minecraft:generic.max_health modifier add 94309d62-d204-4db8-8c1b-3ee325fe7212 flesh 5 add
-
-execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2
-execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 8ba9cd06-534b-4524-84b2-789c15f0acac
-execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 9273ff45-5bdb-4e37-8315-257ee86a92fe
-execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 94309d62-d204-4db8-8c1b-3ee325fe7212
-
-execute if score @s flesh_level matches 1 run particle dust 0.68 0.0 0.0 1 ~ ~0.25 ~ 0.2 -0.25 0.2 9 5
-execute if score @s flesh_level matches 2 run particle dust 0.58 0.0 0.0 1 ~ ~0.25 ~ 0.225 -0.25 0.225 9 7
-execute if score @s flesh_level matches 3 run particle dust 0.48 0.0 0.0 1 ~ ~0.25 ~ 0.25 -0.25 0.25 9 10
-execute if score @s flesh_level matches 4 run particle dust 0.38 0.0 0.0 1 ~ ~0.25 ~ 0.275 -0.25 0.275 9 15
-
-execute if score @s flesh_level matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_level
-execute if score @s flesh_timer matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_timer
-execute unless score @s flesh_timer matches ..0 run scoreboard players remove @s flesh_timer 1
-execute if score @s flesh_timer matches ..0 run scoreboard players set @s flesh_level 0
+#execute if score @s flesh_timer matches 1.. run effect give @s minecraft:hunger 1 49 true
+#
+#execute if score @s flesh_level matches 1 run attribute @s minecraft:generic.max_health modifier add dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2 flesh 5 add
+#execute if score @s flesh_level matches 2 run attribute @s minecraft:generic.max_health modifier add 8ba9cd06-534b-4524-84b2-789c15f0acac flesh 5 add
+#execute if score @s flesh_level matches 3 run attribute @s minecraft:generic.max_health modifier add 9273ff45-5bdb-4e37-8315-257ee86a92fe flesh 5 add
+#execute if score @s flesh_level matches 4 run attribute @s minecraft:generic.max_health modifier add 94309d62-d204-4db8-8c1b-3ee325fe7212 flesh 5 add
+#
+#execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove dc9e15b1-0724-41bf-9d7b-8b831d1c2ee2
+#execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 8ba9cd06-534b-4524-84b2-789c15f0acac
+#execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 9273ff45-5bdb-4e37-8315-257ee86a92fe
+#execute if score @s flesh_level matches ..0 run attribute @s minecraft:generic.max_health modifier remove 94309d62-d204-4db8-8c1b-3ee325fe7212
+#
+#execute if score @s flesh_level matches 1 run particle dust 0.68 0.0 0.0 1 ~ ~0.25 ~ 0.2 -0.25 0.2 9 5
+#execute if score @s flesh_level matches 2 run particle dust 0.58 0.0 0.0 1 ~ ~0.25 ~ 0.225 -0.25 0.225 9 7
+#execute if score @s flesh_level matches 3 run particle dust 0.48 0.0 0.0 1 ~ ~0.25 ~ 0.25 -0.25 0.25 9 10
+#execute if score @s flesh_level matches 4 run particle dust 0.38 0.0 0.0 1 ~ ~0.25 ~ 0.275 -0.25 0.275 9 15
+#
+#execute if score @s flesh_level matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_level
+#execute if score @s flesh_timer matches -100.. unless predicate players:holding/flesh run scoreboard players reset @s flesh_timer
+#execute unless score @s flesh_timer matches ..0 run scoreboard players remove @s flesh_timer 1
+#execute if score @s flesh_timer matches ..0 run scoreboard players set @s flesh_level 0
 
 #--------#
 #AVRAD#
@@ -944,9 +944,16 @@ execute as @s[tag=primal_dead] run function dlc:primal_journey/spectate
 
 execute as @s[predicate=players:in_primal_journey] unless score @s playingMusic matches 1.. run stopsound @s music
 
-#weaver needle
+# weaver needle
 execute as @s[scores={weaver=1..}] run function players:items/weaver/use
 
-#lunar sunscreen
+# lunar sunscreen
 execute as @s[scores={lunar=1..}] run function players:items/lunar/use
 execute as @s[tag=lunar] run function players:items/lunar/main
+
+# fervor gummies
+execute as @s[scores={gummy=1..},tag=!gummy] run function players:items/gummy/use
+execute as @s[tag=gummy] run function players:items/gummy/main
+execute as @s[tag=dash2] run function players:items/gummy/worry_timer
+execute as @s[tag=worry2] run function players:items/gummy/worry_timer2
+execute as @s[tag=luxury] run function players:items/gummy/luxury_timer

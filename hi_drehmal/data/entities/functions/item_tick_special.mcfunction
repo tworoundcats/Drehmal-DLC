@@ -34,3 +34,6 @@ execute if entity @s[tag=dummy,tag=!dummy2] run function dlc:modify/dummy
 execute if entity @s[tag=starfall,tag=!starfall2] run function dlc:modify/starfall
 
 execute if entity @s[tag=starfall_glow,tag=!starfall_glow2] run function dlc:modify/starfall2
+
+execute if entity @s[tag=gummy] run function players:items/gummy/convert
+execute if entity @s[tag=gummy_nomotion] run function players:items/gummy/convert_nomotion

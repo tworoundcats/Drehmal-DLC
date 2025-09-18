@@ -1,0 +1,16 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 6,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t3"
+        }
+      ]
+    }
+  ]
+}

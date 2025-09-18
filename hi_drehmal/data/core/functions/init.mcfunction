@@ -1023,7 +1023,6 @@ scoreboard objectives add asc_cd dummy
 scoreboard objectives add cal_cd dummy
 scoreboard objectives add fre_cd dummy
 scoreboard objectives add zed dummy
-scoreboard objectives add syz_cd dummy
 scoreboard objectives add shoot minecraft.used:crossbow
 
 scoreboard objectives add soul_burn dummy
@@ -1218,6 +1217,10 @@ scoreboard objectives add moment minecraft.used:dlc.moments_peace
 scoreboard objectives add weaver minecraft.used:dlc.weaver_needle
 scoreboard objectives add lunar minecraft.used:dlc.lunar_sunscreen
 scoreboard objectives add lunar_timer dummy
+scoreboard objectives add gummy minecraft.used:dlc.fervor_gummies
+scoreboard objectives add worry_timer dummy
+scoreboard objectives add realtemp dummy
+scoreboard objectives add luxury dummy
 
 scoreboard objectives add suffer dummy
 
@@ -1239,3 +1242,5 @@ team modify court color gold
 
 scoreboard objectives add as_foretold dummy
 scoreboard objectives add mb_run dummy
+
+scoreboard objectives add truetemp dummy

@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#entities:highcapacity",
+        "#entities:dummy",
+        "#entities:proj"
+
+        
+    ]
+  }
