@@ -89,4 +89,5 @@ recipe take @s weapons:starry
 recipe take @s weapons:blaze
 execute as @s run function weapons:grant
 scoreboard players enable @s dlc
+scoreboard players enable @a tgrptch.quest_deny
 scoreboard players enable @s sex

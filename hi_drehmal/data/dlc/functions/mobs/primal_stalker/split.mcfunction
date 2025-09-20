@@ -16,6 +16,7 @@ execute store result score @s y3 run data get entity @s Rotation[1] 100
 
 effect give @s invisibility 1 10 true
 execute at @s run playsound simplyswords:dark_sword_parry player @a ~ ~ ~ 2 2
-
-tp @s ~ ~100 ~
+data modify entity @s Invulnerable set value 1b
+data modify entity @s Silent set value 1b
+tp @s ~ ~-5 ~
 scoreboard players reset @s ai_timer

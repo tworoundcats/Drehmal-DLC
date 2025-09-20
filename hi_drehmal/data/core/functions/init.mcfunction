@@ -1133,7 +1133,7 @@ scoreboard objectives add healthDifference dummy
 scoreboard objectives add health health
 scoreboard objectives add avHorseID_b dummy
 scoreboard objectives add anyr_timer dummy
-scoreboard objectives add destinyc dummy
+#scoreboard objectives add destinyc dummy
 scoreboard objectives add mastermode dummy
 difficulty hard 
 scoreboard objectives add shielded_cd dummy
@@ -1142,31 +1142,31 @@ scoreboard objectives add levi_cool dummy
 
 scoreboard players set #DLC bool 1
 
-scoreboard objectives add common dummy
-scoreboard objectives add rare dummy
+#scoreboard objectives add common dummy
+#scoreboard objectives add rare dummy
 scoreboard objectives add legendary dummy
 scoreboard objectives add mythic dummy
-scoreboard objectives add unspoken dummy
-scoreboard objectives add creature dummy
+#scoreboard objectives add unspoken dummy
+#scoreboard objectives add creature dummy
 
-scoreboard objectives add sf_mod_pointsGainRate dummy
-scoreboard objectives add sf_mod_pointsLossRate dummy
-scoreboard objectives add sf_mod_fishAccelerationMultiplier dummy
-scoreboard objectives add sf_mod_fishSpeedMultiplier dummy
-scoreboard objectives add sf_failCatchChance dummy
-scoreboard objectives add sf_bite_time_reduction dummy
-scoreboard objectives add sf_mod_markerSpeedMultiplier dummy
-scoreboard objectives add sf_nocturnal_day_chance dummy
-scoreboard objectives add sf_upgrade_chance dummy
+#scoreboard objectives add sf_mod_pointsGainRate dummy
+#scoreboard objectives add sf_mod_pointsLossRate dummy
+#scoreboard objectives add sf_mod_fishAccelerationMultiplier dummy
+#scoreboard objectives add sf_mod_fishSpeedMultiplier dummy
+#scoreboard objectives add sf_failCatchChance dummy
+#scoreboard objectives add sf_bite_time_reduction dummy
+#scoreboard objectives add sf_mod_markerSpeedMultiplier dummy
+#scoreboard objectives add sf_nocturnal_day_chance dummy
+#scoreboard objectives add sf_upgrade_chance dummy
 
-scoreboard objectives add scc dummy
+#scoreboard objectives add scc dummy
 scoreboard objectives add catch_old dummy
 scoreboard objectives add catch_timer dummy
 
-scoreboard objectives add common_to_rare dummy
-scoreboard objectives add rare_to_legendary dummy
-scoreboard objectives add legendary_to_mythic dummy
-scoreboard objectives add mythic_to_unspoken dummy
+#scoreboard objectives add common_to_rare dummy
+#scoreboard objectives add rare_to_legendary dummy
+#scoreboard objectives add legendary_to_mythic dummy
+#scoreboard objectives add mythic_to_unspoken dummy
 
 scoreboard objectives add rare_chance dummy
 setblock 26516 168 -88 white_concrete
@@ -1221,6 +1221,7 @@ scoreboard objectives add gummy minecraft.used:dlc.fervor_gummies
 scoreboard objectives add worry_timer dummy
 scoreboard objectives add realtemp dummy
 scoreboard objectives add luxury dummy
+scoreboard objectives add runic minecraft.used:dlc.runic_hoard
 
 scoreboard objectives add suffer dummy
 

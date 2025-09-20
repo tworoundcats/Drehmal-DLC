@@ -5,12 +5,12 @@
   "nbt": "{CustomPotionColor:8380347}"
     },
       "title": {
-        "text": "I Can't Stop Winning!",
+        "text": "Jackpot!",
         "color": "#16f63b",
         "italic": false
       },
       "description": {
-        "text": "Jackpot! - Roll the highest-tier rewards from a Runic Hoard two times in a row.",
+        "text": "I Can't Stop Winning! - Roll the highest-tier rewards from a Runic Hoard two times in a row.",
         "color": "gray",
         "italic": false
       },

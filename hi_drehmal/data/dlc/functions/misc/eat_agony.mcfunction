@@ -33,3 +33,6 @@ scoreboard players operation @s sy_cool /= #10 const
 
 scoreboard players operation @s levi_cool *= #9 const
 scoreboard players operation @s levi_cool /= #10 const
+
+execute at @s run playsound simplyswords:elemental_bow_sci-fi_shoot_impact_03 player @a ~ ~ ~ 0.7 2
+execute at @s run particle dust 0.416 0.098 0.675 2 ~ ~0.5 ~ 0.4 0.4 0.4 0 20

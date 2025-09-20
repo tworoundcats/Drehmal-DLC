@@ -957,3 +957,6 @@ execute as @s[tag=gummy] run function players:items/gummy/main
 execute as @s[tag=dash2] run function players:items/gummy/worry_timer
 execute as @s[tag=worry2] run function players:items/gummy/worry_timer2
 execute as @s[tag=luxury] run function players:items/gummy/luxury_timer
+
+# runic hoard
+execute as @s[scores={runic=1..}] run function players:items/runic_hoard/use
