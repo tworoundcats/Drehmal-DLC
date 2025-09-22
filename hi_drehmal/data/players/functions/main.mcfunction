@@ -960,3 +960,6 @@ execute as @s[tag=luxury] run function players:items/gummy/luxury_timer
 
 # runic hoard
 execute as @s[scores={runic=1..}] run function players:items/runic_hoard/use
+
+# 👁️‍🗨️
+execute as @s[scores={what=1..}] run function dlc:misc/what

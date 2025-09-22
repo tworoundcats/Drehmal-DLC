@@ -1,0 +1,117 @@
+{
+    "parent": "minecraft:item/handheld",
+
+ "overrides": [
+{"predicate": {"custom_model_data":1000000}, "model": "item/runic_catalyst"},
+{"predicate": {"custom_model_data":1000001}, "model": "item/proj/bitch_laser"},
+{"predicate": {"custom_model_data":1000002}, "model": "item/flying_bitch"},
+{"predicate": {"custom_model_data":1000003}, "model": "item/proj/worm_laser"},
+{"predicate": {"custom_model_data":1000004}, "model": "item/grenade"},
+{"predicate": {"custom_model_data":1000005}, "model": "item/proj/moonbeam"},
+{"predicate": {"custom_model_data":1000006}, "model": "item/seaserpbody"},
+{"predicate": {"custom_model_data":1000007}, "model": "item/proj/fear_spear"},
+{"predicate": {"custom_model_data":1000008}, "model": "item/portal1"},
+{"predicate": {"custom_model_data":1000009}, "model": "item/portal2"},
+{"predicate": {"custom_model_data":1000010}, "model": "item/portal3"},
+{"predicate": {"custom_model_data":1000011}, "model": "item/proj/oby_spike"},
+{"predicate": {"custom_model_data":1000012}, "model": "item/proj/twilight_knife"},
+{"predicate": {"custom_model_data":1000013}, "model": "item/seaserptail"},
+{"predicate": {"custom_model_data":1000014}, "model": "item/relic_vessel"},
+{"predicate": {"custom_model_data":1000015}, "model": "item/keyfob"},
+{"predicate": {"custom_model_data":1000016}, "model": "item/heart_green"},
+{"predicate": {"custom_model_data":1000017}, "model": "item/heart"},
+{"predicate": {"custom_model_data":1000018}, "model": "item/mcguffin"},
+{"predicate": {"custom_model_data":1000019}, "model": "item/malevolentia_image"},
+{"predicate": {"custom_model_data":1000020}, "model": "item/stone_of_agony"},
+{"predicate": {"custom_model_data":1000021}, "model": "item/stone_of_luxury"},
+{"predicate": {"custom_model_data":1000022}, "model": "item/stone_of_worry"},
+{"predicate": {"custom_model_data":1000023}, "model": "item/pale_ore"},
+{"predicate": {"custom_model_data":1000024}, "model": "item/seashell"},
+{"predicate": {"custom_model_data":1000025}, "model": "item/fishing_rod_cast"},
+{"predicate": {"custom_model_data":1000026}, "model": "item/fishing_hook"},
+
+
+{"predicate": {"custom_model_data":1001000}, "model": "item/relic/ardorbrand/0"},
+{"predicate": {"custom_model_data":1001001}, "model": "item/relic/ardorbrand/1"},
+{"predicate": {"custom_model_data":1001002}, "model": "item/relic/ardorbrand/2"},
+{"predicate": {"custom_model_data":1001003}, "model": "item/relic/ardorbrand/3"},
+
+{"predicate": {"custom_model_data":1002000}, "model": "item/relic/effloresce/0"},
+{"predicate": {"custom_model_data":1002001}, "model": "item/relic/effloresce/1"},
+{"predicate": {"custom_model_data":1002002}, "model": "item/relic/effloresce/2"},
+{"predicate": {"custom_model_data":1002003}, "model": "item/relic/effloresce/3"},
+
+{"predicate": {"custom_model_data":1003000}, "model": "item/relic/anguish/0"},
+{"predicate": {"custom_model_data":1003001}, "model": "item/relic/anguish/1"},
+{"predicate": {"custom_model_data":1003002}, "model": "item/relic/anguish/2"},
+{"predicate": {"custom_model_data":1003003}, "model": "item/relic/anguish/3"},
+
+{"predicate": {"custom_model_data":1004000}, "model": "item/relic/rihelma/0"},
+{"predicate": {"custom_model_data":1004001}, "model": "item/relic/rihelma/1"},
+{"predicate": {"custom_model_data":1004002}, "model": "item/relic/rihelma/2"},
+{"predicate": {"custom_model_data":1004003}, "model": "item/relic/rihelma/3"},
+
+{"predicate": {"custom_model_data":1005000}, "model": "item/relic/khive/0"},
+{"predicate": {"custom_model_data":1005001}, "model": "item/relic/khive/1"},
+{"predicate": {"custom_model_data":1005002}, "model": "item/relic/khive/2"},
+{"predicate": {"custom_model_data":1005003}, "model": "item/relic/khive/3"},
+
+{"predicate": {"custom_model_data":1006000}, "model": "item/relic/voynahla/0"},
+{"predicate": {"custom_model_data":1006001}, "model": "item/relic/voynahla/1"},
+{"predicate": {"custom_model_data":1006002}, "model": "item/relic/voynahla/2"},
+{"predicate": {"custom_model_data":1006003}, "model": "item/relic/voynahla/3"},
+
+{"predicate": {"custom_model_data":1007000}, "model": "item/pearl_black"},
+{"predicate": {"custom_model_data":1007001}, "model": "item/pearl_blue"},
+{"predicate": {"custom_model_data":1007002}, "model": "item/pearl_yellow"},
+{"predicate": {"custom_model_data":1007003}, "model": "item/pearl_red"},
+{"predicate": {"custom_model_data":1007004}, "model": "item/pearl_grey"},
+{"predicate": {"custom_model_data":1007005}, "model": "item/pearl_white"},
+
+{"predicate": {"custom_model_data":69696969}, "model": "item/temp_emissary_thing"},
+
+{"predicate": {"custom_model_data":1008000}, "model": "item/relic/vayniklah/0"},
+{"predicate": {"custom_model_data":1008001}, "model": "item/relic/vayniklah/1"},
+{"predicate": {"custom_model_data":1008002}, "model": "item/relic/vayniklah/2"},
+{"predicate": {"custom_model_data":1008003}, "model": "item/relic/vayniklah/3"},
+
+{"predicate": {"custom_model_data":1009000}, "model": "item/relic/loe/0"},
+{"predicate": {"custom_model_data":1009001}, "model": "item/relic/loe/1"},
+{"predicate": {"custom_model_data":1009002}, "model": "item/relic/loe/2"},
+{"predicate": {"custom_model_data":1009003}, "model": "item/relic/loe/3"},
+
+{"predicate": {"custom_model_data":1010000}, "model": "item/relic/dahr/0"},
+{"predicate": {"custom_model_data":1010001}, "model": "item/relic/dahr/1"},
+{"predicate": {"custom_model_data":1010002}, "model": "item/relic/dahr/2"},
+{"predicate": {"custom_model_data":1010003}, "model": "item/relic/dahr/3"},
+
+{"predicate": {"custom_model_data":1011000}, "model": "item/relic/taihgel/0"},
+{"predicate": {"custom_model_data":1011001}, "model": "item/relic/taihgel/1"},
+{"predicate": {"custom_model_data":1011002}, "model": "item/relic/taihgel/2"},
+{"predicate": {"custom_model_data":1011003}, "model": "item/relic/taihgel/3"},
+
+{"predicate": {"custom_model_data":1012000}, "model": "item/relic/virtuo/0"},
+{"predicate": {"custom_model_data":1012001}, "model": "item/relic/virtuo/1"},
+{"predicate": {"custom_model_data":1012002}, "model": "item/relic/virtuo/2"},
+{"predicate": {"custom_model_data":1012003}, "model": "item/relic/virtuo/3"},
+
+{"predicate": {"custom_model_data":1182001}, "model": "item/questorbs/drehmal"},
+{"predicate": {"custom_model_data":1182002}, "model": "item/questorbs/mael"},
+{"predicate": {"custom_model_data":1182003}, "model": "item/questorbs/virtuo"},
+{"predicate": {"custom_model_data":1182004}, "model": "item/questorbs/khive"},
+{"predicate": {"custom_model_data":1182005}, "model": "item/questorbs/dahr"},
+{"predicate": {"custom_model_data":1182006}, "model": "item/questorbs/rihelma"},
+{"predicate": {"custom_model_data":1182007}, "model": "item/questorbs/taihgel"},
+{"predicate": {"custom_model_data":1182008}, "model": "item/questorbs/vay"},
+{"predicate": {"custom_model_data":1182009}, "model": "item/questorbs/voy"},
+{"predicate": {"custom_model_data":1182010}, "model": "item/questorbs/lai"},
+{"predicate": {"custom_model_data":1182011}, "model": "item/questorbs/loe"},
+{"predicate": {"custom_model_data":1182012}, "model": "item/proj/bone_spike"},
+{"predicate": {"custom_model_data":1182013}, "model": "item/proj/abbot_spear"},
+
+
+   {"predicate": {"custom_model_data":33333333}, "model": "item/green"}
+
+
+]
+}

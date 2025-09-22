@@ -1222,6 +1222,7 @@ scoreboard objectives add worry_timer dummy
 scoreboard objectives add realtemp dummy
 scoreboard objectives add luxury dummy
 scoreboard objectives add runic minecraft.used:dlc.runic_hoard
+scoreboard objectives add what minecraft.used:dlc.eye_of_rot
 
 scoreboard objectives add suffer dummy
 

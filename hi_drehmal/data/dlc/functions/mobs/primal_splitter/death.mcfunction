@@ -1,5 +1,4 @@
 summon area_effect_cloud ~ ~ ~ {Effects:[{Id:19,Amplifier:1,Duration:120}],Duration:8,Radius:3f,RadiusPerTick:0.2f}
-execute as @p[predicate=players:wearing_parenchyma,distance=..6] run function players:items/parenchyma/kill
 
 
 summon cave_spider ~ ~1 ~ {Motion:[-0.3,0.3,0.0],DeathLootTable:"empty",Tags:[primal_splitter_child,"day_aggro"]}

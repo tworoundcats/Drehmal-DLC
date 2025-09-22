@@ -1,0 +1,68 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/blue_flash.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/yellow_flash.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE001"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/purple_flash.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE002"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "minecraft:item/flash_50.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE003"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/black_flash.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE004"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/gay.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": ["\uE005"]
+        },
+                        {
+            "type": "bitmap",
+            "file": "minecraft:item/flash_100.png",
+            "ascent": 128,
+            "height": 1024,
+            "chars": ["\uE006"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/flash_disable.png",
+            "ascent": 128,
+            "height": 128,
+            "chars": ["\uE007"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/what.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": ["\uE008"]
+        }
+        
+    ]
+}

@@ -1,0 +1,48 @@
+{
+	"schemaVersion": 1,
+	"id": "dlc",
+	"version": "${version}",
+	"name": "Drehmal DLC",
+	"description": "This includes most required resources for the DLC to run.",
+	"authors": [
+		"tworoundcats"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/modpack/drehmal-apotheosis-2.2-dlc",
+		"sources": "https://github.com/tworoundthings/Drehmal-DLC"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/dlc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tworoundcats.dlc.DrehmalDlc"
+		],
+		"client": [
+			"net.tworoundcats.dlc.DrehmalDlcClient"
+		],
+		"fabric-datagen": [
+			"net.tworoundcats.dlc.DrehmalDlcDataGenerator"
+		]
+	},
+	"custom": {
+		"fabric-resource-loader:mod_resources": {
+			"pack": {
+				"enabled": true,
+				"priority": "highest",
+				"mixins": [
+					"dlc.mixins.json"
+				],
+				"depends": {
+					"fabricloader": ">=0.16.10",
+					"minecraft": "~1.20.1",
+					"java": ">=17",
+					"fabric-api": "*"
+				},
+				"suggests": {
+					"another-mod": "*"
+				}
+			}
+		}
+	}
+}

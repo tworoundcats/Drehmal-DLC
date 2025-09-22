@@ -1,0 +1,2 @@
+give @s dlc:primal_fragments{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"These are fragments of pure energy that"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"gives a Primal its form, captured and solidified"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"right at the moment of its death."}],"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Primal Fragments"}],"text":""}'}}
+execute at @s run kill @e[type=item,distance=..2]

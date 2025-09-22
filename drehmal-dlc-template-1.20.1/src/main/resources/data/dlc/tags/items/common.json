@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:fishes",
+    "dlc:driftfin",
+    "dlc:pebblefish",
+    "dlc:stoneskitter",
+    "dlc:stripeback",
+    "dlc:whiskerbelly",
+    "dlc:bronzescale",
+    "dlc:cloudswimmer",
+    "dlc:fleckscale",
+    "dlc:skydarter",
+    "dlc:t1"
+  ]
+}

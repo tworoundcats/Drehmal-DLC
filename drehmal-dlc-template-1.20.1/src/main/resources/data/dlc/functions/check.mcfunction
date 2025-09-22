@@ -1,0 +1,1 @@
+schedule function dlc:check_install 2t

@@ -1,0 +1,6 @@
+{
+  "parent": "item/fishing_rod",
+  "textures": {
+    "layer0": "dlc:item/branched_spruce_rod_cast"
+  }
+}

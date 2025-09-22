@@ -1,0 +1,8 @@
+{
+  "death.attack.radiation":  "%1$s experienced rapid onset acute radiation poisioning",
+  "death.attack.radiation.player":  "%1$s experienced rapid onset acute radiation poisioning while fighting %2$s",
+  "death.attack.avrad":  "%1$s was shot",
+  "death.attack.avrad.player":  "%1$s was shot while fighting %2$s",
+  "death.attack.fdry_blown":  "%1$s was blown to bits",
+  "death.attack.fdry_blown.player":  "%1$s was blown to bits while fighting %2$s"
+}

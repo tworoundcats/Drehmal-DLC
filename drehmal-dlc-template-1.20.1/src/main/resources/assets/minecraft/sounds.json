@@ -1,0 +1,102 @@
+{
+  "custom.shatterhorn": {
+    "sounds": [
+      "custom/shatterhorn"
+    ]
+  },
+  "custom.furtherance" : {
+    "sounds":[
+      "custom/furtherance"
+    ]
+  },
+  "custom.xorhuul" : {
+    "sounds":[
+      "custom/xorhuul"
+    ]
+  },
+  "custom.obsolescence" : {
+    "sounds":[
+      "custom/obsolescence"
+    ]
+  },
+  "custom.obsolescence_loop" : {
+    "sounds":[
+      "custom/obsolescence_loop"
+    ]
+  },
+  "custom.obsolescence_defeat" : {
+    "sounds":[
+      "custom/obsolescence_defeat"
+    ]
+  },
+  "custom.generic_unspoken": {
+    "sounds": [
+      "custom/generic_unspoken"
+    ]
+  },
+  "custom.generic_masterwork": {
+    "sounds": [
+      "custom/generic_masterwork"
+    ]
+  },
+  "custom.generals_victory": {
+    "sounds": [
+      "custom/generals_victory"
+    ]
+  },
+  "custom.generals_intro": {
+    "sounds": [
+      "custom/generals_intro"
+    ]
+  },
+  "custom.aegis_fanfare": {
+    "sounds": [
+      "custom/aegis_fanfare"
+    ]
+  },
+  "custom.destiny_fanfare": {
+    "sounds": [
+      "custom/destiny_fanfare"
+    ]
+  },
+  "custom.dreadnaught_post_ambience": {
+    "sounds": [
+      "custom/dreadnaught_post_ambience"
+    ]
+  },
+  "custom.sanctum_effect_1": {
+    "sounds": [
+      "custom/sanctum_effect_1"
+    ]
+  },
+  "custom.sanctum_effect_2": {
+    "sounds": [
+      "custom/sanctum_effect_2"
+    ]
+  },
+  "custom.sanctum_effect_3": {
+    "sounds": [
+      "custom/sanctum_effect_3"
+    ]
+  },
+  "custom.sanctum_effect_4": {
+    "sounds": [
+      "custom/sanctum_effect_4"
+    ]
+  },
+  "custom.salanyr": {
+    "sounds": [
+      "custom/salanyr"
+    ]
+  },
+  "custom.burnt_generals": {
+    "sounds": [
+      "custom/burnt_generals"
+    ]
+  },
+  "custom.avrad_fanfare": {
+    "sounds": [
+      "custom/avrad_fanfare"
+    ]
+  }
+}

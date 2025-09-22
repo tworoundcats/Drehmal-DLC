@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/fishing_rod_cast",
+  "textures": {
+    "layer0": "dlc:item/composite_rod_cast"
+  }
+}

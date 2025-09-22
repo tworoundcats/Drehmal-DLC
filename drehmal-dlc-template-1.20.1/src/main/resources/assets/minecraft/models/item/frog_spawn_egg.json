@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/spawn_egg_2D",
+  "textures": {
+    "texture": "minecraft:optifine/cit/armor/pearlescent/netherite_chestplate"
+  }
+}

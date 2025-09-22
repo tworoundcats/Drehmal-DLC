@@ -29,6 +29,6 @@ execute positioned ^-1 ^ ^2.75 run summon marker ~ ~ ~ {Tags:["theocratic_hitbox
 
 execute positioned ^-2.5 ^ ^2.25 run summon marker ~ ~ ~ {Tags:["theocratic_hitbox"]}
 
-execute as @e[tag=theocratic_hitbox] positioned as @s positioned ~ ~ ~ run damage @a[distance=..1.6] amount 18 bifurcated
+execute as @e[tag=theocratic_hitbox] positioned as @s positioned ~ ~ ~ as @a[distance=..1.6] run damage @s 18 bifurcated
 
 kill @e[tag=theocratic_hitbox]

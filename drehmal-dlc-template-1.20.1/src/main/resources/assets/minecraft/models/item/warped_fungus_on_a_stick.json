@@ -1,0 +1,110 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "item/avsaber/avsaberhilt"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/avsaber/avsaber"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "item/avpod"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "item/prismatic_mace"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "item/mb/depowered"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "item/mb/left"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "item/mb/right"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "item/mb/shaft"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "item/mb/charged"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "item/mb/perfect"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "item/warphorse_reciever"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "item/khive_scroll"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 13
+      },
+      "model": "item/warpplayer_receiver"
+    },
+            {
+      "predicate": {
+        "custom_model_data": 14
+      },
+      "model": "item/avsaber/avsaber2"
+    },
+            {
+      "predicate": {
+        "custom_model_data": 15
+      },
+      "model": "item/avsaber/avsaberhilt2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 114
+      },
+      "model": "item/magic_chainsaw"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 115
+      },
+      "model": "item/magic_chainsaw_noblade"
+    }
+  ],
+  "textures": {
+    "layer0": "minecraft:item/warped_fungus_on_a_stick"
+  }
+}
