@@ -146,6 +146,7 @@ public class ModItems {
     public static final Item EIGHT = registerItem("eight", new Item(new FabricItemSettings()));
     public static final Item FOUR = registerItem("four", new Item(new FabricItemSettings()));
     public static final Item EYE_OF_ROT = registerItem("eye_of_rot", new RightClickItem(new FabricItemSettings()));
+    public static final Item QUESTMARKER = registerItem("questmarker", new Item(new FabricItemSettings()));
 
 
     // --- FISHING RODS ---

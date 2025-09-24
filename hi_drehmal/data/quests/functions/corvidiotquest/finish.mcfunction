@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"An Artist's Anguish","underlined":true},{"text":"\n"},{"text":"Retrieve Corv Ihd's Painting","italic":true,"color":"gray"}]
-execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~2 {Value:12}
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~1 {Value:12}
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~2 {Value:12}

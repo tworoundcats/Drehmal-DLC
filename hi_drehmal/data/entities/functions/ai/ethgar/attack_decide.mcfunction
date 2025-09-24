@@ -2,6 +2,9 @@ function core:rng
 scoreboard players operation @s temp = #rand temp
 scoreboard players operation @s temp %= #3 const
 
+execute if predicate entities:in_lava run particle flash 27339.50 152.00 747.50
+execute if predicate entities:in_lava run playsound minecraft:dcustom.entity.fox.teleport player @a ~ ~ ~ 1 2
+execute if predicate entities:in_lava run tp @s 27339.50 152.00 747.50
 
 scoreboard players reset @s ai_timer2
 scoreboard players reset @s ai_state2

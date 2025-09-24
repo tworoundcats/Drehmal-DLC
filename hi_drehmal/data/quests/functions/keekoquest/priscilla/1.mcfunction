@@ -1,3 +1,3 @@
 execute positioned 505.51 67.00 1835.52 as @p at @s run tellraw @s ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> KITTY! You found a picture of Priscilla! I'll buy that off of you\u20145 scales!"}]
-execute positioned 505.51 67.00 1835.52 as @p at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
+execute positioned 505.51 67.00 1835.52 as @p at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
 execute positioned 505.51 67.00 1835.52 as @p at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40

@@ -143,25 +143,25 @@ execute if score #gotShardOfNothing bool matches 1 run advancement grant @s only
 execute if score #gotSpark bool matches 1 run advancement grant @s only weapons:spark
 
 #quests
-execute if score #questmaster bool matches 1 run advancement grant @s only dlc:questmaster
-execute if score #archeology bool matches 1 run advancement grant @s only dlc:archeology
-execute if score #chris bool matches 1 run advancement grant @s only dlc:chris
-execute if score #cold bool matches 1 run advancement grant @s only dlc:cold
-execute if score #corvid bool matches 1 run advancement grant @s only dlc:corvid
-execute if score #daniel bool matches 1 run advancement grant @s only dlc:daniel
-execute if score #dome bool matches 1 run advancement grant @s only dlc:dome
-execute if score #gamer bool matches 1 run advancement grant @s only dlc:gamer
-execute if score #gragas bool matches 1 run advancement grant @s only dlc:gragas
-execute if score #mahkar bool matches 1 run advancement grant @s only dlc:mahkar
-execute if score #melon bool matches 1 run advancement grant @s only dlc:melon
-execute if score #mouton bool matches 1 run advancement grant @s only dlc:mouton
-execute if score #rift bool matches 1 run advancement grant @s only dlc:rift
-execute if score #safe bool matches 1 run advancement grant @s only dlc:safe
-execute if score #study bool matches 1 run advancement grant @s only dlc:study
-execute if score #tahlros bool matches 1 run advancement grant @s only dlc:tahlros
-execute if score #tidal bool matches 1 run advancement grant @s only dlc:tidal
-execute if score #weller_fail bool matches 1 run advancement grant @s only dlc:weller_fail
-execute if score #weller bool matches 1 run advancement grant @s only dlc:weller
+execute unless score #DLC repeatable matches 1 if score #questmaster bool matches 1 run advancement grant @s only dlc:questmaster
+execute unless score #DLC repeatable matches 1 if score #archeology bool matches 1 run advancement grant @s only dlc:archeology
+execute unless score #DLC repeatable matches 1 if score #chris bool matches 1 run advancement grant @s only dlc:chris
+execute unless score #DLC repeatable matches 1 if score #cold bool matches 1 run advancement grant @s only dlc:cold
+execute unless score #DLC repeatable matches 1 if score #corvid bool matches 1 run advancement grant @s only dlc:corvid
+execute unless score #DLC repeatable matches 1 if score #daniel bool matches 1 run advancement grant @s only dlc:daniel
+execute unless score #DLC repeatable matches 1 if score #dome bool matches 1 run advancement grant @s only dlc:dome
+execute unless score #DLC repeatable matches 1 if score #gamer bool matches 1 run advancement grant @s only dlc:gamer
+execute unless score #DLC repeatable matches 1 if score #gragas bool matches 1 run advancement grant @s only dlc:gragas
+execute unless score #DLC repeatable matches 1 if score #mahkar bool matches 1 run advancement grant @s only dlc:mahkar
+execute unless score #DLC repeatable matches 1 if score #melon bool matches 1 run advancement grant @s only dlc:melon
+execute unless score #DLC repeatable matches 1 if score #mouton bool matches 1 run advancement grant @s only dlc:mouton
+execute unless score #DLC repeatable matches 1 if score #rift bool matches 1 run advancement grant @s only dlc:rift
+execute unless score #DLC repeatable matches 1 if score #safe bool matches 1 run advancement grant @s only dlc:safe
+execute unless score #DLC repeatable matches 1 if score #study bool matches 1 run advancement grant @s only dlc:study
+execute unless score #DLC repeatable matches 1 if score #tahlros bool matches 1 run advancement grant @s only dlc:tahlros
+execute unless score #DLC repeatable matches 1 if score #tidal bool matches 1 run advancement grant @s only dlc:tidal
+execute unless score #DLC repeatable matches 1 if score #weller_fail bool matches 1 run advancement grant @s only dlc:weller_fail
+execute unless score #DLC repeatable matches 1 if score #weller bool matches 1 run advancement grant @s only dlc:weller
 
 #other advancements
 execute if score #generals_dead? bool matches 1 run advancement grant @s only dlc:generals

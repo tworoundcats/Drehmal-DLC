@@ -1,5 +1,5 @@
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Diversely Devout","underlined":true},{"text":"\n"},{"text":"Bring Daniel 5 Orbs of Primal Energy","italic":true,"color":"gray"}]
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run summon experience_orb ~ ~ ~2 {Value:12}
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run summon experience_orb ~ ~ ~1 {Value:12}
 execute positioned ~ ~ ~ as @p[tag=qst13] at @s run summon experience_orb ~ ~ ~2 {Value:12}

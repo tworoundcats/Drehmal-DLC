@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> ","color":"white"},{"text":"In fact, if you'd like, you can take Eddie along with you, too! I'm sure he'd be happy to come on your adventure and get out of this place."}]
-execute positioned ~ ~ ~ as @p[tag=qst] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
+execute at @e[tag=keeko] run tellraw @a[distance=..12] ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> ","color":"white"},{"text":"In fact, if you'd like, you can take Eddie along with you, too! I'm sure he'd be happy to come on your adventure and get out of this place."}]
+execute at @e[tag=keeko] run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
 schedule function quests:keekoquest/finish4 8s

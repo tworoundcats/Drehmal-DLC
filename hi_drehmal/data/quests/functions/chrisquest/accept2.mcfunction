@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst9] run tellraw @s  ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> "},{"text":"Legends","color":"yellow"},{"text":" speak of an "},{"text":"ancient Avsohmic device","color":"yellow"},{"text":" capable of playing back some of their finest pieces on demand. From what I read, you could even carry it around in your pocket."}]
+execute positioned ~ ~ ~ as @p[tag=qst9] run tellraw @s ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> "},{"text":"Legends","color":"yellow"},{"text":" speak of an "},{"text":"ancient Avsohmic device","color":"yellow"},{"text":" capable of playing back some of their finest pieces on demand. From what I read, you could even carry it around in your pocket."}]
 execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:chrisquest/accept3 7s

@@ -36,3 +36,4 @@ execute if score #DLC mastermode matches 1 run execute as @s[tag=unstoppable] at
 
 attribute @s[tag=!spawned_once] generic.movement_speed base set 0.4
 tag @s[tag=!spawned_once] add spawned_once
+

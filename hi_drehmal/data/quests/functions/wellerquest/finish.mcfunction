@@ -1,6 +1,6 @@
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run tellraw @a[distance=..50] ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"The Act of Excision","underlined":true},{"text":"\n"},{"text":"Bring the five fragments of Frenzy to Wehl'r.","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst17] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst17] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~2 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~1 {Value:10}
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon experience_orb ~ ~ ~2 {Value:10}

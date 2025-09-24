@@ -1,12 +1,5 @@
 #Quests
 # Keeko - Drabyel
-execute if loaded 505 67 1835 positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3,tag=!offerer,tag=!chronicler_meeting,tag=!been_visited] run execute as @p[tag=!offerer] if predicate players:holding/quest/sushi run function quests:keekoquest/sushi_question
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3,tag=!haskeekomerch,tag=!keekomerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:keekoquest/merch
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_map run function quests:keekoquest/priscilla/count
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_magnum_opus run function quests:keekoquest/priscilla/count
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..5] run function quests:keekoquest/finish
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst,tag=!qst_e] run function quests:keekoquest/base
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Major - Primal Caverns
 execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist Major",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!major_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:majorquest/merch

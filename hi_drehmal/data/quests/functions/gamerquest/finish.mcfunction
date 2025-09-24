@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"A Saponified Severer","underlined":true},{"text":"\n"},{"text":"Reawaken the Ancient Blade","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @e[type=villager,name="Ga'Mahr, Lord of Duht"] run item replace entity @s weapon.mainhand with air
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}

@@ -18,4 +18,4 @@ kill @e[tag=fdry_laser_top]
 
 schedule function foundry:arena_victory2 3s
 fill -3271 104 1558 -3271 110 1560 minecraft:air
-
+execute positioned -3270.00 107.38 1559.41 run particle squid_ink ~ ~ ~ 3 3 3 0 50
