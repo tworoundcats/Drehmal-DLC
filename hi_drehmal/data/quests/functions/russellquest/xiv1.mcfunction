@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Did you know that there are other continents besides Drehmal? That's right, all the way out at the far western and eastern edges of the disc are two whole other landmasses!"}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/xiv2 6s

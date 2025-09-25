@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tellraw @s ["",{"text":"<"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> That's where I come in, though! See, I've spent years tinkering with the dock, and while I don't fully understand its mechanism, I managed to create, well, this "},{"text":"rift","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:riftquest/accept4 7s

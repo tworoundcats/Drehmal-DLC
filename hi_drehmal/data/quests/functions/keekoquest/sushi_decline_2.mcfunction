@@ -1,1 +1,0 @@
-tag @a[tag=offerer] remove offerer

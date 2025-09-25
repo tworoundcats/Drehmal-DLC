@@ -3,4 +3,3 @@ execute positioned ~ ~ ~ as @p[tag=qst3] run give @s mcdw:dagger_swift_striker{R
 execute positioned ~ ~ ~ as @p[tag=qst3] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst3] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 function quests:cinderquest/summonsly
-execute positioned 1092.55 66.56 1965.51 run forceload add ~ ~

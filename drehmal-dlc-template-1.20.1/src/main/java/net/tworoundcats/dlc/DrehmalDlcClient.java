@@ -10,6 +10,7 @@ import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.tworoundcats.dlc.item.ModItems;
+import net.tworoundcats.dlc.particle.custom.Marker;
 import net.tworoundcats.dlc.particle.custom.Zap;
 import net.tworoundcats.dlc.particle.ModParticles;
 
@@ -22,6 +23,11 @@ public class DrehmalDlcClient implements ClientModInitializer {
         registerShieldPredicates();
         ParticleFactoryRegistry.getInstance().register(ModParticles.ZAP,
                 Zap.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.MARKER, Zap.Factory::new);
+        registerFishingRodPredicates();
+        registerShieldPredicates();
+        ParticleFactoryRegistry.getInstance().register(ModParticles.MARKER,
+                Marker.Factory::new);
     }
 
 

@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dlc:t2",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{event:56}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "players:kill_events"
+        }
+      ]
+    }
+  ]
+}

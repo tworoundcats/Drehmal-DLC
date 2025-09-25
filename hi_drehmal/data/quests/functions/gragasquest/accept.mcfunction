@@ -1,5 +1,5 @@
-effect clear @s slowness
-tag @s add qst5
-execute positioned ~ ~ ~ as @p[tag=qst5] run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> Name's Gragas. I've been lookin' for the perfect drink for as long as I can remember, and heard that this town's mead was the gold standard around these parts."}]
-execute positioned ~ ~ ~ as @p[tag=qst5] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
-schedule function quests:gragasquest/accept2 7s
+execute unless entity @a[tag=qst5] run tag @e[tag=gragas] add qstart
+execute unless entity @a[tag=qst5] run execute at @e[tag=gragas] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> Name's Gragas.. and last night... hoo boy. Was workin' on my finest drink, the Stonewall Grog. Had the recipe right in my hand."}]
+execute unless entity @a[tag=qst5] run execute at @e[tag=gragas] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute unless entity @a[tag=qst5] run schedule function quests:gragasquest/accept2 7s
+execute unless entity @a[tag=qst5] run tag @s add qst5

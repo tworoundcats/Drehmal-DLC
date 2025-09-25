@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst8] run tellraw @s ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> For the last few months, I've been living in Drehua Temple up in the beautiful cliffs of Palisades Heath, writing all about their culture. I had the book mostly finished, and wanted to make sure that the fort here would have an accurate depiction of such a crucial historical group!"}]
-execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:domequest/accept3 10s

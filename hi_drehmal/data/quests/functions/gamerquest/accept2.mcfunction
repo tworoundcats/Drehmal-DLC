@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst10] run tellraw @s ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Get it back to me and I'll reward you fairly. I'd appreciate it if you also dealt with those freaky cultists while you're at it, as would the rest of the adventurer's guild."}]
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:gamerquest/accept3 8s

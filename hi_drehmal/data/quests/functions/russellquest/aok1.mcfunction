@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I don't like to use the title since they're a very selective bunch, but I am fascinated by "},{"text":"alchemy","color":"yellow"},{"text":". In speaking to a couple practitioners, I've learned that the ancient Tri-Moon Theocracy drew heavy inspiration from an even MORE "},{"text":"ancient necromancer","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/aok2 9s

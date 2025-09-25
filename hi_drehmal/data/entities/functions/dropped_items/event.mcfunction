@@ -51,9 +51,8 @@ execute if score #event temp matches 51 run function entities:dropped_items/osse
 execute if score #event temp matches 52 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_horse_kill
 execute if score #event temp matches 53 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_kill_default
 execute if score #event temp matches 54 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_kill_prime
-
 execute if score #event temp matches 55 run function dlc:mobs/primal_excavator/death
-
+execute if score #event temp matches 56 run function quests:cinderquest/why
 
 
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr

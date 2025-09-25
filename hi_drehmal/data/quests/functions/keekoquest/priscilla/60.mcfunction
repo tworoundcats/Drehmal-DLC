@@ -1,2 +1,2 @@
-execute positioned 505.51 67.00 1835.52 as @p run tellraw @s ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> Alright. I know I could've forgotten about a couple, but I'm pretty sure that there aren't more than 50. Preeetty sure."}]
-execute positioned 505.51 67.00 1835.52 as @p at @s run playsound minecraft:dcustom.entity.villager.ambient player @s ~ ~ ~ 1 2
+execute at @e[tag=keeko] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> Alright. I know I could've forgotten about a couple, but I'm pretty sure that there aren't more than 50. Preeetty sure."}]
+execute at @e[tag=keeko] as @p[tag=temp_i] run playsound minecraft:dcustom.entity.villager.ambient player @s ~ ~ ~ 1 2

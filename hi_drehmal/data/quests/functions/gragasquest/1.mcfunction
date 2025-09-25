@@ -1,3 +1,5 @@
-execute positioned ~ ~ ~ as @p[tag=qst5] run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> OH, YEAH! That's the GOOD stuff! I'd carry this around by the barrel! And you learned the recipe?"}]
-execute positioned ~ ~ ~ as @p[tag=qst5] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-schedule function quests:gragasquest/2 5s
+item replace entity @e[type=villager,name="Drunkard Gragas",limit=1] weapon.mainhand from entity @s weapon.mainhand
+item replace entity @s weapon.mainhand with air
+execute at @e[tag=gragas] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> Oh, er, you're back! And... kinda expected... This ain't the recipe. Good news though! Had a stroke of genius right after you left."}]
+execute at @e[tag=gragas] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:gragasquest/2 8s

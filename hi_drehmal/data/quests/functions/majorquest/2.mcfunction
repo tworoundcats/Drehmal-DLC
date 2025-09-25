@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"There's "},{"text":"two.","color":"yellow"},{"text":" This one seems a little bit more recent, but... it's still a nice addition to the collection!"}]
+execute at @e[tag=major] run tellraw @a[distance=..12] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"There's "},{"text":"two.","color":"yellow"},{"text":" This one seems a little bit more recent, but... it's still a nice addition to the collection!"}]
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40

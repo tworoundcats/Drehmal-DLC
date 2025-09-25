@@ -1,4 +1,4 @@
 execute positioned ~ ~ ~ as @p[tag=qst9] run tellraw @s ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> Your payment, of course! You've "},{"text":"earned all the glory","italic":true},{"text":" in the world, but take these! I'm sure they'll be valuable to someone of your adventuring prowess."}]
-execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst9] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst9] run schedule function quests:chrisquest/finish 7s
 execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst9] run schedule function quests:chrisquest/finish_r 7s

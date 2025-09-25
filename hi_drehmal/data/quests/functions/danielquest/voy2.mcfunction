@@ -1,3 +1,3 @@
 execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> No judgment from my end. The War of Unification was a very long time ago, and I'm not so short-sighted as to write one off for the Aspects they choose to worship."}]
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:danielquest/voy3 8s

@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> ...Inverse black orbs? That sounds... that sounds incredibly familiar to what some stories describe as the monsters that eventually destroyed Avsohm."}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/xiv_done4 6s

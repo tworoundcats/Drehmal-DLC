@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> If you're willing, I'd really appreciate it if you could bring me some juicier reading. You can keep the books, of course!"}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/bookroll 4s

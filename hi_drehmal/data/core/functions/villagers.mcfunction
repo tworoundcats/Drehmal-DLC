@@ -2,26 +2,12 @@
 # Keeko - Drabyel
 
 # Major - Primal Caverns
-execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist Major",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!major_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:majorquest/merch
-execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist Major",type=villager,tag=!qend,distance=..4] if entity @a[distance=..2,tag=qst2,tag=!qst2_e] run execute positioned ~ ~ ~ as @p[tag=qst2] if predicate players:holding/quest/majorartifact run function quests:majorquest/detect
-execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist Major",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..2,tag=!qst2,tag=!qst2_e] run function quests:majorquest/base
-execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist Major",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Cinder/Slypador - Rhaverik
-execute positioned 1068.89 66.00 1964.35 if loaded ~ ~ ~ as @e[name="Cinder",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst3] run function quests:cinderquest/base
-execute positioned 1068.89 66.00 1964.35 if loaded ~ ~ ~ as @e[name="Cinder",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
-execute positioned 1092.56 66.00 1967.79 if loaded ~ ~ ~ as @e[name="Slypador",type=villager,distance=..4] unless score #sly int matches 1 run execute positioned ~ ~ ~ as @p[tag=qst3] run schedule function quests:cinderquest/why 5t
 
-# Casey - Gozak
-execute unless score #caseyquest bool matches 1 positioned -2726 66 -1796 if entity @a[distance=..5] run function quests:caseyquest/tick
-execute positioned 2290.49 50.00 2488.49 if loaded ~ ~ ~ as @e[name="Melon Masher Casey",type=villager,tag=!qend,tag=qstarted,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst4,tag=!qst4_e] if score #caseyquest bool matches 1 positioned ~ ~ ~ as @p[tag=qst4] run function quests:caseyquest/finish
-execute positioned 2290.49 50.00 2488.49 if loaded ~ ~ ~ as @e[name="Melon Masher Casey",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst4,tag=!qst4_e] run function quests:caseyquest/base
-execute positioned 2290.49 50.00 2488.49 if loaded ~ ~ ~ as @e[name="Melon Masher Casey",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
+
 
 # Gragas - Dusps
-execute positioned 2217.55 111.00 -778.46 if loaded ~ ~ ~ as @e[name="Drunkard Gragas",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst5,tag=!qst5_e] run execute positioned ~ ~ ~ as @p[tag=qst5] if predicate players:holding/eldermead_mainhand run function quests:gragasquest/detect
-execute positioned 2217.55 111.00 -778.46 if loaded ~ ~ ~ as @e[name="Drunkard Gragas",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst5,tag=!qst5_e] run function quests:gragasquest/base
-execute positioned 2217.55 111.00 -778.46 if loaded ~ ~ ~ as @e[name="Drunkard Gragas",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Mouton - Ebonrun
 execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!mouton_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:moutonquest/merch

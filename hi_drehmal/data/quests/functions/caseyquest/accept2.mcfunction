@@ -1,4 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst4] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"You see Mr. "},{"text":"Kozdro ","color":"yellow"},{"text":"over here, the "},{"text":"Melon Merchant","color":"yellow"},{"text":"? He's got some of the best stuff around, and we're going to help his business! There's only a couple other real proper merchants in the melon game these days: that good-for-nothing scammer Li over at the Kiln, and Johmund."}]
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
-execute if score #DLC repeatable matches 1 run forceload remove -2729 -1796
+execute at @e[tag=casey] run tellraw @a[distance=..12] ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"You see Mr. "},{"text":"Kozdro ","color":"yellow"},{"text":"over here, the "},{"text":"Melon Merchant","color":"yellow"},{"text":"? He's got some of the best stuff around, and we're going to help his business! There's only a couple other real proper merchants in the melon game these days: that good-for-nothing scammer Li over at the Kiln, and Johmund."}]
+execute at @e[tag=casey] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:caseyquest/accept3 10s

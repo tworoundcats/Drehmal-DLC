@@ -1,10 +1,13 @@
-execute as @e[tag=keeko] as @s[tag=!offerer,tag=!chronicler_meeting,tag=!been_visited] if predicate players:holding/quest/sushi run function quests:keekoquest/sushi_question
+tag @s add disabled
 
-execute as @e[tag=keeko] as @s[tag=!haskeekomerch,tag=!keekomerchtarget] if predicate players:holding/quest/merch run function quests:keekoquest/merch
+execute at @s as @p[tag=!offerer,tag=!chronicler_meeting,tag=!been_visited,tag=temp_i] if predicate players:holding/quest/sushi run function quests:keekoquest/sushi_question
 
-execute as @e[tag=keeko,tag=!priscilla.maxxed] as @s if predicate players:holding/priscilla_maps run function quests:keekoquest/priscilla/count
+execute at @s as @p[tag=!haskeekomerch,tag=!keekomerchtarget,tag=temp_i] if predicate players:holding/quest/merch run function quests:keekoquest/merch
 
-execute as @e[tag=keeko,tag=!qend,tag=!repeatable] at @s run function quests:keekoquest/base
+execute at @s[tag=!priscilla.maxxed] as @p[tag=temp_i] if predicate players:holding/priscilla_maps run function quests:keekoquest/priscilla/count
 
-tag @e[tag=keeko_i] add disabled
-tag @e[tag=keeko] add disabled
+execute at @s[tag=!qend,tag=!repeatable] as @p[tag=temp_i,tag=!qst_e,tag=!qst] run function quests:keekoquest/base
+
+execute at @s as @p[tag=temp_i] run tag @e[tag=keeko_i] add disabled
+
+tag @a[tag=temp_i] remove temp_i

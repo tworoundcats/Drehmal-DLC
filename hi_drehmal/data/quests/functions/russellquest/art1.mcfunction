@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Avsohm's legacy is everywhere, but you know what I know shockingly little about? Their "},{"text":"art","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/art2 6s

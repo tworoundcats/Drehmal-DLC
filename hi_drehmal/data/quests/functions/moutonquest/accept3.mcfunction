@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run tellraw @s ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> It's so profitable, they've had me churning out new issues every week for years, and now it's almost daily. I am "},{"text":"so","italic":true},{"text":". "},{"text":"tired","italic":true},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst6] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:moutonquest/accept4 8s

@@ -1,4 +1,3 @@
-
 execute store result score #SpawnX num run data get entity @s Pos[0] 100
 execute store result score #SpawnY num run data get entity @s Pos[1] 100
 execute store result score #SpawnZ num run data get entity @s Pos[2] 100
