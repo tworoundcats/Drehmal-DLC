@@ -1,1 +1,2 @@
-execute as @p[tag=domemerchtarget] run tag @s remove domemerchtarget
+tag @a remove domemerchtarget
+tag @e[tag=dome] remove temp_interact

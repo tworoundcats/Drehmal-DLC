@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Vec3d;
+import net.tworoundcats.dlc.entity.ModEntities;
 import net.tworoundcats.dlc.item.ModItemGroups;
 import net.tworoundcats.dlc.item.ModItems;
 import net.tworoundcats.dlc.painting.ModPaintings;
@@ -21,6 +22,7 @@ public class DrehmalDlc implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModEntities.registerEntityAttributes();
 		LOGGER.info("Drehmal DLC Mod Initializing!");
 		ModPaintings.registerPaintings();
 		ModItems.registerModItems();

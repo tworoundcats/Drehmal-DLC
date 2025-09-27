@@ -5,20 +5,11 @@
 
 # Cinder/Slypador - Rhaverik
 
-
+# Casey - Gozak
 
 # Gragas - Dusps
 
 # Mouton - Ebonrun
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!mouton_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:moutonquest/merch
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=moutonflammer,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/flammer run function quests:moutonquest/flammer_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=mushroom,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/mushroom run function quests:moutonquest/mushroom_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=goldblock,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/goldblock run function quests:moutonquest/gold_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=reddye,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/reddye run function quests:moutonquest/red_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=torahn,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/pufferfish run function quests:moutonquest/torahn_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=runic,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst6,tag=!qst6_e] run execute positioned ~ ~ ~ as @p[tag=qst6] if predicate players:holding/quest/runiccat run function quests:moutonquest/runic_detect
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst6,tag=!qst6_e] run function quests:moutonquest/base
-execute positioned -2979.47 141.00 -159.46 if loaded ~ ~ ~ as @e[name="Muhton",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Dreadlock - Firteid
 execute positioned 3827.52 69.00 3577.51 if loaded ~ ~ ~ as @e[name="Dredd'Lohk",type=villager,tag=qend,distance=..4] if predicate players:holding/masayoshi if entity @a[distance=..4,tag=!qst7_e] as @p unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[name="Dredd'Lohk",type=villager,tag=qend,limit=1] weapon.mainhand
@@ -28,16 +19,9 @@ execute positioned 3827.52 69.00 3577.51 if loaded ~ ~ ~ as @e[name="Dredd'Lohk"
 execute positioned 3827.52 69.00 3577.51 if loaded ~ ~ ~ as @e[name="Dredd'Lohk",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Dome - Fort Nimahj
-execute positioned -1718.49 161.00 1900.50 if loaded ~ ~ ~ as @e[name="Dohm",type=villager,distance=..4] if entity @a[distance=..3,tag=!hasdomemerch,tag=!domemerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:domequest/merch
-execute positioned -1718.49 161.00 1900.50 if loaded ~ ~ ~ as @e[name="Dohm",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst8,tag=!qst8_e] run execute positioned ~ ~ ~ as @p[tag=qst8] if predicate players:holding/quest/domering run function quests:domequest/detect
-execute positioned -1718.49 161.00 1900.50 if loaded ~ ~ ~ as @e[name="Dohm",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst8,tag=!qst8_e] run function quests:domequest/base
-execute positioned -1718.49 161.00 1900.50 if loaded ~ ~ ~ as @e[name="Dohm",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Chris - Mossfield
-execute positioned 4138.50 65.00 1755.5 if loaded ~ ~ ~ as @e[name="Music Man Chris",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!chris_merch_deny] run execute positioned ~ ~ ~ as @p[limit=1,sort=nearest] if predicate players:holding/quest/merch run function quests:chrisquest/merch
-execute positioned 4138.50 65.00 1755.5 if loaded ~ ~ ~ as @e[name="Music Man Chris",type=villager,tag=!qend,distance=..4] if entity @a[distance=..3,tag=qst9,tag=!qst9_e] run execute positioned ~ ~ ~ as @p[tag=qst9] if predicate players:holding/avpod run function quests:chrisquest/detect
-execute positioned 4138.50 65.00 1755.5 if loaded ~ ~ ~ as @e[name="Music Man Chris",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst9,tag=!qst9_e] run function quests:chrisquest/base
-execute positioned 4138.50 65.00 1755.5 if loaded ~ ~ ~ as @e[name="Music Man Chris",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
+
 
 # Gamer - Highfall
 execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend,tag=qstarted,tag=acceptingwax,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] run execute as @p[tag=qst10] if predicate players:holding/quest/corpsewax run function quests:gamerquest/wax_detect
@@ -126,4 +110,4 @@ execute in minecraft:lodahr positioned 257.50 86.00 -811.50 if loaded ~ ~ ~ as @
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 if loaded ~ ~ ~ as @e[name="Tahlros",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst15,tag=!qst15_e] run function quests:tahlrosquest/base
 execute in minecraft:lodahr positioned 257.50 86.00 -811.50 if loaded ~ ~ ~ as @e[name="Tahlros",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
-execute positioned -1265.29 46.00 -4060.85 if loaded ~ ~ ~ if entity @a[distance=..10] unless score #gotshield bool matches 1 if score #1S timer matches 10 run particle minecraft:firework -1261.57 47.60 -4062.42 0.2 0.2 0.2 1 50
+

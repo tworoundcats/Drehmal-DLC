@@ -3,4 +3,5 @@ execute unless entity @a[tag=qst2] run execute positioned ~ ~ ~ as @p[tag=qst2] 
 execute unless entity @a[tag=qst2] run schedule function quests:majorquest/accept2 7s
 execute unless entity @a[tag=qst2] run tag @e[tag=major] remove disabled
 execute unless entity @a[tag=qst2] run tag @e[tag=major] add qstart
+execute unless entity @a[tag=qst2] at @s run tag @e[tag=major_i] add disabled
 execute unless entity @a[tag=qst2] run tag @s add qst2

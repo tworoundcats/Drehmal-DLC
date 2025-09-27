@@ -1,5 +1,9 @@
 advancement revoke @s only dlc:primal_staff_interact
-playsound simplyswords:elemental_bow_poison_attack_03 player @a ~ ~ ~ 2 2
-execute at @e[tag=primal_staff,type=item_display,sort=nearest,limit=1] run summon item ~ ~0.5 ~ {Item:{id:"dlc:primal_staff",Count:1,tag:{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"A staff imbued with the soul of a powerful Primal."}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"Such energy is sufficient to ward off similarly"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"corrupted beasts, a method used by many towns"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"since the Primals began to appear. Those who"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"did not adapt were met with a predictable wrath."}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}','{"extra":[{"italic":true,"color":"dark_gray","text":"When placed, prevents Primal and elite enemies"}],"text":""}','{"extra":[{"italic":true,"color":"dark_gray","text":"from spawning within a 48-block radius."}],"text":""}','{"extra":[{"italic":true,"color":"dark_gray","text":" "}],"text":""}','{"extra":[{"italic":false,"color":"green","text":"Trinket"}],"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"green","text":"Primalstaff"}],"text":""}'}}}}
-execute at @s run kill @e[tag=primal_staff,type=item_display,sort=nearest,limit=1]
-execute at @s run kill @e[tag=primal_staff,type=interaction,sort=nearest,limit=1]
+tag @s add temp_interact
+execute at @s as @e[type=interaction,sort=nearest,tag=!invul,tag=primal_staff] if data entity @s interaction run execute store result score @s uuid0 run data get entity @s interaction.player[0]
+execute at @s as @e[type=interaction,sort=nearest,tag=!invul,tag=primal_staff] if data entity @s interaction if score @s uuid0 = @p[tag=temp_interact] uuid0 at @s run function players:items/primal_staff/remove_success
+
+
+
+
+tag @s remove temp_interact

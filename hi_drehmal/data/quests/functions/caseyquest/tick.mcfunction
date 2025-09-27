@@ -8,8 +8,8 @@ execute as @s[tag=enabled] run data modify entity @s item.id set value "dlc:ques
 execute as @s[tag=enabled] run tag @s remove enabled
 
 
-execute if entity @a[distance=..20] as @s run tag @s remove temp
-execute unless entity @a[distance=..20] as @e[tag=casey,tag=!qstart,tag=!qend,tag=!temp] run function quests:remove_interact
+execute if entity @a[distance=..20] run tag @s add temp
+execute if entity @a[distance=21..] as @e[tag=casey_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
 
 execute if entity @a[distance=..8,tag=qst4] if score #caseyquest bool matches 1 run tag @e[tag=casey_i] add enabled
 execute if entity @a[distance=..8,tag=qst4] if score #caseyquest bool matches 1 run tag @e[tag=casey] remove disabled

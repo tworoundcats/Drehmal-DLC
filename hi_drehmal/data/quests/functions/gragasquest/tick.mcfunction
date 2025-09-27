@@ -7,8 +7,8 @@ execute as @s[tag=disabled] run tag @s remove disabled
 execute as @s[tag=enabled] run data modify entity @s item.id set value "dlc:questmarker"
 execute as @s[tag=enabled] run tag @s remove enabled
 
-execute if entity @a[distance=..20] as @s run tag @s remove temp
-execute unless entity @a[distance=..20] as @e[tag=gragas,tag=!qstart,tag=!qend,tag=!temp] run function quests:remove_interact
+execute if entity @a[distance=..20] run tag @s add temp
+execute if entity @a[distance=21..] as @e[tag=gragas_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
 
 execute at @e[tag=gragas] as @a[distance=..8,predicate=players:holding/quest/gragas] run tag @e[tag=gragas_i] add enabled
 execute at @e[tag=gragas] as @a[distance=..8,predicate=players:holding/quest/gragas] run tag @e[tag=gragas] remove disabled

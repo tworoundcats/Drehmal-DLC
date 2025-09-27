@@ -9,6 +9,9 @@ execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run tag @s add pr
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run scoreboard players reset @s respawn_timer
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] run function players:music/reset
 execute positioned 26499.51 205.00 862.50 as @a[distance=..24] in true_end run tp @s 10000.40 101.00 10016.
+scoreboard players reset #emmportal timer
+execute positioned 10000.40 101.00 10016. run forceload add ~ ~
+schedule function dlc:primal_journey/emissary/start2_2 2t
 function core:scene/emissary/despawn
 function core:scene/emissary/reset
 summon minecraft:marker 26499.51 205.00 862.50 {Tags:["temp_spawn_primal"]}

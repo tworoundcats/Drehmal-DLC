@@ -1,3 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst8] run tellraw @s ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> Holy cats! Is that- My quill!"}]
-execute positioned ~ ~ ~ as @p[tag=qst8] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute at @e[tag=dome] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> Holy cats! Is that- My quill!"}]
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+tag @e[tag=dome_i] add disabled
 schedule function quests:domequest/2 2s

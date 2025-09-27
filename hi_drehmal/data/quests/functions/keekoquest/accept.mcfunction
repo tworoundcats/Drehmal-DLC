@@ -3,4 +3,5 @@ execute unless entity @a[tag=qst] run execute at @e[tag=keeko] run tellraw @a[di
 execute unless entity @a[tag=qst] run execute at @e[tag=keeko] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless entity @a[tag=qst] run schedule function quests:keekoquest/accept2 6s
 execute unless entity @a[tag=qst] run tag @e[tag=keeko] add qstart
+execute unless entity @a[tag=qst] at @s run tag @e[tag=keeko_i] add disabled
 execute unless entity @a[tag=qst] run tag @s add qst

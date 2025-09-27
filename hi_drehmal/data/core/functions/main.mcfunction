@@ -298,3 +298,5 @@ execute if score #bern_active? bool matches 1 positioned -418.50 54.00 596.55 in
 execute if score #teth_active bool matches 1 in the_end positioned 0.37 67.00 0.27 unless entity @a[distance=..400] run function entities:ai/tethlaen/despawn
 
 execute if score #fightinghovad bool matches 1 positioned 27295.52 82.00 86.05 unless entity @a[distance=..100] run function core:scene/hovad/reset_fight
+
+execute unless score #gotshield bool matches 1 positioned -1265.29 46.00 -4060.85 if loaded ~ ~ ~ if entity @a[distance=..10] if score #1S timer matches 10 run particle minecraft:firework -1261.57 47.60 -4062.42 0.2 0.2 0.2 1 50

@@ -53,4 +53,4 @@ execute as @e[type=item_display,tag=russell_i] run tag @s add enabled
 execute as @e[type=item_display,tag=tahlros_i] run tag @s add enabled
 execute as @e[type=item_display,tag=weller_i] run tag @s add enabled
 
-tag @s add temp
+tag @s remove temp

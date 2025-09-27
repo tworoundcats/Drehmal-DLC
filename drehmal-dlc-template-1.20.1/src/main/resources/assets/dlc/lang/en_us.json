@@ -70,5 +70,7 @@
   "item.dlc.starlit_amulet": "Starlit Amulet",
   "item.dlc.starfall_mote": "Starfall Mote",
   "item.dlc.stormglass_charm": "Stormglass Charm",
-  "item.dlc.twinfin_totem": "Twinfin Totem"
+  "item.dlc.twinfin_totem": "Twinfin Totem",
+
+  "entity.dlc.collector": "Zul"
 }

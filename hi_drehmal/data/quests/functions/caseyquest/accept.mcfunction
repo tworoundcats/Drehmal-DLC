@@ -5,4 +5,5 @@ execute unless entity @a[tag=qst4] run execute at @e[tag=casey] run tellraw @a[d
 execute unless entity @a[tag=qst4] run execute at @e[tag=casey] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless entity @a[tag=qst4] run schedule function quests:caseyquest/accept2 5s
 execute unless entity @a[tag=qst4] run tag @e[tag=casey] remove disabled
+execute unless entity @a[tag=qst4] at @s run tag @e[tag=casey_i] add disabled
 execute unless entity @a[tag=qst4] run tag @s add qst4

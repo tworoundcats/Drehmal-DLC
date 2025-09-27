@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+        "items": [
+          {
+            "items": [
+              "mythicmetals:platinum_watch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:advancement/component"
+  }
+}

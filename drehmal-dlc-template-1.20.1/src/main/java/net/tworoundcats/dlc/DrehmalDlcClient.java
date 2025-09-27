@@ -4,11 +4,17 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.tworoundcats.dlc.entity.ModEntities;
+import net.tworoundcats.dlc.entity.client.ModModelLayers;
+import net.tworoundcats.dlc.entity.client.ZulRenderer;
+import net.tworoundcats.dlc.entity.client.model.ZulModel;
 import net.tworoundcats.dlc.item.ModItems;
 import net.tworoundcats.dlc.particle.custom.Marker;
 import net.tworoundcats.dlc.particle.custom.Zap;
@@ -18,6 +24,8 @@ import net.tworoundcats.dlc.particle.ModParticles;
 public class DrehmalDlcClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.ZUL, ZulModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.ZUL, ZulRenderer::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.ZAP, Zap.Factory::new);
         registerFishingRodPredicates();
         registerShieldPredicates();

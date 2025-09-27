@@ -1,6 +1,5 @@
 scoreboard players enable @s Settings
 scoreboard players enable @s dlc
-scoreboard players enable @s tgrptch.quest_deny
 bossbar set health players @s
 gamemode adventure @s
 # players are also counted in leave.mcfunction
