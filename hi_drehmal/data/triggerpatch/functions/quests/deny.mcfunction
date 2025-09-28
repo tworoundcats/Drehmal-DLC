@@ -1,6 +1,7 @@
 #effect clear @s minecraft:slowness
 tellraw @s {"text":"Denied quest.","color":"gray"}
 scoreboard players reset @s tgrptch.quest_deny
+tag @s remove temp_interact
 
 execute at @s as @e[type=item_display,distance=..64] run tag @s[tag=keeko_i] add enabled
 execute at @s as @e[type=item_display,distance=..64] run tag @s[tag=casey_i] add enabled

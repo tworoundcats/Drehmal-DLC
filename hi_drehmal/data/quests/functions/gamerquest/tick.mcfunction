@@ -8,12 +8,10 @@ execute as @s[tag=enabled] run data modify entity @s item.id set value "dlc:ques
 execute as @s[tag=enabled] run tag @s remove enabled
 
 execute if entity @a[distance=..20] run tag @s add temp
-execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=gragas_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
+execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=gamer_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
 
-execute at @e[tag=gragas] as @a[distance=..8,predicate=players:holding/quest/gragas] run tag @e[tag=gragas_i] add enabled
-execute at @e[tag=gragas] as @a[distance=..8,predicate=players:holding/quest/gragas] run tag @e[tag=gragas] remove disabled
-
-execute at @e[tag=gragas,tag=qstart] as @a[distance=..8,predicate=!players:holding/quest/gragas] run tag @e[tag=gragas_i] add disabled
+execute at @e[tag=gamer] as @a[distance=..8,predicate=players:holding/gamer_like] run function quests:gamerquest/check
+execute at @e[tag=gamer,tag=qstart] as @a[distance=..8,predicate=!players:holding/gamer_like] run tag @e[tag=gamer_i] add disabled
 
 execute if score #DLC repeatable matches 1 run tag @s[tag=qend] remove qend
 execute unless entity @s[team=cal] run team join cal

@@ -13,7 +13,7 @@ execute as @e[tag=keeko,tag=!qend,tag=!tempd] at @s if entity @e[type=horse,tag=
 execute if score #DLC repeatable matches 1 run tag @s[tag=qend] remove qend
 
 execute if entity @a[distance=..20] run tag @s add temp
-execute if entity @a[distance=21..] as @e[tag=keeko_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
+execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=keeko_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
 
 execute at @e[tag=keeko] as @a[distance=..8,predicate=players:holding/keeko_like] run function quests:keekoquest/check
 execute at @e[tag=keeko,tag=qend] as @a[distance=..8,predicate=!players:holding/keeko_like] run tag @e[tag=keeko_i] add disabled

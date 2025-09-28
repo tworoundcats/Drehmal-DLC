@@ -22,12 +22,7 @@ execute positioned 3827.52 69.00 3577.51 if loaded ~ ~ ~ as @e[name="Dredd'Lohk"
 
 # Chris - Mossfield
 
-
 # Gamer - Highfall
-execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend,tag=qstarted,tag=acceptingwax,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] run execute as @p[tag=qst10] if predicate players:holding/quest/corpsewax run function quests:gamerquest/wax_detect
-execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend,tag=qstarted,tag=acceptingsword,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst10,tag=!qst10_e] run execute as @p[tag=qst10] if predicate players:holding/quest/gamersword run function quests:gamerquest/sword_detect
-execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst10,tag=!qst10_e] run function quests:gamerquest/base
-execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Russell - Mohta
 execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ if entity @e[name="Russell",type=villager,distance=..4,tag=book1_read,tag=book2_read,tag=book3_read,tag=book4_read,tag=book5_read,tag=book6_read,tag=book7_read,tag=book8_read] run execute as @e[type=villager,name="Russell"] run tag @s add allbooksread

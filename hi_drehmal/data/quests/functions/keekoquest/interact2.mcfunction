@@ -6,7 +6,7 @@ execute at @s[tag=qend,tag=!temp_interact] as @p[tag=!simp_for_keeko,tag=!keekom
 
 execute at @s[tag=!priscilla.maxxed] as @p[tag=temp_i] if predicate players:holding/priscilla_maps run function quests:keekoquest/priscilla/count
 
-execute at @s[tag=!qend,tag=!repeatable] as @p[tag=temp_i,tag=!qst_e,tag=!qst] run function quests:keekoquest/base
+execute at @s[tag=!qend,tag=!qstart] as @p[tag=temp_i,tag=!qst_e,tag=!qst] run function quests:keekoquest/base
 
 execute at @s as @p[tag=temp_i] run tag @e[tag=keeko_i] add disabled
 

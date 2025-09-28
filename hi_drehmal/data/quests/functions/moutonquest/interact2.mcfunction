@@ -14,7 +14,7 @@ execute at @s[tag=!qend,tag=torahn] as @p[tag=qst6,tag=!qst6_e,tag=temp_i] if pr
 
 execute at @s[tag=!qend,tag=runic] as @p[tag=qst6,tag=!qst6_e,tag=temp_i] if predicate players:holding/quest/runiccat run function quests:moutonquest/runic_detect
 
-execute at @s[tag=!qend,tag=!repeatable] as @p[tag=temp_i,tag=!qst6,tag=!qst6_e] run function quests:moutonquest/base
+execute at @s[tag=!qend,tag=!qstart] as @p[tag=temp_i,tag=!qst6,tag=!qst6_e] run function quests:moutonquest/base
 
 execute at @s as @p[tag=temp_i] run tag @e[tag=mouton_i] add disabled
 

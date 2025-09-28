@@ -8,7 +8,7 @@ execute as @s[tag=enabled] run data modify entity @s item.id set value "dlc:ques
 execute as @s[tag=enabled] run tag @s remove enabled
 
 execute if entity @a[distance=..20] run tag @s add temp
-execute if entity @a[distance=21..] as @e[tag=mouton_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
+execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=mouton_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
 
 execute at @e[tag=mouton] as @a[distance=..8,predicate=players:holding/mouton_like] run function quests:moutonquest/check
 execute at @e[tag=mouton,tag=qstart] as @a[distance=..8,predicate=!players:holding/mouton_like] run tag @e[tag=mouton_i] add disabled

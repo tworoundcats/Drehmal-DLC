@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> I've been looking through some old records ever since that thing was stolen from me. That blade came with my ancestors from a "},{"text":"far-off land to the south","color":"yellow"},{"text":", seemingly "},{"text":"lost to time","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=gamer] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> I've been looking through some old records ever since that thing was stolen from me. That blade came with my ancestors from a "},{"text":"far-off land to the south","color":"yellow"},{"text":", seemingly "},{"text":"lost to time","color":"yellow"},{"text":"."}]
+execute at @e[tag=gamer] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:gamerquest/sword_5 8s

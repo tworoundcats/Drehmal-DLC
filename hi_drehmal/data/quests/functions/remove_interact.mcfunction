@@ -35,22 +35,23 @@ execute as @e[type=interaction,tag=tahlros] run tag @s remove disabled
 execute as @e[type=interaction,tag=weller] run tag @s remove disabled
 
 
-execute as @e[type=item_display,tag=keeko_i] run tag @s add enabled
-execute as @e[type=item_display,tag=casey_i] run tag @s add enabled
-execute as @e[type=item_display,tag=chris_i] run tag @s add enabled
-execute as @e[type=item_display,tag=cinder_i] run tag @s add enabled
-execute as @e[type=item_display,tag=corvid_i] run tag @s add enabled
-execute as @e[type=item_display,tag=daniel_i] run tag @s add enabled
-execute as @e[type=item_display,tag=dome_i] run tag @s add enabled
-execute as @e[type=item_display,tag=dread_i] run tag @s add enabled
-execute as @e[type=item_display,tag=gamer_i] run tag @s add enabled
-execute as @e[type=item_display,tag=gragas_i] run tag @s add enabled
-execute as @e[type=item_display,tag=mahkar_i] run tag @s add enabled
-execute as @e[type=item_display,tag=major_i] run tag @s add enabled
-execute as @e[type=item_display,tag=mouton_i] run tag @s add enabled
-execute as @e[type=item_display,tag=rift_i] run tag @s add enabled
-execute as @e[type=item_display,tag=russell_i] run tag @s add enabled
-execute as @e[type=item_display,tag=tahlros_i] run tag @s add enabled
-execute as @e[type=item_display,tag=weller_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=keeko_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=casey_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=chris_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=cinder_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=corvid_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=daniel_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=dome_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=dread_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=gamer_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=gragas_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=mahkar_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=major_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=mouton_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=rift_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=russell_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=tahlros_i] run tag @s add enabled
+execute as @e[type=item_display,tag=!qstart,tag=!qend,tag=temp,tag=weller_i] run tag @s add enabled
 
 tag @s remove temp
+tag @a remove temp_interact
