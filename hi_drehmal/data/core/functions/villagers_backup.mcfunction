@@ -67,7 +67,7 @@ execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Du
 execute positioned 5878 66 -1088 if loaded ~ ~ ~ as @e[name="Ga'Mahr, Lord of Duht",type=villager,tag=!qend] unless entity @a[distance=..3] run tag @s remove qstart
 
 # Russell - Mohta
-execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ if entity @e[name="Russell",type=villager,distance=..4,tag=book1_read,tag=book2_read,tag=book3_read,tag=book4_read,tag=book5_read,tag=book6_read,tag=book7_read,tag=book8_read] run execute as @e[type=villager,name="Russell"] run tag @s add allbooksread
+execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ if entity @e[tag=russell,tag=book1_read,tag=book2_read,tag=book3_read,tag=book4_read,tag=book5_read,tag=book6_read,tag=book7_read,tag=book8_read] run execute as @e[tag=russell] run tag @s add allbooksread
 execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ as @e[name="Russell",type=villager,tag=allbooksread,distance=..4] if entity @a[distance=..4,tag=!nomorebooks_heard] run function quests:russellquest/nomorebooks
 execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ as @e[name="Russell",type=villager,tag=!qstart,tag=!qend,tag=!allbooksread,tag=!activerussell,distance=..4] if entity @a[distance=..3,tag=qst11_e,tag=!again_offer] as @p[tag=qst11_e] run function quests:russellquest/again
 execute positioned 31.48 67.00 5263.55 if loaded ~ ~ ~ as @e[name="Russell",type=villager,tag=!qend,tag=wantsbook1,distance=..4] if entity @a[distance=..3,tag=qst11] run execute positioned ~ ~ ~ as @p[tag=qst11,tag=!qst11_e] if predicate players:holding/quest/russellbook1 run function quests:russellquest/muhs_done1

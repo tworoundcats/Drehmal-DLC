@@ -1,3 +1,3 @@
-execute at @e[tag=major] run tellraw @a[distance=..12] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"It's almost like... the depths of this cave are even closer to the "},{"text":"source","color":"yellow"},{"text":" of the magic. Perhaps the stories about the "},{"text":"Serpent","color":"dark_green"},{"text":" here are true after all!"}]
+execute at @e[tag=major] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"It's almost like... the depths of this cave are even closer to the "},{"text":"source","color":"yellow"},{"text":" of the magic. Perhaps the stories about the "},{"text":"Serpent","color":"dark_green"},{"text":" here are true after all!"}]
 execute at @e[tag=major] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:majorquest/6 8s

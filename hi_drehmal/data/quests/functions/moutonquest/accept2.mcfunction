@@ -1,3 +1,3 @@
-execute at @e[tag=mouton] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> It got REALLY popular, and we'd get suggestions from readers as far as Highfall! But every year, the suggestions just got dumber and more demanding... then the Maelmari officials caught on."}]
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> It got REALLY popular, and we'd get suggestions from readers as far as Highfall! But every year, the suggestions just got dumber and more demanding... then the Maelmari officials caught on."}]
 execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:moutonquest/accept3 9s

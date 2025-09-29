@@ -1,3 +1,3 @@
-execute at @e[tag=dome] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> For the last few months, I've been living in Drehua Temple up in the beautiful cliffs of Palisades Heath, writing all about their culture. I had the book mostly finished, and wanted to make sure that the fort here would have an accurate depiction of such a crucial historical group!"}]
+execute at @e[tag=dome] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> For the last few months, I've been living in Drehua Temple up in the beautiful cliffs of Palisades Heath, writing all about their culture. I had the book mostly finished, and wanted to make sure that the fort here would have an accurate depiction of such a crucial historical group!"}]
 execute at @e[tag=dome] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:domequest/accept3 10s

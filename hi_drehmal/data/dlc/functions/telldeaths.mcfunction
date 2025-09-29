@@ -48,9 +48,6 @@ execute if score #ossein_prime tempdeaths matches 1 run scoreboard players add #
 execute if score #ossein_prime tempdeaths matches 1 run function dlc:primal_journey/ossein_prime/kill
 execute if score #ossein_prime stop matches 1 if score #tempdeaths timer < #ossein_prime timer run function dlc:primal_journey/ossein_prime/timer
 
-
-
-
 scoreboard players reset #emissary tempdeaths
 scoreboard players reset #generals tempdeaths
 scoreboard players reset #court tempdeaths

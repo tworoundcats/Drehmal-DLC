@@ -1,3 +1,3 @@
-execute at @e[tag=casey] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Casey","color":"dark_green"},{"text":"> He was so beside himself, in fact, that he left the door to his caravan unlocked! I'm sure he won't notice anything\u2014at least, not until he's a long way away from Gozak."}]
+execute at @e[tag=casey] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Casey","color":"dark_green"},{"text":"> He was so beside himself, in fact, that he left the door to his caravan unlocked! I'm sure he won't notice anything\u2014at least, not until he's a long way away from Gozak."}]
 execute at @e[tag=casey] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:caseyquest/finish3 6s

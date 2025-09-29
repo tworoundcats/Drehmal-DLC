@@ -1,4 +1,4 @@
-execute at @e[tag=mouton] run tellraw @a[distance=..12] ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Runic Advent-age","underlined":true},{"text":"\n"},{"text":"Help Muhton with the Project","italic":true,"color":"gray"}]
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Runic Advent-age","underlined":true},{"text":"\n"},{"text":"Help Muhton with the Project","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 execute at @e[tag=mouton] run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run summon experience_orb ~ ~ ~2 {Value:6}

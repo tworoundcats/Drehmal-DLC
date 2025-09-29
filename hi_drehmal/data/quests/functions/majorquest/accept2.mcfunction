@@ -1,3 +1,3 @@
-execute at @e[tag=major] run tellraw @a[distance=..12] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"I've scoured the whole place and haven't been able to find these missing artifacts, so there's only one place they could all be: "},{"text":"underwater","color":"yellow"},{"text":"."}]
+execute at @e[tag=major] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"I've scoured the whole place and haven't been able to find these missing artifacts, so there's only one place they could all be: "},{"text":"underwater","color":"yellow"},{"text":"."}]
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:majorquest/accept3 7s

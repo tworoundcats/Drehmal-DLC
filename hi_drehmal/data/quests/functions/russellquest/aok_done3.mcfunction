@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Cheated death... transcended the Veil?! Nobody has that kind of power! If only I knew more about him, then maybe some of the other pieces would fit together. Hell, I bet you could fill up a whole chest with stories of his feats!"}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Cheated death... transcended the Veil?! Nobody has that kind of power! If only I knew more about him, then maybe some of the other pieces would fit together. Hell, I bet you could fill up a whole chest with stories of his feats!"}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/aok_done4 8s

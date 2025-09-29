@@ -1,4 +1,0 @@
-#execute as @e[name="Russell",type=villager] run item replace entity @s weapon.mainhand from entity @p[tag=qst11,limit=1] weapon.mainhand 
-item replace entity @s weapon.mainhand with air
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40

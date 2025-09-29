@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> How about... the "},{"text":"hunting of the Greatbeast","color":"yellow"},{"text":"? I've heard a few stories, but I'd bet that the ones around the "},{"text":"Heartwood","color":"yellow"},{"text":" itself are the most accurate."}]
-execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> How about... the "},{"text":"hunting of the Greatbeast","color":"yellow"},{"text":"? I've heard a few stories, but I'd bet that the ones around the "},{"text":"Heartwood","color":"yellow"},{"text":" itself are the most accurate."}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/muhs2 7s

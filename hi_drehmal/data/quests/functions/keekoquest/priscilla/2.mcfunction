@@ -1,3 +1,3 @@
-execute at @e[tag=keeko] run tellraw @a[distance=..12] ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> THERE'S ANOTHER?! You know what? Keep 'em coming! I'll pay you the same rate for each one."}]
+execute at @e[tag=keeko] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> THERE'S ANOTHER?! You know what? Keep 'em coming! I'll pay you the same rate for each one."}]
 execute at @e[tag=keeko] as @p[tag=temp_i] run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
 execute at @e[tag=keeko] as @p[tag=temp_i] run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
