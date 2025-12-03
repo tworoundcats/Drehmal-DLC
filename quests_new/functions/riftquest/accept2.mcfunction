@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst12] run tellraw @s ["",{"text":"<"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> But everyone who knew how to maintain this thing was dead within a generation of the Empire's collapse, so for centuries, we've just had a dock that sits there and looks pretty."}]
+execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:riftquest/accept3 7s

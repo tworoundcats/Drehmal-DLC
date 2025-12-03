@@ -1,0 +1,1 @@
+execute positioned 4623.90 63 5865 run tellraw @a[distance=..50] ["",{"text":"<Wehl'r> Come on! Do it, already! "},{"text":"Kill me","color":"yellow"},{"text":", you maniac! Isn't that what you want? A deluge of blood?!"}]

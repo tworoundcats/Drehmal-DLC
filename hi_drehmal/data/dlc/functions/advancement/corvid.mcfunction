@@ -1,2 +1,2 @@
-execute unless score #DLC repeatable matches 1 run advancement grant @a only dlc:corvid
-execute unless score #DLC repeatable matches 1 run scoreboard players set #corvid bool 1
+advancement grant @s only dlc:corvid
+scoreboard players set #corvid bool 1

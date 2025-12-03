@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Melon Malfeasance","underlined":true},{"text":"\n"},{"text":"Sabotage Johmund's Melon Business","italic":true,"color":"gray"}]
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst4] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run summon experience_orb ~ ~ ~2 {Value:3}
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run summon experience_orb ~ ~ ~1 {Value:3}
 execute positioned ~ ~ ~ as @p[tag=qst4] at @s run summon experience_orb ~ ~ ~2 {Value:3}
@@ -65,8 +65,12 @@ execute positioned -2726 66 -1796 run forceload remove ~ ~
 execute positioned -2718.36 64.00 -1657.49 as @e[name="Melon Masher Casey",type=villager] run tag @s remove tempd
 
 
+scoreboard players reset #caseyquest bool
 
 
 execute unless score #quest4 bool matches 1 run scoreboard players add #quest num 1
+execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+execute as @a run function weapons:grant
+
 scoreboard players set #quest4 bool 1

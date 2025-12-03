@@ -1,4 +1,4 @@
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run tellraw @s ["",{"text":"Quest Started:","color":"yellow"},{"text":" "},{"text":"Champions of Chaos","underlined":true},{"text":"\n"},{"text":"Slay the Maelmari Crime Lords","italic":true,"color":"gray"}]
-execute positioned ~ ~ ~ as @p[tag=qst16] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst16] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
 schedule function quests:mahkarquest/summon 1s

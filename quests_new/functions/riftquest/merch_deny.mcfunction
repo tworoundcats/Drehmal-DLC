@@ -1,0 +1,2 @@
+execute as @p[tag=riftmerchtarget] run tellraw @s ["",{"text":"<"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> Huh. Alright, then. Have it your way."}]
+schedule function quests:riftquest/merch_clear 5s

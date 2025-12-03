@@ -1,0 +1,3 @@
+execute at @e[tag=cinder] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Cinder","color":"dark_red"},{"text":"> ","color":"white"},{"text":"I'll even give you a "},{"text":"weapon","color":"yellow"},{"text":". Keep it if you want, I don't care. Just don't tell anyone you saw me."}]
+execute at @e[tag=cinder] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:cinderquest/accept5 5s

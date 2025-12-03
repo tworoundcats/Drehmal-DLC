@@ -1,0 +1,3 @@
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I do wonder just how much Avsohmic art could've survived to the modern day if not for the Anyr regime's crackdown, though. That lines up incredibly well with what I know about the guy."}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:russellquest/art_done5 8s

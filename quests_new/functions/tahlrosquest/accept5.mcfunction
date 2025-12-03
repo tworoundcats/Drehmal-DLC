@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tellraw @s ["",{"text":"<"},{"text":"Tahlros","color":"dark_red"},{"text":"> Maybe something "},{"text":"aquatic","color":"yellow"},{"text":", to shake things up a bit? Just as long as it can survive in "},{"text":"any conditions","color":"yellow"},{"text":"."}]
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:tahlrosquest/accept6 6s

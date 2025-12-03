@@ -1,0 +1,3 @@
+execute at @e[tag=cinder] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Cinder","color":"dark_red"},{"text":"> ","color":"white"},{"text":"He's... it's not really important why. Just needs to happen. Guy's "},{"text":"evil","color":"yellow"},{"text":", probably a Red Dawn bigwig or secret necromancer or inside agent for "},{"text":"Maelihs","color":"dark_red"},{"text":" or... something."}]
+execute at @e[tag=cinder] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:cinderquest/accept3 9s

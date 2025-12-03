@@ -966,4 +966,4 @@ execute as @s[scores={what=1..}] run function dlc:misc/what
 execute as @s[tag=chronicler_meeting] run stopsound @s
 
 # misc 
-execute as @s[tag=qst4] unless score #caseyquest bool matches 1 at @s if block -2726 66 -1796 air run scoreboard players set #caseyquest bool 1
+# execute as @s[tag=qst4] unless score #caseyquest bool matches 1 at @s if block -2726 66 -1796 air run scoreboard players set #caseyquest bool 1

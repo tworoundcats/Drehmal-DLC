@@ -1,2 +1,2 @@
 execute as @p[tag=riftmerchtarget] run tellraw @s ["",{"text":"<"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> In any case, I'll take it off your hands if you'd like. Do you want to turn that in to me?\n"},{"text":"[Yes]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function quests:riftquest/merch_accept"}},{"text":"\n"},{"text":"[No]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function quests:riftquest/merch_deny"}}]
-execute as @p[tag=riftmerchtarget] at @s run playsound entity.villager.trade player @a ~ ~ ~ 3 1
+execute as @p[tag=riftmerchtarget] at @s run playsound entity.villager.trade player @a ~ ~ ~ 1 1 

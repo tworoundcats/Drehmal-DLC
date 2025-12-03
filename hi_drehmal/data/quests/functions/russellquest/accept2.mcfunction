@@ -1,3 +1,3 @@
-execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I'm sure you've noticed, but Mohta isn't exactly a bustling hub of knowledge. There is so much fascinating history in this realm, and it feels like none of it is in this village."}]
-execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst11] run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I'm sure you've noticed, but Mohta isn't exactly a bustling hub of knowledge. There is so much fascinating history in this realm, and it feels like none of it is in this village."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:russellquest/accept3 8s

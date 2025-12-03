@@ -1,0 +1,3 @@
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> With some simple runes, I could just "},{"text":"transplant real-world materials directly onto the page","color":"yellow"},{"text":". It'd be so much easier than drawing, but I don't have time to gather anything. That's where "},{"text":"you","color":"yellow"},{"text":" come in!"}]
+execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:moutonquest/accept5 9s

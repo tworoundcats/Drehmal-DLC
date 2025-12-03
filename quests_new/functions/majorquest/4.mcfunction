@@ -1,0 +1,3 @@
+execute at @e[tag=major] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Major","color":"light_purple"},{"text":"> ","color":"white"},{"text":"Very interesting. Based on their apparent ages, it seems like the items have been steadily accruing energy over time, and they've done so at a notably higher rate than similar items above the water's surface."}]
+execute at @e[tag=major] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:majorquest/5 11s

@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @e[tag=mouton] run tag @s add moutonflammer
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> This ink is REALLY hard to erase, but I can probably use the power of one of those "},{"text":"experimental hammers","color":"yellow"},{"text":" they use in the mines to knock out that whole part of the page."}]
+execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1

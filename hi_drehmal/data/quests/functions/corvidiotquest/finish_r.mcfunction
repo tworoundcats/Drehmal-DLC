@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"An Artist's Anguish","underlined":true},{"text":"\n"},{"text":"Retrieve Corv Ihd's Painting","italic":true,"color":"gray"}]
-execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst14] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~2 {Value:6}
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~1 {Value:6}
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run summon experience_orb ~ ~ ~2 {Value:6}
@@ -49,5 +49,8 @@ execute as @p[tag=qst14] run tag @s add qst14_e
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tag @s remove qst14
 
 execute unless score #quest14 bool matches 1 run scoreboard players add #quest num 1
+execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+execute as @a run function weapons:grant
+
 scoreboard players set #quest14 bool 1

@@ -26,8 +26,8 @@ execute if entity @s[tag=timeworn_executioner] run function dlc:mobs/timeworn_ex
 execute if entity @s[tag=timeworn_harbinger] run function dlc:mobs/timeworn_harbinger/tick
 
 
-execute if entity @s[tag=primal_fury] run function dlc:mobs/primal_fury/tick
-execute if entity @s[tag=primal_yearning] run function dlc:mobs/primal_yearning/tick
+execute if entity @s[tag=primal_fury] at @s if entity @a[distance=..24] run function dlc:mobs/primal_fury/tick
+execute if entity @s[tag=primal_yearning] at @s if entity @a[distance=..24] run function dlc:mobs/primal_yearning/tick
 execute if entity @s[tag=primal_yearning_child] run function dlc:mobs/primal_yearning/child/tick
 execute if entity @s[tag=primal_aegis] run function dlc:mobs/primal_aegis/tick
 execute if entity @s[tag=primal_stalker] run function dlc:mobs/primal_stalker/tick

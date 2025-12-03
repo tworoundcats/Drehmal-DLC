@@ -1,0 +1,3 @@
+execute at @e[tag=keeko] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> He's a ","color":"white"},{"text":"brown stallion with white spots","color":"yellow"},{"text":", and he loves to ","color":"white"},{"text":"climb","color":"yellow"},{"text":". He's getting up there in age, so I'm a little concerned.","color":"white"}]
+execute at @e[tag=keeko] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:keekoquest/accept3 6s

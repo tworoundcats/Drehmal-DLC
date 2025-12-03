@@ -2,7 +2,7 @@ execute positioned ~ ~ ~ as @p[tag=qst7] unless data entity @s SelectedItem run 
 execute positioned ~ ~ ~ as @p[tag=qst7] if predicate players:holding/masayoshi run item replace entity @e[type=villager,name="Dredd'Lohk",limit=1,sort=nearest] weapon.mainhand with air
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Tidal Heist!","underlined":true},{"text":"\n"},{"text":"Steal the Tide Queen's Blade","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:7}
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:7}
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:7}
@@ -63,5 +63,8 @@ execute as @e[name="Dredd'Lohk",type=villager] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tag @s remove qst7
 
 execute unless score #quest7 bool matches 1 run scoreboard players add #quest num 1
+execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+execute as @a run function weapons:grant
+
 scoreboard players set #quest7 bool 1

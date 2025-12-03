@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @e[tag=mouton] run tag @s add torahn
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> Really setting the tone early today. Could you grab me one of those "},{"text":"fish that look like the Torahn","color":"yellow"},{"text":"?"}]
+execute at @e[tag=mouton] run playsound minecraft:dcustom.entity.villager.no player @a ~ ~ ~ 2 1

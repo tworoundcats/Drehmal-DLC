@@ -1,0 +1,3 @@
+execute at @e[tag=gamer] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> The only lead I really have in regards to where those thieves are located is that they are "},{"text":"somewhere up north","color":"yellow"},{"text":". I'm not the only one unlucky enough to have crossed them."}]
+execute at @e[tag=gamer] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:gamerquest/accept4 8s

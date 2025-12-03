@@ -1,8 +1,8 @@
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"A Saponified Severer","underlined":true},{"text":"\n"},{"text":"Reawaken the Ancient Blade","italic":true,"color":"gray"}]
 execute positioned ~ ~ ~ as @e[type=villager,name="Ga'Mahr, Lord of Duht"] run item replace entity @s weapon.mainhand with air
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 2
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:2}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:2}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:2}
@@ -74,5 +74,8 @@ execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tag @s remove qst10
 #execute positioned 5878 66 -1088 as @e[name="Ga'Mahr, Lord of Duht",type=villager] run tag @s remove tempd
 
 execute unless score #quest10 bool matches 1 run scoreboard players add #quest num 1
+execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+execute as @a run function weapons:grant
+
 scoreboard players set #quest10 bool 1

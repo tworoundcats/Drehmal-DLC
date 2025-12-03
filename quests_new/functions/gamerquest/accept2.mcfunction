@@ -1,0 +1,3 @@
+execute at @e[tag=gamer] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Get it back to me and I'll reward you fairly. I'd appreciate it if you also dealt with those freaky cultists while you're at it, as would the rest of the adventurer's guild."}]
+execute at @e[tag=gamer] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:gamerquest/accept3 8s

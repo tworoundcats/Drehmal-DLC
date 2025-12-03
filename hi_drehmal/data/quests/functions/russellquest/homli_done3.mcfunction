@@ -1,3 +1,3 @@
-execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Incredible. I never would have known about Homli's father or the clans without this! And that sword, the Frostfang\u2014surely he didn't actually just conjure it from a funeral pyre, so where did it really come from?"}]
-execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Incredible. I never would have known about Homli's father or the clans without this! And that sword, the Frostfang\u2014surely he didn't actually just conjure it from a funeral pyre, so where did it really come from?"}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:russellquest/homli_done4 8s

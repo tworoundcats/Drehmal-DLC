@@ -1,0 +1,3 @@
+execute positioned 4623 63 5865 run tellraw @a[distance=..50] {"text":"<Wehl'r> Did you take them to the distant Black Jungle? Or perhaps Tehrmia, for the Wingmakers to safeguard? Maybe the Carmine, those Maelmari wouldn't know the first thing about assembling a superweapon!"}
+execute positioned 4623 63 5865 as @p run execute at @s run playsound entity.villager.ambient player @a ~ ~ ~ 5 1 
+schedule function quests:wellerquest/epilogue3 8s

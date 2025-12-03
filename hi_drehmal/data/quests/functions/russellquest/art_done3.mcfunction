@@ -1,3 +1,3 @@
-execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Whoa! Did you realize that Drehuan art had such an influence on Avsohm's early art? I guess it makes sense, them doing the whole central-plains-successors thing."}]
-execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Whoa! Did you realize that Drehuan art had such an influence on Avsohm's early art? I guess it makes sense, them doing the whole central-plains-successors thing."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:russellquest/art_done4 7s

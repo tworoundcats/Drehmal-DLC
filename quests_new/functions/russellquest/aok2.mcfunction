@@ -1,0 +1,3 @@
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I can't say for certain, but I'd bet there's some kind of writing here in Lorahn'Kahl that mentions him directly. I'd kill to know more about this necromancer, but I don't even know his name!"}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:russellquest/aok3 9s

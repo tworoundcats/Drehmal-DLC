@@ -1,0 +1,3 @@
+execute at @e[tag=cinder] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Cinder","color":"dark_red"},{"text":"> ","color":"white"},{"text":"All you have to do is walk into the "},{"text":"magenta room","color":"dark_purple"},{"text":" where he's sleeping, stab him to death, and come get your money. Simple as. "},{"text":"Magenta","bold":true},{"text":", not pink or purple, yeah?"}]
+execute at @e[tag=cinder] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:cinderquest/accept4 6s

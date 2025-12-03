@@ -1,3 +1,3 @@
-execute at @e[tag=gamer] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Actually, it could be worse than that if the stories my elders told me were true. Those thieves didn't know what they were handling: "},{"text":"The blade is dormant","color":"yellow"},{"text":", and dull."}]
-execute at @e[tag=gamer] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Actually, it could be worse than that if the stories my elders told me were true. Those thieves didn't know what they were handling: "},{"text":"The blade is dormant","color":"yellow"},{"text":", and dull."}]
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:gamerquest/sword_3 7s

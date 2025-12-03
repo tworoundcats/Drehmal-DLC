@@ -1,0 +1,67 @@
+execute positioned ~ ~ ~ as @p[tag=qst7] unless data entity @s SelectedItem run item replace entity @s weapon.mainhand from entity @e[type=villager,name="Dredd'Lohk",limit=1,sort=nearest] weapon.mainhand
+execute positioned ~ ~ ~ as @p[tag=qst7] if predicate players:holding/masayoshi run item replace entity @e[type=villager,name="Dredd'Lohk",limit=1,sort=nearest] weapon.mainhand with air
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Tidal Heist!","underlined":true},{"text":"\n"},{"text":"Steal the Tide Queen's Blade","italic":true,"color":"gray"}]
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~2 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon experience_orb ~ ~ ~1 {Value:3}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
+execute positioned ~ ~ ~ as @p[tag=qst7] run advancement grant @s only dlc:tidal
+
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run give @s mythicmetals:adamantite_leggings{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_aqua","text":"Stanching Chausses"}],"underlined":true,"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Made to halt the endless flow of blood that follows "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"the Tide Queen\'s former blade. She had no use "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"for such tribute, of course, nor did she care to "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"mask the sanguine trail left in her wake. As her "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"reign devolved into true despotism, this heirloom"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"was to be the secret weapon of ambitious rebels."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Insohm\'s hired blades found their mark before "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"it ever saw use. "}],"text":""}', '{"extra":[{"italic":false,"color":"yellow","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"yellow","text":"Bloodclotting"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_gray","text":"While wearing these leggings, critical attacks with"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_gray","text":"Masayoshi heal as much health as they take away."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_gray","text":"When on Legs:"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"-2 Armor"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"+2 Attack Damage"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"-0.02 Movement Speed"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_aqua","text":"Quest Reward"}],"text":""}']}, HideFlags: 2, Damage: 0, AttributeModifiers: [{Amount: -2, Slot: "legs", UUID: [I; -124324, 32393, 211626, -64786], AttributeName: "generic.armor", Name: "generic.armor"}, {Amount: 2, Slot: "legs", UUID: [I; -124324, 32693, 211626, -65386], AttributeName: "generic.attack_damage", Name: "generic.attack_damage"}, {Amount: -0.02d, Slot: "legs", UUID: [I; -124324, 42993, 211626, -85986], AttributeName: "generic.movement_speed", Name: "generic.movement_speed"}], Bloodclot: 1b}
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tag @s add qst7_e
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tag @s remove qst7
+
+execute unless score #quest7 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest7 bool 1

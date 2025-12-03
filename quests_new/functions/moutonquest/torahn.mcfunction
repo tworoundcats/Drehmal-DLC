@@ -1,0 +1,3 @@
+execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> Okay, uh\u2014the first suggestion here is from a member of the Order of Astorahn up in the Gulf. \"Where is my beautiful Torahn, that one true source of warmth? Put it front and center!\""}]
+execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:moutonquest/torahn1 10s

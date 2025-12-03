@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst7] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Dredd'Lohk","color":"dark_aqua"},{"text":"> ","color":"white"},{"text":"This is the real thing! I said I'd make it worth your while, so here's something from my grandfather."}]
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst7] run schedule function quests:dreadquest/3 6s

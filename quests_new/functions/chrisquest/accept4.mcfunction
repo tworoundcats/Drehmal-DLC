@@ -1,0 +1,3 @@
+execute at @e[tag=chris] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Chris","color":"dark_blue"},{"text":"> I can't say for certain where you might find one, but it'd for sure be more than "},{"text":"one day's journey","italic":true},{"text":" from here. Maybe someplace industrial, with a hefty amount of "},{"text":"cobble and smog","italic":true},{"text":"?"}]
+execute at @e[tag=chris] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:chrisquest/accept5 7s

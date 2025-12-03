@@ -1,0 +1,3 @@
+execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> This orb is strange too. I don't feel anything from it besides the base primal energy the others are built off of, just amplified. Why do you think that is?"}]
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:danielquest/khive5 8s

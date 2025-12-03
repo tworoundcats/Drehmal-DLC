@@ -1,0 +1,3 @@
+execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> They all wear "},{"text":"special purple chestplates","color":"yellow"},{"text":", the likes of which I haven't seen before. People say it's as durable as it gets. You can recognize them that way."}]
+execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.ambient master @s ~ ~ ~ 2 0.8
+schedule function quests:mahkarquest/accept10 8s

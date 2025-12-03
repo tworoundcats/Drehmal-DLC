@@ -1,4 +1,3 @@
-function players:avpod/clearchat
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}
 tellraw @s {"text":"                 REQUIRED SETUP","bold":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"These must be run for the DLC to work.","color":"gray"}]}}
@@ -17,11 +16,11 @@ function dlc:check12
 
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}
-tellraw @s {"text":"                 TOGGLEABLE SETTINGS","bold":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"These are optional settings, which can be changed at will throughout the map.","color":"gray"}]}}
+tellraw @s {"text":"                 DLC SETTINGS","bold":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"These are optional settings, which can be changed at will throughout the map.","color":"gray"}]}}
 tellraw @s {"text":" "}
 
-
-function dlc:check6
+#repeatable
+#function dlc:check6
 function dlc:check7
 function dlc:check9
 function dlc:givearmor
@@ -30,4 +29,3 @@ function dlc:givearmor
 #death counter toggleable + for bosses
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}
-tellraw @s {"text":" "}

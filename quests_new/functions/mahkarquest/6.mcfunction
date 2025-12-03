@@ -1,0 +1,4 @@
+execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> That is for my Tehrmari contacts to worry about, not you. Please, accept this reward from our collective. From this day forward, the common folk of Rhaveloth will do you no harm. Thank you, Drehmari."}]
+execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.celebrate master @s ~ ~ ~ 2 0.8
+execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst16] run schedule function quests:mahkarquest/finish 8s
+execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst16] run schedule function quests:mahkarquest/finish_r 8s

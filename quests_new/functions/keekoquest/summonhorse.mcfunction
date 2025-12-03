@@ -1,0 +1,3 @@
+execute positioned 605.82 100.00 1746.41 run forceload add ~ ~
+execute positioned 605.82 100.00 1746.41 run summon horse ~ ~ ~ {Variant:771,SaddleItem:{id:saddle,Count:1},Tame:1b,CustomName:'[{"text":"Eddie"}]',CustomNameVisible:1b,Health:20,Tags:["eddie"],Attributes:[{Name:"horse.jump_strength",Base:1f},{Name:"generic.movement_speed",Base:0.25f},{Name:"generic.max_health",Base:25f}]}
+execute positioned 605.82 100.00 1746.41 run forceload remove ~ ~

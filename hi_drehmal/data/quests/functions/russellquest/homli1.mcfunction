@@ -1,3 +1,3 @@
-execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I've heard the story of the "},{"text":"Frostfang Catastrophe","color":"yellow"},{"text":", but only the version that they teach in the textbooks. History is written by the victors, as they say, and Avsohm was certainly a historical victor. For a while, at least."}]
-execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run tellraw @s ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I've heard the story of the "},{"text":"Frostfang Catastrophe","color":"yellow"},{"text":", but only the version that they teach in the textbooks. History is written by the victors, as they say, and Avsohm was certainly a historical victor. For a while, at least."}]
+execute positioned ~ ~ ~ as @p[tag=qst11] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:russellquest/homli2 9s

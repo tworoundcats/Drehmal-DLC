@@ -1,3 +1,3 @@
-execute at @e[tag=gragas] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> All I can remember is... a "},{"text":"bridge","color":"yellow"},{"text":"... and a big ol' "},{"text":"temple south","color":"yellow"},{"text":" of here... and then... well, nothin'. Nothin' but this achin' head "},{"text":"."}]
-execute at @e[tag=gragas] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst5] run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> It did the trick, sure, but I'm sure there's something better. Barkeep said something about it last night - said his stuff was nearly as strong as "},{"text":"Vayniklah's finest","color":"yellow"},{"text":"."}]
+execute positioned ~ ~ ~ as @p[tag=qst5] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:gragasquest/accept3 9s

@@ -1,0 +1,83 @@
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"A Saponified Severer","underlined":true},{"text":"\n"},{"text":"Reawaken the Ancient Blade","italic":true,"color":"gray"}]
+execute positioned ~ ~ ~ as @e[type=villager,name="Ga'Mahr, Lord of Duht"] run item replace entity @s weapon.mainhand with air
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~1 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run give @s emerald 64
+execute positioned ~ ~ ~ as @p[tag=qst10] run advancement grant @s only dlc:gamer
+execute positioned ~ ~ ~ as @p[tag=qst10] run advancement grant @a only dlc:gamer
+
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/jurei
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
+
+execute as @e[tag=gamer] run tag @s add qend
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tag @s remove qst10
+
+execute unless score #quest10 bool matches 1 run scoreboard players add #quest num 1
+execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+scoreboard players set #quest10 bool 1

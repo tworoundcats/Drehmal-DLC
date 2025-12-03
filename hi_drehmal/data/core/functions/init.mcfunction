@@ -1102,8 +1102,8 @@ scoreboard objectives add spawnstarrite2 dummy
 scoreboard objectives add spawnstarrite3 dummy
 scoreboard objectives add repeatable dummy
 scoreboard objectives add spawnqnpc dummy
-scoreboard objectives add dlc trigger
-scoreboard players enable @a dlc
+#scoreboard objectives add dlc trigger
+#scoreboard players enable @a dlc
 
 scoreboard objectives add dquest dummy
 scoreboard objectives add dquest_done_once dummy

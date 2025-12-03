@@ -1,3 +1,4 @@
-execute at @e[tag=dome] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> I can't thank you enough, friend. Here! A generous reward, and my old shield! It's a little beat up, but don't let it fool you\u2014a little gumption is worth more than anything!"}]
-execute at @e[tag=dome] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
-schedule function quests:domequest/finish 6s
+execute positioned ~ ~ ~ as @p[tag=qst8] run tellraw @s ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> I can't thank you enough, friend. Here! A generous reward, and my old shield! It's a little beat up, but don't let it fool you\u2014a little gumption is worth more than anything!"}]
+execute positioned ~ ~ ~ as @p[tag=qst8] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute unless score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst8] run schedule function quests:domequest/finish 6s
+execute if score #DLC repeatable matches 1 positioned ~ ~ ~ as @p[tag=qst8] run schedule function quests:domequest/finish_r 6s

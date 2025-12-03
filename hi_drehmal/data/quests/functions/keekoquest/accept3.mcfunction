@@ -1,3 +1,3 @@
-execute at @e[tag=keeko] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> ","color":"white"},{"text":"He was here only a few hours ago, so he can't have gotten that far out into the wilds. Bring him back for me, would you?"}]
-execute at @e[tag=keeko] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst] run tellraw @s ["",{"text":"<","color":"white"},{"text":"Keehko","color":"gold"},{"text":"> ","color":"white"},{"text":"He was here only a few hours ago, so he can't have gotten that far out into the wilds. Bring him back for me, would you?"}]
+execute positioned ~ ~ ~ as @p[tag=qst] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:keekoquest/accept5 6s

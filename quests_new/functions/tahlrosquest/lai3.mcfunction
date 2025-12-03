@@ -1,0 +1,3 @@
+execute positioned ~ ~ ~ as @p[tag=qst15] run tellraw @s ["",{"text":"<"},{"text":"Tahlros","color":"dark_red"},{"text":"> I've been around for a "},{"text":"long","italic":true},{"text":" time. Even after all those years, this is, without a doubt, one of the strangest things I have ever seen."}]
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst15] run schedule function quests:tahlrosquest/lai4 6s

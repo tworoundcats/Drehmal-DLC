@@ -1,3 +1,3 @@
-execute at @e[tag=gamer] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Oh. That makes more sense than I'd like to admit. That's gross. My entire lineage is really gross. At least there's a reason behind it, but that's not awfully relevant to me now."}]
-execute at @e[tag=gamer] run playsound entity.villager.no player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run tellraw @s ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> Oh. That makes more sense than I'd like to admit. That's gross. My entire lineage is really gross. At least there's a reason behind it, but that's not awfully relevant to me now."}]
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run playsound entity.villager.no player @a ~ ~ ~ 1 1 
 schedule function quests:gamerquest/wax_4 8s

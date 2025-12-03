@@ -57,11 +57,6 @@ public class DrehmalDlc implements ModInitializer {
 						player.velocityModified = true;
 
 					}
-
-
-// In your onInitialize() method, inside the ServerTickEvents.END_WORLD_TICK loop...
-
-// --- Check for the SECOND dash ('dash2') ---
 					if (player.getCommandTags().contains("dash2")) {
 						final double DASH_POWER = 3.0;
 						final double UPWARD_POP = 0.2;

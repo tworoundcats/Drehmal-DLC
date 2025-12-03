@@ -1,0 +1,3 @@
+execute at @e[tag=casey] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Casey","color":"dark_green"},{"text":"> ","color":"white"},{"text":"If somebody were to... "},{"text":"relieve them","italic":true,"color":"yellow"},{"text":" of their supply","color":"yellow"},{"text":", then that would mean they have to come here to restock! And just maybe, they might "},{"text":"forget","italic":true},{"text":" a couple things here in Gozak."}]
+execute at @e[tag=casey] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:caseyquest/accept4 10s

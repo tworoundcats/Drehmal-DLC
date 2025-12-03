@@ -1,0 +1,2 @@
+execute at @e[tag=keeko] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> Alright. I know I could've forgotten about a couple, but I'm pretty sure that there aren't more than 50. Preeetty sure."}]
+execute at @e[tag=keeko] as @p[tag=temp_i] run playsound minecraft:dcustom.entity.villager.ambient player @s ~ ~ ~ 1 2

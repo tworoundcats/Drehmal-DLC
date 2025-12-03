@@ -1,7 +1,7 @@
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run tellraw @s ["",{"text":"Quest Completed:","color":"yellow"},{"text":" "},{"text":"Champions of Chaos","underlined":true},{"text":"\n"},{"text":"Slay the Maelmari Crime Lords","italic":true,"color":"gray"}]
 execute as @p[tag=qst16] run tellraw @s {"text":"You are now a Friend of Mahkar, making regular Maelmari permanently neutral towards you while in Rhaveloth.","color":"gray"}
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
-execute positioned ~ ~ ~ as @p[tag=qst16] at @s run playsound minecraft:dcustom.ui.toast.challenge_complete player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst16] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run summon experience_orb ~ ~ ~2 {Value:9}
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run summon experience_orb ~ ~ ~1 {Value:9}
 execute positioned ~ ~ ~ as @p[tag=qst16] at @s run summon experience_orb ~ ~ ~2 {Value:9}
@@ -109,5 +109,8 @@ execute as @p[tag=qst16] run tag @s add qst16_e
 execute as @p[tag=qst16] at @s run tag @s remove qst16
 
 execute unless score #quest16 bool matches 1 run scoreboard players add #quest num 1
+execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
+execute as @a run function weapons:grant
+
 scoreboard players set #quest16 bool 1

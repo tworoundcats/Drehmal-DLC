@@ -1,3 +1,3 @@
-execute positioned ~ ~ ~ as @p[tag=qst5] at @s run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> Musta dropped the recipe somewhere in that temple. You go get it for me, and I'll be sure you're well paid alright? Deal? Of course!"}]
-execute at @e[tag=gragas] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute positioned ~ ~ ~ as @p[tag=qst5] at @s run tellraw @s ["",{"text":"<"},{"text":"Gragas","color":"red"},{"text":"> I don't know much about Vayniklah, but if her mead is as "},{"text":"legendary","color":"yellow"},{"text":" as it sounds, then I have GOT to get my hands on some of that!"}]
+execute positioned ~ ~ ~ as @p[tag=qst5] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
 schedule function quests:gragasquest/accept4 8s

@@ -1,0 +1,6 @@
+execute at @e[tag=keeko] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Keehko","color":"gold"},{"text":"> I... I genuinely can't believe it. I think you got them all. Literally, every single one of them. I... I don't even know what to say."}]
+execute at @e[tag=keeko] as @p[tag=temp_i] run playsound minecraft:dcustom.entity.player.levelup player @a ~ ~ ~ 1 2
+execute at @e[tag=keeko] as @p[tag=temp_i] run particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 40
+execute positioned 505.51 67 1835.52 as @p run give @s emerald 64
+execute positioned 505.51 67 1835.52 as @p run give @s diamond 32
+execute positioned 505.51 67 1835.52 as @p run give @s dlc:olkahan{Olkahan:1b,display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"light_purple","text":"Olkahan Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"An immensely rare metal only found"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"on the underside of the Disc. In a "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"post-rehntite era, it may be the single "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"most sought-after mineral in the realm"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"—for those who even know of its existence."}],"text":""}']}} 5

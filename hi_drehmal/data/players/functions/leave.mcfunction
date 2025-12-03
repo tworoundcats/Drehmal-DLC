@@ -57,7 +57,7 @@ execute if entity @s[tag=syzygy_crawl] run function players:items/syzygy/endcraw
 
 
 
-scoreboard players enable @a dlc
+#scoreboard players enable @a dlc
 execute as @a[tag=obv_active] if score @s OBVuuid0 = #temp uuid0 if score @s OBVuuid1 = #temp uuid1 if score @s OBVuuid2 = #temp uuid2 if score @s OBVuuid3 = #temp uuid3 run function players:items/obv/end_hold
 scale reset @s
 

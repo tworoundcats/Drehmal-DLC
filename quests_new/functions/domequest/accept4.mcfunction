@@ -1,0 +1,3 @@
+execute at @e[tag=dome] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> I scurried away to safety, but it was near the "},{"text":"encampment south of here","color":"yellow"},{"text":". I'd get it back myself, but... the pen is mightier than the sword, and they've got both now! If you could help me out, I'd be very grateful."}]
+execute at @e[tag=dome] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:domequest/accept5 8s

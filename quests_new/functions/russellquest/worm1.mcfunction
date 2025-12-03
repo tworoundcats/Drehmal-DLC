@@ -1,0 +1,3 @@
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I've only been up to the "},{"text":"temple in Palisades Heath","color":"yellow"},{"text":" once before, and that was probably the most enlightening experience of my life. I committed the four Parables to memory, but couldn't shake the feeling that there was "},{"text":"something else","color":"yellow"},{"text":" there."}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:russellquest/worm2 9s

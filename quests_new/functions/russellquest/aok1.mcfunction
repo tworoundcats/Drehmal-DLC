@@ -1,0 +1,3 @@
+execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I don't like to use the title since they're a very selective bunch, but I am fascinated by "},{"text":"alchemy","color":"yellow"},{"text":". In speaking to a couple practitioners, I've learned that the ancient Tri-Moon Theocracy drew heavy inspiration from an even MORE "},{"text":"ancient necromancer","color":"yellow"},{"text":"."}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+schedule function quests:russellquest/aok2 9s
