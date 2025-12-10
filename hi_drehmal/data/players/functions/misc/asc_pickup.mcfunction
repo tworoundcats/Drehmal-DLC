@@ -16,5 +16,5 @@ advancement grant @a only weapons:ascendance
 advancement revoke @s only players:asc
 scoreboard players set #asc_picked? bool 1
 
-kill @e[type=armor_stand,tag=asc_display]
+execute as @e[type=villager,tag=asc_pickup] run kill @e[type=armor_stand,tag=asc_display,distance=..2]
 execute as @e[type=villager,tag=asc_pickup] at @s run teleport ~ -1000 ~

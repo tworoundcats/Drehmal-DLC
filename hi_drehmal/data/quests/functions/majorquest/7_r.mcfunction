@@ -50,15 +50,14 @@ execute positioned ~ ~ ~ as @p[tag=qst2] at @s run summon firework_rocket ~ ~2 ~
 execute positioned ~ ~ ~ as @p[tag=qst2] run advancement grant @s only dlc:archeology
 
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run give @s emerald 8
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run give @s additionaladditions:rose_gold_sword{RepairCost: 0, HideFlags: 126, display: {Name: '["",{"text":"Evenblade","italic":false,"underlined":true,"color":"dark_aqua"}]', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"A simple sword forged and wielded"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"by a humble traveler. Although"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"its original owner has not"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"spent long in the Primal Caverns,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"this blade has already been"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"subtly transformed, shifting its"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"weight to become more balanced"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"than it was when first created."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"gray","text":"When in main hand:"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"7 Attack Damage"}],"text":""}', '{"extra":[{"italic":false,"color":"blue","text":"1.6 Attack Speed"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":false,"color":"dark_aqua","text":"Quest Reward"}],"text":""}']}}
-execute positioned ~ ~ ~ as @p[tag=qst2] at @s run give @s dlc:silver_ingot{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}} 1
+execute positioned ~ ~ ~ as @p[tag=qst2] at @s run function dlc:give/evenblade
 function quests:majorquest/summonartifacts
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run scoreboard players reset @s mquest
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tag @s add qst2_e
 execute positioned ~ ~ ~ as @p[tag=qst2] at @s run tag @s remove qst2
 
 execute unless score #quest2 bool matches 1 run scoreboard players add #quest num 1
-execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
+
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
 execute as @a run function weapons:grant
 

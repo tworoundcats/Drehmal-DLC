@@ -107,7 +107,6 @@ execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tag @s remove qst12
 execute positioned ~ ~ ~ as @p[tag=qst12f] at @s run tag @s remove qst12f
 
 execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
-execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
 execute as @a run function weapons:grant
 

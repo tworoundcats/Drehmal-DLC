@@ -4,7 +4,7 @@ execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster
 execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,distance=..4] if entity @a[distance=..3,tag=!haskeekomerch,tag=!keekomerchtarget] run execute positioned ~ ~ ~ as @p if predicate players:holding/quest/merch run function quests:keekoquest/merch
 execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_map run function quests:keekoquest/priscilla/count
 execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!priscilla.maxxed,distance=..4] if entity @a[distance=..3] run execute as @p if predicate players:holding/priscilla_magnum_opus run function quests:keekoquest/priscilla/count
-execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=eddie,distance=..5] run function quests:keekoquest/finish
+execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qend,tag=!tempd,distance=..4] if entity @a[distance=..3,tag=qst,tag=!qst_e] if entity @e[type=horse,tag=Eddie,distance=..5] run function quests:keekoquest/finish
 execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst,tag=!qst_e] run function quests:keekoquest/base
 execute positioned 505.51 67.00 1835.52 if loaded ~ ~ ~ as @e[name="Stablemaster Keehko",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
 
@@ -17,7 +17,7 @@ execute positioned 880.43 66.06 486.42 if loaded ~ ~ ~ as @e[name="Archeologist 
 # Cinder/Slypador - Rhaverik
 execute positioned 1068.89 66.00 1964.35 if loaded ~ ~ ~ as @e[name="Cinder",type=villager,tag=!qstart,tag=!qend,distance=..4] if entity @a[distance=..3,tag=!qst3] run function quests:cinderquest/base
 execute positioned 1068.89 66.00 1964.35 if loaded ~ ~ ~ as @e[name="Cinder",type=villager,tag=!qend,distance=..4] unless entity @a[distance=..3] run tag @s remove qstart
-execute positioned 1092.56 66.00 1967.79 if loaded ~ ~ ~ as @e[name="Slypador",type=villager,distance=..4] unless score #sly int matches 1 run execute positioned ~ ~ ~ as @p[tag=qst3] run schedule function quests:cinderquest/why 5t
+
 
 # Casey - Gozak
 execute unless score #caseyquest bool matches 1 positioned -2726 66 -1796 if entity @a[distance=..5] run function quests:caseyquest/tick

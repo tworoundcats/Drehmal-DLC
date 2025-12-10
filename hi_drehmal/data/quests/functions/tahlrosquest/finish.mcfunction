@@ -119,7 +119,7 @@ execute as @e[name="Tahlros",type=villager] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15
 
 execute unless score #quest15 bool matches 1 run scoreboard players add #quest num 1
-execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
+
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
 execute as @a run function weapons:grant
 

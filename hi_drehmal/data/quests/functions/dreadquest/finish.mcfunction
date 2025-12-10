@@ -63,7 +63,7 @@ execute as @e[name="Dredd'Lohk",type=villager] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tag @s remove qst7
 
 execute unless score #quest7 bool matches 1 run scoreboard players add #quest num 1
-execute unless score #quest12 bool matches 1 run scoreboard players add #quest num 1
+
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster
 execute as @a run function weapons:grant
 
