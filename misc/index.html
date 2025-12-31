@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primal Journey: Development, Reflection, and Closure</title>
+    
+    <meta property="og:title" content="Primal Journey: Development, Reflection, and Closure">
+    <meta property="og:description" content="A deep dive into the 3.0 update, the cancelled 3.1 plans, and the future of the project.">
+    <meta property="og:image" content="https://i.imgur.com/kE1h2JL.png">
+    <meta property="og:type" content="article">
+    <meta name="theme-color" content="#ffc107">
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/owwmdWD.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #121212;
+            --container-bg: #1e1e1e;
+            --text-color: #d0d0d0;
+            --header-white: #ffffff;
+            --highlight-yellow: #ffc107;
+            --link-color: #ffffff;
+            --font-headers: 'Oswald', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #0d0d0d; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--highlight-yellow); }
+
+        ::selection {
+            background: var(--highlight-yellow);
+            color: #121212;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            color: var(--text-color);
+            font-family: var(--font-body);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            font-size: 1.15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            text-rendering: optimizeLegibility;
+        }
+
+        .progress-container {
+            position: fixed;
+            top: 0;
+            z-index: 2000;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            pointer-events: none;
+        }
+        .progress-bar {
+            height: 4px;
+            background: var(--highlight-yellow);
+            width: 0%;
+            transition: width 0.1s;
+            box-shadow: 0 0 10px var(--highlight-yellow);
+        }
+
+        header.hero {
+            width: 100%;
+            height: 65vh;
+            background-image: radial-gradient(circle at center, rgba(0,0,0,0.1) 0%, rgba(18,18,18,1) 90%), url('https://i.imgur.com/kE1h2JL.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: -100px;
+            z-index: 1;
+        }
+
+        h1.main-title {
+            font-family: var(--font-headers);
+            color: var(--header-white);
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.9);
+            max-width: 1000px;
+            padding: 0 20px;
+            opacity: 0;
+            animation: fadeInDown 1.5s ease-out forwards;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: var(--container-bg);
+            padding: 80px 70px;
+            box-shadow: 0 0 60px rgba(0,0,0,0.8);
+            border-radius: 8px;
+            margin-bottom: 60px;
+            z-index: 2;
+            position: relative;
+            border-top: 1px solid #333;
+            animation: breathe 8s infinite alternate;
+        }
+
+        @keyframes breathe {
+            0% { box-shadow: 0 0 60px rgba(0,0,0,0.8); }
+            100% { box-shadow: 0 0 70px rgba(20, 20, 20, 0.95); }
+        }
+
+        h2 { 
+            font-family: var(--font-headers); 
+            color: var(--header-white); 
+            font-size: 2.5rem; 
+            margin-top: 60px; 
+            margin-bottom: 30px; 
+            border-left: 6px solid var(--highlight-yellow); 
+            padding-left: 25px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            scroll-margin-top: 100px; 
+        }
+        
+        h3 { 
+            font-family: var(--font-headers); 
+            color: #eee; 
+            font-size: 1.8rem; 
+            margin-top: 50px; 
+            margin-bottom: 20px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            font-weight: 400;
+            scroll-margin-top: 100px;
+        }
+
+        p { margin-bottom: 1.8rem; font-weight: 300; }
+        strong { font-weight: 700; color: #fff; }
+        em { font-style: italic; color: #aaa; }
+        .name { color: var(--highlight-yellow); font-weight: 500; font-style: normal; }
+
+        blockquote {
+            background: #252525;
+            border-left: 4px solid var(--highlight-yellow);
+            margin: 40px 0;
+            padding: 20px 30px;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-family: var(--font-headers);
+            letter-spacing: 0.5px;
+        }
+
+        hr.rune-divider {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 193, 7, 0.75), rgba(0, 0, 0, 0));
+            margin: 60px auto;
+            width: 80%;
+            position: relative;
+            overflow: visible;
+        }
+        hr.rune-divider::after {
+            content: "◆";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--container-bg);
+            padding: 0 10px;
+            color: var(--highlight-yellow);
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--highlight-yellow);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        a:hover { color: var(--highlight-yellow); }
+        a:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        figure { margin: 50px 0; text-align: left; }
+        
+        img.content-img, img.list-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            cursor: zoom-in;
+            margin: 0;
+            background-color: #2a2a2a; 
+        }
+        
+        img.list-img { max-width: 400px; margin-top: 20px; }
+
+        img.content-img:hover, img.list-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+            border-color: var(--highlight-yellow);
+        }
+
+        img.sword-img {
+            image-rendering: pixelated;
+            height: 128px;
+            width: auto;
+            border: none;
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+            transition: all 0.3s ease;
+            cursor: zoom-in;
+        }
+        img.sword-img:hover {
+            transform: scale(1.1) translateY(-10px);
+            filter: drop-shadow(0 0 20px var(--highlight-yellow));
+        }
+
+        ul { margin-bottom: 2.5rem; padding-left: 20px; list-style: none; }
+        li { 
+            margin-bottom: 15px; 
+            font-weight: 300; 
+            position: relative; 
+            padding-left: 25px; 
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--highlight-yellow);
+            box-shadow: 0 0 5px var(--highlight-yellow);
+        }
+
+        .spoiler-box {
+            background-color: #252525;
+            border-left: 4px solid #d32f2f;
+            padding: 25px;
+            margin: 50px 0;
+            font-style: italic;
+            color: #dddddd;
+            text-align: center;
+            border-radius: 0 4px 4px 0;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            width: 100%;
+            background-color: #0d0d0d;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #333;
+            z-index: 2;
+        }
+        .footer-row { display: flex; align-items: center; gap: 15px; }
+        
+        .footer-logo { 
+            height: 30px; 
+            width: auto; 
+            opacity: 0.8; 
+            transition: all 0.3s ease;
+        }
+        
+        a.logo-link:hover .footer-logo {
+            opacity: 1;
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px var(--highlight-yellow));
+        }
+
+        .social-link svg { width: 24px; height: 24px; fill: #666; transition: fill 0.2s, transform 0.2s; }
+        .social-link:hover svg { fill: var(--highlight-yellow); transform: scale(1.1); }
+
+        .audio-wrapper {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0; 
+        }
+
+        .music-toggle {
+            width: 60px;
+            height: 60px;
+            background-color: var(--highlight-yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            transition: transform 0.2s, background-color 0.2s;
+            border: 3px solid #fff;
+            padding: 0;
+            outline: none;
+            z-index: 2;
+            flex-shrink: 0; 
+        }
+        
+        .music-toggle:hover { transform: scale(1.1); }
+        .music-toggle:active { transform: scale(0.95); }
+        .music-icon { width: 28px; height: 28px; fill: #1a1a1a; pointer-events: none; display: block; }
+        
+        .volume-container {
+            width: 0;
+            overflow: hidden;
+            background-color: #222;
+            border-radius: 30px 0 0 30px;
+            transition: width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            margin-right: -25px;
+            padding-right: 35px;
+            z-index: 1;
+        }
+
+        .audio-wrapper.audio-active:hover .volume-container,
+        .audio-wrapper.audio-active .volume-container:hover {
+            width: 140px;
+            opacity: 1;
+            padding-left: 20px;
+            box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100px; 
+            height: 6px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background: var(--highlight-yellow);
+            border: 2px solid #fff;
+            margin-top: -6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: transform 0.1s;
+        }
+        input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: #555;
+            border-radius: 3px;
+        }
+        
+        input[type=range]::-moz-range-thumb {
+            height: 18px;
+            width: 18px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background: var(--highlight-yellow);
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: #555;
+            border-radius: 3px;
+        }
+        
+        .playing { animation: pulse-yellow 2s infinite; }
+        @keyframes pulse-yellow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 193, 7, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+        }
+        
+        #custom-menu {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            width: 180px;
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            padding: 5px 0;
+        }
+        #custom-menu .menu-item {
+            display: block;
+            padding: 10px 15px;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        #custom-menu .menu-item:hover {
+            background-color: var(--highlight-yellow);
+            color: #1a1a1a;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, transform 0.2s;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 0;
+            outline: none;
+        }
+        .back-to-top.visible { opacity: 1; pointer-events: all; }
+        .back-to-top:hover { background-color: #444; transform: translateY(-3px); }
+        .back-to-top:focus-visible { box-shadow: 0 0 0 3px var(--highlight-yellow); }
+
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            backdrop-filter: blur(5px);
+        }
+        .lightbox.active { opacity: 1; pointer-events: all; }
+        .lightbox img { max-width: 90%; max-height: 90vh; box-shadow: 0 0 40px rgba(0,0,0,0.8); border-radius: 4px; }
+        .lightbox-hint {
+            position: absolute;
+            bottom: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 800px) {
+            h1.main-title { font-size: 2.8rem; }
+            .content-container { padding: 40px 25px; width: 100%; box-shadow: none; border-radius: 0; }
+            header.hero { height: 50vh; background-attachment: scroll; }
+            .audio-wrapper { bottom: 20px; right: 20px; }
+            .music-toggle { width: 50px; height: 50px; }
+            .music-icon { width: 24px; height: 24px; }
+            img.sword-img { height: 80px; }
+            .back-to-top { bottom: 20px; left: 20px; }
+            img.list-img { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <audio id="town-theme" loop>
+        <source src="https://raw.githubusercontent.com/tworoundcats/Drehmal-DLC/main/misc/town.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="audio-wrapper">
+        <div class="volume-container">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.6">
+        </div>
+        <button class="music-toggle" id="music-btn" aria-label="Toggle Background Music" title="Left Click: Play/Pause | Right Click: Download">
+            <svg class="music-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div id="custom-menu">
+        <a href="https://raw.githubusercontent.com/tworoundcats/Drehmal-DLC/main/misc/town.mp3" download="town_theme.mp3" class="menu-item" target="_blank" rel="noopener noreferrer">Download Soundtrack</a>
+    </div>
+
+    <button class="back-to-top" id="top-btn" onclick="window.scrollTo(0,0)" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="Full Screen View">
+        <span class="lightbox-hint">Press ESC or click to close</span>
+    </div>
+
+    <header class="hero">
+        <h1 class="main-title">Primal Journey: Development, Reflection, and Closure</h1>
+    </header>
+
+    <div class="content-container">
+
+        <p class="reveal">Hey, everyone! This is <span class="name">k182</span> writing on behalf of the Primal Journey team, here to talk a little bit about how the big update’s release went and our one-time future plans for a 3.1 update. Right out of the gate, we want to establish that further updates to PJ are not planned at this time. This post is mostly to plainly state why that is, and to publicly show off what it would’ve been.</p>
+        
+        <p class="reveal">We put quite a bit of time into this project during the year, and it’s been really gratifying to see how many people have given it a shot. Since releasing at the beginning of September, we’ve seen about 3,000 downloads and over 7,000 views on Modrinth (for a whopping <em>$7.25 in ad revenue!</em>). Not too bad! A lot has changed even in the short time that the update has been out (with TWO more PJ devs becoming full-fledged Drehmal devs!), and the state of our little team is pretty different.</p>
+
+        <div class="spoiler-box reveal">
+            <strong>⚠️ SPOILER WARNING</strong><br>
+            We will be freely discussing the contents of Primal Journey 3.0.x and Drehmal itself, so do watch out for spoilers.
+        </div>
+
+        <h2 id="update-plans" class="reveal">What Would Be In 3.1?</h2>
+        <p class="reveal">Pretty soon after the release of Primal Journey 3.0, we started coming up with more ideas for additional content, which quickly snowballed to a large enough size that we started calling it the eventual 3.1 update. The team agreed on a few key points, ways we thought we could clearly make the experience better:</p>
+        <ul class="reveal">
+            <li>Most of our content, especially the stuff we were most proud of, was in the mid-late game. There was very little in terms of content, living in the early game.</li>
+            <li>The overwhelming majority of 3.0 was focused on updating and overhauling the existing systems, built by one person, into a more polished and involved experience. We REALLY wanted to make more content that was truly new and original, building on base Drehmal in interesting ways beyond just trades and new encounters in familiar dungeons.</li>
+        </ul>
+        
+        <p class="reveal">So, for a solid few weeks in September and October, we got to work on 3.1, drafting up more ideas and finally setting up a proper build server for our planned additions. Here’s some of what we came up with.</p>
+
+        <hr class="rune-divider reveal">
+
+        <h3 id="minor-aspects" class="reveal">Minor Aspect Devotion</h3>
+        <p class="reveal">First, we wanted to expand the Devotion system to include EVERY single Aspect, adding new shrines and loot tracks for all 15 Minor Aspects. Many of these would have been in familiar locations, such as a shrine to the Water-Wyrm in the Temple of Dahroehl, while others would have been entirely new constructions, like this shrine to Nahyn in the mountains southwest of Av’Sal!</p>
+
+        <figure class="reveal">
+            <img class="content-img" src="https://i.imgur.com/iWMiMcn.png" alt="Shrine to Nahyn" loading="lazy">
+        </figure>
+
+        <p class="reveal">Shrine locations and lore expansions were conceptualized for almost everyone. Some of my favorites include:</p>
+        <ul class="reveal">
+            <li>A new storyline for the Coven of Koh, the Wise Wyrm’s devotion site, which showed their fearful reverence for the Aspect of Stone after they learned the fate of Xor’Huul.</li>
+            <li>An exploration of Lailoehn’s history with the people of Mt. Ebonfire, related to their ability to forge uniquely powerful Deharian steel.</li>
+            <li>A ruined temple just barely off the starting path in Capital Valley, once dedicated to Noha but converted into a temple to Drehmal during Avsohm’s crackdowns on Aspect worship. It would be <em>overgrown, nearly reclaimed by nature, and rewards from this shrine would have been strangely corrupted…</em></li>
+            <li>A fully intact Chapel of Tethlaen in the remote Frozen Bite, similar to the burnt one in Highfall.</li>
+        </ul>
+
+        <p class="reveal">Of course, we couldn’t just add these shrines and call it a day. Minor Aspect Devotions would have differed a bit mechanically, having fewer accepted offerings and only 5 reward tiers, with a singular relic at the end. Our intention was to add another modded slot which was just for these Minor Aspect relics, which could then allow them to synergize with base-game relics from Major Aspects where appropriate.</p>
+        
+        <p class="reveal">For instance, Loeleyhn’s relic was conceptualized as an orb that creates a small, passive snowstorm around the player, freezing some nearby mobs, which would have a larger radius and stun for longer if paired with Loe’s Cryostatic relic. This was an ambitious system, and was never fully planned out, but was <em>exciting to daydream about.</em></p>
+
+        <h3 id="npc-town" class="reveal">NPC Town</h3>
+        <p class="reveal">The second major feature was our proposed solution to the lack of early game and/or ongoing content in the expansion: a living, dynamic town, that you would construct and populate as you progressed through the expansion.</p>
+
+        <figure class="reveal">
+            <img class="content-img" src="https://i.imgur.com/ZuPqV2D.png" alt="NPC Town Concept 1" loading="lazy">
+        </figure>
+
+        <p class="reveal">This came in the form of a long-form quest, which was slated to begin on the side of the road to Drabyel/Av’Sal. After coming across a new NPC who wished to start a new settlement, players would be able to visit this new town in the northeastern Gulf of Drehmal. The eventual inhabitants of the town would’ve been the other various NPCs added in PJ, with most questgiver NPCs dynamically adding structures as they built their own homes in the area.</p>
+        
+        <p class="reveal">As the town grew in population, each of the main NPCs would offer a new trade or other interaction, from giving the player free drinks to redesigning the fountain in the town square. Eventually, it’d be a bustling town with tons of traders in one place, new interactions, and a few novel structures.</p>
+
+        <figure class="reveal">
+            <img class="content-img" src="https://i.imgur.com/Djk8t0g.png" alt="NPC Town Concept 2" loading="lazy">
+        </figure>
+
+        <p class="reveal">Of course, this was also a pretty ambitious project, but a lot of this was actually built, primarily by <span class="name">Corvid</span> and <span class="name">Gamer</span>. We even had early concepts of a theme song from <span class="name">Waterflow</span>!</p>
+
+        <h3 id="other-additions" class="reveal">Other Additions</h3>
+        <p class="reveal">Beyond just these two big-ticket items, of course, there was more in the works. This is of course not a full list, but it gives an idea of how much was truly planned:</p>
+        <ul class="reveal">
+            <li>A brand-new Drehmal-themed Mythical broadsword, given in the Primal Caverns quest and upgraded at multiple Realmbinder-related sites. The planned ability would allow players to ensnare targets in roots, pulling them to the ground and briefly immobilizing them.
+                <div style="margin: 30px 0; display: flex; gap: 40px; flex-wrap: wrap;">
+                    <img class="sword-img" src="https://i.imgur.com/D5OnRI9.png" alt="Drehmal Sword">
+                    <img class="sword-img" src="https://i.imgur.com/ZlBrItS.png" alt="Drehmal Sword Root Ability">
+                </div>
+            </li>
+            <li>A separate “Colosseum” challenge arena, almost exclusively with custom PJ mobs.</li>
+            <li>Different variants of primal mobs based on location, similar to the plagued enemies in Xor’Huul.</li>
+            
+            <li>Many QOL features, including a total revamp of the quest system, showing obvious interactions, reviewing previous dialogue, and a proper taskbook.
+                <figure>
+                    <img class="list-img" src="https://i.imgur.com/mu1tMJe.png" alt="Quest QOL" loading="lazy">
+                </figure>
+            </li>
+
+            <li>Towns would have had anti-Primal Mob staffs placed down, as part of a new lore wrinkle that tied Primal Mobs into the world.
+                <figure>
+                    <img class="list-img" src="https://i.imgur.com/SYu45xH.png" alt="Primal Staff Shrine" loading="lazy">
+                </figure>
+            </li>
+
+            <li>Reworking several more basic fetch quests, to make them more interactive with the world.</li>
+            <li>A full fishing rework, which can be found <a href="https://docs.google.com/document/d/1vLkVOTMfTaQLauvpeVUABj0J8w0tLpCAZeWJV5ySeZc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</li>
+            <li>A new set of random NPCs, including some in the late-game.</li>
+            <li>Some loose ideas to turn Abbot Balthysar into a full-scale boss.</li>
+            <li>More lore books to hint at and build up our 3.0 additions, such as the Red Dawn Dreadnought.</li>
+        </ul>
+
+        <hr class="rune-divider reveal">
+
+        <h2 id="future-status" class="reveal">Why Isn’t 3.1 Happening?</h2>
+        
+        <p class="reveal">Generally speaking, the team is a bit burnt out, distracted by other projects (including 2.3, for a few of us), and conflicted over the state of the project. 3.1 would end up being a very significant endeavor on all fronts, and we’re just not willing to commit to that at this point.</p>
+
+        <h3 class="reveal">k1’s Take</h3>
+        <p class="reveal">This section is very much a personal statement from me, <span class="name">k182</span>, which I feel is necessary to explain why 3.1 isn’t going to happen. Development of the 3.0 update turned out to take a LOT longer than anticipated. <span class="name">Wellerman</span> and myself first agreed to help rewrite the DLC in March, and we didn’t end up putting the final thing out until 6 months later. We spent a solid half of this calendar year with this project in our minds. While some of the 3.1 ideas were reinvigorating to be sure, they were also pretty daunting. There was a significant amount of burnout in the team, and I in particular started to waver a bit.</p>
+        
+        <p class="reveal">It’s something that I didn’t truly see until the whole thing was out and I could assess the work in full, but I really wasn’t happy with the state of PJ’s writing. In particular, I realized just how much of the content I had personally added was kinda <em>unoriginal</em>. I still love my references, don’t get me wrong, but… I didn’t really grasp just how much of what I had written was a funny in-joke with a Discord server, to the point that it would <em>elicit a groan and an eyeroll whenever I thought about it.</em> If you go the extra mile in one quest, you get a special reward which allows you to straight-up re-enact a real-life interaction. The reward for knowing the reference was <em>another reference</em>. Maybe that moment-to-moment gameplay could be alright for a brand new player, but it just didn’t sit right with me.</p>
+        
+        <p class="reveal">I wanted to axe more egregious examples like the “Merch Vouchers” outright, and the fact that all these questgivers were real people started to make me really uncomfortable. I decided that if the evolving town project were to happen, I’d need to go back and at least change their names so we weren’t just treating these digital homunculi of people (people I kind of knew) like dolls in a game, which snowballed to wanting to rewrite basically every quest from scratch. Sure, PJ takes on a less serious tone and sometimes gets away with it, but I felt like the 3.1 town would cross a line if these weren’t reworked into real characters. And that simply wasn’t an amount of work I wanted to do. I flip-flopped on the tone I wanted, and now I just kind of feel weird about the whole thing.</p>
+        
+        <p class="reveal">In the time since development stalled, of course, <span class="name">Corvid</span> and myself have both joined the Drehmal dev team, continuing to pull resources away from this project. That doesn’t necessarily mean that we can’t do 3.1, of course, but I would simply rather contribute to the main project. I’m still incredibly proud of some of our best work—our rendition of the Burnt Generals came together better than I ever could’ve imagined, I love my little devotion orbs, and I do feel like some of the quests actually turned out well. I’m also bummed to not be fully seeing some of these ideas through. But with an opportunity to move on to more ambitious projects in a bigger team, and to write for the real thing rather than trying to tiptoe around it? It’s just not in the cards. I enjoyed my time making it, and I’m happy it’s landed for some people. But it’s time to move on.</p>
+
+        <hr class="rune-divider reveal">
+
+        <h2 id="closing" class="reveal">Closing Remarks</h2>
+        <p class="reveal">Now with all the stuff you care about out of the way, I want to close this post off with a few personal reflections as project lead of Primal Journey, <span class="name">tworoundcats</span>.</p>
+        
+        <p class="reveal">When this project initially started back in March of 2023 (it’s been over 2 years wow), known as just the Drehmal DLC, it was made just for a group of my friends to play with and experience Drehmal as a modded experience, as anything “vanilla” would’ve been a bit of a foreign concept and if they were gonna play with mods anyways, then might as well add it in a way that’s built into the core game instead of just tossed in as an extra.</p>
+        
+        <p class="reveal">I posted it in creations and well, the support was kind of unexpected, leading me to really try and polish it for public use. At that time, my skills were nothing in comparison to today, leading me into learning more minecraft datapacking, eventually getting to a point where I was able to work officially in the Drehmal team, porting the entire map and then eventually the DLC to 1.20. As for Primal Journey itself, the entire concept and the initial conceptualization of 3.0 was due to the original DLC just having <em>extremely poor writing and not the best of game design choices.</em></p>
+        
+        <p class="reveal">It originally started with just <span class="name">k182</span> and <span class="name">Wellerman</span> doing some rewrites and it just exploded in scope from there, bringing in <span class="name">Corvidiot</span>, <span class="name">Waterflow</span> and <span class="name">Gamer</span>, leading us into a 6 month long development cycle, constantly adding new features and rewriting old and unoptimized code.</p>
+        
+        <p class="reveal">All that we managed to accomplish still surprises me a bit. Just a couple people working on an already established minecraft map, the end result was not perfect and never will be, but as a casual side project, the level of collaboration and organization was not something we expected to ever achieve.</p>
+        
+        <p class="reveal">On a personal level, this project and Drehmal as a whole did really change my life (use that one to encourage your friends to play it), I’ve seriously considered game development as my career at this point and I'll continue to learn and improve in all my future projects from this (yes including 2.3).</p>
+        
+        <p class="reveal">As for the current state of Primal Journey, I’m happy with where it’s at, yes there’ll be bugs and yes there’ll be some things you’re mad at, but in large, the general playerbase is happy with all that’s there, it really met Drehmal’s standards rather than overwriting it, we expanded on existing systems and already established ideas and it’s in a mostly complete and polished state.</p>
+        
+        <p class="reveal">Now, what’s next for this project? I don’t want to frame it as unfinished or abandoned, it just reached a point where continuing development would’ve required more time, energy and creative investment than we could possibly offer. It will forever remain in its current state at 3.0.5 and I will forever be proud of what it represents and what it offered to the community. This does mean that it will not be updated to 2.3, but the <a href="https://github.com/tworoundcats/Drehmal-DLC" target="_blank" rel="noopener noreferrer">source code is public</a> and anyone who does want to take over this project, do feel free to dm on discord and if you did enjoy Primal Journey, there’s always a <a href="https://ko-fi.com/tworoundcats" target="_blank" rel="noopener noreferrer">donation page</a> to show support.</p>
+        
+        <h3 class="reveal">Acknowledgements</h3>
+        <p class="reveal">And finally… I want to personally thank everyone who made this project possible:</p>
+        <ul class="reveal">
+            <li><span class="name">k182</span> of course for writing a large majority of this document and contributing a large amount of his time into this project for writing, coding and general ideas.</li>
+            <li><span class="name">Corvidiot</span> for the entirety of the dreadnaught as well as a lot of our textures and models.</li>
+            <li><span class="name">Waterflow</span> for his amazing musical skills and really bringing life into areas that would’ve felt empty without.</li>
+            <li><span class="name">Gamer</span> for writing and always being open to give his feedback for basically anything.</li>
+            <li><span class="name">Wellerman</span>, who was constantly writing behind the scenes on all of our documentation, giving constant ideas and was the man behind the name Primal Journey.</li>
+        </ul>
+        <p class="reveal">And finally, I wanna thank every single one of you that decided to play this expansion in the first place and continue to give love and support, especially those of you that’re active in the discord and gave your feedback when you could, you truly made this the best it could’ve been.</p>
+
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <a href="https://modrinth.com/modpack/drehmal-apotheosis-2.2-dlc" target="_blank" class="logo-link" rel="noopener noreferrer">
+                <img class="footer-logo" src="https://i.imgur.com/owwmdWD.png" alt="Logo">
+            </a>
+            <span>&copy; 2025 Primal Journey Team.</span>
+        </div>
+        
+        <div class="footer-row">
+            <a href="https://github.com/tworoundcats/Drehmal-DLC" target="_blank" class="social-link" title="GitHub" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://ko-fi.com/tworoundcats" target="_blank" class="social-link" title="Ko-fi" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+            </a>
+            <a href="https://discord.com/channels/695817407557795910/1413300721524412547" target="_blank" class="social-link" title="Discord" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-2.313-9.138-4.789-13.687a.061.061 0 0 0-.024-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const audio = document.getElementById('town-theme');
+        const btn = document.getElementById('music-btn');
+        const menu = document.getElementById('custom-menu');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const topBtn = document.getElementById("top-btn");
+        const progressBar = document.getElementById("progressBar");
+        const slider = document.getElementById("volume-slider");
+        const audioWrapper = document.querySelector('.audio-wrapper');
+        let isPlaying = false;
+
+        audio.volume = 0.6;
+        slider.value = 0.6;
+
+        slider.addEventListener('input', (e) => {
+            audio.volume = e.target.value;
+        });
+
+        btn.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                btn.classList.remove('playing');
+                btn.style.backgroundColor = 'var(--highlight-yellow)';
+                audioWrapper.classList.remove('audio-active'); 
+            } else {
+                audio.play().catch(e => console.log("Interaction required to play audio"));
+                btn.classList.add('playing');
+                btn.style.backgroundColor = '#fff';
+                audioWrapper.classList.add('audio-active'); 
+            }
+            isPlaying = !isPlaying;
+        });
+
+        btn.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            menu.style.display = 'block';
+            
+            const btnRect = btn.getBoundingClientRect();
+            menu.style.left = (btnRect.left - 150) + "px";
+            menu.style.top = (btnRect.top - 20) + "px";
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.audio-wrapper') && e.target !== menu) {
+                menu.style.display = 'none';
+            }
+        });
+
+        const observerOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px"
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        const images = document.querySelectorAll('.content-img, .list-img, .sword-img');
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                topBtn.classList.add("visible");
+            } else {
+                topBtn.classList.remove("visible");
+            }
+
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + "%";
+        }, { passive: true });
+
+    </script>
+
+</body>
+</html>
