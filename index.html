@@ -43,7 +43,10 @@
 
         body {
             background-color: var(--bg-color);
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            background-image: url("https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.1/assets/minecraft/textures/block/black_concrete.png");
+            background-repeat: repeat;
+            background-size: 128px;
+            image-rendering: pixelated;
             color: var(--text-color);
             font-family: var(--font-body);
             margin: 0;
@@ -315,6 +318,22 @@
         .social-link svg { width: 24px; height: 24px; fill: #666; transition: fill 0.2s, transform 0.2s; }
         .social-link:hover svg { fill: var(--highlight-yellow); transform: scale(1.1); }
 
+        .view-counter-container {
+            margin-top: 10px;
+            font-family: var(--font-headers);
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .view-count-number {
+            color: var(--highlight-yellow);
+            font-weight: 700;
+        }
+
         .audio-wrapper {
             position: fixed;
             bottom: 30px;
@@ -327,26 +346,33 @@
         }
 
         .music-toggle {
-            width: 60px;
-            height: 60px;
-            background-color: var(--highlight-yellow);
-            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border: none;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-            transition: transform 0.2s, background-color 0.2s;
-            border: 3px solid #fff;
+            transition: transform 0.2s;
             padding: 0;
             outline: none;
             z-index: 2;
             flex-shrink: 0; 
+            border-radius: 50%;
         }
         
         .music-toggle:hover { transform: scale(1.1); }
         .music-toggle:active { transform: scale(0.95); }
-        .music-icon { width: 28px; height: 28px; fill: #1a1a1a; pointer-events: none; display: block; }
+        
+        .music-icon { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain; 
+            pointer-events: none; 
+            display: block; 
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+        }
         
         .volume-container {
             width: 0;
@@ -373,6 +399,7 @@
 
         input[type=range] {
             -webkit-appearance: none;
+            appearance: none;
             width: 100px; 
             height: 6px;
             background: transparent;
@@ -417,6 +444,13 @@
             border-radius: 3px;
         }
         
+        .start-hint { animation: hint-pulse 2s infinite; }
+        @keyframes hint-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+
         .playing { animation: pulse-yellow 2s infinite; }
         @keyframes pulse-yellow {
             0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
@@ -442,7 +476,7 @@
             text-decoration: none;
             font-size: 0.9rem;
             cursor: pointer;
-            transition: background 0.2s, color 0.2s;
+            transition: background-color 0.2s, color 0.2s;
         }
         #custom-menu .menu-item:hover {
             background-color: var(--highlight-yellow);
@@ -506,7 +540,6 @@
             header.hero { height: 50vh; background-attachment: scroll; }
             .audio-wrapper { bottom: 20px; right: 20px; }
             .music-toggle { width: 50px; height: 50px; }
-            .music-icon { width: 24px; height: 24px; }
             img.sword-img { height: 80px; }
             .back-to-top { bottom: 20px; left: 20px; }
             img.list-img { width: 100%; }
@@ -527,10 +560,8 @@
         <div class="volume-container">
             <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.6">
         </div>
-        <button class="music-toggle" id="music-btn" aria-label="Toggle Background Music" title="Left Click: Play/Pause | Right Click: Download">
-            <svg class="music-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-            </svg>
+        <button class="music-toggle start-hint" id="music-btn" aria-label="Toggle Background Music" title="Left Click: Play/Pause | Right Click: Download">
+            <img class="music-icon" src="https://i.imgur.com/9D4CYhB.png" alt="Music Toggle">
         </button>
     </div>
 
@@ -584,13 +615,13 @@
         <ul class="reveal">
             <li>A new storyline for the Coven of Koh, the Wise Wyrm’s devotion site, which showed their fearful reverence for the Aspect of Stone after they learned the fate of Xor’Huul.</li>
             <li>An exploration of Lailoehn’s history with the people of Mt. Ebonfire, related to their ability to forge uniquely powerful Deharian steel.</li>
-            <li>A ruined temple just barely off the starting path in Capital Valley, once dedicated to Noha but converted into a temple to Drehmal during Avsohm’s crackdowns on Aspect worship. It would be <em>overgrown, nearly reclaimed by nature, and rewards from this shrine would have been strangely corrupted…</em></li>
+            <li>A ruined temple just barely off the starting path in Capital Valley, once dedicated to Noha but converted into a temple to Drehmal during Avsohm’s crackdowns on Aspect worship. It would be overgrown, nearly reclaimed by nature, and rewards from this shrine would have been strangely corrupted…</li>
             <li>A fully intact Chapel of Tethlaen in the remote Frozen Bite, similar to the burnt one in Highfall.</li>
         </ul>
 
         <p class="reveal">Of course, we couldn’t just add these shrines and call it a day. Minor Aspect Devotions would have differed a bit mechanically, having fewer accepted offerings and only 5 reward tiers, with a singular relic at the end. Our intention was to add another modded slot which was just for these Minor Aspect relics, which could then allow them to synergize with base-game relics from Major Aspects where appropriate.</p>
         
-        <p class="reveal">For instance, Loeleyhn’s relic was conceptualized as an orb that creates a small, passive snowstorm around the player, freezing some nearby mobs, which would have a larger radius and stun for longer if paired with Loe’s Cryostatic relic. This was an ambitious system, and was never fully planned out, but was <em>exciting to daydream about.</em></p>
+        <p class="reveal">For instance, Loeleyhn’s relic was conceptualized as an orb that creates a small, passive snowstorm around the player, freezing some nearby mobs, which would have a larger radius and stun for longer if paired with Loe’s Cryostatic relic. This was an ambitious system, and was never fully planned out, but was exciting to daydream about.</p>
 
         <h3 id="npc-town" class="reveal">NPC Town</h3>
         <p class="reveal">The second major feature was our proposed solution to the lack of early game and/or ongoing content in the expansion: a living, dynamic town, that you would construct and populate as you progressed through the expansion.</p>
@@ -649,7 +680,7 @@
         <h3 class="reveal">k1’s Take</h3>
         <p class="reveal">This section is very much a personal statement from me, <span class="name">k182</span>, which I feel is necessary to explain why 3.1 isn’t going to happen. Development of the 3.0 update turned out to take a LOT longer than anticipated. <span class="name">Wellerman</span> and myself first agreed to help rewrite the DLC in March, and we didn’t end up putting the final thing out until 6 months later. We spent a solid half of this calendar year with this project in our minds. While some of the 3.1 ideas were reinvigorating to be sure, they were also pretty daunting. There was a significant amount of burnout in the team, and I in particular started to waver a bit.</p>
         
-        <p class="reveal">It’s something that I didn’t truly see until the whole thing was out and I could assess the work in full, but I really wasn’t happy with the state of PJ’s writing. In particular, I realized just how much of the content I had personally added was kinda <em>unoriginal</em>. I still love my references, don’t get me wrong, but… I didn’t really grasp just how much of what I had written was a funny in-joke with a Discord server, to the point that it would <em>elicit a groan and an eyeroll whenever I thought about it.</em> If you go the extra mile in one quest, you get a special reward which allows you to straight-up re-enact a real-life interaction. The reward for knowing the reference was <em>another reference</em>. Maybe that moment-to-moment gameplay could be alright for a brand new player, but it just didn’t sit right with me.</p>
+        <p class="reveal">It’s something that I didn’t truly see until the whole thing was out and I could assess the work in full, but I really wasn’t happy with the state of PJ’s writing. In particular, I realized just how much of the content I had personally added was kinda unoriginal. I still love my references, don’t get me wrong, but… I didn’t really grasp just how much of what I had written was a funny in-joke with a Discord server, to the point that it would elicit a groan and an eyeroll whenever I thought about it. If you go the extra mile in one quest, you get a special reward which allows you to straight-up re-enact a real-life interaction. The reward for knowing the reference was another reference. Maybe that moment-to-moment gameplay could be alright for a brand new player, but it just didn’t sit right with me.</p>
         
         <p class="reveal">I wanted to axe more egregious examples like the “Merch Vouchers” outright, and the fact that all these questgivers were real people started to make me really uncomfortable. I decided that if the evolving town project were to happen, I’d need to go back and at least change their names so we weren’t just treating these digital homunculi of people (people I kind of knew) like dolls in a game, which snowballed to wanting to rewrite basically every quest from scratch. Sure, PJ takes on a less serious tone and sometimes gets away with it, but I felt like the 3.1 town would cross a line if these weren’t reworked into real characters. And that simply wasn’t an amount of work I wanted to do. I flip-flopped on the tone I wanted, and now I just kind of feel weird about the whole thing.</p>
         
@@ -662,7 +693,7 @@
         
         <p class="reveal">When this project initially started back in March of 2023 (it’s been over 2 years wow), known as just the Drehmal DLC, it was made just for a group of my friends to play with and experience Drehmal as a modded experience, as anything “vanilla” would’ve been a bit of a foreign concept and if they were gonna play with mods anyways, then might as well add it in a way that’s built into the core game instead of just tossed in as an extra.</p>
         
-        <p class="reveal">I posted it in creations and well, the support was kind of unexpected, leading me to really try and polish it for public use. At that time, my skills were nothing in comparison to today, leading me into learning more minecraft datapacking, eventually getting to a point where I was able to work officially in the Drehmal team, porting the entire map and then eventually the DLC to 1.20. As for Primal Journey itself, the entire concept and the initial conceptualization of 3.0 was due to the original DLC just having <em>extremely poor writing and not the best of game design choices.</em></p>
+        <p class="reveal">I posted it in creations and well, the support was kind of unexpected, leading me to really try and polish it for public use. At that time, my skills were nothing in comparison to today, leading me into learning more minecraft datapacking, eventually getting to a point where I was able to work officially in the Drehmal team, porting the entire map and then eventually the DLC to 1.20. As for Primal Journey itself, the entire concept and the initial conceptualization of 3.0 was due to the original DLC just having extremely poor writing and not the best of game design choices.</p>
         
         <p class="reveal">It originally started with just <span class="name">k182</span> and <span class="name">Wellerman</span> doing some rewrites and it just exploded in scope from there, bringing in <span class="name">Corvidiot</span>, <span class="name">Waterflow</span> and <span class="name">Gamer</span>, leading us into a 6 month long development cycle, constantly adding new features and rewriting old and unoptimized code.</p>
         
@@ -692,7 +723,7 @@
             <a href="https://modrinth.com/modpack/drehmal-apotheosis-2.2-dlc" target="_blank" class="logo-link" rel="noopener noreferrer">
                 <img class="footer-logo" src="https://i.imgur.com/owwmdWD.png" alt="Logo">
             </a>
-            <span>&copy; 2025 Primal Journey Team.</span>
+            <span>&copy; 2026 Primal Journey Team.</span>
         </div>
         
         <div class="footer-row">
@@ -705,6 +736,11 @@
             <a href="https://discord.com/channels/695817407557795910/1413300721524412547" target="_blank" class="social-link" title="Discord" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-2.313-9.138-4.789-13.687a.061.061 0 0 0-.024-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
             </a>
+        </div>
+        
+        <div class="view-counter-container">
+            <span>VIEWS:</span>
+            <span class="view-count-number" id="view-count">...</span>
         </div>
     </footer>
 
@@ -723,20 +759,32 @@
         audio.volume = 0.6;
         slider.value = 0.6;
 
+        fetch('https://api.counterapi.dev/v1/drehmal-dlc/views/up')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('view-count').innerText = data.count;
+            })
+            .catch(err => {
+                document.getElementById('view-count').innerText = '0';
+                console.error('Counter API Error:', err);
+            });
+
         slider.addEventListener('input', (e) => {
             audio.volume = e.target.value;
         });
 
         btn.addEventListener('click', () => {
+            if (btn.classList.contains('start-hint')) {
+                btn.classList.remove('start-hint');
+            }
+
             if (isPlaying) {
                 audio.pause();
                 btn.classList.remove('playing');
-                btn.style.backgroundColor = 'var(--highlight-yellow)';
                 audioWrapper.classList.remove('audio-active'); 
             } else {
                 audio.play().catch(e => console.log("Interaction required to play audio"));
                 btn.classList.add('playing');
-                btn.style.backgroundColor = '#fff';
                 audioWrapper.classList.add('audio-active'); 
             }
             isPlaying = !isPlaying;
@@ -766,7 +814,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    observer.unobserve(entry.target); 
+                } else {
+                    entry.target.classList.remove('active');
                 }
             });
         }, observerOptions);
