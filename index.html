@@ -740,9 +740,11 @@
         
         <div class="view-counter-container">
             <span>VIEWS:</span>
-            <span class="view-count-number" id="view-count">...</span>
+            <span class="view-count-number" id="busuanzi_value_site_pv">...</span>
         </div>
     </footer>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
     <script>
         const audio = document.getElementById('town-theme');
@@ -758,16 +760,6 @@
 
         audio.volume = 0.6;
         slider.value = 0.6;
-
-fetch('https://api.countapi.xyz/hit/drehmal-dlc/views')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('view-count').innerText = data.value;
-    })
-    .catch(err => {
-        document.getElementById('view-count').innerText = 'N/A';
-        console.error('Counter API Error:', err);
-    });
 
         slider.addEventListener('input', (e) => {
             audio.volume = e.target.value;
