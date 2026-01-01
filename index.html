@@ -759,15 +759,15 @@
         audio.volume = 0.6;
         slider.value = 0.6;
 
-        fetch('https://api.counterapi.dev/v1/drehmal-dlc/views/up')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('view-count').innerText = data.count;
-            })
-            .catch(err => {
-                document.getElementById('view-count').innerText = '0';
-                console.error('Counter API Error:', err);
-            });
+fetch('https://api.countapi.xyz/hit/drehmal-dlc/views')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('view-count').innerText = data.value;
+    })
+    .catch(err => {
+        document.getElementById('view-count').innerText = 'N/A';
+        console.error('Counter API Error:', err);
+    });
 
         slider.addEventListener('input', (e) => {
             audio.volume = e.target.value;
