@@ -1,3 +1,3 @@
 execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Dredd'Lohk","color":"dark_aqua"},{"text":"> ","color":"white"},{"text":"I'd rather someone like my grandfather have it, an adventurer like you. He was once a rebel too, fighting against the tyrannical rule of that Tide Queen. He had the same idea as those unscrupulous folk in the underground."}]
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1
+execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:dreadquest/accept4 8s

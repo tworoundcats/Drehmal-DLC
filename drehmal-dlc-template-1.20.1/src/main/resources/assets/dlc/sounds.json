@@ -1,0 +1,11 @@
+{
+  "writing": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dlc:writing",
+        "stream": false
+      }
+    ]
+  }
+}

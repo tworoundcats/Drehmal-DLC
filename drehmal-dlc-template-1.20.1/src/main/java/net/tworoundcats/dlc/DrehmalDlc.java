@@ -22,7 +22,9 @@ public class DrehmalDlc implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModEntities.registerEntityAttributes();
+        TelemetryCommand.register();
+        JournalSyncCommand.register();
+        ModEntities.registerEntityAttributes();
 		LOGGER.info("Drehmal DLC Mod Initializing!");
 		ModPaintings.registerPaintings();
 		ModItems.registerModItems();

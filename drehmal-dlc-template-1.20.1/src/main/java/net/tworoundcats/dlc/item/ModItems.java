@@ -70,9 +70,11 @@ public class ModItems {
     public static final Item SERPENT_FIN_UNREFINED = registerItem("serpent_fin_unrefined", new Item(new FabricItemSettings()));
     public static final Item WEAVER_NEEDLE = registerItem("weaver_needle", new RightClickItem(new FabricItemSettings()));
     public static final Item LUNAR_SUNSCREEN = registerItem("lunar_sunscreen", new RightClickItem(new FabricItemSettings()));
+    public static final Item QUEST_BOOK = registerItem("quest_book",
+            new QuestBookItem(new FabricItemSettings().maxCount(1))
+    );
     public static final Item PRIMAL_STAFF = registerItem("primal_staff",
             new PrimalStaff("primal_staff", new FabricItemSettings()));
-
     public static final Item AGONY_GUMMY = registerItem("agony_gummy",
             new QuickEatFoodItem(new FabricItemSettings().food(GUMMY).maxCount(16)));
     public static final Item LUXURY_GUMMY = registerItem("luxury_gummy",

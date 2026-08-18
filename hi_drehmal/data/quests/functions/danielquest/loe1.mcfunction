@@ -1,3 +1,3 @@
 execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> A blessing of the Glacial Elder? How interesting. You say the shrine is in a town called... "},{"text":"Schlonko?","italic":true},{"text":" That can't be right."}]
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:danielquest/loe2 6s

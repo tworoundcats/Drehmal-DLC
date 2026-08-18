@@ -1,0 +1,295 @@
+{
+  "type": "root",
+  "children": {
+    "telemetry": {
+      "type": "literal",
+      "children": {
+        "log": {
+          "type": "literal",
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": { "amount": "multiple", "type": "entities" },
+              "children": {
+                "advancement": {
+                  "type": "argument",
+                  "parser": "minecraft:resource_location",
+                  "suggests": "minecraft:advancements",
+                  "executable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "journal": {
+      "type": "literal",
+      "children": {
+        "quest": {
+          "type": "literal",
+          "children": {
+            "addon": {
+              "type": "literal",
+              "children": {
+                "target": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": { "amount": "single", "type": "entities" },
+                  "children": {
+                    "questId": {
+                      "type": "argument",
+                      "parser": "brigadier:string",
+                      "properties": { "type": "word" },
+                      "children": {
+                        "dialogueasjson": {
+                          "type": "argument",
+                          "parser": "minecraft:component",
+                          "executable": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "add": {
+              "type": "literal",
+              "children": {
+                "target": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": { "amount": "single", "type": "entities" },
+                  "children": {
+                    "questId": {
+                      "type": "argument",
+                      "parser": "brigadier:string",
+                      "properties": { "type": "word" },
+                      "children": {
+                        "title": {
+                          "type": "argument",
+                          "parser": "brigadier:string",
+                          "properties": { "type": "greedy" },
+                          "executable": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "complete": {
+              "type": "literal",
+              "children": {
+                "target": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": { "amount": "single", "type": "entities" },
+                  "children": {
+                    "questId": {
+                      "type": "argument",
+                      "parser": "brigadier:string",
+                      "properties": { "type": "word" },
+                      "executable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "scale": {
+      "type": "literal",
+      "children": {
+        "set": {
+          "type": "literal",
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:float",
+              "executable": true,
+              "children": {
+                "targets": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": { "amount": "multiple", "type": "entities" },
+                  "executable": true
+                }
+              }
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "children": {
+                "typed_value": {
+                  "type": "argument",
+                  "parser": "brigadier:float",
+                  "executable": true,
+                  "children": {
+                    "typed_targets": {
+                      "type": "argument",
+                      "parser": "minecraft:entity",
+                      "properties": { "amount": "multiple", "type": "entities" },
+                      "executable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "add": {
+          "type": "literal",
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:float",
+              "executable": true,
+              "children": {
+                "targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "children": {
+                "typed_value": {
+                  "type": "argument",
+                  "parser": "brigadier:float",
+                  "executable": true,
+                  "children": {
+                    "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "subtract": {
+          "type": "literal",
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:float",
+              "executable": true,
+              "children": {
+                "targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "children": {
+                "typed_value": {
+                  "type": "argument",
+                  "parser": "brigadier:float",
+                  "executable": true,
+                  "children": {
+                    "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "multiply": {
+          "type": "literal",
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:float",
+              "executable": true,
+              "children": {
+                "targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "children": {
+                "typed_value": {
+                  "type": "argument",
+                  "parser": "brigadier:float",
+                  "executable": true,
+                  "children": {
+                    "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "divide": {
+          "type": "literal",
+          "children": {
+            "value": {
+              "type": "argument",
+              "parser": "brigadier:float",
+              "executable": true,
+              "children": {
+                "targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "children": {
+                "typed_value": {
+                  "type": "argument",
+                  "parser": "brigadier:float",
+                  "executable": true,
+                  "children": {
+                    "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "get": {
+          "type": "literal",
+          "executable": true,
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": { "amount": "multiple", "type": "entities" },
+              "executable": true
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "executable": true,
+              "children": {
+                "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            }
+          }
+        },
+        "reset": {
+          "type": "literal",
+          "executable": true,
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": { "amount": "multiple", "type": "entities" },
+              "executable": true
+            },
+            "scale_type": {
+              "type": "argument",
+              "parser": "minecraft:resource_location",
+              "executable": true,
+              "children": {
+                "typed_targets": { "type": "argument", "parser": "minecraft:entity", "properties": { "amount": "multiple", "type": "entities" }, "executable": true }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

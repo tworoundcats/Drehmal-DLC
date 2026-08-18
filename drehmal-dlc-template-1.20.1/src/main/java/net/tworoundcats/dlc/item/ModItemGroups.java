@@ -79,6 +79,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUNIC_HOARD);
                         entries.add(ModItems.PRIMAL_FRAGMENTS);
                         entries.add(ModItems.QUESTMARKER);
+                        entries.add(ModItems.QUEST_BOOK);
 
 
 

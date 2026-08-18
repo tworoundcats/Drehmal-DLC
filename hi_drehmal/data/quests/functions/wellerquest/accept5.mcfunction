@@ -1,3 +1,3 @@
 execute as @p[tag=qst17] at @s run tellraw @a[distance=..50] ["",{"text":"<Wehl'r> Scattered about this island are "},{"text":"five fragments","color":"yellow"},{"text":" of an ancient evil. If they were to be reunited, it would open the door for untold bloodshed."}]
-execute as @p[tag=qst17] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 1 1 
+execute as @p[tag=qst17] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:wellerquest/accept6 6s
