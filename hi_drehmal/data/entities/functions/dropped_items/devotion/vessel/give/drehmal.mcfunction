@@ -5,5 +5,6 @@ execute if entity @s[tag=drehmal.0] run tellraw @s {"text":"Effloresce","color":
 execute if entity @s[tag=drehmal.3] run tellraw @s {"text":"Effloresce +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 6"}}
 execute if entity @s[tag=drehmal.6] run tellraw @s {"text":"Effloresce +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 7"}}
 execute if entity @s[tag=drehmal.9] run tellraw @s {"text":"Effloresce +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 8"}}
+execute if entity @s[tag=drehmal.9] run tellraw @s {"text":"Blissful Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/drehmal"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"green"},{"text":"O","color":"yellow"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"green"}]

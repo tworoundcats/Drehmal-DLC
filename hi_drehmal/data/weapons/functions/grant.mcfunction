@@ -88,7 +88,11 @@ execute if score #goteyebiter bool matches 1 run recipe give @s weapons:eyebiter
 
 
 
-
+#trial legendaries
+execute if score #gotstarry bool matches 1 run advancement grant @s only weapons:starry
+execute if score #gotpearl bool matches 1 run advancement grant @s only weapons:pearl
+execute if score #gotblaze bool matches 1 run advancement grant @s only weapons:blaze
+execute if score #gotcomp bool matches 1 run advancement grant @s only weapons:comp
 
 #dlc legendaries
 execute if score #gotB52 bool matches 1 run advancement grant @s only weapons:b52

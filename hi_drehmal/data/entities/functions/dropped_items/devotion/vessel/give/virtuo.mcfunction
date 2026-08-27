@@ -5,5 +5,6 @@ execute if entity @s[tag=virtuo.0] run tellraw @s {"text":"Purifying Light","col
 execute if entity @s[tag=virtuo.3] run tellraw @s {"text":"Purifying Light +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 38"}}
 execute if entity @s[tag=virtuo.6] run tellraw @s {"text":"Purifying Light +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 39"}}
 execute if entity @s[tag=virtuo.9] run tellraw @s {"text":"Purifying Light +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 40"}}
+execute if entity @s[tag=virtuo.9] run tellraw @s {"text":"Order-Bound Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/virtuo"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"white"},{"text":"O","color":"dark_aqua"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"white"}]

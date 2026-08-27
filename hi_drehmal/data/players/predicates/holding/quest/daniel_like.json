@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/dahrorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/drehmalorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/khiveorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/laiorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/loeorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/maelorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/rihelmaorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/taihgelorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/vayorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/virtuoorb" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/daniel/voyorb" }
+  ]
+}

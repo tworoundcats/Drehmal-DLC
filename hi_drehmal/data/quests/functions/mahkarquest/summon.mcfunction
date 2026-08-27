@@ -1,4 +1,3 @@
-
 # Rhalon's Champion - Drehmari Encampment
 summon piglin_brute -2972 91 5191 {DeathLootTable:"entities:mob/mahkar_target",IsImmuneToZombification:1b,CustomName:'[{"text":"Fierce Champion"}]',CustomNameVisible:1b,Health:120,OnGround:1b,PersistenceRequired:1b,Tags:["mahkar_target1"],HandItems:[{id:golden_axe,tag:{Enchantments:[{lvl:5,id:sharpness}],Unbreakable:1b},Count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{id:netherite_chestplate,tag:{Enchantments:[{lvl:4,id:protection}],Unbreakable:1b},Count:1},{}],ArmorDropChances:[0f,0f,0f,0f],Attributes:[{Name:"generic.max_health",Base:120f}]}
 

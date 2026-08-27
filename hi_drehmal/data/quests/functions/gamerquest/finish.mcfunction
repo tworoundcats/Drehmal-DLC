@@ -63,10 +63,13 @@ execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon experience_orb ~ ~ ~2 {Value:5}
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
-execute positioned ~ ~ ~ as @p[tag=qst10] at @s run give @s emerald 64
 execute positioned ~ ~ ~ as @p[tag=qst10] run advancement grant @s only dlc:gamer
 execute positioned ~ ~ ~ as @p[tag=qst10] run advancement grant @a only dlc:gamer
 
+execute at @e[tag=gamer] as @a[distance=..20] run journal quest complete @s Ga-Mahr
+execute at @e[tag=gamer] as @a[distance=..20] at @s run playsound dlc:writing player @s ~ ~ ~ 1 1
+
+execute positioned ~ ~ ~ as @p[tag=qst10] at @s run give @s emerald 64
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/jurei
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver
 execute positioned ~ ~ ~ as @p[tag=qst10] at @s run function dlc:give/silver

@@ -1,5 +1,5 @@
 execute unless score #scoreboardStable bool matches 1 run function core:crash_recovery/check_corruption
-
+execute if score #scoreboardrestore bool matches 1 in minecraft:overworld positioned 26512 161 -96 if block ~ ~ ~ minecraft:lime_concrete run function core:crash_recovery/init_recovery
 # set unique player ID
 execute unless score @s playerID matches -2147483648.. run function players:setpid
 
@@ -93,7 +93,7 @@ execute unless score @s avrad_cool matches ..-1 run scoreboard players remove @s
 #--------#
 
 # Cynthia's quest trigger patch
-execute as @s run function triggerpatch:quests/tick
+function triggerpatch:quests/tick
 
 #execute if score @s invulMythics matches -2147483648.. unless score @s invulMythics matches 0 run function players:triggers/invul_mythics
 #execute if score @s mythicPvp matches -2147483648.. unless score @s mythicPvp matches 0 run function players:triggers/mythic_pvp
@@ -748,10 +748,10 @@ execute as @s[scores={sex=1}] run function dlc:triggersex
 # ===================================================================
 
 ### Harvest's Hope ###
-execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
+execute if predicate players:holding/soul_scythe run function players:items/soul/tick
 
 ### Pleasures of War ###
-execute if predicate players:holding/soul_scythe if score @s use_soul matches 1.. run function players:items/soul/use
+#execute if predicate players:holding/soul_scythe if score @s use_soul2 matches 1.. run function players:items/soul/use
 
 
 ### Night Watch ###
@@ -788,7 +788,7 @@ execute if score @s wasHoldingLevi matches 1 if score @s drop_levi matches 1 run
 execute store success score @s HoldingLevi if predicate players:holding/leviathan
 
 execute if predicate players:holding/leviathan if score @s levi_reach matches 1.. as @s[tag=!strengthened] run function players:items/levi/weaken
-execute if predicate players:holding/leviathan if score @s use_levi matches 1.. run function players:items/levi/main
+execute if predicate players:holding/leviathan if score @s use_levi matches 1.. if entity @e[tag=!mythic_pvp,type=!#core:oblivion_immune,distance=..8,nbt={HurtTime:10s}] run function players:items/levi/main
 execute if predicate players:holding/leviathan run scoreboard players add @s levi_reach 1
 execute if predicate players:holding/leviathan run function players:items/levi/holding
 #execute if predicate players:holding/leviathan if predicate players:sweeping run item modify entity @s weapon.mainhand players:remove_sweeping_edge
@@ -967,3 +967,14 @@ execute as @s[tag=chronicler_meeting] run stopsound @s
 
 # misc 
 execute as @s[tag=qst4] unless score #caseyquest bool matches 1 at @s if loaded -2726 66 -1796 if block -2726 66 -1796 air run scoreboard players set #caseyquest bool 1
+
+# oblivious thing
+execute if predicate players:holding/oblivious if score #5S timer matches 1 if entity @e[distance=..40,type=block_display] run function players:items/obv/oblivious_thing
+
+# trophy tuner
+execute if predicate players:holding/trophy_modify if score @s use_trophy matches 1.. run function players:interact/trophy_modify
+
+
+# sable crystal
+execute if predicate players:holding/sable_crystal run effect clear @s wither
+

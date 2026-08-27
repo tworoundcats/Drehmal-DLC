@@ -80,6 +80,10 @@ public class ModItemGroups {
                         entries.add(ModItems.PRIMAL_FRAGMENTS);
                         entries.add(ModItems.QUESTMARKER);
                         entries.add(ModItems.QUEST_BOOK);
+                        entries.add(ModItems.DESTINY_BLADE);
+                        entries.add(ModItems.SABLE_CRYSTAL);
+                        entries.add(ModItems.TROPHY_TUNER);
+                        entries.add(ModItems.TROPHY_PEDESTAL);
 
 
 

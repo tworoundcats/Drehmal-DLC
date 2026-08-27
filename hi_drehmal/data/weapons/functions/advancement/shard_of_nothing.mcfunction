@@ -5,3 +5,4 @@ execute unless score #gotShardOfNothing bool matches 1 as @a run playsound minec
 execute unless score #gotShardOfNothing bool matches 1 as @a run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 20 0
 scoreboard players set #gotShardOfNothing bool 1
 scoreboard players set #gotObv3 bool 1
+execute unless score #telemetry bool matches 1 run telemetry log @s weapons:shard_of_nothing

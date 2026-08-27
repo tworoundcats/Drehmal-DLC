@@ -1,2 +1,2 @@
-execute positioned 4623 63 5865 run tellraw @a[distance=..50] {"text":"<Wehl'r> Go in peace, friend. Know that wherever The Path takes you, you are welcome in Sahd."}
-execute positioned 4623 63 5865 as @p run execute at @s run playsound entity.villager.ambient player @a ~ ~ ~ 5 1 
+execute at @e[tag=weller] run tellraw @a[distance=..50] ["",{"text":"<"},{"text":"Wehl'r","color":"white"},{"text":"> Go in peace, friend. Know that wherever The Path takes you, you are welcome in Sahd."}]
+execute at @e[tag=weller] run playsound entity.villager.ambient player @a ~ ~ ~ 5 1

@@ -108,3 +108,7 @@ execute if entity @s[tag=ossein_default] run function entities:bosses/ossein/spa
 execute if entity @s[tag=ossein_prime] run function entities:bosses/ossein/spawn_ani_prime
 
 execute if entity @s[tag=weaver_needle] run function players:items/weaver/particle_tick
+execute if entity @s[tag=oblivious] run function players:items/obv/oblivious_tick
+
+execute if entity @s[tag=trophy] run function players:interact/trophy_spawn
+execute if entity @s[tag=soul_shoot] run function players:items/soul/shoot

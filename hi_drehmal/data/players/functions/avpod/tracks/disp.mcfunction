@@ -60,7 +60,7 @@ execute if score @s avpod.songid matches 56 run data merge storage drehmal:playe
 execute if score @s avpod.songid matches 57 run data merge storage drehmal:players {avpodTempText:["Fate of the Fettered","Shatterhorn Gulch", "2:43"]}
 execute if score @s avpod.songid matches 58 run data merge storage drehmal:players {avpodTempText:["Xor'Huul","Xor'Huul", "1:53"]}
 execute if score @s avpod.songid matches 59 run data merge storage drehmal:players {avpodTempText:["Furtherance","Red Dawn", "1:43"]}
-execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:13"]}
+execute if score @s avpod.songid matches 60 run data merge storage drehmal:players {avpodTempText:["Obsolescence","Hegemon", "2:01"]}
 execute if score @s avpod.songid matches 61 run data merge storage drehmal:players {avpodTempText:["Mark of the Burnt","The Burnt Generals", "2:40"]}
 execute if score @s avpod.songid matches 62 run data merge storage drehmal:players {avpodTempText:["Sal'Anyr","Sal'Anyr", "1:46"]}
 

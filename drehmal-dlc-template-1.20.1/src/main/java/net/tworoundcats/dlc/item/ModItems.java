@@ -11,7 +11,7 @@ import net.tworoundcats.dlc.DrehmalDlc;
 import static net.tworoundcats.dlc.item.ModFoodComponents.GUMMY;
 
 public class ModItems {
-
+    public static final Item DESTINY_BLADE = registerItem("destiny_blade", new SwordItem(ToolMaterials.NETHERITE, 7, -2.4F, new FabricItemSettings()));
     public static final Item DRIFTFIN = registerItem("driftfin", new Item(new FabricItemSettings()));
     public static final Item PEBBLEFISH = registerItem("pebblefish", new Item(new FabricItemSettings()));
     public static final Item STONESKITTER = registerItem("stoneskitter", new Item(new FabricItemSettings()));
@@ -65,11 +65,15 @@ public class ModItems {
     public static final Item STARFALL_MOTE = registerItem("starfall_mote", new Item(new FabricItemSettings()));
     public static final Item STARFALL_MOUND = registerItem("starfall_mound", new Item(new FabricItemSettings()));
     public static final Item STARFALL_INGOT = registerItem("starfall_ingot", new Item(new FabricItemSettings()));
-    public static final Item PROVIDENCE = registerItem("providence", new Item(new FabricItemSettings()));
+    public static final Item PROVIDENCE = registerItem("providence", new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item SABLE_CRYSTAL = registerItem("sable_crystal", new Item(new FabricItemSettings().maxCount(1)));
     public static final Item QUESTS = registerItem("quests", new Item(new FabricItemSettings()));
     public static final Item SERPENT_FIN_UNREFINED = registerItem("serpent_fin_unrefined", new Item(new FabricItemSettings()));
     public static final Item WEAVER_NEEDLE = registerItem("weaver_needle", new RightClickItem(new FabricItemSettings()));
-    public static final Item LUNAR_SUNSCREEN = registerItem("lunar_sunscreen", new RightClickItem(new FabricItemSettings()));
+    public static final Item HARVEST_HOPE = registerItem("harvest_hope", new RightClickItem(new FabricItemSettings().maxCount(1)));
+    public static final Item LUNAR_SUNSCREEN = registerItem("lunar_sunscreen", new RightClickItem(new FabricItemSettings().maxCount(1)));;
+    public static final Item TROPHY_TUNER = registerItem("trophy_tuner", new TrophyTunerItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TROPHY_PEDESTAL = registerItem("trophy_pedestal", new TrophyPedestalItem(new FabricItemSettings()));
     public static final Item QUEST_BOOK = registerItem("quest_book",
             new QuestBookItem(new FabricItemSettings().maxCount(1))
     );
@@ -143,7 +147,7 @@ public class ModItems {
     public static final Item OBLIVIOUS_THING = registerItem("oblivious_thing", new Item(new FabricItemSettings()));
     public static final Item VERTEBRAE = registerItem("vertebrae", new Item(new FabricItemSettings()));
     public static final Item SEEKER_SUSHI = registerItem("seeker_sushi", new Item(new FabricItemSettings()));
-    public static final Item CAT_TOY = registerItem("cat_toy", new Item(new FabricItemSettings()));
+    public static final Item CAT_TOY = registerItem("cat_toy", new Item(new FabricItemSettings().maxCount(1)));
     public static final Item ACE = registerItem("ace", new Item(new FabricItemSettings().maxCount(1)));
     public static final Item EIGHT = registerItem("eight", new Item(new FabricItemSettings()));
     public static final Item FOUR = registerItem("four", new Item(new FabricItemSettings()));

@@ -1,3 +1,3 @@
 advancement grant @s only dlc:corvid
 scoreboard players set #corvid bool 1
-telemetry log @s dlc:corvid
+execute unless score #telemetry bool matches 1 run telemetry log @s dlc:corvid

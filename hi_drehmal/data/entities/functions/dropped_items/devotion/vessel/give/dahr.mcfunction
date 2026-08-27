@@ -5,5 +5,6 @@ execute if entity @s[tag=dahr.0] run tellraw @s {"text":"Writ of Authority","col
 execute if entity @s[tag=dahr.3] run tellraw @s {"text":"Writ of Authority +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 2"}}
 execute if entity @s[tag=dahr.6] run tellraw @s {"text":"Writ of Authority +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 3"}}
 execute if entity @s[tag=dahr.9] run tellraw @s {"text":"Writ of Authority +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 4"}}
+execute if entity @s[tag=dahr.9] run tellraw @s {"text":"Mighty Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/dahr"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"dark_aqua"},{"text":"O","color":"aqua"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"dark_aqua"}]

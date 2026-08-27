@@ -12,6 +12,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
 import java.util.List;
 
 public class QuestBookItem extends WrittenBookItem {
@@ -29,7 +30,8 @@ public class QuestBookItem extends WrittenBookItem {
         }
 
         if (world.isClient()) {
-            QuestBookClientHelper.openBook(stack);
+
+            QuestBookClientHelper.openBook(stack, hand);
         }
         return TypedActionResult.success(stack, world.isClient());
     }

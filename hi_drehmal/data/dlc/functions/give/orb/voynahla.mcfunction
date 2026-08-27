@@ -1,0 +1,3 @@
+execute if entity @s[tag=relic_v_give] run give @s minecraft:command_block{CustomModelData: 1182009, VoyQuestOrb:1b,display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_green","text":"Macabre Orb"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Death sits before your very eyes."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Have you made your peace with it?"}],"text":""}']}}
+execute unless entity @s[tag=relic_v_give] run function entities:dropped_items/devotion/vessel/give/already_redeemed
+tag @s remove relic_v_give

@@ -92,9 +92,9 @@ tag @s[type=!player,tag=!silenced] add silenced
 
 
 
-execute if score #1S timer matches 1 at @s positioned as @s positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~100 ~ run function players:items/obv/spawn_particle
-execute if score #1S timer matches 7 at @s positioned as @s positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~-90 ~ run function players:items/obv/spawn_particle
-execute if score #1S timer matches 13 at @s positioned as @s positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~90 ~ run function players:items/obv/spawn_particle
+execute if score #1S timer matches 1 at @s positioned as @s[type=!block_display] positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~100 ~ run function players:items/obv/spawn_particle
+execute if score #1S timer matches 7 at @s positioned as @s[type=!block_display] positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~-90 ~ run function players:items/obv/spawn_particle
+execute if score #1S timer matches 13 at @s positioned as @s[type=!block_display] positioned ~ ~0.2 ~ facing entity @a[tag=obv_active,limit=1] eyes rotated ~90 ~ run function players:items/obv/spawn_particle
 
 execute if score #1S timer matches 1 at @s run effect give @p[tag=obv_active] minecraft:regeneration 1 5 true
 execute if score #1S timer matches 7 at @s run effect give @p[tag=obv_active] minecraft:regeneration 1 5 true

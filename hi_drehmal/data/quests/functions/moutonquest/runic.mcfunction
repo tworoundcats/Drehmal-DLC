@@ -1,3 +1,4 @@
 execute positioned ~ ~ ~ as @e[tag=mouton] run tag @s add runic
 execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> Alright, first up I need something to power the transfusion. Can you find me a "},{"text":"Runic Catalyst","color":"yellow"},{"text":"? Any will do, just one."}]
+execute at @e[tag=mouton] as @a[distance=..20] run journal quest addon @s Muhton [{"text":"> Alright, first up I need something to power the transfusion. Can you find me a "},{"text":"Runic Catalyst","color":"yellow"},{"text":"? Any will do, just one."}]
 execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1

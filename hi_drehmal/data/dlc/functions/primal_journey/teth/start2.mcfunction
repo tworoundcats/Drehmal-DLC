@@ -6,6 +6,7 @@ execute positioned 26499.50 205.00 889.50 as @a[distance=..24,predicate=players:
 execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run tag @s add tempdeaths
 execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run tag @s add tethdeaths
 execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run tag @s add primal_journey
+execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run tag @s add no_armor_damage
 execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run function players:music/reset
 execute positioned 26499.50 205.00 889.50 as @a[distance=..24] run execute in minecraft:the_end run tp 100.58 49.00 0.57
 

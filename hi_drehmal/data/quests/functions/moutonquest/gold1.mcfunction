@@ -1,3 +1,4 @@
 execute positioned ~ ~ ~ as @e[tag=mouton] run tag @s add goldblock
 execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> And would you look at that, here's EVEN MORE! Fourteen different Maelmari children from Rhaveloth separately sent in the suggestion to \"Crush the Kiln with Rhavelothi gold!\" You wouldn't happen to have a "},{"text":"gold block","color":"yellow"},{"text":" on your person, would you?"}]
+execute at @e[tag=mouton] as @a[distance=..20] run journal quest addon @s Muhton [{"text":"> And would you look at that, here's EVEN MORE! Fourteen different Maelmari children from Rhaveloth separately sent in the suggestion to \"Crush the Kiln with Rhavelothi gold!\" You wouldn't happen to have a "},{"text":"gold block","color":"yellow"},{"text":" on your person, would you?"}]
 execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1

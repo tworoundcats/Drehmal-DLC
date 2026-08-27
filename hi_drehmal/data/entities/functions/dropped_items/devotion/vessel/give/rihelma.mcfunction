@@ -5,5 +5,6 @@ execute if entity @s[tag=rihelma.0] run tellraw @s {"text":"Mirror of Frailty","
 execute if entity @s[tag=rihelma.4] run tellraw @s {"text":"Mirror of Lethargy","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 26"}}
 execute if entity @s[tag=rihelma.8] run tellraw @s {"text":"Mirror of Miasma","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 27"}}
 execute if entity @s[tag=rihelma.12] run tellraw @s {"text":"Mirror of Entropy","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 28"}}
+execute if entity @s[tag=rihelma.12] run tellraw @s {"text":"Enigmatic Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/rihelma"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"light_purple"},{"text":"O","color":"dark_purple"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"light_purple"}]

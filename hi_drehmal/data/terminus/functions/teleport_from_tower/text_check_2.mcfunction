@@ -61,8 +61,8 @@ execute as @a[advancements={advancements:primordial/god_machine=true}] run execu
 execute as @a[advancements={advancements:primordial/heart=true}] run execute as @a run fmvariable set end false 1
 execute as @a[advancements={advancements:primordial/closure=true}] run execute as @a run fmvariable set primal_end false 1
 execute as @a[advancements={weapons:bundle=true}] run execute as @a run fmvariable set arcane false 1
-execute as @a[advancements={weapons:tempest=true}] run execute as @a run fmvariable set tempest false 1
-execute as @a[advancements={weapons:eldorite=true}] run execute as @a run fmvariable set eldorite false 1
-execute as @a[advancements={weapons:destinyblade=true}] run execute as @a run fmvariable set dblade false 1
+#execute as @a[advancements={weapons:tempest=true}] run execute as @a run fmvariable set tempest false 1
+#execute as @a[advancements={weapons:eldorite=true}] run execute as @a run fmvariable set eldorite false 1
+#execute as @a[advancements={weapons:destinyblade=true}] run execute as @a run fmvariable set dblade false 1
 
 execute as @a[tag=title_check] run tag @s remove title_check

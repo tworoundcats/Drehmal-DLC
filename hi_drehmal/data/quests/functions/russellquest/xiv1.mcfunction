@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Did you know that there are other continents besides Drehmal? That's right, all the way out at the far western and eastern edges of the disc are two whole other landmasses!"}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"Did you know that there are other continents besides Drehmal? That's right, all the way out at the far western and eastern edges of the disc are two whole other landmasses!"}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/xiv2 6s

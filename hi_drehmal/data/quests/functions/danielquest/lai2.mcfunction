@@ -1,3 +1,3 @@
-execute as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> Lai is the only one of the Aspects that the Maelmari speak of fondly. Some of them even devote themselves entirely to maintaining his Sacred Flames in Merijool!"}]
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=daniel] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> Lai is the only one of the Aspects that the Maelmari speak of fondly. Some of them even devote themselves entirely to maintaining his Sacred Flames in Merijool!"}]
+execute at @e[tag=daniel] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:danielquest/lai3 7s

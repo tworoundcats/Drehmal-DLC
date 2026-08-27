@@ -5,5 +5,6 @@ execute if entity @s[tag=maelhis.0] run tellraw @s {"text":"Sprout of Anguish","
 execute if entity @s[tag=maelhis.3] run tellraw @s {"text":"Sprout of Anguish +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 22"}}
 execute if entity @s[tag=maelhis.6] run tellraw @s {"text":"Sprout of Anguish +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 23"}}
 execute if entity @s[tag=maelhis.9] run tellraw @s {"text":"Sprout of Anguish +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 24"}}
+execute if entity @s[tag=maelhis.9] run tellraw @s {"text":"Scorched Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/mael"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"red"},{"text":"O","color":"black"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"red"}]

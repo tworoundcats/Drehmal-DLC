@@ -5,3 +5,5 @@ execute as @p[tag=qst13] if score @s dquest matches 2 run function quests:daniel
 execute as @p[tag=qst13] if score @s dquest matches 3 run function quests:danielquest/3
 execute as @p[tag=qst13] if score @s dquest matches 4 run function quests:danielquest/4
 execute as @p[tag=qst13] if score @s dquest matches 5 run function quests:danielquest/5
+
+execute at @e[tag=daniel,tag=qend] run function quests:danielquest/post_quest_reward

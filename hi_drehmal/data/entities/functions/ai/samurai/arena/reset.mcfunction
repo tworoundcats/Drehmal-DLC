@@ -11,7 +11,6 @@ fill 27499 169 845 27494 168 845 air
 fill 27498 171 846 27496 172 846 air
 fill 27497 171 847 27496 172 847 air
 
-
 schedule clear entities:ai/samurai/arena/spawn_sequence/1hourofsilencebrokenupby 
 schedule clear entities:ai/samurai/arena/spawn_sequence/2hourofsilencebrokenupby
 schedule clear entities:ai/samurai/arena/spawn_sequence/3hourofsilencebrokenupby
@@ -25,3 +24,4 @@ tag @a remove initialloop
 forceload remove 27481 828 27506 848
 
 fill 27488 163 826 27497 169 826 minecraft:barrier replace air
+

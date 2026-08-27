@@ -1,4 +1,4 @@
-execute positioned 4623 63 5865 as @e[tag=wellerman,distance=..4] run tag @s add seenfrenzy
+execute as @e[tag=weller] run tag @s add seenfrenzy
 
 scoreboard players set #weller_happy bool 0
 

@@ -45,8 +45,11 @@ execute positioned ~ ~ ~ as @p[tag=qst6] at @s run summon firework_rocket ~ ~2 ~
 execute positioned ~ ~ ~ as @p[tag=qst6] run advancement grant @s only dlc:mouton
 execute positioned ~ ~ ~ as @p[tag=qst6] run advancement grant @a only dlc:mouton
 
+execute at @e[tag=mouton] as @a[distance=..20] run journal quest complete @s Muhton
+execute at @e[tag=mouton] as @a[distance=..20] at @s run playsound dlc:writing player @s ~ ~ ~ 1 1
+
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run give @s minecraft:emerald 32
-execute positioned ~ ~ ~ as @p[tag=qst6] at @s run function dlc:give/merch_voucher
+#execute positioned ~ ~ ~ as @p[tag=qst6] at @s run function dlc:give/merch_voucher
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run function dlc:give/mendarum
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run function dlc:give/mendarum
 execute positioned ~ ~ ~ as @p[tag=qst6] at @s run function dlc:give/mendarum

@@ -11,3 +11,4 @@ execute if entity @s[tag=5tick] run function entities:5tick
 execute if entity @s[tag=phoenix] unless predicate entities:in_stasis run function entities:ai/phoenix/main
 execute if entity @s[tag=sludgeback] run function entities:ai/sludgeback/main
 execute if entity @s[tag=lampjaw] run function entities:ai/lampjaw/main
+execute if entity @s[tag=slime_king] run function entities:ai/slime_king

@@ -46,6 +46,8 @@ execute if predicate entities:dummy unless data entity @s Thrower store success 
 execute if predicate entities:starfall store success score #load_this temp run tag @s[tag=starfall_fall] add starfall
 
 execute if predicate entities:starfall2 unless data entity @s Thrower store success score #load_this temp run tag @s add starfall_glow
+execute if predicate players:is_vertebrae run tag @s add vertebrae
 
+execute if predicate players:locations/corvid_painting if predicate players:is_painting run function quests:corvidiotquest/painting
 tag @s add scanned
 execute if score #load_this temp matches 0 run tag @s add unloaded.item

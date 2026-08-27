@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> Surely, such a dominant culture had a thriving artistic tradition, no? "},{"text":"Someone","italic":true},{"text":" would've been writing about that!"}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"Surely, such a dominant culture had a thriving artistic tradition, no? "},{"text":"Someone","italic":true},{"text":" would've been writing about that!"}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/art3 6s

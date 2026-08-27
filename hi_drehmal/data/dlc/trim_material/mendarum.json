@@ -1,0 +1,9 @@
+{
+  "asset_name": "mendarum",
+  "description": {
+    "color": "yellow",
+    "translate": "Mendarum Material"
+  },
+  "ingredient": "dlc:mendarum_crystal",
+  "item_model_index": 1.0
+}

@@ -1,4 +1,4 @@
-execute positioned 4623 63 5865 run tellraw @a[distance=..50] {"text":"<Wehl'r> You... you are... marked..."}
+execute at @e[tag=weller] run tellraw @a[distance=..50] ["",{"text":"<"},{"text":"Wehl'r","color":"white"},{"text":"> You... you are... marked..."}]
 
 schedule clear quests:wellerquest/doit
 

@@ -9,4 +9,4 @@ execute as @a[tag=qst12] at @s run playsound minecraft:dcustom.entity.generic.ex
 execute as @a[tag=qst12] at @s run particle minecraft:witch ~ ~1 ~ 0.5 0.5 0.5 10 100
 execute as @a[tag=qst12] at @s run effect give @s slow_falling 24 0 true
 execute as @a[tag=qst12] at @s run tp @s ~ ~200 ~
-execute as @a[tag=qst12] run tag @s add qst12f
+scoreboard players set #riftquest bool 1

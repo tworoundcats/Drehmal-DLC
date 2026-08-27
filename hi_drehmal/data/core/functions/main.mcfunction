@@ -275,14 +275,14 @@ execute unless score #ihted_spellforged_spawn bool matches 1 run execute in mine
 
 
 
-execute as @e[tag=soul_burn,type=!#entities:laggy] run function players:items/soul/main
+#execute as @e[tag=soul_burn,type=!#entities:laggy] run function players:items/soul/main
 
 execute as @e[tag=bleed,limit=1,type=!#entities:laggy] at @s run function players:items/hangyaku/bleed
 
-execute as @e[tag=tagged,scores={tag_cd=0}] run tag @s remove tagged
-execute as @e[tag=ambition] at @s unless entity @e[tag=!tagged,predicate=!players:holding/ambition,tag=!mythic_pvp,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
+execute as @e[tag=tagged,scores={tag_cd=0},type=!#entities:laggy] run tag @s remove tagged
+execute as @e[tag=ambition,type=!#entities:laggy] at @s unless entity @e[tag=!tagged,predicate=!players:holding/ambition,tag=!mythic_pvp,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
 
-execute as @e[tag=hexed,type=!#entities:laggy] run function players:items/hexed/main
+execute as @e[tag=hexed,type=!#entities:laggy,type=!creeper] run function players:items/hexed/main
 
 # if we want to give mal 2 the draining ability
 #execute as @e[tag=draining,limit=2] at @s run function players:items/mal/drain2

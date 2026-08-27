@@ -22,7 +22,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "mcdw:scythe_soul_scythe"
+            "dlc:harvest_hope"
           ],
           "nbt": "{SoulSickle:1b}"
         }

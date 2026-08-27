@@ -1,0 +1,9 @@
+{
+  "asset_name": "olkahan",
+  "description": {
+    "color": "dark_purple",
+    "translate": "Olkahan Material"
+  },
+  "ingredient": "dlc:olkahan",
+  "item_model_index": 1.0
+}

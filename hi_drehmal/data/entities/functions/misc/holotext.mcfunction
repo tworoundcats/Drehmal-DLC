@@ -167,6 +167,12 @@ execute if entity @s[tag=repo_cat2] if score #terms.inscription_total int matche
 #OMG IS THAT ANOTHER FUCKING OUTER WILDS REFERENCE?????????????????????????????????????????#
 execute if entity @s[tag=ancient_ass] positioned 4143.0 127.00 289.0 if predicate entities:95 store success score @s isOn if entity @a[dx=0,dy=2,dz=0]
 
+
+
+
+execute if entity @s[tag=exodus_dreadnought] positioned -2844.53 14.00 2258.41 store success score @s isOn if entity @a[dx=0,dy=2,dz=0]
+
+
 execute if score @s wasOn matches 1 unless score @s isOn matches 1 run function entities:misc/holotext_off
 execute unless score @s wasOn matches 1 if score @s isOn matches 1 run function entities:misc/holotext_on
 scoreboard players operation @s wasOn = @s isOn

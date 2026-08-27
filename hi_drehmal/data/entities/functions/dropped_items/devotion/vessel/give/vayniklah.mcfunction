@@ -5,5 +5,6 @@ execute if entity @s[tag=vayniklah.0] run tellraw @s {"text":"Resplendence","col
 execute if entity @s[tag=vayniklah.3] run tellraw @s {"text":"Resplendence +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 34"}}
 execute if entity @s[tag=vayniklah.6] run tellraw @s {"text":"Resplendence +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 35"}}
 execute if entity @s[tag=vayniklah.9] run tellraw @s {"text":"Resplendence +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 36"}}
+execute if entity @s[tag=vayniklah.9] run tellraw @s {"text":"Vigorous Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/vayniklah"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"green"},{"text":"O","color":"gold"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"green"}]

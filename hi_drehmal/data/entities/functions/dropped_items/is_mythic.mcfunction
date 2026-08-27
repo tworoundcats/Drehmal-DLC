@@ -16,3 +16,4 @@ execute if predicate players:is_wings store success score #load_this temp run ta
 execute if predicate players:is_soul store success score #load_this temp run tag @s add mythic_invul
 execute if predicate players:is_component store success score #load_this temp run tag @s add mythic_invul
 execute if predicate players:is_voidrecall store success score #load_this temp run tag @s add mythic_invul
+execute if predicate players:is_quest_item store success score #load_this temp run tag @s add mythic_invul

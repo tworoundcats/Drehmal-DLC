@@ -7,6 +7,8 @@
         "minecraft:area_effect_cloud",
         "minecraft:item_display",
         "minecraft:interaction",
-        "minecraft:leash_knot"
+        "minecraft:leash_knot",
+        "minecraft:block_display",
+        "minecraft:text_display"
     ]
   }

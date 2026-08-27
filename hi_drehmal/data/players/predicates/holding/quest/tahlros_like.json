@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    { "condition": "minecraft:reference", "name": "players:holding/quest/land_salmon" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/immortal_slap_fish" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/lai_egg" },
+    { "condition": "minecraft:reference", "name": "players:holding/quest/lai_bucket" }
+  ]
+}

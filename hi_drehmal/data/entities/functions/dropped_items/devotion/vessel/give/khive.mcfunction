@@ -5,5 +5,6 @@ execute if entity @s[tag=khive.0] run tellraw @s {"text":"Mysterial","color":"go
 execute if entity @s[tag=khive.3] run tellraw @s {"text":"Mysterial +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 10"}}
 execute if entity @s[tag=khive.6] run tellraw @s {"text":"Mysterial +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 11"}}
 execute if entity @s[tag=khive.9] run tellraw @s {"text":"Mysterial +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 12"}}
+execute if entity @s[tag=khive.9] run tellraw @s {"text":"Watchful Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/khive"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"blue"},{"text":"O","color":"yellow"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"blue"}]

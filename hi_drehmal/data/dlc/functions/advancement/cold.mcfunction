@@ -1,3 +1,3 @@
 advancement grant @s only dlc:cold
 scoreboard players set #cold bool 1
-telemetry log @s dlc:cold
+execute unless score #telemetry bool matches 1 run telemetry log @s dlc:cold

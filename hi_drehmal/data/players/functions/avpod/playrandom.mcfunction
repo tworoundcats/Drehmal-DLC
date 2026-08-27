@@ -61,11 +61,11 @@ execute if score @s avpod.songid matches 44 run function players:avpod/tracks/ex
 execute if score @s avpod.songid matches 45 run function players:avpod/tracks/shuttle
 execute if score @s avpod.songid matches 46 run function players:avpod/tracks/space_walk
 execute if score @s avpod.songid matches 47 run function players:avpod/tracks/core
-execute if score @s avpod.songid matches 48 run function players:avpod/tracks/run1
+execute if score @s avpod.songid matches 48 run function players:avpod/tracks/mbrun
 execute if score @s avpod.songid matches 49 run function players:avpod/tracks/yav_outside
 execute if score @s avpod.songid matches 50 run function players:avpod/tracks/yav_inside
 execute if score @s avpod.songid matches 51 run function players:avpod/tracks/tethlaen
-execute if score @s avpod.songid matches 52 run function players:avpod/tracks/resonant_halls
+execute if score @s avpod.songid matches 52 run function players:avpod/tracks/halls
 execute if score @s avpod.songid matches 53 run function players:avpod/tracks/ultva
 execute if score @s avpod.songid matches 54 run function players:avpod/tracks/hotv
 execute if score @s avpod.songid matches 55 run function players:avpod/tracks/emissary

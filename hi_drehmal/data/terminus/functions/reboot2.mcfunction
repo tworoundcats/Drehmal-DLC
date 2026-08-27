@@ -15,7 +15,7 @@ fill 26478 144 -159 26471 144 -67 air replace light
 
 fill 26480 137 -67 26481 143 -142 air replace light
 fill 26543 137 -102 26548 142 -108 air replace light
-schedule function terminus:reboot3 2s 
+schedule function terminus:reboot3 2s
 #fill 26487 150 -93 26463 176 -117 minecraft:black_concrete replace air
 
 stopsound @a * minecraft:custom.terminus

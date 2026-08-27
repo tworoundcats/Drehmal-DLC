@@ -1,7 +1,6 @@
 execute unless entity @e[tag=russell,tag=allbooksread] run function core:rng
 scoreboard players operation #rand temp %= #8 const
 
-
 execute if score #rand temp matches 0 unless entity @e[tag=russell,tag=book1_read] run schedule function quests:russellquest/muhs1 1s
 execute if score #rand temp matches 0 if entity @e[tag=russell,tag=book1_read] run function quests:russellquest/bookroll
 execute if score #rand temp matches 1 unless entity @e[tag=russell,tag=book2_read] run schedule function quests:russellquest/aok1 1s

@@ -53,6 +53,7 @@ execute if score #event temp matches 53 align xyz positioned ~0.5 ~ ~0.5 run fun
 execute if score #event temp matches 54 align xyz positioned ~0.5 ~ ~0.5 run function entities:dropped_items/ossein_kill_prime
 execute if score #event temp matches 55 run function dlc:mobs/primal_excavator/death
 execute if score #event temp matches 56 run function quests:cinderquest/why
+execute if score #event temp matches 57 run function dlc:mobs/primal_stalker/noxp
 
 
 #execute if score #event temp matches 24 align xyz positioned ~0.5 ~5 ~0.5 run function entities:ai/tethlaen/dead_fr_fr

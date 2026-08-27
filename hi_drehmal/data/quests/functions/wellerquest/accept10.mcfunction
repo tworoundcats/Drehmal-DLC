@@ -1,3 +1,4 @@
-execute as @p[tag=qst17] at @s run tellraw @a[distance=..50] {"text":"<Wehl'r> Do this, and I send you on your way back to the continent with all five pieces and a hefty payment. You'll be a hero to our people until the final Avihm."}
-execute as @p[tag=qst17] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=weller] run tellraw @a[distance=..50] ["",{"text":"<"},{"text":"Wehl'r","color":"white"},{"text":"> Do this, and I send you on your way back to the continent with all five pieces and a hefty payment. You'll be a hero to our people until the final Avihm."}]
+execute at @e[tag=weller] as @a[distance=..50] run journal quest addon @s Weller [{"text":"Do this, and I send you on your way back to the continent with all five pieces and a hefty payment. You'll be a hero to our people until the final Avihm."}]
+execute at @e[tag=weller] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:wellerquest/accept11 7s

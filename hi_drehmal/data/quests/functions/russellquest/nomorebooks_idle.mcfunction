@@ -1,0 +1,2 @@
+execute at @e[tag=russell] run tellraw @p[tag=temp_i] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> So much history to catch up on... I'll be reading these for years!"}]
+execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1

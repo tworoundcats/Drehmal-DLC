@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> But I wonder if there's another account, from the tribes' perspective. If such a record exists, it's probably somewhere "},{"text":"far up north","color":"yellow"},{"text":". I'd be willing to bet that there's more to that story."}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"But I wonder if there's another account, from the tribes' perspective. If such a record exists, it's probably somewhere "},{"text":"far up north","color":"yellow"},{"text":". I'd be willing to bet that there's more to that story."}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/homli3 8s

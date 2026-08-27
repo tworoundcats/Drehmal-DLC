@@ -66,6 +66,7 @@ tag @s remove initialloop
 tag @s remove disabled
 tag @s remove suffering
 tag @s remove waterspiked
+tag @s remove no_armor_damage
 execute if score #mystery.power bool matches 1 run advancement grant @s only advancements:mystery/power
 execute if score #mystery.visitation bool matches 1 run advancement grant @s only dlc:visitation
 

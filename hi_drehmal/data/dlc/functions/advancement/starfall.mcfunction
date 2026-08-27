@@ -5,4 +5,4 @@ scoreboard players set #starfall bool 1
 clear @s dlc:starfall_mote{starfall_air:1b}
 function dlc:give/starfall_mote
 function dlc:give/starfall_mote
-telemetry log @s dlc:starfall
+execute unless score #telemetry bool matches 1 run telemetry log @s dlc:starfall

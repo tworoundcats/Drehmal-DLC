@@ -1,3 +1,4 @@
-execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> Over the last few months, what used to be a relatively unorganized criminal underbelly has given way to something new. A proper crime syndicate."}]
-execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.ambient master @s ~ ~ ~ 2 0.8
+execute at @e[tag=mahkar] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> Over the last few months, what used to be a relatively unorganized criminal underbelly has given way to something new. A proper crime syndicate."}]
+execute at @e[tag=mahkar] as @a[distance=..20] run journal quest addon @s Mahkar [{"text":"Over the last few months, what used to be a relatively unorganized criminal underbelly has given way to something new. A proper crime syndicate."}]
+execute at @e[tag=mahkar] run playsound minecraft:entity.piglin.ambient master @a ~ ~ ~ 2 0.8
 schedule function quests:mahkarquest/accept4 5s

@@ -19,3 +19,4 @@ execute if entity @s[tag=Hovadchear] run function entities:scaling/hovadchear
 execute if entity @s[tag=mb_run_zomb] run function entities:scaling/mb_run/zombie
 execute if entity @s[tag=mb_run_skele] run function entities:scaling/mb_run/skeleton
 execute if entity @s[tag=mb_run_blind] run function entities:scaling/mb_run/blind
+#execute if entity @s[tag=red_dawn_boss] run function entities:scaling/hegemon

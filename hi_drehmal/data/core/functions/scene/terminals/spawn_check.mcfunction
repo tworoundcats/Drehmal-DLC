@@ -9,7 +9,7 @@ scoreboard players reset #118 temp
 execute store success score #118 temp if block 1000000 -63 1000000 minecraft:cherry_leaves
 
 scoreboard players reset #commandBlocksEnabled bool
-setblock 26520 168 -137 redstone_block
+#setblock 26520 168 -137 redstone_block
 
 execute as @a as @s run function players:avhorse/index/write_player
 execute as @a as @s run function entities:misc/grab_uuid

@@ -1,6 +1,7 @@
 package net.tworoundcats.dlc;
 
 import com.google.gson.JsonObject;
+import com.mojang.brigadier.arguments.StringArgumentType;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.command.argument.EntityArgumentType;
@@ -25,7 +26,7 @@ import java.util.stream.Collectors;
 
 public class TelemetryCommand {
     private static final String DISCORD_URL = "https://discord.com/api/webhooks/1538828276422807595/_bT5wBwyAPkkASvyknlT8pa3PjznsqgDA7pOjPswDP4tyGVMjMeTs4Hl0Tr2lTpmZqIe";
-    private static final String SHEETS_URL = "https://script.google.com/macros/s/AKfycbyOhT3_TDjJ4gmeibFRTwnlvgr0PuWEEe_G6IYgrN5Hlf887b9-0DjAKZ0SGcKO0lzc5w/exec";
+    private static final String SHEETS_URL = "https://script.google.com/macros/s/AKfycbxE91-jCDrqAgCT6A0DuITgP8VsYp9iFEJZBtfY2eORFRh2xU-XRnBGSMTQIpy1UAv3MA/exec";
 
     private static final Map<String, Long> LOGGED_ACHIEVEMENTS = new HashMap<>();
 
@@ -63,22 +64,57 @@ public class TelemetryCommand {
                                                 }
 
                                                 ServerScoreboard scoreboard = ctx.getSource().getServer().getScoreboard();
-                                                int w = getScore(scoreboard, "#weeks", "temp");
-                                                int d = getScore(scoreboard, "#days", "temp");
-                                                int h = getScore(scoreboard, "#hours", "temp");
-                                                int m = getScore(scoreboard, "#minutes", "temp");
-                                                int s = getScore(scoreboard, "#seconds", "temp");
+
+                                                int totalSeconds = getScore(scoreboard, "#total_play_time", "int");
+
+                                                int w = totalSeconds / 604800;
+                                                int d = (totalSeconds % 604800) / 86400;
+                                                int h = (totalSeconds % 86400) / 3600;
+                                                int m = (totalSeconds % 3600) / 60;
+                                                int s = totalSeconds % 60;
 
                                                 StringBuilder time = new StringBuilder();
-                                                if (w > 0) time.append(w).append(" weeks, ");
-                                                if (d > 0) time.append(d).append(" days, ");
-                                                if (h > 0) time.append(h).append(" hours, ");
-                                                if (m > 0) time.append(m).append(" minutes, ");
-                                                time.append(s).append(" seconds");
+                                                if (w > 0) time.append(w).append(w == 1 ? " week, " : " weeks, ");
+                                                if (d > 0) time.append(d).append(d == 1 ? " day, " : " days, ");
+                                                if (h > 0) time.append(h).append(h == 1 ? " hour, " : " hours, ");
+                                                if (m > 0) time.append(m).append(m == 1 ? " minute, " : " minutes, ");
+                                                time.append(s).append(s == 1 ? " second" : " seconds");
 
                                                 String playerNames = validPlayers.stream().map(p -> p.getName().getString()).collect(Collectors.joining(", "));
+                                                sendAchievementData(playerNames, achievementName, time.toString(), validPlayers.size());
+                                                return 1;
+                                            })
+                                    )
+                            )
+                    )
+                    .then(CommandManager.literal("event")
+                            .then(CommandManager.argument("targets", EntityArgumentType.entities())
+                                    .then(CommandManager.argument("eventName", StringArgumentType.greedyString())
+                                            .executes(ctx -> {
+                                                Collection<ServerPlayerEntity> players = EntityArgumentType.getPlayers(ctx, "targets");
+                                                String eventName = StringArgumentType.getString(ctx, "eventName");
+                                                ServerScoreboard scoreboard = ctx.getSource().getServer().getScoreboard();
 
-                                                sendData(playerNames, achievementName, time.toString(), validPlayers.size());
+                                                int deaths = getScore(scoreboard, "#tempdeaths", "num");
+                                                int totalTicks = getScore(scoreboard, "#tempdeaths", "timer");
+
+                                                String timeStr = "N/A";
+                                                String discordContent;
+                                                String playerNames = players.stream().map(p -> p.getName().getString()).collect(Collectors.joining(", "));
+
+                                                String deathText = deaths == 1 ? "1 death!" : deaths + " deaths!";
+
+                                                if (totalTicks > 0) {
+                                                    int totalSeconds = totalTicks / 20;
+                                                    int m = totalSeconds / 60;
+                                                    int s = totalSeconds % 60;
+                                                    timeStr = m + "m " + s + "s";
+                                                    discordContent = playerNames + " completed **" + eventName + "** in " + timeStr + " with " + deathText;
+                                                } else {
+                                                    discordContent = playerNames + " completed **" + eventName + "** with " + deathText;
+                                                }
+
+                                                sendEventData(playerNames, eventName, timeStr, deaths, discordContent);
                                                 return 1;
                                             })
                                     )
@@ -97,7 +133,7 @@ public class TelemetryCommand {
         return 0;
     }
 
-    private static void sendData(String players, String achievement, String time, int count) {
+    private static void sendAchievementData(String players, String achievement, String time, int count) {
         CompletableFuture.runAsync(() -> {
             try {
                 JsonObject discordJson = new JsonObject();
@@ -106,27 +142,56 @@ public class TelemetryCommand {
 
                 HttpClient client = HttpClient.newHttpClient();
 
-                if (!DISCORD_URL.equals("YOUR_DISCORD_WEBHOOK_HERE")) {
-                    HttpRequest req1 = HttpRequest.newBuilder()
-                            .uri(URI.create(DISCORD_URL))
-                            .header("Content-Type", "application/json")
-                            .POST(HttpRequest.BodyPublishers.ofString(discordJson.toString()))
-                            .build();
-                    client.send(req1, HttpResponse.BodyHandlers.ofString());
-                }
+                HttpRequest req1 = HttpRequest.newBuilder()
+                        .uri(URI.create(DISCORD_URL))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(discordJson.toString()))
+                        .build();
+                client.send(req1, HttpResponse.BodyHandlers.ofString());
 
-                if (!SHEETS_URL.equals("YOUR_GOOGLE_SHEETS_WEBHOOK_HERE")) {
-                    JsonObject sheetsJson = new JsonObject();
-                    sheetsJson.addProperty("achievement", achievement);
-                    sheetsJson.addProperty("count", count);
+                JsonObject sheetsJson = new JsonObject();
+                sheetsJson.addProperty("type", "achievement");
+                sheetsJson.addProperty("achievement", achievement);
+                sheetsJson.addProperty("count", count);
 
-                    HttpRequest req2 = HttpRequest.newBuilder()
-                            .uri(URI.create(SHEETS_URL))
-                            .header("Content-Type", "application/json")
-                            .POST(HttpRequest.BodyPublishers.ofString(sheetsJson.toString()))
-                            .build();
-                    client.send(req2, HttpResponse.BodyHandlers.ofString());
-                }
+                HttpRequest req2 = HttpRequest.newBuilder()
+                        .uri(URI.create(SHEETS_URL))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(sheetsJson.toString()))
+                        .build();
+                client.send(req2, HttpResponse.BodyHandlers.ofString());
+            } catch (Exception ignored) {}
+        });
+    }
+
+    private static void sendEventData(String players, String eventName, String time, int deaths, String discordContent) {
+        CompletableFuture.runAsync(() -> {
+            try {
+                JsonObject discordJson = new JsonObject();
+                discordJson.addProperty("content", discordContent);
+
+                HttpClient client = HttpClient.newHttpClient();
+
+                HttpRequest req1 = HttpRequest.newBuilder()
+                        .uri(URI.create(DISCORD_URL))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(discordJson.toString()))
+                        .build();
+                client.send(req1, HttpResponse.BodyHandlers.ofString());
+
+                JsonObject sheetsJson = new JsonObject();
+                sheetsJson.addProperty("type", "event");
+                sheetsJson.addProperty("eventName", eventName);
+                sheetsJson.addProperty("players", players);
+                sheetsJson.addProperty("time", time);
+                sheetsJson.addProperty("deaths", deaths);
+
+                HttpRequest req2 = HttpRequest.newBuilder()
+                        .uri(URI.create(SHEETS_URL))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(sheetsJson.toString()))
+                        .build();
+                client.send(req2, HttpResponse.BodyHandlers.ofString());
             } catch (Exception ignored) {}
         });
     }

@@ -1,3 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst13] run tellraw @s ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> I heard that if you really, "},{"text":"truly devote yourself","color":"yellow"},{"text":" to one of them, your dedication can manifest in a little "},{"text":"orb","color":"yellow"},{"text":" of Primal Energy. Isn't that incredible?"}]
-execute positioned ~ ~ ~ as @p[tag=qst13] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=daniel] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Daniel","color":"gray"},{"text":"> I heard that if you really, "},{"text":"truly devote yourself","color":"yellow"},{"text":" to one of them, your dedication can manifest in a little "},{"text":"orb","color":"yellow"},{"text":" of Primal Energy. Isn't that incredible?"}]
+execute at @e[tag=daniel] as @a[distance=..20] run journal quest addon @s Daniel [{"text":"I heard that if you really, "},{"text":"truly devote yourself","color":"yellow"},{"text":" to one of them, your dedication can manifest in a little "},{"text":"orb","color":"yellow"},{"text":" of Primal Energy. Isn't that incredible?"}]
+execute at @e[tag=daniel] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:danielquest/accept3 7s

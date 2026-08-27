@@ -2,14 +2,12 @@
 # #scoreboardStable bool will be unset while this is running so you can use that to disable any dialogue that would normally play as a result of triggering story events/etc.
 
 tellraw @a [{"text":""},{"text":"[!] Scoreboard corruption has been detected [!]\n\n","color":"red"},{"text":"What does this mean?:\nAt some point, the scoreboard.dat file for your world was accidently wiped. This most commonly happens due to a server crash.\n\n"},{"text":"What should I do?:\nWe've done our best to recover all the main story progress you've made, so you should be able to continue as normal, but some events that are unrelated to the main story may have been reset or broken. Ask for help in the "},{"text":"Discord","color":"yellow","underlined":"true","clickEvent":{"action":"open_url","value":"https://discord.gg/drehmal"}},{"text":" if something breaks."}]
-
 # if a dev needs to troubleshoot, this will tell us if the world experience scoreboard corruption at some point.
 fill ~ ~-1 ~ ~15 ~-1 ~15 minecraft:red_concrete
 
 # this gets reset after 5 seconds, to give time for various story advancements to get granted without clogging the chat.
 gamerule announceAdvancements false
 execute if score count_all towers matches 1.. run scoreboard players set #termstart bool 1
-
 
 # eject sequence
 execute if block ~1 ~ ~ minecraft:orange_concrete run scoreboard players set #ejectConfirm bool 3
@@ -251,3 +249,4 @@ execute if block 26516 167 -88 green_concrete run scoreboard players set #ring_f
 execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC bool 1
 execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC_install bool 1
 execute if block 26516 168 -88 white_concrete run scoreboard players set #DLC_initialize bool 1
+scoreboard players reset #scoreboardrestore bool

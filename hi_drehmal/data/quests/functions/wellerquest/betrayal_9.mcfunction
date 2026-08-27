@@ -1,1 +1,2 @@
-kill @e[tag=wellerman,type=villager]
+kill @e[tag=weller]
+kill @e[tag=weller_i]

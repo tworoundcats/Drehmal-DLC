@@ -37,3 +37,6 @@ execute if entity @s[tag=starfall_glow,tag=!starfall_glow2] run function dlc:mod
 
 execute if entity @s[tag=gummy] run function players:items/gummy/convert
 execute if entity @s[tag=gummy_nomotion] run function players:items/gummy/convert_nomotion
+
+execute if entity @s[tag=vertebrae,predicate=entities:on_fire] run function players:items/cal/vertebrae_destroy
+

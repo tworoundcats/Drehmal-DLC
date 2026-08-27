@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I don't know where you'd find such a thing, besides probably somewhere in the east. I've brought this up to plenty of travelers fleeing the west, and nobody seems to know anything about this figure."}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"I don't know where you'd find such a thing, besides probably somewhere in the east. I've brought this up to plenty of travelers fleeing the west, and nobody seems to know anything about this figure."}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/dusty5 8s

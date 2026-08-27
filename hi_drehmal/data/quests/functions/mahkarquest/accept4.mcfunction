@@ -1,3 +1,4 @@
-execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> Three new figureheads, weaseling their way into every corner of this damn town. They manipulate, steal, and kill to their hearts' content."}]
-execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.ambient master @s ~ ~ ~ 2 0.8
+execute at @e[tag=mahkar] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> Three new figureheads, weaseling their way into every corner of this damn town. They manipulate, steal, and kill to their hearts' content."}]
+execute at @e[tag=mahkar] as @a[distance=..20] run journal quest addon @s Mahkar [{"text":"Three new figureheads, weaseling their way into every corner of this damn town. They manipulate, steal, and kill to their hearts' content."}]
+execute at @e[tag=mahkar] run playsound minecraft:entity.piglin.ambient master @a ~ ~ ~ 2 0.8
 schedule function quests:mahkarquest/accept5 6s

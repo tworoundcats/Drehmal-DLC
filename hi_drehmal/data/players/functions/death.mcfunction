@@ -110,4 +110,5 @@ tag @s remove initialloop
 tag @s remove suffering
 tag @s remove disabled
 tag @s remove waterspiked
+tag @s remove no_armor_damage
 scoreboard players reset @s spm.x

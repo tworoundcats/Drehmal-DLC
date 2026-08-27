@@ -18,7 +18,9 @@ spawnpoint @a[x=1030,y=59,z=3834,distance=..16] 1030 60 3834
 execute as @a[predicate=players:is_not_dev,x=1030,y=59,z=3834,distance=..16] run function players:gamemode/set_adventure
 tag @a[x=1030,y=59,z=3834,distance=..16] add tempdeaths
 execute unless score #ossein_dead? bool matches 1 run tag @a[x=1030,y=59,z=3834,distance=..16] add ossein_defaultdeaths
+execute unless score #ossein_dead? bool matches 1 run tag @a[x=1030,y=59,z=3834,distance=..16] add no_armor_damage
 execute if score #ossein_dead? bool matches 1 run tag @a[x=1030,y=59,z=3834,distance=..16] add ossein_primedeaths
+execute if score #ossein_dead? bool matches 1 run tag @a[x=1030,y=59,z=3834,distance=..16] add no_armor_damage
 execute positioned 26302.32 193.00 154.45 run kill @e[type=item,distance=..4]
 teleport @a[x=1030,y=59,z=3834,distance=..16] 26302 194 154
 execute positioned 26302.32 193.00 154.45 run kill @e[type=item,distance=..4]

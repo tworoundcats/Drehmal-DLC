@@ -1,3 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst12] at @s run tellraw @s ["",{"text":"<"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> That's where I come in, though! See, I've spent years tinkering with the dock, and while I don't fully understand its mechanism, I managed to create, well, this "},{"text":"rift","color":"yellow"},{"text":"."}]
-execute positioned ~ ~ ~ as @p[tag=qst12] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=rift] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Rift Tech","color":"dark_purple"},{"text":"> ","color":"white"},{"text":"That's where I come in, though! See, I've spent years tinkering with the dock, and while I don't fully understand its mechanism, I managed to create, well, this "},{"text":"rift","color":"yellow"},{"text":"."}]
+execute at @e[tag=rift] as @a[distance=..20] run journal quest addon @s Rift [{"text":"That's where I come in, though! See, I've spent years tinkering with the dock, and while I don't fully understand its mechanism, I managed to create, well, this "},{"text":"rift","color":"yellow"},{"text":"."}]
+execute at @e[tag=rift] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:riftquest/accept4 7s

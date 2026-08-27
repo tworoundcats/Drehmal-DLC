@@ -1,0 +1,3 @@
+execute if entity @s[tag=relic_v_give] run give @s minecraft:command_block{TaihgelQuestOrb: 1b, CustomModelData: 1182007, display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_green","text":"Resolute Orb"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"You could never even begin to "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"understand all that has been lost."}],"text":""}']}}
+execute unless entity @s[tag=relic_v_give] run function entities:dropped_items/devotion/vessel/give/already_redeemed
+tag @s remove relic_v_give

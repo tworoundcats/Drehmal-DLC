@@ -22,3 +22,4 @@ execute if entity @s[tag=rift_i] positioned ~ ~-2 ~ run function quests:riftques
 execute if entity @s[tag=russell_i] positioned ~ ~-2 ~ run function quests:russellquest/tick
 execute if entity @s[tag=tahlros_i] positioned ~ ~-2 ~ run function quests:tahlrosquest/tick
 execute if entity @s[tag=weller_i] positioned ~ ~-2 ~ run function quests:wellerquest/tick
+execute if entity @s[tag=trophy_item,tag=has_item] at @s run function players:interact/trophy_tick

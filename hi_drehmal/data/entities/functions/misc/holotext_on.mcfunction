@@ -508,3 +508,7 @@ execute if entity @s[tag=repo_cat2] if score #terms.inscription_total int matche
 
 execute if entity @s[tag=repo_warp2] if score #terms.ring_total int matches 1..6 run item replace entity @s armor.head with knowledge_book{display:{Name:'{"text":"repo_ringpart"}'}}
 execute if entity @s[tag=repo_warp2] if score #terms.ring_total int matches 7.. run item replace entity @s armor.head with knowledge_book{display:{Name:'{"text":"repo_ring"}'}}
+
+
+execute if entity @s[tag=exodus_dreadnought] run item replace entity @s armor.head with knowledge_book{display:{Name:'{"text":"exodus_dreadnought"}'}}
+

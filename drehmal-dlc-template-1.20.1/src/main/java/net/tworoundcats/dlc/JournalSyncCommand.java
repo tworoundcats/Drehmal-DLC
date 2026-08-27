@@ -27,6 +27,13 @@ public class JournalSyncCommand {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             dispatcher.register(CommandManager.literal("journal")
+                    .then(CommandManager.literal("sync")
+                            .then(CommandManager.argument("player", EntityArgumentType.player())
+                                    .executes(ctx -> {
+                                        ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "player");
+                                        syncBook(player);
+                                        return 1;
+                                    })))
                     .then(CommandManager.literal("quest")
                             .then(CommandManager.literal("add")
                                     .then(CommandManager.argument("player", EntityArgumentType.player())
@@ -63,52 +70,50 @@ public class JournalSyncCommand {
     }
 
     private static void addQuest(ServerPlayerEntity player, String questId, String title) {
-        withJournal(player, quests -> {
-            for (int i = 0; i < quests.size(); i++) {
-                if (quests.getCompound(i).getString("id").equals(questId)) return;
-            }
-            NbtCompound entry = new NbtCompound();
-            entry.putString("id", questId);
-            entry.putString("title", title);
-            entry.putBoolean("done", false);
-            entry.put("dialogues", new NbtList());
-            quests.add(entry);
-        });
+        NbtList quests = ((IPlayerQuestData) player).dlc$getQuests();
+        for (int i = 0; i < quests.size(); i++) {
+            if (quests.getCompound(i).getString("id").equals(questId)) return;
+        }
+        NbtCompound entry = new NbtCompound();
+        entry.putString("id", questId);
+        entry.putString("title", title);
+        entry.putBoolean("done", false);
+        entry.put("dialogues", new NbtList());
+        quests.add(entry);
+
+        syncBook(player);
     }
 
     private static void addonQuest(ServerPlayerEntity player, String questId, String dialogueJson) {
-        withJournal(player, quests -> {
-            for (int i = 0; i < quests.size(); i++) {
-                NbtCompound entry = quests.getCompound(i);
-                if (entry.getString("id").equals(questId)) {
-                    if (entry.getBoolean("done")) {
-                        return;
-                    }
-                    NbtList dialogues = entry.getList("dialogues", NbtElement.STRING_TYPE);
-                    dialogues.add(NbtString.of(dialogueJson));
-                    entry.put("dialogues", dialogues);
-                    quests.set(i, entry);
-                    return;
-                }
+        NbtList quests = ((IPlayerQuestData) player).dlc$getQuests();
+        for (int i = 0; i < quests.size(); i++) {
+            NbtCompound entry = quests.getCompound(i);
+            if (entry.getString("id").equals(questId)) {
+                if (entry.getBoolean("done")) return;
+
+                NbtList dialogues = entry.getList("dialogues", NbtElement.STRING_TYPE);
+                dialogues.add(NbtString.of(dialogueJson));
+                entry.put("dialogues", dialogues);
+                quests.set(i, entry);
+
+                syncBook(player);
+                return;
             }
-        });
+        }
     }
 
     private static void completeQuest(ServerPlayerEntity player, String questId) {
-        withJournal(player, quests -> {
-            for (int i = 0; i < quests.size(); i++) {
-                NbtCompound entry = quests.getCompound(i);
-                if (entry.getString("id").equals(questId)) {
-                    entry.putBoolean("done", true);
-                    quests.set(i, entry);
-                    return;
-                }
-            }
-        });
-    }
+        NbtList quests = ((IPlayerQuestData) player).dlc$getQuests();
+        for (int i = 0; i < quests.size(); i++) {
+            NbtCompound entry = quests.getCompound(i);
+            if (entry.getString("id").equals(questId)) {
+                entry.putBoolean("done", true);
+                quests.set(i, entry);
 
-    private interface JournalEdit {
-        void apply(NbtList quests);
+                syncBook(player);
+                return;
+            }
+        }
     }
 
     private static ItemStack getJournalStack(ServerPlayerEntity player) {
@@ -136,17 +141,21 @@ public class JournalSyncCommand {
         return ItemStack.EMPTY;
     }
 
-    private static void withJournal(ServerPlayerEntity player, JournalEdit edit) {
+    private static void syncBook(ServerPlayerEntity player) {
         ItemStack stack = getJournalStack(player);
         if (stack.isEmpty()) return;
 
+        NbtList quests = ((IPlayerQuestData) player).dlc$getQuests();
         NbtCompound tag = stack.getOrCreateNbt();
-        if (!tag.contains("title")) tag.putString("title", "Quest Journal");
+
+        tag.put("Quests", quests.copy());
+
+        String bookTitle = stack.hasCustomName() ? stack.getName().getString() : "Quest Journal";
+        tag.putString("title", bookTitle);
+
         tag.putString("author", player.getName().getString());
 
-        NbtList quests = tag.getList("Quests", NbtElement.COMPOUND_TYPE);
-        edit.apply(quests);
-        tag.put("Quests", quests);
+        tag.putBoolean("resolved", true);
 
         rebuildPages(tag, quests);
     }
@@ -217,7 +226,7 @@ public class JournalSyncCommand {
 
             questsOnPage++;
 
-            if (questsOnPage >= 10) {
+            if (questsOnPage >= 6) {
                 pages.add(NbtString.of(currentPage.toString()));
                 currentPage = new JsonArray();
                 currentPage.add("");

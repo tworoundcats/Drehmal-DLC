@@ -5,5 +5,6 @@ execute if entity @s[tag=lai.0] run tellraw @s {"text":"Ardorbrand","color":"gol
 execute if entity @s[tag=lai.3] run tellraw @s {"text":"Ardorbrand +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 14"}}
 execute if entity @s[tag=lai.6] run tellraw @s {"text":"Ardorbrand +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 15"}}
 execute if entity @s[tag=lai.9] run tellraw @s {"text":"Ardorbrand +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 16"}}
+execute if entity @s[tag=lai.9] run tellraw @s {"text":"Chromatic Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/lai"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"dark_red"},{"text":"O","color":"gold"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"dark_red"}]

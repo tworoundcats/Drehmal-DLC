@@ -1,0 +1,3 @@
+execute if entity @s[tag=relic_v_give] run give @s minecraft:command_block{LaiQuestOrb: 1b, CustomModelData: 1182010, display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"dark_green","text":"Chromatic Orb"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"The stunning hues of His sacred"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"flame have many applications."}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"A truly furious beauty."}],"text":""}']}}
+execute unless entity @s[tag=relic_v_give] run function entities:dropped_items/devotion/vessel/give/already_redeemed
+tag @s remove relic_v_give

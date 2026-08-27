@@ -18,5 +18,4 @@ execute if predicate players:is_wings run team join leviathan
 execute if predicate players:is_soul run team join leviathan
 execute if predicate players:is_component run team join component
 execute if predicate players:is_voidrecall run team join oblivion
-
 tag @s remove mythic_invul

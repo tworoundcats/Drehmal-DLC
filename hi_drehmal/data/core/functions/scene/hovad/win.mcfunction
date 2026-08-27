@@ -13,6 +13,7 @@ execute as @a[predicate=core:in_hovadmain] at @s run function players:music/ultv
 
 
 scoreboard players set #court tempdeaths 1
+execute as @a[predicate=core:in_hovadmain] run tag @s remove no_armor_damage
 execute as @a run function dlc:telldeaths
 
 schedule function dialogue:myth/dia12/7hovadwin/0 10s

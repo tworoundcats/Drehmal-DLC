@@ -2,6 +2,8 @@ execute unless score #hovadbossintro timer matches 1.. as @a[predicate=core:in_h
 
 execute if score #hovadbossintro timer matches 2 run forceload add 27314 60 27276 102
 
+execute if score #hovadbossintro timer matches 2 as @a[predicate=core:in_hovad] run tag @s add no_armor_damage
+
 execute if score #hovadbossintro timer matches 2 as @a[predicate=core:in_hovad] run tag @s add tempdeaths
 execute if score #hovadbossintro timer matches 2 as @a[predicate=core:in_hovad] run tag @s add courtdeaths
 execute if score #hovadbossintro timer matches 2 run clone 27332 22 118 27302 4 88 27280 82 70 replace force

@@ -1,4 +1,4 @@
-#execute as @a if predicate players:holding/soul_scythe as @s[scores={use_soul=1..}] run function players:items/soul/use
+#execute as @a if predicate players:holding/soul_scythe as @s[scores={use_soul2=1..}] run function players:items/soul/use
 #execute as @a if predicate players:holding/soul_scythe as @s[tag=temp_burn] run function players:items/soul/main
 #
 #

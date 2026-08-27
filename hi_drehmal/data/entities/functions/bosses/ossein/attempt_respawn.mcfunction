@@ -5,6 +5,7 @@ execute if score @s respawn_timer matches ..0 if entity @s[predicate=players:is_
 execute if score @s respawn_timer matches ..0 run tag @s add tempdeaths
 execute if score @s respawn_timer matches ..0 unless score #ossein_dead? bool matches 1 run tag @s add ossein_defaultdeaths
 execute if score @s respawn_timer matches ..0 if score #ossein_dead? bool matches 1 run tag @s add ossein_primedeaths
+execute if score @s respawn_timer matches ..0 if score #ossein_dead? bool matches 1 run tag @s add no_armor_damage
 execute if score @s respawn_timer matches ..0 run teleport @s 26302 194 154
 execute unless score @s respawn_timer matches ..0 run tellraw @s {"text":"Your soul is still reforming...","italic":true,"color":"gray"}
 execute unless score @s respawn_timer matches ..0 run scoreboard players operation #secs temp = @s respawn_timer

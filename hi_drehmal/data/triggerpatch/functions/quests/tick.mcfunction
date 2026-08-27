@@ -16,5 +16,6 @@ execute if score @s tgrptch.major_accept matches 1 unless entity @a[tag=qst2] ru
 execute if score @s tgrptch.mouton_accept matches 1 unless entity @a[tag=qst6] run function triggerpatch:quests/mouton_accept
 execute if score @s tgrptch.rift_accept matches 1 unless entity @a[tag=qst12] run function triggerpatch:quests/rift_accept
 execute if score @s tgrptch.russell_accept matches 1 unless entity @a[tag=qst11] run function triggerpatch:quests/russell_accept
+execute if score @s tgrptch.russell_accept matches 2 unless entity @a[tag=qst11] run function quests:russellquest/again_yes
 execute if score @s tgrptch.tahlros_accept matches 1 unless entity @a[tag=qst15] run function triggerpatch:quests/tahlros_accept
 execute if score @s tgrptch.weller_accept matches 1 unless entity @a[tag=qst17] run function triggerpatch:quests/weller_accept

@@ -7,8 +7,8 @@ tellraw @s {"text":" "}
 
 
 
-execute if score #settings.lock bool matches 1 run execute as @s[tag=host] run tellraw @s ["",{"text":"Lock settings:","color":"dark_gray"},{"text":" [False] ","color":"white","clickEvent":{"action":"run_command","value":"/function players:triggers/lock_settings_disable"},"hoverEvent":{"action":"show_text","contents":[{"text":"Settings are disabled","color":"gray"},"\n",{"text":"Click to enable!","color":"yellow"}]}},{"text":"[True] ","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"Settings are locked for everyone but you.","color":"gray"}]}}]
-execute unless score #settings.lock bool matches 1 run execute as @s[tag=host] run tellraw @s ["",{"text":"Lock settings:","color":"dark_gray"},{"text":" [False] ","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"Settings are enabled","color":"gray"}]}},{"text":"[True] ","color":"white","clickEvent":{"action":"run_command","value":"/function players:triggers/lock_settings_toggle"},"hoverEvent":{"action":"show_text","contents":[{"text":"Settings are locked for everyone but you.","color":"gray"},"\n",{"text":"Click to Enable!","color":"yellow"}]}}]
+execute if score #settings.lock bool matches 1 run execute as @s[tag=host] run tellraw @s ["",{"text":"Lock settings:","color":"dark_gray"},{"text":" [False] ","color":"white","clickEvent":{"action":"run_command","value":"/dlccall function players:triggers/lock_settings_disable"},"hoverEvent":{"action":"show_text","contents":[{"text":"Settings are disabled","color":"gray"},"\n",{"text":"Click to enable!","color":"yellow"}]}},{"text":"[True] ","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"Settings are locked for everyone but you.","color":"gray"}]}}]
+execute unless score #settings.lock bool matches 1 run execute as @s[tag=host] run tellraw @s ["",{"text":"Lock settings:","color":"dark_gray"},{"text":" [False] ","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"Settings are enabled","color":"gray"}]}},{"text":"[True] ","color":"white","clickEvent":{"action":"run_command","value":"/dlccall function players:triggers/lock_settings_toggle"},"hoverEvent":{"action":"show_text","contents":[{"text":"Settings are locked for everyone but you.","color":"gray"},"\n",{"text":"Click to Enable!","color":"yellow"}]}}]
 
 
 # difficulty scaling - global
@@ -58,6 +58,7 @@ tellraw @s {"text":" "}
 #function dlc:check6
 function dlc:check7
 function dlc:check9
+function dlc:check14
 function dlc:givearmor
 tellraw @s {"text":" "}
 tellraw @s {"text":"□-----------------------------------------□","color":"dark_gray"}

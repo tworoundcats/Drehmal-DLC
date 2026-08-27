@@ -12,5 +12,13 @@ execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=russell_i,tag=!q
 
 execute at @e[tag=russell,tag=qstart,tag=activerussell] as @a[distance=..8,predicate=players:holding/russell_like] run function quests:russellquest/check
 execute at @e[tag=russell,tag=qstart,tag=activerussell] as @a[distance=..8,predicate=!players:holding/russell_like] run tag @e[tag=russell_i] add disabled
+
+execute at @e[tag=russell,tag=qstart,tag=!activerussell,tag=!allbooksread] as @a[distance=..8] unless entity @a[distance=..8,tag=again_offer] run tag @e[tag=russell_i] add enabled
+execute at @e[tag=russell,tag=qstart,tag=!activerussell,tag=!allbooksread] as @a[distance=..8] unless entity @a[distance=..8,tag=again_offer] run tag @e[tag=russell] remove disabled
+
+execute at @e[tag=russell,tag=allbooksread] as @a[distance=..8] run tag @e[tag=russell_i] remove enabled
+execute at @e[tag=russell,tag=allbooksread] as @a[distance=..8] run tag @e[tag=russell_i] add disabled
+execute at @e[tag=russell,tag=allbooksread] as @a[distance=..8] run tag @e[tag=russell] remove disabled
+
 execute if score #DLC repeatable matches 1 run tag @s[tag=qend] remove qend
 execute unless entity @s[team=cal] run team join cal

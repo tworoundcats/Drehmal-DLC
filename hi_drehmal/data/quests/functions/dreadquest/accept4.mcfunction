@@ -1,3 +1,4 @@
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"Dredd'Lohk","color":"dark_aqua"},{"text":"> ","color":"white"},{"text":"He'd planned to steal that fickle blade, albeit for a more just reason. I learned he'd mapped out the Tidal Palace in preparation, but it's unknown where "},{"text":"Masayoshi","color":"yellow"},{"text":" is being stored nowadays."}]
-execute positioned ~ ~ ~ as @p[tag=qst7] at @s run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
+execute at @e[tag=dread] run tellraw @a[distance=..20] ["",{"text":"<","color":"white"},{"text":"Dredd'Lohk","color":"dark_aqua"},{"text":"> ","color":"white"},{"text":"He'd planned to steal that fickle blade, albeit for a more just reason. I learned he'd mapped out the Tidal Palace in preparation, but it's unknown where "},{"text":"Masayoshi","color":"yellow"},{"text":" is being stored nowadays."}]
+execute at @e[tag=dread] as @a[distance=..20] run journal quest addon @s Dredd [{"text":"He'd planned to steal that fickle blade, albeit for a more just reason. I learned he'd mapped out the Tidal Palace in preparation, but it's unknown where "},{"text":"Masayoshi","color":"yellow"},{"text":" is being stored nowadays."}]
+execute at @e[tag=dread] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:dreadquest/accept5 7s

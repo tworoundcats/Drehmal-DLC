@@ -13,6 +13,8 @@ execute as @a[predicate=core:in_hovadmain] at @s run function players:music/ultv
 
 scoreboard players set #court tempdeaths 1
 execute as @a run function dlc:telldeaths
+execute as @a[predicate=core:in_hovadmain] run tag @s remove no_armor_damage
+
 
 clone 27299 3 57 27303 6 59 27293 81 57
 

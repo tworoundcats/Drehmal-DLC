@@ -1,3 +1,4 @@
-execute as @p[tag=qst16] run tellraw @s ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> They've also been gathering all of the finest soldiers in the Empire. Nobody knows why for sure, but I don't like it one bit."}]
-execute as @p[tag=qst16] at @s run playsound minecraft:entity.piglin.ambient master @s ~ ~ ~ 2 0.8
+execute at @e[tag=mahkar] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Mahkar","color":"dark_red"},{"text":"> They've also been gathering all of the finest soldiers in the Empire. Nobody knows why for sure, but I don't like it one bit."}]
+execute at @e[tag=mahkar] as @a[distance=..20] run journal quest addon @s Mahkar [{"text":"They've also been gathering all of the finest soldiers in the Empire. Nobody knows why for sure, but I don't like it one bit."}]
+execute at @e[tag=mahkar] run playsound minecraft:entity.piglin.ambient master @a ~ ~ ~ 2 0.8
 schedule function quests:mahkarquest/accept6 5s

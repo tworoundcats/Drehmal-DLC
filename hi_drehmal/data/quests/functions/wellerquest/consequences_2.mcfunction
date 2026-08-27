@@ -30,4 +30,5 @@ execute positioned 4733 66 5662 run data modify entity @e[type=minecraft:village
 
 execute positioned 4502 146 5590 run data modify entity @e[type=minecraft:villager,limit=1,sort=nearest,name="Runic Blacksmith"] Offers.Recipes[].buy.Count set value 64
 
+
 schedule function quests:wellerquest/consequences_3 3s

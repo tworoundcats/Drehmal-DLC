@@ -4,6 +4,7 @@
         "dimension":"minecraft:overworld",
         "position":{
             "x": {
+                "min": 26467,
                 "max": 26537
             },
             "y": {

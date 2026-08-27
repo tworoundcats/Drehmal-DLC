@@ -48,6 +48,21 @@ execute if score #ossein_prime tempdeaths matches 1 run scoreboard players add #
 execute if score #ossein_prime tempdeaths matches 1 run function dlc:primal_journey/ossein_prime/kill
 execute if score #ossein_prime stop matches 1 if score #tempdeaths timer < #ossein_prime timer run function dlc:primal_journey/ossein_prime/timer
 
+
+execute unless score #telemetry bool matches 1 if score #emissary tempdeaths matches 1 run telemetry event @a "The Emissary"
+execute unless score #telemetry bool matches 1 if score #generals tempdeaths matches 1 run telemetry event @a "The Burnt Generals"
+execute unless score #telemetry bool matches 1 if score #court tempdeaths matches 1 run telemetry event @a "The Court"
+execute unless score #telemetry bool matches 1 if score #teth tempdeaths matches 1 run telemetry event @a "Tethlaen"
+execute unless score #telemetry bool matches 1 if score #bernice tempdeaths matches 1 run telemetry event @a "The Vehrniis"
+execute unless score #telemetry bool matches 1 if score #hegemon tempdeaths matches 1 run telemetry event @a "Hegemon"
+execute unless score #telemetry bool matches 1 if score #ossein_default tempdeaths matches 1 run telemetry event @a "Ossein"
+execute unless score #telemetry bool matches 1 if score #ossein_prime tempdeaths matches 1 run telemetry event @a "Ossein Prime"
+execute unless score #telemetry bool matches 1 if score #mbrun tempdeaths matches 1 run telemetry event @a "Mythbreaker Run"
+execute unless score #telemetry bool matches 1 if score #asc_dungeon tempdeaths matches 1 run telemetry event @a "Ascendance dungeon"
+execute unless score #telemetry bool matches 1 if score #fdry tempdeaths matches 1 run telemetry event @a "The Foundry"
+
+
+
 scoreboard players reset #emissary tempdeaths
 scoreboard players reset #generals tempdeaths
 scoreboard players reset #court tempdeaths
@@ -70,4 +85,8 @@ scoreboard players reset #hegemon tempdeaths
 scoreboard players reset @s tempdeaths
 scoreboard players reset #tempdeaths num
 scoreboard players reset #tempdeaths timer
+
+scoreboard players reset #mbrun tempdeaths
+scoreboard players reset #asc_dungeon tempdeaths
+scoreboard players reset #fdry tempdeaths
 tag @s remove tempdeaths

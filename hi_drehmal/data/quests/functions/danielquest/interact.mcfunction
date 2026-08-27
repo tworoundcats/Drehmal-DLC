@@ -1,4 +1,4 @@
 tag @s add temp_i
 tag @s add temp_interact
-execute as @e[tag=keeko,tag=!disabled] run function quests:keekoquest/interact2
-advancement revoke @s only quests:keeko
+execute as @e[tag=daniel,tag=!disabled] run function quests:danielquest/interact2
+advancement revoke @s only quests:daniel

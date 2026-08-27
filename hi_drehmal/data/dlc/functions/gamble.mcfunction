@@ -14,6 +14,6 @@ execute if score #rand temp matches 2.. at @s run function dlc:gamble_lucky
 execute if score #rand temp matches 2.. run tag @s add lucky
 
 execute unless score #rand temp matches 2.. run tag @s remove lucky
+advancement grant @s only dlc:runic
 
 clear @s dlc:t1
-advancement grant @s only dlc:runic

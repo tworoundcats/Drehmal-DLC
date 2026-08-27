@@ -111,11 +111,13 @@ execute positioned ~ ~ ~ as @p[tag=qst15] at @s run summon firework_rocket ~ ~2 
 execute positioned ~ ~ ~ as @p[tag=qst15] run advancement grant @s only dlc:tahlros
 
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s minecraft:amethyst_shard 48
-execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s dlc:silver_ingot{display:{Lore:['{"extra":[{"italic":true,"color":"dark_purple","text":"The merchants of Drehmal like a"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"sack of scales as much as any"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"other, but for special equipment,"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":"silver is the currency of choice."}],"text":""}','{"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"aqua","text":"Silver Ingot"}],"text":""}'}} 6
-execute positioned ~ ~ ~ as @p[tag=qst15] at @s run give @s dlc:olkahan{Olkahan:1b,display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"light_purple","text":"Olkahan Ingot"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"An immensely rare metal only found"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"on the underside of the Disc. In a "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"post-rehntite era, it may be the single "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"most sought-after mineral in the realm"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"—for those who even know of its existence."}],"text":""}']}} 2
-execute positioned ~ ~ ~ as @p[tag=qst15] at @s run function dlc:give/merch_voucher
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run function dlc:give/silver
+execute positioned ~ ~ ~ as @p[tag=qst15] at @s run function dlc:give/silver
+#execute positioned ~ ~ ~ as @p[tag=qst15] at @s run function dlc:give/merch_voucher
 
-execute as @e[name="Tahlros",type=villager] run tag @s add qend
+execute at @e[tag=tahlros] as @a[distance=..20] run journal quest complete @s Tahlros
+execute at @e[tag=tahlros] as @a[distance=..20] at @s run playsound dlc:writing player @s ~ ~ ~ 1 1
+execute as @e[tag=tahlros] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst15] at @s run tag @s remove qst15
 
 execute unless score #quest15 bool matches 1 run scoreboard players add #quest num 1

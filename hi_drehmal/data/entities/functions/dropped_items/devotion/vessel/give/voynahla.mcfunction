@@ -5,5 +5,6 @@ execute if entity @s[tag=voynahla.0] run tellraw @s {"text":"Mortality","color":
 execute if entity @s[tag=voynahla.3] run tellraw @s {"text":"Mortality +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 42"}}
 execute if entity @s[tag=voynahla.6] run tellraw @s {"text":"Mortality +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 43"}}
 execute if entity @s[tag=voynahla.9] run tellraw @s {"text":"Mortality +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 44"}}
+execute if entity @s[tag=voynahla.9] run tellraw @s {"text":"Macabre Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/voynahla"}}
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"black"},{"text":"O","color":"dark_gray"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"black"}]

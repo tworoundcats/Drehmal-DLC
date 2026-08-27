@@ -3,7 +3,7 @@ setblock 26512 143 -109 light[level=4]
 setblock 26512 143 -101 light[level=4]
 setblock 26446 141 -109 light[level=4]
 setblock 26497 138 -105 light[level=4]
-schedule function terminus:reboot2 2s 
+schedule function terminus:reboot2 2s
 setblock 26472 144 -80 light[level=4]
 setblock 26497 143 -111 light[level=4]
 setblock 26496 139 -101 light[level=4]

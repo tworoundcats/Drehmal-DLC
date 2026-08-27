@@ -1026,7 +1026,6 @@ scoreboard objectives add zed dummy
 scoreboard objectives add shoot minecraft.used:crossbow
 
 scoreboard objectives add soul_burn dummy
-scoreboard objectives add use_soul minecraft.used:mcdw.scythe_soul_scythe
 
 scoreboard objectives add use_bs minecraft.used:mcdw.dagger_backstabber
 scoreboard objectives add kills totalKillCount
@@ -1246,3 +1245,46 @@ scoreboard objectives add as_foretold dummy
 scoreboard objectives add mb_run dummy
 
 scoreboard objectives add truetemp dummy
+
+team add c_white
+team modify c_white color white
+team add c_gray
+team modify c_gray color gray
+team add c_dark_gray
+team modify c_dark_gray color dark_gray
+team add c_black
+team modify c_black color black
+team add c_dark_red
+team modify c_dark_red color dark_red
+team add c_red
+team modify c_red color red
+team add c_gold
+team modify c_gold color gold
+team add c_yellow
+team modify c_yellow color yellow
+team add c_green
+team modify c_green color green
+team add c_dark_green
+team modify c_dark_green color dark_green
+team add c_aqua
+team modify c_aqua color aqua
+team add c_dark_aqua
+team modify c_dark_aqua color dark_aqua
+team add c_blue
+team modify c_blue color blue
+team add c_dark_blue
+team modify c_dark_blue color dark_blue
+team add c_light_purple
+team modify c_light_purple color light_purple
+team add c_dark_purple
+team modify c_dark_purple color dark_purple
+
+scoreboard objectives add trophy_data dummy
+
+scoreboard objectives add use_trophy minecraft.used:dlc.trophy_tuner
+scoreboard objectives add trophy_mode dummy
+
+scoreboard objectives add use_soul2 minecraft.used:dlc.harvest_hope
+scoreboard objectives add soul_hit_cd dummy
+
+scoreboard objectives add rend dummy

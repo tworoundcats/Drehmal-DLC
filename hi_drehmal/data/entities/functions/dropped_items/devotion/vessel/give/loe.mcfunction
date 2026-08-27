@@ -5,5 +5,7 @@ execute if entity @s[tag=loe.0] run tellraw @s {"text":"Cryostatic","color":"gol
 execute if entity @s[tag=loe.3] run tellraw @s {"text":"Cryostatic +1","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 18"}}
 execute if entity @s[tag=loe.6] run tellraw @s {"text":"Cryostatic +2","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 19"}}
 execute if entity @s[tag=loe.9] run tellraw @s {"text":"Cryostatic +3","color":"gold","clickEvent":{"action":"run_command","value":"/trigger d.relic_vessel set 20"}}
+execute if entity @s[tag=loe.9] run tellraw @s {"text":"Frigid Orb","color":"gold","clickEvent":{"action":"run_command","value":"/dlccall function dlc:give/orb/loe"}}
+
 tellraw @s {"text":" ","italic":true,"color":"gray"}
 tellraw @s ["",{"text":"----====---- -.-.-.-.-.-.-=-","color":"aqua"},{"text":"O","color":"gold"},{"text":"-=-.-.-.-.-.-.- ----====----","color":"aqua"}]

@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> I swear I overheard one of the monks say something about a "},{"text":"fifth parable","color":"yellow"},{"text":". I looked everywhere I could think, but couldn't find anything!"}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"I swear I overheard one of the monks say something about a "},{"text":"fifth parable","color":"yellow"},{"text":". I looked everywhere I could think, but couldn't find anything!"}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/worm3 5s

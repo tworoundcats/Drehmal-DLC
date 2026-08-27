@@ -1,3 +1,4 @@
 execute at @e[tag=russell] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Russell","color":"aqua"},{"text":"> For instance, there's apparently a rumor in the Burnt Palace that Maelihs' most trusted advisor was once a "},{"text":"Drehmari alchemist","color":"yellow"},{"text":"."}]
+execute at @e[tag=russell] as @a[distance=..20] run journal quest addon @s Russell [{"text":"For instance, there's apparently a rumor in the Burnt Palace that Maelihs' most trusted advisor was once a "},{"text":"Drehmari alchemist","color":"yellow"},{"text":"."}]
 execute at @e[tag=russell] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:russellquest/klyhf3 7s

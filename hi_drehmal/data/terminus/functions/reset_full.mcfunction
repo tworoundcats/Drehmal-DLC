@@ -71,7 +71,7 @@ fill 26480 139 -71 26480 139 -155 minecraft:quartz_bricks replace minecraft:sea_
 fill 26470 139 -71 26470 139 -155 minecraft:quartz_bricks replace minecraft:sea_lantern
 fill 26405 139 -100 26545 139 -100 minecraft:quartz_bricks replace minecraft:sea_lantern
 fill 26545 139 -110 26405 139 -110 minecraft:quartz_bricks replace minecraft:sea_lantern
-setblock 26548 139 -107 minecraft:quartz_bricks 
+setblock 26548 139 -107 minecraft:quartz_bricks
 setblock 26548 139 -103 minecraft:quartz_bricks
 setblock 26402 139 -107 minecraft:quartz_bricks
 setblock 26402 139 -103 minecraft:quartz_bricks

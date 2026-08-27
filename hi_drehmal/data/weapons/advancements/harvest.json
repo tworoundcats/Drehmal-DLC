@@ -19,7 +19,7 @@
         "frame": "task",
         "announce_to_chat": true,
         "icon": {
-            "item": "mcdw:scythe_soul_scythe"
+            "item": "dlc:harvest_hope"
         },
         "title": {
             "color": "red",

@@ -1,3 +1,4 @@
 execute at @e[tag=mouton] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Muhton","color":"dark_purple"},{"text":"> It's so profitable, they've had me churning out new issues every week for years, and now it's almost daily. I am "},{"text":"so","italic":true},{"text":". "},{"text":"tired","italic":true},{"text":"."}]
+execute at @e[tag=mouton] as @a[distance=..20] run journal quest addon @s Muhton [{"text":"It's so profitable, they've had me churning out new issues every week for years, and now it's almost daily. I am "},{"text":"so","italic":true},{"text":". "},{"text":"tired","italic":true},{"text":"."}]
 execute at @e[tag=mouton] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 schedule function quests:moutonquest/accept4 8s

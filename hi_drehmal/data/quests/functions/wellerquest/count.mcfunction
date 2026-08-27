@@ -6,4 +6,4 @@ execute as @p[tag=qst17] if score @s wquest matches 3 run function quests:weller
 execute as @p[tag=qst17] if score @s wquest matches 4 run function quests:wellerquest/4
 execute as @p[tag=qst17] if score @s wquest matches 5 run function quests:wellerquest/done
 
-item replace entity @e[type=villager,tag=wellerman] weapon.mainhand with bundle
+item replace entity @e[tag=weller] weapon.mainhand with bundle

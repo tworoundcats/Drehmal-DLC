@@ -9,9 +9,11 @@ execute as @a[predicate=players:locations/in_arena] run advancement grant @s onl
 
 scoreboard players set #hegemon tempdeaths 1
 execute as @a run function dlc:telldeaths
+execute as @a[predicate=players:locations/in_arena] run tag @s remove no_armor_damage
+fill 27488 163 826 27497 169 826 air replace barrier
+fill 27492 166 848 27500 172 845 air replace barrier
 forceload remove 27481 828 27506 848
 execute as @a[predicate=players:locations/in_arena,tag=primal_journey] run schedule function dlc:primal_journey/win 14s
 
 scoreboard players reset #hege bool
 
-fill 27488 163 826 27497 169 826 minecraft:air replace barrier
