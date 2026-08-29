@@ -8,7 +8,7 @@ execute as @s[tag=enabled] run data modify entity @s item.id set value "dlc:ques
 execute as @s[tag=enabled] run tag @s remove enabled
 
 execute if entity @a[distance=..20] run tag @s add temp
-execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=daniel_i,tag=!qstart,tag=!qend,tag=temp] run function quests:remove_interact
+execute if entity @a[distance=21..,tag=temp_interact] as @e[tag=daniel_i,tag=!qstart,tag=!qend,tag=temp,tag=!temp_speaking] run function quests:remove_interact
 
 execute at @e[tag=daniel] as @a[distance=..8,predicate=players:holding/quest/daniel_like] run function quests:danielquest/check
 

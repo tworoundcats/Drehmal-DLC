@@ -36,32 +36,43 @@ public class JournalSyncCommand {
                                     })))
                     .then(CommandManager.literal("quest")
                             .then(CommandManager.literal("add")
-                                    .then(CommandManager.argument("player", EntityArgumentType.player())
+                                    .then(CommandManager.argument("target", EntityArgumentType.player())
                                             .then(CommandManager.argument("questId", StringArgumentType.word())
                                                     .then(CommandManager.argument("title", StringArgumentType.greedyString())
                                                             .executes(ctx -> {
-                                                                ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "player");
+                                                                ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "target");
                                                                 String questId = StringArgumentType.getString(ctx, "questId");
                                                                 String title = StringArgumentType.getString(ctx, "title");
                                                                 addQuest(player, questId, title);
                                                                 return 1;
                                                             })))))
-                            .then(CommandManager.literal("addon")
-                                    .then(CommandManager.argument("player", EntityArgumentType.player())
+                            .then(CommandManager.literal("location")
+                                    .then(CommandManager.argument("target", EntityArgumentType.player())
                                             .then(CommandManager.argument("questId", StringArgumentType.word())
-                                                    .then(CommandManager.argument("dialogueJson", StringArgumentType.greedyString())
+                                                    .then(CommandManager.argument("location_name", StringArgumentType.greedyString())
                                                             .executes(ctx -> {
-                                                                ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "player");
+                                                                ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "target");
                                                                 String questId = StringArgumentType.getString(ctx, "questId");
-                                                                String dialogueJson = StringArgumentType.getString(ctx, "dialogueJson");
+                                                                String locationName = StringArgumentType.getString(ctx, "location_name");
+                                                                setLocation(player, questId, locationName);
+                                                                return 1;
+                                                            })))))
+                            .then(CommandManager.literal("addon")
+                                    .then(CommandManager.argument("target", EntityArgumentType.player())
+                                            .then(CommandManager.argument("questId", StringArgumentType.word())
+                                                    .then(CommandManager.argument("dialogueasjson", StringArgumentType.greedyString())
+                                                            .executes(ctx -> {
+                                                                ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "target");
+                                                                String questId = StringArgumentType.getString(ctx, "questId");
+                                                                String dialogueJson = StringArgumentType.getString(ctx, "dialogueasjson");
                                                                 addonQuest(player, questId, dialogueJson);
                                                                 return 1;
                                                             })))))
                             .then(CommandManager.literal("complete")
-                                    .then(CommandManager.argument("player", EntityArgumentType.player())
+                                    .then(CommandManager.argument("target", EntityArgumentType.player())
                                             .then(CommandManager.argument("questId", StringArgumentType.word())
                                                     .executes(ctx -> {
-                                                        ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "player");
+                                                        ServerPlayerEntity player = EntityArgumentType.getPlayer(ctx, "target");
                                                         String questId = StringArgumentType.getString(ctx, "questId");
                                                         completeQuest(player, questId);
                                                         return 1;
@@ -82,6 +93,19 @@ public class JournalSyncCommand {
         quests.add(entry);
 
         syncBook(player);
+    }
+
+    private static void setLocation(ServerPlayerEntity player, String questId, String locationName) {
+        NbtList quests = ((IPlayerQuestData) player).dlc$getQuests();
+        for (int i = 0; i < quests.size(); i++) {
+            NbtCompound entry = quests.getCompound(i);
+            if (entry.getString("id").equals(questId)) {
+                entry.putString("location", locationName);
+                quests.set(i, entry);
+                syncBook(player);
+                return;
+            }
+        }
     }
 
     private static void addonQuest(ServerPlayerEntity player, String questId, String dialogueJson) {
@@ -152,9 +176,7 @@ public class JournalSyncCommand {
 
         String bookTitle = stack.hasCustomName() ? stack.getName().getString() : "Quest Journal";
         tag.putString("title", bookTitle);
-
         tag.putString("author", player.getName().getString());
-
         tag.putBoolean("resolved", true);
 
         rebuildPages(tag, quests);
@@ -179,9 +201,18 @@ public class JournalSyncCommand {
             String title = entry.getString("title");
             boolean done = entry.getBoolean("done");
             NbtList dialogues = entry.getList("dialogues", NbtElement.STRING_TYPE);
+            String location = entry.getString("location");
 
             JsonArray hoverContents = new JsonArray();
             hoverContents.add("");
+
+            if (location != null && !location.isEmpty()) {
+                JsonObject locationHeader = new JsonObject();
+                locationHeader.addProperty("text", "Location: " + location + "\n");
+                locationHeader.addProperty("color", "gray");
+                locationHeader.addProperty("italic", true);
+                hoverContents.add(locationHeader);
+            }
 
             for (int d = 0; d < dialogues.size(); d++) {
                 if (d > 0) {
@@ -221,7 +252,10 @@ public class JournalSyncCommand {
             questText.addProperty("text", title + "\n");
             questText.addProperty("color", done ? "dark_gray" : "black");
             if (done) questText.addProperty("strikethrough", true);
-            if (dialogues.size() > 0) questText.add("hoverEvent", hoverEvent);
+
+            if (dialogues.size() > 0 || (location != null && !location.isEmpty())) {
+                questText.add("hoverEvent", hoverEvent);
+            }
             currentPage.add(questText);
 
             questsOnPage++;

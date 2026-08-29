@@ -23,6 +23,6 @@ public abstract class ScreenHoverFixMixin {
             }
         }
 
-        return x;
+            return x;
     }
 }

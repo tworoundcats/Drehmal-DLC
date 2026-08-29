@@ -1,3 +1,4 @@
+setblock 1000000 0 1000000 furnace
 item replace block 1000000 0 1000000 container.0 from entity @s weapon.mainhand
 item replace entity @s weapon.mainhand from entity @s weapon.offhand
 item replace entity @s weapon.offhand from block 1000000 0 1000000 container.0

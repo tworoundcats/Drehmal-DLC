@@ -748,3 +748,9 @@ data modify storage drehmal:core tempStar set value '§8✦ '
 
 execute if score #madv temp matches 0 run tellraw @s ["",{"text":"✦ 0 / ","color":"dark_gray"},{"text":" ?","color":"gray"},{"text":" Secret Advancements ","color":"dark_gray"},{"text":"(","color":"gray"},{"text":"0.00%","color":"dark_purple"},{"text":")","color":"gray"}]
 execute if score #madv temp matches 1.. run tellraw @s ["",{"nbt":"tempStar","storage":"drehmal:core"},{"score":{"name":"#madv","objective":"temp"},"color":"light_purple"},{"text":" / ","color":"dark_gray"},{"text":"?","color":"gray"},{"text":" Secret Advancements ","color":"dark_gray"},{"text":"(","color":"gray"},{"text":"??.??%","color":"dark_purple"},{"text":")","color":"gray"}]
+
+execute as @a[limit=1] unless score #DLC finality matches 1 run telemetry end @a
+tellraw @s [{"text":"Thank you for playing ","color":"white"},{"text":"Primal Journey","color":"gold","bold":false},{"text":"!\n","color":"white"},{"text":"We'd greatly appreciate your feedback. Fill out the ","color":"gray"},{"text":"Completion Survey","color":"yellow","bold":true,"underlined":true,"clickEvent":{"action":"open_url","value":"https://docs.google.com/forms/d/e/1FAIpQLSdaMH_w7tmqixf4kMNb_HiDDJSw_7DDTczZzP7q2GC0rQa5JA/viewform?usp=publish-editor"},"hoverEvent":{"action":"show_text","contents":{"text":"Click to open the Primal Journey Completion Survey","color":"white"}}},{"text":" to tell us what you thought!","color":"gray"}]
+
+scoreboard players set #DLC finality 1
+

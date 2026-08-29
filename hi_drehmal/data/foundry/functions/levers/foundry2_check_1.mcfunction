@@ -1,1 +1,1 @@
-scoreboard players reset #fdry_charged bool
+scoreboard players reset #fdry_charged? bool

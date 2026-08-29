@@ -1,7 +1,15 @@
 {
   "criteria": {
     "fire_crossbow": {
-      "trigger": "minecraft:shot_crossbow"
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "players:holding/verdant"
+          }
+        ]
+      }
     }
   },
   "rewards": {

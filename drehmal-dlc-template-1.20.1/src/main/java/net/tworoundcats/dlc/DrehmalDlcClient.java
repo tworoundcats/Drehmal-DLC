@@ -17,6 +17,7 @@ import net.tworoundcats.dlc.entity.client.ZulRenderer;
 import net.tworoundcats.dlc.entity.client.model.ZulModel;
 import net.tworoundcats.dlc.item.ModItems;
 import net.tworoundcats.dlc.particle.custom.Marker;
+import net.tworoundcats.dlc.particle.custom.ScalableExplosionParticle;
 import net.tworoundcats.dlc.particle.custom.Zap;
 import net.tworoundcats.dlc.particle.ModParticles;
 
@@ -36,6 +37,9 @@ public class DrehmalDlcClient implements ClientModInitializer {
         registerShieldPredicates();
         ParticleFactoryRegistry.getInstance().register(ModParticles.MARKER,
                 Marker.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.SCALABLE_EXPLOSION,
+                ScalableExplosionParticle.Factory::new);
+
     }
 
 

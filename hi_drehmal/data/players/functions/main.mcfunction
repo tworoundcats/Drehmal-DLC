@@ -720,7 +720,7 @@ execute as @s[predicate=players:adventure_areas] if predicate players:frost_walk
 
 execute as @s[predicate=!players:adventure_areas,tag=disable_frost_walker] run function players:enable_frost_walker
 
-execute unless predicate players:locations/in_arena run tag @s remove initialloop
+execute as @s[tag=initialloop] unless predicate players:locations/in_arena run tag @s remove initialloop
 
 execute as @s[predicate=players:locations/red_dawn_spawn1,tag=!red_dawn_spawn1] run function dlc:spawn/red_dawn_spawn1
 
@@ -739,7 +739,7 @@ execute as @s[predicate=players:holding/catfisher] unless score @s catch_old >= 
 #function dlc:accessories/main
 
 
-execute as @s[scores={dlc=1}] run function dlc:triggerdlc
+#execute as @s[scores={dlc=1}] run function dlc:triggerdlc
 execute as @s[scores={sex=1}] run function dlc:triggersex
 
 
@@ -843,7 +843,7 @@ execute if predicate players:holding/reticent as @e[tag=parried] run function pl
 
 ### Hexed King ###
 
-execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,tag=!obv.immune,distance=..8,nbt={HurtTime:10s}] run function players:items/hexed/loop
+execute if predicate players:holding/hexed as @s[scores={hex=1..}] as @e[tag=!hexed,predicate=!entities:invul,type=!#entities:dummy,type=!#entities:tickless_passive,type=!#entities:highcapacity,type=!#entities:proj,tag=!oblivion_immune,tag=!obv.immune,distance=..8,nbt={HurtTime:10s},type=!creeper] run function players:items/hexed/loop
 execute if predicate players:holding/hexed as @s[scores={hex=1..}] run scoreboard players reset @s hex
 
 # -------------------------------------------------------------------
@@ -978,3 +978,6 @@ execute if predicate players:holding/trophy_modify if score @s use_trophy matche
 # sable crystal
 execute if predicate players:holding/sable_crystal run effect clear @s wither
 
+
+# weller happy tick
+execute unless score #weller_happy bool matches 1 as @s[tag=weller_temp] run function quests:wellerquest/tick_happy

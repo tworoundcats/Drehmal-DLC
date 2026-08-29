@@ -6,7 +6,8 @@ execute if score @s cw_particleplot matches 40.. run scoreboard players set @s c
 
 
 execute if score #asc bool matches 1 unless score #asc num matches 150.. if score #5S timer matches 0 run function dlc:asc/spawn/random
-execute if score #asc num matches 150.. run function dlc:asc/spawn/finish
+execute if score #asc num matches 150.. unless score #asc_dungeon bool matches 1 run function dlc:asc/spawn/finish
+execute if score #asc num matches 150.. if score #asc_dungeon bool matches 1 run function dlc:asc/spawn/finish_loop
 execute positioned -555.46 32.00 4997.47 as @e[tag=asc_wave,distance=..50,team=!asc] run team join asc
 
 execute if score #10S timer matches 0 positioned -555.46 32.00 4997.47 as @a[distance=..50] run function dlc:asc/ambience

@@ -5,6 +5,7 @@ execute unless entity @a[tag=qst4] run execute at @e[tag=casey] run tellraw @a[d
 execute unless entity @a[tag=qst4] run execute at @e[tag=casey] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless entity @a[tag=qst4] run schedule function quests:caseyquest/accept2 5s
 execute unless entity @a[tag=qst4] at @e[tag=casey] as @a[distance=..20] run journal quest add @s Casey "Melon Malfeasance"
+execute unless entity @a[tag=qst4] at @e[tag=casey] as @a[distance=..20] run journal quest location @s Casey Gozak
 execute unless entity @a[tag=qst4] at @e[tag=casey] as @a[distance=..20] run journal quest addon @s Casey [{"text":"You ever crashed part of the economy before? It's a REAL rush. And you can help me do it!"}]
 execute unless entity @a[tag=qst4] run tag @e[tag=casey] remove disabled
 execute unless entity @a[tag=qst4] at @s run tag @e[tag=casey_i] add disabled

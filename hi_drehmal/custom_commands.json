@@ -105,6 +105,20 @@
               }
             }
           }
+        },
+        "end": {
+          "type": "literal",
+          "children": {
+            "targets": {
+              "type": "argument",
+              "parser": "minecraft:entity",
+              "properties": {
+                "amount": "multiple",
+                "type": "entities"
+              },
+              "executable": true
+            }
+          }
         }
       }
     },
@@ -176,6 +190,38 @@
                       },
                       "children": {
                         "title": {
+                          "type": "argument",
+                          "parser": "brigadier:string",
+                          "properties": {
+                            "type": "greedy"
+                          },
+                          "executable": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "location": {
+              "type": "literal",
+              "children": {
+                "target": {
+                  "type": "argument",
+                  "parser": "minecraft:entity",
+                  "properties": {
+                    "amount": "single",
+                    "type": "entities"
+                  },
+                  "children": {
+                    "questId": {
+                      "type": "argument",
+                      "parser": "brigadier:string",
+                      "properties": {
+                        "type": "word"
+                      },
+                      "children": {
+                        "location_name": {
                           "type": "argument",
                           "parser": "brigadier:string",
                           "properties": {

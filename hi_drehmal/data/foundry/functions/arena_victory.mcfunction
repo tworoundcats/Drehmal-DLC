@@ -18,6 +18,7 @@ tp @e[type=minecraft:vex,x=-3291,y=111,z=1560,distance=..40] ~ ~-1000 ~
 kill @e[tag=fdry_laser_lower]
 kill @e[tag=fdry_laser_top]
 execute positioned -3309 100 1544 as @a[dx=40,dy=20,dz=40] run advancement grant @s only advancements:discoveries/arenawin
+scoreboard players set #fdry_completed? bool 1
 schedule function foundry:arena_victory2 3s
 #open zenith door
 function foundry:exit/0

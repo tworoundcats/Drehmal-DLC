@@ -56,6 +56,7 @@ execute as @p[tag=qst13] run function dlc:give/silver
 
 execute at @e[tag=daniel] as @a[distance=..20] run journal quest complete @s Daniel
 execute at @e[tag=daniel] as @a[distance=..20] at @s run playsound dlc:writing player @s ~ ~ ~ 1 1
+execute as @e[tag=daniel] run tag @s remove temp_speaking
 
 execute as @e[tag=daniel] run tag @s add qend
 #execute as @e[tag=daniel] run tag @s add post

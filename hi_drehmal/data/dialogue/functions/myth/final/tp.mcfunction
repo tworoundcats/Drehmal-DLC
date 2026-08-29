@@ -9,7 +9,8 @@ execute in overworld run spawnpoint @s 25984 134 466
 #execute if score @s finaltp matches 199 run tp @s 778 2 460 0 0
 #execute if score @s finaltp matches 199 as @s run function players:spawn/clear_temp_spawnpoint
 execute if score @s finaltp matches 199 in overworld run tp @s 25984.01 134.00 466.85
-execute if score @s finaltp matches 199 in overworld run schedule function core:heatmap/generate_main 10s replace
+execute if score @s finaltp matches 199 in overworld run schedule function core:heatmap/percent 10s replace
+
 function players:music/reset
 execute if score @s finaltp matches 1..199 positioned ~ ~ ~ run particle squid_ink ~ ~ ~ 0.2 0.2 0.2 0 50
 execute if score @s finaltp matches 20..199 positioned ~ ~ ~ run particle squid_ink ~ ~0.5 ~ 0.2 0.2 0.2 0 50

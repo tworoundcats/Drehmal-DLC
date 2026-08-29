@@ -245,8 +245,12 @@ execute if entity @a[predicate=players:locations/red_dawn_devzone] run function 
 # Asc Dungeon
 execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_display,type=armor_stand] at @s positioned ~ ~2 ~ run function particle:asc/animate
 execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if predicate players:holding/inert_tablet run function dlc:tablet_start
-execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] unless predicate players:emptyhanded unless predicate players:holding/inert_tablet run function dlc:tablet_invalid
-execute if score #asc bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] unless score #asc_dungeon bool matches 1 unless predicate players:emptyhanded unless predicate players:holding/inert_tablet run function dlc:tablet_invalid
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if score #asc_dungeon bool matches 1 if predicate players:holding/asc run function dlc:tablet_start2
+execute positioned -555.46 32.00 4997.47 if entity @a[distance=..50] as @e[tag=asc_vis,tag=!powered,type=armor_stand] if score #asc_dungeon bool matches 1 unless predicate players:emptyhanded unless predicate players:holding/asc run function dlc:asc_invalid
+
+execute if score #asc bool matches 1 unless score #asc_dungeon bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset
+execute if score #asc bool matches 1 if score #asc_dungeon bool matches 1 positioned -555.46 32.00 4997.47 unless entity @a[distance=..50] run function dlc:asc/full_reset_loop
 
 
 # --- Foundry Anim ---
@@ -266,7 +270,7 @@ execute positioned -2851 41 5331 if entity @a[distance=..10] run execute unless 
 
 
 # --- Terminus Animation ---
-execute positioned 26475.47 141.08 -56.00 if entity @a[distance=..15] run function dlc:modify/main
+execute positioned 26475.47 141.08 -56.00 if score count_all towers matches 8.. if entity @a[distance=..15] run function dlc:modify/main
 
 
 # --- Trial Legendary - Ihted Spawn ---
@@ -279,8 +283,7 @@ execute unless score #ihted_spellforged_spawn bool matches 1 run execute in mine
 
 execute as @e[tag=bleed,limit=1,type=!#entities:laggy] at @s run function players:items/hangyaku/bleed
 
-execute as @e[tag=tagged,scores={tag_cd=0},type=!#entities:laggy] run tag @s remove tagged
-execute as @e[tag=ambition,type=!#entities:laggy] at @s unless entity @e[tag=!tagged,predicate=!players:holding/ambition,tag=!mythic_pvp,type=!#core:oblivion_immune,sort=nearest,limit=1,distance=..8] as @e[tag=tagged,scores={tag_cd=..2}] run scoreboard players remove @s tag_cd 1
+
 
 execute as @e[tag=hexed,type=!#entities:laggy,type=!creeper] run function players:items/hexed/main
 

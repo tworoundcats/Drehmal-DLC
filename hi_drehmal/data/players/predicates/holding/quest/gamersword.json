@@ -23,8 +23,7 @@
           "mainhand": {
             "items": [
               "mythicmetals:osmium_sword"
-            ],
-            "nbt": "{GamerSword:1b}"
+            ]
           }
         }
       }

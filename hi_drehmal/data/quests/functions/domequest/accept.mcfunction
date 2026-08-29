@@ -1,5 +1,6 @@
 execute unless entity @a[tag=qst8] run execute at @e[tag=dome] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Dohm","color":"blue"},{"text":"> My name is Dohm. I've been writing all about our incredible world for years, and I like to do my work on-site!"}]
 execute unless entity @a[tag=qst8] at @e[tag=dome] as @a[distance=..20] run journal quest add @s Dome "Writer's Woe"
+execute unless entity @a[tag=qst8] at @e[tag=dome] as @a[distance=..20] run journal quest location @s Dome Fort Nimahj
 execute unless entity @a[tag=qst8] at @e[tag=dome] as @a[distance=..20] run journal quest addon @s Dome [{"text":"My name is Dohm. I've been writing all about our incredible world for years, and I like to do my work on-site!"}]
 execute unless entity @a[tag=qst8] run execute at @e[tag=dome] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless entity @a[tag=qst8] run tag @e[tag=dome] add qstart

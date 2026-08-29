@@ -9,11 +9,12 @@ import net.tworoundcats.dlc.DrehmalDlc;
 
 public class ModParticles {
     public static final DefaultParticleType ZAP = FabricParticleTypes.simple();
-    public static final DefaultParticleType MARKER   = FabricParticleTypes.simple();
+    public static final DefaultParticleType MARKER = FabricParticleTypes.simple();
+    public static final DefaultParticleType SCALABLE_EXPLOSION = FabricParticleTypes.simple();
 
     public static void registerParticles() {
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(DrehmalDlc.MOD_ID, "zap"), ZAP);
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(DrehmalDlc.MOD_ID, "marker"), MARKER);
-
+        Registry.register(Registries.PARTICLE_TYPE, new Identifier(DrehmalDlc.MOD_ID, "scalable_explosion"), SCALABLE_EXPLOSION);
     }
 }

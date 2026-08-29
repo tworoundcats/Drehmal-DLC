@@ -56,9 +56,10 @@ execute at @e[tag=weller] as @a[distance=..50] at @s run playsound dlc:writing p
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run summon firework_rocket ~ ~3 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0b,Trail:0b,Colors:[I;15790320],FadeColors:[I;15790320]}]}}}}
 execute as @e[tag=weller] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst17] at @s run scoreboard players reset @s wquest
-execute as @p[tag=qst17] run tag @s remove qst17
+execute as @p[tag=qst17] run tag @s add weller_temp
 
-schedule function quests:wellerquest/make_happy 3d
+scoreboard players set #weller_happy int 72000
+execute as @p[tag=qst17] run tag @s remove qst17
 
 execute unless score #quest17 bool matches 1 run scoreboard players add #quest num 1
 execute if score #quest num matches 17 run advancement grant @a only dlc:questmaster

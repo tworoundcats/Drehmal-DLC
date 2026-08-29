@@ -23,7 +23,8 @@ public class PlayerFunctionCommand {
                                     ctx.getSource().sendError(Text.literal("Invalid command type."));
                                     return 0;
                                 }
-                                if (!cmd.contains("dlc:") && !cmd.contains("players:")) {
+
+                                if (!cmd.contains("dlc:") && !cmd.contains("players:") && !cmd.contains("quests:")) {
                                     ctx.getSource().sendError(Text.literal("You do not have permission to run this."));
                                     return 0;
                                 }

@@ -10,11 +10,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.scoreboard.ScoreboardCriterion;
 import net.minecraft.scoreboard.ScoreboardObjective;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.text.Text;
 import net.minecraft.util.hit.EntityHitResult;
 import net.tworoundcats.dlc.IRendTarget;
 import net.tworoundcats.dlc.enchantment.ModEnchantments;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -38,7 +40,7 @@ public class PersistentProjectileEntityMixin {
     }
 
     @Inject(method = "onEntityHit", at = @At("RETURN"))
-    private void dlc$onRendArrowHit(EntityHitResult entityHitResult, CallbackInfo ci) {
+    private void dlc$onArrowHitEntity(EntityHitResult entityHitResult, CallbackInfo ci) {
         PersistentProjectileEntity arrow = (PersistentProjectileEntity) (Object) this;
 
         if (arrow.getCommandTags().contains("rend_arrow")) {
@@ -57,6 +59,26 @@ public class PersistentProjectileEntityMixin {
 
                 scoreboard.getPlayerScore(hitEntity.getUuidAsString(), objective).incrementScore(1);
             }
+        }
+    }
+
+    @Inject(method = "onEntityHit", at = @At("HEAD"))
+    private void dlc$piecemakerEntityHit(EntityHitResult entityHitResult, CallbackInfo ci) {
+        PersistentProjectileEntity arrow = (PersistentProjectileEntity) (Object) this;
+
+        if (!arrow.getWorld().isClient() && arrow.getCommandTags().contains("piecemaker_arrow")) {
+            dlc$triggerPiecemakerExplosion(arrow);
+        }
+    }
+
+    @Unique
+    private void dlc$triggerPiecemakerExplosion(PersistentProjectileEntity arrow) {
+        MinecraftServer server = arrow.getServer();
+        if (server != null) {
+            server.getCommandManager().executeWithPrefix(
+                    arrow.getCommandSource().withLevel(2).withSilent(),
+                    "function players:items/piecemaker/explode"
+            );
         }
     }
 }

@@ -1,3 +1,4 @@
+setblock 1000000 0 1000000 furnace
 item replace block 1000000 0 1000000 container.0 from entity @s weapon.offhand
 item replace entity @s weapon.offhand with air
 data modify storage drehmal:items tempUuid set from entity @s UUID

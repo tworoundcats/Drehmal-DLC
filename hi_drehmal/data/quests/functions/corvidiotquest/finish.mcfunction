@@ -50,6 +50,7 @@ execute positioned ~ ~ ~ as @p[tag=qst14] at @s run function dlc:give/silver
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run function dlc:give/silver
 execute at @e[tag=corvid] as @a[distance=..20] run journal quest complete @s Corvid
 execute at @e[tag=corvid] as @a[distance=..20] at @s run playsound dlc:writing player @s ~ ~ ~ 1 1
+execute as @e[tag=corvid] run tag @s add qend
 execute positioned ~ ~ ~ as @p[tag=qst14] at @s run tag @s remove qst14
 
 execute unless score #quest14 bool matches 1 run scoreboard players add #quest num 1

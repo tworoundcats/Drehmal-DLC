@@ -1,7 +1,7 @@
 execute as @e[type=armor_stand,distance=..5,tag=interact] if data entity @s HandItems[0].id at @s run function dlc:modify/replace
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 unless predicate players:holding/leviathan unless predicate players:holding/prismatic unless predicate players:holding/wings if predicate players:holding/mainhand unless predicate players:holding/syzygy unless predicate players:holding/proxigea at @s run function dlc:modify/valid_m
 
-execute as @e[type=armor_stand,distance=..5,tag=display,tag=!invalid] if data entity @s HandItems[0].id unless predicate players:holding/asc unless predicate players:holding/avstate unless predicate players:holding/avstate2 unless predicate players:holding/calamity unless predicate players:holding/frenzy unless predicate players:holding/oblivion unless predicate players:holding/syzygy unless predicate players:holding/male unless predicate players:holding/mainhand unless predicate players:holding/wings unless predicate players:holding/prismatic unless predicate players:holding/leviathan unless predicate players:holding/proxigea run function dlc:modify/invalid_m
+execute as @e[type=armor_stand,distance=..5,tag=display,tag=!invalid] if data entity @s HandItems[0].id unless predicate players:holding/asc unless predicate players:holding/avstate unless predicate players:holding/avstate2 unless predicate players:holding/zenith2 unless predicate players:holding/calamity unless predicate players:holding/frenzy unless predicate players:holding/oblivion unless predicate players:holding/syzygy unless predicate players:holding/male unless predicate players:holding/mainhand unless predicate players:holding/mb unless predicate players:holding/wings unless predicate players:holding/prismatic unless predicate players:holding/leviathan unless predicate players:holding/proxigea run function dlc:modify/invalid_m
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] if predicate players:holding/upgrade2 at @s run function dlc:modify/maxed
 
 
@@ -41,6 +41,7 @@ execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predi
 
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/leviathan at @s run function dlc:modify/maxed
 
+execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/mb at @s run function dlc:modify/maxed
 
 execute as @e[type=armor_stand,distance=..5,tag=display,tag=!valid] unless predicate players:holding/upgrade2 if predicate players:holding/wings at @s run function dlc:modify/maxed
 

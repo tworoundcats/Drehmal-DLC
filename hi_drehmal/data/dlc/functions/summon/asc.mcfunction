@@ -5,3 +5,4 @@ summon minecraft:armor_stand -555.46 32.00 4997.47 {Marker:0b,Rotation:[180f,0f]
 
 summon minecraft:armor_stand -555.46 32.00 4997.47 {Tags: ["asc_display"],Pose:{RightArm:[270f,0f,0f]},ShowArms:1b,Invisible:1b,DisabledSlots:63,Rotation:[0f,0f],NoGravity:1b,Marker:1b,Invulnerable:1b}
 
+execute positioned -555.46 32.00 4997.47 as @e[type=minecraft:armor_stand,distance=..4] run scale set pehkui:hitbox_width 5

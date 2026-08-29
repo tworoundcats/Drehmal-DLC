@@ -73,8 +73,40 @@ execute if score #rand temp matches 21 run data modify entity @s Offers.Recipes 
 execute if score #rand temp matches 22 run data modify entity @s Offers.Recipes insert 0 value {maxUses:2147483647,buy:{id:"dlc:mendarum_crystal",Count:1,tag:{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"yellow","text":"Mendarum Crystal"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Second in potentia only to rehntite,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"mendarum crystals of this size and"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"quality are hard to come by since"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Insohm\'s dissolution. Any Runic "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Blacksmith would kill to work with it."}],"text":""}']}}},sell:{id: "dlc:sable_crystal", tag:{AttributeModifiers:[{Amount:3.0d,AttributeName:"minecraft:generic.armor",Name:"minecraft:generic.armor",Operation:0,Slot:"offhand",UUID:[I;-715045780,-2052963723,-1343517429,26381471]}],HideFlags:127,display:{Lore:['{"extra":[{"bold":false,"italic":true,"color":"dark_purple","text":"Holding the crystal up to your eye, "}],"text":""}','{"extra":[{"bold":false,"italic":true,"color":"dark_purple","text":"For some strange reason, for just a brief moment…"}],"text":""}','{"extra":[{"bold":false,"italic":true,"color":"dark_purple","text":"You thought you saw sand dunes. "}],"text":""}','{"extra":[{"bold":false,"italic":true,"color":"dark_purple","text":"...but, it must\'ve just been your imagination."}],"text":""}','{"extra":[{"bold":false,"italic":true,"color":"dark_purple","text":" "}],"text":""}','{"extra":[{"bold":false,"italic":false,"color":"gray","text":"When in offhand:"}],"text":""}','{"extra":[{"bold":false,"italic":false,"color":"blue","text":"+3 Armor"}],"text":""}','{"extra":[{"bold":false,"italic":false,"color":"blue","text":"Wither Immunity"}],"text":""}','{"extra":[{"italic":true,"color":"dark_purple","text":" "}],"text":""}','{"extra":[{"bold":false,"italic":false,"color":"yellow","text":"Artisan"}],"text":""}'],Name:'{"extra":[{"italic":false,"underlined":true,"color":"yellow","text":"Sable Crystal"}],"text":""}'}}, Count: 1}}
 
 # rend
-execute if score #rand temp matches 23 run data modify entity @s Offers.Recipes insert 0 value {maxUses:2147483647,buy:{id:"dlc:mendarum_crystal",Count:2,tag:{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"yellow","text":"Mendarum Crystal"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Second in potentia only to rehntite,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"mendarum crystals of this size and"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"quality are hard to come by since"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Insohm\'s dissolution. Any Runic "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Blacksmith would kill to work with it."}],"text":""}']}}},sell:{id: "dlc:enchanted_book", tag:{StoredEnchantments:[{id:"dlc:rend",lvl:1s}]}, Count: 1}}
+execute if score #rand temp matches 23 run data modify entity @s Offers.Recipes insert 0 value {maxUses:2147483647,buy:{id:"dlc:mendarum_crystal",Count:2,tag:{display: {Name: '{"extra":[{"italic":false,"underlined":true,"color":"yellow","text":"Mendarum Crystal"}],"text":""}', Lore: ['{"extra":[{"italic":true,"color":"dark_purple","text":"Second in potentia only to rehntite,"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"mendarum crystals of this size and"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"quality are hard to come by since"}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Insohm\'s dissolution. Any Runic "}],"text":""}', '{"extra":[{"italic":true,"color":"dark_purple","text":"Blacksmith would kill to work with it."}],"text":""}']}}},sell:{id: "minecraft:enchanted_book", tag:{StoredEnchantments:[{id:"dlc:rend",lvl:1s}]}, Count: 1}}
 
 scoreboard players operation #trade1 temp = #rand temp
+#
+#execute store result score #buy_cost temp run data get entity @s Offers.Recipes[0].buy.Count
+#
+#function core:rng
+#scoreboard players operation #variance temp = #rand temp
+#scoreboard players operation #variance temp %= #41 const
+#scoreboard players operation #variance temp += #80 const
+#
+#scoreboard players operation #buy_cost temp *= #variance temp
+#scoreboard players operation #buy_cost temp /= #100 const
+#
+#execute if score #buy_cost temp matches ..0 run scoreboard players set #buy_cost temp 1
+#
+#execute store result entity @s Offers.Recipes[0].buy.Count byte 1 run scoreboard players get #buy_cost temp
+#
+#
+#
+#scoreboard players set #original_buyB temp 0
+#execute store result score #original_buyB temp run data get entity @s Offers.Recipes[0].buyB.Count
+#scoreboard players operation #buyB_cost temp = #original_buyB temp
+#
+#function core:rng
+#scoreboard players operation #variance temp = #rand temp
+#scoreboard players operation #variance temp %= #41 const
+#scoreboard players operation #variance temp += #80 const
+#
+#scoreboard players operation #buyB_cost temp *= #variance temp
+#scoreboard players operation #buyB_cost temp /= #100 const
+#
+#execute if score #buyB_cost temp matches ..0 run scoreboard players set #buyB_cost temp 1
+#
+#execute if score #original_buyB temp matches 1.. store result entity @s Offers.Recipes[0].buyB.Count byte 1 run scoreboard players get #buyB_cost temp
 
 function dlc:zul/trade_pool2

@@ -1,5 +1,6 @@
 execute unless entity @a[tag=qst10] at @e[tag=gamer] run tellraw @a[distance=..20] ["",{"text":"<"},{"text":"Ga'Mahr","color":"dark_purple"},{"text":"> I need an "},{"text":"ancient family heirloom","color":"yellow"},{"text":" retrieved. A while ago, I had an unfortunate encounter with what I can only assume was a "},{"text":"cult","color":"yellow"},{"text":" on my way back home from a journey. Long story short, they stole my possessions at the time, including that heirloom."}]
 execute unless entity @a[tag=qst10] at @e[tag=gamer] as @a[distance=..20] run journal quest add @s Ga-Mahr "God-Fearing Thieves"
+execute unless entity @a[tag=qst10] at @e[tag=gamer] as @a[distance=..20] run journal quest location @s Ga-Mahr Highfall
 execute unless entity @a[tag=qst10] at @e[tag=gamer] as @a[distance=..20] run journal quest addon @s Ga-Mahr [{"text":"I need an "},{"text":"ancient family heirloom","color":"yellow"},{"text":" retrieved. A while ago, I had an unfortunate encounter with what I can only assume was a "},{"text":"cult","color":"yellow"},{"text":" on my way back home from a journey. Long story short, they stole my possessions at the time, including that heirloom."}]
 execute unless entity @a[tag=qst10] at @e[tag=gamer] run playsound entity.villager.ambient player @a ~ ~ ~ 3 1
 execute unless entity @a[tag=qst10] run tag @e[tag=gamer] add qstart

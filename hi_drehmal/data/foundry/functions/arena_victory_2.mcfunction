@@ -4,6 +4,8 @@ scoreboard players set wave_number foundry 0
 scoreboard players set wave_time foundry 0
 scoreboard players reset #foundry.glow bool
 scoreboard players set #fdry_finished bool 1
+scoreboard players set #fdry_charged bool 0
+scoreboard players set #fdry_completed? bool 1
 
 forceload remove -3307 1546 -3273 1575
 

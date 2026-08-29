@@ -106,9 +106,9 @@ execute if score @s temp matches 1.. run function players:items/obv/check
 
 scale reset @s
 tag @s remove freefall
-tag @s remove initialloop
 tag @s remove suffering
 tag @s remove disabled
 tag @s remove waterspiked
 tag @s remove no_armor_damage
+tag @s remove initialloop
 scoreboard players reset @s spm.x

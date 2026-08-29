@@ -20,6 +20,7 @@ schedule clear entities:ai/samurai/arena/spawn_sequence/slam3
 schedule clear entities:ai/samurai/arena/spawn_sequence/boom
 bossbar set minecraft:sentry visible false
 scoreboard players reset #hege bool
+execute as @a[tag=initialloop] run stopsound @s record
 tag @a remove initialloop
 forceload remove 27481 828 27506 848
 

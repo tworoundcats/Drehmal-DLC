@@ -10,7 +10,8 @@
     "PiglinBrainMixin",
     "RendTargetMixin",
     "ServerPlayerEntityMixin",
-    "ServerPlayNetworkHandlerMixin"
+    "ServerPlayNetworkHandlerMixin",
+    "TargetDummyEntityMixin"
   ],
   "refmap": "dlc-refmap.json",
   "injectors": {

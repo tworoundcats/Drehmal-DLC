@@ -4,5 +4,6 @@ execute unless entity @a[tag=qst9] run schedule function quests:chrisquest/accep
 execute unless entity @a[tag=qst9] run tag @e[tag=chris] add qstart
 execute unless entity @a[tag=qst9] at @s run tag @e[tag=chris_i] add disabled
 execute unless entity @a[tag=qst9] at @e[tag=chris] as @a[distance=..20] run journal quest add @s Chris "Lofty Legend"
+execute unless entity @a[tag=qst9] at @e[tag=chris] as @a[distance=..20] run journal quest location @s Chris Mossfield
 execute unless entity @a[tag=qst9] at @e[tag=chris] as @a[distance=..20] run journal quest addon @s Chris [{"text":"I'm composing a few songs for an upcoming play, but Mossfield's musical records aren't exactly the most thorough. Not since the fires, at least."}]
 execute unless entity @a[tag=qst9] run tag @s add qst9
