@@ -1,2 +1,3 @@
-tellraw @a[x=26520,y=178,z=-137,distance=..20] [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＴＨＩＳ ＷＯＲＬＤ ＤＯＷＮＬＯＡＤ ＩＳ ＩＲＲＥＶＥＲＳＩＢＬＹ ＣＯＲＲＵＰＴＥＤ． ＰＬＥＡＳＥ ＲＥＩＮＳＴＡＬＬ ＯＮ １．２０．１／／"}]
+tellraw @a[x=26520,y=178,z=-137,distance=..20] [{"text":"["},{"text":"ａｖＳＹＳ","color":"aqua"},{"text":"] ／／ＴＨＩＳ ＷＯＲＬＤ ＤＯＷＮＬＯＡＤ ＩＳ ＩＲＲＥＶＥＲＳＩＢＬＹ ＣＯＲＲＵＰＴＥＤ． ＰＬＥＡＳＥ ＲＥＩＮＳＴＡＬＬ／／"}]
+tellraw @a ["",{"text":"[!] WARNING [!]\n","color":"red","bold":false},{"text":"Your DLC Modpack is out of date!\n","color":"yellow"},{"text":"Please download the latest version and reinstall the map to prevent game-breaking bugs.","color":"gray"}]
 playsound minecraft:dcustom.block.note_block.bit block @a 26520 178 -137 1 0

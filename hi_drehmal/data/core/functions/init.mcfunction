@@ -1288,3 +1288,4 @@ scoreboard objectives add use_soul2 minecraft.used:dlc.harvest_hope
 scoreboard objectives add soul_hit_cd dummy
 
 scoreboard objectives add rend dummy
+scoreboard objectives add dlc_internal dummy

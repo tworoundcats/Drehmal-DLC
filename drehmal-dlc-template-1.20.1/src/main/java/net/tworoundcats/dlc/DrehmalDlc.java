@@ -82,6 +82,9 @@ public class DrehmalDlc implements ModInitializer {
         });
 
         ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "scoreboard objectives add dlc_internal dummy");
+            server.getCommandManager().executeWithPrefix(server.getCommandSource(), "scoreboard players set #mod_version dlc_internal 2");
+
             try {
                 Path dataDir = server.getSavePath(WorldSavePath.ROOT).resolve("data");
                 Path completedFlag = dataDir.resolve("dlc_restore_completed.flag");

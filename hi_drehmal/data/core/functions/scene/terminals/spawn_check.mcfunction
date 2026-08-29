@@ -13,5 +13,5 @@ scoreboard players reset #commandBlocksEnabled bool
 
 execute as @a as @s run function players:avhorse/index/write_player
 execute as @a as @s run function entities:misc/grab_uuid
-execute unless score #1.21 bool matches 1 if score #118 temp matches 1 run schedule function core:scene/terminals/spawn_check_cmd_block 2s replace
-execute unless score #118 temp matches 1 run function core:scene/terminals/spawn_fail
+execute unless score #1.21 bool matches 1 if score #118 temp matches 1 if score #mod_version dlc_internal matches 2.. run schedule function core:scene/terminals/spawn_check_cmd_block 2s replace
+execute unless score #mod_version dlc_internal matches 2.. run function core:scene/terminals/spawn_fail
